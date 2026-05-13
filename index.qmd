@@ -1,0 +1,18 @@
+---
+title: "Selective Interference from Contextual Competition"
+author:
+  - name: Jordan Gunn
+    affiliations:
+      - name: University of Cambridge
+abstract: |
+  This manuscript develops a retrieved-context account of selective
+  interference in intrusive memory. The current draft is a scaffold.
+---
+
+::: {.content-visible when-format="html"}
+Draft outputs: [PDF](index.pdf) | [Word](index.docx)
+:::
+
+# Introduction
+
+This draft is a placeholder for the v2 manuscript.
