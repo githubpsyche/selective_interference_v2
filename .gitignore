@@ -1,2 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Quarto
 /.quarto/
 **/*.quarto_ipynb
+_freeze/
+
+# Test/cache artifacts
+.pytest_cache/
+
+# Editor / OS
+.vscode/
+.luarc.json
+.DS_Store

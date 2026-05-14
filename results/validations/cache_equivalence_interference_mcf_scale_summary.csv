@@ -1,0 +1,11 @@
+metric,value
+reference_cache_after,creation
+candidate_cache_after,reminder
+raw_equal,True
+raw_mismatch_count,0
+max_spc_abs_diff,0.0
+max_film_mean_abs_diff,0.0
+passed,True
+n_values,10
+n_subjects,1
+experiment_count,5000

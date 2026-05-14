@@ -1,17 +1,27 @@
 ---
-title: "Selective Interference from Contextual Competition"
-author:
-  - name: Jordan Gunn
+title: "Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference"
+shorttitle: "Intrusive and Voluntary Memory from a Single System"
+author: 
+  - name: Jordan B Gunn
     affiliations:
       - name: University of Cambridge
-abstract: |
-  This manuscript develops a retrieved-context account of selective
-  interference in intrusive memory. The current draft is a scaffold.
+        department: Department of Psychology
+keywords:
+  - intrusive memories
+  - voluntary memory
+  - trauma-film paradigm
+  - visuospatial intervention
+  - selective interference
+  - retrieved-context theory
+  - computational modeling
+author-note:
+  disclosures:
+    related-report: "This is an in-progress working draft. Please do not cite, quote, or circulate without the authors' written permission."
+floatsintext: true
+bibliography: references.bib
 ---
 
-::: {.content-visible when-format="html"}
-Draft outputs: [PDF](index.pdf) | [Word](index.docx)
-:::
+# Abstract
 
 # Introduction
 

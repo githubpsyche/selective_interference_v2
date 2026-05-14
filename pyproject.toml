@@ -1,0 +1,27 @@
+[project]
+name = "selective_interference_v2"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "jaxcmr",
+    "jax",
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "pandas",
+    "h5py",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+dev = ["papermill", "ipykernel", "ruff"]
+
+[tool.uv.sources]
+jaxcmr = { path = "../jaxcmr", editable = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["selective_interference_v2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
