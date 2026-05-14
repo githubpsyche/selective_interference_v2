@@ -23,6 +23,40 @@ bibliography: references.bib
 
 # Abstract
 
+Selective interference poses a diagnostic problem for theories of memory architecture.
+In trauma-film studies, post-encoding or post-reminder visuospatial tasks can reduce later intrusive memories while leaving voluntary memory relatively intact.
+This pattern has often been interpreted as evidence for separate intrusive/sensory and voluntary/contextual traces, or for selective disruption of a reactivated sensory trace.
+We develop an alternative single-system account within retrieved-context theory.
+The account treats interference not as weakening the film representation, but as encoding competitors into a contextual neighborhood later used for retrieval.
+Reminders reinstate trauma-film context; interference performed in that state binds new competitors to overlapping temporal/source context.
+When later retrieval states return to that neighborhood, they cue both film and interference items, reducing the probability that film items are sampled.
+Differences between intrusion and voluntary-memory measures arise because tests differ in retrieval configuration: broad or weakly guided retrieval remains vulnerable to contextual competitors, whereas more constrained, probe-specific access can preserve film-item retrieval.
+We implement the account in a CMR-family model of episodic and emotional memory.
+Simulations test whether the model reproduces the intrusion/voluntary-memory dissociation, distinguishes contextual overlap from generic task load, explains heterogeneity across test formats, and produces delayed reminder effects through reinstatement before competitor encoding.
+Selective interference is therefore treated as a boundary condition on context-guided retrieval, not as uniquely diagnostic evidence for separate memory traces.
+
 # Introduction
 
-This draft is a placeholder for the v2 manuscript.
+# Empirical and Theoretical Target
+
+# A Retrieved-Context Account of Selective Interference
+
+# Model and Paradigm
+
+# Simulation Overview
+
+# Results
+
+## Simulation 1: Selective Interference Across Retrieval Configurations
+
+## Simulation 2: Competitor Encoding in Reinstated Context
+
+## Simulation 3: Contextual Overlap Versus Generic Task Load
+
+## Simulation 4: Test-Format Heterogeneity
+
+## Robustness and Diagnostic Checks
+
+# General Discussion
+
+# References

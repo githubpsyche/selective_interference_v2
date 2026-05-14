@@ -121,13 +121,15 @@ def configure_rates(
         ``emotion_encoding_drift_scale``, ``emotion_recall_drift_scale``,
         ``emotion_drift_scale``, ``shared_support_scale``,
         ``film_shared_support_scale``,
-        ``competitor_shared_support_scale``.
+        ``competitor_shared_support_scale``,
+        ``rejected_recall_drift_scale``.
         Unspecified scales default to 1.0.
         ``primacy_scale``, ``primacy_decay``, ``emotion_scale``, and
         ``temporal_emotion_scale`` replace the model values directly when
-        provided.  In source-only eCMR, changing ``emotion_scale`` affects
-        subsequent source-context learning; it does not retroactively rescale
-        already learned source associations.
+        provided.  ``rejected_recall_drift_scale`` also replaces the model
+        value directly.  In source-only eCMR, changing ``emotion_scale``
+        affects subsequent source-context learning; it does not retroactively
+        rescale already learned source associations.
         ``shared_support_scale`` scales the pre-experimental MCF
         baseline globally; ``film_shared_support_scale`` and
         ``competitor_shared_support_scale`` further scale film
@@ -235,6 +237,10 @@ def configure_rates(
                 emotion_recall_drift_scale
                 * model.emotion_recall_drift_rate, 0.0, 1.0,
             ),
+            rejected_recall_drift_scale=scales.get(
+                "rejected_recall_drift_scale",
+                model.rejected_recall_drift_scale,
+            ),
             mcf=new_mcf,
             shared_support=new_ss,
         )
@@ -282,6 +288,7 @@ _SCALE_PHASES = {
     "start_drift_scale": "retrieval",
     "tau_scale": "retrieval",
     "emotion_recall_drift_scale": "retrieval",
+    "rejected_recall_drift_scale": "retrieval",
 }
 
 _SCALE_PHASE_POINTS = {

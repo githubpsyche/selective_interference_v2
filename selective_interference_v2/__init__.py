@@ -9,6 +9,7 @@ from .paradigm import (
     make_extended_filler,
     make_extended_interference,
     make_is_emotional,
+    make_is_target,
 )
 from .pipeline import (
     PreparedSweep,
@@ -60,6 +61,7 @@ __all__ = [
     "make_extended_break",
     "make_extended_filler",
     "make_is_emotional",
+    "make_is_target",
     "plot_interference_spc",
     "plot_summary_dv",
     "add_filler_boundary",

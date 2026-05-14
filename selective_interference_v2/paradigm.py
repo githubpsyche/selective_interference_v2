@@ -260,3 +260,19 @@ def make_is_emotional(
         start = paradigm.n_film + paradigm.n_break
         arr = arr.at[start:start + paradigm.n_interference].set(1.0)
     return arr
+
+
+def make_is_target(paradigm: Paradigm) -> jax.Array:
+    """Build per-item target flag array for the standard tier.
+
+    Parameters
+    ----------
+    paradigm : Paradigm
+        Paradigm geometry.
+
+    Returns
+    -------
+    jax.Array
+
+    """
+    return jnp.zeros(paradigm.list_length).at[:paradigm.n_film].set(1.0)

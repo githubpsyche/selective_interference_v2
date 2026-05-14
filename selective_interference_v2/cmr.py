@@ -37,6 +37,7 @@ class PhasedSourceOnlyECMR(Pytree):
         list_length: int,
         parameters: Mapping[str, Float_],
         is_emotional: Optional[Float[Array, " items"]] = None,
+        is_target: Optional[Float[Array, " items"]] = None,
         mfc_create_fn: MemoryCreateFn = LinearMemory.init_mfc,
         mcf_create_fn: MemoryCreateFn = LinearMemory.init_mcf,
         context_create_fn: ContextCreateFn = TemporalContext.init,
@@ -54,6 +55,9 @@ class PhasedSourceOnlyECMR(Pytree):
             ``modulate_emotion_by_primacy=True``.
         is_emotional : Float[Array, " items"] or None, optional
             Per-item emotional/source flag.  Missing values default to neutral.
+        is_target : Float[Array, " items"] or None, optional
+            Per-item target flag for retrieval monitoring.  Missing values
+            default to non-target.
         mfc_create_fn, mcf_create_fn, context_create_fn,
         termination_policy_create_fn
             Component factories matching ``jaxcmr`` model factories.
@@ -105,10 +109,16 @@ class PhasedSourceOnlyECMR(Pytree):
             "temporal_emotion_scale",
             self.emotion_scale,
         )
+        self.rejected_recall_drift_scale = parameters.get(
+            "rejected_recall_drift_scale",
+            1.0,
+        )
         _is_emotional = (
             is_emotional if is_emotional is not None else jnp.zeros(list_length)
         )
         self.is_emotional = jnp.array(_is_emotional, dtype=jnp.float32)
+        _is_target = is_target if is_target is not None else jnp.zeros(list_length)
+        self.is_target = jnp.array(_is_target, dtype=jnp.float32)
         self.phi_emot = self.emotion_scale * self.is_emotional
         self.temporal_phi_emot = self.temporal_emotion_scale * self.is_emotional
 
@@ -361,13 +371,18 @@ class PhasedSourceOnlyECMR(Pytree):
 
     def _retrieve_item(self, item_index: Int_) -> "PhasedSourceOnlyECMR":
         item = self.items[item_index]
+        drift_scale = jnp.where(
+            self.is_target[item_index] > 0.0,
+            1.0,
+            self.rejected_recall_drift_scale,
+        )
         new_context = self.context.integrate(
             self.mfc.probe(item),
-            self.recall_drift_rate,
+            drift_scale * self.recall_drift_rate,
         )
         new_emotion_context = self.emotion_context.integrate(
             self.emotion_mfc.probe(item),
-            self.emotion_recall_drift_rate,
+            drift_scale * self.emotion_recall_drift_rate,
         )
         return self.replace(
             context=new_context,
@@ -436,6 +451,7 @@ def make_factory(
     context_create_fn: ContextCreateFn = TemporalContext.init,
     termination_policy_create_fn: TerminationPolicyCreateFn = PositionalTermination,
     is_emotional: Optional[Float[Array, " items"]] = None,
+    is_target: Optional[Float[Array, " items"]] = None,
 ) -> Callable:
     """Build a phase-aware source-only eCMR factory for sweeps."""
 
@@ -451,10 +467,17 @@ def make_factory(
             trial_is_emotional = jnp.zeros(list_length).at[
                 : is_emotional.shape[0]
             ].set(is_emotional)
+        if is_target is None:
+            trial_is_target = jnp.zeros(list_length)
+        else:
+            trial_is_target = jnp.zeros(list_length).at[
+                : is_target.shape[0]
+            ].set(is_target)
         return PhasedSourceOnlyECMR(
             list_length,
             parameters,
             is_emotional=trial_is_emotional,
+            is_target=trial_is_target,
             mfc_create_fn=mfc_create_fn,
             mcf_create_fn=mcf_create_fn,
             context_create_fn=context_create_fn,
