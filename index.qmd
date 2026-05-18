@@ -1,7 +1,7 @@
 ---
 title: "Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference"
 shorttitle: "Intrusive and Voluntary Memory from a Single System"
-author: 
+author:
   - name: Jordan B Gunn
     affiliations:
       - name: University of Cambridge
@@ -23,17 +23,14 @@ bibliography: references.bib
 
 # Abstract
 
-Selective interference poses a diagnostic problem for theories of memory architecture.
-In trauma-film studies, post-encoding or post-reminder visuospatial tasks can reduce later intrusive memories while leaving voluntary memory relatively intact.
-This pattern has often been interpreted as evidence for separate intrusive/sensory and voluntary/contextual traces, or for selective disruption of a reactivated sensory trace.
-We develop an alternative single-system account within retrieved-context theory.
-The account treats interference not as weakening the film representation, but as encoding competitors into a contextual neighborhood later used for retrieval.
-Reminders reinstate trauma-film context; interference performed in that state binds new competitors to overlapping temporal/source context.
-When later retrieval states return to that neighborhood, they cue both film and interference items, reducing the probability that film items are sampled.
-Differences between intrusion and voluntary-memory measures arise because tests differ in retrieval configuration: broad or weakly guided retrieval remains vulnerable to contextual competitors, whereas more constrained, probe-specific access can preserve film-item retrieval.
-We implement the account in a CMR-family model of episodic and emotional memory.
-Simulations test whether the model reproduces the intrusion/voluntary-memory dissociation, distinguishes contextual overlap from generic task load, explains heterogeneity across test formats, and produces delayed reminder effects through reinstatement before competitor encoding.
-Selective interference is therefore treated as a boundary condition on context-guided retrieval, not as uniquely diagnostic evidence for separate memory traces.
+Visuospatial tasks performed after trauma-film encoding, or after a later reminder of the film, can reduce intrusive memories while leaving voluntary memory relatively intact.
+This selective-interference pattern is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations.
+Here we implement an alternative retrieved-context account in an emotional Context Maintenance and Retrieval model (eCMR), where the dissociation can arise from context reinstatement and retrieval competition rather than from separately vulnerable representations.
+In the model, film context remains active after encoding and can later be reinstated by reminders, so an interfering task performed in either state binds task representations to overlapping context.
+When later retrieval contexts cue both film representations and task competitors, uncontrolled retrieval from context cues is less likely to sample trauma-film items in intrusion-like retrieval, even though film-item strength is not reduced.
+Deliberate recall is less vulnerable when task goals and control processes reinstate film context and favor film items over competitors; film-specific cues can also steer retrieval toward film context across test formats.
+Simulations show that this modeled sequence can impair intrusion-like retrieval more than deliberate recall, and that the pattern depends on contextual overlap between film and task representations and on reminder-driven reinstatement before competitor encoding.
+Selective interference is therefore compatible with a single retrieved-context system and is not by itself diagnostic of separate representational systems or selective trace weakening.
 
 # Introduction
 
