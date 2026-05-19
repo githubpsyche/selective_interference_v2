@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jordan Gunn">
+<meta name="author" content="Jordan B Gunn">
+<meta name="keywords" content="intrusive memories, voluntary memory, trauma-film paradigm, visuospatial intervention, selective interference, retrieved-context theory, computational modeling">
 
-<title>Selective Interference from Contextual Competition</title>
+<title>Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -38,12 +59,39 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-fcc3bc6eb91de46a6ea40c6d96a0da9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 
 
-<meta name="citation_title" content="Selective Interference from Contextual Competition">
-<meta name="citation_abstract" content="This manuscript develops a retrieved-context account of selective
-interference in intrusive memory. The current draft is a scaffold.
-">
-<meta name="citation_author" content="Jordan Gunn">
+<meta name="citation_title" content="Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference">
+<meta name="citation_keywords" content="intrusive memories,voluntary memory,trauma-film paradigm,visuospatial intervention,selective interference,retrieved-context theory,computational modeling">
+<meta name="citation_author" content="Jordan B Gunn">
 <meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=A systematic review and meta-analysis of the effect of cognitive interventions to prevent intrusive memories using the trauma film paradigm;,citation_author=Joost Asselbergs;,citation_author=Jaël Bentum;,citation_author=Heleen Riper;,citation_author=Pim Cuijpers;,citation_author=Emily A. Holmes;,citation_author=Marit Sijbrandij;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_doi=10.1016/j.jpsychires.2023.01.028;,citation_volume=159;,citation_journal_title=Journal of Psychiatric Research;">
+<meta name="citation_reference" content="citation_title=A dual representation theory of posttraumatic stress disorder;,citation_author=Chris R. Brewin;,citation_author=Tim Dalgleish;,citation_author=Stephen Joseph;,citation_publication_date=1996;,citation_cover_date=1996;,citation_year=1996;,citation_issue=4;,citation_doi=10.1037/0033-295X.103.4.670;,citation_volume=103;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=Intrusive images in psychological disorders: Characteristics, neural mechanisms, and treatment implications;,citation_author=Chris R. Brewin;,citation_author=James D. Gregory;,citation_author=Michelle Lipton;,citation_author=Neil Burgess;,citation_publication_date=2010;,citation_cover_date=2010;,citation_year=2010;,citation_issue=1;,citation_doi=10.1037/a0018113;,citation_volume=117;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=Episodic memory, perceptual memory, and their interaction: Foundations for a theory of posttraumatic stress disorder;,citation_author=Chris R. Brewin;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_issue=1;,citation_doi=10.1037/a0033722;,citation_volume=140;,citation_journal_title=Psychological Bulletin;">
+<meta name="citation_reference" content="citation_title=A memory-based theory of emotional disorders;,citation_author=Rivka T. Cohen;,citation_author=Michael J. Kahana;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=4;,citation_doi=10.1037/rev0000334;,citation_volume=129;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=Imagery in the aftermath of viewing a traumatic film: Using cognitive tasks to modulate the development of involuntary memory;,citation_author=Catherine Deeprose;,citation_author=Shuqi Zhang;,citation_author=Hannah DeJong;,citation_author=Tim Dalgleish;,citation_author=Emily A. Holmes;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_issue=2;,citation_doi=10.1016/j.jbtep.2011.10.008;,citation_volume=43;,citation_journal_title=Journal of Behavior Therapy and Experimental Psychiatry;">
+<meta name="citation_reference" content="citation_title=A cognitive model of posttraumatic stress disorder;,citation_author=Anke Ehlers;,citation_author=David M. Clark;,citation_publication_date=2000;,citation_cover_date=2000;,citation_year=2000;,citation_issue=4;,citation_doi=10.1016/S0005-7967(99)00123-0;,citation_volume=38;,citation_journal_title=Behaviour Research and Therapy;">
+<meta name="citation_reference" content="citation_title=Trauma films, information processing, and intrusive memory development;,citation_author=Emily A. Holmes;,citation_author=Chris R. Brewin;,citation_author=Richard G. Hennessy;,citation_publication_date=2004;,citation_cover_date=2004;,citation_year=2004;,citation_issue=1;,citation_doi=10.1037/0096-3445.133.1.3;,citation_volume=133;,citation_journal_title=Journal of Experimental Psychology: General;">
+<meta name="citation_reference" content="citation_title=Inducing and modulating intrusive emotional memories: A review of the trauma film paradigm;,citation_author=Emily A. Holmes;,citation_author=Corin Bourne;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_issue=3;,citation_doi=10.1016/j.actpsy.2007.11.002;,citation_volume=127;,citation_journal_title=Acta Psychologica;">
+<meta name="citation_reference" content="citation_title=Can playing the computer game Tetris reduce the build-up of flashbacks for trauma? A proposal from cognitive science;,citation_author=Emily A. Holmes;,citation_author=Ella L. James;,citation_author=Thomas Coode-Bate;,citation_author=Catherine Deeprose;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=1;,citation_doi=10.1371/journal.pone.0004153;,citation_volume=4;,citation_journal_title=PLoS ONE;">
+<meta name="citation_reference" content="citation_title=Key steps in developing a cognitive vaccine against traumatic flashbacks: Visuospatial Tetris versus verbal Pub Quiz;,citation_author=Emily A. Holmes;,citation_author=Ella L. James;,citation_author=Emma J. Kilford;,citation_author=Catherine Deeprose;,citation_publication_date=2010;,citation_cover_date=2010;,citation_year=2010;,citation_issue=11;,citation_doi=10.1371/journal.pone.0013706;,citation_volume=5;,citation_journal_title=PLoS ONE;">
+<meta name="citation_reference" content="citation_title=Reducing intrusive traumatic memories after emergency caesarean section: A proof-of-principle randomized controlled study;,citation_author=Antje Horsch;,citation_author=Yvan Vial;,citation_author=Céline Favrod;,citation_author=Mathilde Morisod Harari;,citation_author=Simon E. Blackwell;,citation_author=Peter Watson;,citation_author=Lalitha Iyadurai;,citation_author=Michael B. Bonsall;,citation_author=Emily A. Holmes;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_doi=10.1016/j.brat.2017.03.018;,citation_volume=94;,citation_journal_title=Behaviour Research and Therapy;">
+<meta name="citation_reference" content="citation_title=A distributed representation of temporal context;,citation_author=Marc W. Howard;,citation_author=Michael J. Kahana;,citation_publication_date=2002;,citation_cover_date=2002;,citation_year=2002;,citation_issue=3;,citation_doi=10.1006/jmps.2001.1388;,citation_volume=46;,citation_journal_title=Journal of Mathematical Psychology;">
+<meta name="citation_reference" content="citation_title=Preventing intrusive memories after trauma via a brief intervention involving Tetris computer game play in the emergency department: A proof-of-concept randomized controlled trial;,citation_author=Lalitha Iyadurai;,citation_author=Simon E. Blackwell;,citation_author=Richard Meiser-Stedman;,citation_author=Peter C. Watson;,citation_author=Michael B. Bonsall;,citation_author=John R. Geddes;,citation_author=Anna C. Nobre;,citation_author=Emily A. Holmes;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_issue=3;,citation_doi=10.1038/mp.2017.23;,citation_volume=23;,citation_journal_title=Molecular Psychiatry;">
+<meta name="citation_reference" content="citation_title=Intrusive memories of trauma: A target for research bridging cognitive science and its clinical application;,citation_author=Lalitha Iyadurai;,citation_author=Renée M. Visser;,citation_author=Alex Lau-Zhu;,citation_author=Kate Porcheret;,citation_author=Antje Horsch;,citation_author=Emily A. Holmes;,citation_author=Ella L. James;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1016/j.cpr.2018.08.005;,citation_volume=69;,citation_journal_title=Clinical Psychology Review;">
+<meta name="citation_reference" content="citation_title=Computer game play reduces intrusive memories of experimental trauma via reconsolidation-update mechanisms;,citation_author=Ella L. James;,citation_author=Michael B. Bonsall;,citation_author=Laura Hoppitt;,citation_author=Elizabeth M. Tunbridge;,citation_author=John R. Geddes;,citation_author=Amy L. Milton;,citation_author=Emily A. Holmes;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=8;,citation_doi=10.1177/0956797615583071;,citation_volume=26;,citation_journal_title=Psychological Science;">
+<meta name="citation_reference" content="citation_title=The trauma film paradigm as an experimental psychopathology model of psychological trauma: Intrusive memories and beyond;,citation_author=Ella L. James;,citation_author=Alex Lau-Zhu;,citation_author=Ian A. Clark;,citation_author=Renée M. Visser;,citation_author=Muriel A. Hagenaars;,citation_author=Emily A. Holmes;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_doi=10.1016/j.cpr.2016.04.010;,citation_volume=47;,citation_journal_title=Clinical Psychology Review;">
+<meta name="citation_reference" content="citation_title=A single case series using visuospatial task interference to reduce the number of visual intrusive memories of trauma with refugees;,citation_author=Marie Kanstrup;,citation_author=Evelina Kontio;,citation_author=Anahita Geranmayeh;,citation_author=Klara Olofsdotter Lauri;,citation_author=Michelle L. Moulds;,citation_author=Emily A. Holmes;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=1;,citation_doi=10.1002/cpp.2489;,citation_volume=28;,citation_journal_title=Clinical Psychology &amp;amp;amp; Psychotherapy;">
+<meta name="citation_reference" content="citation_title=Visuospatial computer game play after memory reminder delivered three days after a traumatic film reduces the number of intrusive memories of the experimental trauma;,citation_author=Henrik Kessler;,citation_author=Anna-Christine Schmidt;,citation_author=Ella L. James;,citation_author=Simon E. Blackwell;,citation_author=Marcel Rauchhaupt;,citation_author=Katharina Harren;,citation_author=Aram Kehyayan;,citation_author=Ian A. Clark;,citation_author=Magdalena Sauvage;,citation_author=Stephan Herpertz;,citation_author=Nikolai Axmacher;,citation_author=Emily A. Holmes;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_doi=10.1016/j.jbtep.2019.01.006;,citation_volume=67;,citation_journal_title=Journal of Behavior Therapy and Experimental Psychiatry;">
+<meta name="citation_reference" content="citation_title=Beyond extinction: Erasing human fear responses and preventing the return of fear;,citation_author=Merel Kindt;,citation_author=Marieke Soeter;,citation_author=Bram Vervliet;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=3;,citation_doi=10.1038/nn.2271;,citation_volume=12;,citation_journal_title=Nature Neuroscience;">
+<meta name="citation_reference" content="citation_title=Intrusive trauma memory: A review and functional analysis;,citation_author=Julie Krans;,citation_author=Gérard Näring;,citation_author=Eni S. Becker;,citation_author=Emily A. Holmes;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=8;,citation_doi=10.1002/acp.1611;,citation_volume=23;,citation_journal_title=Applied Cognitive Psychology;">
+<meta name="citation_reference" content="citation_title=Intrusive memories and voluntary memory of a trauma film: Differential effects of a cognitive interference task after encoding;,citation_author=Alex Lau-Zhu;,citation_author=Richard N. Henson;,citation_author=Emily A. Holmes;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=12;,citation_doi=10.1037/xge0000598;,citation_volume=148;,citation_journal_title=Journal of Experimental Psychology: General;">
+<meta name="citation_reference" content="citation_title=Expanding the scope of memory search: Modeling intralist and interlist effects in free recall;,citation_author=Lynn J. Lohnas;,citation_author=Sean M. Polyn;,citation_author=Michael J. Kahana;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=2;,citation_doi=10.1037/a0039036;,citation_volume=122;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=A context maintenance and retrieval model of organizational processes in free recall;,citation_author=Sean M. Polyn;,citation_author=Kenneth A. Norman;,citation_author=Michael J. Kahana;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=1;,citation_doi=10.1037/a0014420;,citation_volume=116;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=A context-based theory of recency and contiguity in free recall;,citation_author=Per B. Sederberg;,citation_author=Marc W. Howard;,citation_author=Michael J. Kahana;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_issue=4;,citation_doi=10.1037/a0013396;,citation_volume=115;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=A retrieved context model of the emotional modulation of memory;,citation_author=Deborah Talmi;,citation_author=Lynn J. Lohnas;,citation_author=Nathaniel D. Daw;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=4;,citation_doi=10.1037/rev0000132;,citation_volume=126;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=A systematic review and meta-analysis of experimental methods for modulating intrusive memories following lab-analogue trauma exposure in non-clinical populations;,citation_author=Mohith M. Varma;,citation_author=Shengzi Zeng;,citation_author=Laura Singh;,citation_author=Emily A. Holmes;,citation_author=Jingyun Huang;,citation_author=Man Hey Chiu;,citation_author=Xiaoqing Hu;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=10;,citation_doi=10.1038/s41562-024-01956-y;,citation_volume=8;,citation_journal_title=Nature Human Behaviour;">
+<meta name="citation_reference" content="citation_title=Evidence that Tetris reduces immediate but not subsequent daily intrusions of a trauma film: A multilab replication study;,citation_author=Ineke Wessel;,citation_author=Julie Krans;,citation_author=Casper J. Albers;,citation_author=Nidhi Chauhan;,citation_author=Diana S. Ferreira de Sá;,citation_author=Alexander Hauck;,citation_author=Lars Jaswetz;,citation_author=Tanja Michael;,citation_author=Reginald D. V. Nixon;,citation_author=David G. Pearson;,citation_author=Isabelle Slattery;,citation_author=Tom Smeets;,citation_author=Melanie K. T. Takarangi;,citation_author=Thomas R. A. Willems;,citation_author=Kevin Schie;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=1;,citation_doi=10.1525/collabra.130791;,citation_volume=11;,citation_journal_title=Collabra: Psychology;">
+<meta name="citation_reference" content="citation_title=A contextual binding theory of episodic memory: Systems consolidation reconsidered;,citation_author=Andrew P. Yonelinas;,citation_author=Charan Ranganath;,citation_author=Arne D. Ekstrom;,citation_author=Brian J. Wiltgen;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=6;,citation_doi=10.1038/s41583-019-0150-4;,citation_volume=20;,citation_journal_title=Nature Reviews Neuroscience;">
 </head>
 
 <body class="quarto-light">
@@ -51,7 +99,7 @@ interference in intrusive memory. The current draft is a scaffold.
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Selective Interference from Contextual Competition</h1>
+      <h1 class="title">Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference</h1>
           </div>
 
     
@@ -62,7 +110,7 @@ interference in intrusive memory. The current draft is a scaffold.
           <div class="quarto-title-meta-heading">Affiliation</div>
           
                 <div class="quarto-title-meta-contents">
-            <p class="author">Jordan Gunn </p>
+            <p class="author">Jordan B Gunn </p>
           </div>
                 <div class="quarto-title-meta-contents">
                     <p class="affiliation">
@@ -79,16 +127,16 @@ interference in intrusive memory. The current draft is a scaffold.
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word (apaquarto)</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (apaquarto)</a></p></div></div></div>
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (apaquarto)</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word (apaquarto)</a></p></div></div></div>
     </div>
+
 
     <div>
-      <div class="abstract">
-        <div class="block-title">Abstract</div>
-        <p>This manuscript develops a retrieved-context account of selective interference in intrusive memory. The current draft is a scaffold.</p>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>intrusive memories, voluntary memory, trauma-film paradigm, visuospatial intervention, selective interference, retrieved-context theory, computational modeling</p>
       </div>
     </div>
-
 
     <div class="quarto-other-links-text-target">
     <div class="quarto-code-links"><div class="quarto-title-meta-heading">Code Links</div><div class="quarto-title-meta-contents"><span><a href="https://github.com/githubpsyche/selective_interference_v2/" target="_blank"><i class="bi bi-github"></i>GitHub Repo</a></span></div></div></div>  </div>
@@ -98,7 +146,22 @@ interference in intrusive memory. The current draft is a scaffold.
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#empirical-and-theoretical-target" id="toc-empirical-and-theoretical-target" class="nav-link" data-scroll-target="#empirical-and-theoretical-target">Empirical and Theoretical Target</a></li>
+  <li><a href="#a-retrieved-context-account-of-selective-interference" id="toc-a-retrieved-context-account-of-selective-interference" class="nav-link" data-scroll-target="#a-retrieved-context-account-of-selective-interference">A Retrieved-Context Account of Selective Interference</a></li>
+  <li><a href="#model-and-paradigm" id="toc-model-and-paradigm" class="nav-link" data-scroll-target="#model-and-paradigm">Model and Paradigm</a></li>
+  <li><a href="#simulation-overview" id="toc-simulation-overview" class="nav-link" data-scroll-target="#simulation-overview">Simulation Overview</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#simulation-1-selective-interference-across-retrieval-configurations" id="toc-simulation-1-selective-interference-across-retrieval-configurations" class="nav-link" data-scroll-target="#simulation-1-selective-interference-across-retrieval-configurations">Simulation 1: Selective Interference Across Retrieval Configurations</a></li>
+  <li><a href="#simulation-2-competitor-encoding-in-reinstated-context" id="toc-simulation-2-competitor-encoding-in-reinstated-context" class="nav-link" data-scroll-target="#simulation-2-competitor-encoding-in-reinstated-context">Simulation 2: Competitor Encoding in Reinstated Context</a></li>
+  <li><a href="#simulation-3-contextual-overlap-versus-generic-task-load" id="toc-simulation-3-contextual-overlap-versus-generic-task-load" class="nav-link" data-scroll-target="#simulation-3-contextual-overlap-versus-generic-task-load">Simulation 3: Contextual Overlap Versus Generic Task Load</a></li>
+  <li><a href="#simulation-4-test-format-heterogeneity" id="toc-simulation-4-test-format-heterogeneity" class="nav-link" data-scroll-target="#simulation-4-test-format-heterogeneity">Simulation 4: Test-Format Heterogeneity</a></li>
+  <li><a href="#robustness-and-diagnostic-checks" id="toc-robustness-and-diagnostic-checks" class="nav-link" data-scroll-target="#robustness-and-diagnostic-checks">Robustness and Diagnostic Checks</a></li>
+  </ul></li>
+  <li><a href="#general-discussion" id="toc-general-discussion" class="nav-link" data-scroll-target="#general-discussion">General Discussion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
 </div>
@@ -112,13 +175,149 @@ This is an in-progress working draft. Please do not cite, quote, or circulate wi
   
 
 
-<p>Draft outputs: <a href="index.pdf">PDF</a> | <a href="index.docx">Word</a></p>
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+<p>Visuospatial tasks performed after trauma-film encoding, or after a later reminder of the film, can reduce intrusive memories while leaving voluntary memory relatively intact. This selective interference effect is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations. Here we simulate an alternative retrieved-context account using an emotional Context Maintenance and Retrieval (eCMR) model, asking whether context reinstatement, competitor learning, and retrieval control can generate the selective-interference pattern without separately vulnerable representations. In the model, film context remains active after encoding and can later be reinstated by reminders, so an interfering task performed in either state binds task representations to overlapping context. When later retrieval contexts cue both film representations and task competitors, uncontrolled retrieval from context cues is less likely to sample trauma-film items in intrusion-like retrieval, even though film-item strength is not reduced. Deliberate recall is less vulnerable when task goals and control processes reinstate film context and prioritize film items over competitors for retrieval; film-specific cues can also steer retrieval toward film context across test formats. Together, the simulations reproduce selective impairment of intrusion-like retrieval and specify when the intrusion-voluntary-memory dissociation should be more or less pronounced, helping to interpret heterogeneity across empirical paradigms. Selective interference is therefore compatible with a single retrieved-context system and is not by itself diagnostic of separate representational systems or selective trace weakening.</p>
+</section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>This draft is a placeholder for the v2 manuscript.</p>
+<p>Traumatic experience foregrounds a tension between durability and selectivity in episodic memory. Highly consequential events should be retained well enough in memory that critical details remain accessible long into the future. At the same time, adaptive retrieval is selective: what comes to mind should normally depend on current cues, goals, and safety. Intrusive memories after trauma suggest that durable encoding can outpace regulatory control. The event returns without being deliberately sought and without being well matched to the demands of the present <span class="citation" data-cites="ehlers2000cognitive brewin2010intrusive krans2009intrusive iyadurai2019intrusive">(<a href="#ref-ehlers2000cognitive" role="doc-biblioref">Ehlers and Clark 2000</a>; <a href="#ref-brewin2010intrusive" role="doc-biblioref">Brewin et al. 2010</a>; <a href="#ref-krans2009intrusive" role="doc-biblioref">Krans et al. 2009</a>; <a href="#ref-iyadurai2019intrusive" role="doc-biblioref">Iyadurai et al. 2019</a>)</span>. Understanding why such memories arise, and how they differ from voluntary memory for the same event, is therefore a shared target for both clinical science and basic memory theory.</p>
+<p>The trauma-film paradigm provides a controlled setting for comparing intrusive and voluntary memory for the same event <span class="citation" data-cites="holmes2008inducing james2016trauma">(<a href="#ref-holmes2008inducing" role="doc-biblioref">Holmes and Bourne 2008</a>; <a href="#ref-james2016trauma" role="doc-biblioref">James et al. 2016</a>)</span>. Participants view distressing film material, record later intrusive memories of the film, and often complete voluntary-memory tests for the same material. This design makes it possible to ask whether the same encoded event can remain available to deliberate retrieval while becoming more or less likely to return involuntarily. In such research, voluntary memory can be relatively preserved, and its relationship to intrusion frequency can be weak, such that the two measures dissociate <span class="citation" data-cites="holmes2004trauma james2016trauma">(<a href="#ref-holmes2004trauma" role="doc-biblioref">Holmes, Brewin, and Hennessy 2004</a>; <a href="#ref-james2016trauma" role="doc-biblioref">James et al. 2016</a>)</span>. The same encoded episode can therefore support both uncontrolled and controlled access, and these modes can come apart empirically <span class="citation" data-cites="holmes2004trauma iyadurai2019intrusive">(<a href="#ref-holmes2004trauma" role="doc-biblioref">Holmes, Brewin, and Hennessy 2004</a>; <a href="#ref-iyadurai2019intrusive" role="doc-biblioref">Iyadurai et al. 2019</a>)</span>.</p>
+<p>Visuospatial interference tasks make this dissociation experimentally sharper. When brief tasks such as Tetris are performed after film encoding or after a later film reminder, subsequent intrusions can be reduced while voluntary memory for the same material shows little measurable impairment <span class="citation" data-cites="holmes2009can holmes2010key deeprose2012imagery james2015computer kessler2020visuospatial lau2019intrusive asselbergs2023systematic">(<a href="#ref-holmes2009can" role="doc-biblioref">Holmes et al. 2009</a>, <a href="#ref-holmes2010key" role="doc-biblioref">2010</a>; <a href="#ref-deeprose2012imagery" role="doc-biblioref">Deeprose et al. 2012</a>; <a href="#ref-james2015computer" role="doc-biblioref">James et al. 2015</a>; <a href="#ref-kessler2020visuospatial" role="doc-biblioref">Kessler et al. 2020</a>; <a href="#ref-lau2019intrusive" role="doc-biblioref">Lau-Zhu, Henson, and Holmes 2019</a>; <a href="#ref-asselbergs2023systematic" role="doc-biblioref">Asselbergs et al. 2023</a>)</span>. Even for memories of real-life traumatic events, including motor vehicle accidents, emergency caesarean section, and war-related trauma, the same post-reminder intervention can reduce intrusions while leaving deliberate recall relatively intact <span class="citation" data-cites="iyadurai2018preventing horsch2017reducing kanstrup2021single">(<a href="#ref-iyadurai2018preventing" role="doc-biblioref">Iyadurai et al. 2018</a>; <a href="#ref-horsch2017reducing" role="doc-biblioref">Horsch et al. 2017</a>; <a href="#ref-kanstrup2021single" role="doc-biblioref">Kanstrup et al. 2021</a>)</span>. At the same time, the evidence base is heterogeneous, and recent reviews and replications caution against treating the effect as settled or uniform <span class="citation" data-cites="asselbergs2023systematic varma2024experimental wessel2025evidence">(<a href="#ref-asselbergs2023systematic" role="doc-biblioref">Asselbergs et al. 2023</a>; <a href="#ref-varma2024experimental" role="doc-biblioref">Varma et al. 2024</a>; <a href="#ref-wessel2025evidence" role="doc-biblioref">Wessel et al. 2025</a>)</span>. This selective interference effect therefore raises a theoretical question: when and why can a post-encoding or post-reminder manipulation alter one mode of retrieval more than another, even while both draw on the same recent experience?</p>
+<p>One prominent interpretation treats the selective interference effect as evidence for separable memory representations <span class="citation" data-cites="brewin1996dual brewin2014episodic">(<a href="#ref-brewin1996dual" role="doc-biblioref">Brewin, Dalgleish, and Joseph 1996</a>; <a href="#ref-brewin2014episodic" role="doc-biblioref">Brewin 2014</a>)</span>. Under this dual-representation account, traumatic experience produces distinct sensory and contextual memory traces — the first supporting involuntary re-experiencing, the second supporting deliberate recall <span class="citation" data-cites="brewin2010intrusive brewin2014episodic">(<a href="#ref-brewin2010intrusive" role="doc-biblioref">Brewin et al. 2010</a>; <a href="#ref-brewin2014episodic" role="doc-biblioref">Brewin 2014</a>)</span>. A visuospatial interference task competes for the perceptual processing resources needed to consolidate the sensory trace, reducing later intrusions while leaving the contextual trace and the voluntary memory it supports relatively intact <span class="citation" data-cites="holmes2009can james2015computer">(<a href="#ref-holmes2009can" role="doc-biblioref">Holmes et al. 2009</a>; <a href="#ref-james2015computer" role="doc-biblioref">James et al. 2015</a>)</span>. When the intervention follows a reminder at longer delays, the account invokes reconsolidation: the reminder reactivates the sensory trace, and the interfering task disrupts its restabilization during a time-limited window <span class="citation" data-cites="kindt2009beyond james2015computer">(<a href="#ref-kindt2009beyond" role="doc-biblioref">Kindt, Soeter, and Vervliet 2009</a>; <a href="#ref-james2015computer" role="doc-biblioref">James et al. 2015</a>)</span>. The account thus ties selective interference to separate memory representations, modality-specific disruption of one trace, and a discrete reconsolidation window.</p>
+<p>Here we argue that selective interference need not be interpreted as evidence for differently vulnerable memory representations. It may instead reflect differences in retrieval processes operating over a shared set of episodic representations. Mechanisms supporting selective, goal-directed retrieval in voluntary recall may be sufficient to sidestep or overcome interference that nonetheless reduces the likelihood of unintentional recall. On this interpretation, the selective-interference effect reflects a capacity to intentionally focus retrieval on goal-relevant event information while reducing the influence of competing memories.</p>
+<p>We formalize and evaluate this proposal within a retrieved-context framework drawing on the emotional Context Maintenance and Retrieval model family, including eCMR and CMR3 <span class="citation" data-cites="talmi2019retrieved cohen2022memory">(<a href="#ref-talmi2019retrieved" role="doc-biblioref">Talmi, Lohnas, and Daw 2019</a>; <a href="#ref-cohen2022memory" role="doc-biblioref">Cohen and Kahana 2022</a>)</span>. Retrieved-context models explain recall by treating context as a gradually changing state that is updated by studied items, reinstated by recalled items, and used to cue later memory search <span class="citation" data-cites="howard2002distributed polyn2009context">(<a href="#ref-howard2002distributed" role="doc-biblioref">Howard and Kahana 2002</a>; <a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009</a>)</span>. Emotional extensions adds source-like emotional context and emotion-dependent binding strength, allowing the same architecture to capture how emotional content changes the organization and success of recall <span class="citation" data-cites="talmi2019retrieved">Cohen and Kahana (<a href="#ref-cohen2022memory" role="doc-biblioref">2022</a>)</span>. Variants also model strategic control over memory search, allowing the model to capture how retrieval goals and task demands to shape recall <span class="citation" data-cites="sederberg2008context cohen2022memory lohnas2015expanding">(<a href="#ref-sederberg2008context" role="doc-biblioref">Sederberg, Howard, and Kahana 2008</a>; <a href="#ref-cohen2022memory" role="doc-biblioref">Cohen and Kahana 2022</a>; <a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>)</span>. Together, these commitments make the framework a principled setting for testing whether selective interference can arise within a single emotional episodic-memory system.</p>
+<p>Consolidation and reconsolidation accounts locate selective interference in a change to the availability of the film representation after encoding or reminder reactivation. A context-binding account shifts the explanatory focus to the retrieval consequences of encoding later experiences in contexts that overlap with the original event <span class="citation" data-cites="yonelinas2019contextual">(<a href="#ref-yonelinas2019contextual" role="doc-biblioref">Yonelinas et al. 2019</a>)</span>. For selective interference, our model treats the original event, any reminder, and subsequent interference as episodes encoded by binding item representations to a continuously evolving context representation <span class="citation" data-cites="yonelinas2019contextual howard2002distributed polyn2009context">(<a href="#ref-yonelinas2019contextual" role="doc-biblioref">Yonelinas et al. 2019</a>; <a href="#ref-howard2002distributed" role="doc-biblioref">Howard and Kahana 2002</a>; <a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009</a>)</span>. Later retrieval is driven by the current context state as a cue, so competition depends on how strongly different episodes are associated with overlapping regions of context. Deliberate recall is more resistant because it combines a more target-oriented initial cue with a sharper decision rule, both of which favor film items over competitors. The dissociation between involuntary and voluntary recall is thus attributed to differences in retrieval state applied to the same stored episodes.</p>
+<!-- Still need roadmap of paper then a statement of the payoff.
+ -->
+</section>
+<section id="empirical-and-theoretical-target" class="level1">
+<h1>Empirical and Theoretical Target</h1>
+</section>
+<section id="a-retrieved-context-account-of-selective-interference" class="level1">
+<h1>A Retrieved-Context Account of Selective Interference</h1>
+</section>
+<section id="model-and-paradigm" class="level1">
+<h1>Model and Paradigm</h1>
+</section>
+<section id="simulation-overview" class="level1">
+<h1>Simulation Overview</h1>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="simulation-1-selective-interference-across-retrieval-configurations" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-1-selective-interference-across-retrieval-configurations">Simulation 1: Selective Interference Across Retrieval Configurations</h2>
+</section>
+<section id="simulation-2-competitor-encoding-in-reinstated-context" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-2-competitor-encoding-in-reinstated-context">Simulation 2: Competitor Encoding in Reinstated Context</h2>
+</section>
+<section id="simulation-3-contextual-overlap-versus-generic-task-load" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-3-contextual-overlap-versus-generic-task-load">Simulation 3: Contextual Overlap Versus Generic Task Load</h2>
+</section>
+<section id="simulation-4-test-format-heterogeneity" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-4-test-format-heterogeneity">Simulation 4: Test-Format Heterogeneity</h2>
+</section>
+<section id="robustness-and-diagnostic-checks" class="level2">
+<h2 class="anchored" data-anchor-id="robustness-and-diagnostic-checks">Robustness and Diagnostic Checks</h2>
+</section>
+</section>
+<section id="general-discussion" class="level1">
+<h1>General Discussion</h1>
+</section>
+<section id="references" class="level1 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-asselbergs2023systematic" class="csl-entry" role="listitem">
+Asselbergs, Joost, Jaël van Bentum, Heleen Riper, Pim Cuijpers, Emily A. Holmes, and Marit Sijbrandij. 2023. <span>“A Systematic Review and Meta-Analysis of the Effect of Cognitive Interventions to Prevent Intrusive Memories Using the Trauma Film Paradigm.”</span> <em>Journal of Psychiatric Research</em> 159: 116–29. <a href="https://doi.org/10.1016/j.jpsychires.2023.01.028">https://doi.org/10.1016/j.jpsychires.2023.01.028</a>.
+</div>
+<div id="ref-brewin2014episodic" class="csl-entry" role="listitem">
+Brewin, Chris R. 2014. <span>“Episodic Memory, Perceptual Memory, and Their Interaction: Foundations for a Theory of Posttraumatic Stress Disorder.”</span> <em>Psychological Bulletin</em> 140 (1): 69–97. <a href="https://doi.org/10.1037/a0033722">https://doi.org/10.1037/a0033722</a>.
+</div>
+<div id="ref-brewin1996dual" class="csl-entry" role="listitem">
+Brewin, Chris R., Tim Dalgleish, and Stephen Joseph. 1996. <span>“A Dual Representation Theory of Posttraumatic Stress Disorder.”</span> <em>Psychological Review</em> 103 (4): 670–86. <a href="https://doi.org/10.1037/0033-295X.103.4.670">https://doi.org/10.1037/0033-295X.103.4.670</a>.
+</div>
+<div id="ref-brewin2010intrusive" class="csl-entry" role="listitem">
+Brewin, Chris R., James D. Gregory, Michelle Lipton, and Neil Burgess. 2010. <span>“Intrusive Images in Psychological Disorders: Characteristics, Neural Mechanisms, and Treatment Implications.”</span> <em>Psychological Review</em> 117 (1): 210–32. <a href="https://doi.org/10.1037/a0018113">https://doi.org/10.1037/a0018113</a>.
+</div>
+<div id="ref-cohen2022memory" class="csl-entry" role="listitem">
+Cohen, Rivka T., and Michael J. Kahana. 2022. <span>“A Memory-Based Theory of Emotional Disorders.”</span> <em>Psychological Review</em> 129 (4): 742–76. <a href="https://doi.org/10.1037/rev0000334">https://doi.org/10.1037/rev0000334</a>.
+</div>
+<div id="ref-deeprose2012imagery" class="csl-entry" role="listitem">
+Deeprose, Catherine, Shuqi Zhang, Hannah DeJong, Tim Dalgleish, and Emily A. Holmes. 2012. <span>“Imagery in the Aftermath of Viewing a Traumatic Film: Using Cognitive Tasks to Modulate the Development of Involuntary Memory.”</span> <em>Journal of Behavior Therapy and Experimental Psychiatry</em> 43 (2): 758–64. <a href="https://doi.org/10.1016/j.jbtep.2011.10.008">https://doi.org/10.1016/j.jbtep.2011.10.008</a>.
+</div>
+<div id="ref-ehlers2000cognitive" class="csl-entry" role="listitem">
+Ehlers, Anke, and David M. Clark. 2000. <span>“A Cognitive Model of Posttraumatic Stress Disorder.”</span> <em>Behaviour Research and Therapy</em> 38 (4): 319–45. <a href="https://doi.org/10.1016/S0005-7967(99)00123-0">https://doi.org/10.1016/S0005-7967(99)00123-0</a>.
+</div>
+<div id="ref-holmes2008inducing" class="csl-entry" role="listitem">
+Holmes, Emily A., and Corin Bourne. 2008. <span>“Inducing and Modulating Intrusive Emotional Memories: A Review of the Trauma Film Paradigm.”</span> <em>Acta Psychologica</em> 127 (3): 553–66. <a href="https://doi.org/10.1016/j.actpsy.2007.11.002">https://doi.org/10.1016/j.actpsy.2007.11.002</a>.
+</div>
+<div id="ref-holmes2004trauma" class="csl-entry" role="listitem">
+Holmes, Emily A., Chris R. Brewin, and Richard G. Hennessy. 2004. <span>“Trauma Films, Information Processing, and Intrusive Memory Development.”</span> <em>Journal of Experimental Psychology: General</em> 133 (1): 3–22. <a href="https://doi.org/10.1037/0096-3445.133.1.3">https://doi.org/10.1037/0096-3445.133.1.3</a>.
+</div>
+<div id="ref-holmes2009can" class="csl-entry" role="listitem">
+Holmes, Emily A., Ella L. James, Thomas Coode-Bate, and Catherine Deeprose. 2009. <span>“Can Playing the Computer Game <span>Tetris</span> Reduce the Build-up of Flashbacks for Trauma? A Proposal from Cognitive Science.”</span> <em>PLoS ONE</em> 4 (1): e4153. <a href="https://doi.org/10.1371/journal.pone.0004153">https://doi.org/10.1371/journal.pone.0004153</a>.
+</div>
+<div id="ref-holmes2010key" class="csl-entry" role="listitem">
+Holmes, Emily A., Ella L. James, Emma J. Kilford, and Catherine Deeprose. 2010. <span>“Key Steps in Developing a Cognitive Vaccine Against Traumatic Flashbacks: Visuospatial <span>Tetris</span> Versus Verbal <span>Pub Quiz</span>.”</span> <em>PLoS ONE</em> 5 (11): e13706. <a href="https://doi.org/10.1371/journal.pone.0013706">https://doi.org/10.1371/journal.pone.0013706</a>.
+</div>
+<div id="ref-horsch2017reducing" class="csl-entry" role="listitem">
+Horsch, Antje, Yvan Vial, Céline Favrod, Mathilde Morisod Harari, Simon E. Blackwell, Peter Watson, Lalitha Iyadurai, Michael B. Bonsall, and Emily A. Holmes. 2017. <span>“Reducing Intrusive Traumatic Memories After Emergency Caesarean Section: A Proof-of-Principle Randomized Controlled Study.”</span> <em>Behaviour Research and Therapy</em> 94: 36–47. <a href="https://doi.org/10.1016/j.brat.2017.03.018">https://doi.org/10.1016/j.brat.2017.03.018</a>.
+</div>
+<div id="ref-howard2002distributed" class="csl-entry" role="listitem">
+Howard, Marc W., and Michael J. Kahana. 2002. <span>“A Distributed Representation of Temporal Context.”</span> <em>Journal of Mathematical Psychology</em> 46 (3): 269–99. <a href="https://doi.org/10.1006/jmps.2001.1388">https://doi.org/10.1006/jmps.2001.1388</a>.
+</div>
+<div id="ref-iyadurai2018preventing" class="csl-entry" role="listitem">
+Iyadurai, Lalitha, Simon E. Blackwell, Richard Meiser-Stedman, Peter C. Watson, Michael B. Bonsall, John R. Geddes, Anna C. Nobre, and Emily A. Holmes. 2018. <span>“Preventing Intrusive Memories After Trauma via a Brief Intervention Involving <span>Tetris</span> Computer Game Play in the Emergency Department: A Proof-of-Concept Randomized Controlled Trial.”</span> <em>Molecular Psychiatry</em> 23 (3): 674–82. <a href="https://doi.org/10.1038/mp.2017.23">https://doi.org/10.1038/mp.2017.23</a>.
+</div>
+<div id="ref-iyadurai2019intrusive" class="csl-entry" role="listitem">
+Iyadurai, Lalitha, Renée M. Visser, Alex Lau-Zhu, Kate Porcheret, Antje Horsch, Emily A. Holmes, and Ella L. James. 2019. <span>“Intrusive Memories of Trauma: A Target for Research Bridging Cognitive Science and Its Clinical Application.”</span> <em>Clinical Psychology Review</em> 69: 67–82. <a href="https://doi.org/10.1016/j.cpr.2018.08.005">https://doi.org/10.1016/j.cpr.2018.08.005</a>.
+</div>
+<div id="ref-james2015computer" class="csl-entry" role="listitem">
+James, Ella L., Michael B. Bonsall, Laura Hoppitt, Elizabeth M. Tunbridge, John R. Geddes, Amy L. Milton, and Emily A. Holmes. 2015. <span>“Computer Game Play Reduces Intrusive Memories of Experimental Trauma via Reconsolidation-Update Mechanisms.”</span> <em>Psychological Science</em> 26 (8): 1201–15. <a href="https://doi.org/10.1177/0956797615583071">https://doi.org/10.1177/0956797615583071</a>.
+</div>
+<div id="ref-james2016trauma" class="csl-entry" role="listitem">
+James, Ella L., Alex Lau-Zhu, Ian A. Clark, Renée M. Visser, Muriel A. Hagenaars, and Emily A. Holmes. 2016. <span>“The Trauma Film Paradigm as an Experimental Psychopathology Model of Psychological Trauma: Intrusive Memories and Beyond.”</span> <em>Clinical Psychology Review</em> 47: 106–42. <a href="https://doi.org/10.1016/j.cpr.2016.04.010">https://doi.org/10.1016/j.cpr.2016.04.010</a>.
+</div>
+<div id="ref-kanstrup2021single" class="csl-entry" role="listitem">
+Kanstrup, Marie, Evelina Kontio, Anahita Geranmayeh, Klara Olofsdotter Lauri, Michelle L. Moulds, and Emily A. Holmes. 2021. <span>“A Single Case Series Using Visuospatial Task Interference to Reduce the Number of Visual Intrusive Memories of Trauma with Refugees.”</span> <em>Clinical Psychology &amp; Psychotherapy</em> 28 (1): 109–23. <a href="https://doi.org/10.1002/cpp.2489">https://doi.org/10.1002/cpp.2489</a>.
+</div>
+<div id="ref-kessler2020visuospatial" class="csl-entry" role="listitem">
+Kessler, Henrik, Anna-Christine Schmidt, Ella L. James, Simon E. Blackwell, Marcel von Rauchhaupt, Katharina Harren, Aram Kehyayan, et al. 2020. <span>“Visuospatial Computer Game Play After Memory Reminder Delivered Three Days After a Traumatic Film Reduces the Number of Intrusive Memories of the Experimental Trauma.”</span> <em>Journal of Behavior Therapy and Experimental Psychiatry</em> 67: 101454. <a href="https://doi.org/10.1016/j.jbtep.2019.01.006">https://doi.org/10.1016/j.jbtep.2019.01.006</a>.
+</div>
+<div id="ref-kindt2009beyond" class="csl-entry" role="listitem">
+Kindt, Merel, Marieke Soeter, and Bram Vervliet. 2009. <span>“Beyond Extinction: Erasing Human Fear Responses and Preventing the Return of Fear.”</span> <em>Nature Neuroscience</em> 12 (3): 256–58. <a href="https://doi.org/10.1038/nn.2271">https://doi.org/10.1038/nn.2271</a>.
+</div>
+<div id="ref-krans2009intrusive" class="csl-entry" role="listitem">
+Krans, Julie, Gérard Näring, Eni S. Becker, and Emily A. Holmes. 2009. <span>“Intrusive Trauma Memory: A Review and Functional Analysis.”</span> <em>Applied Cognitive Psychology</em> 23 (8): 1076–88. <a href="https://doi.org/10.1002/acp.1611">https://doi.org/10.1002/acp.1611</a>.
+</div>
+<div id="ref-lau2019intrusive" class="csl-entry" role="listitem">
+Lau-Zhu, Alex, Richard N. Henson, and Emily A. Holmes. 2019. <span>“Intrusive Memories and Voluntary Memory of a Trauma Film: Differential Effects of a Cognitive Interference Task After Encoding.”</span> <em>Journal of Experimental Psychology: General</em> 148 (12): 2154–80. <a href="https://doi.org/10.1037/xge0000598">https://doi.org/10.1037/xge0000598</a>.
+</div>
+<div id="ref-lohnas2015expanding" class="csl-entry" role="listitem">
+Lohnas, Lynn J., Sean M. Polyn, and Michael J. Kahana. 2015. <span>“Expanding the Scope of Memory Search: Modeling Intralist and Interlist Effects in Free Recall.”</span> <em>Psychological Review</em> 122 (2): 337–63. <a href="https://doi.org/10.1037/a0039036">https://doi.org/10.1037/a0039036</a>.
+</div>
+<div id="ref-polyn2009context" class="csl-entry" role="listitem">
+Polyn, Sean M., Kenneth A. Norman, and Michael J. Kahana. 2009. <span>“A Context Maintenance and Retrieval Model of Organizational Processes in Free Recall.”</span> <em>Psychological Review</em> 116 (1): 129–56. <a href="https://doi.org/10.1037/a0014420">https://doi.org/10.1037/a0014420</a>.
+</div>
+<div id="ref-sederberg2008context" class="csl-entry" role="listitem">
+Sederberg, Per B., Marc W. Howard, and Michael J. Kahana. 2008. <span>“A Context-Based Theory of Recency and Contiguity in Free Recall.”</span> <em>Psychological Review</em> 115 (4): 893–912. <a href="https://doi.org/10.1037/a0013396">https://doi.org/10.1037/a0013396</a>.
+</div>
+<div id="ref-talmi2019retrieved" class="csl-entry" role="listitem">
+Talmi, Deborah, Lynn J. Lohnas, and Nathaniel D. Daw. 2019. <span>“A Retrieved Context Model of the Emotional Modulation of Memory.”</span> <em>Psychological Review</em> 126 (4): 455–85. <a href="https://doi.org/10.1037/rev0000132">https://doi.org/10.1037/rev0000132</a>.
+</div>
+<div id="ref-varma2024experimental" class="csl-entry" role="listitem">
+Varma, Mohith M., Shengzi Zeng, Laura Singh, Emily A. Holmes, Jingyun Huang, Man Hey Chiu, and Xiaoqing Hu. 2024. <span>“A Systematic Review and Meta-Analysis of Experimental Methods for Modulating Intrusive Memories Following Lab-Analogue Trauma Exposure in Non-Clinical Populations.”</span> <em>Nature Human Behaviour</em> 8 (10): 1968–87. <a href="https://doi.org/10.1038/s41562-024-01956-y">https://doi.org/10.1038/s41562-024-01956-y</a>.
+</div>
+<div id="ref-wessel2025evidence" class="csl-entry" role="listitem">
+Wessel, Ineke, Julie Krans, Casper J. Albers, Nidhi Chauhan, Diana S. Ferreira de Sá, Alexander Hauck, Lars Jaswetz, et al. 2025. <span>“Evidence That <span>Tetris</span> Reduces Immediate but Not Subsequent Daily Intrusions of a Trauma Film: A Multilab Replication Study.”</span> <em>Collabra: Psychology</em> 11 (1): 130791. <a href="https://doi.org/10.1525/collabra.130791">https://doi.org/10.1525/collabra.130791</a>.
+</div>
+<div id="ref-yonelinas2019contextual" class="csl-entry" role="listitem">
+Yonelinas, Andrew P., Charan Ranganath, Arne D. Ekstrom, and Brian J. Wiltgen. 2019. <span>“A Contextual Binding Theory of Episodic Memory: Systems Consolidation Reconsidered.”</span> <em>Nature Reviews Neuroscience</em> 20 (6): 364–75. <a href="https://doi.org/10.1038/s41583-019-0150-4">https://doi.org/10.1038/s41583-019-0150-4</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -4,126 +4,69 @@ I am drafting the Introduction for a theoretical/computational paper for *Psycho
 Your task is to produce a revised `# Introduction` only.
 Do not write the abstract, model section, results, or discussion.
 Use one sentence per line.
+This prompt is intended for a web LLM with no access to my local workspace.
+All context available for the task is included below.
 
-The target manuscript file is `selective_interference_v2/index.qmd`.
-The current `# Introduction` is empty except for headings that follow it.
-The introduction should end before the next heading, `# Empirical and Theoretical Target`.
+In the manuscript, the current `# Introduction` is empty except for headings that follow it.
+The introduction must stop before the next manuscript section, which will handle the empirical and theoretical target in more detail.
 
 ## Current Abstract
 
 Visuospatial tasks performed after trauma-film encoding, or after a later reminder of the film, can reduce intrusive memories while leaving voluntary memory relatively intact.
-This selective-interference pattern is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations.
-Here we implement an alternative retrieved-context account in an emotional Context Maintenance and Retrieval model (eCMR), where the dissociation can arise from context reinstatement and retrieval competition rather than from separately vulnerable representations.
-In the model, film context remains active after encoding and can later be reinstated by reminders, so interference performed in either state binds task items to overlapping context.
-When later contexts cue both film items and task competitors, uncontrolled context-to-item sampling is less likely to select trauma-film items as intrusions, even though film-item strength is not reduced.
-Deliberate recall is less vulnerable when task goals and control processes reinstate film context and favor film items over competitors; item-specific probes can provide a further route to protected voluntary access.
-Simulations show that this modeled sequence can selectively impair intrusion-like retrieval, and that the pattern depends on contextual overlap between film and task items and on reminder-driven reinstatement before competitor encoding.
+This selective interference effect is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations.
+Here we simulate an alternative retrieved-context account using an emotional Context Maintenance and Retrieval (eCMR) model, asking whether context reinstatement, competitor learning, and retrieval control can generate the selective-interference pattern without separately vulnerable representations.
+In the model, film context remains active after encoding and can later be reinstated by reminders, so an interfering task performed in either state binds task representations to overlapping context.
+When later retrieval contexts cue both film representations and task competitors, uncontrolled retrieval from context cues is less likely to sample trauma-film items in intrusion-like retrieval, even though film-item strength is not reduced.
+Deliberate recall is less vulnerable when task goals and control processes reinstate film context and prioritize film items over competitors for retrieval; film-specific cues can also steer retrieval toward film context across test formats.
+Together, the simulations reproduce selective impairment of intrusion-like retrieval and specify when the intrusion-voluntary-memory dissociation should be more or less pronounced, helping to interpret heterogeneity across empirical paradigms.
 Selective interference is therefore compatible with a single retrieved-context system and is not by itself diagnostic of separate representational systems or selective trace weakening.
 
-## Manuscript Heading Context
+## Manuscript Placement
 
-The revised Introduction should precede these sections:
+Write only the prose that belongs under the manuscript heading `# Introduction`.
+Do not include any later manuscript headings in your response.
+The planned downstream manuscript structure is:
 
-```markdown
-# Empirical and Theoretical Target
+- `# Empirical and Theoretical Target`
+- `# A Retrieved-Context Account of Selective Interference`
+- `# Model and Paradigm`
+- `# Simulation Overview`
+- `# Results`
+- `## Simulation 1: Selective Interference Across Retrieval Configurations`
+- `## Simulation 2: Competitor Encoding in Reinstated Context`
+- `## Simulation 3: Contextual Overlap Versus Generic Task Load`
+- `## Simulation 4: Test-Format Heterogeneity`
+- `## Robustness and Diagnostic Checks`
+- `# General Discussion`
 
-# A Retrieved-Context Account of Selective Interference
+Use this section map only as structural context for deciding what the Introduction needs to orient, what it can signpost, and what it should leave for later sections.
+Do not reproduce these headings or write those later sections.
+Do not exhaustively review the empirical literature or fully specify the model.
 
-# Model and Paradigm
+## Context and Binding Constraints
 
-# Simulation Overview
+The current abstract is binding for the manuscript's current claims, terms, and emphasis.
+The prior introduction drafts and browser-thread notes below are included as context, not as templates or a language bank.
+You may write the Introduction from scratch.
+You are not limited to reusing, combining, or revising the existing prose.
+You may use, ignore, or depart from the prior drafts.
+Do not preserve text solely because it appears in a prior draft.
+Where the contextual materials conflict with the current abstract, follow the current abstract.
+Do not introduce claims that conflict with the current abstract or the hard constraints below.
 
-# Results
-
-## Simulation 1: Selective Interference Across Retrieval Configurations
-
-## Simulation 2: Competitor Encoding in Reinstated Context
-
-## Simulation 3: Contextual Overlap Versus Generic Task Load
-
-## Simulation 4: Test-Format Heterogeneity
-
-## Robustness and Diagnostic Checks
-```
-
-Because the next section is `# Empirical and Theoretical Target`, the Introduction should not exhaustively review the empirical literature.
-Because the section after that is `# A Retrieved-Context Account of Selective Interference`, the Introduction should not fully specify the model.
-The Introduction should orient the reader, state the problem, and motivate why a formal retrieved-context account is worth developing.
-
-## Source Hierarchy
-
-Use the old introduction as the primary prose source.
-It has the best paragraph architecture and style.
-
-Use the browser-draft material as a secondary source.
-It adds useful newer framing about diagnosticity, heterogeneity, retrieval/test configurations, and generalization-oriented modeling.
-
-Use the current abstract as binding.
-Do not reintroduce claims that the abstract has moved away from.
-
-Use `workspace/downloads/references.bib` as the citation-key source.
+Use only the citation keys and reference metadata embedded below.
 Do not invent citation keys unless clearly marked as placeholders.
 
-## Scope Constraints
-
-Keep the Introduction narrow.
-Include only enough literature to motivate:
-
-1. the trauma-film / selective-interference phenomenon;
-2. the common inference from selective interference to differently vulnerable intrusive and voluntary memory representations;
-3. the need for a formal alternative account;
-4. the retrieved-context proposal at a high level.
-
-Do not write:
-
-- a broad PTSD review;
-- a clinical treatment review;
-- a reconsolidation review;
-- a full trauma-film literature review;
-- a complete theory of voluntary versus involuntary remembering;
-- a taxonomy of intrusive-memory phenomenology;
-- a detailed model specification.
-
-Clinical and real-world intervention studies may be mentioned only to motivate why the phenomenon matters.
-The simulations target the controlled logic of selective-interference paradigms, not clinical efficacy.
-
-Avoid these framings:
-
-- claiming dual-representation or reconsolidation accounts are false;
-- making "Tetris works because it is Tetris" the mechanism;
-- claiming the model weakens, erases, or damages film items;
-- making recognition immunity the headline;
-- treating all voluntary-memory measures as one computational category;
-- making emotional/source context the whole paper unless needed.
-
-## Desired Introduction Shape
-
-Aim for roughly 4-6 compact paragraphs.
-Preserve the old introduction's useful arc, but update it to match the current abstract:
-
-1. Open with the memory problem: durable encoding versus selective access.
-2. Introduce the trauma-film paradigm and the intrusion/voluntary-memory dissociation.
-3. Introduce selective interference after film encoding or later reminder.
-4. Explain the common architecture-level interpretation without over-reviewing dual-representation or reconsolidation accounts.
-5. Introduce the alternative retrieved-context account and why formal simulation is useful.
-6. Preview the simulation package at a high level: reminder-driven context reinstatement, competitor encoding in overlapping context, selective intrusion-like impairment, deliberate-recall protection, and test-format/design implications.
-
-The introduction should make diagnosticity visible, but the positive formal account should be primary.
-Do not make "we ask whether that inference is required" the central research question.
-Use "alternative account" or similar wording instead.
-
-## Style Constraints
+## Hard Style Constraints
 
 Use one sentence per line.
-Keep the style compact, theoretical, and concrete.
-Avoid excessive signposting.
-Avoid making the prose sound like a planning document.
+Write manuscript prose, not planning prose.
 Do not add subheadings inside the Introduction.
-Prefer citation keys already listed below.
+Use citation keys from the embedded list when citing.
 Use straight quotes and ASCII punctuation.
 Avoid em dashes.
 
-## Primary Prose Source: Old Introduction
+## Context Excerpt A: Older Local Introduction Draft
 
 ```markdown
 # Introduction
@@ -163,9 +106,7 @@ On this view, post-reminder interference works by encoding strong competitors in
 The result is a mechanistic alternative to the dual-representation account and a set of specific hypotheses about when selective interference should appear and how it should vary across paradigms.
 ```
 
-## Secondary Source: Browser-Draft Introduction
-
-Use this mainly for updated framing, not as the primary prose style.
+## Context Excerpt B: Browser-Draft Introduction
 
 ```markdown
 Intrusive memories are involuntary returns of a prior event, often experienced as vivid sensory fragments that enter awareness without deliberate retrieval.
@@ -215,80 +156,67 @@ We use the same spirit here: the simulations ask whether a retrieved-context acc
 Specifically, we test whether the model produces stronger impairment under unguided retrieval than directed recall, whether contextual overlap distinguishes genuine competition from generic task load, whether recognition-like access differs from recall-like access, and whether delayed reminder effects follow from reinstatement before competitor encoding.
 ```
 
-## Additional Browser-Thread Guidance To Consider
+## Citation Reference Notes
 
-The browser thread later became more detailed than an Introduction probably needs.
-Use these points as constraints or background, not necessarily as prose to include:
-
-- The manuscript targets a family of selective-interference findings rather than one canonical effect.
-- The evidence base is strong enough to motivate modeling but heterogeneous enough that the paper should avoid broad clinical-efficacy claims.
-- Contextual overlap and delayed reminder effects are core to the modeling proposal, not optional add-ons.
-- A reminder matters because it reinstates film-associated context before interference is encoded.
-- Task class should not be reduced to a simple visuospatial-versus-verbal rule.
-- Test formats differ: diary intrusions, vigilance-intrusion tasks, free recall, cued recall, recognition, and source/associative tests should not be collapsed into one generic voluntary-memory category.
-- The paper abstracts intrusion occurrence to film-item access under retrieval configurations intended to approximate uncontrolled retrieval opportunities.
-- The model does not explain distress, vividness, appraisals, avoidance, symptom change, or clinical treatment efficacy.
-
-## Citation-Key Inventory
-
-These keys are available in `workspace/downloads/references.bib`.
+These are the available citation keys and reference metadata.
 Use only keys relevant to the Introduction.
+Do not assume access to an external `.bib` file.
 
 Core selective-interference / trauma-film keys:
 
-- `holmes2004trauma`
-- `holmes2008inducing`
-- `holmes2009can`
-- `holmes2010key`
-- `deeprose2012imagery`
-- `james2015computer`
-- `james2016trauma`
-- `kessler2020visuospatial`
-- `lau2019intrusive`
-- `lau2021selectively`
-- `asselbergs2023systematic`
-- `varma2024experimental`
-- `wessel2025evidence`
-- `hagenaars2017tetris`
+- `holmes2004trauma`: Holmes, Brewin, & Hennessy (2004), "Trauma films, information processing, and intrusive memory development," *Journal of Experimental Psychology: General*.
+- `holmes2008inducing`: Holmes & Bourne (2008), "Inducing and modulating intrusive emotional memories: A review of the trauma film paradigm," *Acta Psychologica*.
+- `holmes2009can`: Holmes, James, Coode-Bate, & Deeprose (2009), "Can playing the computer game 'Tetris' reduce the build-up of flashbacks for trauma? A proposal from cognitive science," *PLoS ONE*.
+- `holmes2010key`: Holmes, James, Kilford, & Deeprose (2010), "Key steps in developing a cognitive vaccine against traumatic flashbacks: Visuospatial Tetris versus verbal Pub Quiz," *PLoS ONE*.
+- `deeprose2012imagery`: Deeprose, Zhang, DeJong, Dalgleish, & Holmes (2012), "Imagery in the aftermath of viewing a traumatic film: Using cognitive tasks to modulate the development of involuntary memory," *Journal of Behavior Therapy and Experimental Psychiatry*.
+- `james2015computer`: James et al. (2015), "Computer game play reduces intrusive memories of experimental trauma via reconsolidation-update mechanisms," *Psychological Science*.
+- `james2016trauma`: James et al. (2016), "The trauma film paradigm as an experimental psychopathology model of psychological trauma: Intrusive memories and beyond," *Clinical Psychology Review*.
+- `kessler2020visuospatial`: Kessler et al. (2020), "Visuospatial computer game play after memory reminder delivered three days after a traumatic film reduces the number of intrusive memories of the experimental trauma," *Journal of Behavior Therapy and Experimental Psychiatry*.
+- `lau2019intrusive`: Lau-Zhu, Henson, & Holmes (2019), "Intrusive memories and voluntary memory of a trauma film: Differential effects of a cognitive interference task after encoding," *Journal of Experimental Psychology: General*.
+- `lau2021selectively`: Lau-Zhu, Henson, & Holmes (2021), "Selectively interfering with intrusive but not voluntary memories of a trauma film: Accounting for the role of associative memory," *Clinical Psychological Science*.
+- `asselbergs2023systematic`: Asselbergs et al. (2023), "A systematic review and meta-analysis of the effect of cognitive interventions to prevent intrusive memories using the trauma film paradigm," *Journal of Psychiatric Research*.
+- `varma2024experimental`: Varma et al. (2024), "A systematic review and meta-analysis of experimental methods for modulating intrusive memories following lab-analogue trauma exposure in non-clinical populations," *Nature Human Behaviour*.
+- `wessel2025evidence`: Wessel et al. (2025), "Evidence that Tetris reduces immediate but not subsequent daily intrusions of a trauma film: A multilab replication study," *Collabra: Psychology*.
+- `hagenaars2017tetris`: Hagenaars, Holmes, Klaassen, & Elzinga (2017), "Tetris and word games lead to fewer intrusive memories when applied several days after analogue trauma," *European Journal of Psychotraumatology*.
 
-Clinical/relevance keys to use sparingly:
+Clinical/context keys:
 
-- `iyadurai2018preventing`
-- `horsch2017reducing`
-- `kanstrup2021single`
-- `iyadurai2019intrusive`
-- `ehlers2000cognitive`
-- `krans2009intrusive`
+- `iyadurai2018preventing`: Iyadurai et al. (2018), "Preventing intrusive memories after trauma via a brief intervention involving Tetris computer game play in the emergency department," *Molecular Psychiatry*.
+- `horsch2017reducing`: Horsch et al. (2017), "Reducing intrusive traumatic memories after emergency caesarean section," *Behaviour Research and Therapy*.
+- `kanstrup2021single`: Kanstrup et al. (2021), "A single case series using visuospatial task interference to reduce the number of visual intrusive memories of trauma with refugees," *Clinical Psychology & Psychotherapy*.
+- `iyadurai2019intrusive`: Iyadurai et al. (2019), "Intrusive memories of trauma: A target for research bridging cognitive science and its clinical application," *Clinical Psychology Review*.
+- `ehlers2000cognitive`: Ehlers & Clark (2000), "A cognitive model of posttraumatic stress disorder," *Behaviour Research and Therapy*.
+- `krans2009intrusive`: Krans, Naring, Becker, & Holmes (2009), "Intrusive trauma memories: A review and functional analysis," *Applied Cognitive Psychology*.
 
 Interpretation/theory keys:
 
-- `brewin1996dual`
-- `brewin2010intrusive`
-- `brewin2014episodic`
-- `brewin2014contextualisation`
-- `kindt2009beyond`
-- `baddeley2000working`
-- `bourne2010distraction`
+- `brewin1996dual`: Brewin, Dalgleish, & Joseph (1996), "A dual representation theory of posttraumatic stress disorder," *Psychological Review*.
+- `brewin2010intrusive`: Brewin, Gregory, Lipton, & Burgess (2010), "Intrusive images in psychological disorders: Characteristics, neural mechanisms, and treatment implications," *Psychological Review*.
+- `brewin2014episodic`: Brewin (2014), "Episodic memory, perceptual memory, and their interaction: Foundations for a theory of posttraumatic stress disorder," *Psychological Bulletin*.
+- `brewin2014contextualisation`: Brewin & Burgess (2014), "Contextualisation in the revised dual representation theory of PTSD: A response to Pearson and colleagues," *Journal of Behavior Therapy and Experimental Psychiatry*.
+- `kindt2009beyond`: Kindt, Soeter, & Vervliet (2009), "Beyond extinction: Erasing human fear responses and preventing the return of fear," *Nature Neuroscience*.
+- `baddeley2000working`: Baddeley & Andrade (2000), "Working memory and the vividness of imagery," *Journal of Experimental Psychology: General*.
+- `bourne2010distraction`: Bourne, Frasquilho, Roth, & Holmes (2010), "Is it mere distraction? Peri-traumatic verbal tasks can increase analogue flashbacks but reduce voluntary memory performance," *Journal of Behavior Therapy and Experimental Psychiatry*.
 
 Retrieved-context / modeling keys:
 
-- `howard2002distributed`
-- `polyn2009context`
-- `polyn2009task`
-- `sederberg2008context`
-- `kahana1996associative`
-- `mensink1989model`
-- `yonelinas2019contextual`
-- `talmi2019retrieved`
-- `cohen2022memory`
-- `healey2014memory`
-- `lohnas2023event`
-- `busemeyer2000model`
+- `howard2002distributed`: Howard & Kahana (2002), "A distributed representation of temporal context," *Journal of Mathematical Psychology*.
+- `polyn2009context`: Polyn, Norman, & Kahana (2009), "A context maintenance and retrieval model of organizational processes in free recall," *Psychological Review*.
+- `polyn2009task`: Polyn, Norman, & Kahana (2009), "Task context and organization in free recall," *Neuropsychologia*.
+- `sederberg2008context`: Sederberg, Howard, & Kahana (2008), "A context-based theory of recency and contiguity in free recall," *Psychological Review*.
+- `kahana1996associative`: Kahana (1996), "Associative retrieval processes in free recall," *Memory & Cognition*.
+- `mensink1989model`: Mensink & Raaijmakers (1989), "A model for contextual fluctuation," *Journal of Mathematical Psychology*.
+- `yonelinas2019contextual`: Yonelinas, Ranganath, Ekstrom, & Wiltgen (2019), "A contextual binding theory of episodic memory: Systems consolidation reconsidered," *Nature Reviews Neuroscience*.
+- `talmi2019retrieved`: Talmi, Lohnas, & Daw (2019), "A retrieved context model of the emotional modulation of memory," *Psychological Review*.
+- `cohen2022memory`: Cohen & Kahana (2022), "A memory-based theory of emotional disorders," *Psychological Review*.
+- `healey2014memory`: Healey & Kahana (2014), "Is memory search governed by universal principles or idiosyncratic strategies?", *Journal of Experimental Psychology: General*.
+- `lohnas2023event`: Lohnas, Healey, & Davachi (2023), "Neural temporal context reinstatement of event structure during memory recall," *Journal of Experimental Psychology: General*.
+- `busemeyer2000model`: Busemeyer & Wang (2000), "Model comparisons and model selections based on generalization criterion methodology," *Journal of Mathematical Psychology*.
 
 General dissociation/modeling analogy keys:
 
-- `benjamin2010representational`
-- `polyn2025capacity`
+- `benjamin2010representational`: Benjamin (2010), "Representational explanations of 'process' dissociations in recognition: The DRYAD theory of aging and memory judgments," *Psychological Review*.
+- `polyn2025capacity`: Polyn & Woodman (2025), "Capacity not required: A long-term memory model that exhibits key signatures of working memory," *Psychological Review*.
 
 ## Output Requested
 

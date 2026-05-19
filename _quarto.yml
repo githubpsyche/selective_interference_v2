@@ -28,4 +28,4 @@ format:
     nocorrespondence: true
     donotrepeattitle: true
 
-format-links: [apaquarto-pdf]
+format-links: [apaquarto-pdf, apaquarto-docx]

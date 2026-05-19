@@ -24,15 +24,62 @@ bibliography: references.bib
 # Abstract
 
 Visuospatial tasks performed after trauma-film encoding, or after a later reminder of the film, can reduce intrusive memories while leaving voluntary memory relatively intact.
-This selective-interference pattern is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations.
-Here we implement an alternative retrieved-context account in an emotional Context Maintenance and Retrieval model (eCMR), where the dissociation can arise from context reinstatement and retrieval competition rather than from separately vulnerable representations.
+This selective interference effect is often treated as evidence that intrusive and voluntary remembering depend on differently vulnerable memory representations.
+Here we simulate an alternative retrieved-context account using an emotional Context Maintenance and Retrieval (eCMR) model, asking whether context reinstatement, competitor learning, and retrieval control can generate the selective-interference pattern without separately vulnerable representations.
 In the model, film context remains active after encoding and can later be reinstated by reminders, so an interfering task performed in either state binds task representations to overlapping context.
 When later retrieval contexts cue both film representations and task competitors, uncontrolled retrieval from context cues is less likely to sample trauma-film items in intrusion-like retrieval, even though film-item strength is not reduced.
-Deliberate recall is less vulnerable when task goals and control processes reinstate film context and favor film items over competitors; film-specific cues can also steer retrieval toward film context across test formats.
-Simulations show that this modeled sequence can impair intrusion-like retrieval more than deliberate recall, and that the pattern depends on contextual overlap between film and task representations and on reminder-driven reinstatement before competitor encoding.
+Deliberate recall is less vulnerable when task goals and control processes reinstate film context and prioritize film items over competitors for retrieval; film-specific cues can also steer retrieval toward film context across test formats.
+Together, the simulations reproduce selective impairment of intrusion-like retrieval and specify when the intrusion-voluntary-memory dissociation should be more or less pronounced, helping to interpret heterogeneity across empirical paradigms.
 Selective interference is therefore compatible with a single retrieved-context system and is not by itself diagnostic of separate representational systems or selective trace weakening.
 
 # Introduction
+
+Traumatic experience foregrounds a tension between durability and selectivity in episodic memory.
+Highly consequential events should be retained well enough in memory that critical details remain accessible long into the future.
+At the same time, adaptive retrieval is selective: what comes to mind should normally depend on current cues, goals, and safety.
+Intrusive memories after trauma suggest that durable encoding can outpace regulatory control.
+The event returns without being deliberately sought and without being well matched to the demands of the present [@ehlers2000cognitive; @brewin2010intrusive; @krans2009intrusive; @iyadurai2019intrusive].
+Understanding why such memories arise, and how they differ from voluntary memory for the same event, is therefore a shared target for both clinical science and basic memory theory.
+
+The trauma-film paradigm provides a controlled setting for comparing intrusive and voluntary memory for the same event [@holmes2008inducing; @james2016trauma].
+Participants view distressing film material, record later intrusive memories of the film, and often complete voluntary-memory tests for the same material.
+This design makes it possible to ask whether the same encoded event can remain available to deliberate retrieval while becoming more or less likely to return involuntarily.
+In such research, voluntary memory can be relatively preserved, and its relationship to intrusion frequency can be weak, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
+The same encoded episode can therefore support both uncontrolled and controlled access, and these modes can come apart empirically [@holmes2004trauma; @iyadurai2019intrusive].
+
+Visuospatial interference tasks make this dissociation experimentally sharper.
+When brief tasks such as Tetris are performed after film encoding or after a later film reminder, subsequent intrusions can be reduced while voluntary memory for the same material shows little measurable impairment [@holmes2009can; @holmes2010key; @deeprose2012imagery; @james2015computer; @kessler2020visuospatial; @lau2019intrusive; @asselbergs2023systematic].
+Even for memories of real-life traumatic events, including motor vehicle accidents, emergency caesarean section, and war-related trauma, the same post-reminder intervention can reduce intrusions while leaving deliberate recall relatively intact [@iyadurai2018preventing; @horsch2017reducing; @kanstrup2021single].
+At the same time, the evidence base is heterogeneous, and recent reviews and replications caution against treating the effect as settled or uniform [@asselbergs2023systematic; @varma2024experimental; @wessel2025evidence].
+This selective interference effect therefore raises a theoretical question: 
+when and why can a post-encoding or post-reminder manipulation alter one mode of retrieval more than another, even while both draw on the same recent experience?
+
+One prominent interpretation treats the selective interference effect as evidence for separable memory representations [@brewin1996dual; @brewin2014episodic].
+Under this dual-representation account, traumatic experience produces distinct sensory and contextual memory traces — the first supporting involuntary re-experiencing, the second supporting deliberate recall [@brewin2010intrusive; @brewin2014episodic].
+A visuospatial interference task competes for the perceptual processing resources needed to consolidate the sensory trace, reducing later intrusions while leaving the contextual trace and the voluntary memory it supports relatively intact [@holmes2009can; @james2015computer].
+When the intervention follows a reminder at longer delays, the account invokes reconsolidation: the reminder reactivates the sensory trace, and the interfering task disrupts its restabilization during a time-limited window [@kindt2009beyond; @james2015computer].
+The account thus ties selective interference to separate memory representations, modality-specific disruption of one trace, and a discrete reconsolidation window.
+
+Here we argue that selective interference need not be interpreted as evidence for differently vulnerable memory representations.
+It may instead reflect differences in retrieval processes operating over a shared set of episodic representations.
+Mechanisms supporting selective, goal-directed retrieval in voluntary recall may be sufficient to sidestep or overcome interference that nonetheless reduces the likelihood of unintentional recall.
+On this interpretation, the selective-interference effect reflects a capacity to intentionally focus retrieval on goal-relevant event information while reducing the influence of competing memories.
+
+We formalize and evaluate this proposal within a retrieved-context framework drawing on the emotional Context Maintenance and Retrieval model family, including eCMR and CMR3 [@talmi2019retrieved; @cohen2022memory].
+Retrieved-context models explain recall by treating context as a gradually changing state that is updated by studied items, reinstated by recalled items, and used to cue later memory search [@howard2002distributed; @polyn2009context].
+Emotional extensions adds source-like emotional context and emotion-dependent binding strength, allowing the same architecture to capture how emotional content changes the organization and success of recall [@talmi2019retrieved, @cohen2022memory].
+Variants also model strategic control over memory search, allowing the model to capture how retrieval goals and task demands to shape recall [@sederberg2008context;@cohen2022memory; @lohnas2015expanding].
+Together, these commitments make the framework a principled setting for testing whether selective interference can arise within a single emotional episodic-memory system.
+
+Consolidation and reconsolidation accounts locate selective interference in a change to the availability of the film representation after encoding or reminder reactivation.
+A context-binding account shifts the explanatory focus to the retrieval consequences of encoding later experiences in contexts that overlap with the original event [@yonelinas2019contextual].
+For selective interference, our model treats the original event, any reminder, and subsequent interference as episodes encoded by binding item representations to a continuously evolving context representation [@yonelinas2019contextual; @howard2002distributed; @polyn2009context].
+Later retrieval is driven by the current context state as a cue, so competition depends on how strongly different episodes are associated with overlapping regions of context.
+Deliberate recall is more resistant because it combines a more target-oriented initial cue with a sharper decision rule, both of which favor film items over competitors.
+The dissociation between involuntary and voluntary recall is thus attributed to differences in retrieval state applied to the same stored episodes.
+
+<!-- Still need roadmap of paper then a statement of the payoff.
+ -->
 
 # Empirical and Theoretical Target
 
