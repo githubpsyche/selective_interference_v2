@@ -406,19 +406,20 @@ We formalize and evaluate this proposal within a retrieved-context
 framework drawing on the emotional Context Maintenance and Retrieval
 model family, including eCMR and CMR3
 (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
-\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}).Retrieved-context
-models explain recall by treating context as a gradually changing state
-that is updated by studied items, reinstated by recalled items, and used
-to cue later memory search (\citeproc{ref-howard2002distributed}{Howard
-\& Kahana, 2002}; \citeproc{ref-polyn2009context}{Polyn et al., 2009}).
-Emotional extensions add a source-context stream for emotional and
-neutral states and an emotion-dependent binding strength, allowing the
-same architecture to capture how emotional content changes the
-organization and success of recall (\citeproc{ref-cohen2022memory}{Cohen
-\& Kahana, 2022}; \citeproc{ref-talmi2019retrieved}{Talmi et al.,
-2019}). Variants also model strategic control over memory search,
-allowing the model to capture how retrieval goals and task demands shape
-recall (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
+\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}).
+Retrieved-context models explain recall by treating context as a
+gradually changing state that is updated by studied items, reinstated by
+recalled items, and used to cue later memory search
+(\citeproc{ref-howard2002distributed}{Howard \& Kahana, 2002};
+\citeproc{ref-polyn2009context}{Polyn et al., 2009}). Emotional
+extensions add a source-context stream for emotional and neutral states
+and an emotion-dependent binding strength, allowing the same
+architecture to capture how emotional content changes the organization
+and success of recall (\citeproc{ref-cohen2022memory}{Cohen \& Kahana,
+2022}; \citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). Variants
+also model strategic control over memory search, allowing the model to
+capture how retrieval goals and task demands shape recall
+(\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
 \citeproc{ref-lohnas2015expanding}{Lohnas et al., 2015};
 \citeproc{ref-sederberg2008context}{Sederberg et al., 2008}). Together,
 these commitments make the framework a principled setting for testing
@@ -1121,28 +1122,46 @@ Robustness and diagnostic checks \\
 
 \end{table}
 
-The paradigm geometry mirrors the trauma-film experiments simulated in
-later sections. Each simulated trial presents \(N_\text{film} = 16\)
-film items, \(N_\text{break} = 16\) break items, a reminder phase (one
-film clip re-presented without new learning), \(N_\text{int} = 16\)
-interference items, and \(N_\text{fill} = 16\) filler items, for a total
-list length of \(N = 64\). Recall allows up to 48 retrieval attempts per
-trial. Simulations average over 100 replications per subject using the
-126 per-subject parameter sets from the Healey and Kahana
-(\citeproc{ref-healey2014memory}{2014}) fits.
-
-The primary dependent measure is film-item recall under context-to-item
-retrieval. Because retrieval proceeds as a sequence of competitive
-samples terminated by a growing stop probability, the expected number of
-film items recalled depends on how much retrieval probability
-competitors capture at each step. Recognition is operationalized as the
-probability of retrieving the correct item given its context, using the
-model's item-to-context pathway. These dependent measures map directly
-onto the intrusion diaries and recognition tests used in trauma-film
-studies. They provide a bridge between the model's formal predictions
-and the empirical phenomena the simulations target.
+The paradigm geometry mirrors trauma-film selective-interference designs
+at an abstract level. Each simulated trial includes film, optional
+break, reminder, interference, and filler phases, with phase lengths and
+phase-specific scaling set by the simulation factors in
+Table~\ref{tbl-scale-factors}. The main simulation outputs track which
+phase each recalled item came from, how often film items are recalled,
+and how those quantities change across interference and
+retrieval-control manipulations. Because retrieval proceeds as a
+sequence of competitive samples terminated by a growing stop
+probability, the expected number of film items recalled depends on how
+much retrieval probability competitors capture at each step. These
+dependent measures provide a bridge between the model's formal
+predictions and the empirical phenomena the simulations target.
 
 \section{Simulations}\label{simulations}
+
+The first rendered sweep included here orients the reader to the
+simulated phase structure before the later sections develop the final
+manuscript contrasts. These plots are diagnostic outputs from the
+interference-strength sweep, not stand-alone evidence for the full
+intrusion-voluntary-memory dissociation.
+
+\begin{figure}[H]
+
+\caption{\label{fig-interference-sweep-spc}Phase-resolved recall in the
+interference-strength sweep. Serial-position curves show recall
+probability across the film, break, interference, and filler phases of
+the simulated paradigm, separately for no-reminder and reminder
+conditions. Darker lines indicate stronger context-to-item learning for
+interference-task items. The figure shows how the interference
+manipulation changes the distribution of retrieval across encoded
+phases, rather than only changing total film recall.}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/interference_mcf_scale_delay16_fit_no_shared_support_side_by_side_spc.png}}
+
+}
+
+\end{figure}%
 
 \subsection{Simulation 1: Core Selective-Interference
 Dissociation}\label{simulation-1-core-selective-interference-dissociation}
@@ -1282,12 +1301,6 @@ experiment data set}.
 Ehlers, A., \& Clark, D. M. (2000). A cognitive model of posttraumatic
 stress disorder. \emph{Behaviour Research and Therapy}, \emph{38}(4),
 319--345. \url{https://doi.org/10.1016/S0005-7967(99)00123-0}
-
-\bibitem[\citeproctext]{ref-healey2014memory}
-Healey, M. K., \& Kahana, M. J. (2014). Is memory search governed by
-universal principles or idiosyncratic strategies? \emph{Journal of
-Experimental Psychology: General}, \emph{143}(2), 575--596.
-\url{https://doi.org/10.1037/a0033715}
 
 \bibitem[\citeproctext]{ref-holmes2008inducing}
 Holmes, E. A., \& Bourne, C. (2008). Inducing and modulating intrusive

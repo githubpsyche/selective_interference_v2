@@ -65,7 +65,8 @@ It may instead reflect differences in retrieval processes operating over a share
 Mechanisms supporting selective, goal-directed retrieval in voluntary recall may be sufficient to sidestep or overcome interference that nonetheless reduces the likelihood of unintentional recall.
 On this interpretation, the selective-interference effect reflects a capacity to intentionally focus retrieval on goal-relevant event information while reducing the influence of competing memories.
 
-We formalize and evaluate this proposal within a retrieved-context framework drawing on the emotional Context Maintenance and Retrieval model family, including eCMR and CMR3 [@talmi2019retrieved; @cohen2022memory].Retrieved-context models explain recall by treating context as a gradually changing state that is updated by studied items, reinstated by recalled items, and used to cue later memory search [@howard2002distributed; @polyn2009context].
+We formalize and evaluate this proposal within a retrieved-context framework drawing on the emotional Context Maintenance and Retrieval model family, including eCMR and CMR3 [@talmi2019retrieved; @cohen2022memory].
+Retrieved-context models explain recall by treating context as a gradually changing state that is updated by studied items, reinstated by recalled items, and used to cue later memory search [@howard2002distributed; @polyn2009context].
 Emotional extensions add a source-context stream for emotional and neutral states and an emotion-dependent binding strength, allowing the same architecture to capture how emotional content changes the organization and success of recall [@talmi2019retrieved; @cohen2022memory].
 Variants also model strategic control over memory search, allowing the model to capture how retrieval goals and task demands shape recall [@sederberg2008context; @cohen2022memory; @lohnas2015expanding].
 Together, these commitments make the framework a principled setting for testing whether selective interference can arise within a single emotional episodic-memory system.
@@ -499,18 +500,25 @@ Scale factors and their simulation connections.
 Drift scales are clipped to $[0, 1]$ after multiplication.
 ::::
 
-The paradigm geometry mirrors the trauma-film experiments simulated in later sections.
-Each simulated trial presents $N_\text{film} = 16$ film items, $N_\text{break} = 16$ break items, a reminder phase (one film clip re-presented without new learning), $N_\text{int} = 16$ interference items, and $N_\text{fill} = 16$ filler items, for a total list length of $N = 64$.
-Recall allows up to 48 retrieval attempts per trial.
-Simulations average over 100 replications per subject using the 126 per-subject parameter sets from the @healey2014memory fits.
-
-The primary dependent measure is film-item recall under context-to-item retrieval.
+The paradigm geometry mirrors trauma-film selective-interference designs at an abstract level.
+Each simulated trial includes film, optional break, reminder, interference, and filler phases, with phase lengths and phase-specific scaling set by the simulation factors in @tbl-scale-factors.
+The main simulation outputs track which phase each recalled item came from, how often film items are recalled, and how those quantities change across interference and retrieval-control manipulations.
 Because retrieval proceeds as a sequence of competitive samples terminated by a growing stop probability, the expected number of film items recalled depends on how much retrieval probability competitors capture at each step.
-Recognition is operationalized as the probability of retrieving the correct item given its context, using the model's item-to-context pathway.
-These dependent measures map directly onto the intrusion diaries and recognition tests used in trauma-film studies.
-They provide a bridge between the model's formal predictions and the empirical phenomena the simulations target.
+These dependent measures provide a bridge between the model's formal predictions and the empirical phenomena the simulations target.
 
 # Simulations
+
+The first rendered sweep included here orients the reader to the simulated phase structure before the later sections develop the final manuscript contrasts.
+These plots are diagnostic outputs from the interference-strength sweep, not stand-alone evidence for the full intrusion-voluntary-memory dissociation.
+
+::: {#fig-interference-sweep-spc fig-pos="H"}
+![](figures/interference_mcf_scale_delay16_fit_no_shared_support_side_by_side_spc.png)
+
+Phase-resolved recall in the interference-strength sweep.
+Serial-position curves show recall probability across the film, break, interference, and filler phases of the simulated paradigm, separately for no-reminder and reminder conditions.
+Darker lines indicate stronger context-to-item learning for interference-task items.
+The figure shows how the interference manipulation changes the distribution of retrieval across encoded phases, rather than only changing total film recall.
+:::
 
 ## Simulation 1: Core Selective-Interference Dissociation
 
