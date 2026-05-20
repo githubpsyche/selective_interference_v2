@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 560" width="1504" height="560" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1504" height="560" fill="white"/>
+<text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">B</tspan></text>
+
+<text x="150" y="126" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Baseline drift</tspan></text>
+<text x="150" y="158" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">low overlap, weak task encoding</tspan></text>
+<text x="590" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="895" y="128" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<text x="1015" y="128" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="1015" dy="0">...</tspan></text>
+<text x="1110" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<rect x="562" y="145" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
+<rect x="652" y="145" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
+<rect x="742" y="145" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
+<rect x="987" y="145" width="56" height="42" fill="#B8B8B8" stroke="#8E98A3" stroke-width="2"/>
+<rect x="1082" y="145" width="56" height="42" fill="#E0E0E0" stroke="#E5A274" stroke-width="2"/>
+<rect x="1172" y="145" width="56" height="42" fill="#EEEEEE" stroke="#E5A274" stroke-width="2"/>
+<rect x="1262" y="145" width="56" height="42" fill="#FAFAFA" stroke="#E5A274" stroke-width="2"/>
+<path d="M 770 205 L 770 217 L 1110 217 L 1110 205" fill="none" stroke="#8E98A3" stroke-width="3"/>
+<text x="940" y="244" font-size="20" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="940" dy="0">low context overlap</tspan></text>
+
+<text x="150" y="280" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Reminder reinstatement</tspan></text>
+<text x="150" y="312" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">high overlap, weak task encoding</tspan></text>
+<text x="590" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="895" y="282" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<text x="1015" y="282" font-size="23" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<rect x="562" y="299" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
+<rect x="652" y="299" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
+<rect x="742" y="299" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
+<rect x="987" y="299" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="299" width="56" height="42" fill="#4F4F4F" stroke="#E5A274" stroke-width="2"/>
+<rect x="1172" y="299" width="56" height="42" fill="#707070" stroke="#E5A274" stroke-width="2"/>
+<rect x="1262" y="299" width="56" height="42" fill="#929292" stroke="#E5A274" stroke-width="2"/>
+<path d="M 770 359 L 770 371 L 1110 371 L 1110 359" fill="none" stroke="#1764D8" stroke-width="3"/>
+<text x="940" y="398" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
+
+<text x="150" y="434" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Stronger task encoding</tspan></text>
+<text x="150" y="466" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">high overlap, strong task encoding</tspan></text>
+<text x="590" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="895" y="436" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<text x="1015" y="436" font-size="23" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<rect x="562" y="453" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
+<rect x="652" y="453" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
+<rect x="742" y="453" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
+<rect x="987" y="453" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="453" width="56" height="42" fill="#4F4F4F" stroke="#D96B2B" stroke-width="4"/>
+<rect x="1172" y="453" width="56" height="42" fill="#707070" stroke="#D96B2B" stroke-width="4"/>
+<rect x="1262" y="453" width="56" height="42" fill="#929292" stroke="#D96B2B" stroke-width="4"/>
+<path d="M 770 511 L 770 523 L 1110 523 L 1110 511" fill="none" stroke="#1764D8" stroke-width="3"/>
+<text x="940" y="550" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
+<text x="1200" y="518" font-size="20" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">strong</tspan><tspan x="1200" dy="24">competitors</tspan></text>
+</svg>

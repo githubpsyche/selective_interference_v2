@@ -102,20 +102,21 @@ Film-directed retrieval control changes the starting cue and selection rule used
 @fig-retrieved-context-account shows how these mechanisms map onto the trauma-film paradigm.
 
 ::: {#fig-retrieved-context-account}
+![](retrieved_context_account_figure/retrieved_context_account_composite.png){width=100%}
 
-A retrieved-context account of selective interference.
-The model explains intrusion-voluntary-memory dissociations by applying a single retrieved-context architecture to the phase structure of post-encoding and post-reminder interference paradigms.
-(A) The simulated paradigm includes film encoding, optional reminder-driven context reinstatement, interference-task encoding, filler activity, and later retrieval.
-(B) Encoding links film and task items to the context states active during their phases; task-associated context is most similar to film-associated context when task encoding occurs soon after the film, after reminder-driven reinstatement, or under matching source/emotional context.
-(C) Feature-to-context memory ($M^{FC}$) and context-to-feature memory ($M^{CF}$) implement the retrieved-context cycle, allowing items and reminders to reinstate associated context and allowing current context to cue competing candidate items.
-(D) Uncontrolled retrieval from ongoing context and deliberate recall operate over the same stored associations, but deliberate recall can be protected by film-directed cue construction and competition focusing.
+**Retrieved-context account of selective interference.**
+The model applies context drift, reminder-driven reinstatement, and retrieval control to explain how post-film tasks can reduce unguided access to film items while leaving deliberate recall relatively protected.
+**(A)** The simulated paradigm varies encoding material, post-film task, delay/reminder structure, and retrieval mode within a common trauma-film phase structure; dashed blocks mark phases that vary across immediate and delayed post-reminder designs.
+**(B)** Context states are shown as blocks associated with film, reminder, and task positions; task items become strong competitors when preserved or reminder-reinstated context overlaps with film-associated context and task associations are strong.
+**(C)** Feature-to-context memory ($M^{FC}$) and context-to-feature memory ($M^{CF}$) define reciprocal context-item pathways: recalled, reminded, or supplied items reinstate context, and current context cues competing candidates.
+**(D)** The same stored associations can support unguided retrieval or controlled retrieval, with film-directed cue construction and film-directed selection biasing access toward film items.
 :::
 
 Contextual similarity is established during encoding.
 Film items and task items are distinct item representations, but each is linked to the context state active when it is encountered.
 Task items are most likely to share film-relevant context when they are encoded soon after the film, after a reminder has reinstated film-associated context, or under matching source/emotional conditions.
 Delay and filler activity move context away from the film, reducing the likelihood that later retrieval cues film items and task competitors together.
-These conditions determine whether the task adds effective competitors to the film's retrieval environment.
+These conditions determine whether the task adds strong competitors to the film's retrieval environment.
 
 Context-to-item retrieval uses the current context state to cue candidate items.
 When a retrieval context resembles states associated with both film items and task items, the same cue supports both sets.
