@@ -1,111 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1530" width="1504" height="1530" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="1504" height="1530" fill="white"/>
-<svg x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 360" width="1504" height="360" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1370" width="1504" height="1370" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1504" height="1370" fill="white"/>
+<svg x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 325" width="1504" height="325" font-family="Arial, Helvetica, sans-serif">
 <defs>
-<marker id="arrow" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto"><path d="M0,0 L12,4.5 L0,9 Z" fill="#8E98A3"/></marker>
+<marker id="arrow" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto"><path d="M0,0 L12,4.5 L0,9 Z" fill="#3D4B5C"/></marker>
 </defs>
-<rect x="0" y="0" width="1504" height="360" fill="white"/>
+<rect x="0" y="0" width="1504" height="295" fill="white"/>
 <text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">A</tspan></text>
 
-<line x1="82" y1="255" x2="1422" y2="255" stroke="#8E98A3" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="82" y1="220" x2="1422" y2="220" stroke="#3D4B5C" stroke-width="4" marker-end="url(#arrow)"/>
 
-<text x="178" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="178" dy="0">Encoding</tspan></text>
-<text x="398" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="398" dy="0">Delay</tspan></text>
-<text x="618" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="618" dy="0">Reminder</tspan></text>
-<text x="838" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="838" dy="0">Interference</tspan></text>
-<text x="1058" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="1058" dy="0">Delay</tspan></text>
-<text x="1278" y="314" font-size="25" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="1278" dy="0">Retrieval</tspan></text>
+<text x="178" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="178" dy="0">Encoding</tspan></text>
+<text x="398" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="398" dy="0">Delay</tspan></text>
+<text x="618" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="618" dy="0">Reminder</tspan></text>
+<text x="838" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="838" dy="0">Interference</tspan></text>
+<text x="1058" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1058" dy="0">Delay</tspan></text>
+<text x="1278" y="279" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1278" dy="0">Retrieval</tspan></text>
 
-<rect x="68" y="105" width="220" height="54" rx="13" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
-<text x="178" y="140" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="178" dy="0">Trauma clips</tspan></text>
-<rect x="68" y="169" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#8E98A3" stroke-width="3"/>
-<text x="178" y="204" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="178" dy="0">Neutral clips</tspan></text>
+<rect x="68" y="70" width="220" height="54" rx="13" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="178" y="105" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="178" dy="0">Trauma clips</tspan></text>
+<rect x="68" y="134" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="178" y="169" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="178" dy="0">Neutral clips</tspan></text>
 
-<rect x="300" y="137" width="196" height="62" rx="15" fill="#F2F4F6" stroke="#8E98A3" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="398" y="162" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="398" dy="0">Structured</tspan><tspan x="398" dy="24">break</tspan></text>
+<rect x="300" y="102" width="196" height="62" rx="15" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="398" y="127" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="398" dy="0">Structured</tspan><tspan x="398" dy="24">break</tspan></text>
 
-<rect x="520" y="137" width="196" height="62" rx="15" fill="#EAF8F0" stroke="#178A4C" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="618" y="162" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="618" dy="0">Film</tspan><tspan x="618" dy="24">reminder</tspan></text>
+<rect x="520" y="102" width="196" height="62" rx="15" fill="#EAF8F0" stroke="#178A4C" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="618" y="127" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="618" dy="0">Film</tspan><tspan x="618" dy="24">reminder</tspan></text>
 
-<rect x="728" y="105" width="220" height="54" rx="13" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3"/>
-<text x="838" y="140" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="838" dy="0">Visuospatial task</tspan></text>
-<rect x="728" y="169" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#8E98A3" stroke-width="3"/>
-<text x="838" y="204" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="838" dy="0">Control</tspan></text>
+<rect x="728" y="70" width="220" height="54" rx="13" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3"/>
+<text x="838" y="105" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="838" dy="0">Visuospatial task</tspan></text>
+<rect x="728" y="134" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="838" y="169" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="838" dy="0">Comparison task</tspan></text>
 
-<rect x="960" y="137" width="196" height="62" rx="15" fill="#F2F4F6" stroke="#8E98A3" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="1058" y="162" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1058" dy="0">Delay</tspan><tspan x="1058" dy="24">period</tspan></text>
+<rect x="960" y="102" width="196" height="62" rx="15" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="1058" y="127" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1058" dy="0">Delay</tspan><tspan x="1058" dy="24">period</tspan></text>
 
-<rect x="1168" y="105" width="220" height="54" rx="13" fill="#F0EEFF" stroke="#6C5CE7" stroke-width="3"/>
-<text x="1278" y="140" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1278" dy="0">Unguided retrieval</tspan></text>
-<rect x="1168" y="169" width="220" height="54" rx="13" fill="#F0EEFF" stroke="#6C5CE7" stroke-width="3"/>
-<text x="1278" y="204" font-size="22" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1278" dy="0">Deliberate recall</tspan></text>
+<rect x="1168" y="70" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="1278" y="105" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1278" dy="0">Unguided retrieval</tspan></text>
+<rect x="1168" y="134" width="220" height="54" rx="13" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="1278" y="169" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="1278" dy="0">Deliberate recall</tspan></text>
 </svg>
-<svg x="0" y="390" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 560" width="1504" height="560" font-family="Arial, Helvetica, sans-serif">
+
+<svg x="0" y="285" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 560" width="1504" height="560" font-family="Arial, Helvetica, sans-serif">
 <rect x="0" y="0" width="1504" height="560" fill="white"/>
 <text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">B</tspan></text>
 
-<text x="150" y="126" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Baseline drift</tspan></text>
-<text x="150" y="158" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">low overlap, weak task encoding</tspan></text>
-<text x="590" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
-<text x="680" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
-<text x="770" y="128" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
-<text x="895" y="128" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
-<text x="1015" y="128" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="1015" dy="0">...</tspan></text>
-<text x="1110" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
-<text x="1200" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
-<text x="1290" y="128" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
-<rect x="562" y="145" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
-<rect x="652" y="145" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
-<rect x="742" y="145" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
-<rect x="987" y="145" width="56" height="42" fill="#B8B8B8" stroke="#8E98A3" stroke-width="2"/>
-<rect x="1082" y="145" width="56" height="42" fill="#E0E0E0" stroke="#E5A274" stroke-width="2"/>
-<rect x="1172" y="145" width="56" height="42" fill="#EEEEEE" stroke="#E5A274" stroke-width="2"/>
-<rect x="1262" y="145" width="56" height="42" fill="#FAFAFA" stroke="#E5A274" stroke-width="2"/>
-<path d="M 770 205 L 770 217 L 1110 217 L 1110 205" fill="none" stroke="#8E98A3" stroke-width="3"/>
-<text x="940" y="244" font-size="20" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="940" dy="0">low context overlap</tspan></text>
+<rect x="118" y="82" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="118" y="238" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="118" y="394" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<text x="930" y="72" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="930" dy="0">Context states associated at encoding</tspan></text>
 
-<text x="150" y="280" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Reminder reinstatement</tspan></text>
-<text x="150" y="312" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">high overlap, weak task encoding</tspan></text>
-<text x="590" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
-<text x="680" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
-<text x="770" y="282" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
-<text x="895" y="282" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
-<text x="1015" y="282" font-size="23" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
-<text x="1110" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
-<text x="1200" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
-<text x="1290" y="282" font-size="23" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
-<rect x="562" y="299" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
-<rect x="652" y="299" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
-<rect x="742" y="299" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
-<rect x="987" y="299" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
-<rect x="1082" y="299" width="56" height="42" fill="#4F4F4F" stroke="#E5A274" stroke-width="2"/>
-<rect x="1172" y="299" width="56" height="42" fill="#707070" stroke="#E5A274" stroke-width="2"/>
-<rect x="1262" y="299" width="56" height="42" fill="#929292" stroke="#E5A274" stroke-width="2"/>
-<path d="M 770 359 L 770 371 L 1110 371 L 1110 359" fill="none" stroke="#1764D8" stroke-width="3"/>
-<text x="940" y="398" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
+<text x="166" y="140" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Baseline drift</tspan></text>
+<text x="166" y="170" font-size="21" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">Low overlap, weak task encoding</tspan></text>
+<text x="590" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1110" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="166" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="138" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="138" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="138" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="138" width="56" height="42" fill="#D6D9DD" stroke="#D6D9DD" stroke-width="3"/>
+<rect x="1082" y="138" width="56" height="42" fill="#E0E0E0" stroke="#E5A274" stroke-width="3"/>
+<rect x="1172" y="138" width="56" height="42" fill="#EEEEEE" stroke="#E5A274" stroke-width="3"/>
+<rect x="1262" y="138" width="56" height="42" fill="#FAFAFA" stroke="#E5A274" stroke-width="3"/>
+<path d="M 770 190 L 770 200 L 1110 200 L 1110 190" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="940" y="222" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="940" dy="0">low context overlap</tspan></text>
 
-<text x="150" y="434" font-size="27" font-weight="700" fill="#111111" text-anchor="start"><tspan x="150" dy="0">Stronger task encoding</tspan></text>
-<text x="150" y="466" font-size="23" font-weight="700" fill="#4B5663" text-anchor="start"><tspan x="150" dy="0">high overlap, strong task encoding</tspan></text>
-<text x="590" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
-<text x="680" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
-<text x="770" y="436" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
-<text x="895" y="436" font-size="29" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
-<text x="1015" y="436" font-size="23" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
-<text x="1110" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
-<text x="1200" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
-<text x="1290" y="436" font-size="23" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
-<rect x="562" y="453" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="2"/>
-<rect x="652" y="453" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="2"/>
-<rect x="742" y="453" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="2"/>
-<rect x="987" y="453" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
-<rect x="1082" y="453" width="56" height="42" fill="#4F4F4F" stroke="#D96B2B" stroke-width="4"/>
-<rect x="1172" y="453" width="56" height="42" fill="#707070" stroke="#D96B2B" stroke-width="4"/>
-<rect x="1262" y="453" width="56" height="42" fill="#929292" stroke="#D96B2B" stroke-width="4"/>
-<path d="M 770 511 L 770 523 L 1110 523 L 1110 511" fill="none" stroke="#1764D8" stroke-width="3"/>
-<text x="940" y="550" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
-<text x="1200" y="518" font-size="20" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">strong</tspan><tspan x="1200" dy="24">competitors</tspan></text>
+<text x="166" y="296" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Reminder reinstatement</tspan></text>
+<text x="166" y="326" font-size="21" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">High overlap, weak task encoding</tspan></text>
+<text x="590" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1015" y="276" font-size="21" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="322" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="294" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="294" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="294" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="294" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="294" width="56" height="42" fill="#4F4F4F" stroke="#E5A274" stroke-width="3"/>
+<rect x="1172" y="294" width="56" height="42" fill="#707070" stroke="#E5A274" stroke-width="3"/>
+<rect x="1262" y="294" width="56" height="42" fill="#929292" stroke="#E5A274" stroke-width="3"/>
+<path d="M 770 346 L 770 356 L 1110 356 L 1110 346" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="940" y="378" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
+
+<text x="166" y="452" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Stronger task encoding</tspan></text>
+<text x="166" y="482" font-size="21" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">High overlap, strong task encoding</tspan></text>
+<text x="590" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1015" y="432" font-size="21" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="478" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="450" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="450" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="450" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="450" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="450" width="56" height="42" fill="#4F4F4F" stroke="#D96B2B" stroke-width="4"/>
+<rect x="1172" y="450" width="56" height="42" fill="#707070" stroke="#D96B2B" stroke-width="4"/>
+<rect x="1262" y="450" width="56" height="42" fill="#929292" stroke="#D96B2B" stroke-width="4"/>
+<path d="M 770 502 L 770 512 L 1110 512 L 1110 502" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="940" y="534" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="940" dy="0">higher context overlap</tspan></text>
+<text x="1200" y="514" font-size="18" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">strong</tspan><tspan x="1200" dy="20">competitors</tspan></text>
+
 </svg>
-<svg x="0" y="1010" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<svg x="0" y="850" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
 <defs>
 <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
 </defs>
@@ -113,95 +119,92 @@
 <text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">C</tspan></text>
 
 <rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
-<text x="370" y="111" font-size="27" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
-<rect x="196" y="132" width="348" height="42" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
-<line x1="370" y1="132" x2="370" y2="174" stroke="#3D4B5C" stroke-width="2"/>
+<text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
+<rect x="196" y="126" width="348" height="52" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
+<line x1="370" y1="126" x2="370" y2="178" stroke="#3D4B5C" stroke-width="2"/>
 <text x="283" y="160" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="283" dy="0">Temporal</tspan></text>
-<text x="457" y="149" font-size="17" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="457" dy="0">Source/</tspan><tspan x="457" dy="19">emotional</tspan></text>
+<text x="457" y="148" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="457" dy="0">Source/</tspan><tspan x="457" dy="18">emotional</tspan></text>
 
 <rect x="162" y="336" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
-<text x="370" y="370" font-size="27" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Features / items (F)</tspan></text>
-<rect x="226" y="394" width="120" height="38" rx="10" fill="white" stroke="#1764D8" stroke-width="2.5"/>
-<text x="286" y="419" font-size="16" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="286" dy="0">Film item</tspan></text>
-<rect x="394" y="394" width="120" height="38" rx="10" fill="white" stroke="#D96B2B" stroke-width="2.5"/>
-<text x="454" y="419" font-size="16" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="454" dy="0">Task item</tspan></text>
+<text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Features / items (F)</tspan></text>
+<rect x="226" y="394" width="120" height="38" rx="10" fill="white" stroke="#1764D8" stroke-width="3"/>
+<text x="286" y="419" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="286" dy="0">Film item</tspan></text>
+<rect x="394" y="394" width="120" height="38" rx="10" fill="white" stroke="#D96B2B" stroke-width="3"/>
+<text x="454" y="419" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="454" dy="0">Task item</tspan></text>
 
-<rect x="20" y="210" width="180" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="110" y="234" font-size="16" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-context</tspan><tspan x="110" dy="20">memory (MFC)</tspan></text>
-<rect x="36" y="268" width="64" height="36" rx="8" fill="white" stroke="#3D4B5C" stroke-width="2"/>
-<rect x="120" y="268" width="64" height="36" rx="8" fill="white" stroke="#3D4B5C" stroke-width="2"/>
-<line x1="110" y1="266" x2="110" y2="306" stroke="#3D4B5C" stroke-width="2"/>
-<text x="68" y="291" font-size="12.5" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="68" dy="0">Temporal</tspan></text>
-<text x="152" y="284" font-size="12.5" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="152" dy="0">Source/</tspan><tspan x="152" dy="14">emotional</tspan></text>
+<rect x="10" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="110" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-</tspan><tspan x="110" dy="28">context memory</tspan><tspan x="110" dy="28">(MFC)</tspan></text>
 
-<rect x="540" y="210" width="180" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="630" y="234" font-size="16" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-feature</tspan><tspan x="630" dy="20">memory (MCF)</tspan></text>
-<rect x="556" y="268" width="64" height="36" rx="8" fill="white" stroke="#3D4B5C" stroke-width="2"/>
-<rect x="640" y="268" width="64" height="36" rx="8" fill="white" stroke="#3D4B5C" stroke-width="2"/>
-<line x1="630" y1="266" x2="630" y2="306" stroke="#3D4B5C" stroke-width="2"/>
-<text x="588" y="291" font-size="12.5" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="588" dy="0">Temporal</tspan></text>
-<text x="672" y="284" font-size="12.5" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="672" dy="0">Source/</tspan><tspan x="672" dy="14">emotional</tspan></text>
+<rect x="530" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="630" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-</tspan><tspan x="630" dy="28">feature memory</tspan><tspan x="630" dy="28">(MCF)</tspan></text>
 
 <polyline points="110,210 110,126 162,126" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="578,126 630,126 630,210" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="162,392 110,392 110,320" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="630,320 630,392 578,392" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<text x="104" y="76" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="104" dy="0">Reinstates</tspan><tspan x="104" dy="21">context</tspan></text>
-<text x="686" y="420" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="686" dy="0">Cues</tspan><tspan x="686" dy="21">candidates</tspan></text>
+<text x="102" y="75" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="102" dy="0">Reinstates</tspan><tspan x="102" dy="24">context</tspan></text>
+<text x="660" y="412" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="660" dy="0">Cues</tspan><tspan x="660" dy="24">candidates</tspan></text>
 </svg>
-<svg x="764" y="1010" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<svg x="764" y="850" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
 <defs>
 <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
 <marker id="arrow-film" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1764D8"/></marker>
-<marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#D96B2B" opacity="0.55"/></marker>
+<marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#D96B2B"/></marker>
 </defs>
 <rect x="0" y="0" width="740" height="500" fill="white"/>
 <text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">D</tspan></text>
-<text x="374" y="90" font-size="23" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="374" dy="0">Same stored film and task associations</tspan></text>
-<line x1="126" y1="110" x2="622" y2="110" stroke="#D8DDE3" stroke-width="2"/>
-<rect x="38" y="128" width="308" height="350" rx="22" fill="white" stroke="#D8DDE3" stroke-width="2.5"/>
-<rect x="394" y="128" width="308" height="350" rx="22" fill="white" stroke="#D8DDE3" stroke-width="2.5"/>
-<text x="192" y="168" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="192" dy="0">Uncontrolled retrieval</tspan></text>
-<text x="548" y="168" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="548" dy="0">Controlled retrieval</tspan></text>
-<rect x="89" y="196" width="206" height="58" rx="29" fill="#F2F4F6" stroke="#8E98A3" stroke-width="3"/>
-<text x="192" y="219" font-size="16.5" font-weight="700" fill="#8E98A3" text-anchor="middle"><tspan x="192" dy="0">ongoing</tspan><tspan x="192" dy="20">context</tspan></text>
-<path d="M 147 254 C 132 273, 102 286, 68 295" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<path d="M 170 254 C 156 276, 136 287, 110 295" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<path d="M 192 254 C 186 274, 172 287, 152 295" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<path d="M 214 254 C 222 274, 228 285, 232 294" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<path d="M 236 254 C 252 274, 265 285, 274 294" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<path d="M 259 254 C 284 274, 302 285, 316 294" fill="none" stroke="#3D4B5C" stroke-width="2.8" marker-end="url(#arrow)"/>
-<circle cx="68" cy="307" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="68" y="312" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="68" dy="0">F1</tspan></text>
-<circle cx="110" cy="337" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="110" y="342" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="110" dy="0">F2</tspan></text>
-<circle cx="152" cy="307" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="152" y="312" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="152" dy="0">F3</tspan></text>
-<text x="192" y="331" font-size="26" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="192" dy="0">...</tspan></text>
-<circle cx="232" cy="307" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="232" y="312" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="232" dy="0">T1</tspan></text>
-<circle cx="274" cy="337" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="274" y="342" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="274" dy="0">T2</tspan></text>
-<circle cx="316" cy="307" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="316" y="312" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="316" dy="0">T3</tspan></text>
-<text x="192" y="410" font-size="16" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="192" dy="0">Broad sampling leaves film items</tspan><tspan x="192" dy="19">competing with task items</tspan></text>
-<rect x="445" y="196" width="206" height="58" rx="29" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
-<text x="548" y="219" font-size="16.5" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">film-directed</tspan><tspan x="548" dy="20">context cue</tspan></text>
-<path d="M 503 254 C 488 273, 458 286, 424 295" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
-<path d="M 526 254 C 512 276, 492 287, 466 295" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
-<path d="M 548 254 C 542 274, 528 287, 508 295" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
-<path d="M 570 254 C 578 274, 584 285, 588 294" fill="none" stroke="#D96B2B" stroke-width="2.4" opacity="0.45" marker-end="url(#arrow-task)"/>
-<path d="M 592 254 C 608 274, 621 285, 630 294" fill="none" stroke="#D96B2B" stroke-width="2.4" opacity="0.45" marker-end="url(#arrow-task)"/>
-<path d="M 615 254 C 640 274, 658 285, 672 294" fill="none" stroke="#D96B2B" stroke-width="2.4" opacity="0.45" marker-end="url(#arrow-task)"/>
-<circle cx="424" cy="307" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="424" y="312" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="424" dy="0">F1</tspan></text>
-<circle cx="466" cy="337" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="466" y="342" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="466" dy="0">F2</tspan></text>
-<circle cx="508" cy="307" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="508" y="312" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="508" dy="0">F3</tspan></text>
-<text x="548" y="331" font-size="26" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="548" dy="0">...</tspan></text>
-<circle cx="588" cy="307" r="20" fill="white" stroke="#D96B2B" stroke-width="2.6" opacity="0.85"/><text x="588" y="312" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.95"><tspan x="588" dy="0">T1</tspan></text>
-<circle cx="630" cy="337" r="20" fill="white" stroke="#D96B2B" stroke-width="2.6" opacity="0.85"/><text x="630" y="342" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.95"><tspan x="630" dy="0">T2</tspan></text>
-<circle cx="672" cy="307" r="20" fill="white" stroke="#D96B2B" stroke-width="2.6" opacity="0.85"/><text x="672" y="312" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.95"><tspan x="672" dy="0">T3</tspan></text>
-<text x="548" y="374" font-size="17" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">film-directed selection</tspan></text>
-<path d="M 456 388 L 640 388 L 584 416 L 512 416 Z" fill="#EAF2FF" stroke="#1764D8" stroke-width="2.4" opacity="0.82"/>
-<circle cx="424" cy="435" r="20" fill="white" stroke="#1764D8" stroke-width="2.8"/><text x="424" y="440" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="424" dy="0">F1</tspan></text>
-<circle cx="466" cy="455" r="20" fill="white" stroke="#1764D8" stroke-width="2.8"/><text x="466" y="460" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="466" dy="0">F2</tspan></text>
-<circle cx="508" cy="435" r="20" fill="white" stroke="#1764D8" stroke-width="2.8"/><text x="508" y="440" font-size="13" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="508" dy="0">F3</tspan></text>
-<text x="548" y="454" font-size="26" font-weight="700" fill="#4B5663" text-anchor="middle"><tspan x="548" dy="0">...</tspan></text>
-<circle cx="588" cy="435" r="20" fill="white" stroke="#D96B2B" stroke-width="2.5" stroke-dasharray="5 4" opacity="0.82"/><text x="588" y="440" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="588" dy="0">T1</tspan></text>
-<circle cx="630" cy="455" r="20" fill="white" stroke="#D96B2B" stroke-width="2.5" stroke-dasharray="5 4" opacity="0.82"/><text x="630" y="460" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="630" dy="0">T2</tspan></text>
-<circle cx="672" cy="435" r="20" fill="white" stroke="#D96B2B" stroke-width="2.5" stroke-dasharray="5 4" opacity="0.82"/><text x="672" y="440" font-size="13" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="672" dy="0">T3</tspan></text>
+
+<rect x="130" y="62" width="480" height="52" rx="18" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="95" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Stored film and task associations</tspan></text>
+<path d="M 300 114 C 282 124, 230 130, 192 140" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 440 114 C 458 124, 510 130, 548 140" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+
+<rect x="38" y="140" width="308" height="338" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="394" y="140" width="308" height="338" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="192" y="180" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="192" dy="0">Unguided retrieval</tspan></text>
+<text x="548" y="180" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="548" dy="0">Deliberate recall</tspan></text>
+
+<rect x="89" y="205" width="206" height="58" rx="29" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="192" y="229" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">Ongoing</tspan><tspan x="192" dy="24">context</tspan></text>
+<path d="M 147 263 C 132 282, 102 292, 68 300" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 170 263 C 156 284, 136 294, 110 302" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 192 263 C 186 284, 172 294, 152 300" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 214 263 C 222 284, 228 294, 232 300" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 236 263 C 252 282, 265 292, 274 300" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 259 263 C 284 282, 302 292, 316 300" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="68" cy="313" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="68" y="319" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="68" dy="0">F1</tspan></text>
+<circle cx="110" cy="333" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="110" y="339" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="110" dy="0">F2</tspan></text>
+<circle cx="152" cy="313" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="152" y="319" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="152" dy="0">F3</tspan></text>
+<text x="192" y="337" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">...</tspan></text>
+<circle cx="232" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="232" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="232" dy="0">T1</tspan></text>
+<circle cx="274" cy="333" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="274" y="339" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="274" dy="0">T2</tspan></text>
+<circle cx="316" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="316" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="316" dy="0">T3</tspan></text>
+<text x="192" y="416" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">Broad sampling leaves</tspan><tspan x="192" dy="21">film and task items</tspan><tspan x="192" dy="21">competing</tspan></text>
+
+<rect x="445" y="205" width="206" height="58" rx="29" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="548" y="229" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Film-directed</tspan><tspan x="548" dy="24">context cue</tspan></text>
+<path d="M 503 263 C 488 282, 458 292, 424 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<path d="M 526 263 C 512 284, 492 294, 466 302" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<path d="M 548 263 C 542 284, 528 294, 508 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<path d="M 570 263 C 578 284, 584 294, 588 300" fill="none" stroke="#D96B2B" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow-task)"/>
+<path d="M 592 263 C 608 282, 621 292, 630 300" fill="none" stroke="#D96B2B" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow-task)"/>
+<path d="M 615 263 C 640 282, 658 292, 672 300" fill="none" stroke="#D96B2B" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow-task)"/>
+<circle cx="424" cy="313" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="424" y="319" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="424" dy="0">F1</tspan></text>
+<circle cx="466" cy="333" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="466" y="339" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="466" dy="0">F2</tspan></text>
+<circle cx="508" cy="313" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="508" y="319" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="508" dy="0">F3</tspan></text>
+<text x="548" y="337" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="548" dy="0">...</tspan></text>
+<circle cx="588" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="588" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="588" dy="0">T1</tspan></text>
+<circle cx="630" cy="333" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="630" y="339" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="630" dy="0">T2</tspan></text>
+<circle cx="672" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="672" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="672" dy="0">T3</tspan></text>
+<text x="548" y="376" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Film-directed selection</tspan></text>
+<path d="M 456 388 L 640 388 L 584 410 L 512 410 Z" fill="#EAF2FF" stroke="#1764D8" stroke-width="3" opacity="0.82"/>
+<circle cx="424" cy="435" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="424" y="441" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="424" dy="0">F1</tspan></text>
+<circle cx="466" cy="453" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="466" y="459" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="466" dy="0">F2</tspan></text>
+<circle cx="508" cy="435" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="508" y="441" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="508" dy="0">F3</tspan></text>
+<text x="548" y="452" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="548" dy="0">...</tspan></text>
+<circle cx="588" cy="435" r="20" fill="white" stroke="#D96B2B" stroke-width="3" stroke-dasharray="5 4" opacity="0.82"/><text x="588" y="441" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="588" dy="0">T1</tspan></text>
+<circle cx="630" cy="453" r="20" fill="white" stroke="#D96B2B" stroke-width="3" stroke-dasharray="5 4" opacity="0.82"/><text x="630" y="459" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="630" dy="0">T2</tspan></text>
+<circle cx="672" cy="435" r="20" fill="white" stroke="#D96B2B" stroke-width="3" stroke-dasharray="5 4" opacity="0.82"/><text x="672" y="441" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.82"><tspan x="672" dy="0">T3</tspan></text>
 </svg>
+
 </svg>
