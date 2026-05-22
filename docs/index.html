@@ -194,12 +194,12 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#representations-and-parameters" id="toc-representations-and-parameters" class="nav-link" data-scroll-target="#representations-and-parameters">Representations and Parameters</a></li>
   <li><a href="#context-updating-learning-and-retrieval" id="toc-context-updating-learning-and-retrieval" class="nav-link" data-scroll-target="#context-updating-learning-and-retrieval">Context Updating, Learning, and Retrieval</a></li>
-  <li><a href="#paradigm-phases-and-settings" id="toc-paradigm-phases-and-settings" class="nav-link" data-scroll-target="#paradigm-phases-and-settings">Paradigm Phases and Settings</a></li>
   <li><a href="#retrieval-control" id="toc-retrieval-control" class="nav-link" data-scroll-target="#retrieval-control">Retrieval Control</a></li>
   <li><a href="#affective-context" id="toc-affective-context" class="nav-link" data-scroll-target="#affective-context">Affective Context</a></li>
   </ul></li>
   <li><a href="#simulations" id="toc-simulations" class="nav-link" data-scroll-target="#simulations">Simulations</a>
   <ul class="collapse">
+  <li><a href="#current-diagnostic-sweep" id="toc-current-diagnostic-sweep" class="nav-link" data-scroll-target="#current-diagnostic-sweep">Current Diagnostic Sweep</a></li>
   <li><a href="#simulation-1-core-selective-interference-dissociation" id="toc-simulation-1-core-selective-interference-dissociation" class="nav-link" data-scroll-target="#simulation-1-core-selective-interference-dissociation">Simulation 1: Core Selective-Interference Dissociation</a></li>
   <li><a href="#simulation-2-control-mechanisms-underlying-deliberate-recall-protection" id="toc-simulation-2-control-mechanisms-underlying-deliberate-recall-protection" class="nav-link" data-scroll-target="#simulation-2-control-mechanisms-underlying-deliberate-recall-protection">Simulation 2: Control Mechanisms Underlying Deliberate-Recall Protection</a></li>
   <li><a href="#simulation-3-competitor-strength-and-contextual-overlap" id="toc-simulation-3-competitor-strength-and-contextual-overlap" class="nav-link" data-scroll-target="#simulation-3-competitor-strength-and-contextual-overlap">Simulation 3: Competitor Strength and Contextual Overlap</a></li>
@@ -436,86 +436,6 @@ c_{j+1} = \rho_{\mathrm{rec},j} \, c_j + \beta_{rec} \, \widehat{M^{FC} f_{r_j}}
 \tag{13}\]</span></span></p>
 <p>This recalled-item update drives context toward the recalled item’s encoding neighborhood, biasing subsequent retrievals toward nearby items and producing temporal organization in retrieval. Encoding operations use the context update and learning equations together, whereas reminders, recalled items, and supplied film items use the context update without adding a new recallable event.</p>
 </section>
-<section id="paradigm-phases-and-settings" class="level2">
-<h2 class="anchored" data-anchor-id="paradigm-phases-and-settings">Paradigm Phases and Settings</h2>
-<p>The selective-interference paradigm configures the drift term in <a href="#eq-context-update" class="quarto-xref">Equation&nbsp;4</a>, the learning scale in <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;8</a>, and the retrieval-control settings applied to the sampling process. <a href="#tbl-paradigm-settings" class="quarto-xref">Table&nbsp;2</a> summarizes the settings used by the simulations.</p>
-<div id="tbl-paradigm-settings" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-paradigm-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Paradigm phase and retrieval settings. Drift scales multiply their base rates and are clipped to <span class="math inline">\([0, 1]\)</span>.
-</figcaption>
-<div aria-describedby="tbl-paradigm-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Segment</th>
-<th>Operation</th>
-<th>Settings</th>
-<th>Paradigm role</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Film</td>
-<td>Encode film items</td>
-<td><span class="math inline">\(\beta = \beta_{enc}\)</span>; <span class="math inline">\(\lambda = 1\)</span></td>
-<td>Target episode encoding</td>
-</tr>
-<tr class="even">
-<td>Break</td>
-<td>Encode break items</td>
-<td><span class="math inline">\(\beta = m^{\beta}_\text{break}\beta_{enc}\)</span>; <span class="math inline">\(\lambda = m^{\lambda}_\text{break}\)</span></td>
-<td>Delay and possible break-item competitors</td>
-</tr>
-<tr class="odd">
-<td>Reminder start</td>
-<td>Drift toward start state</td>
-<td><span class="math inline">\(\beta = m^{\beta}_\text{rem,start}\beta_{start}\)</span>; no learning</td>
-<td>Context change before reminders</td>
-</tr>
-<tr class="even">
-<td>Film reminder</td>
-<td>Sequentially cue film items</td>
-<td><span class="math inline">\(\beta = m^{\beta}_\text{rem}\beta_{enc}\)</span>; no learning; no new recallable item</td>
-<td>Film-context reinstatement before task encoding</td>
-</tr>
-<tr class="odd">
-<td>Task</td>
-<td>Encode task items</td>
-<td><span class="math inline">\(\beta = m^{\beta}_\text{task}\beta_{enc}\)</span>; <span class="math inline">\(\lambda = m^{\lambda}_\text{task}\)</span></td>
-<td>Competitor encoding and film-task contextual overlap</td>
-</tr>
-<tr class="even">
-<td>Filler</td>
-<td>Encode filler items</td>
-<td><span class="math inline">\(\beta = m^{\beta}_\text{fill}\beta_{enc}\)</span>; <span class="math inline">\(\lambda = m^{\lambda}_\text{fill}\)</span></td>
-<td>Post-task buffer and possible filler competitors</td>
-</tr>
-<tr class="odd">
-<td>Unguided retrieval</td>
-<td>Context-to-feature retrieval</td>
-<td>Current context; baseline <span class="math inline">\(\tau\)</span>; no film-directed start cue</td>
-<td>Broad retrieval from the current context state</td>
-</tr>
-<tr class="even">
-<td>Deliberate recall</td>
-<td>Context-to-feature retrieval with control</td>
-<td>Film-directed start/context cueing; scaled <span class="math inline">\(\tau\)</span>; target monitoring when enabled</td>
-<td>Voluntary film-directed retrieval</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>The reminder phase applies the film-item reminder cue operation sequentially to the film items. Each reminder cue uses <a href="#eq-context-input" class="quarto-xref">Equation&nbsp;3</a> and <a href="#eq-context-update" class="quarto-xref">Equation&nbsp;4</a> to reinstate context, but it does not apply <a href="#eq-mfc-learning" class="quarto-xref">Equation&nbsp;6</a> or <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;8</a> and is not added as a recallable item. Task items encoded after stronger reminder reinstatement are therefore associated with context states more similar to those associated with film items. Increasing <span class="math inline">\(m^{\lambda}_\text{task}\)</span> scales <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;8</a> and makes task items stronger competitors once cued, whereas changing <span class="math inline">\(m^{\beta}_\text{task}\)</span> changes the drift term in <a href="#eq-context-update" class="quarto-xref">Equation&nbsp;4</a> and how close task-associated context remains to film-associated context. Together, task drift and task learning determine whether the task phase is merely added experience or a source of items that are both contextually recruited and strong competitors.</p>
-</section>
 <section id="retrieval-control" class="level2">
 <h2 class="anchored" data-anchor-id="retrieval-control">Retrieval Control</h2>
 <p>Unguided retrieval and deliberate recall use the same retrieval-support and choice rules in <a href="#eq-retrieval-support" class="quarto-xref">Equation&nbsp;9</a> and <a href="#eq-luce-choice" class="quarto-xref">Equation&nbsp;11</a>. They differ in the control settings applied to the retrieval state and sampling process. The first deliberate-recall control setting is film-directed start/context cueing:</p>
@@ -534,25 +454,85 @@ c_\text{film}^{\mathrm{IN}} = M^{FC} f_\text{film}
 </section>
 <section id="affective-context" class="level2">
 <h2 class="anchored" data-anchor-id="affective-context">Affective Context</h2>
-<p>The model also includes affective context components inherited from eCMR. Each item has a two-unit affective feature vector <span class="math inline">\(s_i\)</span>, with <span class="math inline">\(s_i = [1, 0]^\top\)</span> for items assigned the marked affective feature and <span class="math inline">\(s_i = [0, 1]^\top\)</span> for neutral or default items. The vector <span class="math inline">\(s_i\)</span> is not a recallable item and is not a separate trace. It initializes affective rows of <span class="math inline">\(M^{FC}\)</span> so that an item can cue its affective context components:</p>
-<p><span id="eq-aff-mfc-pre"><span class="math display">\[
-M^{FC}_{aff}(\cdot, i) = (1 - \gamma) s_i
+<p>The model also includes an affective-context pathway inherited from eCMR <span class="citation" data-cites="talmi2019retrieved cohen2022memory">(<a href="#ref-talmi2019retrieved" role="doc-biblioref">Talmi, Lohnas, and Daw 2019</a>; <a href="#ref-cohen2022memory" role="doc-biblioref">Cohen and Kahana 2022</a>)</span>. The affective pathway tests whether shared affective state can amplify competition; it does not make task affect the explanation of selective interference. Each item has a two-unit affective feature vector <span class="math inline">\(s_i\)</span>, with <span class="math inline">\(s_i = [1, 0]^\top\)</span> for items assigned the marked affective feature and <span class="math inline">\(s_i = [0, 1]^\top\)</span> for neutral or default items. The vector <span class="math inline">\(s_i\)</span> is not a recallable item and is not a separate trace. The affective feature vector initializes <span class="math inline">\(M^{FC}_{emot}\)</span> so that an item can cue its affective context components:</p>
+<p><span id="eq-emot-mfc-pre"><span class="math display">\[
+M^{FC}_{emot}(\cdot, i) = (1 - \gamma) s_i
 \tag{17}\]</span></span></p>
 <p>Affective context-to-feature support begins at zero:</p>
-<p><span id="eq-aff-mcf-pre"><span class="math display">\[
-M^{CF}_{aff}(i, \cdot) = 0
+<p><span id="eq-emot-mcf-pre"><span class="math display">\[
+M^{CF}_{emot}(i, \cdot) = 0
 \tag{18}\]</span></span></p>
 <p>Thus, affective context can update during experience before it contributes retrieval support. Let <span class="math inline">\(\phi_{\mathrm{emot},i}\)</span> denote the added context-to-feature learning strength for item <span class="math inline">\(i\)</span> in the affective pathway. With the binary vector above, <span class="math inline">\(\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_i]_1\)</span>, so items assigned the marked affective feature receive <span class="math inline">\(\phi_{\mathrm{emot}}\)</span> and neutral or default items receive 0. When affective learning is engaged, the affective components of context receive additional context-to-feature learning:</p>
-<p><span id="eq-aff-mcf-learning"><span class="math display">\[
-\Delta M^{CF}_{aff} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{aff},i}^\top
+<p><span id="eq-emot-mcf-learning"><span class="math display">\[
+\Delta M^{CF}_{emot} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{emot},i}^\top
 \tag{19}\]</span></span></p>
-<p>Here, <span class="math inline">\(c_{\mathrm{aff},i}\)</span> denotes the affective components of context. When affective context-to-feature learning is disabled, affective context does not add retrieval support beyond the ordinary context-to-feature pathway. When film and task items share the marked affective feature and affective context-to-feature learning is enabled, <a href="#eq-aff-mcf-learning" class="quarto-xref">Equation&nbsp;19</a> can amplify competition beyond temporal proximity alone.</p>
-<p>The simulations below vary the phase, reminder, retrieval-control, and affective settings described above while keeping the underlying item-context architecture fixed. Because retrieval proceeds as a sequence of competitive samples terminated by a growing stop probability, task competitors can reduce film retrieval by winning individual retrieval competitions before search terminates.</p>
+<p>Here, <span class="math inline">\(c_{\mathrm{emot},i}\)</span> denotes the affective components of context. When affective context-to-feature learning is disabled, affective context does not add retrieval support beyond the ordinary context-to-feature pathway. When learned affective support is present, it contributes to the same context-to-feature competition defined in <a href="#eq-retrieval-support" class="quarto-xref">Equation&nbsp;9</a>. Task items are distinct item features and are assigned the marked affective feature only in affective-overlap variants. When film and task items share the marked affective feature and affective context-to-feature learning is enabled, <a href="#eq-emot-mcf-learning" class="quarto-xref">Equation&nbsp;19</a> can amplify competition beyond temporal proximity alone.</p>
+<p>These equations define the item-context architecture used in all simulations. Because retrieval proceeds as a sequence of competitive samples terminated by a growing stop probability, task competitors can reduce film retrieval by winning individual retrieval competitions before search terminates.</p>
 </section>
 </section>
 <section id="simulations" class="level1">
 <h1>Simulations</h1>
-<p>The first rendered sweep included here orients the reader to the simulated phase structure before the later sections develop the final manuscript contrasts. These plots are diagnostic outputs from the interference-strength sweep, not stand-alone evidence for the full intrusion-voluntary-memory dissociation. The section scaffold below records what each simulation must establish before the final result text is written. Each subsection specifies the core contrast, the primary readouts, and the main design decision still open at this stage.</p>
+<p>The simulations configure the model specification above rather than adding new mechanisms. They use the same CMR operations to encode target film items, intervening non-film items, task items, and post-task filler items, and they use the same retrieval rule for unguided retrieval and deliberate recall. The design is organized around empirical contrasts in clip content, post-clip task, and retrieval mode, with immediate and delayed/post-reminder timing variants.</p>
+<div id="tbl-simulated-design" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulated-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Simulated design components and their model implementation. The table maps empirical contrasts onto model operations rather than listing all phase-specific parameter values.
+</figcaption>
+<div aria-describedby="tbl-simulated-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design component</th>
+<th>Variants</th>
+<th>Model role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Film/clip items</td>
+<td>Trauma/affective or neutral target clips</td>
+<td>Film items are the target episode whose later access is measured; affective marking is enabled only for affective-overlap variants.</td>
+</tr>
+<tr class="even">
+<td>Task condition</td>
+<td>Visuospatial interference task or comparison task</td>
+<td>Task items are potential competitors encoded after film encoding or reminder reinstatement; task learning strength indexes how strongly they compete once cued.</td>
+</tr>
+<tr class="odd">
+<td>Affective overlap</td>
+<td>Film-only marking or shared film-task marking</td>
+<td>Tests whether shared affective state amplifies task competition.</td>
+</tr>
+<tr class="even">
+<td>Timing/reinstatement</td>
+<td>Immediate post-film task or delayed post-reminder task</td>
+<td>Tests whether delayed reminders increase overlap by reinstating film-associated context before task encoding.</td>
+</tr>
+<tr class="odd">
+<td>Buffer/filler experience</td>
+<td>Pre-reminder buffer and post-task filler</td>
+<td>Moves context away from film and adds non-film items that can enter retrieval competition.</td>
+</tr>
+<tr class="even">
+<td>Retrieval mode</td>
+<td>Unguided retrieval or deliberate recall</td>
+<td>Tests whether film-directed control protects voluntary access within the same retrieval architecture.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Delayed/post-reminder simulations implement the reminder as two context-updating operations. After the pre-reminder buffer, context first drifts toward the start state. The model then applies film-item reminder cues sequentially, using <a href="#eq-context-input" class="quarto-xref">Equation&nbsp;3</a> and <a href="#eq-context-update" class="quarto-xref">Equation&nbsp;4</a> with a reminder-cue drift rate lower than encoding drift in the working simulations. This lower drift rate represents the assumption that brief reminder images provide weaker contextual evidence than full film-item presentations. Reminder cues do not apply <a href="#eq-mfc-learning" class="quarto-xref">Equation&nbsp;6</a> or <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;8</a> and do not add new recallable items. The immediate variant omits the structured pre-reminder buffer and reminder operations, placing the task phase directly after film encoding.</p>
+<p>Phase-specific parameter settings are introduced where the simulations vary them. Task-learning settings index competitor strength, drift and reminder settings index contextual overlap, retrieval-control settings distinguish unguided retrieval from deliberate recall, and affective marking tests shared-state amplification. Fixed settings for buffer and filler phases are treated as simulation configuration rather than as additional model mechanisms.</p>
+<section id="current-diagnostic-sweep" class="level2">
+<h2 class="anchored" data-anchor-id="current-diagnostic-sweep">Current Diagnostic Sweep</h2>
+<p>The first rendered sweep included here orients the reader to the simulated phase structure before the later sections develop the final manuscript contrasts. These plots are diagnostic outputs from the interference-strength sweep, not stand-alone evidence for the full intrusion-voluntary-memory dissociation. This figure will move into the relevant simulation section once the final simulation package is fixed.</p>
 <div id="fig-interference-sweep-spc" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-interference-sweep-spc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -563,6 +543,8 @@ Figure&nbsp;2: Phase-resolved recall in the interference-strength sweep. Serial-
 </figcaption>
 </figure>
 </div>
+<p>The section scaffold below records what each simulation must establish before the final result text is written. Each subsection specifies the core contrast, the primary readouts, and the main design decision still open at this stage.</p>
+</section>
 <section id="simulation-1-core-selective-interference-dissociation" class="level2">
 <h2 class="anchored" data-anchor-id="simulation-1-core-selective-interference-dissociation">Simulation 1: Core Selective-Interference Dissociation</h2>
 <p>Premise: The basic selective-interference result is a 2 x 2 contrast between task competition and retrieval mode. The section should compare weak or absent task competition with strong task competition under unguided retrieval and deliberate recall. The core demonstration is that the same stored film episode and the same post-film task manipulation produce larger film-item impairment under unguided retrieval than under deliberate recall.</p>

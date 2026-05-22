@@ -308,33 +308,6 @@ $$ {#eq-recall-context-update}
 This recalled-item update drives context toward the recalled item's encoding neighborhood, biasing subsequent retrievals toward nearby items and producing temporal organization in retrieval.
 Encoding operations use the context update and learning equations together, whereas reminders, recalled items, and supplied film items use the context update without adding a new recallable event.
 
-## Paradigm Phases and Settings
-
-The selective-interference paradigm configures the drift term in @eq-context-update, the learning scale in @eq-mcf-learning, and the retrieval-control settings applied to the sampling process.
-@tbl-paradigm-settings summarizes the settings used by the simulations.
-
-:::: {#tbl-paradigm-settings}
-| Segment | Operation | Settings | Paradigm role |
-|---|---|---|---|
-| Film | Encode film items | $\beta = \beta_{enc}$; $\lambda = 1$ | Target episode encoding |
-| Break | Encode break items | $\beta = m^{\beta}_\text{break}\beta_{enc}$; $\lambda = m^{\lambda}_\text{break}$ | Delay and possible break-item competitors |
-| Reminder start | Drift toward start state | $\beta = m^{\beta}_\text{rem,start}\beta_{start}$; no learning | Context change before reminders |
-| Film reminder | Sequentially cue film items | $\beta = m^{\beta}_\text{rem}\beta_{enc}$; no learning; no new recallable item | Film-context reinstatement before task encoding |
-| Task | Encode task items | $\beta = m^{\beta}_\text{task}\beta_{enc}$; $\lambda = m^{\lambda}_\text{task}$ | Competitor encoding and film-task contextual overlap |
-| Filler | Encode filler items | $\beta = m^{\beta}_\text{fill}\beta_{enc}$; $\lambda = m^{\lambda}_\text{fill}$ | Post-task buffer and possible filler competitors |
-| Unguided retrieval | Context-to-feature retrieval | Current context; baseline $\tau$; no film-directed start cue | Broad retrieval from the current context state |
-| Deliberate recall | Context-to-feature retrieval with control | Film-directed start/context cueing; scaled $\tau$; target monitoring when enabled | Voluntary film-directed retrieval |
-
-Paradigm phase and retrieval settings.
-Drift scales multiply their base rates and are clipped to $[0, 1]$.
-::::
-
-The reminder phase applies the film-item reminder cue operation sequentially to the film items.
-Each reminder cue uses @eq-context-input and @eq-context-update to reinstate context, but it does not apply @eq-mfc-learning or @eq-mcf-learning and is not added as a recallable item.
-Task items encoded after stronger reminder reinstatement are therefore associated with context states more similar to those associated with film items.
-Increasing $m^{\lambda}_\text{task}$ scales @eq-mcf-learning and makes task items stronger competitors once cued, whereas changing $m^{\beta}_\text{task}$ changes the drift term in @eq-context-update and how close task-associated context remains to film-associated context.
-Together, task drift and task learning determine whether the task phase is merely added experience or a source of items that are both contextually recruited and strong competitors.
-
 ## Retrieval Control
 
 Unguided retrieval and deliberate recall use the same retrieval-support and choice rules in @eq-retrieval-support and @eq-luce-choice.
@@ -370,20 +343,21 @@ This cue is not a separate retrieval system; it is the same feature-to-context o
 
 ## Affective Context
 
-The model also includes affective context components inherited from eCMR.
+The model also includes an affective-context pathway inherited from eCMR [@talmi2019retrieved; @cohen2022memory].
+The affective pathway tests whether shared affective state can amplify competition; it does not make task affect the explanation of selective interference.
 Each item has a two-unit affective feature vector $s_i$, with $s_i = [1, 0]^\top$ for items assigned the marked affective feature and $s_i = [0, 1]^\top$ for neutral or default items.
 The vector $s_i$ is not a recallable item and is not a separate trace.
-It initializes affective rows of $M^{FC}$ so that an item can cue its affective context components:
+The affective feature vector initializes $M^{FC}_{emot}$ so that an item can cue its affective context components:
 
 $$
-M^{FC}_{aff}(\cdot, i) = (1 - \gamma) s_i
-$$ {#eq-aff-mfc-pre}
+M^{FC}_{emot}(\cdot, i) = (1 - \gamma) s_i
+$$ {#eq-emot-mfc-pre}
 
 Affective context-to-feature support begins at zero:
 
 $$
-M^{CF}_{aff}(i, \cdot) = 0
-$$ {#eq-aff-mcf-pre}
+M^{CF}_{emot}(i, \cdot) = 0
+$$ {#eq-emot-mcf-pre}
 
 Thus, affective context can update during experience before it contributes retrieval support.
 Let $\phi_{\mathrm{emot},i}$ denote the added context-to-feature learning strength for item $i$ in the affective pathway.
@@ -391,22 +365,54 @@ With the binary vector above, $\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_
 When affective learning is engaged, the affective components of context receive additional context-to-feature learning:
 
 $$
-\Delta M^{CF}_{aff} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{aff},i}^\top
-$$ {#eq-aff-mcf-learning}
+\Delta M^{CF}_{emot} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{emot},i}^\top
+$$ {#eq-emot-mcf-learning}
 
-Here, $c_{\mathrm{aff},i}$ denotes the affective components of context.
+Here, $c_{\mathrm{emot},i}$ denotes the affective components of context.
 When affective context-to-feature learning is disabled, affective context does not add retrieval support beyond the ordinary context-to-feature pathway.
-When film and task items share the marked affective feature and affective context-to-feature learning is enabled, @eq-aff-mcf-learning can amplify competition beyond temporal proximity alone.
+When learned affective support is present, it contributes to the same context-to-feature competition defined in @eq-retrieval-support.
+Task items are distinct item features and are assigned the marked affective feature only in affective-overlap variants.
+When film and task items share the marked affective feature and affective context-to-feature learning is enabled, @eq-emot-mcf-learning can amplify competition beyond temporal proximity alone.
 
-The simulations below vary the phase, reminder, retrieval-control, and affective settings described above while keeping the underlying item-context architecture fixed.
+These equations define the item-context architecture used in all simulations.
 Because retrieval proceeds as a sequence of competitive samples terminated by a growing stop probability, task competitors can reduce film retrieval by winning individual retrieval competitions before search terminates.
 
 # Simulations
 
+The simulations configure the model specification above rather than adding new mechanisms.
+They use the same CMR operations to encode target film items, intervening non-film items, task items, and post-task filler items, and they use the same retrieval rule for unguided retrieval and deliberate recall.
+The design is organized around empirical contrasts in clip content, post-clip task, and retrieval mode, with immediate and delayed/post-reminder timing variants.
+
+:::: {#tbl-simulated-design}
+| Design component | Variants | Model role |
+|---|---|---|
+| Film/clip items | Trauma/affective or neutral target clips | Film items are the target episode whose later access is measured; affective marking is enabled only for affective-overlap variants. |
+| Task condition | Visuospatial interference task or comparison task | Task items are potential competitors encoded after film encoding or reminder reinstatement; task learning strength indexes how strongly they compete once cued. |
+| Affective overlap | Film-only marking or shared film-task marking | Tests whether shared affective state amplifies task competition. |
+| Timing/reinstatement | Immediate post-film task or delayed post-reminder task | Tests whether delayed reminders increase overlap by reinstating film-associated context before task encoding. |
+| Buffer/filler experience | Pre-reminder buffer and post-task filler | Moves context away from film and adds non-film items that can enter retrieval competition. |
+| Retrieval mode | Unguided retrieval or deliberate recall | Tests whether film-directed control protects voluntary access within the same retrieval architecture. |
+
+Simulated design components and their model implementation.
+The table maps empirical contrasts onto model operations rather than listing all phase-specific parameter values.
+::::
+
+Delayed/post-reminder simulations implement the reminder as two context-updating operations.
+After the pre-reminder buffer, context first drifts toward the start state.
+The model then applies film-item reminder cues sequentially, using @eq-context-input and @eq-context-update with a reminder-cue drift rate lower than encoding drift in the working simulations.
+This lower drift rate represents the assumption that brief reminder images provide weaker contextual evidence than full film-item presentations.
+Reminder cues do not apply @eq-mfc-learning or @eq-mcf-learning and do not add new recallable items.
+The immediate variant omits the structured pre-reminder buffer and reminder operations, placing the task phase directly after film encoding.
+
+Phase-specific parameter settings are introduced where the simulations vary them.
+Task-learning settings index competitor strength, drift and reminder settings index contextual overlap, retrieval-control settings distinguish unguided retrieval from deliberate recall, and affective marking tests shared-state amplification.
+Fixed settings for buffer and filler phases are treated as simulation configuration rather than as additional model mechanisms.
+
+## Current Diagnostic Sweep
+
 The first rendered sweep included here orients the reader to the simulated phase structure before the later sections develop the final manuscript contrasts.
 These plots are diagnostic outputs from the interference-strength sweep, not stand-alone evidence for the full intrusion-voluntary-memory dissociation.
-The section scaffold below records what each simulation must establish before the final result text is written.
-Each subsection specifies the core contrast, the primary readouts, and the main design decision still open at this stage.
+This figure will move into the relevant simulation section once the final simulation package is fixed.
 
 ::: {#fig-interference-sweep-spc fig-pos="H"}
 ![](figures/interference_mcf_scale_delay16_fit_no_shared_support_side_by_side_spc.png)
@@ -416,6 +422,9 @@ Serial-position curves show recall probability across the film, break, interfere
 Darker lines indicate stronger context-to-item learning for interference-task items.
 The figure shows how the interference manipulation changes the distribution of retrieval across encoded phases, rather than only changing total film recall.
 :::
+
+The section scaffold below records what each simulation must establish before the final result text is written.
+Each subsection specifies the core contrast, the primary readouts, and the main design decision still open at this stage.
 
 ## Simulation 1: Core Selective-Interference Dissociation
 
