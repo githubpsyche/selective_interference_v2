@@ -124,6 +124,8 @@ Film items and task items are distinct item representations, but each is linked 
 Task items are most likely to share film-relevant context when they are encoded soon after the film, after a reminder has reinstated film-associated context, or under matching affective conditions.
 Delay and filler activity move context away from the film, reducing the likelihood that later retrieval cues film items and task competitors together.
 These conditions determine whether task items are likely to be cued alongside film items; task encoding strength determines how strongly they compete once cued.
+Emotional extensions of CMR represent affect as an additional context dimension [@talmi2019retrieved; @cohen2022memory].
+In the present model, this affective-context stream can amplify competition when film and task items share the relevant affective feature.
 
 Context-to-item retrieval uses the current context state to cue candidate items.
 Here, unguided retrieval refers to broad context-to-item sampling with little film-directed guidance from task goals or external cues.
@@ -152,26 +154,23 @@ The first control lever is cue construction or start-state control, which reinst
 The second is competition focusing or filtering, which sharpens selection among candidates and favors strongly supported film items over weaker or off-target competitors.
 These levers yield graded protection: deliberate recall can lose film items when competition is strong, but endogenous film-directed control can reduce that loss relative to broad retrieval from ongoing context.
 
-Emotional extensions of CMR represent affect as an additional context dimension [@talmi2019retrieved; @cohen2022memory].
-In the present model, this affective-context stream can amplify competition when film and task items share the relevant affective feature.
-The formal model specified next instantiates the central commitments as phase-specific encoding, reminder-driven reinstatement, retrieval-mode and control settings, and affective overlap.
-
-# Model and Paradigm
-
-The simulations instantiate the retrieved-context account in an emotional CMR model [@talmi2019retrieved; @cohen2022memory].
-The model has a feature layer, a context layer, feature-to-context memory $M^{FC}$, and context-to-feature memory $M^{CF}$ [@polyn2009context].
-It updates context, learns item-context associations by outer products, retrieves items competitively, and reinstates context after retrieval.
-Departures from standard list-learning applications of CMR address two features of the selective-interference paradigm.
+The simulations instantiate these commitments in an emotional CMR model with phase-specific encoding, reminder-driven reinstatement, retrieval-mode and control settings, and affective overlap [@talmi2019retrieved; @cohen2022memory].
+The model departs from standard list-learning applications of CMR in two ways.
 First, film, break/delay, post-film task, and filler/delay periods form a continuous encoded stream, and a film reminder can reinstate film-associated context before task encoding.
 Second, non-film events from the break, task, and filler phases are encoded as distinct recallable items that can compete with film items during retrieval.
 This setup lets selective interference appear as a redistribution of retrieval across encoded phases, rather than as a direct reduction in film-item strength.
-The section defines the model's representations and parameters, generic CMR operations, paradigm settings, retrieval-control settings, and affective context.
+
+# Model Specification
+
+The specification below defines the model's representations, parameters, and initialization before turning to context updating, associative learning, retrieval, retrieval-control settings, and affective context.
 
 ## Representations and Parameters
 
 Each study event $i$ has an orthonormal feature vector $f_i \in \mathbb{R}^{N}$, where $N$ is the number of encoded item features in the simulated paradigm.
 The model maintains a unit-length context vector $c_i \in \mathbb{R}^{D}$, where $D$ is the number of context units.
 The core context units represent the start state and item-associated temporal context.
+Before encoding begins, context is initialized to the start state $c_0$, with the start unit active and item-associated temporal-context units inactive.
+Subsequent events update this state, so the context associated with each film, task, or filler item depends on where it occurs in the continuous paradigm stream.
 The model contains two associative matrices.
 The matrix $M^{FC} \in \mathbb{R}^{D \times N}$ maps feature vectors to context input.
 The matrix $M^{CF} \in \mathbb{R}^{N \times D}$ maps context to feature support.
@@ -187,13 +186,15 @@ Base parameter values are anchored by a pooled eCMR fit to the Ukraine war photo
 | $\beta_{start}$ | start drift rate | Start-of-list or film-directed context cueing |
 | $\beta_{rec}$ | recall drift rate | Context drift after recall |
 | $\gamma$ | feature-to-context learning rate | Learning rate for $M^{FC}$ |
+| $\lambda$ | context-to-feature learning scale | Baseline or phase-scaled learning rate for $M^{CF}$ |
 | $\alpha$ | shared support | Pre-experimental shared support in $M^{CF}$ |
 | $\delta$ | self support | Pre-experimental self-support in $M^{CF}$ |
 | $\phi_s$ | primacy scale | Initial boost to context-to-feature learning |
 | $\phi_d$ | primacy decay | Decay rate of primacy boost |
 | $\tau$ | choice sensitivity | Sharpness of retrieval competition |
-| $\phi_{\mathrm{emot}}$ | affective learning scale | Affective context-to-feature learning |
-| $\kappa$ | target-monitoring scale | Reduced context updating after sampled non-film competitors |
+| $\beta_{emot}$ | emotional-context drift rate | Context drift in the emotional pathway |
+| $\phi_{\mathrm{emot}}$ | emotional learning scale | Emotional context-to-feature learning |
+| $\kappa$ | target-monitoring scale | Reduced context updating after sampled non-film competitors when target monitoring is enabled |
 | $\theta_s$ | stop scale | Baseline stopping probability |
 | $\theta_r$ | stop growth | Growth of stopping probability across output positions |
 
@@ -201,9 +202,9 @@ Base parameters and theoretical roles.
 The parameter anchor is external to the selective-interference simulations [@dupertuys2026ukraine].
 ::::
 
-## Pre-Experimental Associations
-
-Pre-experimental initialization establishes baseline associations before the experiment.
+Pre-experimental associations represent background memory structure already present before the simulated paradigm begins.
+They give each item baseline self-support and shared support, so later retrieval reflects both pre-existing structure and associations learned during the film, task, and filler phases.
+Because the selective-interference simulations vary the new associations formed across phases, these baseline associations are treated as fixed model architecture rather than as the mechanism of interest.
 For the start unit and item-associated temporal context units:
 
 $$
@@ -212,7 +213,7 @@ M^{FC}_{pre}(j,i) =
 1 - \gamma & \text{if } j = i + 1 \\
 0 & \text{otherwise}
 \end{cases}
-$$
+$$ {#eq-mfc-pre}
 
 $$
 M^{CF}_{pre}(i,j) =
@@ -221,34 +222,34 @@ M^{CF}_{pre}(i,j) =
 \delta & \text{if } j = i + 1 \\
 \alpha & \text{if } j > 0 \text{ and } j \neq i + 1
 \end{cases}
-$$
+$$ {#eq-mcf-pre}
 
 The start context has no pre-experimental context-to-feature support.
 For context units corresponding to items, $\delta$ gives each item self-support and $\alpha$ gives all other items shared support.
 This initialization supplies baseline support before experimental learning.
 
-## CMR Operations
+## Context Updating, Learning, and Retrieval
 
 The same feature-to-context operation updates context when an item is encoded, recalled, or supplied as a cue.
 When feature $f_i$ is active, it probes feature-to-context memory to retrieve context input:
 
 $$
 c_i^{\mathrm{IN}} = M^{FC} f_i
-$$
+$$ {#eq-context-input}
 
 The model normalizes this input to unit length, yielding $\widehat{c}_i^{\mathrm{IN}}$.
 Context then drifts toward the normalized input with a drift rate $\beta$:
 
 $$
 c_i = \rho_i \, c_{i-1} + \beta \, \widehat{c}_i^{\mathrm{IN}}
-$$
+$$ {#eq-context-update}
 
 Let $d_i = c_{i-1} \cdot \widehat{c}_i^{\mathrm{IN}}$.
 The normalization coefficient is:
 
 $$
 \rho_i = \sqrt{1 + \beta^2 (d_i^2 - 1)} - \beta d_i
-$$
+$$ {#eq-context-rho}
 
 The coefficient $\rho_i$ is the nonnegative solution that keeps $c_i$ at unit length.
 When a new event is encoded, the active feature and updated context are also associated via outer-product learning.
@@ -256,45 +257,45 @@ Feature-to-context associations update as:
 
 $$
 \Delta M^{FC} = \gamma c_i f_i^\top
-$$
+$$ {#eq-mfc-learning}
 
 A primacy function weights context-to-feature learning:
 
 $$
 \phi_i = \phi_s \, e^{-\phi_d \cdot i} + 1
-$$
+$$ {#eq-primacy}
 
 Context-to-feature associations update as:
 
 $$
 \Delta M^{CF} = \lambda \phi_i f_i c_i^\top
-$$
+$$ {#eq-mcf-learning}
 
 Here, $\lambda$ scales context-to-feature learning, while $\phi_s$ and $\phi_d$ define the size and decay of the primacy boost.
 During context-guided retrieval, current context cues encoded items through $M^{CF}$:
 
 $$
 a_i = \left[M^{CF} c\right]_i
-$$
+$$ {#eq-retrieval-support}
 
 The choice sensitivity $\tau$ sharpens competition among candidates:
 
 $$
 A_i = a_i^{\tau}
-$$
+$$ {#eq-choice-sensitivity}
 
 The probability of recalling item $i$, conditional on continuing recall, follows a Luce choice rule over currently unrecalled items:
 
 $$
 P(i \mid \text{recall}) = \frac{A_i}{\sum_k A_k}
-$$
+$$ {#eq-luce-choice}
 
 At each retrieval step, the model may terminate with probability $P_{\mathrm{stop}}(j)$ or recall an item with probability $(1 - P_{\mathrm{stop}}(j)) \cdot P(i \mid \text{recall})$.
 Termination probability grows with output position:
 
 $$
 P_{\mathrm{stop}}(j) = \theta_s e^{j\theta_r}
-$$
+$$ {#eq-stopping}
 
 Here, $j$ is the number of items already recalled, $\theta_s$ sets the baseline termination probability, and $\theta_r$ controls its growth.
 In simulations, this value is bounded to remain a valid probability.
@@ -302,14 +303,14 @@ After a recalled item $r_j$, context is updated through the same feature-to-cont
 
 $$
 c_{j+1} = \rho_{\mathrm{rec},j} \, c_j + \beta_{rec} \, \widehat{M^{FC} f_{r_j}}
-$$
+$$ {#eq-recall-context-update}
 
 This recalled-item update drives context toward the recalled item's encoding neighborhood, biasing subsequent retrievals toward nearby items and producing temporal organization in retrieval.
 Encoding operations use the context update and learning equations together, whereas reminders, recalled items, and supplied film items use the context update without adding a new recallable event.
 
 ## Paradigm Phases and Settings
 
-The selective-interference paradigm configures the generic operations through phase-specific drift rates, context-to-feature learning scales, and retrieval-control settings.
+The selective-interference paradigm configures the drift term in @eq-context-update, the learning scale in @eq-mcf-learning, and the retrieval-control settings applied to the sampling process.
 @tbl-paradigm-settings summarizes the settings used by the simulations.
 
 :::: {#tbl-paradigm-settings}
@@ -329,20 +330,20 @@ Drift scales multiply their base rates and are clipped to $[0, 1]$.
 ::::
 
 The reminder phase applies the film-item reminder cue operation sequentially to the film items.
-Each reminder cue reinstates context through $M^{FC}$ but does not update $M^{FC}$ or $M^{CF}$ and is not added as a recallable item.
+Each reminder cue uses @eq-context-input and @eq-context-update to reinstate context, but it does not apply @eq-mfc-learning or @eq-mcf-learning and is not added as a recallable item.
 Task items encoded after stronger reminder reinstatement are therefore associated with context states more similar to those associated with film items.
-Increasing $m^{\lambda}_\text{task}$ makes task items stronger competitors once cued, whereas changing $m^{\beta}_\text{task}$ changes how close task-associated context remains to film-associated context.
+Increasing $m^{\lambda}_\text{task}$ scales @eq-mcf-learning and makes task items stronger competitors once cued, whereas changing $m^{\beta}_\text{task}$ changes the drift term in @eq-context-update and how close task-associated context remains to film-associated context.
 Together, task drift and task learning determine whether the task phase is merely added experience or a source of items that are both contextually recruited and strong competitors.
 
 ## Retrieval Control
 
-Unguided retrieval and deliberate recall use the same context-to-feature retrieval operation.
+Unguided retrieval and deliberate recall use the same retrieval-support and choice rules in @eq-retrieval-support and @eq-luce-choice.
 They differ in the control settings applied to the retrieval state and sampling process.
 The first deliberate-recall control setting is film-directed start/context cueing:
 
 $$
 c_\text{start} = \rho_\text{start} \, c_N + \beta_{start} \, c_0
-$$
+$$ {#eq-deliberate-start-cue}
 
 The scale $m^{\beta}_\text{start}$ controls the strength of this cueing in deliberate recall.
 The second control setting is sharper selection, implemented by scaling $\tau$.
@@ -350,19 +351,20 @@ Higher $\tau$ sharpens competition among all candidates.
 It protects film recall only when film-directed cueing gives film items stronger support than task competitors.
 The third control setting is target monitoring after a non-film item is sampled.
 Let $t_i = 1$ for film items and $t_i = 0$ otherwise, and define $\kappa_i = t_i + (1 - t_i)\kappa$.
+Target monitoring modifies the recalled-item context update in @eq-recall-context-update.
 With target monitoring, the context update after sampled item $i$ becomes:
 
 $$
 c_{j+1} = \rho_{\mathrm{rec},j} \, c_j + \kappa_i\beta_{rec} \, \widehat{M^{FC} f_i}
-$$
+$$ {#eq-target-monitoring-update}
 
 When $\kappa < 1$, sampled non-film competitors have less influence on the next context state than sampled film items.
 This convention is used for deliberate recall when simulations manipulate rejected-recall updating.
-Tests that supply a film item are represented as cue-driven context reinstatement:
+Tests that supply a film item are represented as cue-driven context reinstatement using the same feature-to-context input operation as @eq-context-input:
 
 $$
 c_\text{film}^{\mathrm{IN}} = M^{FC} f_\text{film}
-$$
+$$ {#eq-film-cue-input}
 
 This cue is not a separate retrieval system; it is the same feature-to-context operation applied to a supplied film item.
 
@@ -375,13 +377,13 @@ It initializes affective rows of $M^{FC}$ so that an item can cue its affective 
 
 $$
 M^{FC}_{aff}(\cdot, i) = (1 - \gamma) s_i
-$$
+$$ {#eq-aff-mfc-pre}
 
 Affective context-to-feature support begins at zero:
 
 $$
 M^{CF}_{aff}(i, \cdot) = 0
-$$
+$$ {#eq-aff-mcf-pre}
 
 Thus, affective context can update during experience before it contributes retrieval support.
 Let $\phi_{\mathrm{emot},i}$ denote the added context-to-feature learning strength for item $i$ in the affective pathway.
@@ -390,11 +392,11 @@ When affective learning is engaged, the affective components of context receive 
 
 $$
 \Delta M^{CF}_{aff} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{aff},i}^\top
-$$
+$$ {#eq-aff-mcf-learning}
 
 Here, $c_{\mathrm{aff},i}$ denotes the affective components of context.
 When affective context-to-feature learning is disabled, affective context does not add retrieval support beyond the ordinary context-to-feature pathway.
-When film and task items share the marked affective feature and affective context-to-feature learning is enabled, affective context can amplify competition beyond temporal proximity alone.
+When film and task items share the marked affective feature and affective context-to-feature learning is enabled, @eq-aff-mcf-learning can amplify competition beyond temporal proximity alone.
 
 The simulations below vary the phase, reminder, retrieval-control, and affective settings described above while keeping the underlying item-context architecture fixed.
 Because retrieval proceeds as a sequence of competitive samples terminated by a growing stop probability, task competitors can reduce film retrieval by winning individual retrieval competitions before search terminates.
