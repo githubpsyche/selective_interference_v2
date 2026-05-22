@@ -403,6 +403,8 @@ Because retrieval proceeds as a sequence of competitive samples terminated by a 
 
 The first rendered sweep included here orients the reader to the simulated phase structure before the later sections develop the final manuscript contrasts.
 These plots are diagnostic outputs from the interference-strength sweep, not stand-alone evidence for the full intrusion-voluntary-memory dissociation.
+The section scaffold below records what each simulation must establish before the final result text is written.
+Each subsection specifies the core contrast, the primary readouts, and the main design decision still open at this stage.
 
 ::: {#fig-interference-sweep-spc fig-pos="H"}
 ![](figures/interference_mcf_scale_delay16_fit_no_shared_support_side_by_side_spc.png)
@@ -415,56 +417,98 @@ The figure shows how the interference manipulation changes the distribution of r
 
 ## Simulation 1: Core Selective-Interference Dissociation
 
-Premise: The basic selective-interference result is a 2 x 2 contrast between interference condition and retrieval mode.
-The section asks whether the same stored film episode and the same post-film interference manipulation can produce larger impairment in intrusion-like retrieval than in deliberate recall.
+Premise: The basic selective-interference result is a 2 x 2 contrast between task competition and retrieval mode.
+The section should compare weak or absent task competition with strong task competition under unguided retrieval and deliberate recall.
+The core demonstration is that the same stored film episode and the same post-film task manipulation produce larger film-item impairment under unguided retrieval than under deliberate recall.
+
+Primary readouts: The main figure should show phase-resolved recall so the reader can see where retrieval probability is redistributed across film, task, and filler phases.
+A compact summary should also show film-item access and impairment from baseline for each retrieval mode.
+Task-competitor recall should be reported or visible enough to show that lost film access is competition-driven.
 
 Intended text take-away: This section establishes the core sufficiency result.
 The model can reproduce the qualitative intrusion-voluntary-memory dissociation without separately weakening film items for one measure.
 Deliberate recall may still be impaired; the claim is relative protection, not immunity.
 
+Open specification: The deliberate-recall settings used here need to be fixed before this section is written as a result.
+Those settings should be strong enough to create a retrieval-mode contrast but simple enough that Simulation 2 can still isolate the separate control mechanisms.
+
 ## Simulation 2: Control Mechanisms Underlying Deliberate-Recall Protection
 
 Premise: Deliberate recall is not categorically protected.
 Its relative sparing depends on control operations that make retrieval more film-directed.
+This section should separate the contributions of film-directed start/context cueing, sharper selection through $\tau$, and target-monitoring or rejected-recall updating through $\kappa$ if that mechanism remains in the simulation package.
+
+Primary readouts: The figure should show how each control lever changes film-item access and the phase-resolved organization of recall under a fixed task-competition setting.
+The most useful contrast should include total film recall, task-competitor retrieval, and how closely recall remains tied to the film phase.
 
 Intended text take-away: This section earns the "relatively intact voluntary memory" claim.
 Sparing is a graded consequence of retrieval control rather than a property attached to voluntary tests as a category.
-Weakening these control operations should make deliberate recall resemble intrusion-like retrieval more closely.
+Weakening these control operations should make deliberate recall resemble unguided retrieval more closely.
+
+Open specification: Decide whether target-monitoring through $\kappa$ is a core control mechanism or a sensitivity analysis.
+The introduction currently emphasizes film-directed cueing and sharper selection more strongly than rejected-recall updating.
 
 ## Simulation 3: Competitor Strength and Contextual Overlap
 
 Premise: An interference task becomes effective when it encodes competitors with enough learned support and with associated context states similar enough to film context.
 This section asks what makes a task Tetris-like in model terms.
+The design should separate task competitor strength from contextual overlap rather than letting one sweep carry both interpretations.
+
+Primary readouts: The figure should cross or juxtapose a task-strength manipulation with an overlap manipulation and show both film-item access and task-competitor retrieval.
+Phase-resolved recall remains useful here because the model's explanation depends on task items entering retrieval alongside film items.
 
 Intended text take-away: This section explains what makes interference effective.
 The account should not reduce to generic distraction, list length, or task difficulty.
-Competitor strength matters because competitors are retrievable from film-related context.
-The affective variant sharpens the boundary condition: stronger affective film encoding can increase baseline film retrieval and reduce vulnerability to mismatched task competitors, whereas affective matching can make strong task items more effective competitors.
+Competitor strength determines whether cued task items can win retrieval competitions.
+Contextual overlap determines whether task competitors are cued alongside film items before their strength can impair film retrieval.
+Affective matching can be used as a sensitivity extension if it is run as a specific manipulation, but it should not become the main explanation unless the simulations make it central.
+
+Open specification: Choose the primary operationalization of contextual overlap.
+Candidates include task-phase drift, break/filler drift, reminder strength, and affective matching, but the section needs one main contrast and any others should be clearly secondary.
 
 ## Simulation 4: Reminder Reinstatement and Delayed Interference
 
 Premise: The delayed-reminder case applies the overlap mechanism after context has drifted away from the film.
-A reminder matters because it reinstates film context before competitor encoding.
+A reminder reinstates film context before competitor encoding by applying sequential film-item cues without new learning.
+
+Primary readouts: The figure should show how weak versus strong reminder reinstatement changes phase-resolved recall and film-item access after a fixed task phase.
+If delay or filler length is varied, the figure should make clear whether the effect comes from reinstatement strength, subsequent drift, or their combination.
 
 Intended text take-away: This section connects the model to post-reminder interventions.
 The reminder is not treated as a special storage-disruption device.
 It restores the contextual condition required for later competitor encoding to affect film-item retrieval.
 
+Open specification: Decide whether the main comparison is zero/weak reminder reinstatement versus strong reminder reinstatement, a reminder-strength sweep, a delay/drift sweep, or a compact factorial combination.
+
 ## Simulation 5: Heterogeneity Across Recall-Like Test Formats
 
 Premise: Intrusion diaries, vigilance-style monitoring, free recall, and cued recall differ in how much they rely on broad context-to-item search versus film-directed retrieval support.
 This section maps the model's retrieval-control mechanisms onto variation across recall-like empirical measures.
+The section should only become a simulation result if each test format is assigned a concrete retrieval setting.
+Candidate settings include unguided retrieval from ongoing context, monitoring with film-related cues, free recall with film-directed start cueing, and cued recall with stronger external support.
+
+Primary readouts: The figure should show a graded vulnerability profile across retrieval settings under the same stored associations.
+The useful result is a continuum of film-item impairment across retrieval settings.
 
 Intended text take-away: This section interprets heterogeneity across empirical paradigms without treating intrusion and voluntary memory as fixed computational kinds.
 The model predicts a continuum of vulnerability across recall-like tests depending on how much the task supports film-directed retrieval.
+
+Open specification: The mapping from empirical test format to model setting is the main unresolved piece.
+If the mapping remains qualitative, this material belongs in the discussion rather than as a numbered simulation.
 
 ## Simulation 6: Probe-Driven Access in Recognition-Like Tests
 
 Premise: Tests that supply a film item are a limiting case of voluntary access because they begin closer to the target item than broad recall does.
 This section preserves the useful part of the old recognition result without treating probe-driven access as categorically protected.
+The section should remain separate only if the simulation directly implements supplied-film-item cueing and contrasts it with broad context-to-feature search.
+
+Primary readouts: The figure should show that supplied film items can reinstate associated context and reduce exposure to task competitors under otherwise matched stored associations.
+It should avoid implying a full recognition decision model unless such a mechanism is added.
 
 Intended text take-away: This section handles tests that supply a film item and recognition-like measures as a probe-driven access case.
 The claim is that probe-driven access reduces exposure to contextual competition, not that recognition escapes the mechanism in every design or that all voluntary memory has the same protection.
+
+Open specification: Decide whether this section earns its own simulation or should be folded into Simulation 5 as one point on the retrieval-support continuum.
 
 # General Discussion
 
