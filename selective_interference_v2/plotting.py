@@ -20,12 +20,31 @@ from jaxcmr.typing import Array, Float
 
 
 __all__ = [
+    "PHASE_COLORS",
+    "PHASE_FILLS",
+    "add_phase_bands",
     "plot_interference_spc",
     "plot_summary_dv",
     "add_filler_boundary",
     "light_to_dark_colors",
     "save_figure",
 ]
+
+
+PHASE_COLORS = {
+    "film": "#1764D8",
+    "break": "#3D4B5C",
+    "task": "#D96B2B",
+    "filler": "#3D4B5C",
+    "reminder": "#178A4C",
+}
+
+PHASE_FILLS = {
+    "film": "#EAF2FF",
+    "break": "#F2F4F6",
+    "task": "#FFF0E6",
+    "filler": "#F2F4F6",
+}
 
 
 def light_to_dark_colors(n: int) -> list[str]:
@@ -46,6 +65,43 @@ def save_figure(figure_dir: str, figure_str: str, suffix: Optional[str] = None) 
     plt.savefig(f"{base}.png", bbox_inches="tight", dpi=600)
     plt.savefig(f"{base}.svg", bbox_inches="tight")
     plt.show()
+
+
+def add_phase_bands(
+    axis: Axes,
+    phase_labels: Sequence[str],
+    *,
+    label_y: float = 1.02,
+) -> Axes:
+    """Add Figure-1-style phase bands to an encoded-position plot."""
+    if len(phase_labels) == 0:
+        return axis
+
+    trans = blended_transform_factory(axis.transData, axis.transAxes)
+    start = 1
+    current = phase_labels[0]
+    for idx, phase in enumerate([*phase_labels[1:], None], start=2):
+        if phase == current:
+            continue
+        end = idx - 1
+        fill = PHASE_FILLS.get(current, "#F2F4F6")
+        color = PHASE_COLORS.get(current, "#3D4B5C")
+        axis.axvspan(start - 0.5, end + 0.5, color=fill, alpha=0.65, zorder=0)
+        axis.text(
+            (start + end) / 2,
+            label_y,
+            current.title(),
+            ha="center",
+            va="bottom",
+            fontsize=10,
+            fontweight="bold",
+            color=color,
+            transform=trans,
+            clip_on=False,
+        )
+        start = idx
+        current = phase
+    return axis
 
 
 def plot_interference_spc(

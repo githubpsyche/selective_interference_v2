@@ -109,7 +109,7 @@ Film-directed retrieval control changes the starting cue and selection rule used
 ::: {#fig-retrieved-context-account fig-pos="H"}
 ![](retrieved_context_account_figure/retrieved_context_account_composite.png){width=100%}
 
-**Retrieved-context account of selective interference.**
+**A retrieved-context account of selective interference.**
 The account explains selective interference through context overlap, task encoding strength, and retrieval control within a shared memory system.
 **(A)** The simulated paradigm includes film encoding, a structured break, a film reminder, interference or comparison task, a delay period, and retrieval tests.
 **(B)** Film and task items remain distinct while becoming associated with context states active at encoding; contextual overlap makes task items likely to be cued alongside film items, and task encoding strength determines how strongly they compete once cued.
@@ -414,30 +414,32 @@ The remaining simulations decompose deliberate-recall control and examine bounda
 
 ## Simulation 1: Task Competition and Contextual Overlap
 
-Premise: The first simulation asks whether task items can reduce film-item access through two memory-side ingredients: task competitor strength and contextual overlap with film-associated context.
-The current sweep operationalizes competitor strength by increasing task context-to-feature learning.
-It operationalizes contextual overlap by comparing no-reminder and reminder conditions, where reminders reinstate film-associated context before task encoding.
-This simulation does not yet address the intrusion-voluntary-memory dissociation because retrieval mode is not varied.
+Simulation 1 demonstrates the memory-side context-binding mechanism.
+The simulation varies task context-to-feature learning, which determines how strongly task items compete once they are cued, and crosses this manipulation with whether film reminders reinstate film-associated context before task encoding.
+Retrieval mode is held fixed, so this simulation does not yet address the intrusion-voluntary-memory dissociation.
+Instead, it establishes whether distinct task items can become effective competitors for film items when they are both strongly encoded and associated with film-relevant context.
 
-::: {#fig-interference-sweep-spc fig-pos="H"}
-![](figures/interference_mcf_scale_delay16_fit_no_shared_support_side_by_side_spc.png)
+::: {#fig-simulation1-context-binding fig-pos="H"}
+![](figures/simulation1_context_binding.png)
 
-Phase-resolved recall in the interference-strength sweep.
-Serial-position curves show recall probability across the film, break, interference, and filler phases of the simulated paradigm, separately for no-reminder and reminder conditions.
-Darker lines indicate stronger context-to-feature learning for task items.
-The figure shows how the task-learning manipulation changes the distribution of retrieval across encoded phases, rather than only changing total film recall.
+**Reminder-driven context overlap makes task encoding strength consequential for film recall.**
+Simulation 1 demonstrates how task items can become competitors for film recall by varying task encoding strength with or without film-context reinstatement before task encoding.
+**(A)** Without a film reminder, task items become associated with context states that have drifted away from the film, so stronger task encoding produces only modest redistribution from film items to task items.
+**(B)** With a film reminder, task items become associated with context states more similar to those associated with film items, so stronger task encoding produces larger redistribution from film items to task items.
+**(C)** This behavioral contrast follows from the context trace: reminder cues make the context states active during task encoding more similar to the states associated with film items.
+**(D)** When the model is cued with film context, stronger task encoding assigns a larger share of item support to task items, especially after a film reminder.
 :::
 
-Primary readouts: The main figure should show phase-resolved recall across the film, break, task, and filler phases for no-reminder and reminder conditions across task-learning strengths.
-A compact summary should also show film-item access and task-item retrieval as task learning increases.
-The key display should make clear whether lost film retrieval is redistributed toward task items rather than simply disappearing.
+The no-reminder condition produces the first ingredient in isolation.
+Increasing task learning makes task items stronger competitors, but the resulting change in film recall is modest because the task is encoded after buffer activity has moved context away from the film.
+The reminder condition combines stronger task learning with greater film-task context overlap.
+In that condition, the same task-learning sweep produces a much larger redistribution of recall from film positions to task positions.
 
-Intended text take-away: Task items can redistribute retrieval away from film items without reducing film-item strength.
-Reminder-driven reinstatement makes task items more effective competitors by encoding them in a film-relevant context state.
-This establishes the memory-side mechanism needed before introducing retrieval-mode selectivity.
-
-Open specification: Decide whether this section will keep the current interference-strength sweep as the final Simulation 1 or add a cleaner crossed summary of task strength by reminder/overlap.
-Decide whether the comparison task is represented mainly as weak task learning, lower contextual overlap, lower affective overlap, or some combination of these model-level properties.
+The internal diagnostics clarify why the two recall distributions differ.
+The reminder branch preserves higher similarity between film encoding contexts and task encoding contexts, so task items are stored in a context neighborhood that later film-related cues can reach.
+Task context-to-feature learning then determines how much support those task items receive from a film-context cue.
+The effect is therefore not a weakening of film-item storage.
+It is an additive competition effect: task items remain distinct from film items but become increasingly likely to win retrieval when they are encoded strongly in film-relevant context.
 
 ## Simulation 2: Retrieval Mode and Selective Interference
 

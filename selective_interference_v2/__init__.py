@@ -30,6 +30,9 @@ from .remapping import (
     standard_remap,
 )
 from .plotting import (
+    PHASE_COLORS,
+    PHASE_FILLS,
+    add_phase_bands,
     add_filler_boundary,
     light_to_dark_colors,
     plot_interference_spc,
@@ -52,6 +55,9 @@ __all__ = [
     "interference_extended_remap",
     "filler_extended_remap",
     "break_extended_remap",
+    "PHASE_COLORS",
+    "PHASE_FILLS",
+    "add_phase_bands",
     "film_recalled_stats",
     "load_fit_params",
     "PhasedSourceOnlyECMR",
