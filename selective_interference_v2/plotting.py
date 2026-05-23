@@ -72,6 +72,7 @@ def add_phase_bands(
     phase_labels: Sequence[str],
     *,
     label_y: float = 1.02,
+    fontsize: float = 10,
 ) -> Axes:
     """Add Figure-1-style phase bands to an encoded-position plot."""
     if len(phase_labels) == 0:
@@ -93,7 +94,7 @@ def add_phase_bands(
             current.title(),
             ha="center",
             va="bottom",
-            fontsize=10,
+            fontsize=fontsize,
             fontweight="bold",
             color=color,
             transform=trans,
