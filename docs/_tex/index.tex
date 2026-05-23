@@ -422,14 +422,15 @@ reinstatement can bias retrieval toward a target episode, while
 monitoring mechanisms can reject candidates that poorly match a target
 context (\citeproc{ref-lohnas2015expanding}{Lohnas et al., 2015};
 \citeproc{ref-sederberg2008context}{Sederberg et al., 2008}). Emotional
-CMR variants (i.e., eCMR and CMR3) add emotional context and
-emotion-dependent binding, allowing retrieved-context models to capture
-how affective content shapes recall organization, emotional intrusions,
-and intentional access (\citeproc{ref-cohen2022memory}{Cohen \& Kahana,
-2022}; \citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). Together,
-these commitments make the framework a principled setting for
-demonstrating how selective interference can arise within a single
-affectively-modulated episodic-memory system.
+CMR variants (i.e., eCMR and CMR3) instantiate this source-context
+machinery with emotional context and emotion-dependent binding, allowing
+retrieved-context models to capture how affective content shapes recall
+organization, emotional intrusions, and intentional access
+(\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
+\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). Together, these
+commitments make the framework a principled setting for demonstrating
+how selective interference can arise within a single retrieved-context
+system.
 
 For selective interference, our model treats the film, any reminder, and
 subsequent interference as episodes encoded by binding item
@@ -460,15 +461,15 @@ strongly encoded task can reduce later film recall because task items
 are encoded while context is still film-relevant, making them likely to
 compete when film context cues retrieval. Simulation 2 adds the
 intentionality manipulation, comparing unguided retrieval with
-deliberate recall after the same task manipulation and showing how
-film-directed recall can reduce the impact of task competitors. A later
-task-specificity simulation will clarify which task properties matter in
-the model, including task-item learning strength and overlap with
-film-associated context, rather than treating the
-visuospatial/comparison contrast as primitive. Simulation 4 examines cue
-support across test formats, showing how film-related monitoring cues or
-supplied film items can reduce reliance on broad context-to-item
-sampling and thereby narrow the intrusion-voluntary-memory dissociation
+deliberate recall after the same task manipulation and decomposing the
+film-directed control settings that protect deliberate recall.
+Simulation 3 clarifies which task properties matter in the model,
+including task-item learning strength and overlap with film-associated
+context, rather than treating the visuospatial/comparison contrast as
+primitive. Simulation 4 examines cue support across test formats,
+showing how film-related monitoring cues or supplied film items can
+reduce reliance on broad context-to-item sampling and thereby narrow the
+intrusion-voluntary-memory dissociation
 (\citeproc{ref-lau2021selectively}{Lau-Zhu et al., 2021}). The result is
 a mechanistic alternative to separately vulnerable memory
 representations and a set of specific hypotheses about when selective
@@ -522,17 +523,17 @@ Contextual similarity is established during encoding. Film items and
 task items are distinct item representations, but each is linked to the
 context state active when it is encountered. Task items are most likely
 to share film-relevant context when they are encoded soon after the
-film, after a reminder has reinstated film-associated context, or under
-matching affective conditions. Delay and filler activity move context
-away from the film, reducing the likelihood that later retrieval cues
-film items and task competitors together. These conditions determine
-whether task items are likely to be cued alongside film items; task
-encoding strength determines how strongly they compete once cued.
-Emotional extensions of CMR represent affect as an additional context
-dimension (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
-\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). In the present
-model, this affective-context stream can amplify competition when film
-and task items share the relevant affective feature.
+film, after a reminder has reinstated film-associated context, or when
+they share a non-temporal source feature with film items. Delay and
+filler activity move context away from the film, reducing the likelihood
+that later retrieval cues film items and task competitors together.
+These conditions determine whether task items are likely to be cued
+alongside film items; task encoding strength determines how strongly
+they compete once cued. Emotional extensions of CMR treat affect as one
+source-context dimension (\citeproc{ref-cohen2022memory}{Cohen \&
+Kahana, 2022}; \citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}).
+In the present model, this source-context pathway can amplify
+competition when film and task items share the marked source feature.
 
 Context-to-item retrieval uses the current context state to cue
 candidate items. Here, unguided retrieval refers to broad
@@ -543,7 +544,7 @@ both sets. Such broad, weakly guided retrieval is especially vulnerable
 to this competition: as task competitors receive support, any given film
 item becomes less likely to be sampled as an intrusion. The size of this
 effect depends on the number of competitors, their learned support, and
-the similarity between their associated temporal or affective context
+the similarity between their associated temporal or source-context
 states and film context. Perceptual modality contributes through those
 quantities: a visuospatial task is effective to the extent that it
 creates competitors with sufficient learned support or sufficiently
@@ -602,7 +603,7 @@ retrieval from ongoing context.
 
 The simulations instantiate these commitments in an emotional CMR model
 with phase-specific encoding, reminder-driven reinstatement,
-retrieval-mode and control settings, and affective overlap
+retrieval-mode and control settings, and source-context overlap
 (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
 \citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). The model
 departs from standard list-learning applications of CMR in two ways.
@@ -619,7 +620,7 @@ film-item strength.
 
 The specification below defines the model's representations, parameters,
 and initialization before turning to context updating, associative
-learning, retrieval, retrieval-control settings, and affective context.
+learning, retrieval, retrieval-control settings, and source context.
 
 \subsection{Representations and
 Parameters}\label{representations-and-parameters}
@@ -684,10 +685,9 @@ phase-scaled learning rate for \(M^{CF}\) \\
 learning \\
 \(\phi_d\) & primacy decay & Decay rate of primacy boost \\
 \(\tau\) & choice sensitivity & Sharpness of retrieval competition \\
-\(\beta_{emot}\) & emotional-context drift rate & Context drift in the
-emotional pathway \\
-\(\phi_{\mathrm{emot}}\) & emotional learning scale & Emotional
-context-to-feature learning \\
+\(\beta_{emot}\) & source-context drift rate & Source context drift \\
+\(\phi_{\mathrm{emot}}\) & source learning scale & Learning scale for
+the marked source feature \\
 \(\kappa\) & target-monitoring scale & Reduced context updating after
 sampled non-film competitors when target monitoring is enabled \\
 \(\theta_s\) & stop scale & Baseline stopping probability \\
@@ -866,50 +866,52 @@ c_\text{film}^{\mathrm{IN}} = M^{FC} f_\text{film}
 Supplied film items therefore use the same feature-to-context operation
 as recalled and reminded items.
 
-\subsection{Affective Context}\label{affective-context}
+\subsection{Source Context}\label{source-context}
 
-The model also includes an affective-context pathway inherited from eCMR
+The model also includes a source-context pathway, generalizing the role
+that emotional context plays in eCMR to non-temporal contextual features
+that can organize recall when shared across items
 (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
-\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). The affective
-pathway allows the simulations to examine whether shared affective state
-can amplify competition; it does not make task affect the explanation of
-selective interference. Each item has a two-unit affective feature
-vector \(s_i\), with \(s_i = [1, 0]^\top\) for items assigned the marked
-affective feature and \(s_i = [0, 1]^\top\) for neutral or default
-items. The affective feature vector initializes \(M^{FC}_{emot}\) so
-that an item can cue its affective context components:
+\citeproc{ref-polyn2009context}{Polyn et al., 2009a};
+\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). In the present
+simulations, this pathway is represented by a simplified two-unit source
+feature vector \(s_i\). The marked source feature can be used to examine
+whether film and task items that share a non-temporal source state
+compete more strongly, without necessarily treating visuospatial task
+items as emotional items. The source feature vector initializes
+\(M^{FC}_{emot}\) so that an item can cue its source-context components:
 
 \begin{equation}\phantomsection\label{eq-emot-mfc-pre}{
 M^{FC}_{emot}(\cdot, i) = (1 - \gamma) s_i
 }\end{equation}
 
-Affective context-to-feature support begins at zero:
+Source-context-to-feature support begins at zero:
 
 \begin{equation}\phantomsection\label{eq-emot-mcf-pre}{
 M^{CF}_{emot}(i, \cdot) = 0
 }\end{equation}
 
-Thus, affective context can update during experience before it
-contributes retrieval support. Let \(\phi_{\mathrm{emot},i}\) denote the
-added context-to-feature learning strength for item \(i\) in the
-affective pathway. With the binary vector above,
+Thus, source context can update during experience before it contributes
+retrieval support. Let \(\phi_{\mathrm{emot},i}\) denote the added
+context-to-feature learning strength for item \(i\) in the
+source-context pathway. With the binary vector above,
 \(\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_i]_1\), so items
-assigned the marked affective feature receive \(\phi_{\mathrm{emot}}\)
-and neutral or default items receive 0. When affective learning is
-engaged, the affective components of context receive additional
+assigned the marked source feature receive \(\phi_{\mathrm{emot}}\) and
+neutral or default items receive 0. When source-context learning is
+engaged, the source components of context receive additional
 context-to-feature learning:
 
 \begin{equation}\phantomsection\label{eq-emot-mcf-learning}{
 \Delta M^{CF}_{emot} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{emot},i}^\top
 }\end{equation}
 
-Here, \(c_{\mathrm{emot},i}\) denotes the affective components of
-context. Affective support enters retrieval through learned affective
+Here, \(c_{\mathrm{emot},i}\) denotes the source components of context.
+Source-context support enters retrieval through learned source
 context-to-feature associations and contributes to the same competition
 defined in Equation~\ref{eq-retrieval-support}. Task items are distinct
-item features and are assigned the marked affective feature only in
-affective-overlap variants. When film and task items share the marked
-affective feature and affective context-to-feature learning is enabled,
+item features and are assigned the marked source feature only in
+source-context-overlap variants. When film and task items share the
+marked source feature and source context-to-feature learning is enabled,
 Equation~\ref{eq-emot-mcf-learning} can amplify competition beyond
 temporal proximity alone.
 
@@ -922,16 +924,19 @@ before search terminates.
 \section{Simulations}\label{simulations}
 
 The simulations instantiate the retrieved-context account in a
-controlled trauma-film analogue. They vary phase settings and
-retrieval-control settings to examine how context overlap, task
-competition, and film-directed control shape recall. Simulation 1
-isolates how task learning and film-context reinstatement create
-associations that make task items competitive during retrieval.
-Simulation 2 applies that competition to unguided retrieval and
-deliberate recall. Simulation 3 separates the control settings that can
-protect deliberate recall. Simulations 4--6 examine reminder timing,
-task specificity and affective overlap, and cue support across test
-formats.
+controlled trauma-film analogue. They evaluate four linked packages:
+context-binding interference, retrieval-mode differences, task
+specificity, and cue support across test formats. Simulation 1 shows how
+a post-reminder task reduces film recall when task items receive strong
+context-to-feature learning while film-relevant context is active.
+Simulation 2 adds the intentionality manipulation by comparing unguided
+retrieval with deliberate recall and then decomposing the film-directed
+control settings that reduce deliberate-recall vulnerability. Simulation
+3 examines which task properties make the post-film task effective,
+including task-item learning strength, contextual similarity, and
+source-context overlap. Simulation 4 examines how film-related
+monitoring cues and tests that supply a film item change vulnerability
+across test formats.
 
 \subsection{Methodology}\label{methodology}
 
@@ -956,9 +961,18 @@ free-recall sequences from Dupertuys et al.
 zero.}{\label{tbl-simulation-parameters}}}
 \vspace{-20pt}}
 
-\begin{longtable}[]{@{}lrl@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
 \toprule\noalign{}
-Symbol & Value & Role \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Symbol
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Role
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -972,9 +986,9 @@ Symbol & Value & Role \\
 \(\phi_s\) & 0.499 & Primacy scale \\
 \(\phi_d\) & 0.530 & Primacy decay \\
 \(\tau\) & 3.562 & Choice sensitivity \\
-\(\beta_{emot}\) & 0.696 & Emotional-context drift rate \\
-\(\phi_{\mathrm{emot}}\) & 0.130 & Emotional learning scale \\
-\(\theta_s\) & 0.0123 & Stop scale \\
+\(\beta_{emot}\) & 0.696 & Source-context drift rate \\
+\(\phi_{\mathrm{emot}}\) & 0.130 & Learning scale for the marked source
+feature \\
 \(\theta_r\) & 0.372 & Stop growth \\
 \end{longtable}
 
@@ -992,11 +1006,11 @@ simulation explicitly changes the test format.
 
 Film, break/buffer, task, and filler items are encoded by the same CMR
 operations defined above. Phase settings control temporal drift and
-context-to-feature learning strength. In the no-reminder branch used for
-Simulation 1, the reminder-start and film-item reminder-cue drift scales
-are set to zero. In the with-reminder branch, context first shifts
-toward the start state and then receives sequential film-item reminder
-cues before task encoding. Reminder cues update context through
+context-to-feature learning strength. In the no-reminder condition used
+for Simulation 1, the reminder-start and film-item reminder-cue drift
+scales are set to zero. In the with-reminder condition, context first
+shifts toward the start state and then receives sequential film-item
+reminder cues before task encoding. Reminder cues update context through
 Equation~\ref{eq-context-input} and Equation~\ref{eq-context-update},
 but they do not apply Equation~\ref{eq-mfc-learning} or
 Equation~\ref{eq-mcf-learning} and do not add new recallable items.
@@ -1044,7 +1058,7 @@ With-reminder drift scales & 1.0 & Applies reminder-start and film-item
 cue reinstatement \\
 Task \(M^{CF}\) scale & 0.0--3.0 by 0.5 & Sweep of task
 context-to-feature learning strength \\
-Affective marking & Off & No affective-overlap manipulation in
+Source marking & Off & No source-context-overlap manipulation in
 Simulation 1 \\
 \end{longtable}
 
@@ -1065,17 +1079,19 @@ centroid of film encoding context states, applies that cue to \(M^{CF}\)
 after task encoding, and computes task support divided by the sum of
 film and task support.
 
-\subsection{Simulation 1: Task Competition and Contextual
-Overlap}\label{simulation-1-task-competition-and-contextual-overlap}
+\subsection{Simulation 1: Task Encoding and Contextual
+Overlap}\label{simulation-1-task-encoding-and-contextual-overlap}
 
-Simulation 1 isolates the conditions under which task learning strength
-becomes consequential for film recall. It sweeps task context-to-feature
-learning across the no-reminder and with-reminder branches described
-above. Retrieval settings are held fixed so Simulation 1 isolates the
-stored-association conditions under which distinct task items become
-effective competitors for film recall. Simulation 2 then applies those
-film-task associations to retrieval modes that differ in film-directed
-control.
+Simulation 1 demonstrates how a post-film task can reduce later film
+recall when task items are strongly encoded while film-relevant context
+is active. To separate task strength from reminder-driven context
+reinstatement, the simulation sweeps the task-phase context-to-feature
+learning scale under no-reminder and with-reminder conditions. Retrieval
+settings are held fixed, so differences in recall reflect the
+item-context associations formed before retrieval rather than changes in
+retrieval control. Simulation 2 then examines whether film-directed
+retrieval control reduces the impact of those task-item associations on
+deliberate recall.
 
 \begin{figure}[H]
 
@@ -1111,10 +1127,10 @@ only modest loss of film recall and only modest gain in task recall,
 because task items become associated with later context states reached
 after drift away from the film. With a film reminder, the same
 task-learning manipulation produces a much larger redistribution from
-film positions to task positions. The reminder branch therefore shows
-that task strength matters most when task items are associated with
-film-relevant context states. The serial-position curves also show that
-the effect is not uniform across film positions: early film recall
+film positions to task positions. The with-reminder condition therefore
+shows that task strength matters most when task items are associated
+with film-relevant context states. The serial-position curves also show
+that the effect is not uniform across film positions: early film recall
 remains relatively protected under the current settings compared with
 later film positions.
 
@@ -1124,117 +1140,69 @@ similarity between the states associated with film items and the states
 active during task encoding. When a reminder reinstates film-associated
 context before task encoding, the model encodes task items in states
 more similar to those associated with film items. Panel D quantifies
-support allocation from a film-context cue: as task learning increases,
-task items receive a larger share of item support when film contexts cue
-retrieval, especially after the film reminder. The resulting impairment
-is therefore not a weakening of film-item storage. It is an additive
-competition effect in which task items remain distinct from film items
-but become increasingly likely to win retrieval from film-relevant cues.
-Simulation 2 next applies these film-task associations to the
-retrieval-mode contrast needed for selective interference.
+support allocation from a film-context cue: as task context-to-feature
+learning increases, task items receive a larger share of item support
+when film contexts cue retrieval, especially after the film reminder.
+The resulting impairment is therefore not a weakening of film-item
+storage. It is an additive competition effect in which task items remain
+distinct from film items but become increasingly likely to win retrieval
+from film-relevant cues. Simulation 2 next examines whether
+film-directed retrieval control reduces the impact of these task-item
+associations on deliberate recall.
 
-\subsection{Simulation 2: Retrieval Mode and Selective
-Interference}\label{simulation-2-retrieval-mode-and-selective-interference}
+\subsection{Simulation 2: Retrieval Mode and Film-Directed
+Control}\label{simulation-2-retrieval-mode-and-film-directed-control}
 
-Premise: Given stored film and task associations capable of producing
-competition, the second simulation asks whether unguided retrieval is
-more impaired than deliberate recall. The section should compare weak or
-absent task competition with strong task competition under unguided
-retrieval and deliberate recall. This is the first direct simulation of
-the selective-interference dissociation between intrusion-like access
-and voluntary recall.
+Premise: Simulation 2 adds the intentionality manipulation to the
+encoding conditions established in Simulation 1. The section should
+compare weak or absent task support with strong post-reminder task
+support under unguided retrieval and deliberate recall. It should then
+decompose the control settings that make deliberate recall more
+film-directed. This is the first direct simulation of the
+selective-interference dissociation: the same task manipulation should
+reduce unguided retrieval more than deliberate recall.
 
-Primary readouts: The main figure should show phase-resolved recall so
-the reader can see where retrieval probability is redistributed across
-film, task, and filler phases. A compact summary should also show
-film-item access and impairment from baseline for each retrieval mode.
-Task-competitor recall should be reported or visible enough to show that
-lost film access is competition-driven.
-
-Intended text take-away: This section establishes the core dissociation
-result. The model can reproduce the qualitative
-intrusion-voluntary-memory dissociation without separately weakening
-film items for one measure. Deliberate recall may still be impaired; the
-claim is relative protection, not immunity.
-
-Open specification: The deliberate-recall settings used here need to be
-fixed before this section is written as a result. Those settings should
-be strong enough to create a retrieval-mode contrast but simple enough
-that Simulation 3 can still isolate the separate control mechanisms.
-
-\subsection{Simulation 3: Deliberate-Recall Control
-Mechanisms}\label{simulation-3-deliberate-recall-control-mechanisms}
-
-Premise: After Simulation 2 establishes relative protection for
-deliberate recall, this simulation asks which control settings produce
-that protection. Deliberate recall is not categorically protected. Its
-relative sparing depends on control operations that make retrieval more
-film-directed. This section should separate the contributions of
-film-directed start/context cueing, sharper selection through \(\tau\),
+Primary readouts: The main figure should show phase-resolved recall for
+unguided retrieval and deliberate recall under matched weak and strong
+task conditions. A compact summary should show film-item access and
+impairment from the weak-task baseline for each retrieval mode.
+Task-item retrieval should remain visible enough to show whether reduced
+film access corresponds to retrieval of task items rather than
+disappearance of film items from the stored representation. A
+control-decomposition panel should compare deliberate-recall settings
+such as film-directed start cueing, sharper selection through \(\tau\),
 and target-monitoring or rejected-recall updating through \(\kappa\) if
 that mechanism remains in the simulation package.
 
-Primary readouts: The figure should show how each control lever changes
-film-item access and the phase-resolved organization of recall under a
-fixed task-competition setting. The most useful contrast should include
-total film recall, task-competitor retrieval, and how closely recall
-remains tied to the film phase.
+Intended text take-away: This section establishes the core dissociation
+result. The model can produce greater impairment in unguided retrieval
+than in deliberate recall while both modes draw on the same learned
+film-item associations. Deliberate recall may still be impaired; the
+claim is relative protection, not immunity. The decomposition should
+show that this protection comes from control operations that make
+retrieval more film-directed, not from a separate voluntary-memory
+store.
 
-Intended text take-away: This section earns the ``relatively intact
-voluntary memory'' claim. Sparing is a graded consequence of retrieval
-control rather than a property attached to voluntary tests as a
-category. Weakening these control operations should make deliberate
-recall resemble unguided retrieval more closely.
+Open specification: Fix the deliberate-recall settings before writing
+this section as a result. The core settings should emphasize
+film-directed start cueing and sharper selection, with target-monitoring
+through \(\kappa\) treated as core only if the implemented simulations
+make it necessary. The introduction currently emphasizes film-directed
+cueing and sharper selection more strongly than rejected-recall
+updating.
 
-Open specification: Decide whether target-monitoring through \(\kappa\)
-is a core control mechanism or a sensitivity analysis. The introduction
-currently emphasizes film-directed cueing and sharper selection more
-strongly than rejected-recall updating.
-
-\subsection{Simulation 4: Reminder and Timing Boundary
-Conditions}\label{simulation-4-reminder-and-timing-boundary-conditions}
-
-Premise: After Simulation 1 shows that reminder presence increases task
-competition, this simulation asks how delayed interference depends on
-graded reinstatement and drift. The delayed-reminder case applies the
-overlap mechanism after context has moved away from the film. A reminder
-reinstates film-associated context before task encoding by first
-shifting toward start context and then applying sequential film-item
-cues without new learning.
-
-Primary readouts: The figure should show how weak versus strong reminder
-reinstatement changes phase-resolved recall and film-item access after a
-fixed task phase. If delay or filler length is varied, the figure should
-make clear whether the effect comes from reinstatement strength,
-subsequent drift, or their combination. Task-competitor retrieval should
-remain visible enough to show whether boundary-condition effects operate
-through competitor recruitment.
-
-Intended text take-away: This section connects the model to
-post-reminder interventions. Delayed effects depend on graded
-reinstatement and drift, rather than an all-or-none storage-disruption
-window. The reminder restores the contextual condition required for
-later task encoding to affect film-item retrieval.
-
-Open specification: Decide whether the main comparison is zero/weak
-reminder reinstatement versus strong reminder reinstatement, a
-reminder-strength sweep, a delay/drift sweep, or a compact factorial
-combination. Decide whether immediate interference remains a baseline
-within this section or is treated as the contrast condition established
-in Simulation 1.
-
-\subsection{Simulation 5: Task Specificity and Affective
-Overlap}\label{simulation-5-task-specificity-and-affective-overlap}
+\subsection{Simulation 3: Task Specificity and Source-Context
+Overlap}\label{simulation-3-task-specificity-and-source-context-overlap}
 
 Premise: This simulation asks what makes a visuospatial task effective
 in model terms. Competitor strength is one route by which task items
-become effective competitors. Contextual and affective overlap can
+become effective competitors. Temporal and source-context overlap can
 amplify that competition when task items are cued alongside film items.
 This section should distinguish model-level task properties from the
 surface label of a task as visuospatial.
 
 Primary readouts: The figure should show film-item access and
-task-competitor retrieval under task-strength and affective-overlap
+task-competitor retrieval under task-strength and source-context-overlap
 variants. If contextual overlap is also varied here, the display should
 make clear which factor changes competitor recruitment and which factor
 changes competitor success once cued. Phase-resolved recall remains
@@ -1244,19 +1212,22 @@ retrieval alongside film items.
 Intended text take-away: The account does not require a special
 trace-weakening effect of visuospatial tasks. Task effectiveness can be
 decomposed into retrieved-context properties: competitor strength,
-contextual overlap, affective overlap, or their combination. Affective
-matching can be used as a sensitivity extension if it is run as a
+temporal-context overlap, source-context overlap, or their combination.
+Source matching can be used as a sensitivity extension if it is run as a
 specific manipulation, but it should not become the main explanation
 unless the simulations make it central.
 
-Open specification: Decide whether affective overlap is a main
+Open specification: Decide whether source-context overlap is a main
 simulation or a sensitivity analysis. Decide whether comparison-task
-conditions are best represented as weak task learning, lower overlap,
-lower affective overlap, or a particular combination tied to an
-empirical contrast.
+conditions are best represented as weak task learning, lower temporal
+overlap, lower source overlap, or a particular combination tied to an
+empirical contrast. Reminder timing is not a separate numbered package
+in the current scaffold; graded reminder reinstatement or drift can
+enter here only if needed to specify contextual overlap for
+task-specificity contrasts.
 
-\subsection{Simulation 6: Cue Support and Test-Format
-Extensions}\label{simulation-6-cue-support-and-test-format-extensions}
+\subsection{Simulation 4: Cue Support and Test-Format
+Extensions}\label{simulation-4-cue-support-and-test-format-extensions}
 
 Premise: Intrusion diaries, vigilance-style monitoring, free recall,
 cued recall, and recognition-like tests differ in how much they rely on
