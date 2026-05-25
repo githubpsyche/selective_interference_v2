@@ -346,10 +346,10 @@ Supplied film items therefore use the same feature-to-context operation as sampl
 
 ## Source Context
 
-The source-context pathway provides a configurable non-temporal overlap dimension for later task-specificity simulations.
+The source-context pathway provides a non-temporal context dimension inherited from emotional CMR.
 It generalizes the role that emotional context plays in eCMR to contextual features that can organize recall when shared across items [@polyn2009context; @talmi2019retrieved; @cohen2022memory].
-In the present simulations, this pathway is represented by a simplified two-unit source feature vector $s_i$.
-The marked source feature can be used to examine whether film and task items that share a non-temporal source state compete more strongly.
+In the present simulations, this pathway is represented by a simplified source feature vector $s_i$ with a marked film/source feature and a neutral/default feature.
+Film items are assigned the marked source feature, whereas break, task, and filler items are assigned the neutral/default feature unless a later source-overlap manipulation states otherwise.
 The source feature vector initializes $M^{FC}_{emot}$ so that an item can cue its source-context components:
 
 $$
@@ -364,12 +364,12 @@ $$ {#eq-emot-mcf-pre}
 
 Thus, source context can update during experience before it contributes retrieval support.
 Source-context components use the same context-update rule in @eq-context-update with source-context drift rate $\beta_{emot}$.
-Let $\phi_{\mathrm{emot},i}$ denote the added context-to-feature learning strength for item $i$ in the source-context pathway.
-With the binary vector above, $\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_i]_1$, so items assigned the marked source feature receive $\phi_{\mathrm{emot}}$ and neutral or default items receive 0.
+Let $\eta_s$ denote baseline source-context-to-feature learning and let $\phi_{\mathrm{emot},i}$ denote added learning for item $i$ in the marked source pathway.
+With the binary vector above, $\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_i]_1$, so film items assigned the marked source feature receive $\phi_{\mathrm{emot}}$ and neutral/default items receive 0.
 When source-context learning is engaged, the source components of context receive additional context-to-feature learning:
 
 $$
-\Delta M^{CF}_{emot} = \lambda \phi_i \phi_{\mathrm{emot},i} f_i c_{\mathrm{emot},i}^\top
+\Delta M^{CF}_{emot} = \lambda \phi_i (\eta_s + \phi_{\mathrm{emot},i}) f_i c_{\mathrm{emot},i}^\top
 $$ {#eq-emot-mcf-learning}
 
 Here, $c_{\mathrm{emot},i}$ denotes the source components of context.
@@ -383,11 +383,12 @@ Because retrieval proceeds as a sequence of competitive samples terminated by a 
 # Simulations
 
 The simulations instantiate the retrieved-context account in a controlled trauma-film analogue.
-They evaluate four linked packages: context-binding interference, retrieval-mode differences, task specificity, and cue support across test formats.
-Simulation 1 shows how a post-reminder task reduces film recall when task items receive strong context-to-feature learning while film-relevant context is active.
+They are organized into three linked groups: a core context-binding and retrieval-control demonstration, cue and test-format consequences of bidirectional item-context associations, and task-property boundary conditions.
+Simulation 1 shows how a post-reminder task reduces film recall when task items receive strong context-to-feature learning in context states that overlap with the film trajectory.
 Simulation 2 adds the intentionality manipulation by comparing unguided retrieval with deliberate recall and then decomposing the film-directed control settings that reduce deliberate-recall vulnerability.
-Simulation 3 examines which task properties make the post-film task effective, including task-item learning strength, contextual similarity, and source-context overlap.
-Simulation 4 examines how film-related monitoring cues and tests that supply a film item change vulnerability across test formats.
+Simulation 3 varies test-phase film-item cues drawn from the film sequence to separate cue-driven film access from diagnostic retrieval control.
+Simulation 4 compares context-to-item recall with supplied-item access formats.
+Simulation 5 examines which task properties make the post-film task effective, including task-item learning strength, contextual similarity, and source-context overlap.
 
 ## Methodology
 
@@ -395,6 +396,8 @@ Base parameters were anchored to an existing immediate free-recall dataset in wh
 The fitted dataset included 123 participants, four lists per participant, 492 immediate recall sequences, and 3,804 scored recall events.
 This dataset provides an externally estimated eCMR regime for deliberate context-guided recall of affective and neutral photographs.
 The fitted parameters set baseline encoding, retrieval, and stopping dynamics before the selective-interference manipulations are applied as phase-specific encoding or retrieval-control settings.
+In these simulations, film items reinstate the marked source feature into source context, neutral/default events can weakly bind active source context, and retrieval begins with partial film-source reinstatement.
+To accomodate the difference in total encoded items between the immediate-recall paradigm and the current simulations, the primacy profile is also moderated relative to the immediate-recall fit so that the film sequence is not dominated by an unrealistically steep first-item advantage.
 @tbl-simulation-parameters gives the default numerical values used in the current simulations.
 
 :::: {#tbl-simulation-parameters}
@@ -406,16 +409,18 @@ The fitted parameters set baseline encoding, retrieval, and stopping dynamics be
 | $\gamma$ | 0.468 | Feature-to-context learning rate |
 | $\delta$ | 0.00022 | Pre-experimental self-support |
 | $\alpha$ | 0 | Pre-experimental shared support |
-| $\phi_s$ | 0.499 | Primacy scale |
-| $\phi_d$ | 0.530 | Primacy decay |
+| $\phi_s$ | 0.100 | Primacy scale used in simulations |
+| $\phi_d$ | 1.500 | Primacy decay used in simulations |
 | $\tau$ | 3.562 | Choice sensitivity |
 | $\beta_{emot}$ | 0.696 | Source-context drift rate |
 | $\phi_{\mathrm{emot}}$ | 0.130 | Learning scale for the marked source feature |
+| $\eta_s$ | 0.050 | Baseline source-context-to-feature learning |
+| $\beta_{\mathrm{film-source}}$ | 0.500 | Fixed film-source reinstatement at retrieval onset |
 | $\theta_s$ | 0.0123 | Stop scale |
 | $\theta_r$ | 0.372 | Stop growth |
 
 Default numerical parameter values used in the current simulations.
-Values are from a pooled eCMR fit to the immediate free-recall sequences from @dupertuys2026ukraine, with $\alpha$ fixed to zero.
+Values are from a pooled eCMR fit to the immediate free-recall sequences from @dupertuys2026ukraine, with $\alpha$ fixed to zero, except for the source-context and primacy settings described in the text.
 ::::
 
 The current simulations update associations after context integration and disallow repeated sampling of the same item.

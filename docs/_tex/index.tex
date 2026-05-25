@@ -872,11 +872,16 @@ as sampled and reminded items.
 
 \subsection{Source Context}\label{source-context}
 
-The source-context pathway provides a non-temporal context dimension
-inherited from emotional CMR. It generalizes the role that emotional
-context plays in eCMR to contextual features that can organize recall
-when shared across items (\citeproc{ref-cohen2022memory}{Cohen \&
-Kahana, 2022}; \citeproc{ref-polyn2009context}{Polyn et al., 2009a};
+The source-context pathway adapts the emotional/source-context machinery
+of eCMR and CMR3 to the present trauma-film setting. In published
+emotional CMR models, emotional features update a source-context
+subregion and can form item-context associations
+(\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
+\citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). Here, we use the
+same architectural role for a simplified film-source dimension: a
+non-temporal context feature that can organize recall when shared across
+items (\citeproc{ref-cohen2022memory}{Cohen \& Kahana, 2022};
+\citeproc{ref-polyn2009context}{Polyn et al., 2009a};
 \citeproc{ref-talmi2019retrieved}{Talmi et al., 2019}). In the present
 simulations, this pathway is represented by a simplified source feature
 vector \(s_i\) with a marked film/source feature and a neutral/default
@@ -974,17 +979,16 @@ events. This dataset provides an externally estimated eCMR regime for
 deliberate context-guided recall of affective and neutral photographs.
 The fitted parameters set baseline encoding, retrieval, and stopping
 dynamics before the selective-interference manipulations are applied as
-phase-specific encoding or retrieval-control settings. Because the
-trauma-film simulations treat the film as an extended source episode
-rather than as an arbitrary list segment, the current simulations fix a
-modest source-context configuration across figures: film items carry the
-marked source feature, neutral/default events can weakly bind active
-source context, and retrieval begins with partial film-source
-reinstatement. The primacy profile is also moderated relative to the
-immediate-recall fit so that the film sequence is not dominated by an
-unrealistically steep first-item advantage.
-Table~\ref{tbl-simulation-parameters} gives the default numerical values
-used in the current simulations.
+phase-specific encoding or retrieval-control settings. In these
+simulations, film items reinstate the marked source feature into source
+context, neutral/default events can weakly bind active source context,
+and retrieval begins with partial film-source reinstatement. To
+accomodate the difference in total encoded items between the
+immediate-recall paradigm and the current simulations, the primacy
+profile is also moderated relative to the immediate-recall fit so that
+the film sequence is not dominated by an unrealistically steep
+first-item advantage. Table~\ref{tbl-simulation-parameters} gives the
+default numerical values used in the current simulations.
 
 \begin{table}
 
