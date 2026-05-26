@@ -453,7 +453,10 @@ Reminder cues update context through @eq-context-input and @eq-context-update, b
 | No-reminder drift scales | 0.0 | Omits reminder-start and reminder-cue reinstatement |
 | With-reminder drift scales | 1.0 | Applies reminder-start and film-item cue reinstatement |
 | Task learning factor | 0.0--3.0 by 0.5 | Multiplies task-phase context-to-feature learning |
-| Source marking | Off | No source-context-overlap manipulation in Simulation 1 |
+| Film source marking | On | Film items carry the marked source feature |
+| Task source marking | Off | Task items use the neutral/default source feature |
+| Baseline source learning | 0.05 | Neutral/default items weakly bind active source context |
+| Film-source retrieval orientation | 0.5 | Fixed partial reinstatement of marked film-source context at retrieval onset |
 
 Phase structure and settings for the current Figure 2 simulations.
 Scale values multiply the corresponding base rates or learning strengths.
