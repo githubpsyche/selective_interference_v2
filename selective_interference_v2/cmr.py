@@ -109,9 +109,25 @@ class PhasedSourceOnlyECMR(Pytree):
             "temporal_emotion_scale",
             self.emotion_scale,
         )
+        self.source_learning_baseline = parameters.get(
+            "source_learning_baseline",
+            0.0,
+        )
+        self.neutral_source_input_scale = parameters.get(
+            "neutral_source_input_scale",
+            1.0,
+        )
         self.rejected_recall_drift_scale = parameters.get(
             "rejected_recall_drift_scale",
             1.0,
+        )
+        self.target_recall_drift_scale = parameters.get(
+            "target_recall_drift_scale",
+            1.0,
+        )
+        self.film_source_start_drift_rate = parameters.get(
+            "film_source_start_drift_rate",
+            0.0,
         )
         _is_emotional = (
             is_emotional if is_emotional is not None else jnp.zeros(list_length)
@@ -177,7 +193,9 @@ class PhasedSourceOnlyECMR(Pytree):
             (1 - self.mfc_learning_rate) * self.is_emotional
         )
         emotion_mfc_state = emotion_mfc_state.at[:, 2].set(
-            (1 - self.mfc_learning_rate) * is_neutral
+            (1 - self.mfc_learning_rate)
+            * self.neutral_source_input_scale
+            * is_neutral
         )
         self.emotion_mfc = LinearMemory.LinearMemory(emotion_mfc_state)
         self.emotion_mcf = LinearMemory.LinearMemory(jnp.zeros((3, list_length)))
@@ -217,12 +235,13 @@ class PhasedSourceOnlyECMR(Pytree):
     def _emotional_mcf_learning_rate(self) -> Float[Array, ""]:
         p = self.mcf_learning_rate
         phi = jnp.maximum(0.0, self.phi_emot[self.study_index])
+        baseline = jnp.maximum(0.0, self.source_learning_baseline)
 
         def _multiplicative():
-            return p * phi
+            return p * (baseline + phi)
 
         def _additive():
-            return p + jnp.maximum(-p, phi)
+            return p * baseline + p + jnp.maximum(-p, phi)
 
         return lax.cond(self.modulate_emotion_by_primacy, _multiplicative, _additive)
 
@@ -356,6 +375,12 @@ class PhasedSourceOnlyECMR(Pytree):
             self.emotion_context.initial_state,
             self.start_drift_rate,
         )
+        film_source_input = jnp.zeros_like(start_emotion_context.state)
+        film_source_input = film_source_input.at[1].set(1.0 - self.mfc_learning_rate)
+        start_emotion_context = start_emotion_context.integrate(
+            film_source_input,
+            self.film_source_start_drift_rate,
+        )
         return self.replace(
             context=start_context,
             emotion_context=start_emotion_context,
@@ -373,7 +398,7 @@ class PhasedSourceOnlyECMR(Pytree):
         item = self.items[item_index]
         drift_scale = jnp.where(
             self.is_target[item_index] > 0.0,
-            1.0,
+            self.target_recall_drift_scale,
             self.rejected_recall_drift_scale,
         )
         new_context = self.context.integrate(

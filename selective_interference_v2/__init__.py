@@ -13,12 +13,15 @@ from .paradigm import (
 )
 from .pipeline import (
     PreparedSweep,
+    apply_supplied_item_context_cue,
     batch_trial,
     configure_rates,
     film_recalled_stats,
+    periodic_cue_mask,
     prepare_sweep,
     run_count_sweep,
     run_sweep,
+    simulate_periodic_cued_free_recall,
     split_scales_for_cache,
     sweep_rngs,
 )
@@ -46,6 +49,9 @@ __all__ = [
     "prepare_sweep",
     "run_count_sweep",
     "run_sweep",
+    "periodic_cue_mask",
+    "apply_supplied_item_context_cue",
+    "simulate_periodic_cued_free_recall",
     "split_scales_for_cache",
     "batch_trial",
     "configure_rates",

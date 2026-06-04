@@ -1,0 +1,9 @@
+target_recall_drift_scale,low_start_label,high_start_label,low_start_scale,high_start_scale,low_start_film_mass,high_start_film_mass,intentionality_gap
+0.0,Unguided retrieval,Deliberate recall,0.0,1.0,0.011599999968893826,2.793599972501397,2.7819999725325033
+0.15,Unguided retrieval,Deliberate recall,0.0,1.0,0.015799999790033326,3.413799975067377,3.3979999752773438
+0.3,Unguided retrieval,Deliberate recall,0.0,1.0,0.013400000301771797,3.7832000479102135,3.7698000476084417
+0.45,Unguided retrieval,Deliberate recall,0.0,1.0,0.011799999861977994,3.999399993568659,3.987599993706681
+0.6,Unguided retrieval,Deliberate recall,0.0,1.0,0.01699999971606303,4.110199943184853,4.09319994346879
+0.75,Unguided retrieval,Deliberate recall,0.0,1.0,0.011600000056205317,4.25540005415678,4.243800054100575
+0.9,Unguided retrieval,Deliberate recall,0.0,1.0,0.023400000121910125,4.285199984908104,4.261799984786194
+1.0,Unguided retrieval,Deliberate recall,0.0,1.0,0.02400000001944136,4.358599983155727,4.334599983136286

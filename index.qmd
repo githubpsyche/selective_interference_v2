@@ -346,8 +346,9 @@ Supplied film items therefore use the same feature-to-context operation as sampl
 
 ## Source Context
 
-The source-context pathway provides a non-temporal context dimension inherited from emotional CMR.
-It generalizes the role that emotional context plays in eCMR to contextual features that can organize recall when shared across items [@polyn2009context; @talmi2019retrieved; @cohen2022memory].
+The source-context pathway adapts the emotional/source-context machinery of eCMR and CMR3 to the present trauma-film setting.
+In published emotional CMR models, emotional features update a source-context subregion and can form item-context associations [@talmi2019retrieved; @cohen2022memory].
+Here, we use the same architectural role for a simplified film-source dimension: a non-temporal context feature that can organize recall when shared across items [@polyn2009context; @talmi2019retrieved; @cohen2022memory].
 In the present simulations, this pathway is represented by a simplified source feature vector $s_i$ with a marked film/source feature and a neutral/default feature.
 Film items are assigned the marked source feature, whereas break, task, and filler items are assigned the neutral/default feature unless a later source-overlap manipulation states otherwise.
 The source feature vector initializes $M^{FC}_{emot}$ so that an item can cue its source-context components:
@@ -374,7 +375,14 @@ $$ {#eq-emot-mcf-learning}
 
 Here, $c_{\mathrm{emot},i}$ denotes the source components of context.
 Source-context support enters retrieval through learned source context-to-feature associations and contributes to the same competition defined in @eq-retrieval-support.
-Task items are distinct item features and are assigned the marked source feature only in source-context-overlap variants.
+Because $\eta_s$ is nonzero in the current simulations, neutral/default items can weakly bind the source context active during encoding without being assigned the marked film/source feature.
+This lets task items inherit some influence from reinstated film-source context when the task is encoded after a film reminder, while still preserving a distinction between marked film items and neutral task competitors.
+
+At retrieval onset, all current simulations include a fixed partial reinstatement of the marked film-source context.
+This operation represents the test setting orienting retrieval toward the film episode at the level of source context.
+It is distinct from the temporal start-of-list cue manipulated in Simulation 2: an unguided-retrieval condition lacks deliberate temporal start-of-list reinstatement, but it is not a condition with no film-relevant test orientation at all.
+<!-- FIXME: seems overly defensive, guarding against a misinterpretation that the reader was not likely to have -->
+Task items are assigned the marked source feature only in later source-overlap variants.
 When film and task items share the marked source feature and source context-to-feature learning is enabled, @eq-emot-mcf-learning can amplify competition beyond temporal proximity alone.
 
 These equations define the item-context architecture used in all simulations.
@@ -470,48 +478,54 @@ The support-allocation analysis forms a film-context cue from the centroid of fi
 
 ## Simulation 1: Task Encoding and Contextual Overlap
 
-Simulation 1 demonstrates how a post-film task can reduce later film recall when task events are encoded while film-relevant context is active.
+Simulation 1 demonstrates how a post-film task can reduce later film recall when task events are encoded in context states that overlap with the film sequence.
 To separate task encoding strength from reminder-driven context reinstatement, the simulation sweeps the task learning factor under no-reminder and with-reminder conditions.
 The plotted task learning factor multiplies task-phase context-to-feature learning in @eq-mcf-learning.
 Retrieval settings are held fixed, so differences in recall reflect the item-context associations formed before retrieval rather than changes in retrieval control.
-Simulation 2 then examines whether film-directed retrieval control reduces the impact of those task-item associations on deliberate recall.
+Because context evolves continuously, the reminder manipulation also predicts where along the film sequence recall is lost, not only how much film recall changes.
+Simulation 2 then examines whether film-directed retrieval control can protect recall by cueing a more diagnostic part of the film trajectory.
 
 ::: {#fig-simulation1-context-binding fig-pos="H"}
 ![](figures/simulation1_context_binding.png)
 
 **Reminder-driven context overlap makes task encoding strength consequential for film recall.**
-Simulation 1 demonstrates how task items can become competitors for film recall by varying task encoding strength with or without film-context reinstatement before task encoding.
+Simulation 1 demonstrates how task items can become competitors for film recall by varying task encoding strength with or without a sequential film-item reminder before task encoding.
 **(A)** Without a film reminder, task items become associated with later context states reached after drift away from the film, so stronger task encoding produces only modest redistribution from film items to task items.
 **(B)** With a film reminder, task items become associated with context states more similar to those associated with film items, so stronger task encoding produces larger redistribution from film items to task items.
-**(C)** This behavioral contrast follows from the context trace: reminder cues make the context states active during task encoding more similar to the states associated with film items.
-**(D)** When the model is cued with film context, stronger task encoding assigns a larger share of item support to task items, especially after a film reminder.
+**(C)** The temporal-context trace remains position-resolved: reminder cues make the states active during task encoding more similar to positions along the film context trajectory.
+**(D)** When the model is probed with a broad film-context cue and the active source context, stronger task encoding assigns a larger share of item support to task items, especially after a film reminder.
 :::
 
 Panels A and B show phase-resolved recall probability across encoded positions.
 Without a film reminder, increasing task learning produces only modest loss of film recall and only modest gain in task recall, because task items become associated with later context states reached after drift away from the film.
 With a film reminder, the same task-learning manipulation produces a much larger redistribution from film positions to task positions.
-The with-reminder condition therefore shows that task strength matters most when task items are associated with film-associated context states.
-The serial-position curves also show that the effect is not uniform across film positions: early film recall remains relatively protected under the current settings compared with recall for later film positions.
-At the endpoints of the task-learning sweep, mean film recall in the no-reminder condition changes from 0.352 at task learning factor 0.0 to 0.317 at factor 3.0, while mean task recall changes from 0.000 to 0.084.
-In the with-reminder condition, mean film recall changes from 0.340 to 0.086, while mean task recall changes from 0.000 to 0.354.
+The with-reminder condition therefore shows that task strength matters most when task items are encoded in a film-related context state.
+This overlap is not a single quantity.
+The temporal component remains position-resolved, as shown by the serial-position curves and the similarity matrix, while the fixed source-context settings add broader film-level support.
+Because the sequential reminder drives context through film-item cues before task encoding, the strongest task competition arises when task items are encoded with both recent film-temporal context and active film-source context.
+At the endpoints of the task-learning sweep, mean film recall in the no-reminder condition changes from 0.318 at task learning factor 0.0 to 0.268 at factor 3.0, while mean task recall changes from 0.000 to 0.143.
+In the with-reminder condition, mean film recall changes from 0.306 to 0.064, while mean task recall changes from 0.000 to 0.384.
 
 Panels C and D explain why the no-reminder and with-reminder curves diverge.
 Panel C quantifies temporal-context similarity between the states associated with film items and the states active during task encoding.
-When a reminder reinstates film-associated context before task encoding, the model encodes task items in states more similar to those associated with film items.
-Panel D quantifies how much support task items receive from a film-context cue after task encoding.
-As task context-to-feature learning increases, task items receive a larger share of item support when film-associated context cues retrieval, especially after the film reminder.
+When a sequential film-item reminder reinstates the film trajectory before task encoding, the temporal context at task encoding becomes more similar to film-associated positions.
+Panel D quantifies how much support task items receive from a broad film-context centroid cue after task encoding, including the source-context support available at that point in the paradigm.
+As task context-to-feature learning increases, task items receive a larger share of item support when this broad temporal/source cue probes retrieval, especially after the film reminder.
 Across the task-learning sweep, film encoding settings remain unchanged.
 The loss of film recall comes from stronger support for task items that can be cued by film-associated context.
 Task items remain distinct from film items but become increasingly likely to win retrieval from film-related cues.
-Simulation 2 next examines whether film-directed retrieval control reduces the impact of these task-item associations on deliberate recall.
+Simulation 2 next examines whether film-directed retrieval control reduces the impact of these task-item associations by cueing a more diagnostic part of the film trajectory.
 
-## Simulation 2: Retrieval Mode and Film-Directed Control
+## Simulation 2: Retrieval Control and Film-Directed Recall
 
 Simulation 2 turns from encoding conditions to retrieval control.
 The broader Simulation 2 package decomposes deliberate recall into three film-directed control operations: start-of-list context reinstatement, selection sharpening, and target monitoring.
 Figure 3 isolates the first operation.
 In the model, deliberate recall can begin by drifting current context toward the start-of-list state before the first retrieval attempt.
 Because film items are encoded first, the start-of-list state is film-relevant in the present paradigm: reinstating it changes the context used to cue the first retrieval competition while leaving the learned film and task associations otherwise unchanged.
+This operation differs from test-phase film-item cueing: it targets the beginning of the film trajectory, where the retrieval context is more diagnostic of film items than of late non-film competitors.
+All conditions in the current Simulation 2 figures also include the fixed film-source retrieval orientation described above.
+Thus, "no start-of-list reinstatement" means no deliberate temporal start cue, not the absence of any film-relevant test context.
 The simulation holds the post-reminder task condition fixed at task learning factor 2.0 and varies the degree of start-of-list context reinstatement.
 The plotted reinstatement values are multiples of the fitted start-cue parameter, so 1.0 corresponds to $\beta_{start}$ in @eq-deliberate-start-cue.
 
@@ -523,7 +537,7 @@ Simulation 2 demonstrates how a deliberate-recall start operation can protect fi
 **(A)** Before any item is sampled, stronger start-of-list context reinstatement makes the retrieval context support early film items rather than late filler items.
 **(B)** This pre-recall support shift makes recall more likely to begin with film items, especially items from the beginning of the film sequence.
 **(C)** Across the sampled retrieval sequence, stronger start-of-list context reinstatement increases access to film items, with the largest gains concentrated near the beginning of the film sequence.
-Because sampled early film items reinstate film-associated context, and because context drifts gradually during retrieval, a start-of-recall context shift can affect later samples as well as the first sampled item.
+Because sampled early film items reinstate nearby early-film context, and because context drifts gradually during retrieval, a start-of-recall context shift can affect later samples as well as the first sampled item.
 :::
 
 Panel A probes $M^{CF}$ with the pre-recall retrieval context before Luce choice, stopping, or sampled-item context updating.
@@ -531,7 +545,7 @@ With no start-of-list context reinstatement, support is concentrated in late fil
 As start-of-list context reinstatement increases, support shifts toward early film positions.
 Panels B and C apply the same retrieval settings to sampled retrieval sequences.
 Panel B shows that this support shift changes recall initiation, with first recalls moving from filler positions when start-of-list context reinstatement is omitted to early film positions as reinstatement increases.
-Panel C shows that the initiation shift has full-sequence consequences: sampled early film items reinstate film-associated context and raise film-item access across subsequent samples.
+Panel C shows that the initiation shift has full-sequence consequences: sampled early film items reinstate nearby early-film context and raise film-item access across subsequent samples.
 Under the strong task setting used here, task items remain available to be sampled later in the sequence, so the next step is to examine how selection operates once a retrieval cue has been set.
 
 The second control setting is retrieval selectivity.
@@ -540,7 +554,7 @@ It does not supply a film cue by itself.
 Instead, it makes the candidate structure supplied by the current context more consequential.
 Figure 4 crosses retrieval selectivity with start-of-list context reinstatement while holding the same post-reminder task condition fixed.
 The final panel introduces target monitoring as a post-off-target recovery operation.
-Here, target monitoring refers to control engaged after a sampled candidate is recognized as off target: the operation can reduce that candidate's influence on subsequent search and help reorient retrieval toward film-relevant context.
+Here, target monitoring refers to control engaged after a sampled candidate is recognized as off target: the operation can reduce how strongly that candidate pulls subsequent search away from film context that is already accessible.
 The concrete CMR-style implementation used here is rejected-sample updating.
 Sampled off-target candidates still occupy retrieval attempts, but their context update is multiplied by $\kappa$, with $\kappa = 1$ giving the normal sampled-item update and $\kappa = 0$ preventing off-target context updating.
 
@@ -564,62 +578,77 @@ When recall begins after start-of-list context reinstatement, increasing retriev
 Panel D conditions on transitions where the current sample is off target, retrieval continues, and at least one film item remains unsampled.
 Without start-of-list context reinstatement, the probability that the next sample is a film item remains near zero across the $\kappa$ sweep.
 With start-of-list context reinstatement, lowering $\kappa$ from 1.0 to 0.0 raises this film-return probability from 0.059 to 0.643.
-Across Figures 3 and 4, deliberate recall is protected by a sequence of control settings: start-of-list context reinstatement supplies a film-relevant retrieval cue, retrieval selectivity sharpens whatever the current context supports, and target monitoring limits the context-updating consequences of sampled off-target candidates.
+Across Figures 3 and 4, deliberate recall is protected by a sequence of control settings: start-of-list context reinstatement supplies a diagnostic early-film retrieval cue, retrieval selectivity sharpens whatever the current context supports, and target monitoring limits the context-updating consequences of sampled off-target candidates.
+This sequence motivates Simulation 3: externally supplied film-item cues also update context, but they sample positions from the film sequence rather than deliberately reinstating the start-of-list state.
+Their protective value therefore depends on whether the reinstated context favors film items over task competitors.
 
 ## Simulation 3: Film Cue Inclusion and Retrieval Intentionality
 
-Premise: Simulation 3 examines whether adding film cues changes film-item recall differently under unguided retrieval and deliberate recall.
-Film cue inclusion should be implemented as a test-phase cue condition using one randomly selected position from the trauma-film sequence per retrieval period, rather than the sequential film-item reminder used before task encoding.
-This choice is intended to approximate a Lau-Zhu-style same-film cue period more closely than a full sequential reminder.
-The comparison condition should use foil cues or no film cue, depending on the concrete implementation chosen for the next simulation pass.
+Simulation 3 asks whether externally supplied film cues have the same protective value as deliberate start-of-list reinstatement.
+The model implements film cue inclusion as intermittent test-phase cues: after every fourth retrieval attempt, the test supplies a randomly selected film item.
+The supplied cue does not occupy a response slot, does not make the cued item unavailable for later recall, and adds no new learning.
+Instead, it updates temporal and source context through the supplied item's feature-to-context associations, after which ordinary retrieval resumes.
+Cue strength is plotted as a multiplier on the fitted recall context-update rate $\beta_{rec}$.
+The vertical reference line in Figure 5 marks the cue strength that would make the supplied-cue context update approximately equal to the fitted encoding drift rate $\beta_{enc}$.
 
-Primary readouts: The figure should show film-item recall, task-item retrieval, and the cue effect under unguided versus deliberate retrieval.
-The key comparison is whether a film cue increases film-item access without necessarily reducing the selective-interference effect.
-If task items share the reinstated context, film cues may increase access to film material while preserving task competition.
+::: {#fig-simulation3-film-cue-inclusion fig-pos="H"}
+![](figures/simulation3_film_cue_inclusion.png)
 
-Intended text take-away: Retrieved-context theory does not predict that all film-related cues should narrow selective interference.
-Cue effects depend on what context is reinstated, whether that context discriminates film targets from task competitors, and whether retrieval is unguided or film-directed.
-This section should clarify the distinction between pre-task reminders, which affect the context in which task items are encoded, and test-phase cues, which alter retrieval over already learned associations.
+**Intermittent test-phase film cues increase film access without replacing the intentionality manipulation.**
+Simulation 3 compares unguided retrieval with deliberate recall while varying the strength of intermittent supplied film-item cues during retrieval.
+**(A)** Supplied film cues occur after scheduled retrieval attempts, update context, and then allow the next ordinary retrieval competition; they are not counted as responses and do not add learning.
+**(B)** Film-item recall increases with cue strength, but the deliberate-minus-unguided intentionality gap remains nearly stable across weak-to-moderate cue reinstatement.
+Only stronger cue reinstatement begins to narrow the gap.
+**(C)** Under unguided retrieval, supplied film cues modestly raise film recall but task and filler competitors remain prominent.
+**(D)** Under deliberate recall, film recall is already supported by start-of-list control, and supplied cues produce additional film access without eliminating task competition.
+:::
 
-Open specification: Decide whether the comparison condition should be no cue or foil cue once the simulation is implemented.
-Decide whether film cue inclusion occurs once before a retrieval period or repeatedly across monitoring periods.
-The manuscript should not describe this as generic cue support until the cue operation is specified.
+Panel B gives the primary test of the Simulation 3 prediction.
+Weak-to-moderate test-phase film cues increase film-item recall while leaving the intentionality gap largely intact.
+For example, increasing film-cue reinstatement from 0.00 to 0.675 raises film recall mass from 0.008 to 0.210 under unguided retrieval and from 2.229 to 2.400 under deliberate recall, while the deliberate-minus-unguided gap changes only from 2.221 to 2.190.
+This pattern shows that an externally supplied film cue can improve access to film material without acting like the diagnostic start-of-list control operation in Simulation 2.
+At stronger cue values, the intentionality gap begins to narrow because cue-driven context reinstatement itself becomes strong enough to guide unguided retrieval toward film items.
+
+Panels C and D show how this effect unfolds over the full encoded sequence.
+The cue manipulation does not remove the task competitors created by reminder-driven task encoding.
+Instead, it changes the context available to subsequent search.
+The result is a graded cue effect: supplied film items can increase film access, but they reduce selective interference only to the extent that the reinstated context discriminates film targets from task and filler competitors.
 
 ## Simulation 4: Context-to-Item and Item-to-Context Test Formats
 
-Premise: Simulation 4 will compare context-to-item recall formats with item-to-context and supplied-item access formats.
-This section should stay high-level until the recognition-like operation is specified.
-The central distinction is between broad context-guided sampling and tests that provide item information capable of reinstating associated context.
+Simulation 4 extends the cue logic to test format.
+The relevant architectural distinction is between context-to-item recall, in which film items must win selection from a mixed competitor set, and supplied-item access, in which the test provides item information that can reinstate associated context directly.
+This comparison does not require treating recognition as fully modeled by CMR.
+Instead, it asks whether a supplied film item changes vulnerability to context-binding interference because the retrieval problem no longer begins with selecting a film item from context alone.
 
-Primary readouts: The eventual figure should compare vulnerability across context-guided recall and supplied-item access under matched stored associations.
-The display should avoid implying a full recognition decision model unless such a mechanism is added.
-If the mapping remains qualitative, this material belongs in the discussion rather than as a numbered simulation.
+The predicted contrast follows from the bidirectional item-context loop.
+When the test begins from context, film and task items compete according to their context-to-feature support.
+When the test supplies an item, the item-to-context pathway is engaged first, so performance can be less sensitive to whether a film item would have won an unguided context-to-item competition.
+This provides a test-format consequence of the same mechanism examined in Simulation 3, without assuming a separate recognition decision model.
 
-Intended text take-away: The retrieved-context framework distinguishes context-to-item search from item-to-context reinstatement.
-Recognition-like and supplied-item formats may sidestep context-binding interference for reasons that differ from broad film cue inclusion in Simulation 3.
-The section should not claim that recognition is modeled until a recognition decision process is implemented.
+::: {#fig-simulation4-test-format-schematic fig-pos="H"}
+![](figures/simulation4_test_format_schematic.png)
 
-Open specification: The mapping from empirical test format to model setting is the main unresolved piece.
-Decide whether supplied-film-item access is implemented strongly enough to justify treating this section as a recognition-like simulation later.
+**Retrieval format changes where interference can enter.**
+Simulation 4 distinguishes context-guided retrieval from supplied-item retrieval.
+**(A)** When retrieval begins from context, the same context state can cue multiple candidates; task items therefore compete with film items when both have been encoded in overlapping contexts.
+When retrieval begins from a supplied film item, the item reinstates its associated context instead, so the task item is not an equivalent competitor at the point of access.
+**(B)** In CMR, this asymmetry corresponds to two retrieval directions: context-to-feature associations cue candidate items, whereas feature-to-context associations reinstate context from a supplied item.
+Simulation 4 uses this distinction to ask why item-cued or recognition-like tests may show preserved access even when context-guided recall is sensitive to interference.
+:::
 
 ## Simulation 5: Task Specificity and Source-Context Overlap
 
-Premise: Simulation 5 distinguishes task properties that affect interference: learned support for task items, temporal-context overlap with film items, and source-context overlap.
-These properties specify when a task labeled visuospatial should produce strong competitors, and when a comparison task could do the same.
-Temporal and source-context overlap can amplify task-item influence when task items are cued alongside film items.
-This section should distinguish those task properties from the surface label of a task as visuospatial.
+Simulation 5 turns to task specificity.
+In the model, "visuospatial" and "comparison" are not primitive task labels.
+A post-film task becomes effective when its items are strong competitors, when they are encoded in temporal-context states that overlap with the film trajectory, or when they share a source-context state with film items.
+These factors can vary independently, so a task label is interpretable only through its consequences for competitor strength and contextual overlap.
 
-Primary readouts: The figure should show film-item access and task-competitor retrieval under task-strength and source-context-overlap variants.
-If contextual overlap is also varied here, the display should make clear which factor changes competitor recruitment and which factor changes competitor success once cued.
-Phase-resolved recall remains useful because the model's explanation depends on task items entering retrieval alongside film items.
-
-Intended text take-away: The account does not require a special trace-weakening effect of visuospatial tasks.
-Task effectiveness can be decomposed into retrieved-context properties: competitor strength, temporal-context overlap, source-context overlap, or their combination.
-Source matching can be used as a sensitivity extension if it is run as a specific manipulation, but it should not become the main explanation unless the simulations make it central.
-
-Open specification: Decide whether source-context overlap is a main simulation or a sensitivity analysis.
-Decide whether comparison-task conditions are best represented as weak task learning, lower temporal overlap, lower source overlap, or a particular combination tied to an empirical contrast.
-Reminder timing is not a separate numbered package in the current scaffold; graded reminder reinstatement or drift can enter here only if needed to specify contextual overlap for task-specificity contrasts.
+The task-specificity simulations therefore decompose three candidate routes to interference.
+Increasing task learning changes how strongly task items win once cued.
+Changing temporal overlap alters whether task items are cued alongside film items.
+Changing source-context overlap tests whether non-temporal source matching can amplify competition beyond temporal proximity alone.
+The predicted behavioral readouts are film-item access, task-competitor retrieval, and the phase-resolved distribution of recall across the encoded stream.
 
 # General Discussion
 

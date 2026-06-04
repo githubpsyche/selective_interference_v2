@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import rcParams
 from matplotlib.axes import Axes
+from matplotlib.colors import to_hex, to_rgb
 from matplotlib.transforms import blended_transform_factory
 
 from jaxcmr.plotting import init_plot, set_plot_labels
@@ -48,9 +49,21 @@ PHASE_FILLS = {
 
 
 def light_to_dark_colors(n: int) -> list[str]:
-    """Return *n* grey-scale hex codes from light to dark."""
-    fracs = np.linspace(0.75, 0.10, n)
-    return [f"#{int(f*255):02x}{int(f*255):02x}{int(f*255):02x}" for f in fracs]
+    """Return *n* ordered sweep colors from pale blue to dark navy."""
+    if n <= 0:
+        return []
+    anchors = np.asarray(
+        [to_rgb(color) for color in ("#D7E8FA", "#86B6E2", "#2C7FB8", "#08306B")]
+    )
+    if n == 1:
+        return [to_hex(anchors[-1])]
+
+    x = np.linspace(0.0, anchors.shape[0] - 1, n)
+    lower = np.floor(x).astype(int)
+    upper = np.minimum(lower + 1, anchors.shape[0] - 1)
+    weight = (x - lower)[:, None]
+    colors = (1.0 - weight) * anchors[lower] + weight * anchors[upper]
+    return [to_hex(color) for color in colors]
 
 
 def save_figure(figure_dir: str, figure_str: str, suffix: Optional[str] = None) -> None:
@@ -64,7 +77,7 @@ def save_figure(figure_dir: str, figure_str: str, suffix: Optional[str] = None) 
     base = os.path.join(figure_dir, f"{figure_str}{suffix_str}")
     plt.savefig(f"{base}.png", bbox_inches="tight", dpi=600)
     plt.savefig(f"{base}.svg", bbox_inches="tight")
-    plt.show()
+    plt.close()
 
 
 def add_phase_bands(

@@ -1,0 +1,21 @@
+project:
+  type: default
+  output-dir: _output
+  render:
+    - index.qmd
+
+format:
+  revealjs:
+    theme: simple
+    transition: none
+    slide-number: true
+    width: 1600
+    height: 900
+    margin: 0.06
+  pptx:
+    slide-level: 2
+
+execute:
+  echo: false
+  warning: false
+  message: false

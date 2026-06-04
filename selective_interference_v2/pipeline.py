@@ -86,8 +86,9 @@ from typing import Callable, Mapping, NamedTuple, Sequence
 import jax.numpy as jnp
 from jax import jit, lax, random, vmap
 
+from jaxcmr.math import exponential_primacy_decay
 from jaxcmr.simulation import simulate_free_recall
-from jaxcmr.typing import Array, Float, Integer, PRNGKeyArray
+from jaxcmr.typing import Array, Bool, Float, Integer, PRNGKeyArray
 
 from .paradigm import (
     Paradigm,
@@ -117,24 +118,33 @@ def configure_rates(
         ``reminder_start_drift_scale``, ``reminder_drift_scale``,
         ``interference_drift_scale``, ``interference_mcf_scale``,
         ``filler_drift_scale``, ``filler_mcf_scale``,
-        ``start_drift_scale``, ``tau_scale``, ``emotion_scale``,
+        ``start_drift_scale``, ``recall_drift_scale``, ``tau_scale``,
+        ``emotion_scale``,
         ``emotion_encoding_drift_scale``, ``emotion_recall_drift_scale``,
         ``emotion_drift_scale``, ``shared_support_scale``,
         ``film_shared_support_scale``,
         ``competitor_shared_support_scale``,
+        ``source_learning_baseline``,
+        ``neutral_source_input_scale``,
+        ``film_source_start_drift_rate``,
+        ``target_recall_drift_scale``,
         ``rejected_recall_drift_scale``.
         Unspecified scales default to 1.0.
         ``primacy_scale``, ``primacy_decay``, ``emotion_scale``, and
         ``temporal_emotion_scale`` replace the model values directly when
-        provided.  ``rejected_recall_drift_scale`` also replaces the model
-        value directly.  In source-only eCMR, changing ``emotion_scale``
+        provided.  ``source_learning_baseline``,
+        ``neutral_source_input_scale``,
+        ``target_recall_drift_scale``,
+        ``rejected_recall_drift_scale``, and
+        ``film_source_start_drift_rate`` also replace the model values
+        directly.  In source-only eCMR, changing ``emotion_scale``
         affects subsequent source-context learning; it does not retroactively
         rescale already learned source associations.
         ``shared_support_scale`` scales the pre-experimental MCF
         baseline globally; ``film_shared_support_scale`` and
         ``competitor_shared_support_scale`` further scale film
         (columns 0..n_film-1) and non-film columns respectively.
-        All three are only valid when MCF is pristine
+        These creation-phase manipulations are only valid when MCF is pristine
         (``cache_after="creation"``).
 
     Returns
@@ -153,11 +163,12 @@ def configure_rates(
         new_ss = old_ss * ss_scale
         mcf_state = model.mcf.state
         n_ctx, n_items = mcf_state.shape
-        # Mask: 1 for off-diagonal cells in rows 1+, 0 elsewhere
-        off_diag = 1.0 - jnp.eye(n_ctx, n_items)
-        row_mask = jnp.concatenate([jnp.zeros((1, n_items)),
-                                    jnp.ones((n_ctx - 1, n_items))])
-        mask = off_diag * row_mask
+        context_rows = jnp.arange(n_ctx)
+        item_cols = jnp.arange(n_items)
+        context_item_diagonal = (context_rows[:, None] - 1) == item_cols[None, :]
+        item_context_rows = context_rows[:, None] > 0
+        # Mask: 1 for off-diagonal cells in rows 1+, 0 elsewhere.
+        mask = item_context_rows & ~context_item_diagonal
         new_mcf_state = mcf_state + (new_ss - old_ss) * mask
 
         # Phase-selective shared_support scaling (film vs non-film columns).
@@ -170,7 +181,26 @@ def configure_rates(
             new_ss * (comp_ss_scale - 1.0),
         )
         new_mcf_state = new_mcf_state + mask * col_delta[None, :]
+
         new_mcf = model.mcf.replace(state=new_mcf_state)
+
+        new_emotion_mfc_state = model.emotion_mfc.state
+        neutral_source_input_scale = scales.get("neutral_source_input_scale")
+        if neutral_source_input_scale is not None:
+            source_cols = jnp.arange(new_emotion_mfc_state.shape[1])
+            neutral_source_col = source_cols == 2
+            neutral_item_rows = 1.0 - model.is_emotional
+            neutral_source_state = (
+                (1.0 - model.mfc_learning_rate)
+                * neutral_source_input_scale
+                * neutral_item_rows[:, None]
+            )
+            new_emotion_mfc_state = jnp.where(
+                neutral_source_col[None, :],
+                neutral_source_state,
+                new_emotion_mfc_state,
+            )
+        new_emotion_mfc = model.emotion_mfc.replace(state=new_emotion_mfc_state)
 
         emotion_scale = scales.get("emotion_scale", model.emotion_scale)
         temporal_emotion_scale = scales.get(
@@ -185,6 +215,13 @@ def configure_rates(
         emotion_recall_drift_scale = scales.get(
             "emotion_recall_drift_scale",
             emotion_drift_scale,
+        )
+        primacy_scale = scales.get("primacy_scale", model.primacy_scale)
+        primacy_decay = scales.get("primacy_decay", model.primacy_decay)
+        primacy = exponential_primacy_decay(
+            jnp.arange(model.primacy.shape[0]),
+            primacy_scale,
+            primacy_decay,
         )
 
         return model.replace(
@@ -219,14 +256,27 @@ def configure_rates(
                 scales.get("start_drift_scale", 1.0)
                 * start_drift, 0.0, 1.0,
             ),
+            recall_drift_rate=jnp.clip(
+                scales.get("recall_drift_scale", 1.0)
+                * model.recall_drift_rate, 0.0, 1.0,
+            ),
             mcf_sensitivity=(
                 scales.get("tau_scale", 1.0)
                 * model.mcf_sensitivity
             ),
-            primacy_scale=scales.get("primacy_scale", model.primacy_scale),
-            primacy_decay=scales.get("primacy_decay", model.primacy_decay),
+            primacy_scale=primacy_scale,
+            primacy_decay=primacy_decay,
+            primacy=primacy,
             emotion_scale=emotion_scale,
             temporal_emotion_scale=temporal_emotion_scale,
+            source_learning_baseline=scales.get(
+                "source_learning_baseline",
+                model.source_learning_baseline,
+            ),
+            neutral_source_input_scale=scales.get(
+                "neutral_source_input_scale",
+                model.neutral_source_input_scale,
+            ),
             phi_emot=emotion_scale * model.is_emotional,
             temporal_phi_emot=temporal_emotion_scale * model.is_emotional,
             emotion_encoding_drift_rate=jnp.clip(
@@ -241,7 +291,20 @@ def configure_rates(
                 "rejected_recall_drift_scale",
                 model.rejected_recall_drift_scale,
             ),
+            target_recall_drift_scale=scales.get(
+                "target_recall_drift_scale",
+                model.target_recall_drift_scale,
+            ),
+            film_source_start_drift_rate=jnp.clip(
+                scales.get(
+                    "film_source_start_drift_rate",
+                    model.film_source_start_drift_rate,
+                ),
+                0.0,
+                1.0,
+            ),
             mcf=new_mcf,
+            emotion_mfc=new_emotion_mfc,
             shared_support=new_ss,
         )
     return vmap(_apply)(models)
@@ -275,6 +338,8 @@ _SCALE_PHASES = {
     "primacy_decay": "film",
     "emotion_scale": "film",
     "temporal_emotion_scale": "film",
+    "source_learning_baseline": "film",
+    "neutral_source_input_scale": "film",
     "emotion_encoding_drift_scale": "film",
     "emotion_drift_scale": "film",
     "break_drift_scale": "break",
@@ -286,8 +351,11 @@ _SCALE_PHASES = {
     "filler_drift_scale": "filler",
     "filler_mcf_scale": "filler",
     "start_drift_scale": "retrieval",
+    "recall_drift_scale": "retrieval",
     "tau_scale": "retrieval",
+    "film_source_start_drift_rate": "retrieval",
     "emotion_recall_drift_scale": "retrieval",
+    "target_recall_drift_scale": "retrieval",
     "rejected_recall_drift_scale": "retrieval",
 }
 
@@ -444,6 +512,123 @@ def _make_trial_fn(
         return recalls
 
     return trial, n_item_args
+
+
+# ── Intermittent supplied-cue retrieval ───────────────────────────
+
+def periodic_cue_mask(
+    max_recall: int,
+    cue_interval: int = 4,
+    first_cue_after: int = 4,
+) -> Bool[Array, " max_recall"]:
+    """Return recall-attempt slots after which supplied cues are applied."""
+    if max_recall < 0:
+        raise ValueError("max_recall must be non-negative")
+    if cue_interval <= 0:
+        raise ValueError("cue_interval must be positive")
+    if first_cue_after <= 0:
+        raise ValueError("first_cue_after must be positive")
+    attempts = jnp.arange(1, max_recall + 1)
+    return (
+        (attempts >= first_cue_after)
+        & ((attempts - first_cue_after) % cue_interval == 0)
+    )
+
+
+def apply_supplied_item_context_cue(
+    model: PhasedMemorySearch,
+    cue_item: Integer[Array, ""],
+    cue_scale: Float[Array, ""] | float,
+) -> PhasedMemorySearch:
+    """Reinstate a supplied item's temporal and source contexts."""
+
+    def _apply(m):
+        item = m.items[cue_item - 1]
+        temporal_drift = jnp.clip(cue_scale * m.recall_drift_rate, 0.0, 1.0)
+        source_drift = temporal_drift
+        new_context = m.context.integrate(m.mfc.probe(item), temporal_drift)
+        new_source_context = m.emotion_context.integrate(
+            m.emotion_mfc.probe(item),
+            source_drift,
+        )
+        return m.replace(
+            context=new_context,
+            emotion_context=new_source_context,
+        )
+
+    no_cue = jnp.logical_or(cue_item == 0, cue_scale <= 0.0)
+    return lax.cond(no_cue, lambda m: m, _apply, model)
+
+
+def _single_free_recall(
+    model: PhasedMemorySearch,
+    rng: PRNGKeyArray,
+) -> tuple[PhasedMemorySearch, Integer[Array, ""]]:
+    """Execute one free-recall event."""
+    p_all = model.outcome_probabilities()
+    choice = random.choice(rng, p_all.shape[0], p=p_all)
+    return model.retrieve(choice), choice
+
+
+def _maybe_free_recall(
+    model: PhasedMemorySearch,
+    rng: PRNGKeyArray,
+) -> tuple[PhasedMemorySearch, Integer[Array, ""]]:
+    """Perform one recall step if active; no-op otherwise."""
+    return lax.cond(
+        model.is_active,
+        _single_free_recall,
+        lambda m, _: (m, 0),
+        model,
+        rng,
+    )
+
+
+def simulate_periodic_cued_free_recall(
+    model: PhasedMemorySearch,
+    max_recall: int,
+    rng: PRNGKeyArray,
+    film_items: Integer[Array, " n_film"],
+    cue_scale: Float[Array, ""] | float,
+    cue_interval: int = 4,
+    first_cue_after: int = 4,
+) -> tuple[
+    PhasedMemorySearch,
+    Integer[Array, " max_recall"],
+    Integer[Array, " max_recall"],
+    Integer[Array, " max_recall"],
+]:
+    """Simulate free recall with periodic test-phase film-item cues.
+
+    Cue events are applied after scheduled recall attempts, do not occupy
+    recall slots, do not mark the cued item unavailable, and add no learning.
+    """
+    recall_rng, cue_rng = random.split(rng)
+    recall_rngs = random.split(recall_rng, max_recall)
+    cue_rngs = random.split(cue_rng, max_recall)
+    cue_mask = periodic_cue_mask(max_recall, cue_interval, first_cue_after)
+    attempts = jnp.arange(1, max_recall + 1)
+
+    def step(m, xs):
+        recall_key, cue_key, should_schedule, attempt = xs
+        after_recall, choice = _maybe_free_recall(m, recall_key)
+        should_cue = should_schedule & after_recall.is_active & (cue_scale > 0.0)
+        sampled_cue_item = random.choice(cue_key, film_items)
+        cue_item = jnp.where(should_cue, sampled_cue_item, 0)
+        after_cue = apply_supplied_item_context_cue(
+            after_recall,
+            cue_item,
+            cue_scale,
+        )
+        cue_attempt = jnp.where(should_cue, attempt, 0)
+        return after_cue, (choice, cue_attempt, cue_item)
+
+    final_model, (recalls, cue_attempts, cue_items) = lax.scan(
+        step,
+        model,
+        (recall_rngs, cue_rngs, cue_mask, attempts),
+    )
+    return final_model, recalls, cue_attempts, cue_items
 
 
 # ── Layer 3: Batching ─────────────────────────────────────────────

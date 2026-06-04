@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
+</defs>
+<rect x="0" y="0" width="740" height="500" fill="white"/>
+<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">C</tspan></text>
+
+<rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
+<rect x="196" y="126" width="348" height="52" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
+<line x1="370" y1="126" x2="370" y2="178" stroke="#3D4B5C" stroke-width="2"/>
+<text x="283" y="160" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="283" dy="0">Temporal</tspan></text>
+<text x="457" y="148" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="457" dy="0">Source/</tspan><tspan x="457" dy="18">emotional</tspan></text>
+
+<rect x="162" y="336" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Features / items (F)</tspan></text>
+<rect x="226" y="394" width="120" height="38" rx="10" fill="white" stroke="#1764D8" stroke-width="3"/>
+<text x="286" y="419" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="286" dy="0">Film item</tspan></text>
+<rect x="394" y="394" width="120" height="38" rx="10" fill="white" stroke="#D96B2B" stroke-width="3"/>
+<text x="454" y="419" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="454" dy="0">Task item</tspan></text>
+
+<rect x="10" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="110" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-</tspan><tspan x="110" dy="28">context memory</tspan><tspan x="110" dy="28">(MFC)</tspan></text>
+
+<rect x="530" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="630" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-</tspan><tspan x="630" dy="28">feature memory</tspan><tspan x="630" dy="28">(MCF)</tspan></text>
+
+<polyline points="110,210 110,126 162,126" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="578,126 630,126 630,210" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="162,392 110,392 110,320" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="630,320 630,392 578,392" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="102" y="75" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="102" dy="0">Reinstates</tspan><tspan x="102" dy="24">context</tspan></text>
+<text x="660" y="412" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="660" dy="0">Cues</tspan><tspan x="660" dy="24">candidates</tspan></text>
+</svg>

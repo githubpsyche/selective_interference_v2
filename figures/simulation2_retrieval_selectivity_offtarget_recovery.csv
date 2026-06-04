@@ -1,11 +1,11 @@
 start_context_condition,start_context_scale,kappa,film_return_probability,transition_count,film_return_count
-No start-of-list reinstatement,0.0,1.0,0.00024097837219109585,33198,8
-No start-of-list reinstatement,0.0,0.75,0.00027121504339440693,33184,9
-No start-of-list reinstatement,0.0,0.5,6.030635628995296e-05,33164,2
-No start-of-list reinstatement,0.0,0.25,6.0481432200314504e-05,33068,2
-No start-of-list reinstatement,0.0,0.0,6.033728542552871e-05,33147,2
-With start-of-list reinstatement,1.0,1.0,0.0588148512417015,20335,1196
-With start-of-list reinstatement,1.0,0.75,0.11148165793234874,18891,2106
-With start-of-list reinstatement,1.0,0.5,0.22523416661497425,16121,3631
-With start-of-list reinstatement,1.0,0.25,0.4297034363721952,12746,5477
-With start-of-list reinstatement,1.0,0.0,0.643434245108537,10273,6610
+No start-of-list reinstatement,0.0,1.0,0.0003916842422416391,33190,13
+No start-of-list reinstatement,0.0,0.75,0.0006937113557532801,33155,23
+No start-of-list reinstatement,0.0,0.5,0.0009660085733260883,33126,32
+No start-of-list reinstatement,0.0,0.25,0.0028538466209241603,32938,94
+No start-of-list reinstatement,0.0,0.0,0.006992794381441732,32891,230
+With start-of-list reinstatement,1.0,1.0,0.029906376181390602,22537,674
+With start-of-list reinstatement,1.0,0.75,0.08772269558481798,20656,1812
+With start-of-list reinstatement,1.0,0.5,0.1941073545182593,17717,3439
+With start-of-list reinstatement,1.0,0.25,0.41182526842182676,13598,5600
+With start-of-list reinstatement,1.0,0.0,0.6284555842241062,10852,6820
