@@ -691,10 +691,10 @@ Simulation 4 uses this distinction to show how item-cued or recognition-like tes
 
 ## Simulation 5: Task Specificity and Source-Context Overlap
 
-Simulation 5 turns to task specificity.
-In the model, "visuospatial" and "comparison" are not primitive task labels.
-A post-film task becomes effective when its items are strong competitors, when they are encoded in temporal-context states that overlap with the film trajectory, or when they share a source-context state with film items.
-These factors can vary independently, so a task label is interpretable only through its consequences for competitor strength and contextual overlap.
+Simulation 5 explores why some post-film tasks should produce stronger interference than others.
+The model does not treat "visuospatial" and "comparison" as built-in task categories.
+Instead, a task matters through the properties of the material it adds to memory: how strongly task items are encoded, how much their temporal context overlaps with the film trajectory, and whether they share source context with film items.
+These factors can vary independently, so a task label is interpretable only through its consequences for competitor strength, temporal-context overlap, and source-context overlap.
 
 The task-specificity simulations therefore decompose three candidate routes to interference.
 Increasing the task encoding multiplier changes how strongly task items win once cued.
