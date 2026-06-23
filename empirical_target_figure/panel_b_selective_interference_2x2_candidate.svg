@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 980" width="1504" height="980" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1504" height="980" fill="white"/>
+<defs>
+  <style>
+    .panel-letter { font-size:44px; font-weight:700; fill:#111111; }
+    .panel-title { font-size:34px; font-weight:700; fill:#111111; }
+    .condition-label { font-size:28px; font-weight:700; fill:#111111; }
+    .row-label { font-size:28px; font-weight:700; fill:#111111; }
+    .axis-label { font-size:23px; font-weight:700; fill:#111111; }
+    .legend-label { font-size:22px; font-weight:700; fill:#3D4B5C; }
+    .callout-label { font-size:21px; font-weight:700; fill:#3D4B5C; }
+    .axis-line { stroke:#3D4B5C; stroke-width:3.2; stroke-linecap:square; }
+    .grid-line { stroke:#D8DEE6; stroke-width:2.2; }
+    .divider { stroke:#D8DEE6; stroke-width:3; }
+    .callout-bracket { fill:none; stroke:#3D4B5C; stroke-width:3; stroke-linecap:square; stroke-linejoin:miter; }
+    .bar-comparison { fill:#FFE7D5; stroke:#111111; stroke-width:3.2; }
+    .bar-interference { fill:#D96B2B; stroke:#111111; stroke-width:3.2; }
+  </style>
+</defs>
+
+<text x="18" y="60" class="panel-letter" text-anchor="start">B</text>
+<text x="820" y="60" class="panel-title" text-anchor="middle">Schematic selective interference effect</text>
+
+<text x="558" y="166" class="condition-label" text-anchor="middle">No reminder</text>
+<text x="1100" y="166" class="condition-label" text-anchor="middle">Film reminder</text>
+
+<line x1="826" y1="158" x2="826" y2="820" class="divider"/>
+<line x1="342" y1="489" x2="1298" y2="489" class="divider"/>
+
+<text x="200" y="282" class="row-label" text-anchor="middle">
+  <tspan x="200" dy="0">Intrusion-like</tspan>
+  <tspan x="200" dy="34">film access</tspan>
+</text>
+<text x="200" y="648" class="row-label" text-anchor="middle">
+  <tspan x="200" dy="0">Voluntary</tspan>
+  <tspan x="200" dy="34">film memory</tspan>
+</text>
+
+<text x="356" y="312" class="axis-label" text-anchor="middle" transform="rotate(-90 356 312)">Film items recalled</text>
+<text x="356" y="670" class="axis-label" text-anchor="middle" transform="rotate(-90 356 670)">Film items recalled</text>
+
+<!-- Top-left cell: intrusion-like film access, no reminder -->
+<line x1="382" y1="328" x2="734" y2="328" class="grid-line"/>
+<line x1="382" y1="216" x2="734" y2="216" class="grid-line"/>
+<line x1="382" y1="440" x2="734" y2="440" class="axis-line"/>
+<line x1="382" y1="216" x2="382" y2="440" class="axis-line"/>
+<rect x="478" y="332" width="92" height="108" rx="2" class="bar-comparison"/>
+<rect x="570" y="346" width="92" height="94" rx="2" class="bar-interference"/>
+
+<!-- Top-right cell: intrusion-like film access, film reminder -->
+<line x1="924" y1="328" x2="1276" y2="328" class="grid-line"/>
+<line x1="924" y1="216" x2="1276" y2="216" class="grid-line"/>
+<line x1="924" y1="440" x2="1276" y2="440" class="axis-line"/>
+<line x1="924" y1="216" x2="924" y2="440" class="axis-line"/>
+<rect x="1020" y="332" width="92" height="108" rx="2" class="bar-comparison"/>
+<rect x="1112" y="395" width="92" height="45" rx="2" class="bar-interference"/>
+<path d="M 1020 313 L 1020 299 L 1204 299 L 1204 313" class="callout-bracket"/>
+<text x="1112" y="289" class="callout-label" text-anchor="middle">selective reduction</text>
+
+<!-- Bottom-left cell: voluntary film memory, no reminder -->
+<line x1="382" y1="686" x2="734" y2="686" class="grid-line"/>
+<line x1="382" y1="574" x2="734" y2="574" class="grid-line"/>
+<line x1="382" y1="798" x2="734" y2="798" class="axis-line"/>
+<line x1="382" y1="574" x2="382" y2="798" class="axis-line"/>
+<rect x="478" y="637" width="92" height="161" rx="2" class="bar-comparison"/>
+<rect x="570" y="650" width="92" height="148" rx="2" class="bar-interference"/>
+
+<!-- Bottom-right cell: voluntary film memory, film reminder -->
+<line x1="924" y1="686" x2="1276" y2="686" class="grid-line"/>
+<line x1="924" y1="574" x2="1276" y2="574" class="grid-line"/>
+<line x1="924" y1="798" x2="1276" y2="798" class="axis-line"/>
+<line x1="924" y1="574" x2="924" y2="798" class="axis-line"/>
+<rect x="1020" y="637" width="92" height="161" rx="2" class="bar-comparison"/>
+<rect x="1112" y="665" width="92" height="133" rx="2" class="bar-interference"/>
+<path d="M 1020 618 L 1020 604 L 1204 604 L 1204 618" class="callout-bracket"/>
+<text x="1112" y="594" class="callout-label" text-anchor="middle">relative preservation</text>
+
+<rect x="500" y="872" width="32" height="24" rx="2" fill="#FFE7D5" stroke="#3D4B5C" stroke-width="3.2"/>
+<text x="546" y="892" class="legend-label" text-anchor="start">Comparison task</text>
+<rect x="820" y="872" width="32" height="24" rx="2" fill="#D96B2B" stroke="#3D4B5C" stroke-width="3.2"/>
+<text x="866" y="892" class="legend-label" text-anchor="start">Interference task</text>
+</svg>

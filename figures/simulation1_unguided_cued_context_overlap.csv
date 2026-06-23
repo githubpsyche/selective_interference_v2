@@ -1,0 +1,513 @@
+reminder_condition,film_position,task_position,context_overlap
+Without pre-task reminder,1,1,0.031904321163892746
+Without pre-task reminder,1,2,0.02864803373813629
+Without pre-task reminder,1,3,0.025724094361066818
+Without pre-task reminder,1,4,0.02309858240187168
+Without pre-task reminder,1,5,0.020741049200296402
+Without pre-task reminder,1,6,0.01862413063645363
+Without pre-task reminder,1,7,0.0167232733219862
+Without pre-task reminder,1,8,0.015016426332294941
+Without pre-task reminder,1,9,0.013483786955475807
+Without pre-task reminder,1,10,0.012107575312256813
+Without pre-task reminder,1,11,0.010871825739741325
+Without pre-task reminder,1,12,0.009762202389538288
+Without pre-task reminder,1,13,0.008765831589698792
+Without pre-task reminder,1,14,0.007871153764426708
+Without pre-task reminder,1,15,0.007067790720611811
+Without pre-task reminder,1,16,0.006346422713249922
+Without pre-task reminder,2,1,0.035530734807252884
+Without pre-task reminder,2,2,0.031904321163892746
+Without pre-task reminder,2,3,0.02864803373813629
+Without pre-task reminder,2,4,0.02572409249842167
+Without pre-task reminder,2,5,0.02309858798980713
+Without pre-task reminder,2,6,0.020741049200296402
+Without pre-task reminder,2,7,0.01862413063645363
+Without pre-task reminder,2,8,0.016723275184631348
+Without pre-task reminder,2,9,0.015016427263617516
+Without pre-task reminder,2,10,0.013483787886798382
+Without pre-task reminder,2,11,0.012107577174901962
+Without pre-task reminder,2,12,0.010871827602386475
+Without pre-task reminder,2,13,0.009762203320860863
+Without pre-task reminder,2,14,0.008765831589698792
+Without pre-task reminder,2,15,0.007871153764426708
+Without pre-task reminder,2,16,0.007067791186273098
+Without pre-task reminder,3,1,0.039569344371557236
+Without pre-task reminder,3,2,0.03553073853254318
+Without pre-task reminder,3,3,0.031904321163892746
+Without pre-task reminder,3,4,0.028648030012845993
+Without pre-task reminder,3,5,0.025724096223711967
+Without pre-task reminder,3,6,0.02309858426451683
+Without pre-task reminder,3,7,0.020741047337651253
+Without pre-task reminder,3,8,0.01862413063645363
+Without pre-task reminder,3,9,0.0167232733219862
+Without pre-task reminder,3,10,0.015016427263617516
+Without pre-task reminder,3,11,0.013483788818120956
+Without pre-task reminder,3,12,0.012107576243579388
+Without pre-task reminder,3,13,0.0108718266710639
+Without pre-task reminder,3,14,0.009762202389538288
+Without pre-task reminder,3,15,0.008765830658376217
+Without pre-task reminder,3,16,0.007871154695749283
+Without pre-task reminder,4,1,0.04406701400876045
+Without pre-task reminder,4,2,0.039569344371557236
+Without pre-task reminder,4,3,0.03553073853254318
+Without pre-task reminder,4,4,0.03190431743860245
+Without pre-task reminder,4,5,0.02864803373813629
+Without pre-task reminder,4,6,0.025724094361066818
+Without pre-task reminder,4,7,0.02309858612716198
+Without pre-task reminder,4,8,0.020741047337651253
+Without pre-task reminder,4,9,0.01862413063645363
+Without pre-task reminder,4,10,0.016723275184631348
+Without pre-task reminder,4,11,0.015016426332294941
+Without pre-task reminder,4,12,0.013483787886798382
+Without pre-task reminder,4,13,0.012107576243579388
+Without pre-task reminder,4,14,0.0108718266710639
+Without pre-task reminder,4,15,0.009762201458215714
+Without pre-task reminder,4,16,0.008765830658376217
+Without pre-task reminder,5,1,0.049075897783041
+Without pre-task reminder,5,2,0.04406701400876045
+Without pre-task reminder,5,3,0.039569348096847534
+Without pre-task reminder,5,4,0.035530734807252884
+Without pre-task reminder,5,5,0.031904321163892746
+Without pre-task reminder,5,6,0.028648031875491142
+Without pre-task reminder,5,7,0.025724094361066818
+Without pre-task reminder,5,8,0.02309858612716198
+Without pre-task reminder,5,9,0.020741047337651253
+Without pre-task reminder,5,10,0.01862413063645363
+Without pre-task reminder,5,11,0.016723275184631348
+Without pre-task reminder,5,12,0.015016427263617516
+Without pre-task reminder,5,13,0.013483787886798382
+Without pre-task reminder,5,14,0.012107576243579388
+Without pre-task reminder,5,15,0.01087182480841875
+Without pre-task reminder,5,16,0.009762202389538288
+Without pre-task reminder,6,1,0.05465413257479668
+Without pre-task reminder,6,2,0.0490759015083313
+Without pre-task reminder,6,3,0.04406701400876045
+Without pre-task reminder,6,4,0.039569344371557236
+Without pre-task reminder,6,5,0.035530734807252884
+Without pre-task reminder,6,6,0.03190431743860245
+Without pre-task reminder,6,7,0.028648030012845993
+Without pre-task reminder,6,8,0.02572409249842167
+Without pre-task reminder,6,9,0.02309858612716198
+Without pre-task reminder,6,10,0.020741047337651253
+Without pre-task reminder,6,11,0.01862413063645363
+Without pre-task reminder,6,12,0.0167232733219862
+Without pre-task reminder,6,13,0.015016426332294941
+Without pre-task reminder,6,14,0.013483786955475807
+Without pre-task reminder,6,15,0.012107575312256813
+Without pre-task reminder,6,16,0.010871825739741325
+Without pre-task reminder,7,1,0.06086641177535057
+Without pre-task reminder,7,2,0.05465413257479668
+Without pre-task reminder,7,3,0.0490759015083313
+Without pre-task reminder,7,4,0.044067010283470154
+Without pre-task reminder,7,5,0.039569348096847534
+Without pre-task reminder,7,6,0.035530734807252884
+Without pre-task reminder,7,7,0.031904321163892746
+Without pre-task reminder,7,8,0.028648031875491142
+Without pre-task reminder,7,9,0.025724094361066818
+Without pre-task reminder,7,10,0.02309858612716198
+Without pre-task reminder,7,11,0.020741049200296402
+Without pre-task reminder,7,12,0.01862413063645363
+Without pre-task reminder,7,13,0.0167232733219862
+Without pre-task reminder,7,14,0.015016426332294941
+Without pre-task reminder,7,15,0.013483786955475807
+Without pre-task reminder,7,16,0.012107575312256813
+Without pre-task reminder,8,1,0.06778481602668762
+Without pre-task reminder,8,2,0.06086641550064087
+Without pre-task reminder,8,3,0.05465413257479668
+Without pre-task reminder,8,4,0.0490759015083313
+Without pre-task reminder,8,5,0.04406701773405075
+Without pre-task reminder,8,6,0.03956935182213783
+Without pre-task reminder,8,7,0.035530734807252884
+Without pre-task reminder,8,8,0.031904321163892746
+Without pre-task reminder,8,9,0.02864803373813629
+Without pre-task reminder,8,10,0.025724096223711967
+Without pre-task reminder,8,11,0.02309858798980713
+Without pre-task reminder,8,12,0.02074105106294155
+Without pre-task reminder,8,13,0.018624132499098778
+Without pre-task reminder,8,14,0.016723275184631348
+Without pre-task reminder,8,15,0.015016426332294941
+Without pre-task reminder,8,16,0.013483788818120956
+Without pre-task reminder,9,1,0.0754896029829979
+Without pre-task reminder,9,2,0.06778481602668762
+Without pre-task reminder,9,3,0.06086641550064087
+Without pre-task reminder,9,4,0.05465413257479668
+Without pre-task reminder,9,5,0.049075908958911896
+Without pre-task reminder,9,6,0.044067010283470154
+Without pre-task reminder,9,7,0.039569348096847534
+Without pre-task reminder,9,8,0.03553073853254318
+Without pre-task reminder,9,9,0.031904321163892746
+Without pre-task reminder,9,10,0.02864803560078144
+Without pre-task reminder,9,11,0.025724096223711967
+Without pre-task reminder,9,12,0.023098589852452278
+Without pre-task reminder,9,13,0.02074105106294155
+Without pre-task reminder,9,14,0.018624132499098778
+Without pre-task reminder,9,15,0.016723275184631348
+Without pre-task reminder,9,16,0.015016427263617516
+Without pre-task reminder,10,1,0.08407015353441238
+Without pre-task reminder,10,2,0.0754896029829979
+Without pre-task reminder,10,3,0.06778481602668762
+Without pre-task reminder,10,4,0.06086640805006027
+Without pre-task reminder,10,5,0.054654136300086975
+Without pre-task reminder,10,6,0.0490759015083313
+Without pre-task reminder,10,7,0.04406701400876045
+Without pre-task reminder,10,8,0.039569348096847534
+Without pre-task reminder,10,9,0.03553073853254318
+Without pre-task reminder,10,10,0.031904321163892746
+Without pre-task reminder,10,11,0.02864803560078144
+Without pre-task reminder,10,12,0.025724098086357117
+Without pre-task reminder,10,13,0.02309858798980713
+Without pre-task reminder,10,14,0.020741049200296402
+Without pre-task reminder,10,15,0.01862412877380848
+Without pre-task reminder,10,16,0.016723275184631348
+Without pre-task reminder,11,1,0.09362601488828659
+Without pre-task reminder,11,2,0.08407015353441238
+Without pre-task reminder,11,3,0.0754896029829979
+Without pre-task reminder,11,4,0.06778481602668762
+Without pre-task reminder,11,5,0.06086641177535057
+Without pre-task reminder,11,6,0.054654136300086975
+Without pre-task reminder,11,7,0.0490759052336216
+Without pre-task reminder,11,8,0.04406701400876045
+Without pre-task reminder,11,9,0.039569348096847534
+Without pre-task reminder,11,10,0.03553073853254318
+Without pre-task reminder,11,11,0.031904321163892746
+Without pre-task reminder,11,12,0.02864803373813629
+Without pre-task reminder,11,13,0.025724096223711967
+Without pre-task reminder,11,14,0.02309858798980713
+Without pre-task reminder,11,15,0.020741045475006104
+Without pre-task reminder,11,16,0.01862413063645363
+Without pre-task reminder,12,1,0.10426805168390274
+Without pre-task reminder,12,2,0.09362601488828659
+Without pre-task reminder,12,3,0.08407016098499298
+Without pre-task reminder,12,4,0.0754895955324173
+Without pre-task reminder,12,5,0.06778481602668762
+Without pre-task reminder,12,6,0.06086641550064087
+Without pre-task reminder,12,7,0.05465413257479668
+Without pre-task reminder,12,8,0.049075908958911896
+Without pre-task reminder,12,9,0.04406701400876045
+Without pre-task reminder,12,10,0.03956935182213783
+Without pre-task reminder,12,11,0.03553073853254318
+Without pre-task reminder,12,12,0.031904324889183044
+Without pre-task reminder,12,13,0.02864803560078144
+Without pre-task reminder,12,14,0.025724096223711967
+Without pre-task reminder,12,15,0.02309858612716198
+Without pre-task reminder,12,16,0.02074105106294155
+Without pre-task reminder,13,1,0.11611971259117126
+Without pre-task reminder,13,2,0.10426805168390274
+Without pre-task reminder,13,3,0.093626007437706
+Without pre-task reminder,13,4,0.08407015353441238
+Without pre-task reminder,13,5,0.0754896029829979
+Without pre-task reminder,13,6,0.06778481602668762
+Without pre-task reminder,13,7,0.06086641550064087
+Without pre-task reminder,13,8,0.054654136300086975
+Without pre-task reminder,13,9,0.049075908958911896
+Without pre-task reminder,13,10,0.04406701773405075
+Without pre-task reminder,13,11,0.03956935554742813
+Without pre-task reminder,13,12,0.03553073853254318
+Without pre-task reminder,13,13,0.031904324889183044
+Without pre-task reminder,13,14,0.02864803560078144
+Without pre-task reminder,13,15,0.025724096223711967
+Without pre-task reminder,13,16,0.023098589852452278
+Without pre-task reminder,14,1,0.129318505525589
+Without pre-task reminder,14,2,0.11611970514059067
+Without pre-task reminder,14,3,0.10426805168390274
+Without pre-task reminder,14,4,0.093626007437706
+Without pre-task reminder,14,5,0.08407016098499298
+Without pre-task reminder,14,6,0.0754896029829979
+Without pre-task reminder,14,7,0.06778481602668762
+Without pre-task reminder,14,8,0.06086641550064087
+Without pre-task reminder,14,9,0.054654136300086975
+Without pre-task reminder,14,10,0.049075908958911896
+Without pre-task reminder,14,11,0.04406701400876045
+Without pre-task reminder,14,12,0.03956935182213783
+Without pre-task reminder,14,13,0.03553073853254318
+Without pre-task reminder,14,14,0.031904321163892746
+Without pre-task reminder,14,15,0.028648031875491142
+Without pre-task reminder,14,16,0.025724098086357117
+Without pre-task reminder,15,1,0.1440175324678421
+Without pre-task reminder,15,2,0.1293184906244278
+Without pre-task reminder,15,3,0.11611971259117126
+Without pre-task reminder,15,4,0.10426804423332214
+Without pre-task reminder,15,5,0.09362601488828659
+Without pre-task reminder,15,6,0.08407015353441238
+Without pre-task reminder,15,7,0.0754896029829979
+Without pre-task reminder,15,8,0.06778481602668762
+Without pre-task reminder,15,9,0.06086641177535057
+Without pre-task reminder,15,10,0.054654136300086975
+Without pre-task reminder,15,11,0.0490759052336216
+Without pre-task reminder,15,12,0.04406701400876045
+Without pre-task reminder,15,13,0.039569348096847534
+Without pre-task reminder,15,14,0.03553073853254318
+Without pre-task reminder,15,15,0.031904321163892746
+Without pre-task reminder,15,16,0.02864803373813629
+Without pre-task reminder,16,1,0.1603873372077942
+Without pre-task reminder,16,2,0.1440175175666809
+Without pre-task reminder,16,3,0.129318505525589
+Without pre-task reminder,16,4,0.11611969769001007
+Without pre-task reminder,16,5,0.10426805168390274
+Without pre-task reminder,16,6,0.093626007437706
+Without pre-task reminder,16,7,0.08407014608383179
+Without pre-task reminder,16,8,0.0754895955324173
+Without pre-task reminder,16,9,0.06778481602668762
+Without pre-task reminder,16,10,0.06086641177535057
+Without pre-task reminder,16,11,0.054654136300086975
+Without pre-task reminder,16,12,0.0490759015083313
+Without pre-task reminder,16,13,0.04406701400876045
+Without pre-task reminder,16,14,0.03956935182213783
+Without pre-task reminder,16,15,0.035530734807252884
+Without pre-task reminder,16,16,0.031904321163892746
+With pre-task film reminder,1,1,0.2326589822769165
+With pre-task film reminder,1,2,0.20891283452510834
+With pre-task film reminder,1,3,0.1875903308391571
+With pre-task film reminder,1,4,0.16844408214092255
+With pre-task film reminder,1,5,0.15125195682048798
+With pre-task film reminder,1,6,0.13581454753875732
+With pre-task film reminder,1,7,0.12195274978876114
+With pre-task film reminder,1,8,0.10950574278831482
+With pre-task film reminder,1,9,0.09832912683486938
+With pre-task film reminder,1,10,0.08829324692487717
+With pre-task film reminder,1,11,0.07928167283535004
+With pre-task film reminder,1,12,0.07118985056877136
+With pre-task film reminder,1,13,0.0639239177107811
+With pre-task film reminder,1,14,0.05739957466721535
+With pre-task film reminder,1,15,0.05154113471508026
+With pre-task film reminder,1,16,0.0462806299328804
+With pre-task film reminder,2,1,0.2626423239707947
+With pre-task film reminder,2,2,0.2358359545469284
+With pre-task film reminder,2,3,0.2117655724287033
+With pre-task film reminder,2,4,0.1901519000530243
+With pre-task film reminder,2,5,0.1707441806793213
+With pre-task film reminder,2,6,0.15331731736660004
+With pre-task film reminder,2,7,0.13766911625862122
+With pre-task film reminder,2,8,0.12361802160739899
+With pre-task film reminder,2,9,0.11100105196237564
+With pre-task film reminder,2,10,0.09967182576656342
+With pre-task film reminder,2,11,0.08949889987707138
+With pre-task film reminder,2,12,0.08036427199840546
+With pre-task film reminder,2,13,0.0721619501709938
+With pre-task film reminder,2,14,0.0647968053817749
+With pre-task film reminder,2,15,0.058183372020721436
+With pre-task film reminder,2,16,0.05224492773413658
+With pre-task film reminder,3,1,0.29443666338920593
+With pre-task film reminder,3,2,0.26438525319099426
+With pre-task film reminder,3,3,0.23740100860595703
+With pre-task film reminder,3,4,0.2131708562374115
+With pre-task film reminder,3,5,0.1914137303829193
+With pre-task film reminder,3,6,0.17187725007534027
+With pre-task film reminder,3,7,0.15433473885059357
+With pre-task film reminder,3,8,0.13858267664909363
+With pre-task film reminder,3,9,0.12443835288286209
+With pre-task film reminder,3,10,0.11173766106367111
+With pre-task film reminder,3,11,0.10033325105905533
+With pre-task film reminder,3,12,0.09009282290935516
+With pre-task film reminder,3,13,0.08089756220579147
+With pre-task film reminder,3,14,0.07264082133769989
+With pre-task film reminder,3,15,0.06522679328918457
+With pre-task film reminder,3,16,0.05856947600841522
+With pre-task film reminder,4,1,0.3282443583011627
+With pre-task film reminder,4,2,0.2947423756122589
+With pre-task film reminder,4,3,0.2646597623825073
+With pre-task film reminder,4,4,0.23764750361442566
+With pre-task film reminder,4,5,0.21339216828346252
+With pre-task film reminder,4,6,0.19161248207092285
+With pre-task film reminder,4,7,0.1720556914806366
+With pre-task film reminder,4,8,0.154494971036911
+With pre-task film reminder,4,9,0.13872657716274261
+With pre-task film reminder,4,10,0.12456756085157394
+With pre-task film reminder,4,11,0.11185367405414581
+With pre-task film reminder,4,12,0.10043741762638092
+With pre-task film reminder,4,13,0.09018635004758835
+With pre-task film reminder,4,14,0.08098156005144119
+With pre-task film reminder,4,15,0.07271624356508255
+With pre-task film reminder,4,16,0.06529451906681061
+With pre-task film reminder,5,1,0.36424511671066284
+With pre-task film reminder,5,2,0.3270687758922577
+With pre-task film reminder,5,3,0.29368674755096436
+With pre-task film reminder,5,4,0.2637118697166443
+With pre-task film reminder,5,5,0.2367963194847107
+With pre-task film reminder,5,6,0.21262790262699127
+With pre-task film reminder,5,7,0.1909262090921402
+With pre-task film reminder,5,8,0.17143948376178741
+With pre-task film reminder,5,9,0.15394164621829987
+With pre-task film reminder,5,10,0.13822972774505615
+With pre-task film reminder,5,11,0.12412141263484955
+With pre-task film reminder,5,12,0.11145306378602982
+With pre-task film reminder,5,13,0.10007769614458084
+With pre-task film reminder,5,14,0.0898633524775505
+With pre-task film reminder,5,15,0.08069152384996414
+With pre-task film reminder,5,16,0.07245580852031708
+With pre-task film reminder,6,1,0.4025860130786896
+With pre-task film reminder,6,2,0.3614963889122009
+With pre-task film reminder,6,3,0.32460057735443115
+With pre-task film reminder,6,4,0.291470468044281
+With pre-task film reminder,6,5,0.26172176003456116
+With pre-task film reminder,6,6,0.2350093573331833
+With pre-task film reminder,6,7,0.21102331578731537
+With pre-task film reminder,6,8,0.18948538601398468
+With pre-task film reminder,6,9,0.17014572024345398
+With pre-task film reminder,6,10,0.1527799367904663
+With pre-task film reminder,6,11,0.13718657195568085
+With pre-task film reminder,6,12,0.12318475544452667
+With pre-task film reminder,6,13,0.11061199009418488
+With pre-task film reminder,6,14,0.09932247549295425
+With pre-task film reminder,6,15,0.0891852080821991
+With pre-task film reminder,6,16,0.08008259534835815
+With pre-task film reminder,7,1,0.4433702826499939
+With pre-task film reminder,7,2,0.3981180787086487
+With pre-task film reminder,7,3,0.3574845492839813
+With pre-task film reminder,7,4,0.3209981620311737
+With pre-task film reminder,7,5,0.28823572397232056
+With pre-task film reminder,7,6,0.258817195892334
+With pre-task film reminder,7,7,0.23240122199058533
+With pre-task film reminder,7,8,0.2086813598871231
+With pre-task film reminder,7,9,0.18738248944282532
+With pre-task film reminder,7,10,0.1682574599981308
+With pre-task film reminder,7,11,0.15108439326286316
+With pre-task film reminder,7,12,0.13566409051418304
+With pre-task film reminder,7,13,0.12181764841079712
+With pre-task film reminder,7,14,0.10938442498445511
+With pre-task film reminder,7,15,0.09822019934654236
+With pre-task film reminder,7,16,0.08819542825222015
+With pre-task film reminder,8,1,0.48664379119873047
+With pre-task film reminder,8,2,0.4369749128818512
+With pre-task film reminder,8,3,0.39237546920776367
+With pre-task film reminder,8,4,0.35232797265052795
+With pre-task film reminder,8,5,0.31636786460876465
+With pre-task film reminder,8,6,0.28407806158065796
+With pre-task film reminder,8,7,0.2550838589668274
+With pre-task film reminder,8,8,0.2290489375591278
+With pre-task film reminder,8,9,0.2056712657213211
+With pre-task film reminder,8,10,0.18467958271503448
+With pre-task film reminder,8,11,0.16583041846752167
+With pre-task film reminder,8,12,0.14890508353710175
+With pre-task film reminder,8,13,0.1337071806192398
+With pre-task film reminder,8,14,0.12006048858165741
+With pre-task film reminder,8,15,0.10780660063028336
+With pre-task film reminder,8,16,0.09680341184139252
+With pre-task film reminder,9,1,0.5323753952980042
+With pre-task film reminder,9,2,0.4780389368534088
+With pre-task film reminder,9,3,0.4292483329772949
+With pre-task film reminder,9,4,0.3854374587535858
+With pre-task film reminder,9,5,0.34609806537628174
+With pre-task film reminder,9,6,0.3107738792896271
+With pre-task film reminder,9,7,0.2790549695491791
+With pre-task film reminder,9,8,0.25057345628738403
+With pre-task film reminder,9,9,0.22499887645244598
+With pre-task film reminder,9,10,0.20203456282615662
+With pre-task film reminder,9,11,0.18141406774520874
+With pre-task film reminder,9,12,0.16289818286895752
+With pre-task film reminder,9,13,0.14627212285995483
+With pre-task film reminder,9,14,0.13134296238422394
+With pre-task film reminder,9,15,0.11793755739927292
+With pre-task film reminder,9,16,0.1059003621339798
+With pre-task film reminder,10,1,0.5804307460784912
+With pre-task film reminder,10,2,0.5211895704269409
+With pre-task film reminder,10,3,0.4679948091506958
+With pre-task film reminder,10,4,0.42022931575775146
+With pre-task film reminder,10,5,0.3773389160633087
+With pre-task film reminder,10,6,0.33882611989974976
+With pre-task film reminder,10,7,0.30424413084983826
+With pre-task film reminder,10,8,0.2731916904449463
+With pre-task film reminder,10,9,0.24530862271785736
+With pre-task film reminder,10,10,0.22027139365673065
+With pre-task film reminder,10,11,0.19778956472873688
+With pre-task film reminder,10,12,0.17760233581066132
+With pre-task film reminder,10,13,0.15947549045085907
+With pre-task film reminder,10,14,0.14319875836372375
+With pre-task film reminder,10,15,0.12858329713344574
+With pre-task film reminder,10,16,0.11545953899621964
+With pre-task film reminder,11,1,0.6305339932441711
+With pre-task film reminder,11,2,0.5661790370941162
+With pre-task film reminder,11,3,0.5083925127983093
+With pre-task film reminder,11,4,0.45650380849838257
+With pre-task film reminder,11,5,0.4099110960960388
+With pre-task film reminder,11,6,0.36807388067245483
+With pre-task film reminder,11,7,0.33050671219825745
+With pre-task film reminder,11,8,0.2967738211154938
+With pre-task film reminder,11,9,0.2664838433265686
+With pre-task film reminder,11,10,0.23928537964820862
+With pre-task film reminder,11,11,0.21486292779445648
+With pre-task film reminder,11,12,0.1929331123828888
+With pre-task film reminder,11,13,0.1732415407896042
+With pre-task film reminder,11,14,0.15555979311466217
+With pre-task film reminder,11,15,0.13968271017074585
+With pre-task film reminder,11,16,0.12542609870433807
+With pre-task film reminder,12,1,0.6822119355201721
+With pre-task film reminder,12,2,0.6125825643539429
+With pre-task film reminder,12,3,0.5500598549842834
+With pre-task film reminder,12,4,0.49391844868659973
+With pre-task film reminder,12,5,0.44350704550743103
+With pre-task film reminder,12,6,0.398240864276886
+With pre-task film reminder,12,7,0.35759472846984863
+With pre-task film reminder,12,8,0.32109713554382324
+With pre-task film reminder,12,9,0.28832459449768066
+With pre-task film reminder,12,10,0.25889697670936584
+With pre-task film reminder,12,11,0.23247288167476654
+With pre-task film reminder,12,12,0.20874573290348053
+With pre-task film reminder,12,13,0.18744026124477386
+With pre-task film reminder,12,14,0.16830933094024658
+With pre-task film reminder,12,15,0.15113095939159393
+With pre-task film reminder,12,16,0.13570591807365417
+With pre-task film reminder,13,1,0.7347111701965332
+With pre-task film reminder,13,2,0.6597235202789307
+With pre-task film reminder,13,3,0.5923894047737122
+With pre-task film reminder,13,4,0.5319277048110962
+With pre-task film reminder,13,5,0.4776368737220764
+With pre-task film reminder,13,6,0.4288872480392456
+With pre-task film reminder,13,7,0.3851132094860077
+With pre-task film reminder,13,8,0.34580695629119873
+With pre-task film reminder,13,9,0.3105124533176422
+With pre-task film reminder,13,10,0.278820276260376
+With pre-task film reminder,13,11,0.25036269426345825
+With pre-task film reminder,13,12,0.2248096466064453
+With pre-task film reminder,13,13,0.20186462998390198
+With pre-task film reminder,13,14,0.18126147985458374
+With pre-task film reminder,13,15,0.1627611666917801
+With pre-task film reminder,13,16,0.14614908397197723
+With pre-task film reminder,14,1,0.7868715524673462
+With pre-task film reminder,14,2,0.7065601944923401
+With pre-task film reminder,14,3,0.6344457864761353
+With pre-task film reminder,14,4,0.56969153881073
+With pre-task film reminder,14,5,0.5115464329719543
+With pre-task film reminder,14,6,0.4593358635902405
+With pre-task film reminder,14,7,0.41245409846305847
+With pre-task film reminder,14,8,0.37035733461380005
+With pre-task film reminder,14,9,0.3325570821762085
+With pre-task film reminder,14,10,0.2986149489879608
+With pre-task film reminder,14,11,0.2681370675563812
+With pre-task film reminder,14,12,0.2407698631286621
+With pre-task film reminder,14,13,0.21619586646556854
+With pre-task film reminder,14,14,0.19413001835346222
+With pre-task film reminder,14,15,0.17431630194187164
+With pre-task film reminder,14,16,0.1565248668193817
+With pre-task film reminder,15,1,0.8369330763816833
+With pre-task film reminder,15,2,0.7515122294425964
+With pre-task film reminder,15,3,0.6748098134994507
+With pre-task film reminder,15,4,0.6059358716011047
+With pre-task film reminder,15,5,0.5440914630889893
+With pre-task film reminder,15,6,0.48855921626091003
+With pre-task film reminder,15,7,0.4386948347091675
+With pre-task film reminder,15,8,0.39391982555389404
+With pre-task film reminder,15,9,0.3537147045135498
+With pre-task film reminder,15,10,0.31761306524276733
+With pre-task film reminder,15,11,0.2851961553096771
+With pre-task film reminder,15,12,0.25608786940574646
+With pre-task film reminder,15,13,0.2299504429101944
+With pre-task film reminder,15,14,0.2064807415008545
+With pre-task film reminder,15,15,0.18540646135807037
+With pre-task film reminder,15,16,0.1664831042289734
+With pre-task film reminder,16,1,0.8822382688522339
+With pre-task film reminder,16,2,0.7921933531761169
+With pre-task film reminder,16,3,0.7113387584686279
+With pre-task film reminder,16,4,0.6387365460395813
+With pre-task film reminder,16,5,0.5735443830490112
+With pre-task film reminder,16,6,0.5150061249732971
+With pre-task film reminder,16,7,0.46244242787361145
+With pre-task film reminder,16,8,0.41524362564086914
+With pre-task film reminder,16,9,0.3728621006011963
+With pre-task film reminder,16,10,0.33480626344680786
+With pre-task film reminder,16,11,0.3006345331668854
+With pre-task film reminder,16,12,0.2699505090713501
+With pre-task film reminder,16,13,0.2423982322216034
+With pre-task film reminder,16,14,0.21765804290771484
+With pre-task film reminder,16,15,0.19544295966625214
+With pre-task film reminder,16,16,0.1754952371120453

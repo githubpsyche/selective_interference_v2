@@ -466,17 +466,18 @@ def build_figure4_panels() -> None:
     ]
     for color, value in zip(colors, sorted(crp_subset["retrieval_selectivity"].unique())):
         curve = crp_subset[crp_subset["retrieval_selectivity"] == value].sort_values("lag")
-        axis_a.plot(
-            curve["lag"],
-            curve["conditional_response_probability"],
-            marker="o",
-            color=color,
-            linewidth=1.5,
-            label=f"{value:.2f}",
-        )
+        for side_index, side in enumerate((curve[curve["lag"] < 0], curve[curve["lag"] > 0])):
+            axis_a.plot(
+                side["lag"],
+                side["conditional_response_probability"],
+                marker="o",
+                color=color,
+                linewidth=1.5,
+                label=f"{value:.2f}" if side_index == 0 else "_nolegend_",
+            )
     axis_a.axvline(0, color="#7C8794", linewidth=0.7, alpha=0.45, zorder=1)
-    axis_a.set_title("Full-list lag-CRP", fontsize=PANEL_TITLE_FONTSIZE, pad=16)
-    axis_a.set_xlabel("Lag", fontsize=STRUCTURAL_FONTSIZE)
+    axis_a.set_title("Transitions by encoded lag", fontsize=PANEL_TITLE_FONTSIZE, pad=16)
+    axis_a.set_xlabel("Lag between successive recalls", fontsize=STRUCTURAL_FONTSIZE)
     axis_a.set_ylabel("Conditional response probability", fontsize=STRUCTURAL_FONTSIZE)
     axis_a.set_xlim(-5, 5)
     axis_a.set_ylim(-0.025, 0.42)
@@ -524,7 +525,7 @@ def build_figure4_panels() -> None:
             markersize=4.5,
             label=style["label"],
         )
-    axis_d.set_title("Return after off-target sample", fontsize=PANEL_TITLE_FONTSIZE, pad=16)
+    axis_d.set_title("Film return after off-target sample", fontsize=PANEL_TITLE_FONTSIZE, pad=16)
     axis_d.set_xlabel("Off-target update ($\\kappa$)", fontsize=STRUCTURAL_FONTSIZE)
     axis_d.set_ylabel("Probability next sample is film", fontsize=STRUCTURAL_FONTSIZE)
     axis_d.set_xlim(-0.05, 1.05)
@@ -584,7 +585,7 @@ def plot_figure5_schematic(axis: plt.Axes) -> None:
             axis.text(
                 pulse_x,
                 y + 0.22,
-                "film-item\ncue",
+                "film\ncue",
                 ha="center",
                 va="bottom",
                 fontsize=SUPPORT_FONTSIZE,
@@ -685,10 +686,10 @@ def build_figure5_panels() -> None:
     axis_b_gap.plot(pivot.index, gap, marker="o", linewidth=1.8, markersize=4.8, color="#2F3B4A")
     axis_b_gap.axhline(gap.iloc[0], color="#9AA4B2", linewidth=0.9, linestyle="--")
     axis_b.set_title("Film recall", fontsize=SUPPORT_FONTSIZE, pad=6)
-    axis_b.set_xlabel("Film-cue reinstatement", fontsize=SUPPORT_FONTSIZE)
-    axis_b.set_ylabel("Film-item recall mass", fontsize=SUPPORT_FONTSIZE)
+    axis_b.set_xlabel("Film cue strength", fontsize=SUPPORT_FONTSIZE)
+    axis_b.set_ylabel("Film recall mass", fontsize=SUPPORT_FONTSIZE)
     axis_b.set_xlim(float(pivot.index.min()), float(pivot.index.max()))
-    axis_b.set_ylim(0, 3.25)
+    axis_b.set_ylim(0, max(3.25, float(np.nanmax(pivot.to_numpy())) + 0.35))
     axis_b.set_xticks([0.0, 0.33, 0.66, 1.0])
     axis_b.set_xticklabels(["0.00", "0.33", "0.66", "1.00"])
     axis_b.legend(
@@ -700,7 +701,7 @@ def build_figure5_panels() -> None:
         handlelength=1.6,
     )
     axis_b_gap.set_title("Intentionality gap", fontsize=SUPPORT_FONTSIZE, pad=6)
-    axis_b_gap.set_xlabel("Film-cue reinstatement", fontsize=SUPPORT_FONTSIZE)
+    axis_b_gap.set_xlabel("Film cue strength", fontsize=SUPPORT_FONTSIZE)
     axis_b_gap.set_ylabel("Deliberate - unguided", fontsize=8.5)
     axis_b_gap.set_xlim(float(pivot.index.min()), float(pivot.index.max()))
     axis_b_gap.set_ylim(0, 2.6)
@@ -733,7 +734,7 @@ def build_figure5_panels() -> None:
     legend = legend_axis.legend(
         handles,
         legend_labels,
-        title="Film-cue\nreinstatement",
+        title="Film cue\nstrength",
         loc="center left",
         fontsize=SUPPORT_FONTSIZE,
         title_fontsize=SUPPORT_FONTSIZE,

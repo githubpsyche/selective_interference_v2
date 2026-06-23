@@ -2,7 +2,7 @@
 
 This figure compares unguided retrieval with deliberate recall while sweeping
 target-item post-recall context drift. It uses the same post-reminder task-encoding regime
-as the film-cue figure, but without intermittent supplied film-item cues.
+as the film-cue figure, but without intermittent supplied film cues.
 """
 
 from __future__ import annotations
@@ -317,7 +317,7 @@ def plot_film_mass_panel(axis_recall, axis_gap, phase_rows: list[dict]) -> None:
 
     axis_recall.set_title("Film recall", fontsize=10, pad=6)
     axis_recall.set_xlabel(SUMMARY_XLABEL, fontsize=10)
-    axis_recall.set_ylabel("Film-item recall mass", fontsize=10)
+    axis_recall.set_ylabel("Film recall mass", fontsize=10)
     axis_recall.set_xlim(float(np.min(SWEEP_VALUES)), float(np.max(SWEEP_VALUES)))
     axis_recall.set_ylim(
         0,

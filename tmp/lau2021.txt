@@ -1,0 +1,896 @@
+998315
+research-article2021
+                       CPXXXX10.1177/2167702621998315Lau-Zhu et al.Intrusive, Voluntary, and Associative Memory
+
+
+
+
+                                                                                                                                                                      ASSOCIATION FOR
+                                Empirical Article                                                                                                      PSYCHOLOGICAL SCIENCE
+                                                                                                                                                       Clinical Psychological Science
+
+                                Selectively Interfering With Intrusive but                                                                             2021, Vol. 9(6) 1128­–1143
+                                                                                                                                                       © The Author(s) 2021
+
+                                Not Voluntary Memories of a Trauma                                                                                     Article reuse guidelines:
+
+                                Film: Accounting for the Role of
+                                                                                                                                                       sagepub.com/journals-permissions
+                                                                                                                                                       DOI:    10.1177/2167702621998315
+                                                                                                                                                       https://doi.org/10.1177/2167702621998315
+                                                                                                                                                       www.psychologicalscience.org/CPS
+                                Associative Memory
+
+                                Alex Lau-Zhu1,2,3,4 , Richard N. Henson1, and Emily A. Holmes1,5,6
+                                1
+                                 Medical Research Council Cognition and Brain Sciences Unit, Department of Psychiatry, University
+                                of Cambridge; 2Oxford Institute of Clinical Psychology Training and Research, Division of Medical
+                                Sciences, University of Oxford; 3Centre for Psychiatry, Department of Brain Sciences, Imperial College
+                                London; 4Oxford Health NHS Foundation Trust, Oxford, England; 5Department of Psychology, Uppsala
+                                University; and 6Department for Clinical Neuroscience, Karolinska Institutet
+
+
+
+
+                                Abstract
+                                Intrusive memories of a traumatic event can be reduced by a subsequent interference procedure, seemingly sparing
+                                voluntary memory for that event. This selective-interference effect has potential therapeutic benefits (e.g., for emotional
+                                disorders) and legal importance (e.g., for witness testimony). However, the measurements of intrusive memory and
+                                voluntary memory typically differ in the role of associations between a cue and the emotional memory “hotspots.” To
+                                test this, we asked participants to watch a traumatic film followed by either an interference procedure (reminder plus
+                                Tetris) or control procedure (reminder only). Measurement of intrusions (using a laboratory task) and voluntary memory
+                                (recognition for film stills) were crossed with the presence or absence of associative cues. The reminder-plus-Tetris
+                                group exhibited fewer intrusions despite comparable recognition memory, replicating the results of prior studies. Note
+                                that this selective interference did not appear to depend on associative cues. This involuntary versus voluntary memory
+                                dissociation for emotional material further supports separate-trace memory theories and has applied advantages.
+
+                                Keywords
+                                intrusive memories, involuntary memory, mental imagery, memory consolidation, trauma, PTSD, open data, open
+                                materials
+
+                                Received 11/16/20; Revision accepted 2/1/21
+
+
+                                In autobiographical memory research, an important                                 during a road traffic accident may later intrude unbid-
+                                distinction is made between voluntary memory, which                               den, vividly in the mind’s eye, bringing distress (Iyadurai
+                                involves remembering with deliberate intent, and invol-                           et al., 2019). It is this involuntary quality of these images
+                                untary memory, which involves recollecting the event                              that is associated with the core clinical feature of post-
+                                spontaneously (Berntsen, 2009; Conway & Pleydell-                                 traumatic stress disorder (PTSD; American Psychiatric
+                                Pearce, 2000). Involuntary memories are also consid-                              Association, 2013)—intrusive memories of a traumatic
+                                ered “intrusive” when they are recurrent and unwanted                             event.
+                                (Berntsen & Rubin, 2014; Kvavilashvili, 2014). Intrusive                             The theoretical distinction between intrusive and vol-
+                                memories occur across many emotional disorders                                    untary memory of trauma holds clinical importance. It is
+                                (Brewin et al., 2010; Holmes & Mathews, 2010; Kavanagh
+                                et al., 2005). Traumatic events, in particular, tend to lead
+                                                                                                                  Corresponding Author:
+                                to intrusive memories, which are typically image-based                            Alex Lau-Zhu, Oxford Institute of Clinical Psychology Training and
+                                (Arntz et al., 2005; Ehlers et al., 2004). For instance, a                        Research, Division of Medical Sciences, University of Oxford
+                                memory “hotspot” of the moment when two cars collide                              E-mail: alex.lauzhu@hmc.ox.uk
+Intrusive, Voluntary, and Associative Memory                                                                           1129
+
+increasingly recognized that the development of memory          memory consolidation should affect both forms of
+therapeutics must consider carefully which types of mem-        retrieval rather than interfere selectively with only invol-
+ory are and are not modified (Elsey & Kindt, 2016; Phelps       untary (intrusive) memories.
+& Hofmann, 2019; Visser et al., 2018). For example, one            Claims that a postencoding interference selectively
+may seek to reduce the occurrence of distressing intru-         affects different types of memory, however, demand
+sions in therapy but without inadvertently compromising         careful methodological examination of how memory is
+deliberate recall of the same trauma (Holmes, Sandberg,         measured. In trauma-film research ( James et al., 2016;
+& Iyadurai, 2010), which can be important. Trauma sur-          Lau-Zhu et al., 2018), intrusive memories have been
+vivors may need to be able to voluntarily describe the          typically measured by a pen-and-paper diary recorded
+details of their trauma(s) for the purpose of legal testi-      during everyday life over several days after watching
+mony. Moreover, amnesia resulting from an inability to          the film, and voluntary memory has been typically
+voluntarily retrieve important aspects of trauma (e.g.,         assessed with a recognition memory task performed in
+after a drug rape) can be associated with clinical distress     the laboratory 1 week later (requiring yes/no judgments
+(Gauntlett-Gilbert et al., 2004).                               for scenes from the trauma films vs. scenes from unseen
+    Experimental data suggest that intrusive memory and         films). Diaries and recognition tasks come from differ-
+voluntary memory for the same material are dissociable          ent research traditions and are vastly different method-
+(e.g., Deeprose et al., 2012; Hørlyck et al., 2019; Holmes      ologically. Hence, differential effects on these two
+et al., 2009; Holmes, James, et al., 2010; James et al.,        memory measures may not necessarily reflect a disso-
+2015; Lau-Zhu et al., 2019). In a series of experiments         ciation between involuntary and voluntary memory but,
+using a distressing film as an experimental trauma              rather, other methodological factors, including the
+( James et al., 2016; Lau-Zhu et al., 2018), we have            nature of the cues, attentional demands (e.g., what
+established that the occurrence of intrusive memories           people are doing when intrusions arise), and the reten-
+of such films can be reduced without apparent reduc-            tion interval. Recently, we matched several such factors
+tion in voluntary memory for the films (e.g., as tested         yet still found selective interference from a cognitive
+by recall and recognition)—a phenomenon we referred             procedure (reminder plus Tetris) on intrusions but not
+to as a selective-interference effect (Lau-Zhu et al.,          on voluntary memory across three experiments (Lau-
+2019). The effect resulted from administering an inter-         Zhu et al., 2019).
+ference procedure soon after film viewing—here, a                  One key factor that has not yet been addressed when
+reminder cue (to the experimental trauma) followed by           studying intrusive and voluntary memory comparisons,
+the computer game Tetris played with mental rotation            however, is the role of associative memory. That is,
+instructions (i.e., reminder plus Tetris; Holmes et al.,        previous measures of intrusive memories seem to
+2009; Holmes, James, et al., 2010; Lau-Zhu et al., 2019).       include an associative component requiring memory
+The procedure is thought to interfere with consolidation        for associations between elements within a traumatic
+of memory for the film (Nader, 2003) and selectively            event (e.g., the scenes in a distressing film), whereas
+interfere with the type of memory that constitutes intru-       previous measures of voluntary memory normally do
+sive mental images (Brewin, 2014; Ehlers et al., 2004;          not. Because intrusive memories are typically recorded
+Holmes et al., 2009). We found evidence that the selec-         in diaries—with instructions primarily given to report
+tive-interference effect on trauma-film intrusions can be       what “pops into mind” ( James et al., 2016)—it may
+observed soon after interference—just several minutes           seem strange to characterize the diary as a task involv-
+later (Lau-Zhu et al., 2019, Experiments 2 and 3).              ing an associative component. Yet we have found that
+    Selective interference can be interpreted in line with      participants were often able to self-report cues from
+separate-trace memory theories (Dalgleish, 2004), such as       their everyday environment that had seemingly trig-
+a dual-representation account of emotional memory in            gered their trauma-film intrusions (Lau-Zhu et al., 2019;
+PTSD (Bisby & Burgess, 2017; Brewin, 2014; Brewin et al.,       Experiments 1 and 2). As an example of a trigger-
+1996). A recent version of this theory posits that in addi-     hotspot link in the diary task, “seeing a child cross the
+tion to the ordinary autobiographical memory system that        road” in everyday life could have triggered an intrusive
+subserves voluntary retrieval, a functionally independent,      image of the film in which “a school boy is crashed by
+long-term, image-based system subserves intrusive memo-         a van while texting and crossing the road.” The role of
+ries in PTSD. Such an account contrasts with the dominant       associative cues in triggering intrusions is acknowl-
+view in cognitive psychology that a single memory system        edged in clinical models of PTSD (Ehlers & Clark, 2000;
+underlies declarative (conscious) memory (Schacter &            Foa & Kozak, 1986), such as seeing “a red post” may
+Tulving, 1994) regardless of whether memory is expressed        trigger intrusions of “a car crash involving a red car.”
+voluntarily or involuntarily (Berntsen, 2009; Tulving, 2002).      Inspired by observations of cues in the diary—along-
+According to this single-trace perspective, interfering with    side existing intrusion provocation approaches in the
+1130                                                                                                       Lau-Zhu et al.
+
+lab (Lau-Zhu et al., 2018)—we developed a laboratory          visual-recognition memory task but, critically, modified
+analogue of the diary, which we called the vigilance-         both to more clearly distinguish conditions with and
+intrusion task (Lau-Zhu et al., 2019, Experiments 2 and       without an associative component (via the presence and
+3). In this task, participants perform a simple vigilance     absence of associative cues). As in Lau-Zhu et al. (2019,
+task (i.e., a go/no-go task on a series of numbers)           Experiments 1–3), participants were randomly assigned
+designed to capture the attentional demands of typical        to a cognitive-task-interference group (reminder plus
+everyday tasks (e.g., reading or shopping) while ini-         Tetris) or a control no-interference group (reminder
+tially unattended cues, designed to trigger intrusive         only) 30 min after they viewed a trauma film. A pre-Tetris
+memories of a prior trauma film, are presented occa-          reminder was included in a successful real-world clinical
+sionally in the background. While performing this task,       translation of this interference procedure (Iyadurai et al.,
+a background still depicting an initial scene with “a         2018; Kanstrup, Singh, et al., 2021), critically shown to
+child happily playing football” might trigger an intru-       be necessary in the laboratory to observe interference
+sion from an associated hotspot (i.e., worst moment;          on intrusions (Lau-Zhu et al., 2019). Indeed, absence
+Holmes et al., 2005) within the film when “the child is       of this reminder component was associated with a lack
+later killed by a car.” Such trigger-hotspot links (or cue-   of interference effect (Brühl et al., 2019). This is pre-
+target links) can be conceived as a form of associative       sumably because a reminder cue helps bring a target
+memory—that is, memory for the associations between           memory into one’s attention sufficiently to then suc-
+different scenes—rather than memory for the scenes            cessfully exert interference on that memory (Visser
+themselves (Yonelinas, 2002).                                 et al., 2018).
+    Measurement of voluntary memory in trauma-film               The rationale for the 30-min postfilm delay was as
+studies has tended to rely on single-item recognition         follows: (a) It may fall within the putative time window
+tests (e.g., James et al., 2015, Experiment 2; Lau-Zhu        of memory consolidation when a memory trace is
+et al., 2019, Experiments 1 and 2), which we reason           hypothesized to remain labile (up to 6 hr after initial
+less likely involve an associative component. In visual/      encoding) and amenable to change, at least according
+verbal recognition memory tests, a cue is presented           to some accounts (e.g., Nader et al., 2000); (b) it is
+either describing or depicting a particular scene of the      considered an approximate time typically reported for
+film, for example, a hotspot moment of “the car crash         accident and emergency services to arrive at a trauma
+killing the child.” The cue provided is tested for its        scene in the United States (Carr et al., 2009) as well as
+content but without necessarily testing its association       in the United Kingdom (National Audit Office, 2017);
+with other scenes (e.g., of “the child playing football       (c) it is of the same duration as previous consolidation-
+prior to the crash”). Indeed, recognition for single stim-    based studies in this line of work, which we seek to
+uli can be achieved by a feeling of familiarity without       replicate and extend (Badawi et al., 2020; Deeprose
+any (associative) recollection of other information           et al., 2012; Holmes et al., 2009; Holmes, James, et al.,
+(Yonelinas, 2002). We therefore propose that associa-         2010; Lau-Zhu et al., 2019).
+tions are better probed in the intrusion measures, such          Subsequently, participants completed measures of
+as the vigilance-intrusion task, because the provoked         involuntary memory (vigilance-intrusion tasks) and vol-
+intrusive hotspots memories are different in content to       untary memory (modified recognition task) within the
+what is depicted in the neutral cues themselves. Thus,        same experimental session on Day 1. For the vigilance-
+it is possible that the interference procedure (reminder      intrusion tasks to assess intrusions (while people per-
+plus Tetris) disrupts the consolidation of associations       form a simple go/no-go task on numbers), we compared
+between elements within a traumatic event (which in           a version with trauma-film (associative) cues (as in
+turn reduces the probability of a cue triggering an intru-    Lau-Zhu et al., 2019, Experiments 2 and 3) and another
+sion) without affecting consolidation of the individual       version without such cues. For the modified recognition
+elements (as tested in traditional voluntary tests of rec-    task, we similarly included two types of target trials
+ognition memory). It may appear that voluntary mem-           (within the same task), half of which were preceded by
+ory is preserved, whereas in fact, the associations have      trauma-film (associative) cues and half by cues from a
+been eroded.                                                  different/unseen film (foils). The logic was that if trauma-
+                                                              film cues (e.g., a still depicting a nonintrusive/neutral
+                                                              scene) trigger memory for associations and enhance
+Overview of the Current Experiment
+                                                              subsequent retrieval, then we should find increased
+In the present study, we tested whether there is indeed       intrusion rates and improved recognition performance.
+a selective-interference effect or whether measurements       Note that measures of intrusions and recognition were
+of intrusive and voluntary memory of a trauma film            matched in terms of cues (stills from films), context
+differ in whether an associative component is included.       (both in the laboratory), attentional demands (partici-
+We used the vigilance-intrusion task together with a          pants performed a no/no-go task on the cues in both
+Intrusive, Voluntary, and Associative Memory                                                                                      1131
+
+                               Single-Trace Accounts                                 Separate-Trace Accounts
+                       Trauma-Film Cues          Foil Cues                    Trauma-Film Cues              Foil Cues
+
+
+
+                              ∗                                                       ∗
+
+
+
+         Involuntary
+                                                     ?                                                          ?
+
+
+
+
+                               ∗                                                      n.s.
+
+                                                    n.s.                                                       n.s.
+
+
+         Voluntary
+
+
+
+
+                                                              Reminder Plus Tetris
+                                                              Reminder Only
+
+         Fig. 1. Schematic of contrasting predictions on memory outcomes by single-trace accounts compared with separate-
+         trace accounts. n.s. = not significant. Asterisks indicate a significant difference between groups (p < .05). Question
+         marks indicate an unclear pattern.
+
+
+tasks), as well as retention interval (shortly after inter-           with trauma-film cues (on same day, i.e., Day 1, as in
+ference was delivered).                                               Lau-Zhu et al., 2019, Experiments 2 and 3), as well as
+   Following previous research (Badawi et al., 2020;                  on diary intrusions of the film over the subsequent
+Deeprose et al., 2012; Holmes et al., 2009; Holmes,                   week (Holmes et al., 2009; Lau-Zhu et al., 2019).
+James, et al., 2010; Lau-Zhu et al., 2019), baseline mea-                The second and critical aim was to see whether
+sures were completed at the start of the experiment on                similar a pattern of disruption could be found on a
+key clinical/cognitive dimensions that have been associ-              voluntary recognition-memory task in which the target
+ated with increased risk for intrusive memories, includ-              scenes (requiring a yes/no response) were preceded
+ing depression and anxiety (e.g., Brewin et al., 2010;                by cues either from the trauma film or a different/
+Holmes et al., 2016), trauma history (e.g., Ozer et al.,              unseen film. See Figure 1 for a schematic of the dif-
+2003), and mental imagery use (e.g., Kosslyn, 2005;                   ferential predictions by each theoretical perspective.
+Morina et al., 2013), to check for successful random                  On one hand, if similar disruption were found on both
+assignments and rule these out as potential confounds.                involuntary and voluntary memory measures when
+                                                                      including an associative component (i.e., with trauma-
+                                                                      film cues), this would support the hypothesis that
+Aims and Hypotheses                                                   reminder plus Tetris interferes with associations between
+The first aim was to attempt to replicate the interference            elements of a memory, which would be more consistent
+effect (after viewing a trauma film) of the reminder-                 with single-trace accounts. On the other hand, if interfer-
+plus-Tetris procedure on subsequent intrusions of the                 ence were found only on an involuntary memory measure
+film, as assessed in a vigilance-intrusion task embedded              (e.g., in a vigilance-intrusion task) and not on the voluntary
+1132                                                                                                        Lau-Zhu et al.
+
+memory measure (recognition task), this would strengthen           Tetris. Tetris is a desktop-based game that consists of
+prior claims that separate memory systems underlie vol-        different colored and shaped 2-D geometric figures (Blue
+untary and involuntary (intrusive) memories.                   Planet Software, 2007). Each figure falls from the top of
+                                                               the game screen and can be rotated 90° at a time. Par-
+                                                               ticipants had to form full horizontal lines without gaps
+Method                                                         using these figures. They were trained in and encour-
+Participants                                                   aged to use mental rotation to play the game by focusing
+                                                               not just on the figure that is currently falling but also by
+Thirty-six participants (27 women, mean age = 24.33            working out how best to use the three figures shown in a
+years, SD = 3.41, range = 19–36) were recruited from           preview, which were due to fall, using mental rotation in
+the Medical Research Council Cognition and Brain Sci-          their mind’s eye to simulate the fall and best placement
+ences Unit Volunteers Panel. Participants were eligible        (Lau-Zhu et al., 2017, 2019; Rackham & Lau-Zhu, 2021).
+if they (a) were 18 to 65 years old; (b) reported no           As game-play scores increased, so did the difficulty level.
+history of mental health, neurological, or psychiatric         The use of Tetris is based on the hypothesis that it taxes
+illness; and (c) had not taken part in similar studies.        capacity-limited visuospatial working memory resources
+Before the experiments, participants were informed of          (Lau-Zhu et al., 2017) that are needed to hold mental
+the nature of the film content and provided their written      images (Baddeley & Andrade, 2000; Rackham & Lau-Zhu,
+and informed consent. The study was approved by the            2021). Game was played in “marathon” mode (with 15
+University of Cambridge Psychology Research Ethics             levels) and sound off.
+Committee (2014/3214). Given an effect size of d = 1.05
+from Lau-Zhu et al. (2019, Experiment 3), 18 participants      Filler tasks. A 30-min structured break consisted of (a)
+per interference group were required for 80% power to          a knowledge-search task (answering a list of questions
+attempt to replicate the interference effect on same-day       using an encyclopedia), (b) a music-rating task, and (c) a
+intrusions at a 5% significance level (two-tailed).            second round of the knowledge-search task. Details of
+                                                               these tasks can be found elsewhere (Holmes et al., 2009;
+                                                               Lau-Zhu et al., 2019).1
+Materials and measures
+Trauma film. Eleven distinct films with traumatic con-         Self-report measures. Assessments were conducted
+tent were obtained from the public domain. Examples            for baseline depressive symptoms (Beck Depression
+included a girl being injured after a car accident and doc-    Inventory–II; Beck et al., 1996), trait anxiety (State Trait
+umentary footage of a famine in Rwanda. Such films have        Anxiety Inventory–Trait; Spielberger et al., 1983), trauma
+been used extensively in previous studies in this line of      history (Traumatic Experience Questionnaire; Foa et al.,
+work (Holmes et al., 2009; James et al., 2015; Lau-Zhu         1999), and general mental imagery use (Spontaneous Use
+et al., 2019). The films were presented immediately one        of Imagery Scale; Nelis et al., 2014). Visual analogue
+after the other, using E-Prime (Version 2.0; Schneider         scales (sad, depressed, and hopeless) were used to assess
+et al., 2002) on a desktop screen (size: 32 × 40 cm; reso-     mood change from before to after film viewing, and
+lution: 1,280 × 1,024 pixels; distance: ≈100 cm from the       11-point Likert scales were used to assess attention paid
+screen). The soundtrack was played via headphones.             to the film, personal relevance of the film, diary compli-
+                                                               ance, and demand ratings (Lau-Zhu et al., 2019).
+Cognitive-interference procedure. A film-reminder task
+was followed immediately by Tetris game play.                  Measures of memory of the trauma film
+   Film-reminder task. Eleven replica full-screen stills       Except for the intrusion diary, tasks were presented using
+(one per film clip) were presented for 3 s each against        MATLAB (Version 7.8; The MathWorks Inc., Nantucket,
+a black background in the same fixed order as in the           MA) and Psychophysics Toolbox (Version 3.0; Brainard,
+film. Each still typically depicted the instance before the    1997).
+“worst” moment in the film (Ehlers et al., 2004), such as
+the face of an injured girl in the car crash (before she was   Vigilance-intrusion tasks. The basic task structure
+dragged on the road) or a picture of a village in Rwanda       (Fig. 2) was based on previous adaptation (Lau-Zhu
+(before details of famine were presented). Participants        et al., 2019, Experiments 2 and 3) of a go/no-go para-
+were asked to “sit still and pay close attention to the        digm (Murphy et al., 2013). On each of the 270 trials, a
+pictures” with the intention that these memories would         digit (1–9) was presented centrally against a black back-
+be brought to mind. Stills were presented via E-Prime          ground for 250 ms, followed by just the background for
+software (Version 2.0; Schneider et al., 2002).                1,500 ms. Participants were asked to press “go” only
+Intrusive, Voluntary, and Associative Memory                                                                                            1133
+
+
+
+
+            4                                                                       +
+
+                                     (Potential) Cue                                                         (Potential) Cue
+                        5                                                                       5
+
+
+                                    9
+
+                Tim                                                                     Tim
+                   e                            1                                          e                                         Target
+
+
+
+
+  Fig. 2. Schematic for the vigilance-intrusion tasks (intrusive memory) and the modified recognition task (voluntary memory). Example
+  trials of the vigilance-intrusion tasks are shown on the left. Participants performed a simple go/no-go task (respond only when the digit
+  “3” appears). A background picture was presented every three trials, mostly depicting landscapes. Additional picture cues were presented
+  infrequently, which were either stills from the trauma films or foil (unseen) films. For the foil-cue version, participants also undertook
+  the task in a different experimental room. An example trial of the modified recognition task is shown on the right. Each trial began with
+  a fixation cross, followed by picture cue (trauma-film cue or foil cue). Then a blank screen appeared, followed by the recognition target.
+  Potential cues were the same in all tasks. In the example, the cue still depicts the moment before the accident when the boy is standing
+  in a football court; the target still depicts the moment when the father cries while seeing the dead body of his son killed by a car (both
+  cue and target belong to the same film sequence). Stills are for illustration and not up to scale; stills in the experiment were in color.
+
+
+when they saw the digit “3” (11% probability). Background                a different experimental room to where trauma film was
+indoor/outdoor scenes (altered with Gaussian Blur 2.0                    viewed—a similar procedure has been carried out in
+and not related to the trauma film) were presented every                 other memory studies because the experimental context
+three trials (behind the digit), intended to simulate every-             could in itself provide additional cues to promote
+day cues of involuntary memories, which are typically                    retrieval (e.g., Kroes et al., 2013). Each condition took
+unattended (Berntsen, 2009). Scenes and digits were pre-                 approximately 9 min.
+sented in a fixed randomized order. Viewing distance was
+60 cm approximately.                                                     Modified recognition task. The basic task structure
+    Participants were asked to press an “intrusion” key                  (Fig. 2) was based on an attention-to-memory paradigm
+using the keyboard whenever they experienced an                          in which attentional cues were manipulated before rec-
+intrusive memory of the film. The number of trauma-                      ognition targets (Ciaramelli et al., 2010), building on our
+film intrusions in this task has shown good test–retest                  previous visual-recognition memory task (Lau-Zhu et al.,
+reliability across Day 1 and Day 8 and can predict                       2019, Experiments 1 and 2). Our current task involved
+subsequent diary intrusions (Lau-Zhu et al., 2019).                      two sets of stimuli (for cue scenes and target scenes). The
+    There were two versions/conditions for this task,                    cue set had 22 stills (the same 11 cue stills from each of
+each with 11 additional background scenes (also                          the two vigilance-intrusion conditions). The target set
+blurred and presented twice each in a fixed randomized                   had 236 stills. Half of the target set was taken from the
+order). For the trauma-film-cue condition, scene stills                  trauma film (i.e., film targets) and half from footage from
+(i.e., film cues) were drawn from the trauma film. These                 unseen films (i.e., foil targets). The unseen films were the
+stills, similar to those in the film-reminder task, were                 same ones as in the foil-cue condition of the vigilance-
+also of nonhotspot moments but unlike those in the                       intrusion task. All target stills depicted different moments
+film-reminder task, depicted different neutral content.                  to those in the cue stills (thus also different from the stills
+Furthermore, the task was delivered in the same room                     used in the vigilance-intrusion tasks or in the film-
+as where the entire experiment took place. In contrast,                  reminder task). Target stills were blurred with salt-and-
+for the foil-cue condition, additional scenes (i.e., foil                pepper noise (black and white pixels superimposed on
+cues) were drawn from unseen films that were never                       the still; Lau-Zhu et al., 2019, Experiment 1) to increase
+shown in the experiment. These unseen films were                         task difficulty and avoid potential ceiling effects.
+similar in content and themes to the trauma film and                        Each trial began with a blank screen (dark gray back-
+were also drawn from similar sources in the public                       ground) for 1,500 ms. A cue still was then presented for
+domain. The foil-cue condition was also completed in                     1,500 ms. Simultaneously, a digit (1–9) was presented
+1134                                                                                                       Lau-Zhu et al.
+
+and superimposed in the center of the cue still for 750        a given scene in the film. Only intrusions of the film were
+ms. Participants were asked to press the “go” key as           not counted. Instructions on how to keep the diary were
+soon as the digit “3” appeared (this go/no-go compo-           given orally and also supplemented with a checklist to
+nent matched the vigilance-intrusion task and required         confirm the participant’s comprehension. Bespoke dis-
+temporal attention during the cue presentation, which          cussion was given around how to keep and use the diary
+could have been ignored otherwise). Afterward, the cue         (e.g., in their bag to ensure they completed it). Partici-
+still disappeared, and another blank screen remained           pants were given a prepaid envelope to post back the
+for 1,500 ms. Finally, a target still was presented and        diary upon completion. One week after the single-session
+remained on screen up to 5 s until a response was              experiment, participants were sent a reminder e-mail to
+made. Participants were instructed to decide as quickly        return the diary.
+and as accurately as possible whether this target still
+was taken from the trauma film or not (YES/NO) using
+                                                               Procedure
+the keyboard.
+    Film targets and foil targets were equally paired with     The experiment consisted of a single 3-h session. After
+film and foil cues. When there was a source match              informed consent, participants completed baseline mea-
+between cue and target (i.e., film cue with film target        sures and practiced playing Tetris using mental rotation
+or foil cue with foil target), both were drawn from the        for 1 min. They then completed mood ratings and
+same footage, thus any performance advantage con-              viewed the trauma films alone in a darkened room.
+ferred by film cues as opposed to foil cues can be             They were clearly instructed to imagine themselves wit-
+attributed to the mnemonic relationship between cues           nessing the events in the films as if they were actually
+and targets within the same footage rather than purely         happening in front of their eyes (to encourage immer-
+a perceptual match (e.g., same color palette). There           sion in film viewing). After the films, participants com-
+were therefore four randomly intermixed trial types,           pleted mood ratings again and additional self-report
+obtained by independently crossing trauma-film cues            measures of attention and personal relevance and com-
+versus foil cues with trauma-film targets versus foil          pleted a 30-min structured break (with filler tasks). Fol-
+targets. Assignment of target stills to cue type (matching     lowing the break, participants were randomly assigned
+vs. nonmatching cue from the same film/foil source)            to one of two interference groups. In the reminder-plus-
+was counterbalanced across participants. There were            Tetris group, participants underwent the film-reminder
+270 trials in total (34 were filler trials using other         task and then played Tetris uninterrupted for 10 min (with
+indoor/outdoor scenes to match the trial number of the         instructions to use mental rotation). In the reminder-only
+vigilance-intrusion tasks and were excluded in the             group, participants underwent the film-reminder task and
+analyses). Trials were presented in a fixed random             sat quietly for 10 min, doing nothing else.
+order. The task took 40 min approximately. 2                      Then all participants completed the memory mea-
+                                                               sures in a fixed-order design. They were first given
+Intrusion diary. Participants were instructed to note          instructions to complete the vigilance-intrusion tasks,
+down any intrusive memory of the film (checking a tick         followed by a short practice. They completed the foil-
+box and writing a brief description) in a daily pen-and-       cue condition first (went into a different room) followed
+paper tabular diary in each of three time bins per day         by the trauma-film-cue condition (returned to the origi-
+(Lau-Zhu et al., 2019). Intrusive memories were defined        nal room) to prevent potential carryover effects of the
+as “visual images, sounds and bodily sensations related to     trauma-film cues. Afterward, they completed the modi-
+the film,” which could be from “fuzzy and fragmented” to       fied recognition task following a short practice.
+“vivid and as clear as normal vision” and could “pop into         Finally, participants were given instructions to com-
+mind without one expecting it.” Intrusive memories could       plete the diary and return these by free post upon
+include verbal thoughts but only if they had an imagery        completion. To enhance the likelihood of diaries being
+component as well. Participants were told to exclude           returned, our diary protocol included (a) emphasis on
+deliberate retrieval and to set aside a regular time to com-   the importance of returning the diary for the study
+plete it. Participants were encouraged to write down each      results, communicated verbally and later in writing in
+intrusion as soon as it occurred and if this was not possi-    a reminder e-mail; (b) explanation that they would
+ble, to record their intrusions retrospectively once at the    be compensated only after diaries were completed
+end of each time bin (morning, afternoon, and evening).        and returned; and (c) a reminder e-mail to return the
+Even if they had zero intrusions, they were instructed to      diary sent a week after the experimental session.
+note down “0” and cross out that particular time bin with-     Upon return of the diary, participants were compen-
+out intrusions. Participants were also asked to write a        sated and then debriefed by e-mail (with the option
+brief description of the film overleaf so that the content     of a phone call if they wished, although this option
+of each intrusion could later be matched back, or not, to      was not taken up).
+Intrusive, Voluntary, and Associative Memory                                                                             1135
+
+                           Table 1. Baseline, Manipulation Check for Film Viewing and
+                           Diary, and Demand Ratings by Interference Group
+
+                                                             Reminder plus Tetris      Reminder only
+                           Characteristic                         (n = 18)               (n = 18)
+                           Gender
+                             Female (n)                               12                     15
+                             Male (n)                                  6                      3
+                           Age (years)                            25.11 (2.40)           23.56 (4.12)
+                           Measures
+                             BDI-II                                5.00 (6.16)            4.39 (3.26)
+                             STAI-T                               35.89 (11.32)          35.44 (8.31)
+                             TEQ                                   0.72 (0.96)            0.39 (0.70)
+                             SUIS                                 39.67 (7.51)           39.44 (9.35)
+                             Prefilm negative mood                 2.17 (3.56)            3.30 (4.10)
+                             Postfilm negative mood                9.54 (7.28)            8.66 (5.54)
+                             Attention paid to the film            9.39 (0.70)            9.44 (0.62)
+                             Personal relevance of film            3.89 (2.30)            4.78 (2.49)
+                             Diary accuracy                        9.44 (0.98)            8.89 (1.23)
+                             Demand ratings                       −2.89 (2.70)           −1.22 (4.48)
+
+                           Note: Values are means with standard deviations in parentheses unless
+                           otherwise noted. Each negative mood is a composite score summing
+                           three visual analogue scales on sad, depressed, and hopeless moods.
+                           BDI-II = Beck Depression Inventory–II (Beck et al., 1996); STAI-T = State
+                           Trait Anxiety Inventory–Trait (Spielberger et al., 1983); TEQ = Traumatic
+                           Experience Questionnaire (Foa et al., 1999); SUIS = Spontaneous Use of
+                           Imagery Scale (Nelis et al., 2014).
+
+
+Statistical analyses                                                Pakistani). Employment statuses were described as 75%
+                                                                    students, 22.2% in full-time employment, and 2.78%
+No univariate outliers (> 3 SD from the mean; Tabachnick            unemployed. Interference groups did not differ at base-
+& Fidell, 1996) were identified within any experimental             line in terms of gender, χ2 = 1.33, df = 1, p = .248, age,
+condition. Performance above chance was assessed                    depressive symptoms, trait anxiety, number of previous
+with one-sample t tests. Interference groups were com-              traumatic events, and general use of imagery, t(34)s <
+pared with independent sample t tests, and Levene’s                 1.39, ps > .175. There was a main effect of time on
+statistic was used to test homogeneity of variance.                 mood ratings, consistent with an increase in negative
+Analyses of variance (ANOVAs) with repeated measures                mood from before to after film viewing, F(1, 34) =
+were used when both within-groups and between-                      54.95, p < .001, ηp² = .618, and as expected, neither the
+groups variables were included. Unless otherwise                    main effect of interference group, F(1, 34) < 1, nor the
+stated, we used a two-tailed α level of .05. Nonpara-               interaction of group and time, F(1, 34) = 1.38, p = .249,
+metric tests were used when assumptions of parametric               was significant. Ratings for attention paid to the film,
+tests were violated; results converged with those of the            personal relevance of the film, and diary accuracy and
+parametric tests, so we report results from parametric              demand ratings were also not significantly different
+tests below. Analyses were performed using IBM SPSS                 between interference groups, t(34)s < 1.50, ps > .144.
+(Version 25.0) and MATLAB 2016 (The MathWorks Inc.,
+Nantucket, MA).
+                                                                    Aim 1: replication of previous
+Results                                                             findings on intrusive-memory
+                                                                    reduction
+Randomization, manipulation check
+for film viewing and diary, and                                     Early/laboratory intrusions. The mean number of
+                                                                    “early” intrusions in the vigilance-intrusion task with
+demand ratings                                                      trauma-film cues (Table 2) was similar to previous ver-
+Descriptive statistics are presented in Table 1. The sam-           sions used in Lau-Zhu et al. (2019, Experiments 2 and
+ple’s ethnic makeup, as described by participants, was              3). Note that our first prediction was confirmed in that
+74% White, 20% Chinese, and 6% Asian (Indian,                       we replicated prior findings of fewer intrusions in the
+1136                                                                                                                   Lau-Zhu et al.
+
+                            Table 2. Key Outcomes on Measures of Intrusive Memories and
+                            of Voluntary Memory by Cue Type and Interference Group
+
+                                                                     Reminder plus
+                                                                        Tetris             Reminder only
+                                                                       (n = 18)              (n = 18)
+
+                            Measure                                    M          SD          M          SD
+                            Vigilance-intrusion tasks
+                              Trauma-film cues                        7.56       6.87       17.94       13.69
+                              Foil cues                               4.39       3.63       11.39       14.33
+                            Intrusion diary
+                              1-week period                           2.56       3.75        5.83        5.08
+                            Modified recognition task
+                              Trials with trauma-film cues
+                              Hits                                   41.22       4.61       45.11        5.78
+                              FA                                     17.44       9.39       15.11        7.45
+                              Accuracy                                0.41       0.17        0.51        0.17
+                              Trials with foil cues
+                              Hits                                   41.44       7.52       42.28        6.12
+                              FA                                     19.11       9.92       16.00        8.33
+                              Accuracy                                0.38       0.21        0.46        0.17
+
+                            Note: Outcome for intrusive memories is the number of occurrences.
+                            Recognition accuracy was calculated by subtracting the FA rate (FA / [FA + CR])
+                            from the hit rate (Hit / [Hit + Miss]). FA = false alarms; CR = correct rejection.
+
+
+reminder-plus-Tetris group than in the reminder-only                    ANOVA on intrusions revealed a significant main effect of
+group, t(34) = 2.88, p = .007, d = 0.96 (Table 2). That is,             cue type, F(1, 34) = 19.61, p < .001, ηp² = .366 (90% confi-
+an interference effect was established.                                 dence interval CI = [0.15, 0.52]); there were more intrusions
+                                                                        overall after trauma-film cues (M = 12.75, SD = 11.90) than
+Intrusion diary. All diaries (100%) were completed                      after foil cues (M = 7.89, SD = 10.90), demonstrating that
+and returned by post. Two researchers scored all diaries                our manipulation worked as intended.
+independently. Interclass correlation was 1.00, suggesting                 The main effect of interference group was also sig-
+perfect agreement (using two-way mixed-effects model,                   nificant, F(1, 34) = 6.64, p = .014, ηp² = .163 (90% CI =
+consistency, single measure; McGraw & Wong, 1996). Vir-                 [0.02, 0.34]), consistent with the results for the trauma-
+tually all intrusive images were matched to the trauma                  film-cue condition alone reported in Aim 1 above and
+film (98%), such as “image of a razor cutting across shav-              confirming that the reminder-plus-Tetris group (M =
+ing neck” and “imagined incision of bone.” The mean                     5.92, SE = 2.39) reported fewer intrusions overall than
+(Table 2) and range for intrusion frequency in the                      the reminder-only group (M = 14.67, SE = 2.39).
+reminder-only control group (1–16) are consistent with                     However, the Group × Cue Type interaction was not
+previous studies (Holmes et al., 2009; Lau-Zhu et al.,                  significant, F(1, 34) = 2.38, p = .132, ηp² = .065 (90% CI =
+2019, Experiments 1 and 2). Again replicating previous                  [0, 0.22]). Thus, there was no evidence that the effect
+studies (Holmes et al., 2009; Holmes, James, et al., 2010;              of reminder-plus-Tetris in reducing intrusion frequency
+Lau-Zhu et al., 2019), we found that the reminder-plus-                 depended on whether cues from the same film were
+Tetris group had fewer diary intrusions than the reminder-              present to trigger associated memories.
+only group, t(34) = 2.20, p = .034, d = 0.73 (Table 2).
+                                                                        Modified recognition task. We calculated recognition
+Aim 2: testing competing accounts for                                   accuracy as in Lau-Zhu et al. (2019, Experiments 1 and 2)
+the intrusive or voluntary memory                                       by subtracting the false alarm (FA) rate (calculated as FA /
+                                                                        [FA + CR], where CR = correct rejections) from the hit rate
+dissociation                                                            (Hit / [Hit + Miss]; see Table 2). Recognition accuracy was
+Vigilance-intrusion tasks. The 2 (group: reminder plus                  above chance for targets that followed trauma-film cues
+Tetris vs. reminder only; between groups) × 2 (cue type:                and also for those that followed foil cues, t(17)s > 7.59, ps <
+trauma-film cues vs. foil cues; within groups) mixed-model              .001, ds > 1.95.
+Intrusive, Voluntary, and Associative Memory                                                                       1137
+
+   The 2 (group: reminder plus Tetris vs. reminder only;      including on an additional diary measure) but not on
+between groups) × 2 (cue type: trauma-film cues vs.           any voluntary recognition accuracy. More importantly,
+foil cues; within groups) mixed ANOVA on recognition          this pattern of results occurred regardless of whether
+accuracy revealed a main effect of cue type that              recognition trials (or intrusion condition) were accom-
+approached significance, F(1, 34) = 3.25, p = .080, ηp² =     panied by associative cues from the same trauma film
+.087 (90% CI = [0, 0.25]). This was in the predicted          (vs. from unseen films).
+direction: There was higher recognition accuracy fol-            We found the associative memory did not appear to
+lowing trauma-film cues than following foil cues, sug-        contribute to the dissociation between intrusive and
+gesting that our manipulation again worked as intended.       voluntary memory. To test the potential contributions
+   The main effect of interference group, however, was        of associative memory, we compared conditions with
+not significant, F(1, 34) = 2.40, p = .131, ηp² = .066, 90%   trauma-film cues and without trauma-film cues in both
+CI = [0, 0.22] (reminder plus Tetris: M = 0.40, SE = 0.04;    a vigilance-intrusion task and a modified recognition
+reminder only: M = 0.48, SE = 0.04), nor was the Group ×      task. As expected, conditions with trauma-film cues
+Cue Type interaction, F(1, 34) = 0.59, p = .447, ηp² =        (e.g., blurred picture of “a boy in a football pitch”)
+.017, 90% CI = [0, 0.14]. This replicates prior findings      tended to enhance retrieval across both memory types:
+(Lau-Zhu et al., 2019) that reminder plus Tetris does         higher intrusion rates in the vigilance-intrusion task
+not affect measures of voluntary memory (the selective-       (e.g., more intrusive mental images of “the same boy
+interference effect) and goes further to suggest that this    being killed by a car”) and a tendency to improve
+lack of an effect applies even when the recognition           accuracy in the modified recognition task (e.g., better
+memory test is modified to include an associative             recognition of a still depicting a scene in which “the dad
+component.                                                    is crying over the boy’s dead body”). These results con-
+                                                              firmed that our manipulation of associative cues suffi-
+                                                              ciently increased accessibility of involuntary/intrusive
+Discussion                                                    memories (Berntsen, 2009; Ehlers & Clark, 2000; Schlagman
+We set out to test whether intrusive memories can be          & Kvavilashvili, 2008) and recognition memory
+reduced (by a subsequent cognitive interference pro-          (Ciaramelli et al., 2010). Nevertheless, and critically,
+cedure) while sparing voluntary memory—a selective-           associative-memory cues did not moderate the selective-
+interference effect (Lau-Zhu et al., 2019)—or whether         interference effect and thus were unlikely to account
+the apparent dissociation simply reflects differences in      for it.
+how the memories are measured. More specifically, we             To our knowledge, our design provided the closest
+hypothesized that there was a difference in the associa-      head-to-head comparison to date between intrusive
+tive component of the measures in that measures of            memory and voluntary memory in the trauma-film lit-
+intrusive memories more readily probe associations            erature (Brewin, 2014; James et al., 2016; Lau-Zhu et al.,
+between a trigger cue (e.g., “a picture of a boy playing      2018). In addition to matching in terms of associative-
+football”) and a target hotspot memory (e.g., imagery         memory cues (i.e., presence and absence of them),
+of “the same boy being killed by a car”) than do typical      intrusion and recognition tasks were also closely
+measures of voluntary memory, which have tended to            matched in terms of context (both in the laboratory),
+rely on recognition memory for individual (nonassocia-        time of testing (Day 1), as well as attentional demands
+tive) elements of an event. Therefore, if an interference     (both had a go/no-go element during cue exposure and
+task were to disrupt associations between elements,           initially unattended triggering cues), facilitated by the
+then this disruption would be more apparent in mea-           use of a laboratory analogue of the diary employed
+sures of intrusive memories than in measures of volun-        here—the vigilance-intrusion task. This closed matching
+tary recognition memory.                                      extends our recent work ruling out other retrieval fac-
+   To test this possibility, we administered an interfer-     tors, such as cue overlap (Lau-Zhu et al., 2019, Experi-
+ence procedure (reminder plus Tetris) shortly after ask-      ment 1), attentional capture (Lau-Zhu et al., 2019,
+ing participants to watch a trauma film and examined          Experiment 2), retrieval load (Lau-Zhu et al., 2019,
+its effects on subsequent memory of that film, as             Experiments 3), and retention interval ( James et al.,
+assessed by memory measures that differed in inten-           2015, Experiments 1 and 2; Lau-Zhu et al., 2019, Experi-
+tionality (i.e., involuntary vs. voluntary) and cue type      ment 2). The most parsimonious explanation for our
+(with vs. without trauma-film cues). Replicating previ-       selective interference remains that involuntary/intrusive
+ous studies (Badawi et al., 2020; Holmes et al., 2009;        memories and voluntary memories, at least in the con-
+Holmes, James, et al., 2010; Lau-Zhu et al., 2019), we        text of trauma, are supported by different memory sys-
+found that reminder plus Tetris reduced memory on all         tems. This separation would allow memory traces in
+measures of involuntary memory (i.e., intrusion rates,        one system to be disrupted by an interfering task
+1138                                                                                                     Lau-Zhu et al.
+
+without affecting traces in the other. This rationale is        What are the practical implications of our findings,
+consistent with separate-trace memory accounts, the          such as for clinical and forensic psychologists? Knowing
+most prominent one being the dual-representation             that a modification in voluntary memory is neither
+theory of PTSD (Bisby & Burgess, 2017; Brewin, 2014;         equivalent nor necessary for changes in intrusive mem-
+Brewin et al., 1996).                                        ories of traumatic events opens up avenues for improved
+   Why can (intrusive) memories for trauma materials         interventions. First, clinicians would benefit from know-
+behave differently from memories for nontraumatic,           ing the nuanced profile of how an intervention, whether
+ordinary events? The differential predictions tested here—   psychological or pharmacological, affects both intrusive
+between single-trace and separate-trace accounts—have        and voluntary aspects of trauma memory. If there is a
+been part of a long-standing debate in the PTSD litera-      dissociation between involuntary memory and volun-
+ture, which has remained unresolved for more than two        tary memory, then one cannot always extrapolate inter-
+decades, at least within research using the trauma-film      vention effects on nonintrusive/voluntary memory to
+paradigm ( James et al., 2016; Lau-Zhu et al., 2019). The    changes in intrusive imagery of the same traumatic
+difficulty in resolving this debate has been exacerbated     events. Therefore, clinical developments in this area
+by the methodological challenges involved in directly        ought to always include measures of intrusive memories
+pitting these accounts against each other. Many sepa-        in their key outcomes to facilitate translational research
+rate-trace conceptualizations are anchored in clinical       and to maximize their impact on the sort of memory
+psychology in which understanding the clinical phe-          that is central to the patient’s distress (Iyadurai et al.,
+nomena is central. Intrusive images are key to the           2019). In addition, one cannot assume that after an
+patient experience of traumatic events yet notoriously       intervention, voluntary memory always remains intact
+difficult to “pin down” given their probabilistic occur-     either, which is important to consider to assess the rela-
+rence. Clinical researchers thus have relied on more         tive costs and benefits of the intervention (Holmes,
+naturalistic techniques (e.g., diaries) to understand        Sandberg, & Iyadurai, 2010).
+these memories. In contrast, many single-trace concep-          Second, the cognitive procedure examined in this
+tualizations are grounded in cognitive psychology, in        line of work (involving reminder procedures and cogni-
+which a greater emphasis is placed on experimental           tive tasks) represents a promising means to exert selec-
+control. It is not surprising, then, that voluntary—rather   tive interference in the wake of trauma (Singh et al.,
+than involuntary—forms of memory have been the main          2020). One advantage is that this simple cognitive-task
+foci for basic researchers.                                  approach may be developed in a manner to maximize
+   To resolve the theoretical debate, discrepancies in       safety and minimize distress while doing the interven-
+the associated methods first need to be addressed. This      tion, which is important given that particular clinical
+is the challenge we took in our current study, during        approaches have been shown to worsen trauma symp-
+which intrusions were brought “into the lab” to allow        toms (Rose et al., 2002) and that approaches that require
+greater experimental control and the recognition test        talking about the trauma in detail are not tolerated by
+was modified to incorporate a potentially key feature        all patients (Hoge & Chard, 2018; National Institute for
+of intrusive memory recall in everyday context (involv-      Health and Clinical Excellence, 2018). Initial proof-of-
+ing associate memory). The current findings of selective     concept studies using the reminder-plus-Tetris proce-
+interference, despite our methodological innovation,         dure are promising in preventing intrusive symptoms
+provide greater confidence that separate-trace accounts      within the first week after trauma (Horsch et al., 2017;
+better explain why (intrusive) trauma memories can           Iyadurai et al., 2018; Kanstrup, Singh, et al., 2021) and
+behave differently to nontraumatic, ordinary memory,         in reducing more persistent intrusive symptoms (Iyadurai
+that is, the existence of separate memory traces for         et al., 2020; Kanstrup, Knotio, et al., 2021), including
+traumatic or highly aversive materials. It is critical to    in established PTSD (Kessler et al., 2018). In these trans-
+understand when involuntary memory and voluntary             lation studies, the necessary reminder cue ( James et al.,
+memory for the same materials can be dissociated and         2015, Experiment 2; Lau-Zhu et al., 2019, Experiment
+when and how they may influence each other (e.g.,            3) was adapted to each clinical context, with variations
+Herz et al., 2020). However, this will no doubt remain       such as a brief hotspot verbal reminder (Iyadurai et al.,
+a controversial account, not least because of being less     2018; Kanstrup, Kontio, et al., 2021; Kanstrup, Sing,
+parsimonious. We need continuing refinement of mem-          et al., 2021), a context reminder (Horsch et al., 2017),
+ory measures for further rigorous demonstrations of the      or a written reminder (Kessler et al., 2018). A related
+intrusive/involuntary and voluntary dissociation and         procedure using Tetris is also being explored to modu-
+application of these measures to memoranda other than        late distressing imagery that result from indirect expo-
+trauma films, including to memory paradigms that tra-        sure to collective trauma via the media in a real-world
+ditionally do not include a measure of involuntary           context (Rackham & Lau-Zhu, 2021). We note that there
+recall.                                                      are likely to be many routes by which intrusive trauma
+Intrusive, Voluntary, and Associative Memory                                                                            1139
+
+memory may be modulated, including a cognitive-task            threshold, was not significant at a two-tailed threshold
+procedure (Singh et al., 2020), traditional psychological      and thus may have lacked power. For the interactions
+therapies, and pharmacological and neuromodulation,            between interference group and cue type (within the
+all of which may further evolve.                               vigilance-intrusion data and the recognition data), we
+    Third, our data have relevance for the legal context,      had sufficient power to detect standardized medium to
+too. Trauma survivors may want to remain able to               large effects (Cohen’s f of .25 or .40; Cohen, 1988) but
+provide accurate reports of traumatic incidents at will        not to detect potential small interaction effects (Cohen’s
+even if their intrusions are eliminated. Moreover, as          f of .10; Cohen, 1988). See also the Supplemental Material
+often arises, for example, in asylum and refugee cases,        available online. It is difficult to ascertain what effect size
+decision makers typically assume that trauma should            one would expect for such interactions given the novelty
+be always well remembered (Herlihy et al., 2010),              of our work (simultaneously looking at interference, cue
+whereas our data suggest that one cannot judge the             type, and memory type), but we hope that the effect sizes
+level of recall of involuntary memory on the basis of          reported here will be helpful for future studies.
+the level of recall in voluntary memory, given its pos-            Interventions after traumatic events are sometimes
+sible fractionation.                                           reported in the media as if they provide full deletion
+    There are some caveats with our experimental               of trauma memories (e.g., as depicted in the movie
+design. There may be effects of test order because we          Eternal Sunshine of the Spotless Mind; Gondry, 2004).
+tested intrusions before recognition. This decision was        A more likely and desirable approach is to selectively
+informed by evidence indicating that measures of intru-        modify one clinically distressing aspect of trauma mem-
+sions can be influenced by preceding tasks probing for         ory (Elsey & Kindt, 2016; Visser et al., 2018)—such as
+voluntary memory (Krans et al., 2009). Although the            its intrusiveness—without causing complete forgetting
+reverse is also possible, that assessing intrusions effects    of the trauma (Holmes, Sandberg, & Iyadurai, 2010; Lau-
+may have somehow “masked” effects of interference on           Zhu et al., 2019). One way in which involuntary aspects
+subsequent recognition effects, we do not think this is        of memory are amenable to selective modification—
+likely. For the vigilance-intrusion task, the foil-cue con-    independently of voluntary aspects—is through a simple-
+dition always preceded the trauma-film-cue condition.          to-deliver procedure involving a memory reminder cue
+This was again intended to avoid carryover effects from        and a cognitive task (e.g., mental rotation plus Tetris
+associative memories triggered by trauma-film cues into        game play). This approach holds potential for a new
+the foil-cue condition. It is possible that intrusion fre-     generation of effective, safe, and mechanistically informed
+quency in this type of task changes with the passage           memory therapeutics that are less aversive for patients
+of time and that this caused the main effect of cue type.      than current trauma-focused psychological interventions
+This again seems unlikely, however, because one would          and are also more readily disseminated. The theoretical
+expect a decline in intrusion frequency with time, yet         possibility of a separate, declarative memory system for
+more intrusions occurred in the condition with trauma-         traumatic events—as raised by our data—illustrates the
+film cues, which were administered later in time. Results      need for conventional memory accounts to better accom-
+in the intrusion tasks seem unlikely to be due to the          modate intrusive phenomena and, crucially, underscores
+lack of counterbalancing, but between-groups designs           how fundamental research also stands to gain from
+might be considered in future studies to address this          insights in clinical psychopathology.
+issue. It is also possible that our vigilance-intrusion task
+does not fully capture the situations under which intru-       Transparency
+sions occur in real life. Although our go/no-go task is        Action Editor: Colin MacLeod
+designed to simulate attentional demands of everyday           Editor: Kenneth J. Sher
+life (e.g., shopping or reading) during which intrusions       Author Contributions
+spontaneously occur, it may not match other cognitive             A. Lau-Zhu developed the study concept. All authors con-
+conditions that are conducive to intrusions. Furthermore,         tributed to the study design. A. Lau-Zhu programmed the
+the cues we used (blurred stills) may not correspond to           experimental tasks and performed data collection, data
+the cues that trigger intrusions in real life; clinical           analyses, and interpretation under the supervision of R. N.
+                                                                  Henson and E. A. Holmes. A. Lau-Zhu drafted the manu-
+accounts (Ehlers & Clark, 2000) suggest that potent cues
+                                                                  script, and E. A. Holmes and R. N. Henson provided critical
+can be highly idiosyncratic (e.g., a simple patch of red          revisions. All of the authors approved the final manuscript
+color triggering an intrusive memory of blood).                   for submission.
+    Future studies seeking to test replication may wish        Declaration of Conflicting Interests
+to increase sample size. The main effect of cue type              E. A. Holmes serves on the board of the charity MQ:
+within the modified recognition memory task, although             Transforming Mental Health; has received honoraria for
+in the predicted direction and meeting one-tailed                 some clinical training workshops and keynotes; and
+1140                                                                                                                   Lau-Zhu et al.
+
+  receives royalties from Oxford University Press and Guil-            Arntz, A., de Groot, C., & Kindt, M. (2005). Emotional
+  ford Press. The remaining author(s) declared that there                  memory is perceptual. Journal of Behavior Therapy
+  were no other potential conflicts of interest with respect               and Experimental Psychiatry, 36(1), 19–34. https://doi
+  to the authorship or the publication of this article.                    .org/10.1016/j.jbtep.2004.11.003
+Funding                                                                Badawi, A., Berle, D., Rogers, K., & Steel, Z. (2020). Do cogni-
+  A. Lau-Zhu was supported by a Cambridge International                    tive tasks reduce intrusive-memory frequency after expo-
+  Scholarship awarded by The Cambridge Commonwealth,                       sure to analogue trauma? An experimental replication.
+  European and International Trust. R. N. Henson is sup-                   Clinical Psychological Science, 8(3), 569–583. https://doi
+  ported by the UK Medical Research Council (MRC) intra-                   .org/10.1177/2167702620906148
+  mural program (SUAG/010 RG91365). E. A. Holmes was                   Baddeley, A., & Andrade, J. (2000). Working memory and the
+  supported by the UK MRC intramural program (MC-                          vividness of imagery. Journal of Experimental Psychology:
+  A060-5PR50). E. A. Holmes reports grants from the Swedish                General, 129(1), 126–145.
+  Research Council (2017-00957 and 2020-00873), the Lupina             Beck, A. T., Steer, R. A., & Brown, G. K. (1996). Manual for the
+  Foundation, and the Oak Foundation (OCAY-18-442).                        Beck Depression Inventory-II. Psychological Corporation.
+  Funding to pay the Open Access publication charges for               Berntsen, D. (2009). Involuntary autobiographical memo-
+  this article were provided by the MRC.                                   ries: An introduction to the unbidden past. Cambridge
+Open Practices                                                             University Press.
+  All data and materials have been made publicly available             Berntsen, D., & Rubin, D. C. (2014). Involuntary memo-
+  via OSF and can be accessed at https://osf.io/uymdw. This                ries and dissociative amnesia: Assessing key assump-
+  article has received badges for Open Data and Open Mate-                 tions in posttraumatic stress disorder research. Clinical
+  rials. More information about the Open Practices badges                  Psychological Science, 2(2), 174–186. https://doi.org/10
+  can be found at https://www.psychologicalscience.org/                    .1177/2167702613496241
+  publications/badges.                                                 Bisby, J. A., & Burgess, N. (2017). Differential effects of neg-
+                                                                           ative emotion on memory for items and associations,
+                                                                           and their relationship to intrusive imagery. Current
+                                                                           Opinion in Behavioral Sciences, 17, 124–132. https://doi
+ORCID iD                                                                   .org/10.1016/J.COBEHA.2017.07.012
+                                                                       Blue Planet Software. (2007). Tetris zone (Version 1.2.1)
+Alex Lau-Zhu       https://orcid.org/0000-0001-5055-8617                   [Computer software].
+                                                                       Brainard, D. H. (1997). The psychophysics toolbox. Spatial
+Acknowledgments                                                            Vision, 10(4), 433–436. https://doi.org/10.1163/156856
+We are grateful to Roni Tibon for advice on the design of the              897X00357
+modified recognition task and Ella James, who provided inter-          Brewin, C. R. (2014). Episodic memory, perceptual memory,
+rater ratings of the intrusion diaries. We are also grateful for           and their interaction: Foundations for a theory of post-
+the British Film Institute National Archives, LyleBailie Inter-            traumatic stress disorder. Psychological Bulletin, 140(1),
+national, Kino International, and David Large at the Royal                 69–97. https://doi.org/10.1037/a0033722
+College of Surgeons of Edinburgh for use of film clips as part         Brewin, C. R., Dalgleish, T., & Joseph, S. (1996). A dual
+of our materials.                                                          representation theory of posttraumatic stress disorder.
+                                                                           Psychological Review, 103(4), 670–686.
+Supplemental Material                                                  Brewin, C. R., Gregory, J. D., Lipton, M., & Burgess, N.
+                                                                           (2010). Intrusive images in psychological disorders:
+Additional supporting information can be found at http://                  Characteristics, neural mechanisms, and treatment impli-
+journals.sagepub.com/doi/suppl/10.1177/2167702621998315                    cations. Psychological Review, 117(1), 210–232. https://
+                                                                           doi.org/10.1037/a0018113
+Notes                                                                  Brühl, A., Heinrichs, N., Bernstein, E. E., & McNally, R. J.
+1. This methodology was selected for consistency with prior stud-          (2019). Preventive efforts in the aftermath of analogue
+ies using the same 30-min postfilm delay to ensure equivalent              trauma: The effects of Tetris and exercise on intrusive
+activities across participants, and tasks were selected on the basis       images. Journal of Behavior Therapy and Experimental
+of the assumption that they were low in visuospatial demands,              Psychiatry, 64, 31–35. https://doi.org/10.1016/J.JBTEP
+so we can be more confident that any interference effect attribut-         .2019.01.004
+able to a “visuospatial” task would be specific to Tetris game play.   Carr, B. G., Branas, C. C., Metlay, J. P., Sullivan, A. F., &
+2. There was an additional set of filler trials (created using two         Camargo, C. A., Jr. (2009). Access to emergency care
+cue stills and 34 target stills, all depicting various indoor/out-         in the United States. Annals of Emergency Medicine,
+door scenes) that were excluded from all analyses.                         54(2), 261–269. https://doi.org/10.1016/j.annemerg
+                                                                           med.2008.11.016
+                                                                       Ciaramelli, E., Grady, C., Levine, B., Ween, J., & Moscovitch,
+References                                                                 M. (2010). Top-down and bottom-up attention to memory
+American Psychiatric Association. (2013). Diagnostic and sta-              are dissociated in posterior parietal cortex: Neuroimaging
+   tistical manual of mental disorder (5th ed.).                           and neuropsychological evidence. The Journal of Neuro­
+Intrusive, Voluntary, and Associative Memory                                                                                       1141
+
+    science, 30(14), 4943–4956. https://doi.org/10.1523/JNEU           Holmes, E. A., Blackwell, S. E., Burnett Heyes, S., Renner, F.,
+    ROSCI.1209-09.2010                                                     & Raes, F. (2016). Mental imagery in depression:
+Cohen, J. (1988). Statistical power analysis for the behavioral            Pheno­m enology, potential mechanisms, and treatment
+    sciences (2nd ed.). Erlbaum.                                           implications. Annual Review of Clinical Psychology,
+Conway, M. A., & Pleydell-Pearce, C. W. (2000). The construc-              12(1), 249–280. https://doi.org/10.1146/annurev-clinpsy-
+    tion of autobiographical memories in the self-memory                   021815-092925
+    system. Psychological Review, 107(2), 261–288. https://            Holmes, E. A., Grey, N., & Young, K. (2005). Intrusive images
+    doi.org/10.1037//0033-295X.107.2.261                                   and “hotspots” of trauma memories in posttraumatic
+Dalgleish, T. (2004). Cognitive approaches to posttraumatic                stress disorder: An exploratory investigation of emotions
+    stress disorder: The evolution of multirepresentational                and cognitive themes. Journal of Behavioral Therapy
+    theorizing. Psychological Bulletin, 130(2), 228–260.                   and Experimental Psychiatry, 36(1), 3–17. https://doi
+    https://doi.org/10.1037/0033-2909.130.2.228                            .org/10.1016/j.jbtep.2004.11.002
+Deeprose, C., Zhang, S., Dejong, H., Dalgleish, T., & Holmes,          Holmes, E. A., James, E. L., Coode-Bate, T., & Deeprose, C.
+    E. A. (2012). Imagery in the aftermath of viewing a trau-              (2009). Can playing the computer game “Tetris” reduce
+    matic film: Using cognitive tasks to modulate the develop-             the build-up of flashbacks for trauma? A proposal from
+    ment of involuntary memory. Journal of Behavior Therapy                cognitive science. PLOS ONE, 4(1), Article e4153. https://
+    and Experimental Psychiatry, 43(2), 758–764. https://doi               doi.org/10.1371/journal.pone.0004153
+    .org/10.1016/j.jbtep.2011.10.008                                   Holmes, E. A., James, E. L., Kilford, E. J., & Deeprose, C.
+Ehlers, A., & Clark, D. M. (2000). A cognitive model of                    (2010). Key steps in developing a cognitive vaccine
+    posttraumatic stress disorder. Behaviour Research and                  against traumatic flashbacks: Visuospatial Tetris versus
+    Therapy, 38(4), 319–345.                                               verbal Pub Quiz. PLOS ONE, 5(11), Article e13706. https://
+Ehlers, A., Hackmann, A., & Michael, T. (2004). Intrusive                  doi.org/10.1371/journal.pone.0013706
+    re-experiencing in post-traumatic stress disorder: Pheno­          Holmes, E. A., & Mathews, A. (2010). Mental imagery in emo-
+    menology, theory, and therapy. Memory, 12(4), 403–415.                 tion and emotional disorders. Clinical Psychology Review,
+    https://doi.org/10.1080/09658210444000025                              30(3), 349–362. https://doi.org/10.1016/j.cpr.2010.01.001
+Elsey, J., & Kindt, M. (2016). Manipulating human memory               Holmes, E. A., Sandberg, A., & Iyadurai, L. (2010). Erasing
+    through reconsolidation: Ethical implications of a new                 trauma memories. The British Journal of Psychiatry,
+    therapeutic approach. AJOB Neuroscience, 7(4), 225–236.                197(5), 414–415. https://doi.org/10.1192/bjp.197.5.414b
+    https://doi.org/10.1080/21507740.2016.1218377                      Hørlyck, L. D., Bisby, J. A., King, J. A., & Burgess, N. (2019).
+Foa, E. B., Ehlers, A., Clark, D. M., Tolin, D. F., & Orsillo, S. M.       Wakeful rest compared to vigilance reduces intrusive but
+    (1999). The Posttraumatic Cognitions Inventory (PTCI):                 not deliberate memory for traumatic videos. Scientific
+    Development and validation. Psychological Assessment,                  Reports, 9, Article 13043. https://doi.org/10.1038/s41598-
+    11(3), 303–314. https://doi.org/10.1037//1040-3590.11                  019-49634-8
+    .3.303                                                             Horsch, A., Vial, Y., Favrod, C., Harari, M. M., Blackwell, S. E.,
+Foa, E. B., & Kozak, M. J. (1986). Emotional processing of                 Watson, P., Iyadurai, L., Bonsall, M. B., & Holmes, E. A.
+    fear: Exposure to corrective information. Psychological                (2017). Reducing intrusive traumatic memories after emer-
+    Bulletin, 99(1), 20–35. https://doi.org/10.1037/0033-                  gency caesarean section: A proof-of-principle randomized
+    2909.99.1.20                                                           controlled study. Behaviour Research and Therapy, 94,
+Gauntlett-Gilbert, J., Keegan, A., & Petrak, J. (2004). Drug-              36–47. https://doi.org/10.1016/j.brat.2017.03.018
+    facilitated sexual assault: Cognitive approaches to                Iyadurai, L., Blackwell, S. E., Meiser-Stedman, R., Watson, P. C.,
+    treating the trauma. Behavioural and Cognitive Psycho­                 Bonsall, M. B., Geddes, J. R., Nobre, A. C., & Holmes,
+    therapy, 32(2), 215–223. https://doi.org/10.1017/S135246               E. A. (2018). Preventing intrusive memories after trauma
+    5804001481                                                             via a brief intervention involving Tetris computer game
+Gondry, M. (Director). (2004). Eternal sunshine of the spotless            play in the emergency department: A proof-of-concept
+    mind [Film]. Universal Studios.                                        randomized controlled trial. Molecular Psychiatry, 23(3),
+Herlihy, J., Gleeson, K., & Turner, S. (2010). What assump-                674–682. https://doi.org/10.1038/mp.2017.23
+    tions about human behaviour underlie asylum judgments?             Iyadurai, L., Hales, S. A., Blackwell, S. E., Young, K., &
+    International Journal of Refugee Law, 22(3), 351–366.                  Holmes, E. A. (2020). Targeting intrusive imagery using
+    https://doi.org/10.1093/ijrl/eeq027                                    a competing task technique: A case study. Behavioural
+Herz, N., Bar-Haim, Y., Holmes, E. A., & Censor, N. (2020).                and Cognitive Psychotherapy, 48(6), 739–744. https://doi
+    Intrusive memories: A mechanistic signature for emo-                   .org/10.1017/S1352465820000296
+    tional memory persistence. Behaviour Research and                  Iyadurai, L., Visser, R. M., Lau-Zhu, A., Porcheret, K., Horsch,
+    Therapy, 135, Article 103752. https://doi.org/10.1016/j                A., Holmes, E. A., & James, E. L. (2019). Intrusive memories
+    .brat.2020.103752                                                      of trauma: A target for research bridging cognitive science
+Hoge, C. W., & Chard, K. M. (2018). A window into the                      and its clinical application. Clinical Psychology Review,
+    evolution of trauma-focused psychotherapies for post-                  69, 67–82. https://doi.org/10.1016/j.cpr.2018.08.005
+    traumatic stress disorder. JAMA, 319(4), 343–345. https://         James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M.,
+    doi.org/10.1001/jama.2017.21880                                        Geddes, J. R., Milton, A. L., & Holmes, E. A. (2015).
+1142                                                                                                                    Lau-Zhu et al.
+
+    Computer game play reduces intrusive memories of                     tigation. Applied Cognitive Psychology, 31(4), 438–445.
+    experi­mental trauma via reconsolidation-update mecha-               https://doi.org/10.1002/acp.3339
+    nisms. Psychological Science, 26(8), 1201–1215. https://         Lau-Zhu, A., Holmes, E. A., & Porcheret, K. (2018). Intrusive
+    doi.org/10.1177/0956797615583071                                     memories of trauma in the laboratory: Methodological
+James, E. L., Lau-Zhu, A., Clark, I. A., Visser, R. M., Hagenaars,       developments and future directions. Current Behavioral
+    M. A., & Holmes, E. A. (2016). The trauma film paradigm              Neuroscience Reports, 5(1), 61–71. https://doi.org/10.1007/
+    as an experimental psychopathology model of psycho-                  s40473-018-0141-1
+    logical trauma: Intrusive memories and beyond. Clinical          McGraw, K. O., & Wong, S. P. (1996). Forming inferences about
+    Psychology Review, 47, 106–142. https://doi.org/10.1016/j            some intraclass correlation coefficients. Psychological Methods,
+    .cpr.2016.04.010                                                     1(1), 30–46. https://doi.org/10.1037/1082-989X.1.1.30
+Kanstrup, M., Kontio, E., Geranmayeh, A., Olofsdotter Lauri,         Morina, N., Leibold, E., & Ehring, T. (2013). Vividness of
+    K., Moulds, M. L., & Holmes, E. A. (2021). A single case             general mental imagery is associated with the occurrence
+    series using visuospatial task interference to reduce the            of intrusive memories. Journal of Behavior Therapy and
+    number of visual intrusive memories of trauma with refu-             Experimental Psychiatry, 44(2), 221–226. https://doi
+    gees. Clinical Psychology & Psychotherapy, 28(1), 109–               .org/10.1016/j.jbtep.2012.11.004
+    123. https://doi.org/10.1002/cpp.2489                            Murphy, F. C., Macpherson, K., Jeyabalasingham, T., Manly,
+Kanstrup, M., Singh, L., Göransson, K. E., Widoff, J., Taylor,           T., & Dunn, B. (2013). Modulating mind-wandering in
+    R. S., Gamble, B., Iyadurai, L., Moulds, M. L., & Holmes,            dysphoria. Frontiers in Psychology, 4, Article 888. https://
+    E. A. (2021). Reducing intrusive memories after trauma               doi.org/10.3389/fpsyg.2013.00888
+    via a brief cognitive task intervention in the hospital          Nader, K. (2003). Memory traces unbound. Trends in
+    emergency department: An exploratory pilot randomised                Neurosciences, 26(2), 65–72. https://doi.org/10.1016/
+    controlled trial. Translational Psychiatry, 11(1), Article           S0166-2236(02)00042-5
+    30. https://doi.org/10.1038/s41398-020-01124-6                   Nader, K., Schafe, G. E., & Le Doux, J. E. (2000). Fear memo-
+Kavanagh, D. J., Andrade, J., & May, J. (2005). Imaginary rel-           ries require protein synthesis in the amygdala for recon-
+    ish and exquisite torture: The elaborated intrusion theory           solidation after retrieval. Nature, 406(6797), 722–726.
+    of desire. Psychological Review, 112(2), 446–467. https://           https://doi.org/10.1038/35021052
+    doi.org/10.1037/0033-295X.112.2.446                              National Audit Office. (2017). NHS ambulance services. NAO
+Kessler, H., Holmes, E. A., Blackwell, S. E., Schmidt, A. C.,            External Relations. https://www.nao.org.uk/wp-content/
+    Schweer, J. M., Bücker, A., Herpertz, S., Axmacher, N.,              uploads/2017/01/NHS-Ambulance-Services.pdf
+    & Kehyayan, A. (2018). Reducing intrusive memories               National Institute for Health and Clinical Excellence. (2018).
+    of trauma using a visuospatial interference intervention             Post-traumatic stress disorder. NICE guideline NG116.
+    with inpatients with post-traumatic stress disorder (PTSD).          https://www.nice.org.uk/guidance/ng116
+    Journal of Consulting and Clinical Psychology, 86, 1076–         Nelis, S., Holmes, E. A., Griffith, J. W., & Raes, F. (2014).
+    1090. https://doi.org/dx.doi.org/10.1037/ccp0000340                  Mental imagery during daily life: Psychometric evalua-
+Kosslyn, S. M. (2005). Reflective thinking and mental imag-              tion of the Spontaneous Use of Imagery Scale (SUIS).
+    ery: A perspective on the development of posttraumatic               Psychologica Belgica, 54, 19–32.
+    stress disorder. Development and Psychopathology,                Ozer, E. J., Best, S. R., Lipsey, T. L., & Weiss, D. S. (2003).
+    17(3), 851–863. https://doi.org/10.1017/S09545794050                 Predictors of posttraumatic stress disorder and symptoms
+    50406                                                                in adults: A meta-analysis. Psychological Bulletin, 129(1),
+Krans, J., Näring, G., Holmes, E. A., & Becker, E. S. (2009).            52–73. https://doi.org/10.1037/0033-2909.129.1.52
+    Tell me more: Can a memory test reduce analogue trau-            Phelps, E. A., & Hofmann, S. G. (2019). Memory editing from
+    matic intrusions? Behaviour Research and Therapy, 47(5),             science fiction to clinical practice. Nature, 572(7767),
+    426–430. https://doi.org/10.1016/j.brat.2009.01.009                  43–50. https://doi.org/10.1038/s41586-019-1433-7
+Kroes, M. C. W., Tendolkar, I., Wingen, G. A., Van Waarde, J. A.,    Rackham, L. A., & Lau-Zhu, A. (2021). Taxing working memory
+    Van Strange, B. A., & Fernández, G. (2013). An electro-              to modulate mental imagery of the 9/11 terrorist attacks fol-
+    convulsive therapy procedure impairs reconsolidation of              lowing media exposure during childhood: A pilot study in
+    episodic memories in humans. Nature, 17(2), 204–206.                 young adult UK residents. Anxiety, Stress and Coping, 34(4),
+    https://doi.org/10.1038/nn.3609                                      423–436. https://doi.org/10.1080/10615806.2020.1870107
+Kvavilashvili, L. (2014). Solving the mystery of intrusive           Rose, S. C., Bisson, J., Churchill, R., & Wessely, S. (2002).
+    flashbacks in posttraumatic stress disorder: Comment on              Psychological debriefing for preventing post trau-
+    Brewin (2014). Psychological Bulletin, 140(1), 98–104.               matic stress disorder (PTSD). Cochrane Database of
+    https://doi.org/10.1037/a0034677                                     Systematic Reviews, 2, Article CD000560. https://doi
+Lau-Zhu, A., Henson, R. N., & Holmes, E. A. (2019). Intrusive            .org/10.1002/14651858.CD000560
+    memories and voluntary memory of a trauma film: Effects          Schacter, D. L., & Tulving, E. (1994). Memory systems. MIT
+    of a cognitive interference task after encoding. Journal             Press.
+    of Experimental Psychology: General, 148(2), 2154–2180.          Schlagman, S., & Kvavilashvili, L. (2008). Involuntary autobio-
+Lau-Zhu, A., Holmes, E. A., Butterfield, S., & Holmes, J.                graphical memories in and outside the laboratory: How
+    (2017). Selective association between Tetris game play               different are they from voluntary autobiographical memo-
+    and visuospatial working memory: A preliminary inves-                ries? Memory and Cognition, 36(5), 920–932.
+Intrusive, Voluntary, and Associative Memory                                                                                      1143
+
+Schneider, W., Eschman, A., & Zuccolotto, A. (2002). E-Prime         Tulving, E. (2002). Episodic memory: From mind to brain.
+    user’s guide. Psychology Software Tools Inc.                         Annual Review of Psychology, 53, 1–25.
+Singh, L., Espinosa, L., Ji, J. L., Moulds, M. L., & Holmes, E. A.   Visser, R. M., Lau-Zhu, A., Henson, R. N., & Holmes, E. A. (2018).
+    (2020). Developing thinking around mental health science:            Multiple memory systems, multiple time points: How sci-
+    The example of intrusive, emotional mental imagery after             ence can inform treatment to control the expression of
+    psychological trauma. Cognitive Neuropsychiatry, 25(5),              unwanted emotional memories. Philosophical Transactions
+    348–363. https://doi.org/10.1080/13546805.2020.1804845               of the Royal Society B: Biological Sciences, 373(1742), Article
+Spielberger, C. D., Gorsuch, R. L., Lushene, R., Vagg, P. R., &          20170209. https://doi.org/10.1098/rstb.2017.0209
+    Jacobs, G. A. (1983). Manual for the State-Trait Anxiety         Yonelinas, A. P. (2002). The nature of recollection and famil-
+    Inventory. Consulting Psychologist Press.                            iarity: A review of 30 years of research. Journal of Memory
+Tabachnick, B. G., & Fidell, L. S. (1996). Using multivariate            and Language, 46(3), 441–517. https://doi.org/10.1006/
+    statistics (6th ed.). HarperCollins College Publishers.              JMLA.2002.2864
+

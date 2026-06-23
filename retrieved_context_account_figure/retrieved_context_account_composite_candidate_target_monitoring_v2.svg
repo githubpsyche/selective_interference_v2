@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1080" width="1504" height="1080" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1504" height="1080" fill="white"/>
+<svg x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 560" width="1504" height="560" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1504" height="560" fill="white"/>
+<text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">A</tspan></text>
+
+<rect x="118" y="82" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="118" y="238" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="118" y="394" width="1248" height="150" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<text x="930" y="72" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="930" dy="0">Context states associated at encoding</tspan></text>
+
+<text x="166" y="140" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Baseline drift</tspan></text>
+<text x="166" y="170" font-size="18" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">Low overlap, weak task-context binding</tspan></text>
+<text x="590" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="120" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1110" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="120" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="166" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="138" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="138" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="138" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="138" width="56" height="42" fill="#D6D9DD" stroke="#D6D9DD" stroke-width="3"/>
+<rect x="1082" y="138" width="56" height="42" fill="#E0E0E0" stroke="#E5A274" stroke-width="3"/>
+<rect x="1172" y="138" width="56" height="42" fill="#EEEEEE" stroke="#E5A274" stroke-width="3"/>
+<rect x="1262" y="138" width="56" height="42" fill="#FAFAFA" stroke="#E5A274" stroke-width="3"/>
+<path d="M 770 190 L 770 200 L 1096 200 L 1096 190" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="933" y="222" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="933" dy="0">low context overlap</tspan></text>
+
+<text x="166" y="296" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Reminder reinstatement</tspan></text>
+<text x="166" y="326" font-size="18" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">High overlap, weak task-context binding</tspan></text>
+<text x="590" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="276" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1015" y="276" font-size="21" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="276" font-size="21" font-weight="500" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="322" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="294" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="294" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="294" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="294" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="294" width="56" height="42" fill="#4F4F4F" stroke="#E5A274" stroke-width="3"/>
+<rect x="1172" y="294" width="56" height="42" fill="#707070" stroke="#E5A274" stroke-width="3"/>
+<rect x="1262" y="294" width="56" height="42" fill="#929292" stroke="#E5A274" stroke-width="3"/>
+<path d="M 770 346 L 770 356 L 1096 356 L 1096 346" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="933" y="378" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="933" dy="0">high context overlap</tspan></text>
+
+<text x="166" y="452" font-size="24" font-weight="700" fill="#111111" text-anchor="start"><tspan x="166" dy="0">Strong task encoding</tspan></text>
+<text x="166" y="482" font-size="18" font-weight="600" fill="#3D4B5C" text-anchor="start"><tspan x="166" dy="0">High overlap, strong task-context binding</tspan></text>
+<text x="590" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="590" dy="0">F1</tspan></text>
+<text x="680" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="680" dy="0">F2</tspan></text>
+<text x="770" y="432" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="770" dy="0">F3</tspan></text>
+<text x="1015" y="432" font-size="21" font-weight="700" fill="#178A4C" text-anchor="middle"><tspan x="1015" dy="0">Reminder</tspan></text>
+<text x="1110" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1110" dy="0">T1</tspan></text>
+<text x="1200" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1200" dy="0">T2</tspan></text>
+<text x="1290" y="432" font-size="21" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1290" dy="0">T3</tspan></text>
+<text x="895" y="478" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">...</tspan></text>
+<rect x="562" y="450" width="56" height="42" fill="#2F2F2F" stroke="#333333" stroke-width="3"/>
+<rect x="652" y="450" width="56" height="42" fill="#555555" stroke="#333333" stroke-width="3"/>
+<rect x="742" y="450" width="56" height="42" fill="#7A7A7A" stroke="#333333" stroke-width="3"/>
+<rect x="987" y="450" width="56" height="42" fill="#3F3F3F" stroke="#178A4C" stroke-width="3"/>
+<rect x="1082" y="450" width="56" height="42" fill="#4F4F4F" stroke="#D96B2B" stroke-width="7"/>
+<rect x="1172" y="450" width="56" height="42" fill="#707070" stroke="#D96B2B" stroke-width="7"/>
+<rect x="1262" y="450" width="56" height="42" fill="#929292" stroke="#D96B2B" stroke-width="7"/>
+<path d="M 770 502 L 770 512 L 1096 512 L 1096 502" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+<text x="933" y="534" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="933" dy="0">high context overlap</tspan></text>
+<path d="M 1124 502 L 1124 512 L 1304 512 L 1304 502" fill="none" stroke="#D96B2B" stroke-width="3"/>
+<text x="1214" y="534" font-size="18" font-weight="800" fill="#D96B2B" text-anchor="middle"><tspan x="1214" dy="0">strong task-context binding</tspan></text>
+</svg>
+<svg x="0" y="580" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
+</defs>
+<rect x="0" y="0" width="740" height="500" fill="white"/>
+<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">B</tspan></text>
+
+<rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
+<rect x="196" y="126" width="348" height="52" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
+<line x1="370" y1="126" x2="370" y2="178" stroke="#3D4B5C" stroke-width="2"/>
+<text x="283" y="160" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="283" dy="0">Temporal</tspan></text>
+<text x="457" y="148" font-size="18" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="457" dy="0">Source/</tspan><tspan x="457" dy="18">emotional</tspan></text>
+
+<rect x="162" y="336" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Features / items (F)</tspan></text>
+<rect x="226" y="394" width="120" height="38" rx="10" fill="white" stroke="#1764D8" stroke-width="3"/>
+<text x="286" y="419" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="286" dy="0">Film item</tspan></text>
+<rect x="394" y="394" width="120" height="38" rx="10" fill="white" stroke="#D96B2B" stroke-width="3"/>
+<text x="454" y="419" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="454" dy="0">Task item</tspan></text>
+
+<rect x="10" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="110" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-</tspan><tspan x="110" dy="28">context memory</tspan><tspan x="110" dy="28">(MFC)</tspan></text>
+
+<rect x="530" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="630" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-</tspan><tspan x="630" dy="28">feature memory</tspan><tspan x="630" dy="28">(MCF)</tspan></text>
+
+<polyline points="110,210 110,126 162,126" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="578,126 630,126 630,210" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="162,392 110,392 110,320" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="630,320 630,392 578,392" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="102" y="75" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="102" dy="0">Reinstates</tspan><tspan x="102" dy="24">context</tspan></text>
+<text x="660" y="412" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="660" dy="0">Cues</tspan><tspan x="660" dy="24">candidates</tspan></text>
+</svg>
+<svg x="764" y="580" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
+<marker id="arrow-film" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1764D8"/></marker>
+<marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#D96B2B"/></marker>
+<marker id="arrow-task-pale" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#E5A274"/></marker>
+</defs>
+<rect x="0" y="0" width="740" height="500" fill="white"/>
+<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">C</tspan></text>
+
+<rect x="128" y="48" width="484" height="50" rx="17" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="80" font-size="23" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Retrieval control operates on context</tspan></text>
+
+<rect x="42" y="124" width="656" height="150" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="88" y="166" font-size="22" font-weight="700" fill="#111111" text-anchor="start"><tspan x="88" dy="0">Unguided retrieval</tspan></text>
+
+<rect x="88" y="190" width="136" height="54" rx="20" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="156" y="212" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="156" dy="0">ongoing</tspan><tspan x="156" dy="20">context c<tspan baseline-shift="sub" font-size="12">t</tspan></tspan></text>
+
+<path d="M 224 217 C 258 217, 278 217, 312 217" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="268" y="204" font-size="14" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="268" dy="0">cues</tspan></text>
+
+<circle cx="340" cy="199" r="16" fill="white" stroke="#1764D8" stroke-width="3"/><text x="340" y="205" font-size="15" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="340" dy="0">F</tspan></text>
+<circle cx="376" cy="235" r="16" fill="white" stroke="#1764D8" stroke-width="3"/><text x="376" y="241" font-size="15" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="376" dy="0">F</tspan></text>
+<text x="414" y="224" font-size="17" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="414" dy="0">...</tspan></text>
+<circle cx="452" cy="199" r="16" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="452" y="205" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="452" dy="0">T</tspan></text>
+<circle cx="488" cy="235" r="16" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="488" y="241" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="488" dy="0">T</tspan></text>
+
+<path d="M 488 219 C 520 201, 544 197, 570 205" fill="none" stroke="#D96B2B" stroke-width="3" marker-end="url(#arrow-task)"/>
+<circle cx="596" cy="217" r="17" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="596" y="223" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="596" dy="0">T</tspan></text>
+<path d="M 596 200 C 586 169, 239 170, 205 190" fill="none" stroke="#D96B2B" stroke-width="3" marker-end="url(#arrow-task)"/>
+<text x="492" y="164" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="492" dy="0">ordinary item-to-context update</tspan></text>
+
+<rect x="42" y="310" width="656" height="166" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="88" y="352" font-size="22" font-weight="700" fill="#111111" text-anchor="start"><tspan x="88" dy="0">Deliberate recall</tspan></text>
+
+<rect x="88" y="376" width="136" height="54" rx="20" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="156" y="398" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="156" dy="0">start-of-film</tspan><tspan x="156" dy="20">context c<tspan baseline-shift="sub" font-size="12">t</tspan></tspan></text>
+<path d="M 82 386 C 60 388, 58 418, 84 420" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<text x="72" y="373" font-size="15" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="72" dy="0">onset</tspan></text>
+
+<path d="M 224 403 C 258 403, 278 403, 312 403" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<text x="268" y="390" font-size="14" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="268" dy="0">cues</tspan></text>
+
+<circle cx="340" cy="385" r="16" fill="white" stroke="#1764D8" stroke-width="3"/><text x="340" y="391" font-size="15" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="340" dy="0">F</tspan></text>
+<circle cx="376" cy="421" r="16" fill="white" stroke="#1764D8" stroke-width="3"/><text x="376" y="427" font-size="15" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="376" dy="0">F</tspan></text>
+<text x="414" y="410" font-size="17" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="414" dy="0">...</tspan></text>
+<circle cx="452" cy="385" r="16" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="452" y="391" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="452" dy="0">T</tspan></text>
+<circle cx="488" cy="421" r="16" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="488" y="427" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="488" dy="0">T</tspan></text>
+
+<path d="M 488 405 C 520 387, 544 383, 570 391" fill="none" stroke="#D96B2B" stroke-width="3" marker-end="url(#arrow-task)"/>
+<circle cx="596" cy="403" r="17" fill="white" stroke="#D96B2B" stroke-width="3"/><text x="596" y="409" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="596" dy="0">T</tspan></text>
+<path d="M 596 386 C 587 354, 238 356, 204 375" fill="none" stroke="#E5A274" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow-task-pale)"/>
+<text x="508" y="350" font-size="15" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="508" dy="0">dampened item-to-context update</tspan></text>
+<text x="512" y="458" font-size="15" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="512" dy="0">non-film output still occupies a retrieval attempt</tspan></text>
+</svg>
+</svg>

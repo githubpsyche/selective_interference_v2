@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 590" width="1504" height="590" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
+<marker id="arrow-film" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1764D8"/></marker>
+<marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#E46C24"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#7A8490"/></marker>
+</defs>
+<rect x="0" y="0" width="1504" height="590" fill="white"/>
+<text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">D</tspan></text>
+<text x="752" y="62" font-size="28" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="752" dy="0">Context updating after sampled output</tspan></text>
+
+<text x="126" y="158" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="126" dy="0">Film recall</tspan></text>
+<text x="126" y="306" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="126" dy="0">Off-target recall</tspan><tspan x="126" dy="21">without monitoring</tspan></text>
+<text x="126" y="466" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="126" dy="0">Off-target recall</tspan><tspan x="126" dy="21">with monitoring</tspan></text>
+
+<rect x="232" y="90" width="1194" height="138" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="232" y="250" width="1194" height="138" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="232" y="410" width="1194" height="138" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+
+<text x="302" y="122" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="302" dy="0">Film item</tspan></text>
+<circle cx="302" cy="164" r="25" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="302" y="172" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="302" dy="0">F</tspan></text>
+<text x="302" y="211" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="302" dy="0">output</tspan></text>
+
+<path d="M 332 164 L 396 164" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="416" y="126" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="506" y="150" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+
+<path d="M 596 164 L 786 164" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<text x="692" y="144" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="692" dy="0">ordinary update</tspan></text>
+<rect x="810" y="126" width="170" height="76" rx="20" fill="#F2F4F6" stroke="#1764D8" stroke-width="3"/>
+<text x="895" y="153" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">next</tspan><tspan x="895" dy="23">context</tspan></text>
+
+<path d="M 980 164 L 1088 164" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1062" y="218" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1062" dy="0">cues candidates</tspan></text>
+<circle cx="1122" cy="154" r="20" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="1122" y="161" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="1122" dy="0">F</tspan></text>
+<circle cx="1166" cy="179" r="20" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="1166" y="186" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="1166" dy="0">F</tspan></text>
+<text x="1208" y="167" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1208" dy="0">...</tspan></text>
+<circle cx="1252" cy="154" r="20" fill="white" stroke="#E46C24" stroke-width="3" stroke-dasharray="5 4" opacity="0.70"/>
+<text x="1252" y="161" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle" opacity="0.70"><tspan x="1252" dy="0">T</tspan></text>
+<text x="1348" y="130" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1348" dy="0">film</tspan><tspan x="1348" dy="20">candidates</tspan><tspan x="1348" dy="20">remain</tspan><tspan x="1348" dy="20">favored</tspan></text>
+
+<text x="302" y="282" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="302" dy="0">Task item</tspan></text>
+<circle cx="302" cy="324" r="25" fill="white" stroke="#E46C24" stroke-width="4"/>
+<text x="302" y="332" font-size="25" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="302" dy="0">T</tspan></text>
+<text x="302" y="371" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="302" dy="0">output</tspan></text>
+
+<path d="M 332 324 L 396 324" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="416" y="286" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="506" y="310" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+
+<path d="M 596 324 L 786 324" fill="none" stroke="#E46C24" stroke-width="3" marker-end="url(#arrow-task)"/>
+<text x="692" y="304" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="692" dy="0">ordinary update</tspan></text>
+<rect x="810" y="286" width="170" height="76" rx="20" fill="#F2F4F6" stroke="#E46C24" stroke-width="3"/>
+<text x="895" y="313" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">next</tspan><tspan x="895" dy="23">context</tspan></text>
+
+<path d="M 980 324 L 1088 324" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1062" y="378" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1062" dy="0">cues candidates</tspan></text>
+<circle cx="1122" cy="314" r="20" fill="white" stroke="#E46C24" stroke-width="4"/>
+<text x="1122" y="321" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="1122" dy="0">T</tspan></text>
+<circle cx="1166" cy="339" r="20" fill="white" stroke="#E46C24" stroke-width="4"/>
+<text x="1166" y="346" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="1166" dy="0">T</tspan></text>
+<text x="1208" y="327" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1208" dy="0">...</tspan></text>
+<circle cx="1252" cy="314" r="20" fill="white" stroke="#1764D8" stroke-width="3" stroke-dasharray="5 4" opacity="0.70"/>
+<text x="1252" y="321" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle" opacity="0.70"><tspan x="1252" dy="0">F</tspan></text>
+<text x="1348" y="290" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1348" dy="0">task</tspan><tspan x="1348" dy="20">candidates</tspan><tspan x="1348" dy="20">become</tspan><tspan x="1348" dy="20">favored</tspan></text>
+
+<text x="302" y="442" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="302" dy="0">Task item</tspan></text>
+<circle cx="302" cy="484" r="25" fill="white" stroke="#E46C24" stroke-width="4"/>
+<text x="302" y="492" font-size="25" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="302" dy="0">T</tspan></text>
+<text x="302" y="531" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="302" dy="0">output</tspan></text>
+
+<path d="M 332 484 L 396 484" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="416" y="446" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="506" y="470" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+
+<path d="M 596 484 L 786 484" fill="none" stroke="#7A8490" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow-gray)"/>
+<text x="692" y="452" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="692" dy="0">target monitoring</tspan></text>
+<text x="692" y="516" font-size="20" font-weight="700" fill="#7A8490" text-anchor="middle"><tspan x="692" dy="0">dampened update</tspan></text>
+<rect x="810" y="446" width="170" height="76" rx="20" fill="#F2F4F6" stroke="#1764D8" stroke-width="3" stroke-dasharray="12 8"/>
+<rect x="810" y="446" width="170" height="76" rx="20" fill="none" stroke="#E46C24" stroke-width="3" stroke-dasharray="12 8" stroke-dashoffset="10"/>
+<text x="895" y="473" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="895" dy="0">next</tspan><tspan x="895" dy="23">context</tspan></text>
+
+<path d="M 980 484 L 1088 484" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1062" y="538" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1062" dy="0">cues candidates</tspan></text>
+<circle cx="1122" cy="474" r="20" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="1122" y="481" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="1122" dy="0">F</tspan></text>
+<circle cx="1166" cy="499" r="20" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="1166" y="506" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="1166" dy="0">F</tspan></text>
+<text x="1208" y="487" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1208" dy="0">...</tspan></text>
+<circle cx="1252" cy="474" r="20" fill="white" stroke="#E46C24" stroke-width="3" opacity="0.85"/>
+<text x="1252" y="481" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle" opacity="0.85"><tspan x="1252" dy="0">T</tspan></text>
+<text x="1348" y="450" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="1348" dy="0">film</tspan><tspan x="1348" dy="20">candidates</tspan><tspan x="1348" dy="20">preserve</tspan><tspan x="1348" dy="20">some favor</tspan></text>
+</svg>

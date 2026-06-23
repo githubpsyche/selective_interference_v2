@@ -1,0 +1,4 @@
+retrieval_regime,start_drift_scale,rejected_recall_drift_scale,benign_film_recall,hardest_film_recall,maximal_interference_cost,maximal_interference_percent,selection_reason
+Unguided recall,0.0,1.0,3.1840000227093697,0.8192000053822994,2.3648000173270702,0.7427135679838296,
+Deliberate recall: start context,1.5,1.0,6.683399975299835,2.484400011599064,4.198999963700771,0.628273031573633,
+Deliberate recall: start context + monitoring,1.5,0.0,7.0361999571323395,4.776599958539009,2.2595999985933304,0.32113925305702207,smallest start drift and largest kappa reducing absolute cost

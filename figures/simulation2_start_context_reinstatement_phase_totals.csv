@@ -1,0 +1,9 @@
+retrieval_setting,start_drift_scale,rejected_recall_drift_scale,reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,first_cue_after,cue_interval,film_source_start_drift_rate,phase,recall_probability_mass
+Unguided recall,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,break,0.10440000137896277
+Unguided recall,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,filler,1.4886000081896782
+Unguided recall,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,film,0.8183999974280596
+Unguided recall,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,task,5.272000044584274
+Start-of-film context reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,break,0.1346000001358334
+Start-of-film context reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,filler,0.03860000011627562
+Start-of-film context reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,film,2.538000002503395
+Start-of-film context reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,0.0,task,4.957800023257732

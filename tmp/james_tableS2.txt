@@ -1,0 +1,67 @@
+DOI: 10.1177/0956797615583071
+
+
+
+
+Table S2
+Experiment 2: Baseline characteristics, manipulation checks and recognition memory scores
+                           No-Task       Reactivation+         Tetris-        Reactivation-
+                           Control          Tetris              Only              Only
+                           (n = 18)        (n = 18)           (n = 18)          (n = 18)
+                                 n             n                 n                  n
+                                (%)           (%)               (%)                (%)
+
+                              14               9                 14                10
+Female                     (77.78%)        (50.00%)           (77.78%)          (55.56%)
+
+                              M               M                  M                 M
+                           [95% CI]        [95% CI]           [95% CI]          [95% CI]
+
+                            23.67            25.44             25.39             28.39
+Age                     [20.28, 27.06]   [21.77, 29.12]    [21.50, 29.28]    [22.77, 34.01]
+
+Number of traumatic          1.22             0.78              0.94               1.00
+events                   [0.33, 2.12]     [0.31, 1.25]      [0.45, 1.44]       [0.58, 1.42]
+Beck Depression              3.33             2.67              3.61               2.11
+Inventory-II             [1.06, 5.61]     [1.45, 3.88]      [1.33, 5.89]       [0.73, 3.50]
+
+State-Trait Anxiety         33.39            34.67             33.94             33.78
+Inventory               [28.25, 38.53]   [30.92, 38.41]    [29.67, 38.22]    [29.77, 37.79]
+
+Attention to film            9.67             9.28              9.56               9.44
+                         [9.43, 9.91]     [8.87, 9.69]      [9.25, 9.86]       [9.14, 9.75]
+
+Diary compliance             8.56             8.17              8.44               8.44
+                         [8.13, 8.98]     [7.26, 9.07]      [7.93, 8.96]       [7.99, 8.90]
+
+Mood rating pre-             3.30             4.12              3.93               4.50
+film                     [2.24, 4.36]     [2.64, 5.60]      [2.52, 5.33]       [2.88, 6.12]
+
+Mood rating post-           15.00            15.78             17.72             15.85
+film                    [11.07, 18.93]   [12.69, 18.87]    [12.89, 22.56]    [12.24, 19.46]
+
+Post-film distress           6.44             6.44              6.11               6.06
+                         [5.51, 7.38]     [5.61, 7.28]      [4.82, 7.40]       [4.82, 7.29]
+
+Visual recognition          15.00            15.67             14.28             14.44
+memory                  [13.96, 16.04]   [14.59, 16.75]    [13.35, 15.21]    [13.40, 15.49]
+
+Verbal recognition          19.78            18.33             18.83             18.89
+memory                  [18.65, 20.90]   [17.41, 19.25]    [17.28, 20.39]    [17.15, 20.63]
+DOI: 10.1177/0956797615583071
+
+
+
+
+Demand rating                -1.33               -1.78              -1.61              -0.28
+                         [-2.79, 0.12]       [-3.67, 0.11]      [-3.24, 0.02]      [-2.16, 1.60]
+Note. A composite mood score pre- and post-film was a calculated by summing participants
+ratings on six visual analogue scales; fear, horror, anxiety, sadness, hopelessness and depressed.
+Visual and verbal recognition memory scores are a sum of correct responses (out of a maximum
+score of 22 for visual and 32 for verbal recognition memory tests).
+
+
+
+
+                                                                                              DS10
+

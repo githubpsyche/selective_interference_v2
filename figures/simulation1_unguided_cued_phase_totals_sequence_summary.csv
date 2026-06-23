@@ -1,0 +1,17 @@
+reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,first_cue_after,phase,recall_probability_mass
+No reminder,Weak task encoding,1.0,0.9,0,break,0.7639999939128757
+No reminder,Weak task encoding,1.0,0.9,0,filler,3.53299998678267
+No reminder,Weak task encoding,1.0,0.9,0,film,3.2107999995350838
+No reminder,Weak task encoding,1.0,0.9,0,task,0.1432000007480383
+No reminder,Strong task encoding,2.0,0.9,0,break,0.4921999988146126
+No reminder,Strong task encoding,2.0,0.9,0,filler,2.482600014656782
+No reminder,Strong task encoding,2.0,0.9,0,film,2.5619999915361404
+No reminder,Strong task encoding,2.0,0.9,0,task,2.1048000045120716
+With reminder,Weak task encoding,1.0,0.9,0,break,0.6033999980427325
+With reminder,Weak task encoding,1.0,0.9,0,filler,3.2387999519705772
+With reminder,Weak task encoding,1.0,0.9,0,film,2.8518000096082687
+With reminder,Weak task encoding,1.0,0.9,0,task,0.9873999916017056
+With reminder,Strong task encoding,2.0,0.9,0,break,0.09960000027786009
+With reminder,Strong task encoding,2.0,0.9,0,filler,1.4535999912768602
+With reminder,Strong task encoding,2.0,0.9,0,film,0.8295999988913536
+With reminder,Strong task encoding,2.0,0.9,0,task,5.282399982213974

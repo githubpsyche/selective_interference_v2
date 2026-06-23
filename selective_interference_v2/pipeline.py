@@ -127,6 +127,7 @@ def configure_rates(
         ``source_learning_baseline``,
         ``neutral_source_input_scale``,
         ``film_source_start_drift_rate``,
+        ``film_item_support_boost``,
         ``target_recall_drift_scale``,
         ``rejected_recall_drift_scale``.
         Unspecified scales default to 1.0.
@@ -136,8 +137,9 @@ def configure_rates(
         ``neutral_source_input_scale``,
         ``target_recall_drift_scale``,
         ``rejected_recall_drift_scale``, and
-        ``film_source_start_drift_rate`` also replace the model values
-        directly.  In source-only eCMR, changing ``emotion_scale``
+        ``film_source_start_drift_rate``, and
+        ``film_item_support_boost`` also replace the model values directly.
+        In source-only eCMR, changing ``emotion_scale``
         affects subsequent source-context learning; it does not retroactively
         rescale already learned source associations.
         ``shared_support_scale`` scales the pre-experimental MCF
@@ -303,6 +305,10 @@ def configure_rates(
                 0.0,
                 1.0,
             ),
+            film_item_support_boost=scales.get(
+                "film_item_support_boost",
+                model.film_item_support_boost,
+            ),
             mcf=new_mcf,
             emotion_mfc=new_emotion_mfc,
             shared_support=new_ss,
@@ -354,6 +360,7 @@ _SCALE_PHASES = {
     "recall_drift_scale": "retrieval",
     "tau_scale": "retrieval",
     "film_source_start_drift_rate": "retrieval",
+    "film_item_support_boost": "retrieval",
     "emotion_recall_drift_scale": "retrieval",
     "target_recall_drift_scale": "retrieval",
     "rejected_recall_drift_scale": "retrieval",

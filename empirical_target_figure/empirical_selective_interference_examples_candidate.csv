@@ -1,0 +1,33 @@
+study,outcome_family,outcome,group,condition,mean
+"James et al. 2015, Exp. 2",intrusion_like,Diary intrusions,"No pre-task
+reminder",Comparison/rest,5.11
+"James et al. 2015, Exp. 2",intrusion_like,Diary intrusions,"No pre-task
+reminder",Tetris interference,3.89
+"James et al. 2015, Exp. 2",intrusion_like,Diary intrusions,"After pre-task
+film reminder",Comparison/rest,4.83
+"James et al. 2015, Exp. 2",intrusion_like,Diary intrusions,"After pre-task
+film reminder",Tetris interference,1.89
+"James et al. 2015, Exp. 2",deliberate_memory,Verbal recognition,"No pre-task
+reminder",Comparison/rest,19.78
+"James et al. 2015, Exp. 2",deliberate_memory,Verbal recognition,"No pre-task
+reminder",Tetris interference,18.83
+"James et al. 2015, Exp. 2",deliberate_memory,Verbal recognition,"After pre-task
+film reminder",Comparison/rest,18.89
+"James et al. 2015, Exp. 2",deliberate_memory,Verbal recognition,"After pre-task
+film reminder",Tetris interference,18.33
+"Lau-Zhu et al. 2019, Exp. 1",intrusion_like,Diary intrusions,"After pre-task
+film reminder",Comparison/rest,5.61
+"Lau-Zhu et al. 2019, Exp. 1",intrusion_like,Diary intrusions,"After pre-task
+film reminder",Tetris interference,2.7
+"Lau-Zhu et al. 2019, Exp. 1",deliberate_memory,Voluntary free recall,"After pre-task
+film reminder",Comparison/rest,59.35
+"Lau-Zhu et al. 2019, Exp. 1",deliberate_memory,Voluntary free recall,"After pre-task
+film reminder",Tetris interference,65.82
+Lau-Zhu et al. 2021,intrusion_like,VIT intrusions,"After pre-task
+film reminder",Comparison/rest,17.94
+Lau-Zhu et al. 2021,intrusion_like,VIT intrusions,"After pre-task
+film reminder",Tetris interference,7.56
+Lau-Zhu et al. 2021,deliberate_memory,Cued recognition,"After pre-task
+film reminder",Comparison/rest,0.51
+Lau-Zhu et al. 2021,deliberate_memory,Cued recognition,"After pre-task
+film reminder",Tetris interference,0.41

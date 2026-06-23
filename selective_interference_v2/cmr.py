@@ -129,6 +129,10 @@ class PhasedSourceOnlyECMR(Pytree):
             "film_source_start_drift_rate",
             0.0,
         )
+        self.film_item_support_boost = parameters.get(
+            "film_item_support_boost",
+            0.0,
+        )
         _is_emotional = (
             is_emotional if is_emotional is not None else jnp.zeros(list_length)
         )
@@ -426,7 +430,8 @@ class PhasedSourceOnlyECMR(Pytree):
         """Compute decision-scaled activations for a candidate mask."""
         temporal = self.mcf.probe(self.context.state) * candidates
         source = self.emotion_mcf.probe(self.emotion_context.state) * candidates
-        combined = temporal + source
+        film_boost = self.film_item_support_boost * self.is_target * candidates
+        combined = temporal + source + film_boost
         return (power_scale(combined, self.mcf_sensitivity) + lb) * candidates
 
     def activations(self) -> Float[Array, " item_count"]:

@@ -1,0 +1,97 @@
+retrieval_setting,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,reminder_condition,task_condition,task_mcf_scale,film_source_start_drift_rate,film_cue_reinstatement,cue_interval,first_cue_after,experiment_count,phase,recall_probability_mass
+Unguided recall,0.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.7487999936565757
+Unguided recall,0.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,3.501000039279461
+Unguided recall,0.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,3.25560000538826
+Unguided recall,0.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.1630000015720725
+Unguided recall,0.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.5235999980941415
+Unguided recall,0.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,2.542000003159046
+Unguided recall,0.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,2.4440000131726265
+Unguided recall,0.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,2.1078000217676163
+Unguided recall,0.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.6132000056095421
+Unguided recall,0.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,3.313399985432625
+Unguided recall,0.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,2.789599984884262
+Unguided recall,0.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.9575999919325113
+Unguided recall,0.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.09979999989445787
+Unguided recall,0.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,1.4491999875754118
+Unguided recall,0.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,0.7925999965518713
+Unguided recall,0.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,5.258600026369095
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.9972000019624829
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.3298000027425587
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,6.271399974822998
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.04460000013932586
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.8370000068098307
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.3062000027857721
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,5.924999982118607
+Start-of-film reinstatement,1.0,0.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.548200000077486
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.7768000063952059
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.40580000542104244
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,5.4456000328063965
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,1.0746000101789832
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.14019999968877528
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.20040000090375543
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,1.9827999994158745
+Start-of-film reinstatement,1.0,0.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,5.301199987530708
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.14860000013140962
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.017400000520865433
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.453800052404404
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0011999999696854502
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.15260000337730162
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.01739999992423691
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.474000036716461
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.020399999717483297
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.1529999999620486
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.019200000271666795
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.308000028133392
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.19999999724677764
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.09139999974286184
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.02280000044265762
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,5.448200017213821
+Start-of-film reinstatement + film-item boost,1.0,0.5,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,2.0986000038683414
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.08000000058382284
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.007800000021234155
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.5742000341415405
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0005999999848427251
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.07920000060403254
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.0074000002787215635
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.5951999723911285
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.004800000082468614
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.07699999878241215
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.008800000039627776
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.492599934339523
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.10640000022249296
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.05380000060540624
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.010399999970104545
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,6.397600024938583
+Start-of-film reinstatement + film-item boost,1.0,0.75,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,1.182600005529821
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.04579999951238278
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.005200000028708018
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.606400012969971
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.00019999999494757503
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.04759999994712416
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.003600000054575503
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.591799974441528
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.0029999999242136255
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.043600000120932236
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.00740000004589092
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.5671999752521515
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.06100000016158447
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.03260000028240029
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.005000000121071935
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,6.897199988365173
+Start-of-film reinstatement + film-item boost,1.0,1.0,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.750599990831688
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.02800000000570435
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.0030000000988366082
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.569599956274033
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.00039999998989515007
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.028200000277138315
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.0013999999646330252
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.631200075149536
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,No reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.0012000000133411959
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.030200000110198744
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.0032000000355765224
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.603999942541122
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0369999998511048
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.025599999804398976
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.004400000107125379
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.097400009632111
+Start-of-film reinstatement + film-item boost,1.0,1.25,1.0,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.436999995727092

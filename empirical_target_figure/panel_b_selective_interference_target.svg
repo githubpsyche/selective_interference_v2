@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 560" width="1504" height="560" font-family="Arial, Helvetica, sans-serif">
+<defs>
+  <g id="film-slot"><rect x="-24" y="-20" width="48" height="40" rx="10" fill="#F7FAFF" stroke="#C7D9F4" stroke-width="2.5"/></g>
+  <g id="film-token"><rect x="-24" y="-20" width="48" height="40" rx="10" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/><text x="0" y="8" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F</text></g>
+  <g id="film-token-reduced"><rect x="-24" y="-20" width="48" height="40" rx="10" fill="#F7FAFF" stroke="#8BB8F0" stroke-width="3" stroke-dasharray="7 5"/><line x1="-16" y1="14" x2="16" y2="-14" stroke="#D96B2B" stroke-width="4"/><text x="0" y="8" font-size="21" font-weight="700" fill="#8BB8F0" text-anchor="middle">F</text></g>
+</defs>
+<rect x="0" y="0" width="1504" height="560" fill="white"/>
+<text x="18" y="54" font-size="44" font-weight="700" fill="#111111" text-anchor="start">B</text>
+
+<text x="580" y="92" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">Comparison task</text>
+<text x="948" y="92" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">Interference task</text>
+<text x="1225" y="92" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">Film output reduction</text>
+
+<rect x="120" y="125" width="1226" height="175" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="410" y="137" width="340" height="151" rx="14" fill="#F2F4F6" fill-opacity="0.72" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="778" y="137" width="340" height="151" rx="14" fill="#FFF0E6" fill-opacity="0.72" stroke="#D96B2B" stroke-width="3"/>
+<text x="266" y="178" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Unguided recall /</text>
+<text x="266" y="210" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Intrusion-like</text>
+<text x="266" y="242" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">film access</text>
+
+<use href="#film-slot" x="464" y="202"/>
+<use href="#film-slot" x="522" y="202"/>
+<use href="#film-slot" x="580" y="202"/>
+<use href="#film-slot" x="638" y="202"/>
+<use href="#film-slot" x="696" y="202"/>
+<use href="#film-token" x="464" y="202"/>
+<use href="#film-token" x="522" y="202"/>
+<use href="#film-token" x="580" y="202"/>
+
+<use href="#film-slot" x="832" y="202"/>
+<use href="#film-slot" x="890" y="202"/>
+<use href="#film-slot" x="948" y="202"/>
+<use href="#film-slot" x="1006" y="202"/>
+<use href="#film-slot" x="1064" y="202"/>
+<use href="#film-token" x="832" y="202"/>
+
+<use href="#film-token-reduced" x="1196" y="202"/>
+<use href="#film-token-reduced" x="1254" y="202"/>
+
+<rect x="120" y="335" width="1226" height="175" rx="18" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="410" y="347" width="340" height="151" rx="14" fill="#F2F4F6" fill-opacity="0.72" stroke="#3D4B5C" stroke-width="3"/>
+<rect x="778" y="347" width="340" height="151" rx="14" fill="#FFF0E6" fill-opacity="0.72" stroke="#D96B2B" stroke-width="3"/>
+<text x="266" y="388" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Voluntary recall /</text>
+<text x="266" y="420" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Deliberate</text>
+<text x="266" y="452" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">film recall</text>
+
+<use href="#film-slot" x="464" y="412"/>
+<use href="#film-slot" x="522" y="412"/>
+<use href="#film-slot" x="580" y="412"/>
+<use href="#film-slot" x="638" y="412"/>
+<use href="#film-slot" x="696" y="412"/>
+<use href="#film-token" x="464" y="412"/>
+<use href="#film-token" x="522" y="412"/>
+<use href="#film-token" x="580" y="412"/>
+<use href="#film-token" x="638" y="412"/>
+<use href="#film-token" x="696" y="412"/>
+
+<use href="#film-slot" x="832" y="412"/>
+<use href="#film-slot" x="890" y="412"/>
+<use href="#film-slot" x="948" y="412"/>
+<use href="#film-slot" x="1006" y="412"/>
+<use href="#film-slot" x="1064" y="412"/>
+<use href="#film-token" x="832" y="412"/>
+<use href="#film-token" x="890" y="412"/>
+<use href="#film-token" x="948" y="412"/>
+<use href="#film-token" x="1006" y="412"/>
+
+<use href="#film-token-reduced" x="1225" y="412"/>
+
+<text x="580" y="270" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">film output</text>
+<text x="948" y="270" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">film output after interference</text>
+<text x="1225" y="270" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">larger reduction</text>
+<text x="580" y="480" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">film output</text>
+<text x="948" y="480" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">film output after interference</text>
+<text x="1225" y="480" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">smaller reduction</text>
+</svg>

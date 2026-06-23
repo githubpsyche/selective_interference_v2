@@ -5,7 +5,7 @@
 <marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#D96B2B"/></marker>
 </defs>
 <rect x="0" y="0" width="740" height="500" fill="white"/>
-<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">D</tspan></text>
+<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">C</tspan></text>
 
 <rect x="130" y="62" width="480" height="52" rx="18" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
 <text x="370" y="95" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Stored film and task associations</tspan></text>
@@ -35,7 +35,7 @@
 <text x="192" y="416" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">Broad sampling leaves</tspan><tspan x="192" dy="21">film and task items</tspan><tspan x="192" dy="21">competing</tspan></text>
 
 <rect x="445" y="205" width="206" height="58" rx="29" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
-<text x="548" y="229" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Film-directed</tspan><tspan x="548" dy="24">context cue</tspan></text>
+<text x="548" y="229" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Start context</tspan><tspan x="548" dy="24">cue</tspan></text>
 <path d="M 503 263 C 488 282, 458 292, 424 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 526 263 C 512 284, 492 294, 466 302" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 548 263 C 542 284, 528 294, 508 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
@@ -49,7 +49,7 @@
 <circle cx="588" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="588" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="588" dy="0">T1</tspan></text>
 <circle cx="630" cy="333" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="630" y="339" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="630" dy="0">T2</tspan></text>
 <circle cx="672" cy="313" r="20" fill="white" stroke="#D96B2B" stroke-width="3" opacity="0.85"/><text x="672" y="319" font-size="18" font-weight="700" fill="#D96B2B" text-anchor="middle" opacity="0.85"><tspan x="672" dy="0">T3</tspan></text>
-<text x="548" y="376" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Film-directed selection</tspan></text>
+<text x="548" y="376" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Selection favors film items</tspan></text>
 <path d="M 456 388 L 640 388 L 584 410 L 512 410 Z" fill="#EAF2FF" stroke="#1764D8" stroke-width="3" opacity="0.82"/>
 <circle cx="424" cy="435" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="424" y="441" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="424" dy="0">F1</tspan></text>
 <circle cx="466" cy="453" r="20" fill="white" stroke="#1764D8" stroke-width="3"/><text x="466" y="459" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="466" dy="0">F2</tspan></text>

@@ -1,0 +1,442 @@
+from __future__ import annotations
+
+import csv
+import os
+import subprocess
+from pathlib import Path
+from xml.sax.saxutils import escape
+
+import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+FIGURE_DIR = ROOT / "figures"
+DATA_PREFIX = os.environ.get(
+    "SIM2_FILM_BOOST_DATA_PREFIX",
+    "simulation2_film_item_boost_2x2_refined",
+)
+OUTPUT_PREFIX = os.environ.get(
+    "SIM2_FILM_BOOST_OUTPUT_PREFIX",
+    "simulation2_control_cued_behavioral_film_boost_candidate",
+)
+PHASE_TOTALS_PATH = FIGURE_DIR / f"{DATA_PREFIX}_phase_totals.csv"
+SUMMARY_PATH = FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv"
+OUTPUT_SVG = FIGURE_DIR / f"{OUTPUT_PREFIX}.svg"
+OUTPUT_PNG = FIGURE_DIR / f"{OUTPUT_PREFIX}.png"
+OUTPUT_PDF = FIGURE_DIR / f"{OUTPUT_PREFIX}.pdf"
+INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
+
+SELECTED_FILM_ITEM_SUPPORT_BOOST = float(os.environ.get("SELECTED_FILM_ITEM_SUPPORT_BOOST", "1.0"))
+DRAW_FILM_REMINDER_DROP_BRACKETS = os.environ.get("DRAW_FILM_REMINDER_DROP_BRACKETS", "0") == "1"
+Y_GRID_STEP = float(os.environ.get("SIM2_FILM_BOOST_Y_GRID_STEP", "2"))
+Y_LABEL_STEP = float(os.environ.get("SIM2_FILM_BOOST_Y_LABEL_STEP", "2"))
+Y_MAX = 8.0
+
+WIDTH = 1504
+HEIGHT = 910
+FONT = "Arial, Helvetica, DejaVu Sans, sans-serif"
+TEXT_COLOR = "#111111"
+AXIS_COLOR = "#2F3A46"
+GRID_COLOR = "#DCE3EA"
+GRID_MINOR_COLOR = os.environ.get("SIM2_FILM_BOOST_GRID_MINOR_COLOR", "#EEF3F7")
+GRID_MAJOR_COLOR = os.environ.get("SIM2_FILM_BOOST_GRID_MAJOR_COLOR", GRID_COLOR)
+WEAK_FILL = "#F2F4F6"
+WEAK_EDGE = "#3D4B5C"
+STRONG_FILL = "#FFF0E6"
+STRONG_EDGE = "#D96B2B"
+
+TITLE_SIZE = 36
+COLUMN_SIZE = 30
+ROW_SIZE = 27
+AXIS_LABEL_SIZE = 23
+TICK_SIZE = 22
+LEGEND_SIZE = 24
+
+AXIS_STROKE = 4.0
+GRID_STROKE = 2.0
+GRID_MINOR_STROKE = float(os.environ.get("SIM2_FILM_BOOST_GRID_MINOR_STROKE", "1.2"))
+GRID_MAJOR_STROKE = float(os.environ.get("SIM2_FILM_BOOST_GRID_MAJOR_STROKE", str(GRID_STROKE)))
+BAR_STROKE = 4.0
+
+GRID_LEFT = 380
+GRID_RIGHT_X = 890
+AXIS_WIDTH = 415
+AXIS_HEIGHT = 255
+TOP_Y = 190
+BOTTOM_Y = 540
+BAR_WIDTH = 148
+PAIR_WIDTH = BAR_WIDTH * 2
+
+REMINDER_ORDER = [
+    ("No reminder", "Without pre-task reminder"),
+    ("With reminder", "With pre-task film reminder"),
+]
+TASK_ORDER = [
+    (1.0, "Weak task encoding", WEAK_FILL, WEAK_EDGE),
+    (2.0, "Strong task encoding", STRONG_FILL, STRONG_EDGE),
+]
+
+
+def read_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def write_summary(rows: list[dict]) -> None:
+    fieldnames = [
+        "retrieval_mode",
+        "retrieval_setting",
+        "start_drift_scale",
+        "film_item_support_boost",
+        "rejected_recall_drift_scale",
+        "reminder_condition",
+        "task_encoding_strength",
+        "task_mcf_scale",
+        "mean_film_items_recalled",
+    ]
+    with SUMMARY_PATH.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def coerce_row(row: dict[str, str]) -> dict:
+    row = dict(row)
+    for key in [
+        "start_drift_scale",
+        "film_item_support_boost",
+        "rejected_recall_drift_scale",
+        "task_mcf_scale",
+        "recall_probability_mass",
+    ]:
+        row[key] = float(row[key])
+    return row
+
+
+def svg_text(
+    x: float,
+    y: float,
+    content: str,
+    size: int,
+    weight: str = "normal",
+    anchor: str = "middle",
+    fill: str = TEXT_COLOR,
+    extra: str = "",
+) -> str:
+    return (
+        f'<text x="{x:.1f}" y="{y:.1f}" font-family="{FONT}" font-size="{size}" '
+        f'font-weight="{weight}" text-anchor="{anchor}" fill="{fill}" {extra}>'
+        f"{escape(str(content))}</text>"
+    )
+
+
+def svg_multiline(
+    x: float,
+    y: float,
+    content: str,
+    size: int,
+    weight: str = "normal",
+    anchor: str = "middle",
+    line_height: int = 33,
+) -> str:
+    lines = str(content).split("\n")
+    first_y = y - line_height * (len(lines) - 1) / 2
+    tspans = []
+    for index, line in enumerate(lines):
+        dy = 0 if index == 0 else line_height
+        tspans.append(f'<tspan x="{x:.1f}" dy="{dy:.1f}">{escape(line)}</tspan>')
+    return (
+        f'<text x="{x:.1f}" y="{first_y:.1f}" font-family="{FONT}" font-size="{size}" '
+        f'font-weight="{weight}" text-anchor="{anchor}" dominant-baseline="middle" fill="{TEXT_COLOR}">'
+        f"{''.join(tspans)}</text>"
+    )
+
+
+def svg_line(x1: float, y1: float, x2: float, y2: float, color: str, width: float) -> str:
+    return (
+        f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
+        f'stroke="{color}" stroke-width="{width}"/>'
+    )
+
+
+def svg_polyline(points: list[tuple[float, float]], color: str, width: float) -> str:
+    point_text = " ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+    return (
+        f'<polyline points="{point_text}" fill="none" stroke="{color}" '
+        f'stroke-width="{width}" stroke-linecap="round" stroke-linejoin="round"/>'
+    )
+
+
+def svg_rect(
+    x: float,
+    y: float,
+    width: float,
+    height: float,
+    fill: str,
+    stroke: str,
+    stroke_width: float,
+) -> str:
+    return (
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{width:.1f}" height="{height:.1f}" '
+        f'fill="{fill}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
+    )
+
+
+def value_to_y(axis_y: float, value: float) -> float:
+    return axis_y + AXIS_HEIGHT - (float(value) / Y_MAX) * AXIS_HEIGHT
+
+
+def tick_values(step: float) -> list[float]:
+    values = []
+    tick = 0.0
+    while tick <= Y_MAX + 1e-9:
+        values.append(tick)
+        tick += step
+    return values
+
+
+def should_label_tick(tick: float) -> bool:
+    return np.isclose((tick / Y_LABEL_STEP) % 1, 0) or np.isclose((tick / Y_LABEL_STEP) % 1, 1)
+
+
+def draw_axis(
+    axis_x: float,
+    axis_y: float,
+    values: dict[str, float],
+    show_ylabel: bool,
+    show_drop_bracket: bool,
+) -> list[str]:
+    parts = []
+    for tick in tick_values(Y_GRID_STEP):
+        y = value_to_y(axis_y, tick)
+        label_tick = should_label_tick(tick)
+        grid_color = GRID_MAJOR_COLOR if label_tick else GRID_MINOR_COLOR
+        grid_stroke = GRID_MAJOR_STROKE if label_tick else GRID_MINOR_STROKE
+        parts.append(svg_line(axis_x, y, axis_x + AXIS_WIDTH, y, grid_color, grid_stroke))
+        if label_tick:
+            tick_label = str(int(tick)) if float(tick).is_integer() else f"{tick:g}"
+            parts.append(
+                svg_text(
+                    axis_x - 18,
+                    y + 8,
+                    tick_label,
+                    TICK_SIZE,
+                    anchor="end",
+                )
+            )
+    parts.append(svg_line(axis_x, axis_y, axis_x, axis_y + AXIS_HEIGHT, AXIS_COLOR, AXIS_STROKE))
+    parts.append(
+        svg_line(
+            axis_x,
+            axis_y + AXIS_HEIGHT,
+            axis_x + AXIS_WIDTH,
+            axis_y + AXIS_HEIGHT,
+            AXIS_COLOR,
+            AXIS_STROKE,
+        )
+    )
+
+    bar_start = axis_x + (AXIS_WIDTH - PAIR_WIDTH) / 2
+    for index, (_, task_label, fill, edge) in enumerate(TASK_ORDER):
+        value = values[task_label]
+        bar_y = value_to_y(axis_y, value)
+        parts.append(
+            svg_rect(
+                bar_start + index * BAR_WIDTH,
+                bar_y,
+                BAR_WIDTH,
+                axis_y + AXIS_HEIGHT - bar_y,
+                fill,
+                edge,
+                BAR_STROKE,
+            )
+        )
+    if show_drop_bracket:
+        weak_value = values["Weak task encoding"]
+        strong_value = values["Strong task encoding"]
+        high_y = value_to_y(axis_y, max(weak_value, strong_value))
+        low_y = value_to_y(axis_y, min(weak_value, strong_value))
+        if abs(high_y - low_y) >= 3:
+            bar_start = axis_x + (AXIS_WIDTH - PAIR_WIDTH) / 2
+            bracket_x = bar_start + PAIR_WIDTH + 26
+            cap = 18
+            parts.append(
+                svg_polyline(
+                    [
+                        (bracket_x - cap, high_y),
+                        (bracket_x, high_y),
+                        (bracket_x, low_y),
+                        (bracket_x - cap, low_y),
+                    ],
+                    AXIS_COLOR,
+                    AXIS_STROKE,
+                )
+            )
+    if show_ylabel:
+        label_x = axis_x - 74
+        label_y = axis_y + AXIS_HEIGHT / 2
+        parts.append(
+            svg_text(
+                0,
+                0,
+                "Mean film items recalled",
+                AXIS_LABEL_SIZE,
+                extra=f'transform="translate({label_x:.1f} {label_y:.1f}) rotate(-90)"',
+            )
+        )
+    return parts
+
+
+def draw_legend(grid_center: float) -> list[str]:
+    legend_y = 855
+    patch_size = 28
+    first_label_width = 275
+    second_label_width = 300
+    gap = 62
+    total_width = patch_size + 14 + first_label_width + gap + patch_size + 14 + second_label_width
+    start_x = grid_center - total_width / 2
+    parts = []
+    x = start_x
+    for _, label, fill, edge in TASK_ORDER:
+        parts.append(svg_rect(x, legend_y - patch_size + 5, patch_size, patch_size, fill, edge, BAR_STROKE))
+        parts.append(svg_text(x + patch_size + 16, legend_y, label, LEGEND_SIZE, anchor="start"))
+        x += patch_size + 14 + (first_label_width if "Weak" in label else second_label_width) + gap
+    return parts
+
+
+def lookup_value(
+    rows: list[dict],
+    retrieval_setting: str,
+    boost: float,
+    reminder_condition: str,
+    task_scale: float,
+) -> dict:
+    matches = [
+        row
+        for row in rows
+        if row["retrieval_setting"] == retrieval_setting
+        and np.isclose(row["film_item_support_boost"], boost)
+        and row["reminder_condition"] == reminder_condition
+        and np.isclose(row["task_mcf_scale"], task_scale)
+        and row["phase"] == "film"
+    ]
+    if len(matches) != 1:
+        raise ValueError(
+            "Expected one film total for "
+            f"{retrieval_setting}, boost={boost}, reminder={reminder_condition}, task={task_scale}; "
+            f"found {len(matches)}."
+        )
+    return matches[0]
+
+
+def build_values():
+    rows = [coerce_row(row) for row in read_rows(PHASE_TOTALS_PATH)]
+    retrieval_rows = [
+        {
+            "row_label": "Unguided\nrecall",
+            "mode_label": "Unguided recall",
+            "retrieval_setting": "Unguided recall",
+            "boost": 0.0,
+        },
+        {
+            "row_label": "Deliberate\nfilm recall",
+            "mode_label": "Deliberate film recall",
+            "retrieval_setting": "Start-of-film reinstatement + film-item boost",
+            "boost": SELECTED_FILM_ITEM_SUPPORT_BOOST,
+        },
+    ]
+    values = {}
+    summary_rows = []
+    for retrieval in retrieval_rows:
+        for reminder_key, reminder_label in REMINDER_ORDER:
+            for task_scale, task_label, _, _ in TASK_ORDER:
+                row = lookup_value(
+                    rows,
+                    retrieval["retrieval_setting"],
+                    retrieval["boost"],
+                    reminder_key,
+                    task_scale,
+                )
+                values[(retrieval["row_label"], reminder_label, task_label)] = row[
+                    "recall_probability_mass"
+                ]
+                summary_rows.append(
+                    {
+                        "retrieval_mode": retrieval["mode_label"],
+                        "retrieval_setting": retrieval["retrieval_setting"],
+                        "start_drift_scale": row["start_drift_scale"],
+                        "film_item_support_boost": row["film_item_support_boost"],
+                        "rejected_recall_drift_scale": row["rejected_recall_drift_scale"],
+                        "reminder_condition": reminder_label,
+                        "task_encoding_strength": task_label,
+                        "task_mcf_scale": task_scale,
+                        "mean_film_items_recalled": row["recall_probability_mass"],
+                    }
+                )
+    write_summary(summary_rows)
+    return values
+
+
+def render_svg(values: dict) -> None:
+    axes = {
+        ("Unguided\nrecall", "Without pre-task reminder"): (GRID_LEFT, TOP_Y),
+        ("Unguided\nrecall", "With pre-task film reminder"): (GRID_RIGHT_X, TOP_Y),
+        ("Deliberate\nfilm recall", "Without pre-task reminder"): (GRID_LEFT, BOTTOM_Y),
+        ("Deliberate\nfilm recall", "With pre-task film reminder"): (GRID_RIGHT_X, BOTTOM_Y),
+    }
+    grid_center = (GRID_LEFT + GRID_RIGHT_X + AXIS_WIDTH) / 2
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">',
+        '<rect width="100%" height="100%" fill="white"/>',
+        svg_text(grid_center, 64, "Film recall by condition and retrieval mode", TITLE_SIZE, weight="bold"),
+        svg_text(GRID_LEFT + AXIS_WIDTH / 2, 142, "Without pre-task reminder", COLUMN_SIZE, weight="bold"),
+        svg_text(GRID_RIGHT_X + AXIS_WIDTH / 2, 142, "With pre-task film reminder", COLUMN_SIZE, weight="bold"),
+        svg_multiline(175, TOP_Y + AXIS_HEIGHT / 2, "Unguided\nrecall", ROW_SIZE, weight="bold"),
+        svg_multiline(175, BOTTOM_Y + AXIS_HEIGHT / 2, "Deliberate\nfilm recall", ROW_SIZE, weight="bold"),
+    ]
+    for (row_label, reminder_label), (axis_x, axis_y) in axes.items():
+        cell_values = {
+            task_label: values[(row_label, reminder_label, task_label)]
+            for _, task_label, _, _ in TASK_ORDER
+        }
+        parts.extend(
+            draw_axis(
+                axis_x,
+                axis_y,
+                cell_values,
+                show_ylabel=axis_x == GRID_LEFT,
+                show_drop_bracket=(
+                    DRAW_FILM_REMINDER_DROP_BRACKETS and reminder_label == "With pre-task film reminder"
+                ),
+            )
+        )
+    parts.extend(draw_legend(grid_center))
+    parts.append("</svg>")
+    OUTPUT_SVG.write_text("\n".join(parts))
+
+
+def export_outputs() -> None:
+    if not INKSCAPE.exists():
+        raise FileNotFoundError(f"Inkscape not found at {INKSCAPE}")
+    subprocess.run(
+        [str(INKSCAPE), str(OUTPUT_SVG), f"--export-filename={OUTPUT_PNG}"],
+        check=True,
+    )
+    subprocess.run(
+        [str(INKSCAPE), str(OUTPUT_SVG), f"--export-filename={OUTPUT_PDF}"],
+        check=True,
+    )
+
+
+def main() -> None:
+    values = build_values()
+    render_svg(values)
+    export_outputs()
+    print(OUTPUT_SVG)
+    print(OUTPUT_PNG)
+    print(OUTPUT_PDF)
+    print(SUMMARY_PATH)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
+<marker id="arrow-film" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1764D8"/></marker>
+<marker id="arrow-task" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#D96B2B"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#7A8490"/></marker>
+</defs>
+<rect x="0" y="0" width="740" height="500" fill="white"/>
+<text x="370" y="116" font-size="27" font-weight="700" fill="#111111" text-anchor="middle">
+  <tspan x="370" dy="0">Maintained film goal during deliberate recall</tspan>
+</text>
+
+<g transform="translate(0 86)">
+<rect x="24" y="96" width="198" height="142" rx="22" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="123" y="163" font-size="23" font-weight="700" fill="#3D4B5C" text-anchor="middle">
+  <tspan x="123" dy="0">Ongoing</tspan><tspan x="123" dy="26">context</tspan>
+</text>
+
+<rect x="24" y="262" width="198" height="142" rx="22" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="123" y="323" font-size="23" font-weight="700" fill="#1764D8" text-anchor="middle">
+  <tspan x="123" dy="0">Maintained</tspan><tspan x="123" dy="26">film goal</tspan>
+</text>
+
+<rect x="286" y="190" width="168" height="120" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="370" y="222" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
+  <tspan x="370" dy="0">Context-to-</tspan><tspan x="370" dy="24">feature memory</tspan><tspan x="370" dy="24">(MCF)</tspan>
+</text>
+
+<rect x="518" y="96" width="198" height="142" rx="22" fill="white" stroke="#1764D8" stroke-width="3"/>
+<text x="617" y="124" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
+  <tspan x="617" dy="0">Film candidates</tspan>
+</text>
+<circle cx="575" cy="166" r="18" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="575" y="172" font-size="17" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="575" dy="0">F1</tspan></text>
+<circle cx="617" cy="166" r="18" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="617" y="172" font-size="17" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="617" dy="0">F2</tspan></text>
+<circle cx="659" cy="166" r="18" fill="white" stroke="#1764D8" stroke-width="4"/>
+<text x="659" y="172" font-size="17" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="659" dy="0">F3</tspan></text>
+<text x="617" y="207" font-size="18" font-weight="700" fill="#1764D8" text-anchor="middle">
+  <tspan x="617" dy="0">temporal + goal</tspan><tspan x="617" dy="18">support</tspan>
+</text>
+
+<rect x="518" y="262" width="198" height="142" rx="22" fill="white" stroke="#7A8490" stroke-width="3"/>
+<text x="617" y="284" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
+  <tspan x="617" dy="0">Task competitors</tspan>
+</text>
+<circle cx="575" cy="326" r="18" fill="white" stroke="#E46C24" stroke-width="3" stroke-dasharray="5 4" opacity="0.85"/>
+<text x="575" y="332" font-size="17" font-weight="700" fill="#E46C24" text-anchor="middle" opacity="0.85"><tspan x="575" dy="0">T1</tspan></text>
+<circle cx="617" cy="326" r="18" fill="white" stroke="#E46C24" stroke-width="3" stroke-dasharray="5 4" opacity="0.85"/>
+<text x="617" y="332" font-size="17" font-weight="700" fill="#E46C24" text-anchor="middle" opacity="0.85"><tspan x="617" dy="0">T2</tspan></text>
+<circle cx="659" cy="326" r="18" fill="white" stroke="#E46C24" stroke-width="3" stroke-dasharray="5 4" opacity="0.85"/>
+<text x="659" y="332" font-size="17" font-weight="700" fill="#E46C24" text-anchor="middle" opacity="0.85"><tspan x="659" dy="0">T3</tspan></text>
+<text x="617" y="367" font-size="18" font-weight="700" fill="#7A8490" text-anchor="middle">
+  <tspan x="617" dy="0">temporal support</tspan><tspan x="617" dy="18">only</tspan>
+</text>
+
+<path d="M 222 167 L 286 226" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 222 333 L 286 274" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
+<path d="M 454 226 L 518 167" fill="none" stroke="#1764D8" stroke-width="3.5" marker-end="url(#arrow-film)"/>
+<path d="M 454 274 L 518 333" fill="none" stroke="#D96B2B" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow-task)"/>
+</g>
+</svg>

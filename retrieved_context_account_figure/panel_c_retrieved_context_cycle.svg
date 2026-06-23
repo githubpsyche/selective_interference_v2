@@ -3,7 +3,8 @@
 <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker>
 </defs>
 <rect x="0" y="0" width="740" height="500" fill="white"/>
-<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">C</tspan></text>
+<text x="16" y="50" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="16" dy="0">B</tspan></text>
+<text x="370" y="62" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Item-context associations</tspan></text>
 
 <rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
 <text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
