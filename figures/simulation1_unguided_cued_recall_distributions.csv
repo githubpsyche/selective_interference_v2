@@ -1,257 +1,257 @@
 reminder_condition,reminder_label,task_condition,task_mcf_scale,film_cue_reinstatement,first_cue_after,position,phase,recall_probability
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,1,film,0.0759999975562095
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,2,film,0.1074000000953674
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,3,film,0.1312000006437301
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,1,film,0.07599999755620956
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,2,film,0.10740000009536743
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,3,film,0.13120000064373016
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,4,film,0.1451999992132187
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,5,film,0.1741999983787536
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,5,film,0.17419999837875366
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,6,film,0.1834000051021576
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,7,film,0.209999993443489
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,7,film,0.20999999344348907
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,8,film,0.2142000049352646
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,9,film,0.2326000034809112
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,10,film,0.2422000020742416
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,11,film,0.2594000101089477
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,9,film,0.23260000348091125
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,10,film,0.24220000207424164
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,11,film,0.25940001010894775
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,12,film,0.259799987077713
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,13,film,0.251800000667572
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,14,film,0.245399996638298
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,15,film,0.2424000054597854
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,16,film,0.2355999946594238
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,17,break,0.1351999938488006
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,18,break,0.1059999987483024
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,19,break,0.0961999967694282
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,20,break,0.0794000029563903
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,21,break,0.0630000010132789
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,22,break,0.0548000000417232
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,23,break,0.0460000000894069
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,24,break,0.0368000008165836
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,25,break,0.0337999984622001
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,26,break,0.025000000372529
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,27,break,0.0238000005483627
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,28,break,0.0186000000685453
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,29,break,0.0137999998405575
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,30,break,0.0127999996766448
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,31,break,0.0092000002041459
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,32,break,0.0096000004559755
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,33,task,0.0055999998003244
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,34,task,0.0052000000141561
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,35,task,0.0062000001780688
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,36,task,0.0041999998502433
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,37,task,0.006800000090152
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,38,task,0.006000000052154
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,39,task,0.0052000000141561
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,40,task,0.0052000000141561
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,41,task,0.0062000001780688
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,42,task,0.006000000052154
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,43,task,0.0063999998383224
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,44,task,0.0114000001922249
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,45,task,0.0111999996006488
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,46,task,0.0175999999046325
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,47,task,0.0182000007480382
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,48,task,0.0218000002205371
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,49,filler,0.0275999996811151
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,50,filler,0.0408000014722347
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,51,filler,0.0438000001013278
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,52,filler,0.0571999996900558
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,53,filler,0.0744000002741813
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,54,filler,0.1000000014901161
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,14,film,0.24539999663829803
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,15,film,0.24240000545978546
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,16,film,0.23559999465942383
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,17,break,0.13519999384880066
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,18,break,0.10599999874830246
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,19,break,0.09619999676942825
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,20,break,0.07940000295639038
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,21,break,0.06300000101327896
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,22,break,0.05480000004172325
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,23,break,0.04600000008940697
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,24,break,0.03680000081658363
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,25,break,0.033799998462200165
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,26,break,0.02500000037252903
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,27,break,0.023800000548362732
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,28,break,0.01860000006854534
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,29,break,0.013799999840557575
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,30,break,0.012799999676644802
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,31,break,0.009200000204145908
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,32,break,0.009600000455975533
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,33,task,0.00559999980032444
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,34,task,0.005200000014156103
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,35,task,0.006200000178068876
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,36,task,0.00419999985024333
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,37,task,0.006800000090152025
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,38,task,0.006000000052154064
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,39,task,0.005200000014156103
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,40,task,0.005200000014156103
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,41,task,0.006200000178068876
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,42,task,0.006000000052154064
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,43,task,0.006399999838322401
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,44,task,0.01140000019222498
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,45,task,0.01119999960064888
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,46,task,0.01759999990463257
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,47,task,0.018200000748038292
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,48,task,0.021800000220537186
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,49,filler,0.02759999968111515
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,50,filler,0.040800001472234726
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,51,filler,0.043800000101327896
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,52,filler,0.05719999969005585
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,53,filler,0.07440000027418137
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,54,filler,0.10000000149011612
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,55,filler,0.1281999945640564
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,56,filler,0.1632000058889389
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,57,filler,0.1977999955415725
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,58,filler,0.229200005531311
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,59,filler,0.2737999856472015
-No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,60,filler,0.3350000083446502
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,57,filler,0.19779999554157257
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,58,filler,0.22920000553131104
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,59,filler,0.27379998564720154
+No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,60,filler,0.33500000834465027
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,61,filler,0.3953999876976013
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,62,filler,0.4498000144958496
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,63,filler,0.4896000027656555
 No reminder,Without pre-task reminder,Weak task encoding,1.0,0.9,0,64,filler,0.5271999835968018
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,1,film,0.0659999996423721
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,2,film,0.0832000002264976
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,3,film,0.1062000021338462
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,4,film,0.1213999986648559
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,5,film,0.1490000039339065
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,6,film,0.1555999964475631
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,7,film,0.1723999977111816
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,8,film,0.1829999983310699
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,9,film,0.1879999935626983
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,10,film,0.1930000036954879
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,1,film,0.06599999964237213
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,2,film,0.08320000022649765
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,3,film,0.10620000213384628
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,4,film,0.12139999866485596
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,5,film,0.14900000393390656
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,6,film,0.15559999644756317
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,7,film,0.17239999771118164
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,8,film,0.18299999833106995
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,9,film,0.18799999356269836
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,10,film,0.19300000369548798
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,11,film,0.1964000016450882
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,12,film,0.1985999941825866
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,13,film,0.1958000063896179
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,12,film,0.19859999418258667
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,13,film,0.19580000638961792
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,14,film,0.1923999935388565
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,15,film,0.1889999955892563
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,16,film,0.1720000058412552
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,17,break,0.0979999974370002
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,18,break,0.0776000022888183
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,19,break,0.0667999982833862
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,20,break,0.0478000007569789
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,21,break,0.048200000077486
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,22,break,0.0309999994933605
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,17,break,0.09799999743700027
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,18,break,0.07760000228881836
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,19,break,0.06679999828338623
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,20,break,0.04780000075697899
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,21,break,0.04820000007748604
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,22,break,0.03099999949336052
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,23,break,0.0272000003606081
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,24,break,0.0218000002205371
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,25,break,0.0189999993890523
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,26,break,0.0131999999284744
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,27,break,0.0108000002801418
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,28,break,0.0080000003799796
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,29,break,0.0093999998643994
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,30,break,0.0040000001899898
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,31,break,0.0038000000640749
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,32,break,0.0055999998003244
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,33,task,0.046799998730421
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,34,task,0.0608000010251998
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,35,task,0.0636000037193298
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,24,break,0.021800000220537186
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,25,break,0.01899999938905239
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,26,break,0.013199999928474426
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,27,break,0.01080000028014183
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,28,break,0.00800000037997961
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,29,break,0.009399999864399433
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,30,break,0.004000000189989805
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,31,break,0.003800000064074993
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,32,break,0.00559999980032444
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,33,task,0.046799998730421066
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,34,task,0.06080000102519989
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,35,task,0.06360000371932983
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,36,task,0.0674000009894371
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,37,task,0.0740000009536743
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,38,task,0.0821999981999397
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,39,task,0.0967999994754791
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,40,task,0.1084000021219253
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,41,task,0.1228000000119209
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,37,task,0.07400000095367432
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,38,task,0.08219999819993973
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,39,task,0.09679999947547913
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,40,task,0.10840000212192535
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,41,task,0.12280000001192093
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,42,task,0.1485999971628189
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,43,task,0.1627999991178512
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,44,task,0.1808000057935714
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,45,task,0.1946000009775161
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,43,task,0.16279999911785126
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,44,task,0.18080000579357147
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,45,task,0.19460000097751617
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,46,task,0.2199999988079071
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,47,task,0.2280000001192093
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,48,task,0.24719999730587
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,49,filler,0.0390000008046627
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,50,filler,0.0399999991059303
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,51,filler,0.0436000004410743
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,52,filler,0.0381999984383583
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,53,filler,0.0465999990701675
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,48,task,0.24719999730587006
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,49,filler,0.039000000804662704
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,50,filler,0.03999999910593033
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,51,filler,0.04360000044107437
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,52,filler,0.03819999843835831
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,53,filler,0.04659999907016754
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,54,filler,0.0568000003695488
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,55,filler,0.0714000016450882
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,56,filler,0.0781999975442886
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,57,filler,0.1146000027656555
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,58,filler,0.1448000073432922
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,59,filler,0.1749999970197677
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,60,filler,0.2222000062465667
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,61,filler,0.2723999917507171
-No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,62,filler,0.3323999941349029
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,56,filler,0.07819999754428864
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,57,filler,0.11460000276565552
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,58,filler,0.14480000734329224
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,59,filler,0.17499999701976776
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,60,filler,0.22220000624656677
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,61,filler,0.27239999175071716
+No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,62,filler,0.33239999413490295
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,63,filler,0.3790000081062317
 No reminder,Without pre-task reminder,Strong task encoding,2.0,0.9,0,64,filler,0.4284000098705292
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,1,film,0.0729999989271164
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,2,film,0.1011999994516372
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,2,film,0.10119999945163727
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,3,film,0.1120000034570694
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,4,film,0.1270000040531158
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,4,film,0.12700000405311584
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,5,film,0.1565999984741211
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,6,film,0.1689999997615814
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,7,film,0.1870000064373016
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,8,film,0.1935999989509582
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,9,film,0.2075999975204467
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,10,film,0.2166000008583068
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,11,film,0.2236000001430511
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,12,film,0.2249999940395355
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,13,film,0.2266000062227249
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,14,film,0.2111999988555908
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,6,film,0.16899999976158142
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,7,film,0.18700000643730164
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,8,film,0.19359999895095825
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,9,film,0.20759999752044678
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,10,film,0.21660000085830688
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,11,film,0.22360000014305115
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,12,film,0.22499999403953552
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,13,film,0.22660000622272491
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,14,film,0.21119999885559082
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,15,film,0.210999995470047
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,16,film,0.2108000069856643
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,17,break,0.1180000007152557
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,18,break,0.1022000014781951
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,16,film,0.21080000698566437
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,17,break,0.11800000071525574
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,18,break,0.10220000147819519
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,19,break,0.0803999975323677
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,20,break,0.0653999969363212
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,21,break,0.0504000000655651
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,22,break,0.0394000001251697
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,23,break,0.0302000008523464
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,24,break,0.0280000008642673
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,25,break,0.0233999993652105
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,26,break,0.0165999997407197
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,27,break,0.013600000180304
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,28,break,0.009800000116229
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,29,break,0.0093999998643994
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,30,break,0.0070000002160668
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,31,break,0.0052000000141561
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,32,break,0.0043999999761581
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,20,break,0.06539999693632126
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,21,break,0.05040000006556511
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,22,break,0.039400000125169754
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,23,break,0.03020000085234642
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,24,break,0.02800000086426735
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,25,break,0.023399999365210533
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,26,break,0.016599999740719795
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,27,break,0.01360000018030405
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,28,break,0.009800000116229057
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,29,break,0.009399999864399433
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,30,break,0.007000000216066837
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,31,break,0.005200000014156103
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,32,break,0.004399999976158142
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,33,task,0.1467999964952469
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,34,task,0.1263999938964843
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,34,task,0.12639999389648438
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,35,task,0.1103999987244606
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,36,task,0.0864000022411346
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,37,task,0.0707999989390373
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,38,task,0.0627999976277351
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,39,task,0.0538000017404556
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,40,task,0.0474000014364719
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,36,task,0.08640000224113464
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,37,task,0.07079999893903732
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,38,task,0.06279999762773514
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,39,task,0.05380000174045563
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,40,task,0.04740000143647194
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,41,task,0.0414000004529953
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,42,task,0.0388000011444091
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,43,task,0.0350000001490116
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,44,task,0.0350000001490116
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,45,task,0.0289999991655349
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,46,task,0.034400001168251
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,47,task,0.031599998474121
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,48,task,0.0373999997973442
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,49,filler,0.0401999987661838
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,50,filler,0.0419999994337558
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,51,filler,0.0538000017404556
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,52,filler,0.0608000010251998
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,53,filler,0.0758000016212463
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,54,filler,0.1027999967336654
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,55,filler,0.1187999993562698
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,42,task,0.03880000114440918
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,43,task,0.03500000014901161
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,44,task,0.03500000014901161
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,45,task,0.028999999165534973
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,46,task,0.03440000116825104
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,47,task,0.031599998474121094
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,48,task,0.03739999979734421
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,49,filler,0.04019999876618385
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,50,filler,0.041999999433755875
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,51,filler,0.05380000174045563
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,52,filler,0.06080000102519989
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,53,filler,0.07580000162124634
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,54,filler,0.10279999673366547
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,55,filler,0.11879999935626984
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,56,filler,0.1467999964952469
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,57,filler,0.1729999929666519
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,57,filler,0.17299999296665192
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,58,filler,0.2037999927997589
-With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,59,filler,0.2437999993562698
+With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,59,filler,0.24379999935626984
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,60,filler,0.3086000084877014
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,61,filler,0.3499999940395355
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,62,filler,0.3991999924182892
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,63,filler,0.4357999861240387
 With reminder,With pre-task film reminder,Weak task encoding,1.0,0.9,0,64,filler,0.483599990606308
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,1,film,0.0284000001847744
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,2,film,0.031599998474121
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,3,film,0.0394000001251697
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,4,film,0.0450000017881393
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,5,film,0.0533999986946582
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,6,film,0.0564000010490417
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,7,film,0.0621999986469745
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,8,film,0.0540000014007091
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,9,film,0.0621999986469745
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,10,film,0.0615999996662139
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,11,film,0.060199998319149
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,2,film,0.031599998474121094
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,3,film,0.039400000125169754
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,4,film,0.04500000178813934
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,5,film,0.05339999869465828
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,6,film,0.05640000104904175
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,7,film,0.062199998646974564
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,8,film,0.05400000140070915
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,9,film,0.062199998646974564
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,10,film,0.06159999966621399
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,11,film,0.06019999831914902
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,12,film,0.0560000017285347
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,13,film,0.0606000013649463
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,14,film,0.0557999983429908
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,15,film,0.0542000010609626
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,16,film,0.048599999397993
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,17,break,0.0267999991774559
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,18,break,0.0196000002324581
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,19,break,0.0170000009238719
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,20,break,0.0074000000022351
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,21,break,0.006800000090152
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,22,break,0.0055999998003244
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,23,break,0.0041999998502433
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,24,break,0.003000000026077
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,25,break,0.0020000000949949
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,26,break,0.0012000000569969
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,27,break,0.0015999999595806
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,28,break,0.0006000000284984
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,29,break,0.0015999999595806
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,30,break,0.0003999999898951
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,31,break,0.0012000000569969
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,32,break,0.0006000000284984
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,33,task,0.3443999886512756
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,34,task,0.3565999865531921
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,35,task,0.3558000028133392
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,13,film,0.060600001364946365
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,14,film,0.055799998342990875
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,15,film,0.05420000106096268
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,16,film,0.04859999939799309
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,17,break,0.026799999177455902
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,18,break,0.019600000232458115
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,19,break,0.017000000923871994
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,20,break,0.007400000002235174
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,21,break,0.006800000090152025
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,22,break,0.00559999980032444
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,23,break,0.00419999985024333
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,24,break,0.003000000026077032
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,25,break,0.0020000000949949026
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,26,break,0.0012000000569969416
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,27,break,0.0015999999595806003
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,28,break,0.0006000000284984708
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,29,break,0.0015999999595806003
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,30,break,0.00039999998989515007
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,31,break,0.0012000000569969416
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,32,break,0.0006000000284984708
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,33,task,0.34439998865127563
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,34,task,0.35659998655319214
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,35,task,0.35580000281333923
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,36,task,0.3513999879360199
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,37,task,0.3589999973773956
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,38,task,0.3576000034809112
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,37,task,0.35899999737739563
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,38,task,0.35760000348091125
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,39,task,0.3472000062465668
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,40,task,0.3497999906539917
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,41,task,0.3476000130176544
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,42,task,0.3240000009536743
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,43,task,0.3273999989032745
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,44,task,0.307200014591217
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,43,task,0.32739999890327454
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,44,task,0.30720001459121704
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,45,task,0.2906000018119812
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,46,task,0.3019999861717224
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,47,task,0.2858000099658966
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,48,task,0.2759999930858612
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,49,filler,0.0353999994695186
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,50,filler,0.0285999998450279
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,51,filler,0.0296000000089406
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,52,filler,0.0267999991774559
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,53,filler,0.0289999991655349
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,54,filler,0.0337999984622001
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,55,filler,0.0381999984383583
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,56,filler,0.0450000017881393
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,57,filler,0.0571999996900558
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,58,filler,0.0813999995589256
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,59,filler,0.1023999974131584
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,60,filler,0.1262000054121017
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,49,filler,0.03539999946951866
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,50,filler,0.028599999845027924
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,51,filler,0.029600000008940697
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,52,filler,0.026799999177455902
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,53,filler,0.028999999165534973
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,54,filler,0.033799998462200165
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,55,filler,0.03819999843835831
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,56,filler,0.04500000178813934
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,57,filler,0.05719999969005585
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,58,filler,0.08139999955892563
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,59,filler,0.10239999741315842
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,60,filler,0.12620000541210175
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,61,filler,0.147599995136261
-With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,62,filler,0.1814000010490417
+With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,62,filler,0.18140000104904175
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,63,filler,0.2303999960422516
 With reminder,With pre-task film reminder,Strong task encoding,2.0,0.9,0,64,filler,0.2606000006198883

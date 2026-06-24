@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import csv
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -12,9 +11,8 @@ from selective_interference_v2 import PHASE_COLORS, add_phase_bands
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures"
-SOURCE_CSV = FIGURE_DIR / "simulation1_start_drift_sweep_cued_spc.csv"
 OUTPUT_PREFIX = "simulation1_unguided_cued_recall_distributions"
-OUTPUT_CSV = FIGURE_DIR / f"{OUTPUT_PREFIX}.csv"
+SOURCE_CSV = FIGURE_DIR / f"{OUTPUT_PREFIX}.csv"
 
 PANEL_LETTER_FONTSIZE = 16
 PANEL_TITLE_FONTSIZE = 13
@@ -31,12 +29,13 @@ REMINDER_LABELS = {
     "With reminder": "With pre-task film reminder",
 }
 TASK_LABELS = {
-    "Weak encoding": "Weak task encoding",
-    "Strong encoding": "Strong task encoding",
+    "Weak task encoding": "Weak task encoding",
+    "Strong task encoding": "Strong task encoding",
 }
+TASK_ORDER = list(TASK_LABELS)
 TASK_COLORS = {
-    "Weak encoding": "#9CA3AF",
-    "Strong encoding": PHASE_COLORS["task"],
+    "Weak task encoding": "#9CA3AF",
+    "Strong task encoding": PHASE_COLORS["task"],
 }
 GRID_COLOR = "#E7EBF0"
 
@@ -51,28 +50,6 @@ def phase_labels() -> list[str]:
         + ["task"] * N_TASK
         + ["filler"] * N_FILLER
     )
-
-
-def write_filtered_csv(df: pd.DataFrame) -> None:
-    rows = []
-    for row in df.itertuples(index=False):
-        rows.append(
-            {
-                "reminder_condition": row.reminder_condition,
-                "reminder_label": REMINDER_LABELS[row.reminder_condition],
-                "task_condition": TASK_LABELS[row.task_condition],
-                "task_mcf_scale": row.task_mcf_scale,
-                "film_cue_reinstatement": row.film_cue_reinstatement,
-                "first_cue_after": row.first_cue_after,
-                "position": row.position,
-                "phase": row.phase,
-                "recall_probability": row.recall_probability,
-            }
-        )
-    with OUTPUT_CSV.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(rows)
 
 
 def add_panel_heading(axis, label: str, title: str, y: float = 0.86) -> None:
@@ -137,7 +114,7 @@ def plot_panel(axis, df: pd.DataFrame, reminder_condition: str) -> None:
         add_reminder_marker(axis)
 
     subset = df[df["reminder_condition"].eq(reminder_condition)]
-    for task_condition in ["Weak encoding", "Strong encoding"]:
+    for task_condition in TASK_ORDER:
         curve = subset[subset["task_condition"].eq(task_condition)].sort_values("position")
         axis.plot(
             curve["position"],
@@ -162,12 +139,25 @@ def plot_panel(axis, df: pd.DataFrame, reminder_condition: str) -> None:
 
 def main() -> None:
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
-    source = pd.read_csv(SOURCE_CSV)
-    df = source[source["start_drift_scale"].eq(0.0)].copy()
+    df = pd.read_csv(SOURCE_CSV)
+    required_columns = {
+        "reminder_condition",
+        "reminder_label",
+        "task_condition",
+        "task_mcf_scale",
+        "film_cue_reinstatement",
+        "first_cue_after",
+        "position",
+        "phase",
+        "recall_probability",
+    }
+    missing_columns = required_columns - set(df.columns)
+    if missing_columns:
+        missing = ", ".join(sorted(missing_columns))
+        raise ValueError(f"{SOURCE_CSV} is missing required column(s): {missing}")
     df = df[df["reminder_condition"].isin(["No reminder", "With reminder"])]
-    df = df[df["task_condition"].isin(["Weak encoding", "Strong encoding"])]
+    df = df[df["task_condition"].isin(TASK_ORDER)]
     df = df.sort_values(["reminder_condition", "task_mcf_scale", "position"])
-    write_filtered_csv(df)
 
     fig = plt.figure(figsize=(8.2, 7.8))
     outer = fig.add_gridspec(
@@ -195,8 +185,8 @@ def main() -> None:
     axis_a.tick_params(labelbottom=True)
 
     legend_handles = [
-        Line2D([0], [0], color=TASK_COLORS["Weak encoding"], linewidth=1.9, label=TASK_LABELS["Weak encoding"]),
-        Line2D([0], [0], color=TASK_COLORS["Strong encoding"], linewidth=1.9, label=TASK_LABELS["Strong encoding"]),
+        Line2D([0], [0], color=TASK_COLORS[task_condition], linewidth=1.9, label=TASK_LABELS[task_condition])
+        for task_condition in TASK_ORDER
     ]
     fig.legend(
         handles=legend_handles,
