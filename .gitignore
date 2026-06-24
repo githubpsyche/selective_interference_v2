@@ -21,6 +21,7 @@ _freeze/
 
 # Test/cache artifacts
 .pytest_cache/
+/tmp/
 
 # Editor / OS
 .vscode/
