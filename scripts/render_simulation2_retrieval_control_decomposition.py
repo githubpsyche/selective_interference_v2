@@ -16,7 +16,7 @@ DATA_PREFIX = os.environ.get(
 )
 OUTPUT_PREFIX = os.environ.get(
     "SIM2_RETRIEVAL_CONTROL_DECOMP_OUTPUT_PREFIX",
-    "simulation2_retrieval_control_decomposition_candidate",
+    "simulation2_retrieval_control_decomposition",
 )
 PHASE_TOTALS_PATH = FIGURE_DIR / f"{DATA_PREFIX}_phase_totals.csv"
 SUMMARY_PATH = FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv"

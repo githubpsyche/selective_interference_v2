@@ -1,9 +1,0 @@
-retrieval_mode,retrieval_setting,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,reminder_condition,task_encoding_strength,task_mcf_scale,mean_film_items_recalled
-Unguided recall,Unguided recall,0.0,0.0,1.0,No reminder,Weak task encoding,1.0,3.25560000538826
-Unguided recall,Unguided recall,0.0,0.0,1.0,No reminder,Strong task encoding,2.0,2.4440000131726265
-Unguided recall,Unguided recall,0.0,0.0,1.0,Film reminder,Weak task encoding,1.0,2.789599984884262
-Unguided recall,Unguided recall,0.0,0.0,1.0,Film reminder,Strong task encoding,2.0,0.7925999965518713
-Deliberate film recall,Start-of-film reinstatement + film-item boost,1.0,1.0,0.0,No reminder,Weak task encoding,1.0,7.613199979066849
-Deliberate film recall,Start-of-film reinstatement + film-item boost,1.0,1.0,0.0,No reminder,Strong task encoding,2.0,7.638000011444092
-Deliberate film recall,Start-of-film reinstatement + film-item boost,1.0,1.0,0.0,Film reminder,Weak task encoding,1.0,7.573599994182587
-Deliberate film recall,Start-of-film reinstatement + film-item boost,1.0,1.0,0.0,Film reminder,Strong task encoding,2.0,7.054999977350235

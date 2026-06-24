@@ -11,13 +11,21 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures"
-DATA_PREFIX = os.environ.get(
+
+
+def env_setting(name: str, legacy_name: str, default: str) -> str:
+    return os.environ.get(name, os.environ.get(legacy_name, default))
+
+
+DATA_PREFIX = env_setting(
+    "SIM2_CONTROL_CUED_DATA_PREFIX",
     "SIM2_FILM_BOOST_DATA_PREFIX",
-    "simulation2_film_item_boost_2x2_refined",
+    "simulation2_film_item_boost_2x2_start1_delibkappa0p5_boosts075_1",
 )
-OUTPUT_PREFIX = os.environ.get(
+OUTPUT_PREFIX = env_setting(
+    "SIM2_CONTROL_CUED_OUTPUT_PREFIX",
     "SIM2_FILM_BOOST_OUTPUT_PREFIX",
-    "simulation2_control_cued_behavioral_film_boost_candidate",
+    "simulation2_control_cued_behavioral",
 )
 PHASE_TOTALS_PATH = FIGURE_DIR / f"{DATA_PREFIX}_phase_totals.csv"
 SUMMARY_PATH = FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv"
@@ -26,10 +34,18 @@ OUTPUT_PNG = FIGURE_DIR / f"{OUTPUT_PREFIX}.png"
 OUTPUT_PDF = FIGURE_DIR / f"{OUTPUT_PREFIX}.pdf"
 INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
 
-SELECTED_FILM_ITEM_SUPPORT_BOOST = float(os.environ.get("SELECTED_FILM_ITEM_SUPPORT_BOOST", "1.0"))
-DRAW_FILM_REMINDER_DROP_BRACKETS = os.environ.get("DRAW_FILM_REMINDER_DROP_BRACKETS", "0") == "1"
-Y_GRID_STEP = float(os.environ.get("SIM2_FILM_BOOST_Y_GRID_STEP", "2"))
-Y_LABEL_STEP = float(os.environ.get("SIM2_FILM_BOOST_Y_LABEL_STEP", "2"))
+SELECTED_FILM_ITEM_SUPPORT_BOOST = float(
+    os.environ.get("SELECTED_FILM_ITEM_SUPPORT_BOOST", "1.0")
+)
+DRAW_FILM_REMINDER_DROP_BRACKETS = (
+    os.environ.get("DRAW_FILM_REMINDER_DROP_BRACKETS", "0") == "1"
+)
+Y_GRID_STEP = float(
+    env_setting("SIM2_CONTROL_CUED_Y_GRID_STEP", "SIM2_FILM_BOOST_Y_GRID_STEP", "2")
+)
+Y_LABEL_STEP = float(
+    env_setting("SIM2_CONTROL_CUED_Y_LABEL_STEP", "SIM2_FILM_BOOST_Y_LABEL_STEP", "2")
+)
 Y_MAX = 8.0
 
 WIDTH = 1504
@@ -38,8 +54,16 @@ FONT = "Arial, Helvetica, DejaVu Sans, sans-serif"
 TEXT_COLOR = "#111111"
 AXIS_COLOR = "#2F3A46"
 GRID_COLOR = "#DCE3EA"
-GRID_MINOR_COLOR = os.environ.get("SIM2_FILM_BOOST_GRID_MINOR_COLOR", "#EEF3F7")
-GRID_MAJOR_COLOR = os.environ.get("SIM2_FILM_BOOST_GRID_MAJOR_COLOR", GRID_COLOR)
+GRID_MINOR_COLOR = env_setting(
+    "SIM2_CONTROL_CUED_GRID_MINOR_COLOR",
+    "SIM2_FILM_BOOST_GRID_MINOR_COLOR",
+    "#EEF3F7",
+)
+GRID_MAJOR_COLOR = env_setting(
+    "SIM2_CONTROL_CUED_GRID_MAJOR_COLOR",
+    "SIM2_FILM_BOOST_GRID_MAJOR_COLOR",
+    GRID_COLOR,
+)
 WEAK_FILL = "#F2F4F6"
 WEAK_EDGE = "#3D4B5C"
 STRONG_FILL = "#FFF0E6"
@@ -54,8 +78,20 @@ LEGEND_SIZE = 24
 
 AXIS_STROKE = 4.0
 GRID_STROKE = 2.0
-GRID_MINOR_STROKE = float(os.environ.get("SIM2_FILM_BOOST_GRID_MINOR_STROKE", "1.2"))
-GRID_MAJOR_STROKE = float(os.environ.get("SIM2_FILM_BOOST_GRID_MAJOR_STROKE", str(GRID_STROKE)))
+GRID_MINOR_STROKE = float(
+    env_setting(
+        "SIM2_CONTROL_CUED_GRID_MINOR_STROKE",
+        "SIM2_FILM_BOOST_GRID_MINOR_STROKE",
+        "1.2",
+    )
+)
+GRID_MAJOR_STROKE = float(
+    env_setting(
+        "SIM2_CONTROL_CUED_GRID_MAJOR_STROKE",
+        "SIM2_FILM_BOOST_GRID_MAJOR_STROKE",
+        str(GRID_STROKE),
+    )
+)
 BAR_STROKE = 4.0
 
 GRID_LEFT = 380
