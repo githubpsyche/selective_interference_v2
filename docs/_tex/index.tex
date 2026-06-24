@@ -172,25 +172,24 @@ Retrieved-Context Account of Selective Interference}
 
 
 
-\abstract{In the trauma-film paradigm, visuospatial tasks performed
-after a later film reminder can reduce intrusion-like film access while
-leaving deliberate recall relatively intact. This selective interference
-effect is often treated as evidence that intrusion-like and deliberate
-remembering depend on differently vulnerable memory representations.
-Here we argue that the same dissociation may follow from how shared film
-and task associations are accessed differently under unguided and
-deliberately film-focused retrieval. We develop this alternative
-proposal in an emotional Context Maintenance and Retrieval (eCMR) model.
-In the model, a film reminder before the task causes task information to
-be encoded in a film-like context, allowing later film cues to also
-activate task-related competitors. Deliberate, film-focused retrieval is
-relatively spared because film memories are prioritized even when
-film-like context also brings task-related competitors to mind.
-Decomposing interference and retrieval control within a
-retrieved-context model therefore reproduces the selective interference
-effect and predicts how it manifests in the organization of recall over
-time. This motivates a more unified treatment of intrusion-like and
-deliberate remembering within a common computational framework. }
+\abstract{In the trauma-film paradigm, intrusive memories of a film can
+decrease when participants perform a visuospatial task after a later
+film reminder, while deliberate recall remains relatively intact. This
+selective interference effect is often treated as evidence that
+involuntary and deliberate remembering depend on different memory
+representations. Here we show that the same dissociation may follow
+without assuming separate representations. We develop this alternative
+proposal in an emotional Context Maintenance and Retrieval (eCMR) model
+that predicts sequences of film and non-film recall events. In the
+model, a film reminder before the task causes task information to be
+encoded in a film-like context, allowing later film cues to also
+activate task-related competitors and reduce unguided recall. Deliberate
+recall is relatively spared because retrieval focused on film content
+prioritizes film memories even when competitors are active. Decomposing
+retrieval control within a retrieved-context model further shows that
+other forms of control do not offer the same protection. This motivates
+a more unified treatment of intrusion-like and deliberate remembering
+within a common computational framework. }
 
 \keywords{intrusive memories, voluntary memory, trauma-film
 paradigm, visuospatial intervention, selective
@@ -400,6 +399,30 @@ values, or model output.}
 
 \end{figure}%
 
+Figure Figure~\ref{fig-empirical-examples} places this schematic target
+alongside exemplar trauma-film studies that vary in reminder timing and
+deliberate-memory test format.
+
+\begin{figure}[H]
+
+\caption{\label{fig-empirical-examples}\textbf{Empirical examples of
+selective interference across trauma-film paradigms.} Rows show three
+exemplar studies: a delayed-reminder diary-plus-recognition design, a
+delayed-reminder diary-plus-free-recall design, and a trauma-film-cued
+vigilance-intrusion-plus-recognition design. Left panels plot
+intrusion-like film access and right panels plot deliberate memory. Gray
+bars indicate comparison or rest conditions and orange bars indicate
+Tetris interference. Bar heights reproduce published condition means in
+native study units, so y-axis scales differ across outcomes.}
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{empirical_target_figure/empirical_selective_interference_examples.png}
+
+}
+
+\end{figure}%
+
 One prominent family of interpretations treats the selective
 interference effect as evidence that intrusion-supporting memory
 representations are more vulnerable to interference than representations
@@ -574,23 +597,23 @@ recognition decision.
 
 \begin{figure}[H]
 
-\caption{\label{fig-retrieved-context-encoding-associations}\textbf{Retrieved-context
-encoding mechanisms for selective interference.} \textbf{(A)}
-Gray-filled squares mark context states, and blue or orange circles mark
-film or task item representations linked to those states during
-encoding. Rows show baseline drift away from the film, pre-task reminder
-reinstatement, and strong task encoding after reminder reinstatement;
-brackets mark film-task context overlap. A film reminder presented
-before the task reinstates film-associated context before task items are
-encoded, and strong task encoding is shown as thicker task-item/context
-links formed in those film-overlapping states. \textbf{(B)} Arrows label
-the two learned mappings between item representations and context
-states. Context-to-feature memory cues candidate items from the current
-context; feature-to-context memory lets retrieved or externally
-presented items update the current context. Blue marks film items and
-film-associated context states, green marks reminder cues, orange marks
-task items and task-associated context states, and gray marks shared
-associative operations.}
+\caption{\label{fig-retrieved-context-encoding-associations}\textbf{Encoding
+and associative structure in the retrieved-context account.}
+\textbf{(A)} The model stores bidirectional item-context associations:
+context-to-feature associations cue candidate items from the current
+context, and feature-to-context associations reinstate context when an
+item is recalled or when a film reminder or test cue is presented. This
+associative structure determines which items can compete during later
+retrieval. \textbf{(B)} The interference intervention alters this
+structure during encoding. Without a pre-task reminder, task items are
+encoded in relatively distinct context states. With a pre-task film
+reminder, task encoding occurs after film-associated context has been
+reinstated. When task encoding is strong, task items become strongly
+linked to those film-overlapping context states. Thus, the same context
+that can cue film items can also cue task competitors during later
+retrieval. Blue marks film items or film-linked context, orange marks
+task items or task-linked context, green marks film reminder cues, and
+gray marks neutral, delay, comparison, or shared model structure.}
 
 \centering{
 
@@ -1455,19 +1478,20 @@ reminder.}
 
 \end{figure}%
 
-Without a film reminder, increasing the task encoding multiplier
-produces only modest loss of film recall and only modest gain in task
-recall, because task items become associated with later context states
-reached after drift away from the film. With a film reminder, the same
-task-encoding manipulation produces a larger drop in film-position
-recall and a larger rise in task-position recall. The with-reminder
-condition therefore shows that task encoding strength matters most when
-task items are encoded in a film-related context state. At the lowest
-and highest multiplier values, mean film recall in the no-reminder
-condition changes from 0.318 at task encoding multiplier 0.0 to 0.268 at
-multiplier 3.0, while mean task recall changes from 0.000 to 0.143. In
-the with-reminder condition, mean film recall changes from 0.306 to
-0.064, while mean task recall changes from 0.000 to 0.384.
+Without a pre-task film reminder, increasing the task encoding
+multiplier produces only modest loss of film recall and only modest gain
+in task recall, because task items become associated with later context
+states reached after drift away from the film. With a pre-task film
+reminder, the same task-encoding manipulation produces a larger drop in
+film-position recall and a larger rise in task-position recall. The
+condition with a pre-task film reminder therefore shows that task
+encoding strength matters most when task items are encoded in a
+film-related context state. At the lowest and highest multiplier values,
+mean film recall in the no-reminder condition changes from 0.318 at task
+encoding multiplier 0.0 to 0.268 at multiplier 3.0, while mean task
+recall changes from 0.000 to 0.143. In the condition with a pre-task
+film reminder, mean film recall changes from 0.306 to 0.064, while mean
+task recall changes from 0.000 to 0.384.
 
 \begin{figure}[H]
 
@@ -1567,14 +1591,13 @@ endpoint.
 \caption{\label{fig-simulation2-retrieval-control-decomposition}\textbf{Simulation
 2: different retrieval controls preserve film recall to different
 degrees.} Each control setting was evaluated at two endpoints of the
-interference manipulation: no reminder with weak task encoding, and film
-reminder with strong task encoding. Weak film cues were supplied
-periodically during recall in all conditions. \textbf{(A)} Mean
-film-item recall for each control setting at the two endpoints.
-\textbf{(B)} Absolute reduction in film recall from the low-interference
-endpoint to the high-interference endpoint. Start-of-film reinstatement
-and retrieval monitoring increase film recall in some conditions, but
-the smallest endpoint reductions occur when deliberate recall includes a
+interference manipulation: one without a pre-task reminder and with weak
+task encoding, and one with a pre-task film reminder and with strong
+task encoding. Weak film cues were supplied periodically during recall
+in all conditions. Mean film-item recall is shown for each control
+setting at the two endpoints. Start-of-film reinstatement and retrieval
+monitoring increase film recall in some conditions, but the smallest
+endpoint differences occur when deliberate recall includes a
 film-retrieval goal.}
 
 \centering{
@@ -1590,22 +1613,22 @@ film-retrieval goal.}
 \caption{\label{fig-simulation2-start-context-reinstatement}\textbf{Simulation
 2: start-of-film context reinstatement protects early encoded film
 positions.} Unguided recall was compared with start-of-film context
-reinstatement while the film-reminder/strong-task-encoding condition was
-held fixed and retrieval monitoring was disabled. Start-of-film context
-reinstatement initializes retrieval by drifting the current context
-toward the state present at the start of film encoding. Weak film cues
-were supplied periodically during recall. Shaded bands mark film, break,
-task, and filler positions; the green line marks the reminder
-immediately before task encoding. \textbf{(A)} Item accessibility before
-the first recall attempt. Reinstatement increases accessibility most
-strongly for early encoded film positions. \textbf{(B)} First recall
-probability distribution. Reinstatement shifts recall initiation toward
-early film positions. \textbf{(C)} Full recall probability distribution.
-The early-film bias remains visible across the recall period, while
-later film positions remain more vulnerable under reminder-linked strong
-task encoding. Start-of-film context reinstatement therefore protects
-early encoded film positions by shifting retrieval initiation toward the
-start of the film sequence.}
+reinstatement while the condition with a pre-task film reminder and
+strong task encoding was held fixed and retrieval monitoring was
+disabled. Start-of-film context reinstatement initializes retrieval by
+drifting the current context toward the state present at the start of
+film encoding. Weak film cues were supplied periodically during recall.
+Shaded bands mark film, break, task, and filler positions; the green
+line marks the reminder immediately before task encoding. \textbf{(A)}
+Item accessibility before the first recall attempt. Reinstatement
+increases accessibility most strongly for early encoded film positions.
+\textbf{(B)} First recall probability distribution. Reinstatement shifts
+recall initiation toward early film positions. \textbf{(C)} Full recall
+probability distribution. The early-film bias remains visible across the
+recall period, while later film positions remain more vulnerable under
+reminder-linked strong task encoding. Start-of-film context
+reinstatement therefore protects early encoded film positions by
+shifting retrieval initiation toward the start of the film sequence.}
 
 \centering{
 
@@ -1618,8 +1641,8 @@ start of the film sequence.}
 \begin{figure}[H]
 
 \caption{\label{fig-simulation2-target-monitoring-diagnostic}\textbf{Simulation
-2: retrieval monitoring supports return to film recall.} The
-film-reminder/strong-task-encoding condition was held fixed,
+2: retrieval monitoring supports return to film recall.} The condition
+with a pre-task film reminder and strong task encoding was held fixed,
 start-of-film context reinstatement was present, and retrieval
 monitoring strength was varied. Retrieval monitoring dampens context
 updating after non-film samples during deliberate recall. Weak film cues
