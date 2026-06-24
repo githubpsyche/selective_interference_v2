@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1710" width="1504" height="1710" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="1504" height="1710" fill="white"/>
-<image href="panel_b_contextual_associations.svg" x="0" y="0" width="1504" height="560"/>
-<image href="panel_c_retrieved_context_cycle.svg" x="0" y="580" width="740" height="500"/>
-<image href="panel_c_retrieval_control_candidate_v2.svg" x="764" y="580" width="740" height="500"/>
-<image href="panel_post_sample_context_updating.svg" x="0" y="1110" width="1504" height="590"/>
-<text x="18" y="1164" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">D</tspan></text>
-</svg>
