@@ -13,12 +13,12 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "empirical_target_figure"
 INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
 
-OUTPUT_BASE = OUT_DIR / "empirical_selective_interference_examples_candidate"
+OUTPUT_BASE = OUT_DIR / "empirical_selective_interference_examples"
 OUTPUT_SVG = OUTPUT_BASE.with_suffix(".svg")
 OUTPUT_PNG = OUTPUT_BASE.with_suffix(".png")
 OUTPUT_PDF = OUTPUT_BASE.with_suffix(".pdf")
 OUTPUT_CSV = OUTPUT_BASE.with_suffix(".csv")
-OUTPUT_CAPTION_BASE = OUT_DIR / "empirical_selective_interference_examples_candidate_with_caption"
+OUTPUT_CAPTION_BASE = OUT_DIR / "empirical_selective_interference_examples_with_caption"
 
 WIDTH = 1504
 HEIGHT = 1220

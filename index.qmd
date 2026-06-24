@@ -77,7 +77,7 @@ Bars are schematic and do not plot empirical counts, fitted values, or model out
 Figure @fig-empirical-examples places this schematic target alongside exemplar trauma-film studies that vary in reminder timing and deliberate-memory test format.
 
 ::: {#fig-empirical-examples fig-pos="H"}
-![](empirical_target_figure/empirical_selective_interference_examples_candidate.png){width=100%}
+![](empirical_target_figure/empirical_selective_interference_examples.png){width=100%}
 
 **Empirical examples of selective interference across trauma-film paradigms.**
 Rows show three exemplar studies: a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a trauma-film-cued vigilance-intrusion-plus-recognition design.

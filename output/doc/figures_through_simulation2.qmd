@@ -41,7 +41,7 @@ Figure 1. **Paradigm variables and canonical selective interference effect.** (A
 
 {{< pagebreak >}}
 
-![](../../empirical_target_figure/empirical_selective_interference_examples_candidate.png){width="100%"}
+![](../../empirical_target_figure/empirical_selective_interference_examples.png){width="100%"}
 
 Figure 2. **Empirical examples of selective interference across trauma-film paradigms.** Rows show three exemplar studies: a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a trauma-film-cued vigilance-intrusion-plus-recognition design. Left panels plot intrusion-like film access and right panels plot deliberate memory. Gray bars indicate comparison or rest conditions and orange bars indicate Tetris interference. Bar heights reproduce published condition means in native study units, so y-axis scales differ across outcomes.
 
