@@ -64,7 +64,7 @@ This decomposition lets the model ask when a task becomes a strong competitor fo
 @fig-empirical-target summarizes the modeled paradigm variables and the selective interference contrast.
 
 ::: {#fig-empirical-target fig-pos="H"}
-![](empirical_target_figure/empirical_target_composite.png){width=100%}
+![](figures/empirical_target/empirical_target_composite.png){width=100%}
 
 **Paradigm variables and canonical selective interference effect.**
 **(A)** The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, an intervening task, a post-task delay, and a later test of unguided or voluntary recall.
@@ -77,7 +77,7 @@ Bars are schematic and do not plot empirical counts, fitted values, or model out
 Figure @fig-empirical-examples places this schematic target alongside exemplar trauma-film studies that vary in reminder timing and deliberate-memory test format.
 
 ::: {#fig-empirical-examples fig-pos="H"}
-![](empirical_target_figure/empirical_selective_interference_examples.png){width=100%}
+![](figures/empirical_target/empirical_selective_interference_examples.png){width=100%}
 
 **Empirical examples of selective interference across trauma-film paradigms.**
 Rows show three exemplar studies: a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a trauma-film-cued vigilance-intrusion-plus-recognition design.
@@ -158,7 +158,7 @@ Recognition tests present a candidate film item for judgment; Simulation 4 model
 {{< pagebreak >}}
 
 ::: {#fig-retrieved-context-encoding-associations fig-pos="H"}
-![](retrieved_context_account_figure/retrieved_context_encoding_associations_composite.png){width=100%}
+![](figures/retrieved_context_account/retrieved_context_encoding_associations_composite.png){width=100%}
 
 **Encoding and associative structure in the retrieved-context account.**
 **(A)** The model stores bidirectional item-context associations: context-to-feature associations cue candidate items from the current context, and feature-to-context associations reinstate context when an item is recalled or when a film reminder or test cue is presented.
@@ -174,7 +174,7 @@ Blue marks film items or film-linked context, orange marks task items or task-li
 {{< pagebreak >}}
 
 ::: {#fig-retrieved-context-retrieval-operations fig-pos="H"}
-![](retrieved_context_account_figure/retrieved_context_retrieval_operations_composite.png){width=100%}
+![](figures/retrieved_context_account/retrieved_context_retrieval_operations_composite.png){width=100%}
 
 **Retrieval operations in the retrieved-context account.**
 **(A)** The upper box represents stored film and task associations; the lower boxes compare the context state used to begin unguided retrieval and deliberate recall.

@@ -35,13 +35,13 @@ This motivates a more unified treatment of intrusion-like and deliberate remembe
 
 # Introduction
 
-![](../empirical_target_figure/empirical_target_composite.png){width="100%"}
+![](../figures/empirical_target/empirical_target_composite.png){width="100%"}
 
 Figure 1. **Paradigm variables and canonical selective interference effect.** (A) The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, an intervening task, a post-task delay, and a later test of unguided or voluntary recall. (B) The canonical selective interference effect is summarized as a schematic crossing reminder condition, intervening task, and retrieval measure. Columns distinguish whether the task is preceded by a film reminder, rows distinguish intrusion-like film access from voluntary film recall, and paired bars compare film output after a comparison task versus an interference task. The interference task produces the largest reduction in intrusion-like film access when it follows a film reminder, whereas voluntary film recall shows a smaller reduction under the same conditions. Bars are schematic and do not plot empirical counts, fitted values, or model output.
 
 {{< pagebreak >}}
 
-![](../empirical_target_figure/empirical_selective_interference_examples.png){width="100%"}
+![](../figures/empirical_target/empirical_selective_interference_examples.png){width="100%"}
 
 Figure 2. **Empirical examples of selective interference across trauma-film paradigms.** Rows show three exemplar studies: a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a trauma-film-cued vigilance-intrusion-plus-recognition design. Left panels plot intrusion-like film access and right panels plot deliberate memory. Gray bars indicate comparison or rest conditions and orange bars indicate Tetris interference. Bar heights reproduce published condition means in native study units, so y-axis scales differ across outcomes.
 
@@ -49,13 +49,13 @@ Figure 2. **Empirical examples of selective interference across trauma-film para
 
 # A Retrieved-Context Account of Selective Interference
 
-![](../retrieved_context_account_figure/retrieved_context_encoding_associations_composite.png){width="100%"}
+![](../figures/retrieved_context_account/retrieved_context_encoding_associations_composite.png){width="100%"}
 
 Figure 3. **Encoding and associative structure in the retrieved-context account.** (A) The model stores bidirectional item-context associations: context-to-feature associations cue candidate items from the current context, and feature-to-context associations reinstate context when an item is recalled or when a film reminder or test cue is presented. This associative structure determines which items can compete during later retrieval. (B) The interference intervention alters this structure during encoding. Without a pre-task reminder, task items are encoded in relatively distinct context states. With a pre-task film reminder, task encoding occurs after film-associated context has been reinstated. When task encoding is strong, task items become strongly linked to those film-overlapping context states. Thus, the same context that can cue film items can also cue task competitors during later retrieval. Blue marks film items or film-linked context, orange marks task items or task-linked context, green marks film reminder cues, and gray marks neutral, delay, comparison, or shared model structure.
 
 {{< pagebreak >}}
 
-![](../retrieved_context_account_figure/retrieved_context_retrieval_operations_composite.png){width="100%"}
+![](../figures/retrieved_context_account/retrieved_context_retrieval_operations_composite.png){width="100%"}
 
 Figure 4. **Retrieval operations in the retrieved-context account.** (A) The upper box represents stored film and task associations; the lower boxes compare the context state used to begin unguided retrieval and deliberate recall. Unguided retrieval begins from ongoing context, which can support film and task candidates together. Deliberate recall can begin with start-of-film context reinstatement, giving stronger support to film candidates while task candidates remain weakly supported. (B) A maintained film goal provides an additional deliberate-retrieval signal through context-to-feature memory. Ongoing context can still cue both film items and task competitors, but the film goal adds support to film candidates rather than to task competitors. (C) Rows compare film recall, unmonitored task recall, and monitored task recall. A recalled item updates the next context through feature-to-context memory, and that next context cues later candidates. Without monitoring, recalling a task item can shift later context toward task candidates; with retrieval monitoring, that task-item update is dampened, preserving some film-candidate support. Blue marks film items, film-biased context, or stronger film support; orange marks task items, task-biased context, or stronger task support; gray marks shared context and associative operations. Dashed outlines or arrows mark weaker support or dampened updating, not unavailable candidates.
 
