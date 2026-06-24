@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1140" width="1504" height="1140" font-family="Arial, Helvetica, sans-serif">
 <rect x="0" y="0" width="1504" height="1140" fill="white"/>
-<image href="panel_c_retrieval_control_candidate_v2_no_letter.svg" x="0" y="0" width="740" height="500"/>
+<image href="panel_retrieval_onset_context_cueing.svg" x="0" y="0" width="740" height="500"/>
 <text x="18" y="84" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">A</tspan></text>
-<image href="panel_film_source_goal_candidate.svg" x="764" y="0" width="740" height="500"/>
+<image href="panel_maintained_film_goal.svg" x="764" y="0" width="740" height="500"/>
 <text x="782" y="84" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="782" dy="0">B</tspan></text>
-<image href="panel_d_post_sample_monitoring_candidate_v2.svg" x="0" y="540" width="1504" height="590"/>
-<rect x="0" y="540" width="90" height="85" fill="white"/>
+<image href="panel_post_sample_context_updating.svg" x="0" y="540" width="1504" height="590"/>
 <text x="18" y="594" font-size="44" font-weight="700" fill="#111111" text-anchor="start"><tspan x="18" dy="0">C</tspan></text>
 </svg>
