@@ -10,7 +10,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FIGURE_DIR = ROOT / "figures"
+FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
 
 
 def env_setting(name: str, legacy_name: str, default: str) -> str:

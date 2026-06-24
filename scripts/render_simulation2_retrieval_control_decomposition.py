@@ -9,7 +9,7 @@ from xml.sax.saxutils import escape
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FIGURE_DIR = ROOT / "figures"
+FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
 DATA_PREFIX = os.environ.get(
     "SIM2_RETRIEVAL_CONTROL_DECOMP_DATA_PREFIX",
     "simulation2_retrieval_control_decomposition",

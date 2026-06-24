@@ -12,7 +12,7 @@ from selective_interference_v2 import PHASE_COLORS
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FIGURE_DIR = ROOT / "figures"
+FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation1"
 FIGURE_STR = "simulation1_unguided_cued"
 OUTPUT_PREFIX = f"{FIGURE_STR}_sequence_summary"
 SEQUENCE_ROWS_PATH = FIGURE_DIR / f"{FIGURE_STR}_sequence_rows.csv"

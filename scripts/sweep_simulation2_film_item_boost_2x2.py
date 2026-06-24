@@ -28,7 +28,7 @@ from selective_interference_v2 import (
 
 PROJECT_ROOT = ""
 FIT_PATH = "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
-FIGURE_DIR = "figures"
+FIGURE_DIR = "figures/exploratory"
 OUTPUT_PREFIX = os.environ.get(
     "SIM2_FILM_ITEM_BOOST_2X2_PREFIX",
     "simulation2_film_item_boost_2x2",

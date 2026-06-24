@@ -8,7 +8,7 @@ from selective_interference_v2 import PHASE_COLORS, add_phase_bands
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FIGURE_DIR = ROOT / "figures"
+FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
 FIGURE_STR = "simulation2_target_monitoring_diagnostic"
 
 SPC_PATH = FIGURE_DIR / "simulation2_control_cued_spc.csv"

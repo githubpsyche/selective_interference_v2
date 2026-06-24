@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURES_DIR = ROOT / "figures"
+MANUSCRIPT_FIGURES_DIR = FIGURES_DIR / "manuscript"
 CAPTION_EXPORT_DIR = FIGURES_DIR / "captioned_exports"
 
 FIG_WIDTH = 10.8
@@ -29,7 +30,7 @@ WRITE_PDF = os.environ.get("CAPTION_COMPOSITES_WRITE_PDF", "1") != "0"
 
 CAPTIONED_FIGURES = [
     {
-        "image": FIGURES_DIR / "empirical_target" / "empirical_target_composite.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "empirical_target" / "empirical_target_composite.png",
         "output": CAPTION_EXPORT_DIR / "empirical_target_composite_with_caption",
         "title": "Paradigm variables and canonical selective interference effect.",
         "body": (
@@ -45,7 +46,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": FIGURES_DIR / "retrieved_context_account" / "retrieved_context_encoding_associations_composite.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "retrieved_context_account" / "retrieved_context_encoding_associations_composite.png",
         "output": CAPTION_EXPORT_DIR / "retrieved_context_encoding_associations_composite_with_caption",
         "title": "Encoding and associative structure in the retrieved-context account.",
         "body": (
@@ -63,7 +64,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": FIGURES_DIR / "retrieved_context_account" / "retrieved_context_retrieval_operations_composite.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "retrieved_context_account" / "retrieved_context_retrieval_operations_composite.png",
         "output": CAPTION_EXPORT_DIR / "retrieved_context_retrieval_operations_composite_with_caption",
         "title": "Retrieval operations in the retrieved-context account.",
         "body": (
@@ -85,7 +86,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation1_unguided_cued_sequence_summary.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation1" / "simulation1_unguided_cued_sequence_summary.png",
         "output": CAPTION_EXPORT_DIR / "simulation1_unguided_cued_sequence_summary_with_caption",
         "title": "Simulation 1: unguided film recall after task encoding.",
         "body": (
@@ -100,7 +101,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation1_unguided_cued_recall_distributions.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation1" / "simulation1_unguided_cued_recall_distributions.png",
         "output": CAPTION_EXPORT_DIR / "simulation1_unguided_cued_recall_distributions_with_caption",
         "title": "Simulation 1: reminder-linked task encoding redistributes recall probability by encoded position.",
         "body": (
@@ -116,7 +117,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation1_unguided_cued_context_overlap.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation1" / "simulation1_unguided_cued_context_overlap.png",
         "output": CAPTION_EXPORT_DIR / "simulation1_unguided_cued_context_overlap_with_caption",
         "title": "Simulation 1: reminder reinstatement increases overlap between film and task contexts.",
         "body": (
@@ -130,7 +131,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation2_control_cued_behavioral.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation2" / "simulation2_control_cued_behavioral.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_control_cued_behavioral_with_caption",
         "title": "Simulation 2: deliberate film recall is protected from reminder-linked task interference.",
         "body": (
@@ -147,7 +148,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation2_retrieval_control_decomposition.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation2" / "simulation2_retrieval_control_decomposition.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_retrieval_control_decomposition_with_caption",
         "title": "Simulation 2: different retrieval controls preserve film recall to different degrees.",
         "body": (
@@ -160,7 +161,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation2_start_context_reinstatement.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation2" / "simulation2_start_context_reinstatement.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_start_context_reinstatement_with_caption",
         "title": "Simulation 2: start-of-film context reinstatement protects early encoded film positions.",
         "body": (
@@ -181,7 +182,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation2_target_monitoring_diagnostic.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation2" / "simulation2_target_monitoring_diagnostic.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_target_monitoring_diagnostic_with_caption",
         "title": "Simulation 2: retrieval monitoring supports return to film recall.",
         "body": (
@@ -199,7 +200,7 @@ CAPTIONED_FIGURES = [
         ),
     },
     {
-        "image": ROOT / "figures" / "simulation2_film_retrieval_goal_context_overlap.png",
+        "image": MANUSCRIPT_FIGURES_DIR / "simulation2" / "simulation2_film_retrieval_goal_context_overlap.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_film_retrieval_goal_context_overlap_with_caption",
         "title": "Simulation 2: a film-retrieval goal separates film-directed retrieval from task context overlap.",
         "body": (

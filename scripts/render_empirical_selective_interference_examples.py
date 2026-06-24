@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "figures" / "empirical_target"
+OUT_DIR = ROOT / "figures" / "manuscript" / "empirical_target"
 CAPTION_EXPORT_DIR = ROOT / "figures" / "captioned_exports"
 INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
 

@@ -21,7 +21,7 @@ from selective_interference_v2 import (
 
 
 ROOT = Path(find_project_root())
-FIGURE_DIR = ROOT / "figures"
+FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
 OUTPUT_PREFIX = "simulation2_film_retrieval_goal_context_overlap"
 FIT_PATH = ROOT / "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
 

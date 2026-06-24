@@ -55,7 +55,7 @@ FIT_PATH = os.environ.get(
     "FIT_PATH",
     "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json",
 )
-FIGURE_DIR = os.environ.get("FIGURE_DIR", "figures")
+FIGURE_DIR = os.environ.get("FIGURE_DIR", "figures/exploratory")
 FIGURE_STR = os.environ.get(
     "FIGURE_STR",
     "simulation3_recall_drift_intentionality",
