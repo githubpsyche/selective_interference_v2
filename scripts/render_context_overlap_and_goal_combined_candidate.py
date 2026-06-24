@@ -32,7 +32,7 @@ class PlotParadigm:
 
 
 def simulation1_matrices():
-    import render_simulation1_context_overlap_candidate_one_row as sim1_overlap
+    import render_simulation1_unguided_cued_context_overlap as sim1_overlap
 
     paradigm = sim1_overlap.make_paradigm()
     matrices = {}
