@@ -99,6 +99,19 @@ from .paradigm import (
 from .typing import PhasedMemorySearch, PhasedMemorySearchCreateFn
 
 
+class RecognitionDiagnostics(NamedTuple):
+    """Probe-by-probe recognition audit metrics."""
+
+    mfc_current_context_evidence: Float[Array, " n_probes"]
+    old_probability: Float[Array, " n_probes"]
+    cmr_ia_temporal_similarity: Float[Array, " n_probes"]
+    cmr_ia_source_similarity: Float[Array, " n_probes"]
+    probe_context_to_item_support: Float[Array, " n_probes"]
+    film_context_to_item_mass: Float[Array, " n_probes"]
+    task_context_to_item_mass: Float[Array, " n_probes"]
+    film_to_task_support_ratio: Float[Array, " n_probes"]
+
+
 # ── Layer 1: Rate configuration ───────────────────────────────────
 
 
@@ -565,6 +578,196 @@ def apply_supplied_item_context_cue(
 
     no_cue = jnp.logical_or(cue_item == 0, cue_scale <= 0.0)
     return lax.cond(no_cue, lambda m: m, _apply, model)
+
+
+def recognition_evidence(
+    model: PhasedMemorySearch,
+    probe_item: Integer[Array, ""],
+    temporal_weight: Float[Array, ""] | float = 1.0,
+    source_weight: Float[Array, ""] | float = 1.0,
+) -> Float[Array, ""]:
+    """Score a supplied recognition probe against current context."""
+
+    def _score(m):
+        item = m.items[probe_item - 1]
+        temporal = jnp.dot(m.mfc.probe(item), m.context.state)
+        source = jnp.dot(m.emotion_mfc.probe(item), m.emotion_context.state)
+        return temporal_weight * temporal + source_weight * source
+
+    return lax.cond(probe_item == 0, lambda _: jnp.asarray(0.0), _score, model)
+
+
+def _unit_vector(vector: Float[Array, " n"]) -> Float[Array, " n"]:
+    norm = jnp.linalg.norm(vector)
+    return vector / jnp.maximum(norm, 1e-8)
+
+
+def _single_item_mask(
+    model: PhasedMemorySearch,
+    item_id: Integer[Array, ""],
+) -> Float[Array, " item_count"]:
+    safe_index = jnp.maximum(item_id - 1, 0)
+    value = jnp.where(item_id > 0, 1.0, 0.0)
+    return jnp.zeros_like(model.recallable, dtype=jnp.float32).at[safe_index].set(
+        value,
+    )
+
+
+def _item_mask(
+    model: PhasedMemorySearch,
+    item_ids: Integer[Array, " n_items"],
+) -> Float[Array, " item_count"]:
+    safe_indices = jnp.maximum(item_ids - 1, 0)
+    values = jnp.where(item_ids > 0, 1.0, 0.0)
+    return jnp.zeros_like(model.recallable, dtype=jnp.float32).at[safe_indices].set(
+        values,
+    )
+
+
+def recognition_probe_similarity(
+    model: PhasedMemorySearch,
+    probe_item: Integer[Array, ""],
+) -> tuple[Float[Array, ""], Float[Array, ""]]:
+    """CMR-IA-style similarity between current and probe-reinstated context."""
+
+    def _score(m):
+        item = m.items[probe_item - 1]
+        temporal_input = _unit_vector(m.mfc.probe(item))
+        source_input = _unit_vector(m.emotion_mfc.probe(item))
+        temporal = jnp.dot(m.context.state, temporal_input)
+        source = jnp.dot(m.emotion_context.state, source_input)
+        return temporal, source
+
+    return lax.cond(
+        probe_item == 0,
+        lambda _: (jnp.asarray(0.0), jnp.asarray(0.0)),
+        _score,
+        model,
+    )
+
+
+def recognition_context_to_item_support(
+    model: PhasedMemorySearch,
+    probe_item: Integer[Array, ""],
+    film_items: Integer[Array, " n_film"],
+    task_items: Integer[Array, " n_task"],
+) -> tuple[Float[Array, ""], Float[Array, ""], Float[Array, ""], Float[Array, ""]]:
+    """Context-to-item support available at a recognition-test moment."""
+    probe_mask = _single_item_mask(model, probe_item)
+    film_mask = _item_mask(model, film_items)
+    task_mask = _item_mask(model, task_items)
+
+    temporal_support = model.mcf.probe(model.context.state)
+    source_support = model.emotion_mcf.probe(model.emotion_context.state)
+    film_boost = model.film_item_support_boost * model.is_target
+    raw_support = temporal_support + source_support + film_boost
+    probe_support = jnp.sum(raw_support * probe_mask)
+    film_mass = jnp.sum(raw_support * film_mask)
+    task_mass = jnp.sum(raw_support * task_mask)
+    ratio = film_mass / jnp.maximum(task_mass, 1e-8)
+    return probe_support, film_mass, task_mass, ratio
+
+
+def apply_recognition_probe(
+    model: PhasedMemorySearch,
+    probe_item: Integer[Array, ""],
+    cue_scale: Float[Array, ""] | float,
+) -> PhasedMemorySearch:
+    """Update context from a recognition probe without output encoding."""
+    return apply_supplied_item_context_cue(model, probe_item, cue_scale)
+
+
+def simulate_sequential_recognition(
+    model: PhasedMemorySearch,
+    probes: Integer[Array, " n_probes"],
+    cue_scale: Float[Array, ""] | float,
+    threshold: Float[Array, ""] | float,
+    sensitivity: Float[Array, ""] | float,
+    temporal_weight: Float[Array, ""] | float = 1.0,
+    source_weight: Float[Array, ""] | float = 1.0,
+) -> tuple[
+    PhasedMemorySearch,
+    Float[Array, " n_probes"],
+    Float[Array, " n_probes"],
+]:
+    """Simulate a sequential old/new recognition test.
+
+    Probes reinstate context after their evidence is scored.  They do not
+    occupy recall slots, mark items unavailable, or update memory matrices.
+    """
+
+    def step(m, probe):
+        evidence = recognition_evidence(
+            m,
+            probe,
+            temporal_weight,
+            source_weight,
+        )
+        old_probability = 1.0 / (
+            1.0 + jnp.exp(-sensitivity * (evidence - threshold))
+        )
+        old_probability = jnp.where(probe == 0, 0.0, old_probability)
+        updated = apply_recognition_probe(m, probe, cue_scale)
+        return updated, (evidence, old_probability)
+
+    final_model, (evidences, old_probabilities) = lax.scan(step, model, probes)
+    return final_model, evidences, old_probabilities
+
+
+def simulate_sequential_recognition_diagnostics(
+    model: PhasedMemorySearch,
+    probes: Integer[Array, " n_probes"],
+    cue_scale: Float[Array, ""] | float,
+    threshold: Float[Array, ""] | float,
+    sensitivity: Float[Array, ""] | float,
+    film_items: Integer[Array, " n_film"],
+    task_items: Integer[Array, " n_task"],
+    temporal_weight: Float[Array, ""] | float = 1.0,
+    source_weight: Float[Array, ""] | float = 1.0,
+) -> tuple[PhasedMemorySearch, RecognitionDiagnostics]:
+    """Simulate sequential recognition and record pathway diagnostics."""
+
+    def step(m, probe):
+        evidence = recognition_evidence(
+            m,
+            probe,
+            temporal_weight,
+            source_weight,
+        )
+        old_probability = 1.0 / (
+            1.0 + jnp.exp(-sensitivity * (evidence - threshold))
+        )
+        old_probability = jnp.where(probe == 0, 0.0, old_probability)
+        temporal_similarity, source_similarity = recognition_probe_similarity(
+            m,
+            probe,
+        )
+        (
+            probe_support,
+            film_mass,
+            task_mass,
+            support_ratio,
+        ) = recognition_context_to_item_support(
+            m,
+            probe,
+            film_items,
+            task_items,
+        )
+        updated = apply_recognition_probe(m, probe, cue_scale)
+        diagnostics = RecognitionDiagnostics(
+            evidence,
+            old_probability,
+            temporal_similarity,
+            source_similarity,
+            probe_support,
+            film_mass,
+            task_mass,
+            support_ratio,
+        )
+        return updated, diagnostics
+
+    final_model, diagnostics = lax.scan(step, model, probes)
+    return final_model, diagnostics
 
 
 def _single_free_recall(

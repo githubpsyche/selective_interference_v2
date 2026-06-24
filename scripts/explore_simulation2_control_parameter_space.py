@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore")
 
 PROJECT_ROOT = ""
 FIT_PATH = "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
-FIGURE_DIR = "figures/exploratory"
+DATA_DIR = "figure_data/exploratory"
 OUTPUT_PREFIX = os.environ.get(
     "SIM2_OUTPUT_PREFIX",
     "simulation2_control_cued_parameter_exploration",
@@ -187,8 +187,8 @@ def build_retrieval_settings():
 def run_sweep():
     root = project_root()
     fit_path = root / FIT_PATH
-    figure_dir = root / FIGURE_DIR
-    output_base = figure_dir / OUTPUT_PREFIX
+    data_dir = root / DATA_DIR
+    output_base = data_dir / OUTPUT_PREFIX
 
     params, _ = load_fit_params(fit_path)
     paradigm = Paradigm(
@@ -429,7 +429,7 @@ def score_candidates(phase_path):
                     }
                 )
     root = project_root()
-    output = root / FIGURE_DIR / f"{OUTPUT_PREFIX}_scores.csv"
+    output = root / DATA_DIR / f"{OUTPUT_PREFIX}_scores.csv"
     write_rows(output, list(rows[0].keys()), rows)
     print(output)
     return output

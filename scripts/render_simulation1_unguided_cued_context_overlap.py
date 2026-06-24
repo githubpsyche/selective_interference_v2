@@ -22,6 +22,7 @@ from selective_interference_v2 import (
 
 ROOT = Path(find_project_root())
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation1"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation1"
 OUTPUT_PREFIX = "simulation1_unguided_cued_context_overlap"
 FIT_PATH = ROOT / "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
 
@@ -349,7 +350,7 @@ def main() -> None:
         film_context, task_context = trace_contexts(reminder_scales)
         matrices[reminder_condition] = context_overlap(film_context, task_context)
     write_rows(
-        FIGURE_DIR / f"{OUTPUT_PREFIX}.csv",
+        DATA_DIR / f"{OUTPUT_PREFIX}.csv",
         [
             "reminder_condition",
             "film_position",
@@ -359,7 +360,7 @@ def main() -> None:
         build_rows(matrices),
     )
     write_rows(
-        FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv",
+        DATA_DIR / f"{OUTPUT_PREFIX}_summary.csv",
         [
             "reminder_condition",
             "film_position",

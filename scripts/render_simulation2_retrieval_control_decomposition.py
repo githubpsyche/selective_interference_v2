@@ -10,6 +10,7 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation2"
 DATA_PREFIX = os.environ.get(
     "SIM2_RETRIEVAL_CONTROL_DECOMP_DATA_PREFIX",
     "simulation2_retrieval_control_decomposition",
@@ -18,8 +19,8 @@ OUTPUT_PREFIX = os.environ.get(
     "SIM2_RETRIEVAL_CONTROL_DECOMP_OUTPUT_PREFIX",
     "simulation2_retrieval_control_decomposition",
 )
-PHASE_TOTALS_PATH = FIGURE_DIR / f"{DATA_PREFIX}_phase_totals.csv"
-SUMMARY_PATH = FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv"
+PHASE_TOTALS_PATH = DATA_DIR / f"{DATA_PREFIX}_phase_totals.csv"
+SUMMARY_PATH = DATA_DIR / f"{OUTPUT_PREFIX}_summary.csv"
 OUTPUT_SVG = FIGURE_DIR / f"{OUTPUT_PREFIX}.svg"
 OUTPUT_PNG = FIGURE_DIR / f"{OUTPUT_PREFIX}.png"
 OUTPUT_PDF = FIGURE_DIR / f"{OUTPUT_PREFIX}.pdf"
@@ -136,6 +137,7 @@ def write_summary(rows: list[dict]) -> None:
         "high_endpoint_film_recall",
         "film_items_reduced",
     ]
+    SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
     with SUMMARY_PATH.open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
@@ -365,6 +367,7 @@ def draw_panel_a(summary: list[dict], center_values: list[float]) -> list[str]:
 
 
 def render_svg() -> None:
+    OUTPUT_SVG.parent.mkdir(parents=True, exist_ok=True)
     summary = build_summary()
     center_values = centers()
     parts = [

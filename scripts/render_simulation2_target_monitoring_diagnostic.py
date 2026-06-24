@@ -9,10 +9,11 @@ from selective_interference_v2 import PHASE_COLORS, add_phase_bands
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation2"
 FIGURE_STR = "simulation2_target_monitoring_diagnostic"
 
-SPC_PATH = FIGURE_DIR / "simulation2_control_cued_spc.csv"
-RECOVERY_PATH = FIGURE_DIR / "simulation2_control_cued_offtarget_recovery.csv"
+SPC_PATH = DATA_DIR / "simulation2_control_cued_spc.csv"
+RECOVERY_PATH = DATA_DIR / "simulation2_control_cued_offtarget_recovery.csv"
 
 START_DRIFT_SCALE = 1.0
 REMINDER_CONDITION = "With reminder"

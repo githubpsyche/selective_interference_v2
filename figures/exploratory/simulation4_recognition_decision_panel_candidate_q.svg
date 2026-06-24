@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 500" width="740" height="500" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/></marker><marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#178A4C"/></marker></defs>
+<rect x="0" y="0" width="740" height="500" fill="white"/>
+<text x="370" y="62" font-size="27" font-weight="700" fill="#111111" text-anchor="middle">Recognition decision</text>
+<circle cx="120" cy="158" r="34" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="120" y="167" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Probe</text>
+<line x1="158" y1="158" x2="250" y2="158" stroke="#3D4B5C" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="270" y="116" width="190" height="84" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+<text x="365" y="142" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="365" dy="0">Feature-to-</tspan><tspan x="365" dy="21">context memory</tspan><tspan x="365" dy="21">(MFC)</tspan></text>
+<line x1="460" y1="158" x2="554" y2="158" stroke="#178A4C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+<text x="508" y="133" font-size="20" font-weight="700" fill="#178A4C" text-anchor="middle">reinstates</text>
+<rect x="574" y="116" width="142" height="84" rx="18" fill="#EEF3F8" stroke="#178A4C" stroke-width="3"/>
+<text x="645" y="148" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="645" dy="0">Probe</tspan><tspan x="645" dy="23">context</tspan></text>
+<rect x="574" y="268" width="142" height="84" rx="18" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="645" y="300" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="645" dy="0">Current</tspan><tspan x="645" dy="23">test context</tspan></text>
+<path d="M 645 206 L 645 248" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 610 248 C 610 235 622 226 645 226 C 668 226 680 235 680 248" fill="none" stroke="#3D4B5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 610 248 C 610 261 622 270 645 270 C 668 270 680 261 680 248" fill="none" stroke="#3D4B5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="520" y="255" font-size="21" font-weight="700" fill="#111111" text-anchor="end">Comparison</text>
+<line x1="645" y1="354" x2="645" y2="394" stroke="#3D4B5C" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="554" y="394" width="182" height="76" rx="16" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="645" y="421" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="645" dy="0">Old/new</tspan><tspan x="645" dy="23">evidence</tspan></text>
+</svg>

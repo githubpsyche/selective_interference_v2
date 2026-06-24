@@ -9,6 +9,9 @@ Item IDs are 1-indexed and laid out contiguously::
 
     [1 … n_film] [n_film+1 … n_film+n_break] [… n_interference] [… n_filler]
 
+Recognition foils, when present, are appended after the study phases and
+are not included in the encoding phase arrays.
+
 Because JAX JIT requires fixed array shapes, parameter sweeps that
 vary a phase count (e.g. 4, 8, 16 interference items) must pre-allocate
 arrays at a ceiling size and zero-pad unused slots.  The ``make_*``
@@ -35,6 +38,7 @@ class Paradigm:
     n_break: int = 16       # break items between film and reminder
     n_interference: int = 16      # interference items after reminder
     n_filler: int = 16      # filler items before recall
+    n_foils: int = 0        # unstudied recognition foils after filler
 
     # Sweep ceilings (pre-allocated slots for parameter sweeps)
     n_break_max: int = 32   # max break items across sweep conditions
@@ -50,22 +54,46 @@ class Paradigm:
     @property
     def list_length(self) -> int:
         """Standard tier list length."""
-        return self.n_film + self.n_break + self.n_interference + self.n_filler
+        return (
+            self.n_film
+            + self.n_break
+            + self.n_interference
+            + self.n_filler
+            + self.n_foils
+        )
 
     @property
     def interference_extended_list_length(self) -> int:
         """Interference-extended tier list length."""
-        return self.n_film + self.n_break + self.n_interference_max + self.n_filler
+        return (
+            self.n_film
+            + self.n_break
+            + self.n_interference_max
+            + self.n_filler
+            + self.n_foils
+        )
 
     @property
     def break_extended_list_length(self) -> int:
         """Break-extended tier list length."""
-        return self.n_film + self.n_break_max + self.n_interference + self.n_filler
+        return (
+            self.n_film
+            + self.n_break_max
+            + self.n_interference
+            + self.n_filler
+            + self.n_foils
+        )
 
     @property
     def filler_extended_list_length(self) -> int:
         """Filler-extended tier list length."""
-        return self.n_film + self.n_break + self.n_interference + self.n_filler_max
+        return (
+            self.n_film
+            + self.n_break
+            + self.n_interference
+            + self.n_filler_max
+            + self.n_foils
+        )
 
     # -- Standard-tier item arrays ----------------------------------------
 
@@ -90,6 +118,12 @@ class Paradigm:
         """Item IDs for the filler phase."""
         s = self.n_film + self.n_break + self.n_interference + 1
         return jnp.arange(s, s + self.n_filler)
+
+    @property
+    def foil_items(self) -> jax.Array:
+        """Item IDs for unstudied recognition foils."""
+        s = self.n_film + self.n_break + self.n_interference + self.n_filler + 1
+        return jnp.arange(s, s + self.n_foils)
 
     # -- Extended-tier item arrays ----------------------------------------
 
@@ -236,6 +270,7 @@ def make_is_emotional(
     paradigm: Paradigm,
     film_emotional: bool = False,
     interference_emotional: bool = False,
+    foil_emotional: bool = False,
 ) -> jax.Array:
     """Build per-item emotional flag array for the standard tier.
 
@@ -247,6 +282,8 @@ def make_is_emotional(
         Whether film items are emotional (1.0).
     interference_emotional : bool
         Whether interference items are emotional (1.0).
+    foil_emotional : bool
+        Whether recognition foils are emotional/source-matched (1.0).
 
     Returns
     -------
@@ -259,6 +296,14 @@ def make_is_emotional(
     if interference_emotional:
         start = paradigm.n_film + paradigm.n_break
         arr = arr.at[start:start + paradigm.n_interference].set(1.0)
+    if foil_emotional:
+        start = (
+            paradigm.n_film
+            + paradigm.n_break
+            + paradigm.n_interference
+            + paradigm.n_filler
+        )
+        arr = arr.at[start:start + paradigm.n_foils].set(1.0)
     return arr
 
 

@@ -22,6 +22,7 @@ from selective_interference_v2 import (
 
 ROOT = Path(find_project_root())
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation2"
 OUTPUT_PREFIX = "simulation2_film_retrieval_goal_context_overlap"
 FIT_PATH = ROOT / "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
 
@@ -374,7 +375,7 @@ def main() -> None:
         ),
     }
     write_rows(
-        FIGURE_DIR / f"{OUTPUT_PREFIX}.csv",
+        DATA_DIR / f"{OUTPUT_PREFIX}.csv",
         [
             "panel",
             "reminder_condition",
@@ -388,7 +389,7 @@ def main() -> None:
         build_rows(matrices),
     )
     write_rows(
-        FIGURE_DIR / f"{OUTPUT_PREFIX}_summary.csv",
+        DATA_DIR / f"{OUTPUT_PREFIX}_summary.csv",
         [
             "panel",
             "reminder_condition",

@@ -28,7 +28,7 @@ from selective_interference_v2 import (
 
 PROJECT_ROOT = ""
 FIT_PATH = "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json"
-FIGURE_DIR = "figures/manuscript/simulation2"
+DATA_DIR = "figure_data/manuscript/simulation2"
 OUTPUT_PREFIX = os.environ.get(
     "SIM2_RETRIEVAL_CONTROL_DECOMP_PREFIX",
     "simulation2_retrieval_control_decomposition",
@@ -200,8 +200,8 @@ def retrieval_packages() -> list[dict]:
 
 def run_sweep():
     root = project_root()
-    figure_dir = root / FIGURE_DIR
-    output_base = figure_dir / OUTPUT_PREFIX
+    data_dir = root / DATA_DIR
+    output_base = data_dir / OUTPUT_PREFIX
 
     params, _ = load_fit_params(root / FIT_PATH)
     paradigm = Paradigm(

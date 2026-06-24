@@ -56,6 +56,7 @@ FIT_PATH = os.environ.get(
     "results/fits/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json",
 )
 FIGURE_DIR = os.environ.get("FIGURE_DIR", "figures/exploratory")
+DATA_DIR = os.environ.get("FIGURE_DATA_DIR", "figure_data/exploratory")
 FIGURE_STR = os.environ.get(
     "FIGURE_STR",
     "simulation3_recall_drift_intentionality",
@@ -576,6 +577,7 @@ def main() -> None:
 
     fit_path = project_root / FIT_PATH
     figure_dir = project_root / FIGURE_DIR if FIGURE_DIR else None
+    data_dir = project_root / DATA_DIR if DATA_DIR else None
 
     params, n_subjects = load_fit_params(fit_path)
     paradigm = Paradigm(
@@ -682,9 +684,9 @@ def main() -> None:
             "intentionality_gap": high_start - low_start,
         })
 
-    if figure_dir is not None and FIGURE_STR:
+    if data_dir is not None and FIGURE_STR:
         write_rows(
-            figure_dir / f"{FIGURE_STR}_spc.csv",
+            data_dir / f"{FIGURE_STR}_spc.csv",
             [
                 "retrieval_condition",
                 SWEEP_COLUMN,
@@ -695,7 +697,7 @@ def main() -> None:
             spc_rows,
         )
         write_rows(
-            figure_dir / f"{FIGURE_STR}_phase_totals.csv",
+            data_dir / f"{FIGURE_STR}_phase_totals.csv",
             [
                 "retrieval_condition",
                 SWEEP_COLUMN,
@@ -705,7 +707,7 @@ def main() -> None:
             phase_rows,
         )
         write_rows(
-            figure_dir / f"{FIGURE_STR}_intentionality_gap.csv",
+            data_dir / f"{FIGURE_STR}_intentionality_gap.csv",
             [
                 SWEEP_COLUMN,
                 "low_start_label",

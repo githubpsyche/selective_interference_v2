@@ -11,14 +11,16 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "figures" / "manuscript" / "empirical_target"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "empirical_target"
 CAPTION_EXPORT_DIR = ROOT / "figures" / "captioned_exports"
 INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
 
 OUTPUT_BASE = OUT_DIR / "empirical_selective_interference_examples"
+OUTPUT_DATA_BASE = DATA_DIR / "empirical_selective_interference_examples"
 OUTPUT_SVG = OUTPUT_BASE.with_suffix(".svg")
 OUTPUT_PNG = OUTPUT_BASE.with_suffix(".png")
 OUTPUT_PDF = OUTPUT_BASE.with_suffix(".pdf")
-OUTPUT_CSV = OUTPUT_BASE.with_suffix(".csv")
+OUTPUT_CSV = OUTPUT_DATA_BASE.with_suffix(".csv")
 OUTPUT_CAPTION_BASE = CAPTION_EXPORT_DIR / "empirical_selective_interference_examples_with_caption"
 
 WIDTH = 1504
@@ -383,6 +385,7 @@ def save_caption_composite() -> None:
 
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
     CAPTION_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     write_data_csv()
     export_svg()

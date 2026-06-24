@@ -11,8 +11,9 @@ from selective_interference_v2 import PHASE_COLORS, add_phase_bands
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation1"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation1"
 OUTPUT_PREFIX = "simulation1_unguided_cued_recall_distributions"
-SOURCE_CSV = FIGURE_DIR / f"{OUTPUT_PREFIX}.csv"
+SOURCE_CSV = DATA_DIR / f"{OUTPUT_PREFIX}.csv"
 
 PANEL_LETTER_FONTSIZE = 16
 PANEL_TITLE_FONTSIZE = 13

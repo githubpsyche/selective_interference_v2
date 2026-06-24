@@ -13,10 +13,11 @@ from selective_interference_v2 import PHASE_COLORS
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation1"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation1"
 FIGURE_STR = "simulation1_unguided_cued"
 OUTPUT_PREFIX = f"{FIGURE_STR}_sequence_summary"
-SEQUENCE_ROWS_PATH = FIGURE_DIR / f"{FIGURE_STR}_sequence_rows.csv"
-PHASE_TOTALS_PATH = FIGURE_DIR / f"{FIGURE_STR}_phase_totals_sequence_summary.csv"
+SEQUENCE_ROWS_PATH = DATA_DIR / f"{FIGURE_STR}_sequence_rows.csv"
+PHASE_TOTALS_PATH = DATA_DIR / f"{FIGURE_STR}_phase_totals_sequence_summary.csv"
 
 PANEL_LETTER_FONTSIZE = 16
 PANEL_TITLE_FONTSIZE = 13

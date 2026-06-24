@@ -11,11 +11,12 @@ from selective_interference_v2 import PHASE_COLORS, add_phase_bands
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURE_DIR = ROOT / "figures" / "manuscript" / "simulation2"
+DATA_DIR = ROOT / "figure_data" / "manuscript" / "simulation2"
 FIGURE_STR = "simulation2_start_context_reinstatement"
 
-SUPPORT_PATH = FIGURE_DIR / f"{FIGURE_STR}_support.csv"
-PFR_PATH = FIGURE_DIR / f"{FIGURE_STR}_pfr.csv"
-SPC_PATH = FIGURE_DIR / f"{FIGURE_STR}_spc.csv"
+SUPPORT_PATH = DATA_DIR / f"{FIGURE_STR}_support.csv"
+PFR_PATH = DATA_DIR / f"{FIGURE_STR}_pfr.csv"
+SPC_PATH = DATA_DIR / f"{FIGURE_STR}_spc.csv"
 
 PANEL_LETTER_FONTSIZE = 16
 PANEL_TITLE_FONTSIZE = 13
