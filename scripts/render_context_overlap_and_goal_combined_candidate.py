@@ -46,7 +46,7 @@ def simulation1_matrices():
 
 
 def goal_matrices():
-    import render_simulation2_maintained_film_goal_context_similarity_candidate as goal_overlap
+    import render_simulation2_film_retrieval_goal_context_overlap as goal_overlap
 
     paradigm, film_context, task_context = goal_overlap.trace_high_interference_contexts()
     matrices = {
