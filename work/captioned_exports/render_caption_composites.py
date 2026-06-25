@@ -216,10 +216,32 @@ CAPTIONED_FIGURES = [
             "a route to film recall that depends less on temporal context remaining selective for film items."
         ),
     },
+    {
+        "image": ROOT / "work" / "simulation4_recognition_full_figure" / "item_context_recognition.png",
+        "output": CAPTION_EXPORT_DIR / "item_context_recognition_with_caption",
+        "title": "Item-to-context retrieval bypasses reminder-linked task interference.",
+        "body": (
+            "(A) CMR stores bidirectional associations between item features and context. Feature-to-context memory (MFC; green) "
+            "lets an available item reinstate its associated context, whereas context-to-feature memory (MCF; red) lets context "
+            "cue candidate items. "
+            "(B) Reduced schematics show selected readouts from the MFC and MCF associative networks. C1-C4 are example context "
+            "units/features, and film/task circles are example item units. When film-associated context cues items through MCF, "
+            "task items encoded in overlapping reminder-linked context can compete with film items. When a film item reinstates "
+            "context through MFC, the readout targets context units, so task items are not competitors in that step. "
+            "(C) In recognition, the tested film item is already available. Its associated context is compared with ongoing test "
+            "context; stronger matches provide stronger evidence that the item appeared in the film. "
+            "(D) Film recognition accuracy is plotted across the same reminder and task-encoding conditions used in the recall "
+            "simulations. Accuracy is corrected for endorsing unstudied film-like lures by subtracting false-alarm rate from hit "
+            "rate. The reminder-plus-strong-task condition does not produce a corresponding reduction in recognition accuracy. "
+            "Green marks the MFC/item-to-context route, red marks the MCF/context-to-item route, blue marks film items, orange marks "
+            "task items, and gray marks shared context or item-layer structure."
+        ),
+        "top_caption_gap": 0.010,
+    },
 ]
 
 
-def save_caption_composite(image_path, output_base, title, body):
+def save_caption_composite(image_path, output_base, title, body, top_caption_gap=TOP_CAPTION_GAP):
     image = plt.imread(str(image_path))
     image_aspect = image.shape[0] / image.shape[1]
     image_height = FIG_WIDTH * image_aspect
@@ -232,7 +254,7 @@ def save_caption_composite(image_path, output_base, title, body):
     axis.imshow(image)
     axis.axis("off")
 
-    y = image_bottom - TOP_CAPTION_GAP
+    y = image_bottom - top_caption_gap
     fig.text(0.02, y, title, fontsize=TITLE_FONTSIZE, fontweight="bold", ha="left", va="top")
     y -= TITLE_GAP
     for line in body_lines:
@@ -249,7 +271,13 @@ def save_caption_composite(image_path, output_base, title, body):
 def main():
     CAPTION_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     for item in CAPTIONED_FIGURES:
-        save_caption_composite(item["image"], item["output"], item["title"], item["body"])
+        save_caption_composite(
+            item["image"],
+            item["output"],
+            item["title"],
+            item["body"],
+            item.get("top_caption_gap", TOP_CAPTION_GAP),
+        )
         print(item["output"])
 
 
