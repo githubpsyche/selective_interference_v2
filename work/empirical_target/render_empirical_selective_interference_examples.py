@@ -380,7 +380,6 @@ def save_caption_composite() -> None:
         y -= 0.030
     fig.savefig(f"{OUTPUT_CAPTION_BASE}.png", bbox_inches="tight", dpi=600)
     fig.savefig(f"{OUTPUT_CAPTION_BASE}.svg", bbox_inches="tight")
-    fig.savefig(f"{OUTPUT_CAPTION_BASE}.pdf", bbox_inches="tight")
     plt.close(fig)
 
 

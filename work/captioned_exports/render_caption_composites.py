@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 import textwrap
 
@@ -16,7 +15,6 @@ WRAP_WIDTH = 142
 TITLE_GAP = 0.045
 LINE_STEP = 0.030
 TOP_CAPTION_GAP = 0.080
-WRITE_PDF = os.environ.get("CAPTION_COMPOSITES_WRITE_PDF", "1") != "0"
 
 # Manuscript-facing figure font hierarchy:
 # raw SVG schematics use 44 panel letters, 27-28 panel titles,
@@ -263,8 +261,6 @@ def save_caption_composite(image_path, output_base, title, body, top_caption_gap
 
     fig.savefig(f"{output_base}.png", bbox_inches="tight", dpi=600)
     fig.savefig(f"{output_base}.svg", bbox_inches="tight")
-    if WRITE_PDF:
-        fig.savefig(f"{output_base}.pdf", bbox_inches="tight")
     plt.close(fig)
 
 
