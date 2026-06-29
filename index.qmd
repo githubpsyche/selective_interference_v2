@@ -1,6 +1,6 @@
 ---
-title: "Intrusive and Voluntary Memory from a Single System: A Retrieved-Context Account of Selective Interference"
-shorttitle: "Intrusive and Voluntary Memory from a Single System"
+title: "A retrieved-context account of selective interference in intrusive and voluntary remembering"
+shorttitle: "Retrieved context and selective interference"
 author:
   - name: Jordan B Gunn
     affiliations:
@@ -31,7 +31,7 @@ In the model, a film reminder reinstates film-associated context before the task
 Task items are then encoded in association with that context, so later film-related context can cue task competitors as well as film items.
 Deliberate recall is less affected when a maintained film-retrieval goal gives film candidates an additional source of support without equally supporting task competitors.
 In tasks like recognition, by contrast, the test presents the item, so the model evaluates the item's fit to context instead of selecting among film and task candidates.
-This comparison can therefore make voluntary memory appear spared because of recognition format, not because voluntary remembering is unaffected.
+This comparison can therefore make voluntary memory appear spared because of test format rather than because voluntary remembering is generally unaffected.
 Interpreting selective interference this way motivates better-matched tests of intrusive and voluntary remembering and situates trauma-film findings within a broader computational account of episodic retrieval.
 
 # Introduction
