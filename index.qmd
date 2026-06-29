@@ -23,14 +23,16 @@ bibliography: references.bib
 
 # Abstract
 
-In the trauma-film paradigm, intrusive memories of a film can decrease when participants perform a visuospatial task after a later film reminder, while deliberate recall remains relatively intact.
+In the trauma-film paradigm, a visuospatial task after a later film reminder can reduce the frequency of film-related intrusions while leaving voluntary memory relatively intact.
 This selective interference effect is often treated as evidence that involuntary and deliberate remembering depend on different memory representations.
-Here we show that the same dissociation may follow without assuming separate representations.
-We develop this alternative proposal in an emotional Context Maintenance and Retrieval (eCMR) model that predicts sequences of film and non-film recall events.
-In the model, a film reminder before the task causes task information to be encoded in a film-like context, allowing later film cues to also activate task-related competitors and reduce unguided recall.
-Deliberate recall is relatively spared because retrieval focused on film content prioritizes film memories even when competitors are active.
-Decomposing retrieval control within a retrieved-context model further shows that other forms of control do not offer the same protection.
-This motivates a more unified treatment of intrusion-like and deliberate remembering within a common computational framework.
+We propose instead that the dissociation can reflect the cues and control available during retrieval.
+We implement this account in an emotional Context Maintenance and Retrieval (eCMR) model that simulates film, reminder, and task encoding and predicts sequences of film and non-film recall events.
+In the model, a film reminder reinstates film-associated context before the task.
+Task items are then encoded in association with that context, so later film-related context can cue task competitors as well as film items.
+Deliberate recall is less affected when a maintained film-retrieval goal gives film candidates an additional source of support without equally supporting task competitors.
+In tasks like recognition, by contrast, the test presents the item, so the model evaluates the item's fit to context instead of selecting among film and task candidates.
+This comparison can therefore make voluntary memory appear spared because of recognition format, not because voluntary remembering is unaffected.
+Interpreting selective interference this way motivates better-matched tests of intrusive and voluntary remembering and situates trauma-film findings within a broader computational account of episodic retrieval.
 
 # Introduction
 
