@@ -37,40 +37,65 @@ Interpreting selective interference this way motivates better-matched tests of i
 # Introduction
 
 Traumatic experience foregrounds a tension between durability and selectivity in episodic memory.
-A rational analysis of episodic memory suggests that highly consequential events should be retained well enough for action-relevant details to inform later evaluation, planning, and choice [@boyle2025why; @zhou2025episodic].
-At the same time, adaptive retrieval is selective: what comes to mind should normally depend on current concerns.
-Intrusive memories after trauma suggest that durable encoding can outpace regulatory control.
-In PTSD, the trauma event returns without being deliberately sought and without being well matched to the demands of the present [@ehlers2000cognitive; @brewin2010intrusive; @krans2009intrusive; @iyadurai2019intrusive].
-Understanding why such memories arise, and how they differ from voluntary memory for the same event, is therefore a shared target for both clinical science and mechanistic theories of memory.
+From a functional perspective, events with lasting significance need to remain accessible in memory so remembered details can guide later decisions [@zhou2025episodic].
+At the same time, adaptive retrieval is selective: what comes to mind should normally depend on current goals, cues, and circumstances.
+Intrusive memories after trauma suggest that durable memory can strain the selectivity of retrieval.
+In PTSD, such memories can come to mind unbidden and poorly matched to the present, causing distress and interfering with ongoing activity [@ehlers2000cognitive; @brewin2010intrusive; @krans2009intrusive; @iyadurai2019intrusive].
+Explaining how episodic memory preserves consequential events while regulating their retrieval is therefore a shared target for both clinical science and mechanistic theories of memory.
 
 The trauma-film paradigm provides a controlled setting for comparing intrusive and voluntary memory for the same event [@holmes2008inducing; @james2016trauma].
 Participants view distressing film material, record later intrusive memories of the film, and often complete voluntary-memory tests for the same material.
-This design makes it possible to ask whether the same encoded event can remain available to deliberate retrieval while becoming more or less likely to return involuntarily.
-In such research, voluntary memory can be relatively preserved, and its relationship to intrusion frequency can be weak, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
+This design makes it possible to ask whether the same encoded event can remain available to deliberate retrieval while becoming more or less likely to come to mind involuntarily.
+In such research, intrusion frequency can be weakly related to voluntary-memory performance, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
 The same encoded episode can therefore support both involuntary and deliberate access, and these modes can come apart empirically.
 
 Visuospatial interference tasks make this dissociation experimentally sharper.
-When brief tasks such as Tetris are performed after film encoding, subsequent intrusions can be reduced while voluntary memory for the same material shows little measurable impairment [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
-<!-- FIXME: Tommy will add a list of references here. -->
-In delayed variants, participants return after about 24 hours to 3 days, receive visual reminder cues for the film, and then complete Tetris; these reminder-plus-Tetris procedures can similarly reduce subsequent intrusions [@james2015computer; @kessler2020visuospatial].
-Similar procedures have also been extended to real-life traumatic events, including motor vehicle accidents, emergency caesarean section, and war-related trauma [@iyadurai2018preventing; @horsch2017reducing; @kanstrup2021single].
-Two recent meta-analyses support effects of cognitive interventions on intrusive memories, although the evidence base is heterogeneous and recent null findings caution against treating the effect as settled or uniform [@asselbergs2023systematic; @varma2024experimental; @wessel2025evidence].
-<!-- FIXME: Add our pre-print (available this week) and the two papers Emily added to the reference list recently. -->
+In immediate post-film studies, tasks such as Tetris can reduce later film intrusions while voluntary memory for the same material remains relatively intact [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
+Delayed variants add a later reminder before the interference task.
+Participants return after roughly 24 hours to 3 days, view reminder cues for the film, and then complete Tetris.
+These reminder-plus-Tetris procedures can also reduce subsequent intrusions [@james2015computer; @kessler2020visuospatial].
+Related procedures have been extended beyond analogue trauma films to real-life and occupational trauma, including motor vehicle accidents, emergency caesarean section, refugee trauma, and health-care work during COVID-19 [@iyadurai2018preventing; @horsch2017reducing; @kanstrup2021single; @iyadurai2023reducing; @ramineni2023treating; @kanstrup2024guided; @beckenstrom2026digital].
+At the same time, recent reviews and replication attempts caution against treating the effect as settled or uniform [@asselbergs2023systematic; @varma2024experimental; @wessel2025evidence; @mcconnell2026testing].
 This selective interference effect therefore raises a theoretical question:
-when and why can a task delivered soon after film encoding, or after a later film reminder, alter one mode of retrieval more than another, even while both draw on the same recent experience?
+when and why can an intervention alter intrusion-like and voluntary access differently, even when both concern the same recent experience?
+@fig-empirical-target schematizes this target as an interaction among reminder timing, task condition, and retrieval condition.
 
-The empirical target is an interaction, not only a difference between two memory measures.
-The same interference manipulation should reduce unguided or intrusion-like film output more than deliberate film recall, over and above the general advantage for deliberate recall.
-In the simulations below, we decompose this broad manipulation into two ingredients: whether a film reminder is presented before the task, and how strongly the task functions as an interference source.
-This decomposition lets the model ask when a task becomes a strong competitor for film retrieval, and when retrieval control reduces the resulting interference effect.
-@fig-empirical-target summarizes the modeled paradigm variables and the selective interference contrast.
+One prominent interpretation is that the intervention acts more strongly on the form of memory that gives rise to intrusions than on the memory accessed by voluntary tests [@brewin1996dual; @brewin2014episodic].
+Dual-representation accounts give this interpretation an architectural basis.
+Intrusive re-experiencing is linked especially to sensory-bound representations, whereas deliberate remembering depends more on contextualized episodic representations [@brewin2010intrusive; @brewin2014episodic].
+In immediate post-film interventions, visuospatial tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
+Because later intrusions are assumed to arise especially from sensory-bound representations, this competition should reduce intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
+In delayed post-reminder interventions, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@kindt2009beyond; @james2015computer].
+Across these variants, the shared logic is selective vulnerability.
+The intervention is assumed to affect sensory/perceptual processes linked to intrusions more than the contextualized processes used in voluntary tests.
+
+Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared. 
+Selective interference can instead arise from differences in how film memories are cued and controlled at retrieval.
+In the account developed below, a film reminder reinstates context associated with the film before task material is encoded.
+Task material then becomes linked to that context.
+When later remembering is guided by film-related context, task and film material can therefore compete, interfering with film recall.
+The task should interfere less when retrieval has a more selective basis for identifying film material.
+Deliberate recall can be less affected when a maintained film-retrieval goal gives film candidates an additional source of support without equally supporting task competitors.
+Tasks like recognition can also be less affected, because the test presents a candidate film item for judgment rather than requiring film material to be brought to mind.
+On this account, the selective-interference effect emerges when retrieval conditions differ in how much they depend on film-related context that also cues task material.
+
+We formalize this retrieval account in an emotional variant [@talmi2019retrieved; @cohen2022memory] of the Context Maintenance and Retrieval (CMR) framework [@polyn2009context].
+Retrieved-context models treat context as a gradually changing state that is shaped by experience, reinstated by retrieval, and used to cue later memory search [@howard2002distributed; @sederberg2008context; @polyn2009context].
+In CMR, items and context are linked by bidirectional associations.
+Context cues candidate items, and retrieved items or items presented at test reinstate associated context [@polyn2009context; @polyn2009task].
+Emotional CMR variants retain this item-context architecture while allowing emotional or source context to shape what is bound and later retrieved [@talmi2019retrieved; @cohen2022memory].
+These properties make CMR a principled setting for a retrieved-context account of selective interference based on context reinstatement and item-context binding.
+
+We then use simulations to explore what the formalized account predicts about when and how the dissociation should appear.
+The simulations show how reminder-linked task encoding can make task material compete with film recall, how deliberate recall can be less affected when retrieval control gives film material a more selective basis for recall, and how recognition-like paradigms can remain relatively unaffected when a presented item retrieves associated context rather than context selecting among film and task items.
+The result is a mechanistic alternative to selective-vulnerability accounts of the selective-interference effect, clarifying boundary conditions for the dissociation and motivating better-matched tests of intrusive and voluntary remembering.
 
 ::: {#fig-empirical-target fig-pos="H"}
 ![](work/empirical_target/empirical_target_composite.png){width=100%}
 
 **Paradigm variables and canonical selective interference effect.**
 **(A)** The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, an intervening task, a post-task delay, and a later test of unguided or voluntary recall.
-**(B)** The canonical selective interference effect is summarized as a schematic crossing reminder condition, intervening task, and retrieval measure.
+**(B)** The canonical selective interference effect is summarized as a schematic interaction among reminder condition, intervening task, and retrieval condition.
 Columns distinguish whether the task is preceded by a film reminder, rows distinguish intrusion-like film access from voluntary film recall, and paired bars compare film output after a comparison task versus an interference task.
 The interference task produces the largest reduction in intrusion-like film access when it follows a film reminder, whereas voluntary film recall shows a smaller reduction under the same conditions.
 Bars are schematic and do not plot empirical counts, fitted values, or model output.
