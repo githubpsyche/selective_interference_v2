@@ -5,7 +5,7 @@ project:
     - index.qmd
 
 manuscript:
-  code-links: repo
+  code-links: false
 
 execute:
   freeze: auto
