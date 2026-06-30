@@ -25,7 +25,7 @@ bibliography: references.bib
 
 In the trauma-film paradigm, a visuospatial task after a later film reminder can reduce the frequency of film-related intrusions while leaving voluntary memory relatively intact.
 This selective interference effect is often treated as evidence that involuntary and deliberate remembering depend on different memory representations.
-We propose instead that the dissociation can reflect the cues and control available during retrieval.
+We propose instead that the dissociation can reflect differences in how retrieval is cued and controlled.
 We implement this account in an emotional Context Maintenance and Retrieval (eCMR) model that simulates film, reminder, and task encoding and predicts sequences of film and non-film recall events.
 In the model, a film reminder reinstates film-associated context before the task.
 Task items are then encoded in association with that context, so later film-related context can cue task competitors as well as film items.
