@@ -465,39 +465,107 @@ Table&nbsp;1: Core notation used in the model specification. Parameters are defi
 <div aria-describedby="tbl-model-notation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Symbol</th>
-<th>Meaning</th>
+<th>Role</th>
+<th>Main use</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><span class="math inline">\(f_i\)</span></td>
-<td>Item feature vector for encoded event or test probe <span class="math inline">\(i\)</span></td>
+<td>Item feature vector for encoded event <span class="math inline">\(i\)</span></td>
+<td>Encoding, reminders, recall updates, recognition probes</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(s_i\)</span></td>
 <td>Source feature vector distinguishing film from non-film items</td>
+<td>Source-context encoding</td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(c_i\)</span></td>
 <td>Context state after encoded event <span class="math inline">\(i\)</span></td>
+<td>Encoding and learning</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(M^{FC}\)</span></td>
-<td>Feature-to-context associations used to reinstate context from encoded, cued, sampled, or probed items</td>
+<td>Feature-to-context associations</td>
+<td>Context reinstatement from encoded, cued, sampled, or probed items</td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(M^{CF}\)</span></td>
-<td>Context-to-feature associations used to support candidates from context</td>
+<td>Context-to-feature associations</td>
+<td>Candidate support during context-guided recall</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(a_{i,j}\)</span></td>
-<td>Support for candidate <span class="math inline">\(i\)</span> at sampling step <span class="math inline">\(j\)</span></td>
+<td><span class="math inline">\(\alpha\)</span></td>
+<td>Background support from nonpaired item-associated context units</td>
+<td>Initial <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\delta\)</span></td>
+<td>Support from each item’s paired context unit</td>
+<td>Initial <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_{\mathrm{enc}}\)</span></td>
+<td>Drift toward item-cued context input during encoding</td>
+<td>Film, task, and filler encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_{\mathrm{rec}}\)</span></td>
+<td>Drift toward a sampled item’s associated context</td>
+<td>Recall updates</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_{emot}\)</span></td>
+<td>Drift in the source-context component</td>
+<td>Source-context encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>Feature-to-context learning rate</td>
+<td>Updates to <span class="math inline">\(M^{FC}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\lambda\)</span></td>
+<td>Context-to-feature learning scale</td>
+<td>Updates to <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\phi_i\)</span></td>
+<td>Primacy learning scale for event <span class="math inline">\(i\)</span></td>
+<td>Context-to-feature learning</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\phi_{\mathrm{emot}}\)</span></td>
+<td>Added source-context learning for film items</td>
+<td>Film-source encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\tau\)</span></td>
+<td>Degree to which sampling favors higher-support candidates</td>
+<td>Candidate sampling</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\theta_s, \theta_r\)</span></td>
+<td>Baseline tendency to stop and its growth across sampled outputs</td>
+<td>Recall termination</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\kappa\)</span></td>
+<td>Degree to which sampled non-film items carry context forward</td>
+<td>Retrieval monitoring</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\omega_{\mathrm{goal}}\)</span></td>
+<td>Added support for candidates matching the maintained film goal</td>
+<td>Film-goal support</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +681,9 @@ e_q = (M^{FC} f_q)^\top c_{\mathrm{test}} .
 <p>The simulations instantiate the retrieved-context account by mapping the trauma-film paradigm onto sequences of film, delay, task, and filler events. Simulation 1 shows how a task performed after a film reminder attenuates film recall when task encoding is strong and occurs in context states that overlap with film encoding context. Simulation 2 adds the intentionality manipulation by contrasting unguided retrieval with deliberate recall and examining control mechanisms that could protect film recall. The recognition simulation then examines a boundary case in which the test supplies a candidate film item for judgment rather than requiring that item to be sampled from context. Together, these simulations show how selective interference can arise from reminder-linked competitor encoding and retrieval conditions that differ in how they access or support film material.</p>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>The simulations require default values for context drift, associative learning, sampling, and stopping before the trauma-film manipulations are applied. Estimating those values from selective-interference data would require the full modeled paradigm together with trial-by-trial recall sequences that identify which film, task, and non-film candidates entered retrieval. Existing trauma-film studies define the target phenomenon, but they typically report intrusion counts or final memory scores rather than the sequence-level data needed to estimate retrieval competition. We therefore use an immediate affective free-recall dataset to set the model’s core encoding, retrieval, and stopping parameters. In that dataset, participants who reported concern about the war in Ukraine studied and recalled lists of war-related and neutral photographs <span class="citation" data-cites="dupertuys2026ukraine">(<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">Dupertuys, Shulhan, and Talmi 2026</a>)</span>. The fitted dataset included 123 participants, four lists per participant, 492 immediate recall sequences, and 3,804 scored recall events. Parameters were estimated from the ordered recall sequences using the model likelihood, yielding a pooled parameter regime rather than separate fits to the selective-interference simulations. The resulting parameter values provide a starting regime for context-guided recall of affective and neutral photographs. The selective-interference simulations then add the trauma-film phase structure, reminder manipulation, task-encoding manipulation, and retrieval-control settings. Additional implementation settings adapt this regime to the trauma-film sequence. Film items reinstate the marked source feature into source context, neutral/default events can weakly bind active source context, and retrieval begins with partial film-source reinstatement. The primacy profile is also moderated relative to the immediate-recall fit so that the shorter film sequence is not dominated by an unrealistically steep first-item advantage. <a href="#tbl-simulation-parameters" class="quarto-xref">Table&nbsp;2</a> gives the default numerical values used in the simulations.</p>
+<p>The simulations require default values for context drift, associative learning, sampling, and stopping before the trauma-film manipulations are applied. Estimating those values from selective-interference data would require the full modeled paradigm together with trial-by-trial recall sequences that identify which film, task, and non-film candidates entered retrieval. Existing trauma-film studies define the target phenomenon, but they typically report intrusion counts or final memory scores rather than the sequence-level data needed to estimate retrieval competition. We therefore use an immediate affective free-recall dataset to set the model’s core encoding, retrieval, and stopping parameters.</p>
+<p>In that dataset, participants who reported concern about the war in Ukraine studied and recalled lists of war-related and neutral photographs <span class="citation" data-cites="dupertuys2026ukraine">(<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">Dupertuys, Shulhan, and Talmi 2026</a>)</span>. The fitted dataset included 123 participants, four lists per participant, 492 immediate recall sequences, and 3,804 scored recall events. Parameters were estimated from the ordered recall sequences using the model likelihood, yielding a pooled parameter regime rather than separate fits to the selective-interference simulations. The resulting parameter values provide a starting regime for context-guided recall of affective and neutral photographs.</p>
+<p>The selective-interference simulations then add the trauma-film phase structure, reminder manipulation, task-encoding manipulation, and retrieval-control settings. Additional implementation settings adapt this regime to the trauma-film sequence. Film items reinstate the marked source feature into source context, neutral/default events can weakly bind active source context, and retrieval begins with partial film-source reinstatement. The primacy profile is also moderated relative to the immediate-recall fit so that the shorter film sequence is not dominated by an unrealistically steep first-item advantage. <a href="#tbl-simulation-parameters" class="quarto-xref">Table&nbsp;2</a> gives the default numerical values used in the simulations.</p>
 <div id="tbl-simulation-parameters" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -720,7 +790,7 @@ Table&nbsp;2: Default numerical parameter values. Values are from a pooled eCMR 
 </section>
 <section id="simulation-1-task-encoding-and-contextual-overlap" class="level2">
 <h2 class="anchored" data-anchor-id="simulation-1-task-encoding-and-contextual-overlap">Simulation 1: Task Encoding and Contextual Overlap</h2>
-<p>Simulation 1 demonstrates how a post-film task can reduce later film recall when task events are encoded in context states that overlap with the film sequence. To separate task encoding strength from reminder-driven context reinstatement, the simulation runs both the no-reminder and with-reminder conditions across the same set of task encoding strengths. We express task encoding strength as a task encoding multiplier that scales task-phase context-to-feature learning in <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;6</a>: 0 removes new task context-to-feature learning, 1 applies the baseline fitted rate, and values above 1 strengthen task item-context binding. In the no-reminder condition, the reminder-start and film-cue drift scales are set to zero. In the with-reminder condition, context first shifts toward the start state and then receives sequential film reminder cues before task encoding. Reminder cues update context without applying <a href="#eq-mfc-learning" class="quarto-xref">Equation&nbsp;5</a> or <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;6</a> and without adding new recallable items. Retrieval settings are held fixed, so differences in recall reflect the item-context associations formed before retrieval rather than changes in retrieval control. Because each film position is encoded with a different temporal-context state, the model predicts a serial-position pattern, not only an overall change in film recall. Task items should compete most with the film positions whose encoding contexts are most similar to the contexts active during task encoding. Simulation 1 first isolates the unguided side of the effect summarized in <a href="#fig-empirical-target" class="quarto-xref">Figure&nbsp;1</a>. It implements the empirical task contrast as a manipulation of task encoding strength, crossed with whether a film reminder precedes task encoding. In the fixed-cue version shown in <a href="#fig-simulation1-unguided-sequence" class="quarto-xref">Figure&nbsp;5</a>, weak film cues are supplied periodically during recall in all conditions.</p>
+<p>Simulation 1 tests whether reminder-linked task encoding can create competitors for unguided film recall. Retrieval settings are held fixed, so differences across conditions reflect associations formed before retrieval rather than deliberate control. The design crosses pre-task reminder presence with task encoding strength while weak film cues are supplied periodically during recall in all conditions. In the no-reminder condition, the reminder-start and film-cue drift scales are set to zero. In the with-reminder condition, context first shifts toward the start state and then receives sequential film reminder cues before task encoding. Reminder cues update context without applying <a href="#eq-mfc-learning" class="quarto-xref">Equation&nbsp;5</a> or <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;6</a> and without adding recallable items. Task encoding strength is modeled as a multiplier on task-phase context-to-feature learning in <a href="#eq-mcf-learning" class="quarto-xref">Equation&nbsp;6</a>.</p>
 <div id="fig-simulation1-unguided-sequence" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-simulation1-unguided-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -731,107 +801,7 @@ Figure&nbsp;5: <strong>Simulation 1: unguided film recall after task encoding.</
 </figcaption>
 </figure>
 </div>
-<p>These aggregate results establish the unguided interference component. The diagnostics below first show how this redistribution appears across encoded positions, then examine how it follows from context overlap; Simulation 2 then asks which deliberate-retrieval controls attenuate this loss. <a href="#tbl-simulation1-phase-settings" class="quarto-xref">Table&nbsp;3</a> summarizes the phase structure and settings used for Simulation 1. In the table, break/buffer items implement the intervening delay, and filler items implement the post-task delay. For each reminder condition and task encoding strength, serial-position curves show retrieval-test outcomes sorted by where each item appeared in the encoded sequence. <a href="#fig-simulation1-context-overlap" class="quarto-xref">Figure&nbsp;7</a> inspects the context-overlap structure that helps explain the aggregate film and task output in <a href="#fig-simulation1-unguided-sequence" class="quarto-xref">Figure&nbsp;5</a>. The context-similarity analysis asks how similar each film-encoding context is to the contexts active while task items are encoded, using cosine similarity over unit-normalized temporal context states.</p>
-<div id="tbl-simulation1-phase-settings" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation1-phase-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: Phase structure and settings for Simulation 1. Scale values multiply the corresponding base rates or learning strengths.
-</figcaption>
-<div aria-describedby="tbl-simulation1-phase-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Phase or setting</th>
-<th style="text-align: right;">Current value</th>
-<th>Role</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Film items</td>
-<td style="text-align: right;">16</td>
-<td>Target episode</td>
-</tr>
-<tr class="even">
-<td>Break/buffer items</td>
-<td style="text-align: right;">16</td>
-<td>Intervening non-film experience before reminder/task</td>
-</tr>
-<tr class="odd">
-<td>Film reminder cues</td>
-<td style="text-align: right;">16</td>
-<td>Sequential film cues, no new learning</td>
-</tr>
-<tr class="even">
-<td>Task items</td>
-<td style="text-align: right;">16</td>
-<td>Potential competitors</td>
-</tr>
-<tr class="odd">
-<td>Filler items</td>
-<td style="text-align: right;">16</td>
-<td>Post-task non-film experience</td>
-</tr>
-<tr class="even">
-<td>Maximum sampling attempts</td>
-<td style="text-align: right;">48</td>
-<td>Upper bound on sampled retrieval attempts</td>
-</tr>
-<tr class="odd">
-<td>Simulated trials per condition</td>
-<td style="text-align: right;">5000</td>
-<td>For each reminder condition and task encoding multiplier</td>
-</tr>
-<tr class="even">
-<td>Break and filler drift/learning scales</td>
-<td style="text-align: right;">1.0</td>
-<td>Baseline non-film encoding settings</td>
-</tr>
-<tr class="odd">
-<td>No-reminder drift scales</td>
-<td style="text-align: right;">0.0</td>
-<td>Omits reminder-start and reminder-cue reinstatement</td>
-</tr>
-<tr class="even">
-<td>With-reminder drift scales</td>
-<td style="text-align: right;">1.0</td>
-<td>Applies reminder-start and film cue reinstatement</td>
-</tr>
-<tr class="odd">
-<td>Task encoding multiplier</td>
-<td style="text-align: right;">1.0 or 2.0</td>
-<td>Multiplies task-phase context-to-feature learning during task encoding</td>
-</tr>
-<tr class="even">
-<td>Film source marking</td>
-<td style="text-align: right;">On</td>
-<td>Film items carry the marked source feature</td>
-</tr>
-<tr class="odd">
-<td>Task source marking</td>
-<td style="text-align: right;">Off</td>
-<td>Task items use the neutral/default source feature</td>
-</tr>
-<tr class="even">
-<td>Baseline source learning</td>
-<td style="text-align: right;">0.05</td>
-<td>Neutral/default items weakly bind active source context</td>
-</tr>
-<tr class="odd">
-<td>Film-source retrieval orientation</td>
-<td style="text-align: right;">0.5</td>
-<td>Fixed partial reinstatement of marked film-source context at retrieval onset</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
+<p><a href="#fig-simulation1-unguided-sequence" class="quarto-xref">Figure&nbsp;5</a> shows the aggregate result. Film recall is lowest when strong task encoding follows a film reminder, and task output increases in the same condition. The film loss therefore reflects redistribution toward task competitors under fixed retrieval settings. <a href="#fig-simulation1-recall-distributions" class="quarto-xref">Figure&nbsp;6</a> shows that the redistribution is position-resolved. Without a pre-task film reminder, increasing the task encoding multiplier produces only modest film loss and task gain, because task items become associated with later context states reached after drift away from the film. With a pre-task film reminder, the same task-encoding manipulation produces a larger drop in film-position recall and a larger rise in task-position recall. In the selected weak-versus-strong comparison, mean film recall in the no-reminder condition changes from 3.211 to 2.562 items, while mean task recall changes from 0.143 to 2.105 items. In the condition with a pre-task film reminder, mean film recall changes from 2.852 to 0.830 items, while mean task recall changes from 0.987 to 5.282 items.</p>
 <div id="fig-simulation1-recall-distributions" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-simulation1-recall-distributions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -842,7 +812,6 @@ Figure&nbsp;6: <strong>Simulation 1: reminder-linked task encoding redistributes
 </figcaption>
 </figure>
 </div>
-<p>Without a pre-task film reminder, increasing the task encoding multiplier produces only modest loss of film recall and only modest gain in task recall, because task items become associated with later context states reached after drift away from the film. With a pre-task film reminder, the same task-encoding manipulation produces a larger drop in film-position recall and a larger rise in task-position recall. The condition with a pre-task film reminder therefore shows that task encoding strength matters most when task items are encoded in a film-related context state. In the selected weak-versus-strong comparison, mean film recall in the no-reminder condition changes from 3.211 to 2.562 items, while mean task recall changes from 0.143 to 2.105 items. In the condition with a pre-task film reminder, mean film recall changes from 2.852 to 0.830 items, while mean task recall changes from 0.987 to 5.282 items.</p>
 <div id="fig-simulation1-context-overlap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-simulation1-context-overlap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -853,7 +822,7 @@ Figure&nbsp;7: <strong>Simulation 1: reminder reinstatement increases overlap be
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-simulation1-context-overlap" class="quarto-xref">Figure&nbsp;7</a> explains why the no-reminder and with-reminder curves diverge. Panel A summarizes temporal-context overlap between the states associated with film items and the states active during task encoding. When a sequential film reminder reinstates film-associated context before task encoding, the task-encoding contexts become more similar to some film-position contexts than to others. Panel B shows the corresponding film-position by task-position overlap matrix. Task encoding strength then determines how strongly task items are bound to these overlapping task-encoding contexts, while film encoding settings remain unchanged. The loss of film recall comes from stronger support for task items that can be cued by film-associated context. In paradigm terms, the reminder leaves the model partly oriented toward the film as task encoding begins, so task events become linked to film-like temporal context as well as the active film-source state. Task items remain distinct from film items but become increasingly likely to win retrieval from film-related cues. Simulation 2 next examines whether deliberate retrieval control reduces the impact of these task-item associations through start-of-film context reinstatement, a maintained film-retrieval goal, and retrieval monitoring.</p>
+<p><a href="#fig-simulation1-context-overlap" class="quarto-xref">Figure&nbsp;7</a> helps interpret why the no-reminder and with-reminder curves diverge. Sequential film reminders do not create one generic film context. They move context through film-associated states before task encoding, increasing overlap between task-encoding contexts and particular positions along the film trajectory. Task encoding strength then determines how strongly task items are learned in those overlapping states, while film encoding settings remain unchanged. Task items remain distinct from film items, and film-item associations are not weakened. The loss of film recall occurs because task items become more likely to be sampled from context states that also support film material. Simulation 1 therefore establishes a retrieved-context account of how reminder-linked task encoding can create competitors for unguided film recall. Simulation 2 examines whether deliberate retrieval control reduces the effect of those learned competitors.</p>
 </section>
 <section id="simulation-2-control-mechanisms-for-deliberate-recall" class="level2">
 <h2 class="anchored" data-anchor-id="simulation-2-control-mechanisms-for-deliberate-recall">Simulation 2: Control Mechanisms for Deliberate Recall</h2>
