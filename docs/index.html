@@ -447,16 +447,131 @@ Figure&nbsp;4: <strong>Retrieval operations in the retrieved-context account.</s
 <p>Within this matched recall setting, <a href="#fig-retrieved-context-retrieval-operations" class="quarto-xref">Figure&nbsp;4</a> separates three ways deliberate recall can differ from unguided retrieval after the same reminder-linked task encoding. Start-of-film context reinstatement acts before sampling by changing the initial context state. A maintained film-retrieval goal acts during sampling by adding support to film candidates. Retrieval monitoring acts after sampling by reducing the carryover from off-target candidates. These control points make separable predictions because they change different parts of the retrieval cycle. The simulations test which control changes the effect of reminder-linked task encoding, rather than simply increasing film recall under all conditions.</p>
 <p>Deliberate recall can begin from a context state biased by retrieval instructions. When people are asked to recall an earlier studied list after studying a more recent one, their early responses are often already biased toward the instructed list rather than showing a gradual search backward through recent-list items <span class="citation" data-cites="lohnas2015expanding healey2024peppr">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>; <a href="#ref-healey2024peppr" role="doc-biblioref">Healey and Wahlheim 2024</a>)</span>. Recall also shows a reliable tendency to start near the beginning of a studied list, especially when the usual end-of-list advantage is weakened by a delay <span class="citation" data-cites="howard1999contextual healey2014memory herrema2024first">(<a href="#ref-howard1999contextual" role="doc-biblioref">Marc W. Howard and Kahana 1999</a>; <a href="#ref-healey2014memory" role="doc-biblioref">Healey and Kahana 2014</a>; <a href="#ref-herrema2024first" role="doc-biblioref">Herrema and Kahana 2024</a>)</span>. Start-of-list context reinstatement mechanisms account for these patterns by evolving the current context toward the state associated with the beginning of the target list before retrieval begins <span class="citation" data-cites="lohnas2015expanding healey2024peppr kragel2015neural morton2016predictive">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>; <a href="#ref-healey2024peppr" role="doc-biblioref">Healey and Wahlheim 2024</a>; <a href="#ref-kragel2015neural" role="doc-biblioref">Kragel, Morton, and Polyn 2015</a>; <a href="#ref-morton2016predictive" role="doc-biblioref">Morton and Polyn 2016</a>)</span>. In our retrieval control simulations, start-of-film reinstatement drifts the retrieval state toward the context present at the beginning of film encoding. This starting state favors early film candidates before ordinary context-guided sampling resumes, so its predicted benefit is tied to the temporal region that has been reinstated.</p>
 <p>Retrieval monitoring acts after a candidate has been sampled. Evidence for this post-sampling control comes from externalized recall tasks where participants report every word that comes to mind and mark errors. These instructions reveal many more intrusions than standard recall, and many sampled intrusions are marked as errors, indicating that off-target candidates can enter retrieval without being accepted as target memories <span class="citation" data-cites="unsworth2010understanding lohnas2015expanding">(<a href="#ref-unsworth2010understanding" role="doc-biblioref">Unsworth, Brewer, and Spillers 2010</a>; <a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>)</span>. Monitoring also carries forward across retrieval: when people fail to identify one response correctly, they are worse at rejecting the next intrusion <span class="citation" data-cites="unsworth2010understanding">(<a href="#ref-unsworth2010understanding" role="doc-biblioref">Unsworth, Brewer, and Spillers 2010</a>)</span>. At the same time, sampled intrusions can pull search away from the target list, as intrusions tend to cluster with other intrusions from related prior-list or semantic contexts <span class="citation" data-cites="zaromb2006temporal unsworth2010understanding">(<a href="#ref-zaromb2006temporal" role="doc-biblioref">Zaromb et al. 2006</a>; <a href="#ref-unsworth2010understanding" role="doc-biblioref">Unsworth, Brewer, and Spillers 2010</a>)</span>. Retrieved-context implementations have treated monitoring as a target-match filter while still allowing rejected items to update the next retrieval context <span class="citation" data-cites="lohnas2015expanding">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>)</span>. Our trauma-film simulations explore whether that post-sampling evaluation can also reduce carryover from sampled non-film candidates. A sampled non-film candidate still counts as a retrieval attempt, but its context update is dampened when it is evaluated as off-target. Monitoring can therefore help deliberate recall return to film material after non-film competition appears, while leaving the initial competition from reminder-linked task encoding in place.</p>
-<p>A maintained retrieval goal gives deliberate recall a broader film-directed signal during candidate sampling. When people study mixed-category material and are asked to retrieve only one category, they can restrict recall to the target subset while temporal organization remains visible within that subset <span class="citation" data-cites="polyn2011semantic lohnas2026specialized">(<a href="#ref-polyn2011semantic" role="doc-biblioref">Polyn, Erlikhman, and Kahana 2011</a>; <a href="#ref-lohnas2026specialized" role="doc-biblioref">Lohnas, Polyn, and Kahana 2026</a>)</span>. In this kind of task, category-selective activity tracks retrieval effort, remains active between reported recalls, and weakens before extra-category intrusions <span class="citation" data-cites="norman2017neuronal">(<a href="#ref-norman2017neuronal" role="doc-biblioref">Norman et al. 2017</a>)</span>. Retrieved-context models provide a formal precedent for this kind of non-temporal support: semantic, task, and source information can contribute to candidate support alongside temporal context <span class="citation" data-cites="polyn2009context polyn2009task morton2016predictive">(<a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009a</a>, <a href="#ref-polyn2009task" role="doc-biblioref">2009b</a>; <a href="#ref-morton2016predictive" role="doc-biblioref">Morton and Polyn 2016</a>)</span>. Category-cued search has been formalized in associative memory models, and recent review work treats this as a natural but still underdeveloped direction for CMR <span class="citation" data-cites="raaijmakers1980sam lohnas2026specialized">(<a href="#ref-raaijmakers1980sam" role="doc-biblioref">Raaijmakers and Shiffrin 1980</a>; <a href="#ref-lohnas2026specialized" role="doc-biblioref">Lohnas, Polyn, and Kahana 2026</a>)</span>. The simulations use this logic in reduced form by adding a maintained film-category cue during candidate sampling. This cue gives film candidates additional support without equally supporting task competitors. Task items encoded in film-overlapping context can still compete through temporal context, but they do not receive this goal-based support.</p>
+<p>A maintained retrieval goal gives deliberate recall a broader film-directed signal during candidate sampling. When people study mixed-category material and are asked to retrieve only one category, they can restrict recall to the target subset while temporal organization remains visible within that subset <span class="citation" data-cites="polyn2011semantic lohnas2026specialized">(<a href="#ref-polyn2011semantic" role="doc-biblioref">Polyn, Erlikhman, and Kahana 2011</a>; <a href="#ref-lohnas2026specialized" role="doc-biblioref">Lohnas, Polyn, and Kahana 2026</a>)</span>. In this kind of task, category-selective activity tracks retrieval effort, remains active between reported recalls, and weakens before extra-category intrusions <span class="citation" data-cites="norman2017neuronal">(<a href="#ref-norman2017neuronal" role="doc-biblioref">Norman et al. 2017</a>)</span>. Retrieved-context models provide a formal precedent for this kind of non-temporal support: semantic, task, and source information can contribute to candidate support alongside temporal context <span class="citation" data-cites="polyn2009context polyn2009task morton2016predictive">(<a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009a</a>, <a href="#ref-polyn2009task" role="doc-biblioref">2009b</a>; <a href="#ref-morton2016predictive" role="doc-biblioref">Morton and Polyn 2016</a>)</span>. Category-directed search has been formalized in associative memory models, and recent review work treats this as a natural but still underdeveloped direction for CMR <span class="citation" data-cites="raaijmakers1980sam lohnas2026specialized">(<a href="#ref-raaijmakers1980sam" role="doc-biblioref">Raaijmakers and Shiffrin 1980</a>; <a href="#ref-lohnas2026specialized" role="doc-biblioref">Lohnas, Polyn, and Kahana 2026</a>)</span>. The simulations use this logic in reduced form by adding a maintained film-category cue during candidate sampling. This cue gives film candidates additional support without equally supporting task competitors. Task items encoded in film-overlapping context can still compete through temporal context, but they do not receive this goal-based support.</p>
 <p>A retrieval-control process can increase film recall relative to unguided retrieval without making recall less sensitive to a reminder-linked task intervention. Protection depends on whether recall becomes less reliant on film-associated temporal context after that context has also become supportive of task material. The start-state and monitoring panels describe mechanisms that either reinstate or preserve film-related context to drive ongoing retrieval, but since reminder-linked task encoding makes that context less selective, those mechanisms cannot substantially protect deliberate recall from the interference effect. The maintained film-retrieval goal tests that different route. It gives film candidates support from a film-specific cue, so task competitors remain available but do not receive the same added support. Under the tested conditions, that goal-based support limits the intervention’s impact enough to simulate a selective-interference effect. The simulations therefore treat increased film recall and reduced sensitivity to reminder-linked task encoding as separable outcomes.</p>
 </section>
 </section>
 <section id="model-specification" class="level1">
 <h1>Model Specification</h1>
-<p>Retrieved-context models implement recall as a sequence of sampling events in which current context gives graded support to candidate items <span class="citation" data-cites="sederberg2008context polyn2009context">(<a href="#ref-sederberg2008context" role="doc-biblioref">Sederberg, Howard, and Kahana 2008</a>; <a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009a</a>)</span>. In this framework, the candidate set can include material outside the scored set, producing intrusions when off-target material is sampled <span class="citation" data-cites="lohnas2015expanding cohen2022memory">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>; <a href="#ref-cohen2022memory" role="doc-biblioref">Cohen and Kahana 2022</a>)</span>. To express selective interference as changes in what gets sampled, film and non-film events have to be candidates in the same sampling process. The simulations implement this requirement by representing film, task, and delay periods as sequences of events that update context. For the film, these events correspond roughly to scenes or segments. For the task periods, they represent task items that can become competitors after reminder-linked encoding. For the delay periods, they represent filler items: non-film events that can also be encoded and later sampled. At test, each sampling event draws from the candidates supported by the current context. Interference manifests as a shift in sampled outcomes: task or filler candidates occupy sampling events that could otherwise retrieve film material.</p>
+<p>Retrieved-context models implement recall as a sequence of sampling events in which current context gives graded support to candidate items <span class="citation" data-cites="sederberg2008context polyn2009context">(<a href="#ref-sederberg2008context" role="doc-biblioref">Sederberg, Howard, and Kahana 2008</a>; <a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009a</a>)</span>. To express selective interference as changes in what gets sampled, film and non-film events have to be candidates in the same sampling process. The simulations implement this requirement by representing film, task, and delay periods as sequences of events that update context. For the film, these events correspond roughly to scenes or segments. For the task periods, they represent task items that can become competitors after reminder-linked encoding. For the delay periods, they represent filler items: non-film events that can also be encoded and later sampled. Interference manifests as a shift in sampled outcomes: task or filler candidates occupy sampling events that could otherwise retrieve film material.</p>
 <p>The formal model links this sampling process to separate item and context representations. Each encoded event at position <span class="math inline">\(i\)</span> is represented by an item feature vector <span class="math inline">\(f_i\)</span>, a one-hot vector that distinguishes that event from other encoded events in the simulated paradigm. Context <span class="math inline">\(c_i\)</span> denotes the internal context state after event <span class="math inline">\(i\)</span> has updated context. As film, task, and filler events occur, they update context and become associated with the context active around them. During recall, the current context state determines which candidate items receive support.</p>
 <p>During encoding, items and states of context are linked through bidirectional associations represented in two matrices. Context-to-feature memory, <span class="math inline">\(M^{CF}\)</span>, maps context states to item support, allowing current context to cue candidate items during recall. Feature-to-context memory, <span class="math inline">\(M^{FC}\)</span>, maps item features to context states so that cued, reminded, or recalled items can reinstate associated context. All vectors are treated as column vectors, so <span class="math inline">\(M^{FC} f_i\)</span> is a context vector and <span class="math inline">\(M^{CF} c_i\)</span> is a feature-support vector.</p>
 <p>Context and corresponding associations are further subdivided into temporal and source components. Temporal context distinguishes unique items so different film, task, and filler events can produce distinct context states even if items come from the same phase of the paradigm or share other features. Source context represents coarser information shared across related events, allowing recall to be shaped by task, semantic, or source relationships among items <span class="citation" data-cites="polyn2009context polyn2009task">(<a href="#ref-polyn2009context" role="doc-biblioref">Polyn, Norman, and Kahana 2009a</a>, <a href="#ref-polyn2009task" role="doc-biblioref">2009b</a>)</span>. Emotional CMR variants distinguish emotional from neutral material in source context and give emotionally salient items stronger source-context associations <span class="citation" data-cites="talmi2019retrieved cohen2022memory">(<a href="#ref-talmi2019retrieved" role="doc-biblioref">Talmi, Lohnas, and Daw 2019</a>; <a href="#ref-cohen2022memory" role="doc-biblioref">Cohen and Kahana 2022</a>)</span>. In the present implementation, each item also has a source feature vector <span class="math inline">\(s_i\)</span>. Film items share a film-source feature, whereas task and filler items carry a neutral/default source feature.</p>
+<div id="tbl-model-notation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-notation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Core notation used in the model specification. Symbols used only in one operation are defined when that operation is specified, and numerical values are reported with the simulation methodology.
+</figcaption>
+<div aria-describedby="tbl-model-notation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Role</th>
+<th>Main use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(f_i\)</span></td>
+<td>Item feature vector for encoded event <span class="math inline">\(i\)</span></td>
+<td>Encoding, reminders, recall updates, recognition probes</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(s_i\)</span></td>
+<td>Source feature vector distinguishing film from non-film items</td>
+<td>Source-context encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(c_i\)</span></td>
+<td>Context state after encoded event <span class="math inline">\(i\)</span></td>
+<td>Encoding and learning</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(M^{FC}\)</span></td>
+<td>Feature-to-context associations</td>
+<td>Context reinstatement from encoded, cued, sampled, or probed items</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(M^{CF}\)</span></td>
+<td>Context-to-feature associations</td>
+<td>Candidate support during context-guided recall</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\alpha\)</span></td>
+<td>Background support from nonpaired item-associated context units</td>
+<td>Initial <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\delta\)</span></td>
+<td>Support from each item’s paired context unit</td>
+<td>Initial <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_{\mathrm{enc}}\)</span></td>
+<td>Drift toward item-cued context input during encoding</td>
+<td>Film, task, and filler encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_{\mathrm{rec}}\)</span></td>
+<td>Drift toward a sampled item’s associated context</td>
+<td>Recall updates</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_{emot}\)</span></td>
+<td>Drift in the source-context component</td>
+<td>Source-context encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>Feature-to-context learning rate</td>
+<td>Updates to <span class="math inline">\(M^{FC}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\lambda\)</span></td>
+<td>Context-to-feature learning scale</td>
+<td>Updates to <span class="math inline">\(M^{CF}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\phi_i\)</span></td>
+<td>Primacy learning scale for event <span class="math inline">\(i\)</span></td>
+<td>Context-to-feature learning</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\phi_{\mathrm{emot}}\)</span></td>
+<td>Added source-context learning for film items</td>
+<td>Film-source encoding</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\tau\)</span></td>
+<td>Degree to which sampling favors higher-support candidates</td>
+<td>Candidate sampling</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\theta_s, \theta_r\)</span></td>
+<td>Baseline tendency to stop and its growth across sampled outputs</td>
+<td>Recall termination</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\kappa\)</span></td>
+<td>Degree to which sampled non-film items carry context forward</td>
+<td>Retrieval monitoring</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\omega_{\mathrm{goal}}\)</span></td>
+<td>Added support for candidates matching the maintained film goal</td>
+<td>Film-goal support</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 <section id="encoding-the-paradigm-sequence" class="level2">
 <h2 class="anchored" data-anchor-id="encoding-the-paradigm-sequence">Encoding the Paradigm Sequence</h2>
 <p>Film, task, and filler events become later recall candidates through context updating and item-context learning. Each event updates context and becomes associated with the resulting state. During later recall, candidate support depends on how strongly studied items are associated with the context states active during retrieval.</p>
@@ -532,12 +647,12 @@ c_{j+1} =
 \beta_{\mathrm{rec}} \widehat{M^{FC} f_{r_j}} .
 \tag{12}\]</span></span></p>
 <p>This update lets sampled material shape later search. A sampled film item can keep later sampling near film-associated context. A sampled task or filler item can pull later sampling toward non-film material.</p>
-<p>Test-phase film cues use the same feature-to-context operation without becoming recall outputs. When a film cue <span class="math inline">\(q\)</span> is presented, the cued item updates context through <span class="math inline">\(M^{FC} f_q\)</span>. The cue is not counted as a recalled item, does not make the cued film item unavailable for later recall, and adds no new learning. Film cues can therefore drive the retrieval context toward film-associated states while leaving recall dependent on candidate sampling from that context.</p>
+<p>Test-phase film cues use the same feature-to-context operation without becoming recall outputs. When a film cue <span class="math inline">\(q\)</span> is presented, the cued item updates context through <span class="math inline">\(M^{FC} f_q\)</span>. The cue is not counted as a recalled item, does not make the cued film item unavailable for later recall, and adds no new learning. Recall sampling then resumes from the updated context state.</p>
 </section>
 <section id="deliberate-recall-control" class="level2">
 <h2 class="anchored" data-anchor-id="deliberate-recall-control">Deliberate Recall Control</h2>
 <p>Deliberate recall uses the same sampling rule as unguided recall, with control settings applied before, during, or after sampling. The control settings change the retrieval cue, candidate support, or sampled-item carryover without changing the film and task associations learned during encoding. This lets the simulations test which retrieval operations increase film recall and which ones protect film recall from reminder-linked task competition.</p>
-<p>Start-of-film context reinstatement drifts context toward the state present at the beginning of film encoding before the first sampling step. The retrieval context is drifted toward the context state used to begin the film sequence, with drift rate <span class="math inline">\(\beta_{\mathrm{start}}\)</span>. This can bias early sampling toward film candidates rather than starting from the ongoing context state produced by the final delay phase of the paradigm. This control mechanism therefore increases film recall, yet only to the extent that film-associated context selectively cues film candidates. Reminder-linked task encoding interferes with film recall primarily by making film-associated context also supportive of task candidates, so a start-of-film reinstatement specified this way cannot substantially protect deliberate recall from the interference effect.</p>
+<p>Start-of-film context reinstatement drifts context toward the state present at the beginning of film encoding before the first sampling step. The retrieval context is drifted toward the context state used to begin the film sequence, with drift rate <span class="math inline">\(\beta_{\mathrm{start}}\)</span>. This can bias early sampling toward film candidates rather than starting from the ongoing context state produced by the final delay phase of the paradigm. This control mechanism can therefore increase film recall. However, because it still relies on film-associated context to cue candidates, it does not substantially protect deliberate recall from the interference effects of reminder-linked task encoding.</p>
 <p>In retrieved-context models of externalized free recall, monitoring is implemented as a post-sampling match check: if a candidate’s associated context insufficiently matches the test context, the candidate is rejected as a target response, but still updates the next retrieval context <span class="citation" data-cites="lohnas2015expanding">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>)</span>. The present simulations keep the post-sampling timing but change the consequence of sampled non-film candidates. They assume that deliberate recall can always recognize that non-film candidates from task or filler events are off-target. Post-retrieval context monitoring reduces the context update after sampled task or filler candidates. Let <span class="math inline">\(\kappa_i = 1\)</span> for film candidates and <span class="math inline">\(\kappa_i = \kappa\)</span> for task and filler candidates. With monitoring, the sampled-item update becomes:</p>
 <p><span id="eq-monitoring-update"><span class="math display">\[
 c_{j+1} =
@@ -555,243 +670,11 @@ a^{\mathrm{goal}}_{i,j} = a_{i,j} + \omega_{\mathrm{goal}} g_i .
 </section>
 <section id="supplied-item-recognition" class="level2">
 <h2 class="anchored" data-anchor-id="supplied-item-recognition">Supplied-Item Recognition</h2>
-<p>Recognition begins with a supplied candidate item rather than a sampled recall candidate. A presented film item retrieves associated context through the same feature-to-context associations used by reminders, cues, and sampled items. Recognition evidence is computed from the match between the probe-retrieved context and the context active during the test:</p>
+<p>Recognition begins with a supplied candidate item rather than a sampled recall candidate. A presented film item retrieves associated context through the same feature-to-context associations used by reminders, cues, and sampled items. Following retrieved-context accounts of recognition, recognition evidence is the match between the context retrieved by the probe and the context active during the test <span class="citation" data-cites="lohnas2015expanding healey2016four jin2024theory">(<a href="#ref-lohnas2015expanding" role="doc-biblioref">Lohnas, Polyn, and Kahana 2015</a>; <a href="#ref-healey2016four" role="doc-biblioref">Healey and Kahana 2016</a>; <a href="#ref-jin2024theory" role="doc-biblioref">Jin, Halpern, and Kahana 2024</a>)</span>:</p>
 <p><span id="eq-recognition-evidence"><span class="math display">\[
-E_q = \widehat{M^{FC} f_q}^{\top} c_{\mathrm{test}} .
+e_q = (M^{FC} f_q)^\top c_{\mathrm{test}} .
 \tag{15}\]</span></span></p>
-<p>A recognition probe can update context after evidence is scored, but it is not treated as a recalled output. It does not enter the recallable candidate set, make the probed item unavailable for later recall, or add new learning. This implements the Figure 13 distinction: recall requires film material to be selected from context-supported candidates, whereas recognition starts with the candidate item and evaluates the context it retrieves. The implementation isolates supplied-item access without modeling full old-new criteria, confidence, or complete foil processing.</p>
-<!-- # Model Specification
-
-The formal model keeps the standard CMR separation between item features, context, feature-to-context memory, and context-to-feature memory.
-The section first defines these inherited representations and base parameters, then specifies the context-updating, learning, retrieval, and control operations used to configure the selective interference simulations.
-
-## Representations and Parameters
-
-Each study event $i$ has an orthonormal feature vector $f_i \in \mathbb{R}^{N}$, where $N$ is the number of encoded item features in the simulated paradigm.
-The model maintains a unit-length context vector $c_i \in \mathbb{R}^{D}$, where $D$ is the number of context units.
-The core context units represent the start state and item-associated temporal context.
-Before encoding begins, context is initialized to the start state $c_0$, with the start unit active and item-associated temporal-context units inactive.
-Subsequent events update this state, so the context associated with each film, task, or filler item depends on where it occurs in the continuous paradigm stream.
-The model contains two associative matrices.
-The matrix $M^{FC} \in \mathbb{R}^{D \times N}$ maps feature vectors to context input.
-The matrix $M^{CF} \in \mathbb{R}^{N \times D}$ maps context to feature support.
-All vectors are treated as column vectors, so $M^{FC} f$ is a context vector and $M^{CF} c$ is a feature-support vector.
-
-@tbl-base-parameters lists the model parameters used in the equations below.
-The notation is adapted across several retrieved-context and CMR implementations, including foundational free-recall models [@sederberg2008context; @polyn2009context], later likelihood-based variants [@kragel2015neural; @morton2016predictive], emotional CMR variants [@talmi2019retrieved; @cohen2022memory], and target-monitoring extensions [@lohnas2015expanding].
-
-:::: {#tbl-base-parameters}
-| Symbol | Name | Role |
-|---|---|---|
-| $\beta_{enc}$ | encoding drift rate | Context drift during study |
-| $\beta_{start}$ | start drift rate | Drift toward start-of-film context at recall onset |
-| $\beta_{rec}$ | recall drift rate | Context drift after recall |
-| $\gamma$ | feature-to-context learning rate | Learning rate for $M^{FC}$ |
-| $\lambda$ | context-to-feature learning scale | Baseline or phase-scaled learning rate for $M^{CF}$ |
-| $\alpha$ | shared support | Pre-experimental shared support in $M^{CF}$ |
-| $\delta$ | self support | Pre-experimental self-support in $M^{CF}$ |
-| $\phi_s$ | primacy scale | Initial boost to context-to-feature learning |
-| $\phi_d$ | primacy decay | Decay rate of primacy boost |
-| $\tau$ | choice sensitivity | Sensitivity of choice to support differences |
-| $\beta_{emot}$ | source-context drift rate | Source context drift |
-| $\phi_{\mathrm{emot}}$ | source learning scale | Learning scale for the marked source feature |
-| $\kappa$ | target-monitoring scale | Reduced context updating after sampled off-target candidates when target monitoring is enabled |
-| $\theta_s$ | stop scale | Baseline stopping probability |
-| $\theta_r$ | stop growth | Growth of stopping probability across retrieval-attempt positions |
-
-Model parameters and roles in the model specification.
-Base parameters are the unscaled values used by the model equations before simulation-specific multipliers are applied.
-A phase is a segment of the simulated paradigm, such as film encoding, intervening delay, reminder, task encoding, post-task delay, or retrieval.
-::::
-
-Pre-experimental associations represent background memory structure already present before the simulated paradigm begins.
-They give each item baseline self-support and shared support, so later retrieval reflects both pre-existing structure and associations learned during the film, task, and filler phases.
-The selective interference simulations vary the new associations formed across phases.
-These baseline associations are fixed model architecture and are held constant across the selective interference simulations.
-For the start unit and item-associated temporal context units:
-
-$$
-M^{FC}_{pre}(j,i) =
-\begin{cases}
-1 - \gamma & \text{if } j = i + 1 \\
-0 & \text{otherwise}
-\end{cases}
-$$ {#eq-mfc-pre}
-
-$$
-M^{CF}_{pre}(i,j) =
-\begin{cases}
-0 & \text{if } j = 0 \\
-\delta & \text{if } j = i + 1 \\
-\alpha & \text{if } j > 0 \text{ and } j \neq i + 1
-\end{cases}
-$$ {#eq-mcf-pre}
-
-The start context has no pre-experimental context-to-feature support.
-For context units corresponding to items, $\delta$ gives each item self-support and $\alpha$ gives all other items shared support.
-This initialization supplies baseline support before experimental learning.
-
-## Context Updating, Learning, and Retrieval
-
-Context updating defines both gradual drift during encoding and reinstatement by recalled items and by items presented as reminders or test cues.
-The same feature-to-context operation updates context when an item is encoded, recalled, presented as a reminder, or presented as a cue by the test.
-When feature $f_i$ is active, it probes feature-to-context memory to retrieve context input:
-
-$$
-c_i^{\mathrm{IN}} = M^{FC} f_i
-$$ {#eq-context-input}
-
-The model normalizes this input to unit length, yielding $\widehat{c}_i^{\mathrm{IN}}$.
-Context then drifts toward the normalized input with a drift rate $\beta$:
-
-$$
-c_i = \rho_i \, c_{i-1} + \beta \, \widehat{c}_i^{\mathrm{IN}}
-$$ {#eq-context-update}
-
-Let $d_i = c_{i-1} \cdot \widehat{c}_i^{\mathrm{IN}}$.
-The normalization coefficient is:
-
-$$
-\rho_i = \sqrt{1 + \beta^2 (d_i^2 - 1)} - \beta d_i
-$$ {#eq-context-rho}
-
-The coefficient $\rho_i$ is the nonnegative solution that keeps $c_i$ at unit length.
-Associative learning defines how encoded film, task, and filler events become later retrieval candidates.
-When a new event is encoded, the active feature and updated context are associated via outer-product learning.
-Feature-to-context associations update as:
-
-$$
-\Delta M^{FC} = \gamma c_i f_i^\top
-$$ {#eq-mfc-learning}
-
-A primacy function weights context-to-feature learning:
-
-$$
-\phi_i = \phi_s \, e^{-\phi_d \cdot i} + 1
-$$ {#eq-primacy}
-
-Context-to-feature associations update as:
-
-$$
-\Delta M^{CF} = \lambda \phi_i f_i c_i^\top
-$$ {#eq-mcf-learning}
-
-Here, $\lambda$ scales context-to-feature learning, while $\phi_s$ and $\phi_d$ define the size and decay of the primacy boost.
-Retrieval uses the current context state to assign support to candidate items, sample from the resulting competition, and terminate the sampling sequence.
-During context-guided retrieval, current context cues encoded items through $M^{CF}$:
-
-$$
-a_i = \left[M^{CF} c\right]_i
-$$ {#eq-retrieval-support}
-
-The choice sensitivity $\tau$ controls how strongly support differences affect choice among candidates:
-
-$$
-A_i = a_i^{\tau}
-$$ {#eq-choice-sensitivity}
-
-The probability of sampling item $i$, conditional on continuing retrieval, follows a Luce choice rule over currently unsampled items:
-
-$$
-P(i \mid \text{continue}) = \frac{A_i}{\sum_k A_k}
-$$ {#eq-luce-choice}
-
-At each retrieval step, the model may terminate with probability $P_{\mathrm{stop}}(j)$ or sample an item with probability $(1 - P_{\mathrm{stop}}(j)) \cdot P(i \mid \text{continue})$.
-Termination probability grows with retrieval-attempt position:
-
-$$
-P_{\mathrm{stop}}(j) = \theta_s e^{j\theta_r}
-$$ {#eq-stopping}
-
-Here, $j$ is the number of items already sampled, $\theta_s$ sets the baseline termination probability, and $\theta_r$ controls its growth.
-In simulations, this value is bounded to remain a valid probability.
-After a sampled item $r_j$, context is updated through the same feature-to-context pathway:
-
-$$
-c_{j+1} = \rho_{\mathrm{rec},j} \, c_j + \beta_{rec} \, \widehat{M^{FC} f_{r_j}}
-$$ {#eq-recall-context-update}
-
-This sampled-item update drives context toward the sampled item's encoding neighborhood, biasing subsequent retrievals toward nearby items and producing temporal organization in retrieval.
-Encoding operations use the context update and learning equations together, whereas reminders, sampled items, and film items supplied as test cues use the context update without adding a new recallable event.
-
-## Retrieval Control
-
-Retrieval-control settings alter the starting state and selection process used by the same context-to-feature retrieval operation.
-Unguided retrieval and deliberate recall use the same retrieval-support and choice rules in @eq-retrieval-support and @eq-luce-choice.
-They differ in the control settings applied to the retrieval state and sampling process.
-The first deliberate-recall control setting is start-of-film context reinstatement:
-
-$$
-c_\text{start} = \rho_\text{start} \, c_N + \beta_{start} \, c_0
-$$ {#eq-start-context-reinstatement}
-
-Here, $\rho_\text{start}$ is calculated from @eq-context-rho using $\beta_{start}$.
-Simulation settings can use the fitted $\beta_{start}$ value directly or multiply it to vary the degree of start-of-list context reinstatement.
-The second control setting is retrieval selectivity, implemented by scaling $\tau$.
-Higher $\tau$ makes selection more sensitive to differences in candidate support.
-This setting protects film recall only when the retrieval context already gives film items stronger support than task competitors.
-The third control setting is retrieval monitoring after an off-target item is sampled.
-Let $t_i = 1$ for film items and $t_i = 0$ otherwise, and define $\kappa_i = t_i + (1 - t_i)\kappa$.
-Retrieval monitoring modifies the sampled-item context update in @eq-recall-context-update.
-With retrieval monitoring, the context update after sampled item $i$ becomes:
-
-$$
-c_{j+1} = \rho_{\mathrm{rec},j} \, c_j + \kappa_i\beta_{rec} \, \widehat{M^{FC} f_i}
-$$ {#eq-target-monitoring-update}
-
-When $\kappa < 1$, sampled off-target candidates have less influence on the next context state than sampled film items.
-This convention is used for deliberate recall when simulations manipulate rejected-sample updating.
-Tests that supply a film item are represented as cue-driven context reinstatement using the same feature-to-context input operation as @eq-context-input:
-
-$$
-c_\text{film}^{\mathrm{IN}} = M^{FC} f_\text{film}
-$$ {#eq-film-cue-input}
-
-Supplied film items therefore use the same feature-to-context operation as sampled and reminded items.
-
-## Source Context
-
-The source-context pathway adapts the emotional/source-context machinery of eCMR and CMR3 to the present trauma-film setting.
-In published emotional CMR models, emotional features update a source-context subregion and can form item-context associations [@talmi2019retrieved; @cohen2022memory].
-Here, we use the same architectural role for a simplified film-source dimension: a non-temporal context feature that can organize recall when shared across items [@polyn2009context; @talmi2019retrieved; @cohen2022memory].
-In the present simulations, this pathway is represented by a simplified source feature vector $s_i$ with a marked film/source feature and a neutral/default feature.
-Film items are assigned the marked source feature, whereas break, task, and filler items are assigned the neutral/default feature unless a later source-overlap manipulation states otherwise.
-The source feature vector initializes $M^{FC}_{emot}$ so that an item can cue its source-context components:
-
-$$
-M^{FC}_{emot}(\cdot, i) = (1 - \gamma) s_i
-$$ {#eq-emot-mfc-pre}
-
-Source-context-to-feature support begins at zero:
-
-$$
-M^{CF}_{emot}(i, \cdot) = 0
-$$ {#eq-emot-mcf-pre}
-
-Thus, source context can update during experience before it contributes retrieval support.
-Source-context components use the same context-update rule in @eq-context-update with source-context drift rate $\beta_{emot}$.
-Let $\eta_s$ denote baseline source-context-to-feature learning and let $\phi_{\mathrm{emot},i}$ denote added learning for item $i$ in the marked source pathway.
-With the binary vector above, $\phi_{\mathrm{emot},i} = \phi_{\mathrm{emot}} [s_i]_1$, so film items assigned the marked source feature receive $\phi_{\mathrm{emot}}$ and neutral/default items receive 0.
-When source-context learning is engaged, the source components of context receive additional context-to-feature learning:
-
-$$
-\Delta M^{CF}_{emot} = \lambda \phi_i (\eta_s + \phi_{\mathrm{emot},i}) f_i c_{\mathrm{emot},i}^\top
-$$ {#eq-emot-mcf-learning}
-
-Here, $c_{\mathrm{emot},i}$ denotes the source components of context.
-Source-context support enters retrieval through learned source context-to-feature associations and contributes to the same competition defined in @eq-retrieval-support.
-Because $\eta_s$ is nonzero in the current simulations, neutral/default items can weakly bind the source context active during encoding without being assigned the marked film/source feature.
-This lets task items inherit some influence from reinstated film-source context when the task is encoded after a film reminder, while still preserving a distinction between marked film items and neutral task competitors.
-
-At retrieval onset, all current simulations include a fixed partial reinstatement of the marked film-source context.
-This fixed source-context orientation represents the test setting orienting retrieval toward the film episode at the level of source context.
-It is held constant across unguided and deliberate retrieval and is separate from the start-of-list context reinstatement manipulated in Simulation 2.
-Task items are assigned the marked source feature only in later source-overlap variants.
-When film and task items share the marked source feature and source context-to-feature learning is enabled, @eq-emot-mcf-learning can amplify competition beyond temporal proximity alone.
-
-These equations define the item-context architecture used in all simulations.
-During retrieval, the model samples one candidate at a time until stopping.
-Task competitors reduce film recall when they are sampled instead of film items, using retrieval attempts that could otherwise have returned film material. -->
+<p>The simulations use this evidence as a supplied-item access step rather than a full recognition-decision model. A recognition probe can update context after evidence is scored, but it is not treated as a recalled output. It does not enter the recallable candidate set, make the probed item unavailable for later recall, or add new learning. This implements the focal distinction between recognition and context-guided recall measures in the trauma-film paradigm: recall requires film material to be selected from context-supported candidates, whereas recognition starts with the candidate item and evaluates the context it retrieves.</p>
 </section>
 </section>
 <section id="simulations" class="level1">
@@ -800,7 +683,7 @@ Task competitors reduce film recall when they are sampled instead of film items,
 <div id="tbl-simulation-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Overview of what is held fixed, varied, and measured across simulations.
+Table&nbsp;2: Overview of what is held fixed, varied, and measured across simulations.
 </figcaption>
 <div aria-describedby="tbl-simulation-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -844,11 +727,11 @@ Table&nbsp;1: Overview of what is held fixed, varied, and measured across simula
 </div>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>The simulations require default values for context drift, associative learning, retrieval choice, and stopping before the trauma-film manipulations are applied. Ideally, these values would be estimated from a selective interference experiment that implements the full paradigm modeled here: film encoding, reminder or no-reminder conditions, an interference task, a later retrieval test, and an observed dissociation between unguided and deliberate retrieval measures. Such a dataset would also need trial-by-trial recall sequences that identify which film, task, and non-film candidates entered the retrieval stream and in what order, so the model could estimate retrieval competition rather than only final film memory scores. Existing trauma-film studies define the target phenomenon, but they typically do not provide this model-fitting structure. We therefore use an immediate affective free-recall dataset as a provisional anchor for core eCMR dynamics before applying the selective interference manipulations in simulation. The anchor dataset included participants who reported concern about the war in Ukraine and studied and recalled lists of war-related and neutral photographs <span class="citation" data-cites="dupertuys2026ukraine">(<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">Dupertuys, Shulhan, and Talmi 2026</a>)</span>. The fitted dataset included 123 participants, four lists per participant, 492 immediate recall sequences, and 3,804 scored recall events. The fit provides an externally estimated eCMR regime for deliberate context-guided recall of affective and neutral photographs. The fitted parameters set the starting encoding, retrieval, and stopping dynamics before the selective interference manipulations are applied as phase-specific encoding or retrieval-control settings. In these simulations, film items reinstate the marked source feature into source context, neutral/default events can weakly bind active source context, and retrieval begins with partial film-source reinstatement. To accommodate the difference in total encoded items between the immediate-recall paradigm and these simulations, the primacy profile is also moderated relative to the immediate-recall fit so that the film sequence is not dominated by an unrealistically steep first-item advantage. <a href="#tbl-simulation-parameters" class="quarto-xref">Table&nbsp;2</a> gives the default numerical values used in the simulations.</p>
+<p>The simulations require default values for context drift, associative learning, retrieval choice, and stopping before the trauma-film manipulations are applied. Ideally, these values would be estimated from a selective interference experiment that implements the full paradigm modeled here: film encoding, reminder or no-reminder conditions, an interference task, a later retrieval test, and an observed dissociation between unguided and deliberate retrieval measures. Such a dataset would also need trial-by-trial recall sequences that identify which film, task, and non-film candidates entered the retrieval stream and in what order, so the model could estimate retrieval competition rather than only final film memory scores. Existing trauma-film studies define the target phenomenon, but they typically do not provide this model-fitting structure. We therefore use an immediate affective free-recall dataset as a provisional anchor for core eCMR dynamics before applying the selective interference manipulations in simulation. The anchor dataset included participants who reported concern about the war in Ukraine and studied and recalled lists of war-related and neutral photographs <span class="citation" data-cites="dupertuys2026ukraine">(<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">Dupertuys, Shulhan, and Talmi 2026</a>)</span>. The fitted dataset included 123 participants, four lists per participant, 492 immediate recall sequences, and 3,804 scored recall events. The fit provides an externally estimated eCMR regime for deliberate context-guided recall of affective and neutral photographs. The fitted parameters set the starting encoding, retrieval, and stopping dynamics before the selective interference manipulations are applied as phase-specific encoding or retrieval-control settings. In these simulations, film items reinstate the marked source feature into source context, neutral/default events can weakly bind active source context, and retrieval begins with partial film-source reinstatement. To accommodate the difference in total encoded items between the immediate-recall paradigm and these simulations, the primacy profile is also moderated relative to the immediate-recall fit so that the film sequence is not dominated by an unrealistically steep first-item advantage. <a href="#tbl-simulation-parameters" class="quarto-xref">Table&nbsp;3</a> gives the default numerical values used in the simulations.</p>
 <div id="tbl-simulation-parameters" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Default numerical parameter values. Values are from a pooled eCMR fit to the immediate free-recall sequences from <span class="citation" data-cites="dupertuys2026ukraine">Dupertuys, Shulhan, and Talmi (<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">2026</a>)</span>, with <span class="math inline">\(\alpha\)</span> fixed to zero, except for the source-context and primacy settings described in the text.
+Table&nbsp;3: Default numerical parameter values. Values are from a pooled eCMR fit to the immediate free-recall sequences from <span class="citation" data-cites="dupertuys2026ukraine">Dupertuys, Shulhan, and Talmi (<a href="#ref-dupertuys2026ukraine" role="doc-biblioref">2026</a>)</span>, with <span class="math inline">\(\alpha\)</span> fixed to zero, except for the source-context and primacy settings described in the text.
 </figcaption>
 <div aria-describedby="tbl-simulation-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -961,11 +844,11 @@ Figure&nbsp;5: <strong>Simulation 1: unguided film recall after task encoding.</
 </figcaption>
 </figure>
 </div>
-<p>These aggregate results establish the unguided interference component. The diagnostics below first show how this redistribution appears across encoded positions, then examine how it follows from context overlap; Simulation 2 then asks which deliberate-retrieval controls attenuate this loss. <a href="#tbl-simulation1-phase-settings" class="quarto-xref">Table&nbsp;3</a> summarizes the phase structure and settings used for Simulation 1. In the table, break/buffer items implement the intervening delay, and filler items implement the post-task delay. For each reminder condition and task encoding strength, serial-position curves show retrieval-test outcomes sorted by where each item appeared in the encoded sequence. <a href="#fig-simulation1-context-overlap" class="quarto-xref">Figure&nbsp;7</a> inspects the context-overlap structure that helps explain the aggregate film and task output in <a href="#fig-simulation1-unguided-sequence" class="quarto-xref">Figure&nbsp;5</a>. The context-similarity analysis asks how similar each film-encoding context is to the contexts active while task items are encoded, using cosine similarity over unit-normalized temporal context states.</p>
+<p>These aggregate results establish the unguided interference component. The diagnostics below first show how this redistribution appears across encoded positions, then examine how it follows from context overlap; Simulation 2 then asks which deliberate-retrieval controls attenuate this loss. <a href="#tbl-simulation1-phase-settings" class="quarto-xref">Table&nbsp;4</a> summarizes the phase structure and settings used for Simulation 1. In the table, break/buffer items implement the intervening delay, and filler items implement the post-task delay. For each reminder condition and task encoding strength, serial-position curves show retrieval-test outcomes sorted by where each item appeared in the encoded sequence. <a href="#fig-simulation1-context-overlap" class="quarto-xref">Figure&nbsp;7</a> inspects the context-overlap structure that helps explain the aggregate film and task output in <a href="#fig-simulation1-unguided-sequence" class="quarto-xref">Figure&nbsp;5</a>. The context-similarity analysis asks how similar each film-encoding context is to the contexts active while task items are encoded, using cosine similarity over unit-normalized temporal context states.</p>
 <div id="tbl-simulation1-phase-settings" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation1-phase-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: Phase structure and settings for Simulation 1. Scale values multiply the corresponding base rates or learning strengths.
+Table&nbsp;4: Phase structure and settings for Simulation 1. Scale values multiply the corresponding base rates or learning strengths.
 </figcaption>
 <div aria-describedby="tbl-simulation1-phase-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
