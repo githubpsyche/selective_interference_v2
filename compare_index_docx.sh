@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 NOTES_DIR="$ROOT_DIR/notes"
 REVISED_DOC="${REVISED_DOC:-$ROOT_DIR/docs/index.docx}"
-OUTPUT_DOC="${OUTPUT_DOC:-$ROOT_DIR/docs/compare_index.docx}"
+OUTPUT_DOC="${OUTPUT_DOC:-$ROOT_DIR/notes/compare_index.docx}"
 TIMEOUT_SECONDS="${COMPARE_TIMEOUT_SECONDS:-180}"
 
 if [[ ! -d "$NOTES_DIR" ]]; then

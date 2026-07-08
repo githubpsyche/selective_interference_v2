@@ -46,25 +46,25 @@ Explaining how episodic memory preserves consequential events while regulating t
 The trauma-film paradigm provides a controlled setting for comparing intrusive and voluntary memory for the same event [@holmes2008inducing; @james2016trauma].
 Participants view distressing film material, record later intrusive memories of the film, and often complete voluntary-memory tests for the same material.
 This design makes it possible to ask whether the same encoded event can remain available to deliberate retrieval while becoming more or less likely to come to mind involuntarily.
-In such research, intrusion frequency can be weakly related to voluntary-memory performance, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
+In such research, intrusion frequency is often only weakly related to voluntary-memory performance, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
 The same encoded episode can therefore support both involuntary and deliberate access, and these modes can come apart empirically.
 
 Visuospatial interference tasks make this dissociation experimentally sharper.
 In immediate post-film studies, tasks such as Tetris can reduce later film intrusions while voluntary memory for the same material remains relatively intact [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
-Delayed variants add a later reminder before the interference task.
+Delayed variants pair the interference task with a film reminder.
 Participants return after roughly 24 hours to 3 days, view reminder cues for the film, and then complete Tetris.
-These reminder-plus-Tetris procedures can also reduce subsequent intrusions [@james2015computer; @kessler2020visuospatial].
+This reminder-plus-Tetris sequence can reduce subsequent intrusions [@james2015computer; @kessler2020visuospatial].
 Related procedures have been extended beyond analogue trauma films to real-life and occupational trauma, including motor vehicle accidents, emergency caesarean section, refugee trauma, and health-care work during COVID-19 [@iyadurai2018preventing; @horsch2017reducing; @kanstrup2021single; @iyadurai2023reducing; @ramineni2023treating; @kanstrup2024guided; @beckenstrom2026digital].
 At the same time, recent reviews and replication attempts caution against treating the effect as settled or uniform [@asselbergs2023systematic; @varma2024experimental; @wessel2025evidence; @mcconnell2026testing].
 This selective interference effect therefore raises a theoretical question:
 when and why can an intervention alter intrusion-like and voluntary access differently, even when both concern the same recent experience?
-@fig-empirical-target schematizes this target as an interaction among reminder timing, task condition, and retrieval condition.
+@fig-empirical-target summarizes the modeled contrast: a reminder-linked interference task should reduce intrusion-like film access more than voluntary film recall.
 
 The selective interference effect has been used to argue that intrusive and voluntary remembering depend on differently vulnerable memory representations [@brewin1996dual; @brewin2014episodic].
 Dual-representation accounts give this interpretation an architectural basis.
 Intrusive re-experiencing is linked especially to sensory-bound representations, whereas deliberate remembering depends more on contextualized episodic representations [@brewin2010intrusive; @brewin2014episodic].
 In immediate post-film interventions, visuospatial tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
-Because later intrusions are assumed to arise especially from sensory-bound representations, this competition should reduce intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
+Because later intrusions are assumed to arise especially from sensory-bound representations, the selective pattern is attributed to disrupting the representation most likely to support intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
 In delayed post-reminder interventions, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@kindt2009beyond; @james2015computer].
 Across these variants, selectivity is explained as a stronger effect on the memory basis for intrusions than for voluntary remembering.
 

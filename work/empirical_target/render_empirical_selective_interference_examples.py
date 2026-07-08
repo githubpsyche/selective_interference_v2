@@ -359,11 +359,12 @@ def save_caption_composite() -> None:
     image_height = fig_width * image_aspect
     title = "Empirical examples of selective interference."
     body = (
-        "Rows show exemplar trauma-film studies selected to span core methodological variants in the review table: "
-        "a delayed reminder-by-Tetris design, a voluntary free-recall test, and a laboratory vigilance-intrusion task with "
-        "trauma-film cues. "
-            "Gray bars show comparison or rest conditions, and orange bars show Tetris interference. "
-        "Bars reproduce published condition means in native study units, not model output; y-axis scales differ across outcomes."
+        "Rows show three exemplar studies that differ in how intrusion-like and voluntary memory are measured: "
+        "a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a "
+        "trauma-film-cued vigilance-intrusion-plus-recognition design. "
+        "Left panels plot intrusion-like film access and right panels plot deliberate memory. "
+        "Gray bars indicate comparison or rest conditions and orange bars indicate Tetris interference. "
+        "Bar heights reproduce published condition means in native study units, so y-axis scales differ across outcomes."
     )
     body_lines = textwrap.wrap(body, width=142)
     caption_height = 0.55 + 0.22 * max(1, len(body_lines))

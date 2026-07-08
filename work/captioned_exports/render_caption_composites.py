@@ -33,8 +33,8 @@ CAPTIONED_FIGURES = [
         "body": (
             "(A) The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, "
             "an intervening task, a post-task delay, and a later test of unguided or voluntary recall. "
-            "(B) The canonical selective interference effect is summarized as a schematic crossing reminder condition, intervening "
-            "task, and retrieval measure. "
+            "(B) The canonical selective interference effect is summarized as a schematic interaction among reminder condition, "
+            "intervening task, and retrieval condition. "
             "Columns distinguish whether the task is preceded by a film reminder, rows distinguish intrusion-like film access from "
             "voluntary film recall, and paired bars compare film output after a comparison task versus an interference task. "
             "The interference task produces the largest reduction in intrusion-like film access when it follows a film reminder, "
@@ -47,17 +47,19 @@ CAPTIONED_FIGURES = [
         "output": CAPTION_EXPORT_DIR / "retrieved_context_encoding_associations_composite_with_caption",
         "title": "Encoding and associative structure in the retrieved-context account.",
         "body": (
-            "(A) The model stores bidirectional item-context associations: context-to-feature associations cue candidate items from "
-            "the current context, and feature-to-context associations reinstate context when an item is recalled or when a film "
-            "reminder or test cue is presented. "
-            "This associative structure determines which items can compete during later retrieval. "
-            "(B) The interference intervention alters this structure during encoding. "
-            "Without a pre-task reminder, task items are encoded in relatively distinct context states. "
-            "With a pre-task film reminder, task encoding occurs after film-associated context has been reinstated. "
-            "When task encoding is strong, task items become strongly linked to those film-overlapping context states. "
+            "(A) The model stores bidirectional item-context associations. "
+            "Context-to-feature associations cue candidate items from the current context, and feature-to-context associations "
+            "reinstate context when an item is recalled or when a reminder or test cue is presented. "
+            "(B) The interference manipulation changes which context states task items are linked to during encoding. "
+            "Without a pre-task reminder, task items are encoded after context has drifted away from the film. "
+            "With a pre-task film reminder, task encoding occurs after film-associated context has been reinstated, so task items "
+            "are learned in context states that overlap with film context. "
             "Thus, the same context that can cue film items can also cue task competitors during later retrieval. "
-            "Blue marks film items or film-linked context, orange marks task items or task-linked context, green marks film reminder "
-            "cues, and gray marks neutral, delay, comparison, or shared model structure."
+            "When task encoding is strong, those task items become stronger competitors during later context-guided retrieval. "
+            "Circles mark item features: F labels film items and T labels task items. "
+            "Squares mark context states. "
+            "Blue marks film items or film-linked context, orange marks task items or task-linked context, green marks reminder cues, "
+            "and gray marks neutral, delay, comparison, or shared model structure."
         ),
     },
     {
@@ -67,16 +69,18 @@ CAPTIONED_FIGURES = [
         "body": (
             "(A) The upper box represents stored film and task associations; the lower boxes compare the context state used to begin "
             "unguided retrieval and deliberate recall. "
+            "Stored film and task associations can be sampled from different starting contexts. "
             "Unguided retrieval begins from ongoing context, which can support film and task candidates together. "
-            "Deliberate recall can begin with start-of-film context reinstatement, giving stronger support to film candidates while "
-            "task candidates remain weakly supported. "
-            "(B) A maintained film goal provides an additional deliberate-retrieval signal through context-to-feature memory. "
-            "Ongoing context can still cue both film items and task competitors, but the film goal adds support to film candidates "
+            "Deliberate recall can begin with start-of-film context reinstatement, which favors film candidates while leaving task "
+            "candidates possible. "
+            "(B) A maintained film goal provides an additional deliberate-retrieval signal during context-to-feature sampling. "
+            "Ongoing context can still cue both film items and task competitors, but the maintained goal adds support to film candidates "
             "rather than to task competitors. "
             "(C) Rows compare film recall, unmonitored task recall, and monitored task recall. "
-            "A recalled item updates the next context through feature-to-context memory, and that next context cues later candidates. "
-            "Without monitoring, recalling a task item can shift later context toward task candidates; with retrieval monitoring, that "
-            "task-item update is dampened, preserving some film-candidate support. "
+            "Sampled outputs update the next retrieval context through feature-to-context memory. "
+            "Recalling a film item keeps later search biased toward film candidates. "
+            "Recalling a task item without monitoring can shift later context toward task candidates. "
+            "With retrieval monitoring, the task-item update is dampened, preserving some film-candidate support. "
             "Blue marks film items, film-biased context, or stronger film support; orange marks task items, task-biased context, or "
             "stronger task support; gray marks shared context and associative operations. "
             "Dashed outlines or arrows mark weaker support or dampened updating, not unavailable candidates."
@@ -134,8 +138,8 @@ CAPTIONED_FIGURES = [
         "body": (
             "Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between "
             "unguided recall and deliberate film recall. "
-            "Deliberate film recall combined start-of-film context reinstatement, a maintained film goal, and moderate retrieval "
-            "monitoring. Weak film cues were supplied periodically during recall in all conditions. "
+            "Deliberate film recall combined start-of-film context reinstatement, a maintained film-retrieval goal, and "
+            "post-retrieval context monitoring. Weak film cues were supplied periodically during recall in all conditions. "
             "Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task "
             "encoding. "
             "Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much "
@@ -203,15 +207,16 @@ CAPTIONED_FIGURES = [
         "body": (
             "The high-interference condition was held fixed: a film reminder preceded strong task encoding, and weak film cues were "
             "supplied periodically during recall. "
-            "A film-retrieval goal is an internally maintained retrieval state that supports film items during deliberate recall, "
+            "A film-retrieval goal is a maintained film-category cue that supports film items during deliberate recall, "
             "distinct from the external film reminder and test-phase film cues. "
             "(A) Mean overlap between task-encoding contexts and film-directed retrieval cues, averaging across encoded task positions "
             "for each encoded film position. "
             "(B) Full overlap matrices for the same condition. "
-            "The left matrix uses temporal context alone; the right matrix adds the film-retrieval goal to the film-directed retrieval cue. "
+            "The left matrix uses temporal context alone; the right matrix schematically adds the maintained film-category cue to "
+            "the film-directed retrieval cue. "
             "Brighter cells indicate greater overlap with task-encoding context. "
-            "Adding the film-retrieval goal reduces overlap between film-directed retrieval cues and task-encoding contexts, providing "
-            "a route to film recall that depends less on temporal context remaining selective for film items."
+            "Adding the maintained film-category cue reduces overlap between film-directed retrieval cues and task-encoding contexts, "
+            "providing a route to film recall that depends less on temporal context remaining selective for film items."
         ),
     },
     {
@@ -219,20 +224,16 @@ CAPTIONED_FIGURES = [
         "output": CAPTION_EXPORT_DIR / "item_context_recognition_with_caption",
         "title": "Item-to-context retrieval bypasses reminder-linked task interference.",
         "body": (
-            "(A) CMR stores bidirectional associations between item features and context. Feature-to-context memory (MFC; green) "
-            "lets an available item reinstate its associated context, whereas context-to-feature memory (MCF; red) lets context "
-            "cue candidate items. "
-            "(B) The two directions of retrieval differ in where task competition can enter. When film-associated context cues items "
-            "through MCF, film items and reminder-linked task items can both receive support. When a film item reinstates context "
-            "through MFC, retrieval targets context units instead, so task items are not competitors in that step. C1-C4 are example "
-            "context units/features, and film/task circles are example item units; arrows show selected learned associations, not "
-            "temporal order or the full model state. "
+            "(A) CMR stores bidirectional associations between item features and context. "
+            "Feature-to-context memory lets an available item reinstate its associated context, whereas context-to-feature memory "
+            "lets context cue candidate items. "
+            "(B) When film-associated context cues items, film items and reminder-linked task items can both receive support. "
+            "When a film item reinstates context, retrieval targets context units instead, so task items are not competitors in that step. "
             "(C) In recognition, the tested film item is already available. The item retrieves associated context, which is compared "
             "with ongoing test context; stronger matches provide stronger evidence that the item appeared in the film. "
             "(D) Film recognition accuracy is plotted across the same reminder and task-encoding conditions used in the recall "
-            "simulations. Accuracy is hit rate minus false-alarm rate for unstudied film-like lures. The reminder-plus-strong-task "
-            "condition does not produce a corresponding reduction in recognition accuracy. Blue marks film items, orange marks task "
-            "items, gray marks shared context or item-layer structure, green marks MFC, and red marks MCF."
+            "simulations. Accuracy is hit rate minus false-alarm rate for unstudied film-like lures. "
+            "The reminder-plus-strong-task condition does not produce a corresponding reduction in recognition accuracy."
         ),
         "top_caption_gap": 0.010,
     },
