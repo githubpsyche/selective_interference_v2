@@ -22,12 +22,12 @@ fig-cap-location: bottom
 
 # Abstract
 
-In the trauma-film paradigm, a visuospatial task after a later film reminder can reduce the frequency of film-related intrusions while leaving voluntary memory relatively intact.
+In the trauma-film paradigm, a visuospatial task after a later film reminder can reduce the frequency of film intrusions while leaving voluntary memory relatively intact.
 This selective interference effect is often treated as evidence that involuntary and deliberate remembering depend on different memory representations.
 We propose instead that the dissociation can reflect differences in how retrieval is cued and controlled.
 We implement this account in an emotional Context Maintenance and Retrieval (eCMR) model that simulates film, reminder, and task encoding and predicts sequences of film and non-film recall events.
 In the model, a film reminder reinstates film-associated context before the task.
-Task items are then encoded in association with that context, so later film-related context can cue task competitors as well as film items.
+Task items are then encoded in association with that context, so later film-associated context can cue task competitors as well as film items.
 Deliberate recall is less affected when a maintained film-retrieval goal gives film candidates an additional source of support without equally supporting task competitors.
 In tasks like recognition, the test presents the item, so the model evaluates the item's fit to context instead of selecting among film and task candidates.
 This comparison can therefore make voluntary memory appear spared because of test format rather than because voluntary remembering is generally unaffected.
@@ -87,7 +87,7 @@ Figure 7. **Simulation 1: reminder reinstatement increases overlap between film 
 
 ![](../work/simulation2_control_cued_behavioral/simulation2_control_cued_behavioral.png){width="100%"}
 
-Figure 8. **Simulation 2: deliberate film recall is protected from reminder-linked task interference.** Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between unguided recall and deliberate film recall. Deliberate film recall combined start-of-film context reinstatement, a maintained film-retrieval goal, and moderate retrieval monitoring. Weak film cues were supplied periodically during recall in all conditions. Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task encoding. Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much larger under unguided recall than under deliberate film recall. The model therefore simulates a selective interference effect: the reminder-plus-strong-task intervention strongly reduces unguided film access while leaving deliberate film recall relatively preserved.
+Figure 8. **Simulation 2: deliberate film recall is protected from reminder-linked task interference.** Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between unguided recall and deliberate film recall. Deliberate film recall combined start-of-film context reinstatement, a maintained film-retrieval goal, and post-retrieval context monitoring. Weak film cues were supplied periodically during recall in all conditions. Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task encoding. Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much larger under unguided recall than under deliberate film recall. The model therefore simulates a selective interference effect: the reminder-plus-strong-task intervention strongly reduces unguided film access while leaving deliberate film recall relatively preserved.
 
 {{< pagebreak >}}
 
@@ -99,7 +99,7 @@ Figure 9. **Simulation 2: different retrieval controls preserve film recall to d
 
 ![](../work/simulation2_film_retrieval_goal_context_overlap/simulation2_film_retrieval_goal_context_overlap.png){width="100%"}
 
-Figure 10. **Simulation 2: a film-retrieval goal separates film-directed retrieval from task context overlap.** The high-interference condition was held fixed: a film reminder preceded strong task encoding, and weak film cues were supplied periodically during recall. A film-retrieval goal is an internally maintained retrieval state that supports film items during deliberate recall, distinct from the external film reminder and test-phase film cues. (A) Mean overlap between task-encoding contexts and film-directed retrieval cues, averaging across encoded task positions for each encoded film position. (B) Full overlap matrices for the same condition. The left matrix uses temporal context alone; the right matrix adds the film-retrieval goal to the film-directed retrieval cue. Brighter cells indicate greater overlap with task-encoding context. Adding the film-retrieval goal reduces overlap between film-directed retrieval cues and task-encoding contexts, providing a route to film recall that depends less on temporal context remaining selective for film items.
+Figure 10. **Simulation 2: a film-retrieval goal separates film-directed retrieval from task context overlap.** The high-interference condition was held fixed: a film reminder preceded strong task encoding, and weak film cues were supplied periodically during recall. A film-retrieval goal is a maintained film-category cue that supports film items during deliberate recall, distinct from the external film reminder and test-phase film cues. (A) Mean overlap between task-encoding contexts and film-directed retrieval cues, averaging across encoded task positions for each encoded film position. (B) Full overlap matrices for the same condition. The left matrix uses temporal context alone; the right matrix schematically adds the maintained film-category cue to the film-directed retrieval cue. Brighter cells indicate greater overlap with task-encoding context. Adding the maintained film-category cue reduces overlap between film-directed retrieval cues and task-encoding contexts, providing a route to film recall that depends less on temporal context remaining selective for film items.
 
 {{< pagebreak >}}
 
