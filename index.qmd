@@ -66,7 +66,7 @@ Intrusive re-experiencing is linked especially to sensory-bound representations,
 In immediate post-film interventions, visuospatial tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
 Because later intrusions are assumed to arise especially from sensory-bound representations, the selective pattern is attributed to disrupting the representation most likely to support intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
 In delayed post-reminder interventions, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@kindt2009beyond; @james2015computer].
-Across these variants, selectivity is explained as a stronger effect on the memory basis for intrusions than for voluntary remembering.
+Across these variants, selective interference is explained by treating the intervention as acting more strongly on sensory-bound, intrusion-supporting representations than on the contextualized representations used in voluntary remembering.
 
 Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared. 
 Selective interference can instead arise from differences in how film memories are cued and controlled at retrieval.
