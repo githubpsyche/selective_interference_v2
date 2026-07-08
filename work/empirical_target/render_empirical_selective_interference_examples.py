@@ -363,7 +363,7 @@ def save_caption_composite() -> None:
         "a delayed reminder-by-Tetris design, a voluntary free-recall test, and a laboratory vigilance-intrusion task with "
         "trauma-film cues. "
             "Gray bars show comparison or rest conditions, and orange bars show Tetris interference. "
-        "Bars plot published condition means for film-related outcomes in native units, not model output; y-axis scales differ across outcomes."
+        "Bars reproduce published condition means in native study units, not model output; y-axis scales differ across outcomes."
     )
     body_lines = textwrap.wrap(body, width=142)
     caption_height = 0.55 + 0.22 * max(1, len(body_lines))
