@@ -206,12 +206,12 @@ def plot_candidate(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
         (
             title_axis_a,
             "A",
-            "Mean task-context overlap by film position",
+            "Mean context similarity by film position",
         ),
         (
             title_axis_b,
             "B",
-            "Film-task context overlap by position",
+            "Film-task context similarity by position",
         ),
     ]:
         title_axis.axis("off")
@@ -261,7 +261,7 @@ def plot_candidate(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
         label="With pre-task film reminder",
     )
     axis.set_xlabel("Encoded film position", fontsize=STRUCTURAL_FONTSIZE)
-    axis.set_ylabel("Mean task-context overlap", fontsize=STRUCTURAL_FONTSIZE)
+    axis.set_ylabel("Mean context similarity", fontsize=STRUCTURAL_FONTSIZE)
     axis.set_xlim(1, paradigm.n_film)
     axis.set_xticks([1, 4, 8, 12, 16])
     max_mean = max(float(np.max(matrix.mean(axis=1))) for matrix in matrices.values())
@@ -329,7 +329,7 @@ def plot_candidate(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
     heatmap_axes[1][0].tick_params(labelleft=False)
     if heatmap_image is not None:
         colorbar = fig.colorbar(heatmap_image, cax=colorbar_axis)
-        colorbar.ax.set_title("Context\noverlap", fontsize=STRUCTURAL_FONTSIZE, pad=7)
+        colorbar.ax.set_title("Context\nsimilarity", fontsize=STRUCTURAL_FONTSIZE, pad=7)
         colorbar.ax.tick_params(labelsize=SUPPORT_FONTSIZE)
 
     base = FIGURE_DIR / OUTPUT_PREFIX

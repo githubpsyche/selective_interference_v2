@@ -52,8 +52,8 @@ CAPTIONED_FIGURES = [
             "reinstate context when an item is recalled or when a reminder or test cue is presented. "
             "(B) The interference manipulation changes which context states task items are linked to during encoding. "
             "Without a pre-task reminder, task items are encoded after context has drifted away from the film. "
-            "With a pre-task film reminder, task encoding occurs after film-associated context has been reinstated, so task items "
-            "are learned in context states that overlap with film context. "
+            "With a pre-task film reminder, film-associated context is reinstated before task encoding, so task items are "
+            "learned while that context remains active. "
             "Thus, the same context that can cue film items can also cue task competitors during later retrieval. "
             "When task encoding is strong, those task items become stronger competitors during later context-guided retrieval. "
             "Circles mark item features: F labels film items and T labels task items. "
@@ -120,14 +120,15 @@ CAPTIONED_FIGURES = [
     {
         "image": ROOT / "work" / "simulation1_unguided_cued" / "simulation1_unguided_cued_context_overlap.png",
         "output": CAPTION_EXPORT_DIR / "simulation1_unguided_cued_context_overlap_with_caption",
-        "title": "Simulation 1: reminder reinstatement increases overlap between film and task contexts.",
+        "title": "Simulation 1: reminder reinstatement increases similarity between film- and task-encoding contexts.",
         "body": (
             "Reminder condition was varied before task encoding while retrieval was held unguided. "
-            "(A) Mean task-context overlap for each encoded film position, averaging across encoded task positions. "
-            "(B) Full film-by-task context-overlap matrices for the same conditions; each cell compares the context state associated "
+            "(A) Mean context similarity between each encoded film position and the task-encoding period, averaging across encoded "
+            "task positions. "
+            "(B) Full film-by-task context-similarity matrices for the same conditions; each cell compares the context state associated "
             "with one encoded film position to the context state active at one encoded task position. "
-            "Brighter cells indicate greater context overlap. "
-            "The film reminder increases overlap between film-encoding and task-encoding contexts, especially for later film positions "
+            "Brighter cells indicate greater context similarity. "
+            "The film reminder increases similarity between film-encoding and task-encoding contexts, especially for later film positions "
             "and early task positions."
         ),
     },
@@ -203,19 +204,19 @@ CAPTIONED_FIGURES = [
     {
         "image": ROOT / "work" / "simulation2_film_retrieval_goal_context_overlap" / "simulation2_film_retrieval_goal_context_overlap.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_film_retrieval_goal_context_overlap_with_caption",
-        "title": "Simulation 2: a film-retrieval goal separates film-directed retrieval from task context overlap.",
+        "title": "Simulation 2: a film-retrieval goal separates film-directed retrieval from task-context similarity.",
         "body": (
             "The high-interference condition was held fixed: a film reminder preceded strong task encoding, and weak film cues were "
             "supplied periodically during recall. "
             "A film-retrieval goal is a maintained film-category cue that supports film items during deliberate recall, "
             "distinct from the external film reminder and test-phase film cues. "
-            "(A) Mean overlap between task-encoding contexts and film-directed retrieval cues, averaging across encoded task positions "
-            "for each encoded film position. "
-            "(B) Full overlap matrices for the same condition. "
+            "(A) Mean similarity between task-encoding contexts and film-directed retrieval cues, averaging across encoded task "
+            "positions for each encoded film position. "
+            "(B) Full similarity matrices for the same condition. "
             "The left matrix uses temporal context alone; the right matrix schematically adds the maintained film-category cue to "
             "the film-directed retrieval cue. "
-            "Brighter cells indicate greater overlap with task-encoding context. "
-            "Adding the maintained film-category cue reduces overlap between film-directed retrieval cues and task-encoding contexts, "
+            "Brighter cells indicate greater similarity to task-encoding context. "
+            "Adding the maintained film-category cue reduces similarity between film-directed retrieval cues and task-encoding contexts, "
             "providing a route to film recall that depends less on temporal context remaining selective for film items."
         ),
     },

@@ -227,12 +227,12 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
         (
             title_axis_a,
             "A",
-            "Mean task overlap with film-context retrieval cues",
+            "Mean task-context similarity to film-directed cues",
         ),
         (
             title_axis_b,
             "B",
-            "Task overlap with film-context retrieval cues",
+            "Task-context similarity to film-directed cues",
         ),
     ]:
         title_axis.axis("off")
@@ -284,7 +284,7 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
         label="With film-retrieval goal",
     )
     axis.set_xlabel("Encoded film position", fontsize=STRUCTURAL_FONTSIZE)
-    axis.set_ylabel("Mean task-context overlap", fontsize=STRUCTURAL_FONTSIZE)
+    axis.set_ylabel("Mean context similarity", fontsize=STRUCTURAL_FONTSIZE)
     axis.set_xlim(1, paradigm.n_film)
     axis.set_xticks([1, 4, 8, 12, 16])
     axis.set_ylim(0, max(float(np.max(mean_temporal)), float(np.max(mean_goal))) * 1.15)
@@ -351,7 +351,7 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
     heatmap_axes[1][0].tick_params(labelleft=False)
     if heatmap_image is not None:
         colorbar = fig.colorbar(heatmap_image, cax=colorbar_axis)
-        colorbar.ax.set_title("Overlap", fontsize=STRUCTURAL_FONTSIZE, pad=7)
+        colorbar.ax.set_title("Similarity", fontsize=STRUCTURAL_FONTSIZE, pad=7)
         colorbar.ax.tick_params(labelsize=SUPPORT_FONTSIZE)
     base = FIGURE_DIR / OUTPUT_PREFIX
     fig.savefig(f"{base}.png", dpi=600)
