@@ -372,8 +372,8 @@ def build_values():
     rows = [coerce_row(row) for row in read_rows(PHASE_TOTALS_PATH)]
     retrieval_rows = [
         {
-            "row_label": "Unguided\nrecall",
-            "mode_label": "Unguided recall",
+            "row_label": "Unguided\nfilm recall",
+            "mode_label": "Unguided film recall",
             "retrieval_setting": "Unguided recall",
             "boost": 0.0,
         },
@@ -419,8 +419,8 @@ def build_values():
 def render_svg(values: dict) -> None:
     OUTPUT_SVG.parent.mkdir(parents=True, exist_ok=True)
     axes = {
-        ("Unguided\nrecall", "Without pre-task reminder"): (GRID_LEFT, TOP_Y),
-        ("Unguided\nrecall", "With pre-task film reminder"): (GRID_RIGHT_X, TOP_Y),
+        ("Unguided\nfilm recall", "Without pre-task reminder"): (GRID_LEFT, TOP_Y),
+        ("Unguided\nfilm recall", "With pre-task film reminder"): (GRID_RIGHT_X, TOP_Y),
         ("Deliberate\nfilm recall", "Without pre-task reminder"): (GRID_LEFT, BOTTOM_Y),
         ("Deliberate\nfilm recall", "With pre-task film reminder"): (GRID_RIGHT_X, BOTTOM_Y),
     }
@@ -431,7 +431,7 @@ def render_svg(values: dict) -> None:
         svg_text(grid_center, 64, "Film recall by condition and retrieval mode", TITLE_SIZE, weight="bold"),
         svg_text(GRID_LEFT + AXIS_WIDTH / 2, 142, "Without pre-task reminder", COLUMN_SIZE, weight="bold"),
         svg_text(GRID_RIGHT_X + AXIS_WIDTH / 2, 142, "With pre-task film reminder", COLUMN_SIZE, weight="bold"),
-        svg_multiline(175, TOP_Y + AXIS_HEIGHT / 2, "Unguided\nrecall", ROW_SIZE, weight="bold"),
+        svg_multiline(175, TOP_Y + AXIS_HEIGHT / 2, "Unguided\nfilm recall", ROW_SIZE, weight="bold"),
         svg_multiline(175, BOTTOM_Y + AXIS_HEIGHT / 2, "Deliberate\nfilm recall", ROW_SIZE, weight="bold"),
     ]
     for (row_label, reminder_label), (axis_x, axis_y) in axes.items():

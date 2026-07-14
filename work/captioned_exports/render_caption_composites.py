@@ -29,16 +29,16 @@ CAPTIONED_FIGURES = [
     {
         "image": ROOT / "work" / "empirical_target" / "empirical_target_composite.png",
         "output": CAPTION_EXPORT_DIR / "empirical_target_composite_with_caption",
-        "title": "Paradigm variables and canonical selective interference effect.",
+        "title": "Modeled trauma-film paradigm and schematic selective-interference pattern.",
         "body": (
             "(A) The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, "
-            "an intervening task, a post-task delay, and a later test of unguided or voluntary recall. "
-            "(B) The canonical selective interference effect is summarized as a schematic interaction among reminder condition, "
+            "an intervening task, a post-task delay, and a later test of unguided or deliberate film recall. "
+            "(B) The qualitative pattern targeted by the recall simulations is summarized as an interaction among reminder condition, "
             "intervening task, and retrieval condition. "
-            "Columns distinguish whether the task is preceded by a film reminder, rows distinguish intrusion-like film access from "
-            "voluntary film recall, and paired bars compare film output after a comparison task versus an interference task. "
-            "The interference task produces the largest reduction in intrusion-like film access when it follows a film reminder, "
-            "whereas voluntary film recall shows a smaller reduction under the same conditions. "
+            "Columns distinguish whether the task is preceded by a film reminder, rows distinguish unguided film recall from "
+            "deliberate film recall, and paired bars compare film recall after a comparison/control condition versus a visuospatial task condition. "
+            "The visuospatial task condition produces the largest reduction in unguided film recall when it follows a film reminder, "
+            "whereas deliberate film recall shows a smaller reduction under the same conditions. "
             "Bars are schematic and do not plot empirical counts, fitted values, or model output."
         ),
     },
@@ -73,9 +73,8 @@ CAPTIONED_FIGURES = [
             "Unguided retrieval begins from ongoing context, which can support film and task candidates together. "
             "Deliberate recall can begin with start-of-film context reinstatement, which favors film candidates while leaving task "
             "candidates possible. "
-            "(B) A maintained film goal provides an additional deliberate-retrieval signal during context-to-feature sampling. "
-            "Ongoing context can still cue both film items and task competitors, but the maintained goal adds support to film candidates "
-            "rather than to task competitors. "
+            "(B) During context-to-feature sampling, ongoing context can support film items and task competitors, while a maintained "
+            "film-category cue adds support only to film candidates. "
             "(C) Rows compare film recall, unmonitored task recall, and monitored task recall. "
             "Sampled outputs update the next retrieval context through feature-to-context memory. "
             "Recalling a film item keeps later search biased toward film candidates. "
@@ -89,15 +88,15 @@ CAPTIONED_FIGURES = [
     {
         "image": ROOT / "work" / "simulation1_unguided_cued" / "simulation1_unguided_cued_sequence_summary.png",
         "output": CAPTION_EXPORT_DIR / "simulation1_unguided_cued_sequence_summary_with_caption",
-        "title": "Simulation 1: unguided film recall after task encoding.",
+        "title": "Simulation 1: unguided film recall by reminder condition and task encoding strength.",
         "body": (
             "Reminder condition and task encoding strength were crossed while retrieval mode was held unguided; weak film cues were "
             "supplied periodically during recall in every condition. "
-            "(A) Example generated recall sequences for each condition. Each horizontal lane is one simulated trial selected near the "
-            "condition mean for film output, with output positions running left to right. Colors mark film items, task items, "
+            "(A) Example generated recall sequences for each condition. Each row shows one simulated trial selected near the "
+            "condition mean for the number of film items recalled; recalled items are ordered left to right by output position. Colors mark film items, task items, "
             "delay/filler items, and unfilled output positions. "
             "(B) Mean number of film items recalled across all simulated trials. "
-            "Film-item recall was lowest when a film reminder preceded strong task encoding, isolating the unguided-retrieval "
+            "Film recall was lowest when a film reminder preceded strong task encoding, isolating the unguided-retrieval "
             "component of the selective interference effect."
         ),
     },
@@ -138,15 +137,15 @@ CAPTIONED_FIGURES = [
         "title": "Simulation 2: deliberate film recall is protected from reminder-linked task interference.",
         "body": (
             "Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between "
-            "unguided recall and deliberate film recall. "
-            "Deliberate film recall combined start-of-film context reinstatement, a maintained film-retrieval goal, and "
-            "post-retrieval context monitoring. Weak film cues were supplied periodically during recall in all conditions. "
+            "unguided film recall and deliberate film recall. "
+            "Deliberate film recall combined start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring. "
+            "Weak film cues were supplied periodically during recall in all conditions. "
             "Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task "
             "encoding. "
             "Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much "
-            "larger under unguided recall than under deliberate film recall. "
-            "The model therefore simulates a selective interference effect: the reminder-plus-strong-task intervention strongly "
-            "reduces unguided film access while leaving deliberate film recall relatively preserved."
+            "larger under unguided film recall than under deliberate film recall. "
+            "The model therefore simulates a selective interference effect: strong task encoding after a film reminder strongly "
+            "reduces unguided film recall while leaving deliberate film recall relatively preserved."
         ),
     },
     {
@@ -154,12 +153,13 @@ CAPTIONED_FIGURES = [
         "output": CAPTION_EXPORT_DIR / "simulation2_retrieval_control_decomposition_with_caption",
         "title": "Simulation 2: different retrieval controls preserve film recall to different degrees.",
         "body": (
-            "Each control setting was evaluated at two endpoints of the interference manipulation: one without a pre-task reminder and "
-            "with weak task encoding, and one with a pre-task film reminder and with strong task encoding. "
+            "Each control setting was evaluated in two conditions: a low-interference condition with no pre-task reminder and weak "
+            "task encoding, and a high-interference condition with a pre-task film reminder and strong task encoding. "
             "Weak film cues were supplied periodically during recall in all conditions. "
-            "Mean film-item recall is shown for each control setting at the two endpoints. "
-            "Start-of-film reinstatement and retrieval monitoring increase film recall in some conditions, but the smallest endpoint "
-            "differences occur when deliberate recall includes a film-retrieval goal."
+            "Unguided film recall includes none of the three deliberate-control operations. "
+            "Bars show mean number of film items recalled for each control setting in both conditions. "
+            "Start-of-film reinstatement and retrieval monitoring increase film recall in some conditions, but the loss from the low- "
+            "to high-interference condition is smallest when a maintained film-category cue is included."
         ),
     },
     {
@@ -172,13 +172,13 @@ CAPTIONED_FIGURES = [
             "Start-of-film context reinstatement initializes retrieval by drifting the current context toward the state present at the "
             "start of film encoding. "
             "Weak film cues were supplied periodically during recall. "
-            "Shaded bands mark film, break, task, and filler positions; the green line marks the reminder immediately before task "
-            "encoding. "
+            "Shaded bands mark film, break, task, and filler positions; the green line marks the reminder immediately before the "
+            "task phase. "
             "(A) Item accessibility before the first recall attempt. "
             "Reinstatement increases accessibility most strongly for early encoded film positions. "
             "(B) First recall probability distribution. Reinstatement shifts recall initiation toward early film positions. "
             "(C) Full recall probability distribution. The early-film bias remains visible across the recall period, while later film "
-            "positions remain more vulnerable under reminder-linked strong task encoding. "
+            "positions remain more vulnerable when strong task encoding follows a film reminder. "
             "Start-of-film context reinstatement therefore protects early encoded film positions by shifting retrieval initiation toward "
             "the start of the film sequence."
         ),
@@ -192,24 +192,24 @@ CAPTIONED_FIGURES = [
             "was present, and retrieval monitoring strength was varied. "
             "Retrieval monitoring dampens context updating after non-film samples during deliberate recall. "
             "Weak film cues were supplied periodically during recall. "
-            "(A) Model-diagnostic probability that a non-film sample was followed by a film output as retrieval monitoring increased. "
+            "(A) Model-diagnostic probability that a non-film sample was followed by recall of a film item as retrieval monitoring increased. "
             "(B) Recall probability by encoded position with no retrieval monitoring versus the moderate retrieval-monitoring setting used "
             "in the Simulation 2 anchor figure. "
-            "Shaded bands mark film, break, task, and filler positions; the green line marks the reminder immediately before task "
-            "encoding. "
+            "Shaded bands mark film, break, task, and filler positions; the green line marks the reminder immediately before the "
+            "task phase. "
             "Retrieval monitoring therefore supports film recall after search is pulled away from the film sequence, increasing film "
-            "recall probability under reminder-linked strong task encoding."
+            "recall probability when strong task encoding follows a film reminder."
         ),
     },
     {
         "image": ROOT / "work" / "simulation2_film_retrieval_goal_context_overlap" / "simulation2_film_retrieval_goal_context_overlap.png",
         "output": CAPTION_EXPORT_DIR / "simulation2_film_retrieval_goal_context_overlap_with_caption",
-        "title": "Simulation 2: a film-retrieval goal separates film-directed retrieval from task-context similarity.",
+        "title": "Simulation 2: a maintained film-category cue makes film-directed retrieval cues less similar to task-encoding context.",
         "body": (
             "The high-interference condition was held fixed: a film reminder preceded strong task encoding, and weak film cues were "
             "supplied periodically during recall. "
-            "A film-retrieval goal is a maintained film-category cue that supports film items during deliberate recall, "
-            "distinct from the external film reminder and test-phase film cues. "
+            "A maintained film-category cue supports film items during deliberate recall and is distinct from the external film reminder "
+            "and test-phase film cues. "
             "(A) Mean similarity between task-encoding contexts and film-directed retrieval cues, averaging across encoded task "
             "positions for each encoded film position. "
             "(B) Full similarity matrices for the same condition. "
@@ -226,15 +226,15 @@ CAPTIONED_FIGURES = [
         "title": "Item-to-context retrieval bypasses reminder-linked task interference.",
         "body": (
             "(A) CMR stores bidirectional associations between item features and context. "
-            "Feature-to-context memory lets an available item reinstate its associated context, whereas context-to-feature memory "
+            "Feature-to-context memory lets an item reinstate its associated context, whereas context-to-feature memory "
             "lets context cue candidate items. "
-            "(B) When film-associated context cues items, film items and reminder-linked task items can both receive support. "
+            "(B) When film-associated context cues items, film items and task items linked to that context can both receive support. "
             "When a film item reinstates context, retrieval targets context units instead, so task items are not competitors in that step. "
-            "(C) In recognition, the tested film item is already available. The item retrieves associated context, which is compared "
+            "(C) In recognition, the test presents a candidate film item as the probe. The probe retrieves associated context, which is compared "
             "with ongoing test context; stronger matches provide stronger evidence that the item appeared in the film. "
-            "(D) Film recognition accuracy is plotted across the same reminder and task-encoding conditions used in the recall "
-            "simulations. Accuracy is hit rate minus false-alarm rate for unstudied film-like lures. "
-            "The reminder-plus-strong-task condition does not produce a corresponding reduction in recognition accuracy."
+            "(D) Old-film minus foil recognition evidence is plotted across the same reminder conditions and task encoding strengths used "
+            "in the recall simulations. The measure subtracts mean evidence for film-source-matched foils from mean evidence for studied film probes. "
+            "Strong task encoding after a film reminder does not produce a corresponding reduction in recognition-evidence separation."
         ),
         "top_caption_gap": 0.010,
     },
