@@ -73,7 +73,7 @@ In the account developed below, a film reminder reinstates context associated wi
 Task material then becomes linked to that context.
 When later remembering is guided by film-associated context, task and film material can therefore compete, interfering with film recall.
 The task interferes less when retrieval depends less on context to access film material.
-Deliberate recall can be less affected when a maintained film-retrieval goal gives film candidates an additional source of support without equally supporting task competitors.
+Deliberate recall can be less affected when a maintained film-category cue gives film candidates an additional source of support without equally supporting task competitors.
 Tasks like recognition can also be less affected, because the test presents a candidate film item for judgment rather than requiring film material to be brought to mind.
 On this account, the selective-interference effect emerges when retrieval conditions differ in how much they depend on film-associated context that also cues task material.
 
@@ -92,7 +92,7 @@ When that context supports both film and task material, task items compete with 
 
 Deliberate recall is modeled with several retrieval-control processes.
 Rather than universally producing the selective-interference pattern, we show that some control mechanisms increase film recall overall without substantially reducing the loss caused by task competitors linked to film-associated context.
-In the simulations, the strongest protection comes from adding a maintained film-retrieval goal that gives film candidates support not shared by task competitors.
+In the simulations, the strongest protection comes from adding a maintained film-category cue that gives film candidates support not shared by task competitors.
 This identifies a functional condition for selective interference: voluntary recall is protected when it depends less on film-associated temporal context that has also become supportive of task material.
 
 The simulations follow a generalization-style modeling logic [@busemeyer2000model; @lohnas2023event].
@@ -185,8 +185,7 @@ Blue marks film items or film-linked context, orange marks task items or task-li
 Stored film and task associations can be sampled from different starting contexts.
 Unguided retrieval begins from ongoing context, which can support film and task candidates together.
 Deliberate recall can begin with start-of-film context reinstatement, which favors film candidates while leaving task candidates possible.
-**(B)** A maintained film goal provides an additional deliberate-retrieval signal during context-to-feature sampling.
-Ongoing context can still cue both film items and task competitors, but the maintained goal adds support to film candidates rather than to task competitors.
+**(B)** During context-to-feature sampling, ongoing context can support film items and task competitors, while a maintained film-category cue adds support only to film candidates.
 **(C)** Rows compare film recall, unmonitored task recall, and monitored task recall.
 Sampled outputs update the next retrieval context through feature-to-context memory.
 Recalling a film item keeps later search biased toward film candidates.
@@ -309,7 +308,7 @@ They protect film recall from reminder-linked interference to the extent that th
 
 Within this matched recall setting, @fig-retrieved-context-retrieval-operations separates three ways deliberate recall can differ from unguided retrieval after the same reminder-linked task encoding.
 Start-of-film context reinstatement acts before sampling by changing the initial context state.
-A maintained film-retrieval goal acts during sampling by adding support to film candidates.
+A maintained film-category cue acts during sampling by adding support to film candidates.
 Retrieval monitoring acts after sampling by reducing the carryover from off-target candidates.
 These control points make separable predictions because they change different parts of the retrieval cycle.
 The simulations test which control changes the effect of reminder-linked task encoding, rather than simply increasing film recall under all conditions.
@@ -331,22 +330,22 @@ Our trauma-film simulations explore whether that post-sampling evaluation can al
 A sampled non-film candidate still counts as a retrieval attempt, but its context update is dampened when it is evaluated as off-target.
 Monitoring can therefore help deliberate recall return to film material after non-film competition appears, while leaving the initial competition from reminder-linked task encoding in place.
 
-A maintained retrieval goal gives deliberate recall a broader film-directed signal during candidate sampling.
+A goal to retrieve the film can guide candidate sampling through category-level information.
 When people study mixed-category material and are asked to retrieve only one category, they can restrict recall to the target subset while temporal organization remains visible within that subset [@polyn2011semantic; @lohnas2026specialized]. 
 In this kind of task, category-selective activity tracks retrieval effort, remains active between reported recalls, and weakens before extra-category intrusions [@norman2017neuronal].
 Retrieved-context models provide a formal precedent for this kind of non-temporal support: semantic, task, and source information can contribute to candidate support alongside temporal context [@polyn2009context; @polyn2009task; @morton2016predictive].
 Category-directed search has been formalized in associative memory models, and recent review work treats this as a natural but still underdeveloped direction for CMR [@raaijmakers1980sam; @lohnas2026specialized].
 The simulations use this logic in reduced form by adding a maintained film-category cue during candidate sampling.
 This cue gives film candidates additional support without equally supporting task competitors.
-Task items linked to reinstated film-associated context can still compete through temporal context, but they do not receive this goal-based support.
+Task items linked to reinstated film-associated context can still compete through temporal context, but they do not receive this film-category support.
 
 Control processes engaged during deliberate recall can therefore improve film recall overall without producing the relative preservation against reminder-linked task interference that defines the selective-interference effect.
 That relative preservation depends on whether deliberate recall can draw on support beyond film-associated temporal context after that context has also become supportive of task material.
 Start-of-film reinstatement and post-retrieval context monitoring improve overall film recall by reinstating or preserving film-associated context as a retrieval cue.
 Yet these mechanisms work by keeping film-associated context cues available, while reminder-linked task encoding interferes with film recall precisely by making such context cues less selective for film material.
-By contrast, a maintained film-retrieval goal gives film candidates support from a cue that task competitors do not share.
-Under the tested conditions, that goal-based support limits the impact of those task competitors enough to produce the selective-interference pattern.
-This specifies how deliberate recall can succeed when task encoding after a film reminder reduces unguided film recall: deliberate recall is protected when the retrieval goal helps distinguish film candidates from task competitors during search.
+By contrast, a maintained film-category cue gives film candidates support from a cue that task competitors do not share.
+Under the tested conditions, this film-category support limits the impact of those task competitors enough to produce the selective-interference pattern.
+This specifies how deliberate recall can succeed when task encoding after a film reminder reduces unguided film recall: the maintained film-category cue helps distinguish film candidates from task competitors during search.
 
 # Model Specification
 
