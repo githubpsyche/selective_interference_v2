@@ -694,6 +694,7 @@ Reminder condition and task encoding strength were crossed while retrieval mode 
 Each row shows one simulated trial selected near the condition mean for the number of film items recalled; recalled items are ordered left to right by output position.
 Colors mark film items, task items, delay/filler items, and unfilled output positions.
 **(B)** Mean number of film items recalled across all simulated trials.
+The bracket marks the larger reduction from weak to strong task encoding when the task follows a film reminder.
 Film recall was lowest when a film reminder preceded strong task encoding, isolating the unguided-retrieval component of the selective interference effect.
 :::
 
@@ -748,18 +749,19 @@ The main readout is how much strengthening task encoding reduces film recall in 
 ![](work/simulation2_control_cued_behavioral/simulation2_control_cued_behavioral.png)
 
 **Simulation 2: deliberate film recall is protected from reminder-linked task interference.**
-Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between unguided recall and deliberate film recall.
+Reminder condition and task encoding strength were crossed as in Simulation 1 while retrieval mode was varied between unguided film recall and deliberate film recall.
 Deliberate film recall combined start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring.
 Weak film cues were supplied periodically during recall in all conditions.
 Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task encoding.
-Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much larger under unguided recall than under deliberate film recall.
+In the with-reminder column, brackets label the selective reduction under unguided film recall and relative preservation under deliberate film recall.
+Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much larger under unguided film recall than under deliberate film recall.
 The model therefore simulates a selective interference effect: strong task encoding after a film reminder substantially reduces unguided film recall while leaving deliberate film recall relatively preserved.
 :::
 
 @fig-simulation2-control-cued-behavioral demonstrates the model's simulation of the selective interference effect.
-In unguided recall, strong task encoding produces a small film-recall loss without a pre-task reminder and a much larger loss after a film reminder.
+In unguided film recall, strong task encoding produces a small film-recall loss without a pre-task reminder and a much larger loss after a film reminder.
 Under deliberate film recall, strong task encoding after a film reminder produces a much smaller reduction.
-Mean film recall in the with-reminder condition drops from 2.790 to 0.793 items under unguided recall, but from 7.572 to 6.995 items under deliberate film recall.
+Mean film recall in the with-reminder condition drops from 2.790 to 0.793 items under unguided film recall, but from 7.572 to 6.995 items under deliberate film recall.
 The full deliberate-control setting therefore reproduces the selective-interference pattern under the same learned task competitors.
 
 ::: {#fig-simulation2-retrieval-control-decomposition fig-pos="H"}
