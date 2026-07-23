@@ -28,18 +28,18 @@
 <line x1="342" y1="446" x2="1298" y2="446" class="divider"/>
 
 <text x="200" y="258" class="row-label" text-anchor="middle">
-  <tspan x="200" dy="0">Intrusion-like</tspan>
-  <tspan x="200" dy="34">film access</tspan>
+  <tspan x="200" dy="0">Unguided film</tspan>
+  <tspan x="200" dy="34">recall</tspan>
 </text>
 <text x="200" y="596" class="row-label" text-anchor="middle">
-  <tspan x="200" dy="0">Voluntary</tspan>
-  <tspan x="200" dy="34">film memory</tspan>
+  <tspan x="200" dy="0">Deliberate</tspan>
+  <tspan x="200" dy="34">film recall</tspan>
 </text>
 
 <text x="386" y="288" class="axis-label" text-anchor="middle" transform="rotate(-90 386 288)">Film items recalled</text>
 <text x="386" y="626" class="axis-label" text-anchor="middle" transform="rotate(-90 386 626)">Film items recalled</text>
 
-<!-- Top-left cell: intrusion-like film access, no reminder -->
+<!-- Top-left cell: unguided film recall, no reminder -->
 <line x1="412" y1="304" x2="704" y2="304" class="grid-line"/>
 <line x1="412" y1="192" x2="704" y2="192" class="grid-line"/>
 <line x1="412" y1="416" x2="704" y2="416" class="axis-line"/>
@@ -47,7 +47,7 @@
 <rect x="466" y="308" width="112" height="108" rx="2" class="bar-comparison"/>
 <rect x="578" y="322" width="112" height="94" rx="2" class="bar-interference"/>
 
-<!-- Top-right cell: intrusion-like film access, film reminder -->
+<!-- Top-right cell: unguided film recall, film reminder -->
 <line x1="954" y1="304" x2="1246" y2="304" class="grid-line"/>
 <line x1="954" y1="192" x2="1246" y2="192" class="grid-line"/>
 <line x1="954" y1="416" x2="1246" y2="416" class="axis-line"/>
@@ -57,7 +57,7 @@
 <path d="M 1008 289 L 1008 275 L 1232 275 L 1232 289" class="callout-bracket"/>
 <text x="1120" y="265" class="callout-label" text-anchor="middle">selective reduction</text>
 
-<!-- Bottom-left cell: voluntary film memory, no reminder -->
+<!-- Bottom-left cell: deliberate film recall, no reminder -->
 <line x1="412" y1="642" x2="704" y2="642" class="grid-line"/>
 <line x1="412" y1="530" x2="704" y2="530" class="grid-line"/>
 <line x1="412" y1="754" x2="704" y2="754" class="axis-line"/>
@@ -65,7 +65,7 @@
 <rect x="466" y="593" width="112" height="161" rx="2" class="bar-comparison"/>
 <rect x="578" y="606" width="112" height="148" rx="2" class="bar-interference"/>
 
-<!-- Bottom-right cell: voluntary film memory, film reminder -->
+<!-- Bottom-right cell: deliberate film recall, film reminder -->
 <line x1="954" y1="642" x2="1246" y2="642" class="grid-line"/>
 <line x1="954" y1="530" x2="1246" y2="530" class="grid-line"/>
 <line x1="954" y1="754" x2="1246" y2="754" class="axis-line"/>
@@ -76,7 +76,7 @@
 <text x="1120" y="550" class="callout-label" text-anchor="middle">relative preservation</text>
 
 <rect x="555" y="805" width="32" height="24" rx="2" fill="#FFE7D5" stroke="#3D4B5C" stroke-width="3.2"/>
-<text x="601" y="825" class="legend-label" text-anchor="start">Comparison task</text>
+<text x="601" y="825" class="legend-label" text-anchor="start">Comparison/control</text>
 <rect x="875" y="805" width="32" height="24" rx="2" fill="#D96B2B" stroke="#3D4B5C" stroke-width="3.2"/>
-<text x="921" y="825" class="legend-label" text-anchor="start">Interference task</text>
+<text x="921" y="825" class="legend-label" text-anchor="start">Visuospatial task</text>
 </svg>

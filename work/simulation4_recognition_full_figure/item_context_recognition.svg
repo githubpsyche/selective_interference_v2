@@ -108,23 +108,23 @@
 <text x="1353.0" y="752.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#111111" >Strong task encoding</text>
 <line x1="1012.0" y1="1105.0" x2="1602.0" y2="1105.0" stroke="#DCE3EA" stroke-width="2.0" />
 <text x="994.0" y="1112.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.0</text>
-<line x1="1012.0" y1="1045.0" x2="1602.0" y2="1045.0" stroke="#DCE3EA" stroke-width="2.0" />
-<text x="994.0" y="1052.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.1</text>
-<line x1="1012.0" y1="985.0" x2="1602.0" y2="985.0" stroke="#DCE3EA" stroke-width="2.0" />
-<text x="994.0" y="992.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.2</text>
-<line x1="1012.0" y1="925.0" x2="1602.0" y2="925.0" stroke="#DCE3EA" stroke-width="2.0" />
-<text x="994.0" y="932.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.3</text>
-<line x1="1012.0" y1="865.0" x2="1602.0" y2="865.0" stroke="#DCE3EA" stroke-width="2.0" />
-<text x="994.0" y="872.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.4</text>
+<line x1="1012.0" y1="1030.0" x2="1602.0" y2="1030.0" stroke="#DCE3EA" stroke-width="2.0" />
+<text x="994.0" y="1037.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.2</text>
+<line x1="1012.0" y1="955.0" x2="1602.0" y2="955.0" stroke="#DCE3EA" stroke-width="2.0" />
+<text x="994.0" y="962.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.4</text>
+<line x1="1012.0" y1="880.0" x2="1602.0" y2="880.0" stroke="#DCE3EA" stroke-width="2.0" />
+<text x="994.0" y="887.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.6</text>
 <line x1="1012.0" y1="805.0" x2="1602.0" y2="805.0" stroke="#DCE3EA" stroke-width="2.0" />
-<text x="994.0" y="812.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.5</text>
+<text x="994.0" y="812.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.8</text>
 <line x1="1012.0" y1="805.0" x2="1012.0" y2="1105.0" stroke="#2F3A46" stroke-width="4.0" />
 <line x1="1012.0" y1="1105.0" x2="1602.0" y2="1105.0" stroke="#2F3A46" stroke-width="4.0" />
-<text x="934.0" y="955.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#111111" transform="rotate(-90 934.0 955.0)"><tspan x="934.0" dy="-12.0">Film recognition accuracy</tspan><tspan x="934.0" dy="24.0">(hit rate - false-alarm rate)</tspan></text>
-<rect x="1114.2" y="866.7" width="54.0" height="238.3" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
-<rect x="1186.2" y="865.6" width="54.0" height="239.4" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
+<text x="934.0" y="955.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#111111" transform="rotate(-90 934.0 955.0)"><tspan x="934.0" dy="-12.0">Old-film minus foil</tspan><tspan x="934.0" dy="24.0">recognition evidence</tspan></text>
+<rect x="1114.2" y="864.9" width="54.0" height="240.1" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
+<rect x="1186.2" y="864.2" width="54.0" height="240.8" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
 <text x="1177.2" y="1140.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1177.2" dy="0.0">Without</tspan><tspan x="1177.2" dy="25.0">pre-task reminder</tspan></text>
-<rect x="1373.8" y="866.9" width="54.0" height="238.1" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
-<rect x="1445.8" y="867.0" width="54.0" height="238.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
+<rect x="1373.8" y="864.7" width="54.0" height="240.3" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
+<rect x="1445.8" y="864.6" width="54.0" height="240.4" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
+<polyline points="1353.8,858.6 1353.8,844.6 1519.8,844.6 1519.8,858.6" fill="none" stroke="#2F3A46" stroke-width="3.3" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1436.8" y="826.6" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#2F3A46">no reduction</text>
 <text x="1436.8" y="1140.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1436.8" dy="0.0">With pre-task</tspan><tspan x="1436.8" dy="25.0">film reminder</tspan></text>
 </svg>

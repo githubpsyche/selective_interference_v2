@@ -36,7 +36,7 @@
 <text x="192" y="424" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">Ongoing context cues</tspan><tspan x="192" dy="22">film and task candidates</tspan><tspan x="192" dy="22">together</tspan></text>
 
 <rect x="445" y="219" width="206" height="58" rx="29" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
-<text x="548" y="243" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Start-of-film</tspan><tspan x="548" dy="24">context cue</tspan></text>
+<text x="548" y="243" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Start-of-film</tspan><tspan x="548" dy="24">reinstatement</tspan></text>
 <path d="M 503 277 C 488 296, 458 306, 424 314" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 526 277 C 512 298, 492 308, 466 316" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 548 277 C 542 298, 528 308, 508 314" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>

@@ -25,7 +25,7 @@ OUTPUT_CSV = OUTPUT_DATA_BASE.with_suffix(".csv")
 OUTPUT_CAPTION_BASE = CAPTION_EXPORT_DIR / "empirical_selective_interference_examples_with_caption"
 
 WIDTH = 1504
-HEIGHT = 1220
+HEIGHT = 1530
 
 FONT = "Arial, Helvetica, DejaVu Sans, sans-serif"
 TEXT = "#111111"
@@ -45,10 +45,15 @@ AXIS_LABEL_SIZE = 18
 TICK_SIZE = 17
 SUBLABEL_SIZE = 17
 LEGEND_SIZE = 21
+ANNOTATION_SIZE = 16
 
 AXIS_STROKE = 3.2
 GRID_STROKE = 1.8
 BAR_STROKE = 3.2
+BRACKET_STROKE = 3.0
+BRACKET_CAP = 14
+BRACKET_PAD = 20
+BRACKET_BAR_GAP = 20
 
 
 ROWS = [
@@ -60,62 +65,94 @@ ROWS = [
             "title": "Diary intrusions",
             "ylabel": "Film intrusions",
             "ymax": 6,
+            "plot_ymax": 7.2,
             "ticks": [0, 3, 6],
             "groups": [
                 ("No pre-task\nreminder", 5.11, 3.89),
                 ("After pre-task\nfilm reminder", 4.83, 1.89),
             ],
+            "annotations": [None, "selective reduction"],
         },
         "right": {
             "title": "Verbal recognition",
             "ylabel": "Film recognition hits",
             "ymax": 32,
+            "plot_ymax": 40,
             "ticks": [0, 16, 32],
             "groups": [
                 ("No pre-task\nreminder", 19.78, 18.83),
                 ("After pre-task\nfilm reminder", 18.89, 18.33),
             ],
-            "ns": True,
+            "annotations": [None, "relative preservation"],
         },
     },
     {
         "study": "Lau-Zhu et al. 2019, Exp. 1",
         "study_label": "Lau-Zhu et al. 2019\nExp. 1",
-        "detail": "30-min reminder; diary + voluntary free recall",
+        "detail": "30-min reminder; diary + free recall",
         "left": {
             "title": "Diary intrusions",
             "ylabel": "Film intrusions",
             "ymax": 6,
+            "plot_ymax": 8.4,
             "ticks": [0, 3, 6],
             "groups": [("After pre-task\nfilm reminder", 5.61, 2.70)],
+            "annotations": ["selective reduction"],
         },
         "right": {
-            "title": "Voluntary free recall",
+            "title": "Deliberate free recall",
             "ylabel": "Film details recalled",
             "ymax": 80,
+            "plot_ymax": 100,
             "ticks": [0, 40, 80],
             "groups": [("After pre-task\nfilm reminder", 59.35, 65.82)],
-            "ns": True,
+            "annotations": ["relative preservation"],
         },
     },
     {
         "study": "Lau-Zhu et al. 2021",
         "study_label": "Lau-Zhu et al. 2021",
-        "detail": "30-min reminder; trauma-film-cued VIT + recognition",
+        "detail": "30-min reminder; lab reports + recognition",
         "left": {
-            "title": "VIT intrusions",
-            "ylabel": "Film-cued intrusions",
+            "title": "Lab intrusion reports",
+            "ylabel": "Film reports",
             "ymax": 20,
+            "plot_ymax": 28,
             "ticks": [0, 10, 20],
             "groups": [("After pre-task\nfilm reminder", 17.94, 7.56)],
+            "annotations": ["selective reduction"],
         },
         "right": {
             "title": "Cued recognition",
             "ylabel": "Film-cued recognition accuracy",
             "ymax": 1.0,
+            "plot_ymax": 1.2,
             "ticks": [0, 0.5, 1.0],
             "groups": [("After pre-task\nfilm reminder", 0.51, 0.41)],
-            "ns": True,
+            "annotations": ["relative preservation"],
+        },
+    },
+    {
+        "study": "McConnell et al. 2026, Exp. 1",
+        "study_label": "McConnell et al. 2026\nExp. 1",
+        "detail": "film reminder x Tetris; matched lab reports",
+        "left": {
+            "title": "Lab intrusion reports",
+            "ylabel": "Film reports",
+            "ymax": 24,
+            "plot_ymax": 30,
+            "ticks": [0, 12, 24],
+            "groups": [("After pre-task\nfilm reminder", 10.00, 12.50)],
+            "annotations": ["no reduction observed"],
+        },
+        "right": {
+            "title": "Voluntary lab reports",
+            "ylabel": "Film reports",
+            "ymax": 24,
+            "plot_ymax": 30,
+            "ticks": [0, 12, 24],
+            "groups": [("After pre-task\nfilm reminder", 16.73, 15.10)],
+            "annotations": ["relative preservation"],
         },
     },
 ]
@@ -184,6 +221,14 @@ def rect(
     )
 
 
+def polyline(points: list[tuple[float, float]], stroke: str, width: float, fill: str = "none") -> str:
+    point_string = " ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+    return (
+        f'<polyline points="{point_string}" fill="{fill}" stroke="{stroke}" stroke-width="{width}" '
+        'stroke-linecap="square" stroke-linejoin="miter"/>'
+    )
+
+
 def y_pos(axis_y: float, axis_h: float, value: float, ymax: float) -> float:
     return axis_y + axis_h - (value / ymax) * axis_h
 
@@ -204,7 +249,8 @@ def draw_axis(
 ) -> list[str]:
     parts: list[str] = []
     groups = spec["groups"]
-    ymax = spec["ymax"]
+    annotations = spec.get("annotations", [])
+    ymax = spec.get("plot_ymax", spec["ymax"])
     ticks = spec["ticks"]
 
     parts.append(text(x + w / 2, y - 30, spec["title"], PANEL_TITLE_SIZE, weight="bold"))
@@ -236,8 +282,34 @@ def draw_axis(
 
         parts.append(multiline(gx + group_inner / 2, y + h + 41, group_label, SUBLABEL_SIZE, fill=AXIS, line_height=20))
 
-    if spec.get("ns"):
-        parts.append(text(x + w / 2, y + 20, "n.s.", SUBLABEL_SIZE, weight="bold", fill=AXIS))
+        if index < len(annotations) and annotations[index]:
+            high_value = max(control_value, tetris_value)
+            high_y = y_pos(y, h, high_value, ymax)
+            bracket_y = max(y + 34, high_y - BRACKET_BAR_GAP)
+            bracket_x1 = max(x + 8, gx - BRACKET_PAD)
+            bracket_x2 = min(x + w - 8, gx + group_inner + BRACKET_PAD)
+            parts.append(
+                polyline(
+                    [
+                        (bracket_x1, bracket_y + BRACKET_CAP),
+                        (bracket_x1, bracket_y),
+                        (bracket_x2, bracket_y),
+                        (bracket_x2, bracket_y + BRACKET_CAP),
+                    ],
+                    AXIS,
+                    BRACKET_STROKE,
+                )
+            )
+            parts.append(
+                text(
+                    (bracket_x1 + bracket_x2) / 2,
+                    bracket_y - 10,
+                    annotations[index],
+                    ANNOTATION_SIZE,
+                    weight="bold",
+                    fill=AXIS,
+                )
+            )
 
     if show_ylabel:
         label_x = x - 50
@@ -268,7 +340,7 @@ def write_data_csv() -> None:
                         "outcome_family": outcome_family,
                         "outcome": spec["title"],
                         "group": group_label,
-                        "condition": "Comparison/rest",
+                        "condition": "Comparison/control condition",
                         "mean": control_value,
                     }
                 )
@@ -278,7 +350,7 @@ def write_data_csv() -> None:
                         "outcome_family": outcome_family,
                         "outcome": spec["title"],
                         "group": group_label,
-                        "condition": "Tetris interference",
+                        "condition": "Visuospatial task condition",
                         "mean": tetris_value,
                     }
                 )
@@ -292,15 +364,15 @@ def build_svg() -> str:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}">',
         f'<rect x="0" y="0" width="{WIDTH}" height="{HEIGHT}" fill="white"/>',
-        text(WIDTH / 2, 56, "Empirical examples of selective interference", TITLE_SIZE, weight="bold"),
-        text(542, 126, "Intrusion-like access", COLUMN_SIZE, weight="bold"),
-        text(1058, 126, "Deliberate memory", COLUMN_SIZE, weight="bold"),
-        line(292, 150, 292, 1012, GRID, 2.4),
-        line(800, 150, 800, 1012, GRID, 2.4),
-        line(1316, 150, 1316, 1012, GRID, 2.4),
+        text(817, 56, "Empirical tests of selective interference", TITLE_SIZE, weight="bold"),
+        text(542, 126, "Unguided film recall", COLUMN_SIZE, weight="bold"),
+        text(1058, 126, "Deliberate film recall", COLUMN_SIZE, weight="bold"),
+        line(292, 150, 292, 1322, GRID, 2.4),
+        line(800, 150, 800, 1322, GRID, 2.4),
+        line(1316, 150, 1316, 1322, GRID, 2.4),
     ]
 
-    row_tops = [205, 515, 825]
+    row_tops = [205, 515, 825, 1135]
     axis_h = 170
     axis_w = 374
     left_x = 372
@@ -316,20 +388,20 @@ def build_svg() -> str:
         parts.extend(draw_axis(left_x, top, axis_w, axis_h, row["left"], show_ylabel=True))
         parts.extend(draw_axis(right_x, top, axis_w, axis_h, row["right"], show_ylabel=True))
 
-    legend_y = 1122
-    legend_center = WIDTH / 2
+    legend_y = 1432
+    legend_center = 817
     patch = 30
-    first_x = legend_center - 294
+    first_x = legend_center - 392
     parts.append(rect(first_x, legend_y - 24, patch, patch, CONTROL_FILL, CONTROL_EDGE, BAR_STROKE, rx=2))
-    parts.append(text(first_x + 44, legend_y, "Comparison / rest", LEGEND_SIZE, weight="bold", anchor="start", fill=AXIS))
-    second_x = legend_center + 40
+    parts.append(text(first_x + 44, legend_y, "Comparison/control condition", LEGEND_SIZE, weight="bold", anchor="start", fill=AXIS))
+    second_x = legend_center + 64
     parts.append(rect(second_x, legend_y - 24, patch, patch, TETRIS_FILL, TETRIS_EDGE, BAR_STROKE, rx=2))
-    parts.append(text(second_x + 44, legend_y, "Tetris interference", LEGEND_SIZE, weight="bold", anchor="start", fill=AXIS))
+    parts.append(text(second_x + 44, legend_y, "Visuospatial task condition", LEGEND_SIZE, weight="bold", anchor="start", fill=AXIS))
     parts.append(
         text(
-            WIDTH / 2,
-            1172,
-            "Bars plot published condition means in native units; y-axis scales differ across outcomes.",
+            817,
+            1482,
+            "Brackets summarize the plotted contrast; y-axis scales differ across outcomes.",
             SUBLABEL_SIZE,
             fill=AXIS,
         )
@@ -357,14 +429,18 @@ def save_caption_composite() -> None:
     fig_width = 10.8
     image_aspect = image.shape[0] / image.shape[1]
     image_height = fig_width * image_aspect
-    title = "Empirical examples of selective interference."
+    title = "Empirical tests of selective interference."
     body = (
-        "Rows show three exemplar studies that differ in how intrusion-like and voluntary memory are measured: "
-        "a delayed-reminder diary-plus-recognition design, a delayed-reminder diary-plus-free-recall design, and a "
-        "trauma-film-cued vigilance-intrusion-plus-recognition design. "
-        "Left panels plot intrusion-like film access and right panels plot deliberate memory. "
-        "Gray bars indicate comparison or rest conditions and orange bars indicate Tetris interference. "
-        "Bar heights reproduce published condition means in native study units, so y-axis scales differ across outcomes."
+        "Rows show selected studies that pair intrusion-like or involuntary-memory measures with different "
+        "deliberate-memory tests: diary intrusions with recognition, diary intrusions with free recall, laboratory "
+        "intrusion reports with recognition, and closely matched laboratory reports under involuntary and voluntary "
+        "retrieval instructions. Column headings are bridge labels for the theoretical contrast, and panel titles name "
+        "the empirical measure used in each study. The lower rows both use laboratory intrusion/report tasks; the "
+        "McConnell row adds a voluntary-report version of the same laboratory reporting format. Gray bars indicate the "
+        "study-specific comparison/control condition, such as rest or auditory control, and orange bars indicate the "
+        "visuospatial task condition. Bracket labels summarize the plotted contrast rather than a uniform significance "
+        "test. Bar heights reproduce reported condition means in native study units, so y-axis scales differ across "
+        "outcomes."
     )
     body_lines = textwrap.wrap(body, width=142)
     caption_height = 0.55 + 0.22 * max(1, len(body_lines))

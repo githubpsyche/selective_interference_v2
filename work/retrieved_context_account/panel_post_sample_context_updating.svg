@@ -76,7 +76,7 @@
 <text x="506" y="470" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
 
 <path d="M 596 484 L 786 484" fill="none" stroke="#7A8490" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow-gray)"/>
-<text x="692" y="452" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="692" dy="0">target monitoring</tspan></text>
+<text x="692" y="452" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="692" dy="0">retrieval monitoring</tspan></text>
 <text x="692" y="516" font-size="20" font-weight="700" fill="#7A8490" text-anchor="middle"><tspan x="692" dy="0">dampened update</tspan></text>
 <rect x="810" y="446" width="170" height="76" rx="20" fill="#F2F4F6" stroke="#1764D8" stroke-width="3" stroke-dasharray="12 8"/>
 <rect x="810" y="446" width="170" height="76" rx="20" fill="none" stroke="#E46C24" stroke-width="3" stroke-dasharray="12 8" stroke-dashoffset="10"/>

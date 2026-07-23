@@ -64,19 +64,19 @@ FIRST_CENTER = PLOT_X + 75
 PAIR_BAR_W = 46
 
 ENDPOINTS = [
-    ("No reminder + weak task encoding", "Low endpoint", LOW_FILL, LOW_EDGE),
-    ("Film reminder + strong task encoding", "High endpoint", HIGH_FILL, HIGH_EDGE),
+    ("No reminder + weak task encoding", "Low interference", LOW_FILL, LOW_EDGE),
+    ("Film reminder + strong task encoding", "High interference", HIGH_FILL, HIGH_EDGE),
 ]
 
 DISPLAY_LABELS = {
-    1: "No deliberate\ncontrol",
+    1: "Unguided\nfilm recall",
     2: "Retrieval\nmonitoring",
     3: "Start-of-\nfilm\nreinstatement",
     4: "Reinstatement\n+\nmonitoring",
-    5: "Film-\nretrieval\ngoal",
-    6: "Goal\n+\nmonitoring",
-    7: "Goal\n+\nreinstatement",
-    8: "Full\ncontrol",
+    5: "Film-category\ncue",
+    6: "Cue\n+\nmonitoring",
+    7: "Cue\n+\nreinstatement",
+    8: "Full\ndeliberate\ncontrol",
 }
 
 
@@ -97,7 +97,6 @@ def coerce_row(row: dict[str, str]) -> dict:
         "film_item_support_boost",
         "rejected_recall_drift_scale",
         "task_mcf_scale",
-        "film_source_start_drift_rate",
         "film_cue_reinstatement",
         "experiment_count",
         "recall_probability_mass",
@@ -139,7 +138,7 @@ def write_summary(rows: list[dict]) -> None:
     ]
     SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
     with SUMMARY_PATH.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -313,7 +312,7 @@ def build_summary() -> list[dict]:
 def draw_panel_a(summary: list[dict], center_values: list[float]) -> list[str]:
     parts = [
         svg_text(42, 78, "A", PANEL_LETTER_SIZE, weight="bold", anchor="start"),
-        svg_text(PLOT_X + PLOT_W / 2, 78, "Endpoint film recall by control setting", TITLE_SIZE, weight="bold"),
+        svg_text(PLOT_X + PLOT_W / 2, 78, "Mean film recall by retrieval-control setting", TITLE_SIZE, weight="bold"),
     ]
     legend_y = 126
     legend_center = PLOT_X + PLOT_W / 2
@@ -358,7 +357,7 @@ def draw_panel_a(summary: list[dict], center_values: list[float]) -> list[str]:
     group_y = PLOT_A_Y + PLOT_A_H + 150
     for (left, right, center), label in zip(
         bounds,
-        ["Film-retrieval goal absent", "Film-retrieval goal present"],
+        ["Film-category cue absent", "Film-category cue present"],
         strict=True,
     ):
         parts.append(svg_line(left, group_y - 20, right, group_y - 20, AXIS_COLOR, 2.2))

@@ -96,6 +96,7 @@ CAPTIONED_FIGURES = [
             "condition mean for the number of film items recalled; recalled items are ordered left to right by output position. Colors mark film items, task items, "
             "delay/filler items, and unfilled output positions. "
             "(B) Mean number of film items recalled across all simulated trials. "
+            "The bracket marks the larger reduction from weak to strong task encoding when the task follows a film reminder. "
             "Film recall was lowest when a film reminder preceded strong task encoding, isolating the unguided-retrieval "
             "component of the selective interference effect."
         ),
@@ -142,9 +143,11 @@ CAPTIONED_FIGURES = [
             "Weak film cues were supplied periodically during recall in all conditions. "
             "Rows compare retrieval modes, columns compare reminder conditions, and paired bars compare weak versus strong task "
             "encoding. "
+            "In the with-reminder column, brackets label the selective reduction under unguided film recall and relative preservation "
+            "under deliberate film recall. "
             "Strong task encoding reduced film recall most clearly when it followed a film reminder, but this reduction was much "
             "larger under unguided film recall than under deliberate film recall. "
-            "The model therefore simulates a selective interference effect: strong task encoding after a film reminder strongly "
+            "The model therefore simulates a selective interference effect: strong task encoding after a film reminder substantially "
             "reduces unguided film recall while leaving deliberate film recall relatively preserved."
         ),
     },

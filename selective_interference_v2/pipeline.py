@@ -103,7 +103,6 @@ class RecognitionDiagnostics(NamedTuple):
     """Probe-by-probe recognition audit metrics."""
 
     mfc_current_context_evidence: Float[Array, " n_probes"]
-    old_probability: Float[Array, " n_probes"]
     cmr_ia_temporal_similarity: Float[Array, " n_probes"]
     cmr_ia_source_similarity: Float[Array, " n_probes"]
     probe_context_to_item_support: Float[Array, " n_probes"]
@@ -681,16 +680,13 @@ def simulate_sequential_recognition(
     model: PhasedMemorySearch,
     probes: Integer[Array, " n_probes"],
     cue_scale: Float[Array, ""] | float,
-    threshold: Float[Array, ""] | float,
-    sensitivity: Float[Array, ""] | float,
     temporal_weight: Float[Array, ""] | float = 1.0,
     source_weight: Float[Array, ""] | float = 1.0,
 ) -> tuple[
     PhasedMemorySearch,
     Float[Array, " n_probes"],
-    Float[Array, " n_probes"],
 ]:
-    """Simulate a sequential old/new recognition test.
+    """Compute evidence during a sequential recognition test.
 
     Probes reinstate context after their evidence is scored.  They do not
     occupy recall slots, mark items unavailable, or update memory matrices.
@@ -703,23 +699,17 @@ def simulate_sequential_recognition(
             temporal_weight,
             source_weight,
         )
-        old_probability = 1.0 / (
-            1.0 + jnp.exp(-sensitivity * (evidence - threshold))
-        )
-        old_probability = jnp.where(probe == 0, 0.0, old_probability)
         updated = apply_recognition_probe(m, probe, cue_scale)
-        return updated, (evidence, old_probability)
+        return updated, evidence
 
-    final_model, (evidences, old_probabilities) = lax.scan(step, model, probes)
-    return final_model, evidences, old_probabilities
+    final_model, evidences = lax.scan(step, model, probes)
+    return final_model, evidences
 
 
 def simulate_sequential_recognition_diagnostics(
     model: PhasedMemorySearch,
     probes: Integer[Array, " n_probes"],
     cue_scale: Float[Array, ""] | float,
-    threshold: Float[Array, ""] | float,
-    sensitivity: Float[Array, ""] | float,
     film_items: Integer[Array, " n_film"],
     task_items: Integer[Array, " n_task"],
     temporal_weight: Float[Array, ""] | float = 1.0,
@@ -734,10 +724,6 @@ def simulate_sequential_recognition_diagnostics(
             temporal_weight,
             source_weight,
         )
-        old_probability = 1.0 / (
-            1.0 + jnp.exp(-sensitivity * (evidence - threshold))
-        )
-        old_probability = jnp.where(probe == 0, 0.0, old_probability)
         temporal_similarity, source_similarity = recognition_probe_similarity(
             m,
             probe,
@@ -756,7 +742,6 @@ def simulate_sequential_recognition_diagnostics(
         updated = apply_recognition_probe(m, probe, cue_scale)
         diagnostics = RecognitionDiagnostics(
             evidence,
-            old_probability,
             temporal_similarity,
             source_similarity,
             probe_support,

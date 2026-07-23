@@ -67,12 +67,12 @@ TASK_ORDER = [
     (2.0, "Strong task encoding", STRONG_FILL, STRONG_EDGE),
 ]
 PROBE_ORDER = [
-    ("hit_probability", "Old film probes", FILM_FILL, FILM_EDGE),
-    ("false_alarm_probability", "Film-like foils", FOIL_FILL, FOIL_EDGE),
+    ("old_mfc_current_context_evidence", "Old film probes", FILM_FILL, FILM_EDGE),
+    ("foil_mfc_current_context_evidence", "Film-source-matched foils", FOIL_FILL, FOIL_EDGE),
 ]
-CORRECTED_METRIC = "corrected_recognition"
-HIT_METRIC = "hit_probability"
-FALSE_ALARM_METRIC = "false_alarm_probability"
+SEPARATION_METRIC = "mfc_current_context_evidence_separation"
+OLD_EVIDENCE_METRIC = "old_mfc_current_context_evidence"
+FOIL_EVIDENCE_METRIC = "foil_mfc_current_context_evidence"
 AUC_METRIC = "old_foil_auc"
 FILM_SUPPORT_METRIC = "film_context_to_item_mass"
 TASK_SUPPORT_METRIC = "task_context_to_item_mass"
@@ -519,21 +519,21 @@ def draw_high_interference_probe_panel(
     w: float,
     h: float,
 ) -> list[str]:
-    hit_values = metric_ci_lookup(rows, HIT_METRIC)
-    false_alarm_values = metric_ci_lookup(rows, FALSE_ALARM_METRIC)
-    parts = draw_panel_heading(x, y, w, "C", "High-interference recognition")
-    parts.extend(draw_axes(x, y, w, h, 1.0, [0.0, 0.25, 0.5, 0.75, 1.0]))
-    parts.append(draw_ylabel(x, y, h, "Old response probability"))
+    old_values = metric_ci_lookup(rows, OLD_EVIDENCE_METRIC)
+    foil_values = metric_ci_lookup(rows, FOIL_EVIDENCE_METRIC)
+    parts = draw_panel_heading(x, y, w, "C", "High-interference evidence")
+    parts.extend(draw_axes(x, y, w, h, 1.5, [0.0, 0.5, 1.0, 1.5]))
+    parts.append(draw_ylabel(x, y, h, "Recognition evidence"))
     reminder_key = "With reminder"
     task_scale = 2.0
     bar_w = 122
     gap = 70
     start_x = x + w / 2 - bar_w - gap / 2
     for index, (metric, label_text, fill, edge) in enumerate(PROBE_ORDER):
-        values = hit_values if metric == HIT_METRIC else false_alarm_values
+        values = old_values if metric == OLD_EVIDENCE_METRIC else foil_values
         value, ci_lower, ci_upper = values[(reminder_key, task_scale)]
         bar_x = start_x + index * (bar_w + gap)
-        bar_y = y_pos(y, h, 1.0, value)
+        bar_y = y_pos(y, h, 1.5, value)
         parts.append(
             svg_rect(
                 bar_x,
@@ -550,7 +550,7 @@ def draw_high_interference_probe_panel(
                 bar_x + bar_w / 2,
                 y,
                 h,
-                1.0,
+                1.5,
                 ci_lower,
                 ci_upper,
             )
@@ -558,8 +558,8 @@ def draw_high_interference_probe_panel(
         display_label = label_text
         if label_text == "Old film probes":
             display_label = "Old film\nprobes"
-        elif label_text == "Film-like foils":
-            display_label = "Film-like\nfoils"
+        elif label_text == "Film-source-matched foils":
+            display_label = "Film-source-matched\nfoils"
         parts.append(
             svg_multiline(
                 bar_x + bar_w / 2,
@@ -578,7 +578,7 @@ def render_svg() -> None:
     summary_rows = read_rows(SUMMARY_PATH)
     diagnostic_rows = read_rows(DIAGNOSTIC_SUMMARY_PATH)
     task_support_share = task_support_share_lookup(diagnostic_rows)
-    corrected = metric_ci_lookup(summary_rows, CORRECTED_METRIC)
+    separation = metric_ci_lookup(summary_rows, SEPARATION_METRIC)
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">',
         '<rect width="100%" height="100%" fill="white"/>',
@@ -601,15 +601,15 @@ def render_svg() -> None:
     parts.extend(
         draw_condition_bar_panel(
             "B",
-            "Corrected recognition",
+            "Recognition-evidence separation",
             PANEL_B_X,
             PANEL_B_Y,
             PANEL_B_W,
             PANEL_B_H,
-            corrected,
-            "Hits minus false alarms",
-            0.5,
-            [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+            separation,
+            "Old-film minus foil evidence",
+            0.8,
+            [0.0, 0.2, 0.4, 0.6, 0.8],
         )
     )
     parts.extend(

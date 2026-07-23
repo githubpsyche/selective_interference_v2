@@ -6,7 +6,6 @@ import sys
 from pathlib import Path
 
 from jax import random
-from jaxcmr.helpers import find_project_root
 import jax.numpy as jnp
 import numpy as np
 
@@ -24,7 +23,6 @@ from selective_interference_v2 import (
     make_is_target,
     prepare_sweep,
     simulate_sequential_recognition_diagnostics,
-    simulate_sequential_recognition,
     split_scales_for_cache,
     sweep_rngs,
 )
@@ -62,10 +60,6 @@ REMINDER_CONDITIONS = {
     },
 }
 
-PRIMARY_SOURCE_ORIENTATION = 0.0
-
-RECOGNITION_THRESHOLD = float(os.environ.get("RECOGNITION_THRESHOLD", "0.5"))
-RECOGNITION_SENSITIVITY = float(os.environ.get("RECOGNITION_SENSITIVITY", "20.0"))
 RECOGNITION_CUE_REINSTATEMENT = float(
     os.environ.get("RECOGNITION_CUE_REINSTATEMENT", "0.90")
 )
@@ -126,41 +120,6 @@ def condition_label(reminder_condition: str, task_scale: float) -> str:
     return f"{reminder_condition} + {task}"
 
 
-def recognition_trial(
-    model,
-    rng,
-    old_items,
-    foil_items,
-    cue_scale,
-    threshold,
-    sensitivity,
-    temporal_weight,
-    source_weight,
-):
-    probes = jnp.concatenate([old_items, foil_items])
-    labels = jnp.concatenate([
-        jnp.ones(old_items.shape[0], dtype=jnp.int32),
-        jnp.zeros(foil_items.shape[0], dtype=jnp.int32),
-    ])
-    order = random.permutation(rng, probes.shape[0])
-    probes = probes[order]
-    labels = labels[order]
-    model = model.start_retrieving()
-    _, evidences, old_probabilities = simulate_sequential_recognition(
-        model,
-        probes,
-        cue_scale,
-        threshold,
-        sensitivity,
-        temporal_weight=temporal_weight,
-        source_weight=source_weight,
-    )
-    return probes, labels, evidences, old_probabilities
-
-
-batched_recognition = batch_trial(recognition_trial, n_args=9)
-
-
 def recognition_diagnostic_trial(
     model,
     rng,
@@ -168,8 +127,6 @@ def recognition_diagnostic_trial(
     foil_items,
     task_items,
     cue_scale,
-    threshold,
-    sensitivity,
     temporal_weight,
     source_weight,
 ):
@@ -192,8 +149,6 @@ def recognition_diagnostic_trial(
         model,
         probes,
         cue_scale,
-        threshold,
-        sensitivity,
         old_items,
         task_items,
         temporal_weight=temporal_weight,
@@ -204,37 +159,25 @@ def recognition_diagnostic_trial(
 
 batched_recognition_diagnostics = batch_trial(
     recognition_diagnostic_trial,
-    n_args=10,
+    n_args=8,
 )
 
 
 def recognition_summary_stats(
     labels: np.ndarray,
     evidences: np.ndarray,
-    old_probabilities: np.ndarray,
 ) -> dict[str, tuple[float, float, float]]:
     labels = labels.astype(bool)
     old_count = np.sum(labels, axis=(1, 2))
     foil_count = np.sum(~labels, axis=(1, 2))
     old_evidence = np.sum(np.where(labels, evidences, 0.0), axis=(1, 2)) / old_count
     foil_evidence = np.sum(np.where(~labels, evidences, 0.0), axis=(1, 2)) / foil_count
-    hit_probability = (
-        np.sum(np.where(labels, old_probabilities, 0.0), axis=(1, 2)) / old_count
-    )
-    false_alarm_probability = (
-        np.sum(np.where(~labels, old_probabilities, 0.0), axis=(1, 2)) / foil_count
-    )
     separation = old_evidence - foil_evidence
-    accuracy = hit_probability - false_alarm_probability
     auc = old_foil_auc_by_subject(labels, evidences)
     return {
         "old_mfc_current_context_evidence": mean_ci(old_evidence),
         "foil_mfc_current_context_evidence": mean_ci(foil_evidence),
         "mfc_current_context_evidence_separation": mean_ci(separation),
-        "hit_probability": mean_ci(hit_probability),
-        "false_alarm_probability": mean_ci(false_alarm_probability),
-        "corrected_recognition": mean_ci(accuracy),
-        "hit_minus_false_alarm": mean_ci(accuracy),
         "old_foil_auc": mean_ci(auc),
     }
 
@@ -297,7 +240,6 @@ def masked_subject_means(values: np.ndarray, mask: np.ndarray) -> np.ndarray:
 
 DIAGNOSTIC_METRICS = [
     "mfc_current_context_evidence",
-    "old_probability",
     "cmr_ia_temporal_similarity",
     "cmr_ia_source_similarity",
     "probe_context_to_item_support",
@@ -527,7 +469,6 @@ def run_sweep():
                 **post_cache_scales,
                 **RETRIEVAL_FIXED_SCALES,
                 start_drift_scale=0.0,
-                film_source_start_drift_rate=PRIMARY_SOURCE_ORIENTATION,
                 film_item_support_boost=0.0,
             )
             metadata = {
@@ -535,9 +476,6 @@ def run_sweep():
                 "task_condition": TASK_MCF_LABELS[float(task_scale)],
                 "condition_label": condition_label(reminder_condition, float(task_scale)),
                 "task_mcf_scale": float(task_scale),
-                "film_source_start_drift_rate": PRIMARY_SOURCE_ORIENTATION,
-                "recognition_threshold": RECOGNITION_THRESHOLD,
-                "recognition_sensitivity": RECOGNITION_SENSITIVITY,
                 "recognition_cue_reinstatement": RECOGNITION_CUE_REINSTATEMENT,
                 "recognition_temporal_weight": RECOGNITION_TEMPORAL_WEIGHT,
                 "recognition_source_weight": RECOGNITION_SOURCE_WEIGHT,
@@ -564,8 +502,6 @@ def run_sweep():
                     paradigm.foil_items,
                     paradigm.interference_items,
                     diagnostic_cue_scale,
-                    RECOGNITION_THRESHOLD,
-                    RECOGNITION_SENSITIVITY,
                     RECOGNITION_TEMPORAL_WEIGHT,
                     RECOGNITION_SOURCE_WEIGHT,
                 )
@@ -597,11 +533,9 @@ def run_sweep():
                 )
                 if diagnostic_setting == "sequential_update":
                     evidences_np = diagnostic_arrays["mfc_current_context_evidence"]
-                    old_probabilities_np = diagnostic_arrays["old_probability"]
                     summary = recognition_summary_stats(
                         labels_np,
                         evidences_np,
-                        old_probabilities_np,
                     )
                     for metric, values in summary.items():
                         mean, ci_lower, ci_upper = values
@@ -639,9 +573,6 @@ def run_sweep():
         "task_condition",
         "condition_label",
         "task_mcf_scale",
-        "film_source_start_drift_rate",
-        "recognition_threshold",
-        "recognition_sensitivity",
         "recognition_cue_reinstatement",
         "recognition_temporal_weight",
         "recognition_source_weight",

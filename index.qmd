@@ -1,6 +1,6 @@
 ---
-title: "Goal-directed remembering under contextual competition: A retrieved-context account of selective interference"
-shorttitle: "Goal-directed remembering under contextual competition"
+title: "Goal-directed remembering when context cues competitors: A retrieved-context account of selective interference"
+shorttitle: "Goal-directed remembering when context cues competitors"
 author:
   - name: Jordan B Gunn
     affiliations:
@@ -23,16 +23,15 @@ bibliography: references.bib
 
 # Abstract
 
-Goal-directed remembering can be less affected by interference even as the same material becomes less likely to come to mind inadvertently.
-The trauma-film paradigm examines this asymmetry in memory for distressing films: a visuospatial intervention task performed after a film reminder can reduce later intrusions while leaving voluntary memory relatively intact.
-This selective interference effect is often interpreted through theories of traumatic memory in which intrusive and deliberate remembering depend on differently vulnerable memory representations.
+Goal-directed remembering can stay relatively robust even when interference makes the same material less likely to come to mind inadvertently.
+The trauma-film paradigm examines this asymmetry in memory for distressing films: an imagery-competing task performed after a film reminder can reduce later intrusions while leaving voluntary memory relatively intact.
+This selective interference effect is often interpreted through theories of traumatic memory in which intrusive and deliberate remembering depend on different memory representations.
 Here we show that the same dissociation may follow from retrieved-context dynamics developed to explain episodic memory more generally.
 We develop this account in an emotional Context Maintenance and Retrieval (eCMR) model that predicts sequences of film and non-film recall events.
-The model links task items to film-associated context reinstated by a film reminder. 
+The model links task items to film-associated context reinstated by a film reminder.
 That context can later cue task competitors as well as film items.
-Unguided film recall declines when reminder-linked learning makes task items strong competitors.
-Deliberate recall is less affected when a maintained film-category cue favors film candidates without equally supporting task competitors.
-Recognition is less affected than recall because the model evaluates a presented candidate item's fit to context rather than selecting among film and task candidates.
+Strong competition reduces unguided film recall more than deliberate recall when a maintained film-category cue selectively favors film candidates.
+Deliberate recognition is less affected than deliberate recall because the model evaluates a presented candidate item's fit to context rather than selecting among film and task candidates.
 This account clarifies when intrusive and voluntary remembering can diverge and situates selective interference within a broader computational theory of episodic learning and retrieval.
 
 # Introduction
@@ -50,57 +49,47 @@ This design makes it possible to ask whether the same encoded event can remain a
 In such research, intrusion frequency is often only weakly related to voluntary-memory performance, such that the two measures dissociate [@holmes2004trauma; @james2016trauma].
 The same encoded episode can therefore support both involuntary and deliberate remembering, and these modes can come apart empirically.
 
-Visuospatial interference tasks make this dissociation experimentally sharper.
-In immediate post-film studies, tasks such as Tetris can reduce later film intrusions while voluntary memory for the same material remains relatively intact [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
-Delayed variants pair the interference task with a film reminder.
-Participants return after roughly 24 hours to 3 days, view reminder cues for the film, and then complete Tetris.
-This reminder-plus-Tetris sequence can reduce subsequent intrusions [@james2015computer; @kessler2020visuospatial].
+Researchers sharpen this dissociation with imagery-competing tasks intended to tax the working-memory processes involved in maintaining film imagery.
+In immediate post-film studies, such tasks can reduce later film intrusions while voluntary memory for the same material remains relatively intact [@asselbergs2024effectiveness; @deeprose2012imagery; @holmes2009can; @holmes2010key; @lau2019intrusive; @lau2021selectively].
+In delayed variants, a film reminder precedes the imagery-competing task.
+Participants return after hours or days, view reminder cues for the film, and then complete the task.
+This reminder-plus-task sequence can reduce subsequent intrusions in the lab [@james2015computer; @kessler2020visuospatial] and in clinical studies targeting intrusive memories after real-world trauma [@beckenstrom2026digital; @iyadurai2023reducing; @kanstrup2024guided; @kessler2018reducing].
 The resulting pattern of reduced intrusions with relatively preserved deliberate memory is termed selective interference.
-@fig-empirical-target defines the qualitative pattern targeted by the recall simulations: following a film reminder, the visuospatial task has a larger effect on unguided than deliberate film recall.
+@fig-empirical-target defines the qualitative pattern targeted by the simulations: following a film reminder, the visuospatial task has a larger effect on unguided than deliberate film recall.
 
+<!-- FIXME: I don't totally follow this paragraph; make sure it flows okay. -->
 The selective interference effect has been used to argue that intrusive and voluntary remembering depend on differently vulnerable memory representations [@brewin1996dual; @brewin2014episodic].
 Dual-representation accounts give this interpretation an architectural basis.
 They link coherent deliberate recollection to hippocampally supported representations that bind event elements within a spatiotemporal context [@bird2012hippocampus; @bisby2020reduced].
-Intrusive re-experiencing is linked more strongly to sensory and affective representations supported by amygdala and sensory systems [@brewin2010intrusive; @bisby2020reduced].
-In immediate post-film interventions, visuospatial tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
+They suggest that intrusive re-experiencing is due to activation of sensory and affective representations supported by amygdala and sensory systems [@bisby2020reduced; @brewin2010intrusive].
+Imagery-competing tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
 Because later intrusions are assumed to arise especially from sensory-bound representations, the selective pattern is attributed to disrupting the representation most likely to support intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
 In delayed post-reminder interventions, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@kindt2009beyond; @james2015computer].
 Across these variants, selective interference is explained by treating the intervention as acting more strongly on sensory-bound, intrusion-supporting representations than on the contextualized representations proposed to support coherent deliberate recollection.
 
-Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared. 
+Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared.
 Selective interference can instead arise from differences in how film memories are cued and controlled at retrieval.
-In the account developed below, a film reminder reinstates context associated with the film before task material is encoded.
-Task material then becomes linked to that context.
-When later remembering is guided by film-associated context, task and film material can therefore compete, interfering with film recall.
+In our account, film events become associated with context, a gradually changing mental representation of recent experience [@howard2002distributed; @polyn2009context].
+A film reminder reinstates this film-associated context before task material is encoded.
+Task material then becomes linked to the reinstated context.
+When later remembering is guided by film-associated context, task and film material compete, interfering with film recall.
 The task interferes less when retrieval depends less on context to access film material.
-Deliberate recall can be less affected when a maintained film-category cue gives film candidates an additional source of support without equally supporting task competitors.
-Tasks like recognition can also be less affected, because the test presents a candidate film item for judgment rather than requiring film material to be brought to mind.
-On this account, the selective-interference effect emerges when retrieval conditions differ in how much they depend on film-associated context that also cues task material.
+In deliberate recall, this happens when a maintained film-category cue gives film candidates an additional source of support without equally supporting task competitors.
+Deliberate recognition can also be less affected, because the test presents candidate film items for judgment rather than requiring selection among film and task candidates.
+On this account, shared contextual associations generate competition, while retrieval goals and test format determine how strongly that competition affects performance.
+We formalize this retrieval account in an emotional variant [@cohen2022memory; @talmi2019retrieved] of the Context Maintenance and Retrieval (CMR) model [@polyn2009context].
 
-We formalize this retrieval account in an emotional variant [@talmi2019retrieved; @cohen2022memory] of the Context Maintenance and Retrieval (CMR) model [@polyn2009context].
-Retrieved-context models treat context as a gradually changing state that is shaped by experience, reinstated by retrieval, and used to cue later memory search [@howard2002distributed; @sederberg2008context; @polyn2009context].
-In CMR, items and context are linked by bidirectional associations.
-Context cues candidate items, and retrieved items or items presented at test reinstate associated context [@polyn2009context; @polyn2009task].
-Emotional CMR variants retain this item-context architecture while allowing emotional or source context to shape what is bound and later retrieved [@talmi2019retrieved; @cohen2022memory].
-These properties make CMR a principled setting for a retrieved-context account of selective interference based on context reinstatement and item-context binding.
-<!-- FIXME: In the Discussion, be more explicit about where CMR3 does not itself distinguish voluntary and involuntary retrieval. -->
+Retrieved-context models offer a general theory of episodic memory search in which context can guide targeted recall and give rise to unintended intrusions [@cohen2022memory; @lohnas2015expanding; @polyn2011semantic].
+Yet they have not been used to explain why post-reminder task interference can affect unguided and deliberate retrieval of the same material differently.
+We address this gap by modeling both forms of recall from the same learned associations and specifying how deliberate retrieval controls their use.
+Preserved voluntary memory thereby becomes an outcome for a retrieved-context model to explain rather than an assumption attached to deliberate retrieval.
 
-Applied to the trauma-film paradigm, the model treats film, delay-period, task, and filler events as a continuous sequence through which context evolves.
-A film reminder is implemented as item-to-context reinstatement before task encoding.
-Later recall is implemented as context-to-item sampling from the film and non-film items supported by the current retrieval state.
-When that context supports both film and task material, task items compete with film recall rather than merely weakening a film trace.
-
-Deliberate recall is modeled with several retrieval-control processes.
-Rather than universally producing the selective-interference pattern, we show that some control mechanisms increase film recall overall without substantially reducing the loss caused by task competitors linked to film-associated context.
-In the simulations, the strongest protection comes from adding a maintained film-category cue that gives film candidates support not shared by task competitors.
-This identifies a functional condition for selective interference: voluntary recall is protected when it depends less on film-associated temporal context that has also become supportive of task material.
-
-The simulations follow a generalization-style modeling logic [@busemeyer2000model; @lohnas2023event].
+The simulations test this account using a generalization-style modeling logic [@busemeyer2000model; @lohnas2023event].
 Core parameters are anchored in an independent affective free-recall dataset [@dupertuys2026ukraine], and no trauma-film outcomes are fitted.
-Simulation 1 varies reminder presence and effective task-context learning to test competitor formation.
-Simulation 2 compares start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring to determine which control operations protect recall.
-The recognition analysis tests how presenting a candidate film item for judgment changes where reminder-linked task competition enters retrieval.
-Together, the simulations define a mechanistic alternative to selective-vulnerability accounts and identify conditions under which intrusive and voluntary remembering should appear more or less dissociated.
+Simulation 1 tests the account's core competition mechanism by varying whether film-associated context is reinstated before task encoding and how strongly task material becomes linked to that context.
+Simulation 2 compares start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring to determine which control operations improve film recall generally and which specifically protect it from post-reminder task interference.
+Simulation 3 tests whether deliberate recognition is less affected by interference than deliberate recall, clarifying the role of test format in the effect.
+Together, the simulations specify a mechanistic alternative to selective-vulnerability accounts and identify when intrusive and voluntary remembering should diverge.
 
 ::: {#fig-empirical-target fig-pos="H"}
 ![](work/empirical_target/empirical_target_composite.png){width=100%}
@@ -119,8 +108,9 @@ Selective-interference studies are often described as comparing involuntary and 
 Diary measures count film memories after they inadvertently come to mind during daily life.
 Laboratory intrusion tasks count film memories reported during a defined monitoring period, sometimes while film cues are present.
 In both cases, participants report film memories when they occur without deliberately trying to recover film details.
-Voluntary-memory tests differ in whether target film material must be recovered or is presented for judgment: free recall and specific-probe questions ask participants to bring film details to mind, whereas recognition asks participants to distinguish true from false film statements or film stills from lure images [@james2016trauma; @lau2019intrusive; @lau2021selectively].
-Selective interference appears most consistent when intrusion reports are compared with recognition, and less uniform when film material must be brought to mind under more similar retrieval conditions.
+These studies test voluntary memory in tasks that differ in whether target film material must be recovered or is presented for judgment.
+Free recall and specific-probe questions ask participants to bring film details to mind, whereas recognition asks participants to distinguish true from false film statements or film stills from lure images [@james2016trauma; @lau2019intrusive; @lau2021selectively].
+Selective interference appears most consistent when intrusion reports are compared with recognition, and less when compared with free recall, where retrieval conditions resemble those of unguided recall more closely.
 @fig-empirical-examples illustrates variation in retrieval format across selected trauma-film studies [@james2015computer; @lau2019intrusive; @lau2021selectively; @mcconnell2026testing].
 
 ::: {#fig-empirical-examples fig-pos="H"}
@@ -134,24 +124,20 @@ Bracket labels summarize the plotted contrast; they do not denote a uniform sign
 Bar heights reproduce reported condition means in native study units, so y-axis scales differ across outcomes.
 :::
 
-Comparisons between diary intrusion reports and recognition tests confound retrieval intentionality with retrieval format.
-In immediate post-film Tetris studies, participants completed Tetris soon after film viewing and later reported fewer diary intrusions, while verbal or visual recognition remained similar across groups [@holmes2009can; @holmes2010key].
-Delayed reminder-plus-Tetris studies used a later film reminder before Tetris and found a related pattern when diary or laboratory intrusion measures were paired with recognition [@james2015computer; @kessler2020visuospatial].
-Later work pairing diary intrusions with recognition retained the same basic comparison [@asselbergs2024effectiveness].
-In these studies, intrusion measures can count a film memory only after it comes to mind and is reported, whereas verbal and visual recognition tests present candidate film material for judgment [@lau2019intrusive; @lau2021selectively].
-A reduction in intrusions with preserved recognition therefore does not, by itself, show that voluntary memory is preserved across retrieval formats.
+Comparisons between diary intrusion reports and recognition tests often confound retrieval intentionality with retrieval format.
+While imagery-competing tasks typically decrease diary intrusions, participants who received a visuo-spatial intervention soon after film viewing later reported fewer diary intrusions, while verbal or visual recognition was unaffected [@holmes2009can; @holmes2010key].
+A similar pattern was found in studies that test memory after a delay [@james2015computer; @kessler2020visuospatial; @asselbergs2024effectiveness].
+Because the test format in the unguided and the deliberate conditions differed, a reduction in intrusions with preserved recognition therefore does not, by itself, show that voluntary memory is selectively preserved.
 
 Evidence is less consistent in designs that make intrusion and voluntary-memory measures more comparable.
 Free recall and specific-probe questions make voluntary-memory performance depend on bringing film material to mind, matching a central requirement of intrusion reports [@lau2019intrusive].
 Laboratory intrusion tasks collect reports during a defined period, making the setting more comparable to laboratory voluntary-memory tests than a week-long diary [@lau2019intrusive; @lau2021selectively].
-Across matched recall and laboratory-report formats, effects of Tetris after a film reminder are less uniform.
 Some designs still show reduced diary or laboratory intrusion reports with relatively preserved voluntary memory [@lau2019intrusive; @lau2021selectively].
 A stricter matched-report design did not find the predicted reduction in involuntary memory [@mcconnell2026testing].
 
 Variation across retrieval formats motivates a mechanistic account of when and why selective interference appears.
-Recognition-based comparisons show selective interference more consistently.
-The same comparisons confound retrieval intentionality with test format.
-Attempts to compare recall-like measures across intentionality conditions are more methodologically robust, yet observe selective interference less consistently.
+Recognition-based comparisons show selective interference more consistently but confound retrieval intentionality with test format.
+More methodologically robust designs where test format is better matched observe selective interference less consistently.
 A complete account must therefore explain both how deliberate recall can remain preserved while unguided recall is reduced, as well as why selective interference depends on how retrieval is cued and measured.
 
 
@@ -197,167 +183,104 @@ Dashed outlines or arrows mark weaker support or dampened updating, not unavaila
 
 {{< pagebreak >}}
 
-Retrieved-context models explain recall as search from a changing context state shaped by recent experience and prior retrieval.
-The current context cues candidate items, and recalled items reinstate context from encoding, producing temporal organization in free recall [@howard2002distributed; @sederberg2008context].
-Applied to selective interference, these operations explain how task material becomes linked to film-associated context and how later retrieval determines the extent to which that material competes with film material for recall.
+Retrieved-context models explain recall as a search guided by a changing context state shaped by recent experience and prior retrieval.
+In CMR, bidirectional associations link items and context: context cues candidate items, while retrieved items and items presented at test reinstate the contexts associated with them [@howard2002distributed; @polyn2009context; @polyn2009task; @sederberg2008context].
+We first describe how these operations organize deliberate and unguided recall.
+We then use this framework to explain how task material becomes a competitor for film recall, how deliberate recall controls that competition, and why presenting a candidate item changes its effect on deliberate recognition.
 
-Film, task, and delay periods are represented as sequences of events that update context.
-For the film, these events correspond roughly to scenes or segments.
-For the task and delay periods, they represent non-film events that can also be encoded and later sampled.
-A film reminder reinstates film-associated context before task encoding.
-Task events linked to that state can later be cued alongside film material.
-Retrieval then depends on how strongly the test setting constrains search toward film material rather than toward the broader set of candidates supported by the current context.
-@fig-retrieved-context-encoding-associations summarizes the encoding and associative structure of the account, and @fig-retrieved-context-retrieval-operations summarizes the retrieval operations.
-
-## Context-Guided Search and Source Organization
+## How Context Organizes Recall
 
 Retrieved-context models were developed to explain structured regularities in open-ended recall.
 Free recall favors recently studied items, and successive recalls tend to come from nearby study positions [@kahana1996associative; @howard2002distributed; @sederberg2008context].
-In these models, a gradually changing context state cues candidate items, and recalled items reinstate the contexts in which they were encoded.
-Recency follows because the retrieval context remains similar to contexts from recent study and recall events.
-Temporal contiguity follows because a recalled item reinstates context from its study position, which is similar to the contexts associated with nearby items.
+Recency follows because retrieval context remains similar to contexts from recent study and recall events.
+Temporal contiguity follows because recalling an item reinstates context from its study position, which resembles the contexts associated with nearby items.
 
 Recall is also organized by shared content, task, and source.
 Semantically related items, items encoded under the same task, and items from the same source can cluster during recall [@polyn2009context; @polyn2009task; @polyn2012neural; @morton2016predictive; @lohnas2023event].
 CMR captures semantic and source organization by allowing each form of information to contribute to the context state that guides retrieval.
-Semantic and source dimensions can make a retrieval cue more selective than temporal context alone: a target-category or source cue can favor one subset of items even while temporal associations continue to organize retrieval within that subset [@polyn2011semantic; @lohnas2026specialized].
-Combining shared temporal support with selective non-temporal support is central to the retrieved-context explanation developed here.
+A target-category or source cue can therefore favor one subset of items even while temporal associations continue to organize retrieval within that subset [@lohnas2026specialized; @polyn2011semantic].
 
 Emotional memory gives source organization a further role in the model used here.
 Emotional items can cluster together, and emotional material is often remembered better than neutral material [@talmi2004semantic; @talmi2007contribution; @talmi2013enhanced].
 Emotional CMR represents affective information as a source-like context dimension and allows emotional items to form stronger source-context associations [@talmi2019retrieved; @cohen2022memory].
-Film events therefore share an affective/source-context signal while remaining distinct items with different temporal associations.
-Task and delay events remain available to the same sampling process and can acquire support from any temporal or source context active while they are encoded.
-The affective/source-context representation and the maintained film-category cue are separate model constructs.
-Neither construct formally implements the S-reps or C-reps in dual-representation theory.
+In the present account, film events therefore share affective source information while remaining distinct items with different temporal associations.
 
-## Reminder-Linked Competitor Encoding
+## How Task Material Competes for Recall
 
-Reminder-linked competitor learning occurs when a film reminder reinstates context from the earlier event before task events are encoded.
-In the retrieved-context account, presented or retrieved items reinstate their associated context [@howard2002distributed; @sederberg2008context; @polyn2009context].
-A film reminder therefore shifts the current state toward context from its corresponding film episode.
-If task events are then learned while reinstated film context remains active, they acquire context-to-item associations that overlap with associations supporting film events.
-Later film-oriented context can consequently support task candidates as well as film candidates.
-
-Recall can include material outside the intended target.
+The same contextual processes that organize target recall can also bring material outside the intended target into recall.
 In multi-list free recall, participants sometimes report items from earlier lists instead of the list they were asked to recall [@zaromb2006temporal; @howard2008persistence; @lohnas2015expanding].
-Those errors are structured: they are biased toward recently studied prior lists and change as intervening study or delay changes.
-Retrieved-context models explain this pattern by treating recall as candidate sampling from the current context.
-As context drifts, support for non-target items declines.
-When a non-target item was encoded in a recent or related context, it can still enter the candidate set.
-This makes task and delay events eligible recall candidates in the trauma-film paradigm.
-If those events are associated with context states that later support film recall, they can compete with film material during retrieval.
+Those prior-list intrusions are structured: they are biased toward recently studied prior lists and vary with intervening study or delay.
+Retrieved-context models explain this structure because current context can continue to support items from recent or related episodes.
+Although that support declines with further experience, some non-target items remain candidates for recall.
 
-Delayed intervention procedures in the trauma-film paradigm create the conditions for this kind of competitor encoding when a film reminder precedes the task.
-In these studies, participants encounter film cues before the interference task, and the procedure is typically interpreted as reactivating film memory before the task begins [@james2015computer; @kessler2020visuospatial].
+In the model, film, task, and delay periods are represented as sequences of potentially recallable events that update context.
+Film events correspond roughly to successive scenes or segments, such as a conversation between a couple, an approaching car, or an accident.
+For the task and delay periods, they represent non-film events that can also be encoded and later sampled for retrieval.
+
+Task events become competitors when they are encoded while film-associated context is active, either soon after the film or after a reminder reinstates that context.
 When participants return to an earlier learning context, new material can become linked to the earlier episode [@hupbach2008dynamics; @sederberg2011human].
-The simulations model this sequence by placing task encoding after reminder-driven reinstatement of film-associated context.
-Task events encoded in that reinstated state acquire associations with context that also supports film items.
-The intervention can then reduce later film recall by adding task competitors while stored film-item associations remain available.
-Panel B @fig-retrieved-context-encoding-associations summarizes this encoding claim: after a film reminder, task items acquire associations with context that can later cue both task competitors and film material.
+Under either condition, task events can acquire associations with context that also supports film events.
+The simulations focus on the delayed case by reinstating film-associated context before task encoding and varying how strongly task events become associated with that context.
+This manipulation adds task competitors without changing the film-item associations formed during film encoding.
+Panel B of @fig-retrieved-context-encoding-associations summarizes this encoding structure.
 
-## Recognition and Presented Film Items
+## Retrieval Control in Deliberate Recall
 
-The retrieved-context framework distinguishes two routes by which film material can enter a test response.
-In context-guided retrieval, the current state of context cues candidate items, so a film memory is reported only if film material is selected from the items supported by that state.
-In item-guided retrieval, a presented film statement or still image is already the candidate, so the task is to evaluate the context retrieved by that item.
-Trauma-film studies commonly assess voluntary memory with recognition tests, where participants judge whether presented film statements or still images appeared in the film [@lau2019intrusive; @lau2021selectively; @varma2024experimental].
-By contrast, diary and laboratory monitoring tasks ask participants to report film memories that arise during daily life or during an ongoing task [@holmes2008inducing; @james2016trauma; @lau2019intrusive].
-On this account, reduced intrusion reports with preserved recognition can reflect a test-format distinction rather than a dissociation between involuntary and voluntary remembering.
-Comparisons between intrusion-like reports and recognition tests confound retrieval intentionality with the route by which film material is accessed.
+Once target and competitor memories are both available, explaining deliberate recall requires specifying how a retrieval goal shapes the course of search.
+We examine three non-exhaustive candidate processes representing different functions of control: orienting search toward the target sequence, maintaining target-selective support as search unfolds, and limiting the influence of off-target retrieval on subsequent retrieval cues.
+The following paragraphs develop these possibilities in that order, moving from their general rationale to their implementation for film recall.
 
-Recognition judgments are shaped by the context surrounding a test probe.
-Recently studied items are recognized more accurately than less recent items.
-Similar lures are harder to reject, and responses can reflect false familiarity, false recollection, or recollection rejection [@parks2026unified].
-One recognition probe can also influence recognition of items studied nearby [@schwartz2005shadows; @healey2016four; @kahana2020computational; @jin2024theory].
-In retrieved-context accounts of recognition, a presented probe retrieves context associated with earlier encounters of that item, and the retrieved context is compared with the context active during the test [@healey2016four; @jin2024theory].
-Recency, lure similarity, and carryover between probes can be explained by changes in the match between the context retrieved by the probe and the context used for judgment.
-Recognition therefore probes memory with an item and evaluates the context that item retrieves.
-
-Reminder-linked task encoding interferes with diary and monitoring measures when film-associated context cues non-film competitors.
-Those measures count film material only when it is retrieved during daily life or during a monitoring period.
-After a film reminder, task events can be encoded while film-associated context is active.
-Later, film-associated context can cue those task events along with film items, reducing the chance that film material is retrieved.
-Recognition uses the item-guided route described above.
-The tested film item can retrieve associated context without first being selected from film-associated context.
-@fig-recognition-test-format formalizes this contrast between context-guided retrieval and recognition: task items linked to film-associated context can compete with film items when context cues candidate items, whereas recognition begins with a candidate film item already presented for judgment.
-
-Voluntary recall can be tested by means other than recognition.
-In vigilance-intrusion tasks, participants perform an ongoing task while film or foil cues appear, and they report film memories that arise during the task [@lau2019intrusive; @lau2021selectively].
-A voluntary version can keep the same film-cued task structure while instructing participants to search deliberately for film memories, while an involuntary version can instead more neutrally instruct participants to report any film memories that come to mind [@mcconnell2026testing].
-Both versions score film material retrieved during a recall period rather than recognition judgments about presented candidates.
-
-Film cues in these tasks still shape retrieval.
-A film cue can reinstate context associated with the cued film material.
-If recall depends on maintaining film-associated context across the retrieval period, film cues can support recall in both monitoring and deliberate-search conditions.
-After reminder-linked task encoding, however, the same reinstated context may also support task material, enabling task items to compete with film material during context-guided recall.
-A recognition probe changes the access route more sharply because the probe is the candidate item to be judged and decisions are based on the context that item retrieves.
-
-Recognition-intrusion comparisons therefore make confounds test format and retrieval intentionality in measures of the selective interference effect.
-Better-matched recall designs keep film material dependent on context-guided retrieval across intentionality conditions, with film cues modeled as inputs to the retrieval context.
-Under that design, differences in the effects of reminder-linked task encoding on film recall can be attributed to the way deliberate recall controls the course of memory search.
-
-## Film-Directed Recall Control Under Matched Retrieval Conditions
-
-Competitor encoding makes film recall vulnerable when retrieval is guided by context that supports both film and task candidates.
-Diary and vigilance-intrusion measures count film memories when they come to mind, often during ongoing activity or monitoring rather than after a specific film item has been presented [@holmes2008inducing; @lau2019intrusive; @lau2021selectively].
-The most relevant voluntary comparison similarly requires film material to be called to mind during a recall period rather than judged as a presented recognition candidate [@lau2019intrusive; @mcconnell2026testing].
-Under this matched recall design, a film reminder can make task material accessible from the same retrieval state as film material by linking task events to reinstated film-associated context.
-Control processes can improve deliberate recall by orienting retrieval toward the film.
-They protect film recall from reminder-linked interference to the extent that they make retrieval less dependent on film-associated context that also supports task material.
-
-Within this matched recall setting, @fig-retrieved-context-retrieval-operations separates three ways deliberate recall can differ from unguided retrieval after the same reminder-linked task encoding.
-Start-of-film context reinstatement acts before sampling by changing the initial context state.
-A maintained film-category cue acts during sampling by adding support to film candidates.
-Retrieval monitoring acts after sampling by reducing the carryover from off-target candidates.
-These control points make separable predictions because they change different parts of the retrieval cycle.
-The simulations test which control changes the effect of reminder-linked task encoding, rather than simply increasing film recall under all conditions.
-
-Deliberate recall can begin from a context state biased by retrieval instructions.
+A retrieval goal may first orient memory search toward target material.
 When people are asked to recall an earlier studied list after studying a more recent one, their early responses are often already biased toward the instructed list rather than showing a gradual search backward through recent-list items [@lohnas2015expanding; @healey2024peppr].
 Recall also shows a reliable tendency to start near the beginning of a studied list, especially when the usual end-of-list advantage is weakened by a delay [@howard1999contextual; @healey2014memory; @herrema2024first].
-Start-of-list context reinstatement mechanisms account for these patterns by evolving the current context toward the state associated with the beginning of the target list before retrieval begins [@lohnas2015expanding; @healey2024peppr; @kragel2015neural; @morton2016predictive].
-In our retrieval control simulations, start-of-film reinstatement drifts the retrieval state toward the context present at the beginning of film encoding.
-This starting state favors early film candidates before ordinary context-guided sampling resumes, so its predicted benefit is tied to the temporal region that has been reinstated.
+Start-of-list context reinstatement mechanisms account for these patterns by shifting the current context toward the state associated with the beginning of the target list before retrieval begins [@lohnas2015expanding; @healey2024peppr; @kragel2015neural; @morton2016predictive].
+In the present simulations, start-of-film reinstatement applies the same principle by shifting the retrieval state toward context from the beginning of film before candidate sampling begins.
+This candidate tests whether orienting the start of search toward the target episode can reduce the effect of task competition once ordinary context-guided sampling resumes.
 
-Retrieval monitoring acts after a candidate has been sampled.
-Evidence for this post-sampling control comes from externalized recall tasks where participants report every word that comes to mind and mark errors.
-These instructions reveal many more intrusions than standard recall, and many sampled intrusions are marked as errors, indicating that off-target candidates can enter retrieval without being accepted as target memories [@unsworth2010understanding; @lohnas2015expanding].
-Monitoring also carries forward across retrieval: when people fail to identify one response correctly, they are worse at rejecting the next intrusion [@unsworth2010understanding].
-At the same time, sampled intrusions can pull search away from the target list, as intrusions tend to cluster with other intrusions from related prior-list or semantic contexts [@zaromb2006temporal; @unsworth2010understanding].
-Retrieved-context implementations have treated monitoring as a target-match filter while still allowing rejected items to update the next retrieval context [@lohnas2015expanding].
-Our trauma-film simulations explore whether that post-sampling evaluation can also reduce carryover from sampled non-film candidates.
-A sampled non-film candidate still counts as a retrieval attempt, but its context update is dampened when it is evaluated as off-target.
-Monitoring can therefore help deliberate recall return to film material after non-film competition appears, while leaving the initial competition from reminder-linked task encoding in place.
-
-A goal to retrieve the film can guide candidate sampling through category-level information.
-When people study mixed-category material and are asked to retrieve only one category, they can restrict recall to the target subset while temporal organization remains visible within that subset [@polyn2011semantic; @lohnas2026specialized]. 
+Orienting the start of search does not determine which candidates receive support as search unfolds.
+A retrieval goal may therefore also remain active during sampling, selectively supporting target memories.
+When people study mixed-category material and are asked to retrieve only one category, they can restrict recall to the target subset while temporal organization remains visible within that subset [@polyn2011semantic; @lohnas2026specialized].
 In this kind of task, category-selective activity tracks retrieval effort, remains active between reported recalls, and weakens before extra-category intrusions [@norman2017neuronal].
 Retrieved-context models provide a formal precedent for this kind of non-temporal support: semantic, task, and source information can contribute to candidate support alongside temporal context [@polyn2009context; @polyn2009task; @morton2016predictive].
 Category-directed search has been formalized in associative memory models, and recent review work treats this as a natural but still underdeveloped direction for CMR [@raaijmakers1980sam; @lohnas2026specialized].
-The simulations use this logic in reduced form by adding a maintained film-category cue during candidate sampling.
-This cue gives film candidates additional support without equally supporting task competitors.
-Task items linked to reinstated film-associated context can still compete through temporal context, but they do not receive this film-category support.
+A maintained film-category cue implements this form of control by adding support to film candidates without equally supporting task competitors.
+Because task candidates remain available through their associations with the current context, this candidate tests whether continuing target-selective support can reduce the effect of competition without removing the competitors.
 
-Control processes engaged during deliberate recall can therefore improve film recall overall without producing the relative preservation against reminder-linked task interference that defines the selective-interference effect.
-That relative preservation depends on whether deliberate recall can draw on support beyond film-associated temporal context after that context has also become supportive of task material.
-Start-of-film reinstatement and post-retrieval context monitoring improve overall film recall by reinstating or preserving film-associated context as a retrieval cue.
-Yet these mechanisms work by keeping film-associated context cues available, while reminder-linked task encoding interferes with film recall precisely by making such context cues less selective for film material.
-By contrast, a maintained film-category cue gives film candidates support from a cue that task competitors do not share.
-Under the tested conditions, this film-category support limits the impact of those task competitors enough to produce the selective-interference pattern.
-This specifies how deliberate recall can succeed when task encoding after a film reminder reduces unguided film recall: the maintained film-category cue helps distinguish film candidates from task competitors during search.
+Even target-selective support need not prevent an off-target memory from being sampled.
+Retrieval monitoring acts after a candidate has been sampled.
+Deliberate recall may therefore also involve monitoring sampled candidates and limiting their influence on subsequent search.
+Evidence for this possibility comes from externalized recall tasks where participants report every word that comes to mind and mark errors.
+These instructions reveal many more intrusions than standard recall, and many sampled intrusions are marked as errors, indicating that off-target candidates can enter retrieval without being accepted as target memories [@lohnas2015expanding; @unsworth2010understanding].
+Monitoring affects subsequent retrieval: when people fail to identify one response correctly, they are worse at rejecting the next intrusion [@unsworth2010understanding].
+Sampled intrusions can also pull search away from the target list, as intrusions tend to cluster with other intrusions from related prior-list or semantic contexts [@unsworth2010understanding; @zaromb2006temporal].
+Retrieved-context implementations have treated monitoring as a target-match filter while still allowing rejected items to update the next retrieval context [@lohnas2015expanding].
+Retrieval monitoring is implemented here by limiting how strongly a sampled non-film candidate updates context without changing the support that allowed it to be sampled.
+This candidate tests whether limiting the carryover of off-target retrieval can help deliberate recall recover after competition has already occurred.
+@fig-retrieved-context-retrieval-operations summarizes the three candidate processes and their positions in the retrieval cycle.
+
+## Deliberate Recognition
+
+The control processes considered above all operate within a search in which film material must still be selected from competing candidates.
+Deliberate recognition changes that requirement because the test presents a film statement or image for judgment.
+Preserved recognition may therefore indicate that film memory escaped interference, but it may instead follow because the test no longer requires a film item to win selection during search.
+
+Retrieved-context accounts formalize recognition by allowing a presented probe to reinstate context associated with earlier encounters, with recognition evidence determined by the match between that context and the context active at test [@healey2016four; @jin2024theory].
+Task competitors can reduce recall by lowering the chance that a film item is selected from the candidates supported by current context.
+In recognition, the presented film item need not first win that competition, although task learning may still affect the contextual evidence it retrieves.
+Relatively preserved recognition would therefore identify candidate selection as an important source of interference rather than establish that film memory was unaffected.
+
+Selective interference can thus arise from an interaction between learning and retrieval.
+Task events can become competitors when they are linked to film-associated context, but whether that competition reduces film retrieval depends on how retrieval is controlled and the information provided at test.
+The dissociation between intrusive and voluntary remembering can therefore emerge from ordinary episodic learning and retrieval, without requiring the two forms of remembering to depend on separately vulnerable representations.
 
 # Model Specification
 
-Retrieved-context models implement recall as a sequence of sampling events in which current context gives graded support to candidate items [@sederberg2008context; @polyn2009context].
-To express selective interference as changes in what gets sampled, film and non-film events have to be candidates in the same sampling process.
-The simulations implement this requirement by representing film, task, and delay periods as sequences of events that update context.
-For the film, these events correspond roughly to scenes or segments.
-For the task periods, they represent task items that can become competitors when encoded after reminder-driven context reinstatement.
-For the delay periods, they represent filler items: non-film events that can also be encoded and later sampled.
-Interference manifests as a shift in sampled outcomes: task or filler candidates occupy sampling events that could otherwise retrieve film material.
+The formal model places film and non-film material within a common item-context memory.
+During recall, both enter the same sampling process, so task competition can alter what is retrieved while the associations supporting film memory remain available [@polyn2009context; @sederberg2008context].
+We first specify the representations and learning rules that constitute this memory.
+We then describe how the experimental sequence updates it and how unguided recall, deliberate recall, and deliberate recognition access it.
 
-The formal model links this sampling process to separate item and context representations.
+The formal model represents this sampling process with separate item and context representations.
 Each encoded event at position $i$ is represented by an item feature vector $f_i$, a one-hot vector that distinguishes that event from other encoded events in the simulated paradigm.
 Context $c_i$ denotes the internal context state after event $i$ has updated context.
 As film, task, and filler events occur, they update context and become associated with the context active around them.

@@ -58,7 +58,6 @@ REMINDER_CONDITIONS = {
     },
 }
 
-PRIMARY_SOURCE_ORIENTATION = 0.0
 FILM_CUE_REINSTATEMENT = 0.90
 CUE_INTERVAL = 4
 FIRST_CUE_AFTER = 0
@@ -248,7 +247,6 @@ def run() -> tuple[Path, Path]:
                     **RETRIEVAL_FIXED_SCALES,
                     start_drift_scale=float(retrieval["start_drift_scale"]),
                     rejected_recall_drift_scale=float(retrieval["rejected_recall_drift_scale"]),
-                    film_source_start_drift_rate=PRIMARY_SOURCE_ORIENTATION,
                     film_item_support_boost=float(retrieval["film_item_support_boost"]),
                 )
                 rngs, rng = sweep_rngs(
@@ -284,7 +282,6 @@ def run() -> tuple[Path, Path]:
                     "reminder_condition": reminder_condition,
                     "task_condition": TASK_MCF_LABELS[float(task_scale)],
                     "task_mcf_scale": float(task_scale),
-                    "film_source_start_drift_rate": PRIMARY_SOURCE_ORIENTATION,
                     "film_cue_reinstatement": FILM_CUE_REINSTATEMENT,
                     "cue_interval": CUE_INTERVAL,
                     "first_cue_after": FIRST_CUE_AFTER,
@@ -320,7 +317,6 @@ def run() -> tuple[Path, Path]:
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_source_start_drift_rate",
             "film_cue_reinstatement",
             "cue_interval",
             "first_cue_after",
@@ -340,7 +336,6 @@ def run() -> tuple[Path, Path]:
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_source_start_drift_rate",
             "film_cue_reinstatement",
             "cue_interval",
             "first_cue_after",

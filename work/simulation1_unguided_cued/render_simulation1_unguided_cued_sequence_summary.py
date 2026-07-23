@@ -53,6 +53,12 @@ RASTER_PHASE_LABELS = {
     "none": "No output",
 }
 GRID_COLOR = "#E7EBF0"
+BRACKET_COLOR = "#3D4B5C"
+BRACKET_LINEWIDTH = 1.2
+BRACKET_PAD = 0.06
+BRACKET_BAR_GAP_FRACTION = 0.05
+BRACKET_CAP_FRACTION = 0.035
+BRACKET_LABEL_GAP_FRACTION = 0.025
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -185,7 +191,7 @@ def plot_film_totals(axis, total_rows: list[dict], task_scales: list[float]) -> 
             label=TASK_LABELS_BY_SCALE.get(task_scale, f"{task_scale:g}"),
             zorder=2,
         )
-    axis.set_title("Film output across all trials", fontsize=PANEL_TITLE_FONTSIZE, fontweight="bold", pad=8)
+    axis.set_title("Film recall across all trials", fontsize=PANEL_TITLE_FONTSIZE, fontweight="bold", pad=8)
     axis.set_xticks(x)
     axis.set_xticklabels([REMINDER_LABELS[condition] for condition in REMINDER_CONDITIONS])
     axis.set_ylabel("Mean film items recalled", fontsize=STRUCTURAL_FONTSIZE)
@@ -196,6 +202,35 @@ def plot_film_totals(axis, total_rows: list[dict], task_scales: list[float]) -> 
     axis.spines["right"].set_visible(False)
     upper = max(1.0, np.ceil(max(all_values) * 1.14 * 4) / 4)
     axis.set_ylim(0, upper)
+
+    reminder_index = REMINDER_CONDITIONS.index("With reminder")
+    reminder_values = [
+        phase_total(total_rows, "With reminder", task_scale, "film")
+        for task_scale in task_scales
+    ]
+    bracket_y = max(reminder_values) + upper * BRACKET_BAR_GAP_FRACTION
+    bracket_cap = upper * BRACKET_CAP_FRACTION
+    bracket_left = reminder_index + offsets[0] - width / 2 - BRACKET_PAD
+    bracket_right = reminder_index + offsets[-1] + width / 2 + BRACKET_PAD
+    axis.plot(
+        [bracket_left, bracket_left, bracket_right, bracket_right],
+        [bracket_y - bracket_cap, bracket_y, bracket_y, bracket_y - bracket_cap],
+        color=BRACKET_COLOR,
+        linewidth=BRACKET_LINEWIDTH,
+        zorder=4,
+    )
+    axis.text(
+        (bracket_left + bracket_right) / 2,
+        bracket_y + upper * BRACKET_LABEL_GAP_FRACTION,
+        "larger reduction",
+        color=BRACKET_COLOR,
+        fontsize=SUPPORT_FONTSIZE,
+        fontweight="bold",
+        ha="center",
+        va="bottom",
+        zorder=4,
+    )
+
     axis.legend(
         handles=[
             Patch(

@@ -39,16 +39,14 @@ INKSCAPE = Path("/Applications/Inkscape.app/Contents/MacOS/inkscape")
 SELECTED_FILM_ITEM_SUPPORT_BOOST = float(
     os.environ.get("SELECTED_FILM_ITEM_SUPPORT_BOOST", "1.0")
 )
-DRAW_FILM_REMINDER_DROP_BRACKETS = (
-    os.environ.get("DRAW_FILM_REMINDER_DROP_BRACKETS", "0") == "1"
-)
 Y_GRID_STEP = float(
     env_setting("SIM2_CONTROL_CUED_Y_GRID_STEP", "SIM2_FILM_BOOST_Y_GRID_STEP", "2")
 )
 Y_LABEL_STEP = float(
     env_setting("SIM2_CONTROL_CUED_Y_LABEL_STEP", "SIM2_FILM_BOOST_Y_LABEL_STEP", "2")
 )
-Y_MAX = 8.0
+Y_TICK_MAX = 8.0
+PLOT_Y_MAX = 10.0
 
 WIDTH = 1504
 HEIGHT = 910
@@ -77,6 +75,7 @@ ROW_SIZE = 27
 AXIS_LABEL_SIZE = 23
 TICK_SIZE = 22
 LEGEND_SIZE = 24
+ANNOTATION_SIZE = 20
 
 AXIS_STROKE = 4.0
 GRID_STROKE = 2.0
@@ -95,6 +94,11 @@ GRID_MAJOR_STROKE = float(
     )
 )
 BAR_STROKE = 4.0
+BRACKET_STROKE = 3.8
+BRACKET_CAP = 14
+BRACKET_PAD = 20
+BRACKET_BAR_GAP = 20
+BRACKET_LABEL_GAP = 16
 
 GRID_LEFT = 380
 GRID_RIGHT_X = 890
@@ -222,13 +226,13 @@ def svg_rect(
 
 
 def value_to_y(axis_y: float, value: float) -> float:
-    return axis_y + AXIS_HEIGHT - (float(value) / Y_MAX) * AXIS_HEIGHT
+    return axis_y + AXIS_HEIGHT - (float(value) / PLOT_Y_MAX) * AXIS_HEIGHT
 
 
 def tick_values(step: float) -> list[float]:
     values = []
     tick = 0.0
-    while tick <= Y_MAX + 1e-9:
+    while tick <= Y_TICK_MAX + 1e-9:
         values.append(tick)
         tick += step
     return values
@@ -243,7 +247,7 @@ def draw_axis(
     axis_y: float,
     values: dict[str, float],
     show_ylabel: bool,
-    show_drop_bracket: bool,
+    annotation: str | None,
 ) -> list[str]:
     parts = []
     for tick in tick_values(Y_GRID_STEP):
@@ -290,27 +294,35 @@ def draw_axis(
                 BAR_STROKE,
             )
         )
-    if show_drop_bracket:
+    if annotation:
         weak_value = values["Weak task encoding"]
         strong_value = values["Strong task encoding"]
         high_y = value_to_y(axis_y, max(weak_value, strong_value))
-        low_y = value_to_y(axis_y, min(weak_value, strong_value))
-        if abs(high_y - low_y) >= 3:
-            bar_start = axis_x + (AXIS_WIDTH - PAIR_WIDTH) / 2
-            bracket_x = bar_start + PAIR_WIDTH + 26
-            cap = 18
-            parts.append(
-                svg_polyline(
-                    [
-                        (bracket_x - cap, high_y),
-                        (bracket_x, high_y),
-                        (bracket_x, low_y),
-                        (bracket_x - cap, low_y),
-                    ],
-                    AXIS_COLOR,
-                    AXIS_STROKE,
-                )
+        bracket_y = max(axis_y + 34, high_y - BRACKET_BAR_GAP)
+        bracket_x1 = max(axis_x + 8, bar_start - BRACKET_PAD)
+        bracket_x2 = min(axis_x + AXIS_WIDTH - 8, bar_start + PAIR_WIDTH + BRACKET_PAD)
+        parts.append(
+            svg_polyline(
+                [
+                    (bracket_x1, bracket_y + BRACKET_CAP),
+                    (bracket_x1, bracket_y),
+                    (bracket_x2, bracket_y),
+                    (bracket_x2, bracket_y + BRACKET_CAP),
+                ],
+                AXIS_COLOR,
+                BRACKET_STROKE,
             )
+        )
+        parts.append(
+            svg_text(
+                (bracket_x1 + bracket_x2) / 2,
+                bracket_y - BRACKET_LABEL_GAP,
+                annotation,
+                ANNOTATION_SIZE,
+                weight="bold",
+                fill=AXIS_COLOR,
+            )
+        )
     if show_ylabel:
         label_x = axis_x - 74
         label_y = axis_y + AXIS_HEIGHT / 2
@@ -445,8 +457,12 @@ def render_svg(values: dict) -> None:
                 axis_y,
                 cell_values,
                 show_ylabel=axis_x == GRID_LEFT,
-                show_drop_bracket=(
-                    DRAW_FILM_REMINDER_DROP_BRACKETS and reminder_label == "With pre-task film reminder"
+                annotation=(
+                    "selective reduction"
+                    if reminder_label == "With pre-task film reminder" and row_label == "Unguided\nfilm recall"
+                    else "relative preservation"
+                    if reminder_label == "With pre-task film reminder"
+                    else None
                 ),
             )
         )

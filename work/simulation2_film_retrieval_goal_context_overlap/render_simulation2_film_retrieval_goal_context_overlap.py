@@ -34,7 +34,7 @@ MAX_RECALL = 48
 
 FILM_EMOTIONAL = True
 INTERFERENCE_EMOTIONAL = False
-FILM_RETRIEVAL_GOAL_WEIGHT = 1.0
+FILM_CATEGORY_CUE_WEIGHT = 1.0
 TASK_MCF_SCALE = 2.0
 REMINDER_CONDITION = "With reminder"
 TASK_CONDITION = "Strong task encoding"
@@ -65,7 +65,7 @@ plt.rcParams["font.sans-serif"] = ["Arial", "Helvetica", "DejaVu Sans"]
 def write_rows(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -152,15 +152,15 @@ def context_similarity(film_context: np.ndarray, task_context: np.ndarray) -> np
     return normalize_rows(film_context) @ normalize_rows(task_context).T
 
 
-def goal_augmented_similarity(
+def category_cue_augmented_similarity(
     film_context: np.ndarray,
     task_context: np.ndarray,
-    goal_weight: float,
+    cue_weight: float,
 ) -> np.ndarray:
-    film_goal = np.full((film_context.shape[0], 1), goal_weight, dtype=float)
-    task_goal = np.zeros((task_context.shape[0], 1), dtype=float)
-    film_augmented = np.concatenate([film_context, film_goal], axis=1)
-    task_augmented = np.concatenate([task_context, task_goal], axis=1)
+    film_category_cue = np.full((film_context.shape[0], 1), cue_weight, dtype=float)
+    task_category_cue = np.zeros((task_context.shape[0], 1), dtype=float)
+    film_augmented = np.concatenate([film_context, film_category_cue], axis=1)
+    task_augmented = np.concatenate([task_context, task_category_cue], axis=1)
     return context_similarity(film_augmented, task_augmented)
 
 
@@ -175,7 +175,7 @@ def build_rows(matrices: dict[str, np.ndarray]) -> list[dict]:
                         "reminder_condition": REMINDER_CONDITION,
                         "task_condition": TASK_CONDITION,
                         "task_mcf_scale": TASK_MCF_SCALE,
-                        "film_retrieval_goal_weight": FILM_RETRIEVAL_GOAL_WEIGHT,
+                        "film_category_cue_weight": FILM_CATEGORY_CUE_WEIGHT,
                         "film_position": film_position + 1,
                         "task_position": task_position + 1,
                         "context_similarity": float(matrix[film_position, task_position]),
@@ -199,7 +199,7 @@ def build_summary_rows(matrices: dict[str, np.ndarray]) -> list[dict]:
                     "reminder_condition": REMINDER_CONDITION,
                     "task_condition": TASK_CONDITION,
                     "task_mcf_scale": TASK_MCF_SCALE,
-                    "film_retrieval_goal_weight": FILM_RETRIEVAL_GOAL_WEIGHT,
+                    "film_category_cue_weight": FILM_CATEGORY_CUE_WEIGHT,
                     "film_position": film_position,
                     "mean_similarity_to_task_contexts": float(mean_value),
                     "max_similarity_to_task_context": float(max_value),
@@ -266,28 +266,28 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
     )
     axis = fig.add_subplot(line_grid[0, 1])
     positions = np.arange(1, paradigm.n_film + 1)
-    mean_temporal = matrices["Without film-retrieval goal"].mean(axis=1)
-    mean_goal = matrices["With film-retrieval goal"].mean(axis=1)
+    mean_temporal = matrices["Film-category cue absent"].mean(axis=1)
+    mean_with_cue = matrices["Film-category cue present"].mean(axis=1)
     axis.plot(
         positions,
         mean_temporal,
         color="#7C8794",
         linestyle=(0, (3, 2)),
         linewidth=2.0,
-        label="Without film-retrieval goal",
+        label="Film-category cue absent",
     )
     axis.plot(
         positions,
-        mean_goal,
+        mean_with_cue,
         color=PHASE_COLORS["film"],
         linewidth=2.0,
-        label="With film-retrieval goal",
+        label="Film-category cue present",
     )
     axis.set_xlabel("Encoded film position", fontsize=STRUCTURAL_FONTSIZE)
     axis.set_ylabel("Mean context similarity", fontsize=STRUCTURAL_FONTSIZE)
     axis.set_xlim(1, paradigm.n_film)
     axis.set_xticks([1, 4, 8, 12, 16])
-    axis.set_ylim(0, max(float(np.max(mean_temporal)), float(np.max(mean_goal))) * 1.15)
+    axis.set_ylim(0, max(float(np.max(mean_temporal)), float(np.max(mean_with_cue))) * 1.15)
     axis.tick_params(labelsize=SUPPORT_FONTSIZE)
     axis.grid(axis="y", color="#E7EBF0", linewidth=0.45, alpha=0.45, zorder=0)
     axis.spines["top"].set_visible(False)
@@ -307,13 +307,13 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
     heatmap_axes = [
         (
             fig.add_subplot(heatmap_grid[0, 0]),
-            "Without film-retrieval goal",
-            matrices["Without film-retrieval goal"],
+            "Film-category cue absent",
+            matrices["Film-category cue absent"],
         ),
         (
             fig.add_subplot(heatmap_grid[0, 1]),
-            "With film-retrieval goal",
-            matrices["With film-retrieval goal"],
+            "Film-category cue present",
+            matrices["Film-category cue present"],
         ),
     ]
     colorbar_axis = fig.add_subplot(heatmap_grid[0, 2])
@@ -366,11 +366,11 @@ def plot_summary(paradigm: Paradigm, matrices: dict[str, np.ndarray]) -> None:
 def main() -> None:
     paradigm, film_context, task_context = trace_high_interference_contexts()
     matrices = {
-        "Without film-retrieval goal": context_similarity(film_context, task_context),
-        "With film-retrieval goal": goal_augmented_similarity(
+        "Film-category cue absent": context_similarity(film_context, task_context),
+        "Film-category cue present": category_cue_augmented_similarity(
             film_context,
             task_context,
-            FILM_RETRIEVAL_GOAL_WEIGHT,
+            FILM_CATEGORY_CUE_WEIGHT,
         ),
     }
     write_rows(
@@ -380,7 +380,7 @@ def main() -> None:
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_retrieval_goal_weight",
+            "film_category_cue_weight",
             "film_position",
             "task_position",
             "context_similarity",
@@ -394,7 +394,7 @@ def main() -> None:
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_retrieval_goal_weight",
+            "film_category_cue_weight",
             "film_position",
             "mean_similarity_to_task_contexts",
             "max_similarity_to_task_context",

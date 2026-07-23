@@ -1,113 +1,113 @@
-package_index,retrieval_control_package,goal_group,within_group_label,film_goal_included,start_reinstatement_included,target_monitoring_included,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,endpoint,endpoint_short,reminder_condition,task_condition,task_mcf_scale,film_source_start_drift_rate,film_cue_reinstatement,cue_interval,first_cue_after,experiment_count,phase,recall_probability_mass
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.7648000027984381
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,3.441800005733967
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,3.2595999985933304
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.14319999981671572
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.10060000125668012
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,1.4007999990135431
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,0.7753999959677458
-1,No deliberate control,Film-source goal absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,5.321599990129471
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.6587999913608655
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,1.6360000194981694
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,5.3207999765872955
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.022599999967496842
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.23580000092624687
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,1.259800003375858
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,3.0475999787449837
-2,target monitoring,Film-source goal absent,"Target
-monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,3.0920000188052654
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.9724000096321106
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.3464000001549721
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,6.215799927711487
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.04160000031697564
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.12700000236509368
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.20200000191107392
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,2.0031999945640564
-3,start-of-film reinstatement,Film-source goal absent,"Start-of-film
-reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,5.298800051212311
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.6363999954046449
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.10500000065076165
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,6.917600005865097
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0026000000507337973
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.22180000192020088
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.11180000129388645
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,4.4326000064611435
-4,start-of-film reinstatement + target monitoring,Film-source goal absent,"Reinstatement
-+ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,2.8711999859660864
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.052400000698980875
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.03600000029837247
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.512399971485138
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.00039999998989515007
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.041400000714929774
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.03880000008211937
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,6.823399990797043
-5,film-source goal,Film-source goal present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.7928000036627054
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.048599999310681596
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.03340000062598847
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.570000052452087
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0005999999848427251
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.037999999651219696
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.0415999999968335
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,6.950999975204468
-6,film-source goal + target monitoring,Film-source goal present,"Target
-monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.6093999943695962
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.045599999895785004
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.004600000102072954
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.5783999264240265
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.0
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.04060000032768585
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.007399999885819852
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,6.839200019836426
-7,film-source goal + start-of-film reinstatement,Film-source goal present,"Start-of-film
-reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.7027999949641526
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,break,0.04479999949398916
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,filler,0.0035999999090563506
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,film,7.6129999458789825
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.0,0.9,4,0,5000,task,0.00019999999494757503
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,break,0.038599999897996895
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,filler,0.0049999999173451215
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,film,7.063000023365021
-8,film-source goal + start-of-film reinstatement + target monitoring,Film-source goal present,"Reinstatement
-+ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.0,0.9,4,0,5000,task,0.5614000017521903
+package_index,retrieval_control_package,goal_group,within_group_label,film_goal_included,start_reinstatement_included,target_monitoring_included,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,endpoint,endpoint_short,reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,cue_interval,first_cue_after,experiment_count,phase,recall_probability_mass
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.7648000027984381
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,3.441800005733967
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,3.2595999985933304
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.14319999981671572
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.10060000125668012
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,1.4007999990135431
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,0.7753999959677458
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,5.321599990129471
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.6587999913608655
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,1.6360000194981694
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,5.3207999765872955
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.022599999967496842
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.23580000092624687
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,1.259800003375858
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,3.0475999787449837
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,3.0920000188052654
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.9724000096321106
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.3464000001549721
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,6.215799927711487
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.04160000031697564
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.12700000236509368
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.20200000191107392
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,2.0031999945640564
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,5.298800051212311
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.6363999954046449
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.10500000065076165
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,6.917600005865097
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.0026000000507337973
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.22180000192020088
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.11180000129388645
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,4.4326000064611435
+4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
++ monitoring",False,True,True,1.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,2.8711999859660864
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.052400000698980875
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.03600000029837247
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,7.512399971485138
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.00039999998989515007
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.041400000714929774
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.03880000008211937
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,6.823399990797043
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,0.7928000036627054
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.048599999310681596
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.03340000062598847
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,7.570000052452087
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.0005999999848427251
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.037999999651219696
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.0415999999968335
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,6.950999975204468
+6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
+monitoring",True,False,True,0.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,0.6093999943695962
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.045599999895785004
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.004600000102072954
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,7.5783999264240265
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.0
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.04060000032768585
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.007399999885819852
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,6.839200019836426
+7,maintained film-category cue + start-of-film reinstatement,Film-category cue present,"Start-of-film
+reinstatement",True,True,False,1.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,0.7027999949641526
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,break,0.04479999949398916
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,filler,0.0035999999090563506
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,film,7.6129999458789825
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,No reminder + weak task encoding,Low endpoint,No reminder,Weak task encoding,1.0,0.9,4,0,5000,task,0.00019999999494757503
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,break,0.038599999897996895
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,filler,0.0049999999173451215
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,film,7.063000023365021
+8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
++ monitoring",True,True,True,1.0,1.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,task,0.5614000017521903

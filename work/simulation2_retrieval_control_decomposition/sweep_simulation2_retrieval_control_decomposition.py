@@ -47,7 +47,6 @@ TARGET_MONITORING_ON = float(os.environ.get("SIM2_TARGET_MONITORING_ON", "0.0"))
 FILM_GOAL_BOOST_ON = float(os.environ.get("SIM2_FILM_GOAL_BOOST_ON", "1.0"))
 TARGET_MONITORING_OFF = 1.0
 
-PRIMARY_SOURCE_ORIENTATION = 0.0
 FILM_CUE_REINSTATEMENT = 0.90
 CUE_INTERVAL = 4
 FIRST_CUE_AFTER = 0
@@ -107,7 +106,7 @@ def position_phase_labels(paradigm: Paradigm) -> list[str]:
 def write_rows(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -168,16 +167,16 @@ def retrieval_packages() -> list[dict]:
             elif start_reinstatement:
                 within_group_label = "Start-of-film\nreinstatement"
             elif target_monitoring:
-                within_group_label = "Target\nmonitoring"
+                within_group_label = "Retrieval\nmonitoring"
             else:
                 within_group_label = "None"
             control_parts = []
             if film_goal:
-                control_parts.append("film-source goal")
+                control_parts.append("maintained film-category cue")
             if start_reinstatement:
                 control_parts.append("start-of-film reinstatement")
             if target_monitoring:
-                control_parts.append("target monitoring")
+                control_parts.append("retrieval monitoring")
             package_label = " + ".join(control_parts) if control_parts else "No deliberate control"
             rows.append(
                 {
@@ -185,7 +184,7 @@ def retrieval_packages() -> list[dict]:
                     "film_goal_included": film_goal,
                     "start_reinstatement_included": start_reinstatement,
                     "target_monitoring_included": target_monitoring,
-                    "goal_group": "Film-source goal present" if film_goal else "Film-source goal absent",
+                    "goal_group": "Film-category cue present" if film_goal else "Film-category cue absent",
                     "within_group_label": within_group_label,
                     "retrieval_control_package": package_label,
                     "start_drift_scale": START_DRIFT_ON if start_reinstatement else 0.0,
@@ -271,7 +270,6 @@ def run_sweep():
                 recall_drift_scale=1.0,
                 rejected_recall_drift_scale=package["rejected_recall_drift_scale"],
                 start_drift_scale=package["start_drift_scale"],
-                film_source_start_drift_rate=PRIMARY_SOURCE_ORIENTATION,
                 film_item_support_boost=package["film_item_support_boost"],
             )
             rngs, rng = sweep_rngs(
@@ -313,7 +311,6 @@ def run_sweep():
                 "reminder_condition": endpoint["reminder_condition"],
                 "task_condition": endpoint["task_condition"],
                 "task_mcf_scale": endpoint["task_mcf_scale"],
-                "film_source_start_drift_rate": PRIMARY_SOURCE_ORIENTATION,
                 "film_cue_reinstatement": FILM_CUE_REINSTATEMENT,
                 "cue_interval": CUE_INTERVAL,
                 "first_cue_after": FIRST_CUE_AFTER,
@@ -357,7 +354,6 @@ def run_sweep():
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_source_start_drift_rate",
             "film_cue_reinstatement",
             "cue_interval",
             "first_cue_after",
@@ -385,7 +381,6 @@ def run_sweep():
             "reminder_condition",
             "task_condition",
             "task_mcf_scale",
-            "film_source_start_drift_rate",
             "film_cue_reinstatement",
             "cue_interval",
             "first_cue_after",

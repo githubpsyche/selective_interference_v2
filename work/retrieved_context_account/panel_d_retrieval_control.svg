@@ -35,7 +35,7 @@
 <text x="192" y="416" font-size="18" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="192" dy="0">Broad sampling leaves</tspan><tspan x="192" dy="21">film and task items</tspan><tspan x="192" dy="21">competing</tspan></text>
 
 <rect x="445" y="205" width="206" height="58" rx="29" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
-<text x="548" y="229" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Start context</tspan><tspan x="548" dy="24">cue</tspan></text>
+<text x="548" y="229" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="548" dy="0">Start-of-film</tspan><tspan x="548" dy="24">reinstatement</tspan></text>
 <path d="M 503 263 C 488 282, 458 292, 424 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 526 263 C 512 284, 492 294, 466 302" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <path d="M 548 263 C 542 284, 528 294, 508 300" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>

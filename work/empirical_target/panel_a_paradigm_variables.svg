@@ -21,18 +21,22 @@
 <text x="637" y="212" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Film reminder</text>
 
 <rect x="767" y="116" width="200" height="54" rx="12" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
-<text x="867" y="150" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Comparison task</text>
+<text x="867" y="140" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Comparison/</text>
+<text x="867" y="166" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">control</text>
 <rect x="767" y="178" width="200" height="54" rx="12" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3"/>
-<text x="867" y="212" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Interference task</text>
+<text x="867" y="202" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Visuospatial</text>
+<text x="867" y="228" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">task</text>
 
 <rect x="997" y="146" width="200" height="64" rx="12" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
 <text x="1097" y="172" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Post-task</text>
 <text x="1097" y="198" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">delay</text>
 
 <rect x="1227" y="116" width="200" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
-<text x="1327" y="150" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Unguided recall</text>
+<text x="1327" y="140" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Unguided film</text>
+<text x="1327" y="166" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">recall</text>
 <rect x="1227" y="178" width="200" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
-<text x="1327" y="212" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Voluntary recall</text>
+<text x="1327" y="202" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Deliberate film</text>
+<text x="1327" y="228" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">recall</text>
 
 <text x="177" y="358" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Encoding</text>
 <text x="407" y="358" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Delay</text>

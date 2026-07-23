@@ -19,6 +19,7 @@ PANEL_LETTER_FONTSIZE = 16
 PANEL_TITLE_FONTSIZE = 13
 STRUCTURAL_FONTSIZE = 11
 SUPPORT_FONTSIZE = 10
+ANNOTATION_FONTSIZE = 10
 
 N_FILM = 16
 N_BREAK = 16
@@ -39,6 +40,13 @@ TASK_COLORS = {
     "Strong task encoding": PHASE_COLORS["task"],
 }
 GRID_COLOR = "#E7EBF0"
+ANNOTATION_COLOR = "#1F2933"
+BRACKET_X1 = 2.25
+BRACKET_X2 = 14.75
+BRACKET_CURVE_GAP = 0.015
+BRACKET_CAP = 0.018
+BRACKET_LABEL_GAP = 0.012
+BRACKET_LINEWIDTH = 1.0
 
 plt.rcParams["font.family"] = "Arial"
 plt.rcParams["font.sans-serif"] = ["Arial", "Helvetica", "DejaVu Sans"]
@@ -108,6 +116,34 @@ def add_reminder_marker(axis) -> None:
     )
 
 
+def add_reduction_bracket(axis, subset: pd.DataFrame, label: str) -> None:
+    film_rows = subset[subset["position"].between(1, N_FILM)]
+    high_y = float(film_rows["recall_probability"].max())
+    cap_bottom_y = high_y + BRACKET_CURVE_GAP
+    bracket_y = cap_bottom_y + BRACKET_CAP
+    axis.plot(
+        [BRACKET_X1, BRACKET_X1, BRACKET_X2, BRACKET_X2],
+        [cap_bottom_y, bracket_y, bracket_y, cap_bottom_y],
+        color=ANNOTATION_COLOR,
+        linewidth=BRACKET_LINEWIDTH,
+        solid_capstyle="butt",
+        clip_on=False,
+        zorder=5,
+    )
+    axis.text(
+        (BRACKET_X1 + BRACKET_X2) / 2,
+        bracket_y + BRACKET_LABEL_GAP,
+        label,
+        color=ANNOTATION_COLOR,
+        fontsize=ANNOTATION_FONTSIZE,
+        fontweight="bold",
+        ha="center",
+        va="bottom",
+        clip_on=False,
+        zorder=5,
+    )
+
+
 def plot_panel(axis, df: pd.DataFrame, reminder_condition: str) -> None:
     add_phase_bands(axis, phase_labels(), fontsize=SUPPORT_FONTSIZE, label_y=1.035)
     add_phase_boundaries(axis)
@@ -125,6 +161,9 @@ def plot_panel(axis, df: pd.DataFrame, reminder_condition: str) -> None:
             label=TASK_LABELS[task_condition],
             zorder=4,
         )
+
+    bracket_label = "smaller reduction" if reminder_condition == "No reminder" else "larger reduction"
+    add_reduction_bracket(axis, subset, bracket_label)
 
     axis.set_ylabel("Recall probability", fontsize=STRUCTURAL_FONTSIZE)
     axis.set_xlabel("Encoded position", fontsize=STRUCTURAL_FONTSIZE, labelpad=7)

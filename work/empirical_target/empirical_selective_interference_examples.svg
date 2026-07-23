@@ -1,109 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1220" width="1504" height="1220">
-<rect x="0" y="0" width="1504" height="1220" fill="white"/>
-<text x="752.0" y="56.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111111" >Empirical examples of selective interference</text>
-<text x="542.0" y="126.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#111111" >Intrusion-like access</text>
-<text x="1058.0" y="126.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#111111" >Deliberate memory</text>
-<line x1="292.0" y1="150.0" x2="292.0" y2="1012.0" stroke="#D8DEE6" stroke-width="2.4" />
-<line x1="800.0" y1="150.0" x2="800.0" y2="1012.0" stroke="#D8DEE6" stroke-width="2.4" />
-<line x1="1316.0" y1="150.0" x2="1316.0" y2="1012.0" stroke="#D8DEE6" stroke-width="2.4" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1504 1530" width="1504" height="1530">
+<rect x="0" y="0" width="1504" height="1530" fill="white"/>
+<text x="817.0" y="56.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111111" >Empirical tests of selective interference</text>
+<text x="542.0" y="126.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#111111" >Unguided film recall</text>
+<text x="1058.0" y="126.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#111111" >Deliberate film recall</text>
+<line x1="292.0" y1="150.0" x2="292.0" y2="1322.0" stroke="#D8DEE6" stroke-width="2.4" />
+<line x1="800.0" y1="150.0" x2="800.0" y2="1322.0" stroke="#D8DEE6" stroke-width="2.4" />
+<line x1="1316.0" y1="150.0" x2="1316.0" y2="1322.0" stroke="#D8DEE6" stroke-width="2.4" />
 <text x="164.0" y="251.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#111111"><tspan x="164.0" dy="0.0">James et al. 2015</tspan><tspan x="164.0" dy="27.0">Exp. 2</tspan></text>
 <text x="164.0" y="305.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">24-hr reminder x Tetris;</tspan><tspan x="164.0" dy="23.0">diary + verbal recognition</tspan></text>
 <text x="559.0" y="175.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Diary intrusions</text>
 <line x1="372.0" y1="375.0" x2="746.0" y2="375.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="360.0" y="381.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="372.0" y1="290.0" x2="746.0" y2="290.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="296.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >3</text>
-<line x1="372.0" y1="205.0" x2="746.0" y2="205.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="211.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >6</text>
+<line x1="372.0" y1="304.2" x2="746.0" y2="304.2" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="310.2" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >3</text>
+<line x1="372.0" y1="233.3" x2="746.0" y2="233.3" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="239.3" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >6</text>
 <line x1="372.0" y1="205.0" x2="372.0" y2="375.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="372.0" y1="375.0" x2="746.0" y2="375.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="399.0" y="230.2" width="58.0" height="144.8" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="457.0" y="264.8" width="58.0" height="110.2" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="399.0" y="254.3" width="58.0" height="120.7" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="457.0" y="283.2" width="58.0" height="91.8" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="457.0" y="406.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="457.0" dy="0.0">No pre-task</tspan><tspan x="457.0" dy="20.0">reminder</tspan></text>
-<rect x="603.0" y="238.2" width="58.0" height="136.8" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="661.0" y="321.4" width="58.0" height="53.6" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="603.0" y="261.0" width="58.0" height="114.0" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="661.0" y="330.4" width="58.0" height="44.6" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="661.0" y="406.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="661.0" dy="0.0">After pre-task</tspan><tspan x="661.0" dy="20.0">film reminder</tspan></text>
+<polyline points="583.0,255.0 583.0,241.0 738.0,241.0 738.0,255.0" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="660.5" y="231.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >selective reduction</text>
 <text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(322.0 290.0) rotate(-90)">Film intrusions</text>
 <text x="1075.0" y="175.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Verbal recognition</text>
 <line x1="888.0" y1="375.0" x2="1262.0" y2="375.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="876.0" y="381.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="888.0" y1="290.0" x2="1262.0" y2="290.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="296.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >16</text>
-<line x1="888.0" y1="205.0" x2="1262.0" y2="205.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="211.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >32</text>
+<line x1="888.0" y1="307.0" x2="1262.0" y2="307.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="313.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >16</text>
+<line x1="888.0" y1="239.0" x2="1262.0" y2="239.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="245.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >32</text>
 <line x1="888.0" y1="205.0" x2="888.0" y2="375.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="888.0" y1="375.0" x2="1262.0" y2="375.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="915.0" y="269.9" width="58.0" height="105.1" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="973.0" y="275.0" width="58.0" height="100.0" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="915.0" y="290.9" width="58.0" height="84.1" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="973.0" y="295.0" width="58.0" height="80.0" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="973.0" y="406.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="973.0" dy="0.0">No pre-task</tspan><tspan x="973.0" dy="20.0">reminder</tspan></text>
-<rect x="1119.0" y="274.6" width="58.0" height="100.4" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="1177.0" y="277.6" width="58.0" height="97.4" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="1119.0" y="294.7" width="58.0" height="80.3" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="1177.0" y="297.1" width="58.0" height="77.9" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="1177.0" y="406.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="1177.0" dy="0.0">After pre-task</tspan><tspan x="1177.0" dy="20.0">film reminder</tspan></text>
-<text x="1075.0" y="225.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >n.s.</text>
+<polyline points="1099.0,288.7 1099.0,274.7 1254.0,274.7 1254.0,288.7" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1176.5" y="264.7" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >relative preservation</text>
 <text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(838.0 290.0) rotate(-90)">Film recognition hits</text>
 <line x1="58.0" y1="445.0" x2="1448.0" y2="445.0" stroke="#D8DEE6" stroke-width="2.0" />
 <text x="164.0" y="561.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#111111"><tspan x="164.0" dy="0.0">Lau-Zhu et al. 2019</tspan><tspan x="164.0" dy="27.0">Exp. 1</tspan></text>
-<text x="164.0" y="615.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">30-min reminder; diary +</tspan><tspan x="164.0" dy="23.0">voluntary free recall</tspan></text>
+<text x="164.0" y="615.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">30-min reminder; diary +</tspan><tspan x="164.0" dy="23.0">free recall</tspan></text>
 <text x="559.0" y="485.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Diary intrusions</text>
 <line x1="372.0" y1="685.0" x2="746.0" y2="685.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="360.0" y="691.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="372.0" y1="600.0" x2="746.0" y2="600.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="606.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >3</text>
-<line x1="372.0" y1="515.0" x2="746.0" y2="515.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="521.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >6</text>
+<line x1="372.0" y1="624.3" x2="746.0" y2="624.3" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="630.3" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >3</text>
+<line x1="372.0" y1="563.6" x2="746.0" y2="563.6" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="569.6" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >6</text>
 <line x1="372.0" y1="515.0" x2="372.0" y2="685.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="372.0" y1="685.0" x2="746.0" y2="685.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="501.0" y="526.0" width="58.0" height="159.0" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="559.0" y="608.5" width="58.0" height="76.5" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="501.0" y="571.5" width="58.0" height="113.5" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="559.0" y="630.4" width="58.0" height="54.6" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="559.0" y="716.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="559.0" dy="0.0">After pre-task</tspan><tspan x="559.0" dy="20.0">film reminder</tspan></text>
+<polyline points="481.0,565.5 481.0,551.5 637.0,551.5 637.0,565.5" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="559.0" y="541.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >selective reduction</text>
 <text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(322.0 600.0) rotate(-90)">Film intrusions</text>
-<text x="1075.0" y="485.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Voluntary free recall</text>
+<text x="1075.0" y="485.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Deliberate free recall</text>
 <line x1="888.0" y1="685.0" x2="1262.0" y2="685.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="876.0" y="691.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="888.0" y1="600.0" x2="1262.0" y2="600.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="606.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >40</text>
-<line x1="888.0" y1="515.0" x2="1262.0" y2="515.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="521.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >80</text>
+<line x1="888.0" y1="617.0" x2="1262.0" y2="617.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="623.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >40</text>
+<line x1="888.0" y1="549.0" x2="1262.0" y2="549.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="555.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >80</text>
 <line x1="888.0" y1="515.0" x2="888.0" y2="685.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="888.0" y1="685.0" x2="1262.0" y2="685.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="1017.0" y="558.9" width="58.0" height="126.1" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="1075.0" y="545.1" width="58.0" height="139.9" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="1017.0" y="584.1" width="58.0" height="100.9" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="1075.0" y="573.1" width="58.0" height="111.9" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="1075.0" y="716.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="1075.0" dy="0.0">After pre-task</tspan><tspan x="1075.0" dy="20.0">film reminder</tspan></text>
-<text x="1075.0" y="535.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >n.s.</text>
+<polyline points="997.0,567.1 997.0,553.1 1153.0,553.1 1153.0,567.1" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1075.0" y="543.1" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >relative preservation</text>
 <text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(838.0 600.0) rotate(-90)">Film details recalled</text>
 <line x1="58.0" y1="755.0" x2="1448.0" y2="755.0" stroke="#D8DEE6" stroke-width="2.0" />
 <text x="164.0" y="885.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#111111"><tspan x="164.0" dy="0.0">Lau-Zhu et al. 2021</tspan></text>
-<text x="164.0" y="914.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">30-min reminder; trauma-</tspan><tspan x="164.0" dy="23.0">film-cued VIT +</tspan><tspan x="164.0" dy="23.0">recognition</tspan></text>
-<text x="559.0" y="795.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >VIT intrusions</text>
+<text x="164.0" y="925.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">30-min reminder; lab</tspan><tspan x="164.0" dy="23.0">reports + recognition</tspan></text>
+<text x="559.0" y="795.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Lab intrusion reports</text>
 <line x1="372.0" y1="995.0" x2="746.0" y2="995.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="360.0" y="1001.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="372.0" y1="910.0" x2="746.0" y2="910.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="916.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >10</text>
-<line x1="372.0" y1="825.0" x2="746.0" y2="825.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="360.0" y="831.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >20</text>
+<line x1="372.0" y1="934.3" x2="746.0" y2="934.3" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="940.3" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >10</text>
+<line x1="372.0" y1="873.6" x2="746.0" y2="873.6" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="879.6" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >20</text>
 <line x1="372.0" y1="825.0" x2="372.0" y2="995.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="372.0" y1="995.0" x2="746.0" y2="995.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="501.0" y="842.5" width="58.0" height="152.5" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="559.0" y="930.7" width="58.0" height="64.3" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="501.0" y="886.1" width="58.0" height="108.9" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="559.0" y="949.1" width="58.0" height="45.9" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="559.0" y="1026.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="559.0" dy="0.0">After pre-task</tspan><tspan x="559.0" dy="20.0">film reminder</tspan></text>
-<text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(322.0 910.0) rotate(-90)">Film-cued intrusions</text>
+<polyline points="481.0,880.1 481.0,866.1 637.0,866.1 637.0,880.1" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="559.0" y="856.1" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >selective reduction</text>
+<text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(322.0 910.0) rotate(-90)">Film reports</text>
 <text x="1075.0" y="795.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Cued recognition</text>
 <line x1="888.0" y1="995.0" x2="1262.0" y2="995.0" stroke="#D8DEE6" stroke-width="1.8" />
 <text x="876.0" y="1001.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
-<line x1="888.0" y1="910.0" x2="1262.0" y2="910.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="916.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0.5</text>
-<line x1="888.0" y1="825.0" x2="1262.0" y2="825.0" stroke="#D8DEE6" stroke-width="1.8" />
-<text x="876.0" y="831.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >1</text>
+<line x1="888.0" y1="924.2" x2="1262.0" y2="924.2" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="930.2" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0.5</text>
+<line x1="888.0" y1="853.3" x2="1262.0" y2="853.3" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="859.3" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >1</text>
 <line x1="888.0" y1="825.0" x2="888.0" y2="995.0" stroke="#3D4B5C" stroke-width="3.2" />
 <line x1="888.0" y1="995.0" x2="1262.0" y2="995.0" stroke="#3D4B5C" stroke-width="3.2" />
-<rect x="1017.0" y="908.3" width="58.0" height="86.7" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<rect x="1075.0" y="925.3" width="58.0" height="69.7" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<rect x="1017.0" y="922.8" width="58.0" height="72.2" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="1075.0" y="936.9" width="58.0" height="58.1" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
 <text x="1075.0" y="1026.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="1075.0" dy="0.0">After pre-task</tspan><tspan x="1075.0" dy="20.0">film reminder</tspan></text>
-<text x="1075.0" y="845.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >n.s.</text>
+<polyline points="997.0,916.8 997.0,902.8 1153.0,902.8 1153.0,916.8" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1075.0" y="892.8" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >relative preservation</text>
 <text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(838.0 910.0) rotate(-90)">Film-cued recognition accuracy</text>
-<rect x="458.0" y="1098.0" width="30.0" height="30.0" rx="2.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
-<text x="502.0" y="1122.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#3D4B5C" >Comparison / rest</text>
-<rect x="792.0" y="1098.0" width="30.0" height="30.0" rx="2.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
-<text x="836.0" y="1122.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#3D4B5C" >Tetris interference</text>
-<text x="752.0" y="1172.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C" >Bars plot published condition means in native units; y-axis scales differ across outcomes.</text>
+<line x1="58.0" y1="1065.0" x2="1448.0" y2="1065.0" stroke="#D8DEE6" stroke-width="2.0" />
+<text x="164.0" y="1181.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#111111"><tspan x="164.0" dy="0.0">McConnell et al. 2026</tspan><tspan x="164.0" dy="27.0">Exp. 1</tspan></text>
+<text x="164.0" y="1235.5" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="164.0" dy="0.0">film reminder x Tetris;</tspan><tspan x="164.0" dy="23.0">matched lab reports</tspan></text>
+<text x="559.0" y="1105.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Lab intrusion reports</text>
+<line x1="372.0" y1="1305.0" x2="746.0" y2="1305.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="1311.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
+<line x1="372.0" y1="1237.0" x2="746.0" y2="1237.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="1243.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >12</text>
+<line x1="372.0" y1="1169.0" x2="746.0" y2="1169.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="360.0" y="1175.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >24</text>
+<line x1="372.0" y1="1135.0" x2="372.0" y2="1305.0" stroke="#3D4B5C" stroke-width="3.2" />
+<line x1="372.0" y1="1305.0" x2="746.0" y2="1305.0" stroke="#3D4B5C" stroke-width="3.2" />
+<rect x="501.0" y="1248.3" width="58.0" height="56.7" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="559.0" y="1234.2" width="58.0" height="70.8" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<text x="559.0" y="1336.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="559.0" dy="0.0">After pre-task</tspan><tspan x="559.0" dy="20.0">film reminder</tspan></text>
+<polyline points="481.0,1228.2 481.0,1214.2 637.0,1214.2 637.0,1228.2" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="559.0" y="1204.2" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >no reduction observed</text>
+<text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(322.0 1220.0) rotate(-90)">Film reports</text>
+<text x="1075.0" y="1105.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111" >Voluntary lab reports</text>
+<line x1="888.0" y1="1305.0" x2="1262.0" y2="1305.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="1311.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >0</text>
+<line x1="888.0" y1="1237.0" x2="1262.0" y2="1237.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="1243.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >12</text>
+<line x1="888.0" y1="1169.0" x2="1262.0" y2="1169.0" stroke="#D8DEE6" stroke-width="1.8" />
+<text x="876.0" y="1175.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="end" fill="#111111" >24</text>
+<line x1="888.0" y1="1135.0" x2="888.0" y2="1305.0" stroke="#3D4B5C" stroke-width="3.2" />
+<line x1="888.0" y1="1305.0" x2="1262.0" y2="1305.0" stroke="#3D4B5C" stroke-width="3.2" />
+<rect x="1017.0" y="1210.2" width="58.0" height="94.8" rx="1.5" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<rect x="1075.0" y="1219.4" width="58.0" height="85.6" rx="1.5" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<text x="1075.0" y="1336.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C"><tspan x="1075.0" dy="0.0">After pre-task</tspan><tspan x="1075.0" dy="20.0">film reminder</tspan></text>
+<polyline points="997.0,1204.2 997.0,1190.2 1153.0,1190.2 1153.0,1204.2" fill="none" stroke="#3D4B5C" stroke-width="3.0" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1075.0" y="1180.2" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3D4B5C" >relative preservation</text>
+<text x="0.0" y="0.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#111111" transform="translate(838.0 1220.0) rotate(-90)">Film reports</text>
+<rect x="425.0" y="1408.0" width="30.0" height="30.0" rx="2.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.2"/>
+<text x="469.0" y="1432.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#3D4B5C" >Comparison/control condition</text>
+<rect x="881.0" y="1408.0" width="30.0" height="30.0" rx="2.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.2"/>
+<text x="925.0" y="1432.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#3D4B5C" >Visuospatial task condition</text>
+<text x="817.0" y="1482.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#3D4B5C" >Brackets summarize the plotted contrast; y-axis scales differ across outcomes.</text>
 </svg>

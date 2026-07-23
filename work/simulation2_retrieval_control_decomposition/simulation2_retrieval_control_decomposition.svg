@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1700" height="760" viewBox="0 0 1700 760">
 <rect width="100%" height="100%" fill="white"/>
 <text x="42.0" y="78.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="34" font-weight="bold" text-anchor="start" fill="#111111" >A</text>
-<text x="915.0" y="78.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#111111" >Endpoint film recall by control setting</text>
+<text x="915.0" y="78.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#111111" >Mean film recall by retrieval-control setting</text>
 <rect x="440.0" y="106.0" width="26.0" height="26.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
 <text x="480.0" y="126.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="#111111" >No reminder + weak task encoding</text>
 <rect x="1050.0" y="106.0" width="26.0" height="26.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
@@ -39,16 +39,16 @@
 <rect x="1310.0" y="210.0" width="46.0" height="265.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
 <rect x="1409.0" y="180.0" width="46.0" height="295.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
 <rect x="1455.0" y="201.3" width="46.0" height="273.7" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
-<text x="325.0" y="519.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="325.0" dy="0.0">No deliberate</tspan><tspan x="325.0" dy="22.0">control</tspan></text>
+<text x="325.0" y="519.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="325.0" dy="0.0">Unguided</tspan><tspan x="325.0" dy="22.0">film recall</tspan></text>
 <text x="470.0" y="519.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="470.0" dy="0.0">Retrieval</tspan><tspan x="470.0" dy="22.0">monitoring</tspan></text>
 <text x="615.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="615.0" dy="0.0">Start-of-</tspan><tspan x="615.0" dy="22.0">film</tspan><tspan x="615.0" dy="22.0">reinstatement</tspan></text>
 <text x="760.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="760.0" dy="0.0">Reinstatement</tspan><tspan x="760.0" dy="22.0">+</tspan><tspan x="760.0" dy="22.0">monitoring</tspan></text>
-<text x="1020.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1020.0" dy="0.0">Film-</tspan><tspan x="1020.0" dy="22.0">retrieval</tspan><tspan x="1020.0" dy="22.0">goal</tspan></text>
-<text x="1165.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1165.0" dy="0.0">Goal</tspan><tspan x="1165.0" dy="22.0">+</tspan><tspan x="1165.0" dy="22.0">monitoring</tspan></text>
-<text x="1310.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1310.0" dy="0.0">Goal</tspan><tspan x="1310.0" dy="22.0">+</tspan><tspan x="1310.0" dy="22.0">reinstatement</tspan></text>
-<text x="1455.0" y="519.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1455.0" dy="0.0">Full</tspan><tspan x="1455.0" dy="22.0">control</tspan></text>
+<text x="1020.0" y="519.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1020.0" dy="0.0">Film-category</tspan><tspan x="1020.0" dy="22.0">cue</tspan></text>
+<text x="1165.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1165.0" dy="0.0">Cue</tspan><tspan x="1165.0" dy="22.0">+</tspan><tspan x="1165.0" dy="22.0">monitoring</tspan></text>
+<text x="1310.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1310.0" dy="0.0">Cue</tspan><tspan x="1310.0" dy="22.0">+</tspan><tspan x="1310.0" dy="22.0">reinstatement</tspan></text>
+<text x="1455.0" y="508.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="1455.0" dy="0.0">Full</tspan><tspan x="1455.0" dy="22.0">deliberate</tspan><tspan x="1455.0" dy="22.0">control</tspan></text>
 <line x1="259.8" y1="605.0" x2="825.2" y2="605.0" stroke="#2F3A46" stroke-width="2.2"/>
-<text x="542.5" y="631.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111111" >Film-retrieval goal absent</text>
+<text x="542.5" y="631.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111111" >Film-category cue absent</text>
 <line x1="954.8" y1="605.0" x2="1520.2" y2="605.0" stroke="#2F3A46" stroke-width="2.2"/>
-<text x="1237.5" y="631.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111111" >Film-retrieval goal present</text>
+<text x="1237.5" y="631.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111111" >Film-category cue present</text>
 </svg>

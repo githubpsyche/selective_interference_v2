@@ -5,6 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 NOTES_DIR="$ROOT_DIR/notes"
 REVISED_DOC="${REVISED_DOC:-$ROOT_DIR/docs/index.docx}"
 OUTPUT_DOC="${OUTPUT_DOC:-$ROOT_DIR/notes/compare_index.docx}"
+ORIGINAL_DOC="${ORIGINAL_DOC:-}"
 TIMEOUT_SECONDS="${COMPARE_TIMEOUT_SECONDS:-180}"
 
 if [[ ! -d "$NOTES_DIR" ]]; then
@@ -17,8 +18,9 @@ if [[ ! -f "$REVISED_DOC" ]]; then
   exit 1
 fi
 
-LATEST_ADVISOR="$(
-  python3 - "$NOTES_DIR" <<'PY'
+if [[ -z "$ORIGINAL_DOC" ]]; then
+  ORIGINAL_DOC="$(
+    python3 - "$NOTES_DIR" <<'PY'
 import re
 import sys
 from pathlib import Path
@@ -39,10 +41,13 @@ if not matches:
 matches.sort()
 print(matches[-1][1])
 PY
-)"
+  )"
+elif [[ "$ORIGINAL_DOC" != /* ]]; then
+  ORIGINAL_DOC="$ROOT_DIR/$ORIGINAL_DOC"
+fi
 
-if [[ ! -f "$LATEST_ADVISOR" ]]; then
-  echo "Latest advisor document was not found: $LATEST_ADVISOR" >&2
+if [[ ! -f "$ORIGINAL_DOC" ]]; then
+  echo "Original document was not found: $ORIGINAL_DOC" >&2
   exit 1
 fi
 
@@ -65,12 +70,12 @@ ORIGINAL_STAGED="$WORD_CONTAINER/original_advisor_feedback.docx"
 REVISED_STAGED="$WORD_CONTAINER/revised_index.docx"
 OUTPUT_STAGED="$WORD_CONTAINER/compare_index.docx"
 
-cp "$LATEST_ADVISOR" "$ORIGINAL_STAGED"
+cp "$ORIGINAL_DOC" "$ORIGINAL_STAGED"
 cp "$REVISED_DOC" "$REVISED_STAGED"
 rm -f "$OUTPUT_STAGED" "$OUTPUT_DOC"
 mkdir -p "$(dirname "$OUTPUT_DOC")"
 
-echo "Original: $LATEST_ADVISOR"
+echo "Original: $ORIGINAL_DOC"
 echo "Revised:  $REVISED_DOC"
 echo "Output:   $OUTPUT_DOC"
 

@@ -100,16 +100,13 @@ def test_sequential_recognition_updates_context_only():
     model = model.experience_film(jnp.int32(1)).start_retrieving()
 
     before = model
-    final_model, evidences, old_probabilities = simulate_sequential_recognition(
+    final_model, evidences = simulate_sequential_recognition(
         model,
         jnp.array([1, 2], dtype=jnp.int32),
         cue_scale=0.9,
-        threshold=0.5,
-        sensitivity=20.0,
     )
 
     assert evidences.shape == (2,)
-    assert old_probabilities.shape == (2,)
     assert not np.allclose(
         np.asarray(final_model.context.state),
         np.asarray(before.context.state),
@@ -161,8 +158,6 @@ def test_recognition_diagnostics_allow_no_probe_context_update():
         model,
         jnp.array([1, 2], dtype=jnp.int32),
         cue_scale=0.0,
-        threshold=0.5,
-        sensitivity=20.0,
         film_items=paradigm.film_items,
         task_items=paradigm.interference_items,
     )
