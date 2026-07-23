@@ -58,7 +58,7 @@ Memory for the same film can therefore arise involuntarily or be retrieved volun
 
 Researchers have sharpened this dissociation using imagery-competing task interventions (ICTIs) and related procedures.
 In an ICTI, participants first receive reminders of the target event.
-They then complete a brief task intended to interfere with visual imagery associated with that memory rather than serve only as a distraction [@highfield2025summary].
+They then complete a brief task intended to interfere with visual imagery associated with that memory rather than serve only as a distraction [@highfield2025summary; @debettencourt2026ai].
 In studies conducted within hours of film viewing, ICTIs and related imagery-competing procedures have reduced later film intrusions while voluntary-memory performance remained relatively intact [@asselbergs2024effectiveness; @deeprose2012imagery; @holmes2009can; @holmes2010key; @lau2019intrusive; @lau2021selectively].
 In delayed variants, participants return a day or more after film viewing and receive a reminder before completing the task.
 These studies likewise report reduced intrusions while recognition performance remains relatively intact [@james2015computer; @kessler2020visuospatial].
