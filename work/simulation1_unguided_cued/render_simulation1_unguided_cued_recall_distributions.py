@@ -31,8 +31,8 @@ REMINDER_LABELS = {
     "With reminder": "With pre-task film reminder",
 }
 TASK_LABELS = {
-    "Weak task encoding": "Weak task encoding",
-    "Strong task encoding": "Strong task encoding",
+    "Weak task encoding": "Weaker task associations",
+    "Strong task encoding": "Stronger task associations",
 }
 TASK_ORDER = list(TASK_LABELS)
 TASK_COLORS = {

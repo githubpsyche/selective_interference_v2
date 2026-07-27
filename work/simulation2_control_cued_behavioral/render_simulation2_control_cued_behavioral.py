@@ -117,6 +117,10 @@ TASK_ORDER = [
     (1.0, "Weak task encoding", WEAK_FILL, WEAK_EDGE),
     (2.0, "Strong task encoding", STRONG_FILL, STRONG_EDGE),
 ]
+TASK_DISPLAY_LABELS = {
+    "Weak task encoding": "Weaker task associations",
+    "Strong task encoding": "Stronger task associations",
+}
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -341,16 +345,17 @@ def draw_axis(
 def draw_legend(grid_center: float) -> list[str]:
     legend_y = 855
     patch_size = 28
-    first_label_width = 275
-    second_label_width = 300
+    first_label_width = 300
+    second_label_width = 320
     gap = 62
     total_width = patch_size + 14 + first_label_width + gap + patch_size + 14 + second_label_width
     start_x = grid_center - total_width / 2
     parts = []
     x = start_x
     for _, label, fill, edge in TASK_ORDER:
+        display_label = TASK_DISPLAY_LABELS[label]
         parts.append(svg_rect(x, legend_y - patch_size + 5, patch_size, patch_size, fill, edge, BAR_STROKE))
-        parts.append(svg_text(x + patch_size + 16, legend_y, label, LEGEND_SIZE, anchor="start"))
+        parts.append(svg_text(x + patch_size + 16, legend_y, display_label, LEGEND_SIZE, anchor="start"))
         x += patch_size + 14 + (first_label_width if "Weak" in label else second_label_width) + gap
     return parts
 

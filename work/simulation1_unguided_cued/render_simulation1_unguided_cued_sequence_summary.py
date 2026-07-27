@@ -33,8 +33,8 @@ REMINDER_LABELS = {
     "With reminder": "With pre-task film reminder",
 }
 TASK_LABELS_BY_SCALE = {
-    1.0: "Weak task encoding",
-    2.0: "Strong task encoding",
+    1.0: "Weaker task associations",
+    2.0: "Stronger task associations",
 }
 TASK_BAR_STYLES = {
     1.0: {"facecolor": "#F2F4F6", "edgecolor": "#3D4B5C"},

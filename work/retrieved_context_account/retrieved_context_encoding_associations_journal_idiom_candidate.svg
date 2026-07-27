@@ -1,0 +1,394 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1120" viewBox="0 0 1680 1120">
+  <title>Retrieved-context encoding and later candidate support</title>
+  <desc>
+    Four-panel schematic showing bidirectional item-context memory, context at task encoding
+    with and without a film reminder, weaker and stronger context-to-task learning, and the
+    resulting support for film and task candidates during later memory search.
+  </desc>
+
+  <defs>
+    <marker id="arrow-neutral" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L14,7 L0,14 z" fill="#4b5563"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L14,7 L0,14 z" fill="#2f6fbe"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L14,7 L0,14 z" fill="#d66a2c"/>
+    </marker>
+
+    <style>
+      text {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #20252b;
+      }
+      .panel-letter {
+        font-size: 42px;
+        font-weight: 700;
+      }
+      .panel-title {
+        font-size: 31px;
+        font-weight: 700;
+      }
+      .phase-title {
+        font-size: 22px;
+        font-weight: 700;
+        fill: #374151;
+      }
+      .condition {
+        font-size: 23px;
+        font-weight: 700;
+      }
+      .label {
+        font-size: 21px;
+      }
+      .small-label {
+        font-size: 18px;
+      }
+      .tiny-label {
+        font-size: 16px;
+      }
+      .separator {
+        stroke: #cbd5e1;
+        stroke-width: 1.5;
+      }
+      .context-box {
+        fill: #f5f7f9;
+        stroke: #4b5563;
+        stroke-width: 2.2;
+        rx: 13;
+      }
+      .context-cell-film {
+        fill: #dbeafe;
+        stroke: #2f6fbe;
+        stroke-width: 2;
+        rx: 5;
+      }
+      .context-cell-delay {
+        fill: #e5e7eb;
+        stroke: #6b7280;
+        stroke-width: 1.8;
+        rx: 5;
+      }
+      .film-item {
+        fill: #eef5ff;
+        stroke: #2f6fbe;
+        stroke-width: 2.6;
+      }
+      .task-item {
+        fill: #fff5ee;
+        stroke: #d66a2c;
+        stroke-width: 2.6;
+      }
+      .delay-item {
+        fill: #f3f4f6;
+        stroke: #6b7280;
+        stroke-width: 2;
+      }
+      .candidate-box {
+        fill: none;
+        stroke: #94a3b8;
+        stroke-width: 1.8;
+        rx: 11;
+      }
+      .timeline {
+        fill: none;
+        stroke: #64748b;
+        stroke-width: 2.2;
+        marker-end: url(#arrow-neutral);
+      }
+      .neutral-arrow {
+        fill: none;
+        stroke: #4b5563;
+        stroke-width: 2.5;
+        marker-end: url(#arrow-neutral);
+      }
+      .film-arrow {
+        fill: none;
+        stroke: #2f6fbe;
+        stroke-width: 4.5;
+        marker-end: url(#arrow-blue);
+      }
+      .task-arrow-weak {
+        fill: none;
+        stroke: #d66a2c;
+        stroke-width: 2.7;
+        marker-end: url(#arrow-orange);
+      }
+      .task-arrow-strong {
+        fill: none;
+        stroke: #d66a2c;
+        stroke-width: 8;
+        marker-end: url(#arrow-orange);
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1680" height="1120" fill="#ffffff"/>
+
+  <!-- Panel separators -->
+  <line class="separator" x1="535" y1="38" x2="535" y2="477"/>
+  <line class="separator" x1="40" y1="500" x2="1640" y2="500"/>
+  <line class="separator" x1="810" y1="528" x2="810" y2="1082"/>
+
+  <!-- Panel A -->
+  <text class="panel-letter" x="42" y="72">A</text>
+  <text class="panel-title" x="96" y="70">Item–context memory</text>
+
+  <circle class="film-item" cx="150" cy="243" r="34"/>
+  <text class="label" x="150" y="250" text-anchor="middle" fill="#245b9b">F<tspan baseline-shift="sub" font-size="15">i</tspan></text>
+  <text class="label" x="150" y="329" text-anchor="middle">Item</text>
+
+  <rect class="context-box" x="310" y="174" width="178" height="137"/>
+  <text class="label" x="399" y="205" text-anchor="middle">Current context</text>
+  <g transform="translate(330 224)">
+    <rect class="context-cell-film" x="0" y="0" width="30" height="36"/>
+    <rect class="context-cell-delay" x="37" y="0" width="30" height="36"/>
+    <rect class="context-cell-film" x="74" y="0" width="30" height="36"/>
+    <rect class="context-cell-delay" x="111" y="0" width="30" height="36"/>
+    <text class="tiny-label" x="15" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="52" y="24" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="89" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="126" y="24" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+  <text class="small-label" x="399" y="292" text-anchor="middle">(C)</text>
+
+  <path class="neutral-arrow" d="M186 214 L302 214"/>
+  <path class="neutral-arrow" d="M302 273 L186 273"/>
+  <text class="small-label" x="244" y="202" text-anchor="middle">
+    M<tspan baseline-shift="super" font-size="13">FC</tspan>
+  </text>
+  <text class="small-label" x="244" y="296" text-anchor="middle">
+    M<tspan baseline-shift="super" font-size="13">CF</tspan>
+  </text>
+
+  <!-- Panel B -->
+  <text class="panel-letter" x="562" y="72">B</text>
+  <text class="panel-title" x="616" y="70">Context at task encoding</text>
+
+  <text class="phase-title" x="750" y="123" text-anchor="middle">Film encoding</text>
+  <text class="phase-title" x="955" y="123" text-anchor="middle">Break / delay</text>
+  <text class="phase-title" x="1160" y="123" text-anchor="middle">Pre-task cue</text>
+  <text class="phase-title" x="1450" y="123" text-anchor="middle">Task encoding</text>
+
+  <text class="condition" x="662" y="221" text-anchor="end">No reminder</text>
+  <text class="condition" x="662" y="379" text-anchor="end">Film reminder</text>
+
+  <!-- No-reminder lane -->
+  <g transform="translate(700 201)">
+    <circle class="film-item" cx="0" cy="0" r="19"/>
+    <circle class="film-item" cx="50" cy="0" r="19"/>
+    <circle class="film-item" cx="100" cy="0" r="19"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#245b9b">F1</text>
+    <text class="tiny-label" x="50" y="6" text-anchor="middle" fill="#245b9b">F2</text>
+    <text class="tiny-label" x="100" y="6" text-anchor="middle" fill="#245b9b">F3</text>
+  </g>
+  <path class="timeline" d="M830 201 L894 201"/>
+  <g transform="translate(930 201)">
+    <circle class="delay-item" cx="0" cy="0" r="18"/>
+    <circle class="delay-item" cx="48" cy="0" r="18"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#4b5563">D1</text>
+    <text class="tiny-label" x="48" y="6" text-anchor="middle" fill="#4b5563">D2</text>
+  </g>
+  <path class="timeline" d="M1002 201 L1098 201"/>
+  <text class="label" x="1160" y="208" text-anchor="middle" fill="#64748b">none</text>
+  <path class="timeline" d="M1206 201 L1262 201"/>
+
+  <rect class="context-box" x="1270" y="158" width="152" height="86"/>
+  <text class="small-label" x="1346" y="180" text-anchor="middle">Context</text>
+  <g transform="translate(1285 190)">
+    <rect class="context-cell-delay" x="0" y="0" width="27" height="33"/>
+    <rect class="context-cell-delay" x="34" y="0" width="27" height="33"/>
+    <rect class="context-cell-film" x="68" y="0" width="27" height="33"/>
+    <rect class="context-cell-delay" x="102" y="0" width="27" height="33"/>
+    <text class="tiny-label" x="13.5" y="22" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="47.5" y="22" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="81.5" y="22" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="115.5" y="22" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+  <path class="timeline" d="M1430 201 L1458 201"/>
+  <g transform="translate(1482 201)">
+    <circle class="task-item" cx="0" cy="0" r="19"/>
+    <circle class="task-item" cx="48" cy="0" r="19"/>
+    <circle class="task-item" cx="96" cy="0" r="19"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="tiny-label" x="48" y="6" text-anchor="middle" fill="#a94819">T2</text>
+    <text class="tiny-label" x="96" y="6" text-anchor="middle" fill="#a94819">T3</text>
+  </g>
+
+  <!-- Film-reminder lane -->
+  <g transform="translate(700 359)">
+    <circle class="film-item" cx="0" cy="0" r="19"/>
+    <circle class="film-item" cx="50" cy="0" r="19"/>
+    <circle class="film-item" cx="100" cy="0" r="19"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#245b9b">F1</text>
+    <text class="tiny-label" x="50" y="6" text-anchor="middle" fill="#245b9b">F2</text>
+    <text class="tiny-label" x="100" y="6" text-anchor="middle" fill="#245b9b">F3</text>
+  </g>
+  <path class="timeline" d="M830 359 L894 359"/>
+  <g transform="translate(930 359)">
+    <circle class="delay-item" cx="0" cy="0" r="18"/>
+    <circle class="delay-item" cx="48" cy="0" r="18"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#4b5563">D1</text>
+    <text class="tiny-label" x="48" y="6" text-anchor="middle" fill="#4b5563">D2</text>
+  </g>
+  <path class="timeline" d="M1002 359 L1084 359"/>
+  <rect x="1088" y="329" width="140" height="60" rx="12" fill="none" stroke="#3a8f5b" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <g transform="translate(1112 359)">
+    <circle class="film-item" cx="0" cy="0" r="16"/>
+    <circle class="film-item" cx="46" cy="0" r="16"/>
+    <circle class="film-item" cx="92" cy="0" r="16"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#245b9b">F1</text>
+    <text class="tiny-label" x="46" y="6" text-anchor="middle" fill="#245b9b">F2</text>
+    <text class="tiny-label" x="92" y="6" text-anchor="middle" fill="#245b9b">F3</text>
+  </g>
+  <path class="timeline" d="M1236 359 L1262 359"/>
+
+  <rect class="context-box" x="1270" y="316" width="152" height="86"/>
+  <text class="small-label" x="1346" y="338" text-anchor="middle">Context</text>
+  <g transform="translate(1285 348)">
+    <rect class="context-cell-delay" x="0" y="0" width="27" height="33"/>
+    <rect class="context-cell-film" x="34" y="0" width="27" height="33"/>
+    <rect class="context-cell-film" x="68" y="0" width="27" height="33"/>
+    <rect class="context-cell-film" x="102" y="0" width="27" height="33"/>
+    <text class="tiny-label" x="13.5" y="22" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="47.5" y="22" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="81.5" y="22" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="115.5" y="22" text-anchor="middle" fill="#245b9b">F</text>
+  </g>
+  <path class="timeline" d="M1430 359 L1458 359"/>
+  <g transform="translate(1482 359)">
+    <circle class="task-item" cx="0" cy="0" r="19"/>
+    <circle class="task-item" cx="48" cy="0" r="19"/>
+    <circle class="task-item" cx="96" cy="0" r="19"/>
+    <text class="tiny-label" x="0" y="6" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="tiny-label" x="48" y="6" text-anchor="middle" fill="#a94819">T2</text>
+    <text class="tiny-label" x="96" y="6" text-anchor="middle" fill="#a94819">T3</text>
+  </g>
+
+  <!-- Panel C -->
+  <text class="panel-letter" x="42" y="574">C</text>
+  <text class="panel-title" x="96" y="572">Context-to-task learning</text>
+
+  <text class="phase-title" x="252" y="639" text-anchor="middle">Weaker</text>
+  <text class="phase-title" x="586" y="639" text-anchor="middle">Stronger</text>
+
+  <rect class="context-box" x="167" y="679" width="170" height="100"/>
+  <text class="small-label" x="252" y="704" text-anchor="middle">Context</text>
+  <g transform="translate(184 719)">
+    <rect class="context-cell-film" x="0" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="37" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="74" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="111" y="0" width="29" height="36"/>
+    <text class="tiny-label" x="14.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="51.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="88.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="125.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+  <path class="task-arrow-weak" d="M252 783 L252 850"/>
+  <text class="small-label" x="278" y="822">
+    M<tspan baseline-shift="super" font-size="13">CF</tspan>
+  </text>
+  <g transform="translate(202 892)">
+    <circle class="task-item" cx="0" cy="0" r="22"/>
+    <circle class="task-item" cx="50" cy="0" r="22"/>
+    <circle class="task-item" cx="100" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#a94819">T2</text>
+    <text class="small-label" x="100" y="7" text-anchor="middle" fill="#a94819">T3</text>
+  </g>
+  <text class="small-label" x="252" y="944" text-anchor="middle">Task items</text>
+
+  <rect class="context-box" x="501" y="679" width="170" height="100"/>
+  <text class="small-label" x="586" y="704" text-anchor="middle">Context</text>
+  <g transform="translate(518 719)">
+    <rect class="context-cell-film" x="0" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="37" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="74" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="111" y="0" width="29" height="36"/>
+    <text class="tiny-label" x="14.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="51.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+    <text class="tiny-label" x="88.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="125.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+  <path class="task-arrow-strong" d="M586 786 L586 846"/>
+  <text class="small-label" x="620" y="822">
+    M<tspan baseline-shift="super" font-size="13">CF</tspan>
+  </text>
+  <g transform="translate(536 892)">
+    <circle class="task-item" cx="0" cy="0" r="22"/>
+    <circle class="task-item" cx="50" cy="0" r="22"/>
+    <circle class="task-item" cx="100" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#a94819">T2</text>
+    <text class="small-label" x="100" y="7" text-anchor="middle" fill="#a94819">T3</text>
+  </g>
+  <text class="small-label" x="586" y="944" text-anchor="middle">Task items</text>
+
+  <!-- Panel D -->
+  <text class="panel-letter" x="832" y="574">D</text>
+  <text class="panel-title" x="886" y="572">Later candidate support</text>
+
+  <text class="phase-title" x="1047" y="639" text-anchor="middle">Weaker</text>
+  <text class="phase-title" x="1417" y="639" text-anchor="middle">Stronger</text>
+
+  <rect class="context-box" x="962" y="670" width="170" height="96"/>
+  <text class="small-label" x="1047" y="696" text-anchor="middle">Retrieval context</text>
+  <g transform="translate(979 710)">
+    <rect class="context-cell-film" x="0" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="37" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="74" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="111" y="0" width="29" height="36"/>
+    <text class="tiny-label" x="14.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="51.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="88.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="125.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+
+  <rect class="candidate-box" x="895" y="848" width="304" height="166"/>
+  <text class="small-label" x="1047" y="874" text-anchor="middle">Candidates</text>
+  <g transform="translate(948 955)">
+    <circle class="film-item" cx="0" cy="0" r="22"/>
+    <circle class="film-item" cx="50" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#245b9b">F1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#245b9b">F2</text>
+  </g>
+  <g transform="translate(1100 955)">
+    <circle class="task-item" cx="0" cy="0" r="22"/>
+    <circle class="task-item" cx="50" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#a94819">T2</text>
+  </g>
+  <path class="film-arrow" d="M1019 768 C997 802 979 833 973 928"/>
+  <path class="task-arrow-weak" d="M1075 768 C1094 804 1119 838 1125 928"/>
+
+  <rect class="context-box" x="1332" y="670" width="170" height="96"/>
+  <text class="small-label" x="1417" y="696" text-anchor="middle">Retrieval context</text>
+  <g transform="translate(1349 710)">
+    <rect class="context-cell-film" x="0" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="37" y="0" width="29" height="36"/>
+    <rect class="context-cell-film" x="74" y="0" width="29" height="36"/>
+    <rect class="context-cell-delay" x="111" y="0" width="29" height="36"/>
+    <text class="tiny-label" x="14.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="51.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="88.5" y="24" text-anchor="middle" fill="#245b9b">F</text>
+    <text class="tiny-label" x="125.5" y="24" text-anchor="middle" fill="#4b5563">D</text>
+  </g>
+
+  <rect class="candidate-box" x="1265" y="848" width="304" height="166"/>
+  <text class="small-label" x="1417" y="874" text-anchor="middle">Candidates</text>
+  <g transform="translate(1318 955)">
+    <circle class="film-item" cx="0" cy="0" r="22"/>
+    <circle class="film-item" cx="50" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#245b9b">F1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#245b9b">F2</text>
+  </g>
+  <g transform="translate(1470 955)">
+    <circle class="task-item" cx="0" cy="0" r="22"/>
+    <circle class="task-item" cx="50" cy="0" r="22"/>
+    <text class="small-label" x="0" y="7" text-anchor="middle" fill="#a94819">T1</text>
+    <text class="small-label" x="50" y="7" text-anchor="middle" fill="#a94819">T2</text>
+  </g>
+  <path class="film-arrow" d="M1389 768 C1367 802 1349 833 1343 928"/>
+  <path class="task-arrow-strong" d="M1445 770 C1464 804 1489 838 1495 924"/>
+</svg>

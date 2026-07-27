@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1180" width="1600" height="1180" font-family="Arial, Helvetica, sans-serif">
+  <title>How task items become competitors for film recall</title>
+  <desc>
+    A three-panel schematic. Panel A distinguishes item-to-context reinstatement from context-to-item candidate support.
+    Panel B shows that a film reminder makes context at task onset more film-associated after a delay.
+    Panel C shows that stronger context-to-task learning gives task items more support when film-associated context later guides retrieval.
+  </desc>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#3D4B5C"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1764D8"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#D96B2B"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#178A4C"/>
+    </marker>
+    <linearGradient id="context-drift" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#86AFE6"/>
+      <stop offset="55%" stop-color="#C8D9EF"/>
+      <stop offset="100%" stop-color="#EEF1F4"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1180" fill="#FFFFFF"/>
+
+  <!-- Visual key -->
+  <g id="visual-key">
+    <circle cx="52" cy="43" r="19" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <text x="52" y="51" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle">F</text>
+    <text x="82" y="51" font-size="24" fill="#111111">Film item</text>
+
+    <circle cx="245" cy="43" r="19" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <text x="245" y="51" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T</text>
+    <text x="275" y="51" font-size="24" fill="#111111">Task item</text>
+
+    <path d="M455 20 L478 43 L455 66 L432 43 Z" fill="#E5F3EA" stroke="#178A4C" stroke-width="3"/>
+    <text x="455" y="51" font-size="19" font-weight="700" fill="#178A4C" text-anchor="middle">R</text>
+    <text x="492" y="51" font-size="24" fill="#111111">Film reminder</text>
+
+    <rect x="702" y="22" width="48" height="42" rx="9" fill="#EEF1F4" stroke="#3D4B5C" stroke-width="2"/>
+    <rect x="756" y="22" width="48" height="42" rx="9" fill="#9DBEE9" stroke="#1764D8" stroke-width="2"/>
+    <text x="820" y="38" font-size="22" fill="#111111">Context shade:</text>
+    <text x="820" y="62" font-size="22" fill="#3D4B5C">less → more film-associated</text>
+
+    <line x1="1220" y1="33" x2="1300" y2="33" stroke="#D96B2B" stroke-width="3" marker-end="url(#arrow-orange)"/>
+    <line x1="1220" y1="56" x2="1300" y2="56" stroke="#D96B2B" stroke-width="9" marker-end="url(#arrow-orange)"/>
+    <text x="1320" y="38" font-size="22" fill="#111111">Weaker / stronger</text>
+    <text x="1320" y="62" font-size="22" fill="#3D4B5C">learning</text>
+  </g>
+  <line x1="30" y1="84" x2="1570" y2="84" stroke="#CBD2D9" stroke-width="2"/>
+
+  <!-- Panel A -->
+  <g id="panel-a">
+    <text x="34" y="132" font-size="38" font-weight="700" fill="#111111">A</text>
+    <text x="92" y="132" font-size="32" font-weight="700" fill="#111111">Items reinstate context; context cues candidate items</text>
+
+    <circle cx="183" cy="226" r="29" fill="#FFFFFF" stroke="#1764D8" stroke-width="4"/>
+    <text x="183" y="236" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle">F</text>
+    <path d="M267 197 L296 226 L267 255 L238 226 Z" fill="#E5F3EA" stroke="#178A4C" stroke-width="4"/>
+    <text x="267" y="236" font-size="23" font-weight="700" fill="#178A4C" text-anchor="middle">R</text>
+    <text x="225" y="286" font-size="23" fill="#111111" text-anchor="middle">
+      <tspan x="225" dy="0">Retrieved item or</tspan>
+      <tspan x="225" dy="27">presented cue</tspan>
+    </text>
+
+    <line x1="316" y1="226" x2="524" y2="226" stroke="#3D4B5C" stroke-width="4" marker-end="url(#arrow-dark)"/>
+    <text x="420" y="183" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Reinstates context</text>
+    <text x="420" y="207" font-size="21" fill="#3D4B5C" text-anchor="middle">
+      item / cue → context (M<tspan baseline-shift="super" font-size="14">FC</tspan>)
+    </text>
+
+    <rect x="544" y="166" width="442" height="120" rx="22" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="765" y="201" font-size="27" font-weight="700" fill="#111111" text-anchor="middle">Current context state</text>
+    <rect x="570" y="218" width="190" height="48" rx="10" fill="#FFFFFF" stroke="#7D8996" stroke-width="2"/>
+    <rect x="770" y="218" width="190" height="48" rx="10" fill="#FFFFFF" stroke="#7D8996" stroke-width="2"/>
+    <text x="665" y="249" font-size="21" fill="#111111" text-anchor="middle">Recent experience</text>
+    <text x="865" y="239" font-size="20" fill="#111111" text-anchor="middle">
+      <tspan x="865" dy="0">Source / emotional</tspan>
+      <tspan x="865" dy="22">state</tspan>
+    </text>
+
+    <line x1="986" y1="226" x2="1194" y2="226" stroke="#3D4B5C" stroke-width="4" marker-end="url(#arrow-dark)"/>
+    <text x="1090" y="183" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Cues candidates</text>
+    <text x="1090" y="207" font-size="21" fill="#3D4B5C" text-anchor="middle">
+      context → item (M<tspan baseline-shift="super" font-size="14">CF</tspan>)
+    </text>
+
+    <circle cx="1255" cy="226" r="29" fill="#FFFFFF" stroke="#1764D8" stroke-width="4"/>
+    <text x="1255" y="236" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle">F</text>
+    <circle cx="1335" cy="226" r="29" fill="#FFFFFF" stroke="#D96B2B" stroke-width="4"/>
+    <text x="1335" y="236" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T</text>
+    <text x="1415" y="218" font-size="23" fill="#111111">
+      <tspan x="1380" dy="0">Film and task</tspan>
+      <tspan x="1380" dy="27">candidates</tspan>
+    </text>
+  </g>
+  <line x1="30" y1="335" x2="1570" y2="335" stroke="#CBD2D9" stroke-width="2"/>
+
+  <!-- Panel B -->
+  <g id="panel-b">
+    <text x="34" y="383" font-size="38" font-weight="700" fill="#111111">B</text>
+    <text x="92" y="383" font-size="32" font-weight="700" fill="#111111">A film reminder changes the context present when task encoding begins</text>
+
+    <line x1="225" y1="423" x2="1532" y2="423" stroke="#3D4B5C" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+    <text x="1542" y="431" font-size="22" fill="#3D4B5C">time</text>
+
+    <text x="335" y="459" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">Film encoding</text>
+    <text x="655" y="459" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">Delay and context drift</text>
+    <text x="918" y="459" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">Pre-task cue</text>
+    <text x="1193" y="459" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">Context at task onset</text>
+    <text x="1460" y="459" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">Task begins</text>
+
+    <!-- No-reminder lane -->
+    <text x="48" y="544" font-size="26" font-weight="700" fill="#111111">No reminder</text>
+
+    <circle cx="290" cy="529" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="345" cy="529" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="400" cy="529" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <text x="290" y="538" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+    <text x="345" y="538" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+    <text x="400" y="538" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+    <line x1="433" y1="529" x2="496" y2="529" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <rect x="515" y="499" width="245" height="60" rx="14" fill="url(#context-drift)" stroke="#7D8996" stroke-width="2"/>
+    <text x="638" y="535" font-size="21" fill="#3D4B5C" text-anchor="middle">film similarity decreases</text>
+    <line x1="760" y1="529" x2="850" y2="529" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <text x="918" y="538" font-size="25" fill="#7D8996" text-anchor="middle">none</text>
+    <line x1="972" y1="529" x2="1037" y2="529" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <rect x="1055" y="486" width="282" height="86" rx="16" fill="#EEF1F4" stroke="#7D8996" stroke-width="3"/>
+    <text x="1196" y="520" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">Less film-associated</text>
+    <text x="1196" y="548" font-size="21" fill="#3D4B5C" text-anchor="middle">task-onset context</text>
+    <line x1="1337" y1="529" x2="1392" y2="529" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <circle cx="1425" cy="529" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="1478" cy="529" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="1531" cy="529" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <text x="1425" y="538" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="1478" y="538" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+    <text x="1531" y="538" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+    <!-- Film-reminder lane -->
+    <text x="48" y="674" font-size="26" font-weight="700" fill="#111111">Film reminder</text>
+
+    <circle cx="290" cy="659" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="345" cy="659" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="400" cy="659" r="24" fill="#FFFFFF" stroke="#1764D8" stroke-width="3"/>
+    <text x="290" y="668" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+    <text x="345" y="668" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+    <text x="400" y="668" font-size="21" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+    <line x1="433" y1="659" x2="496" y2="659" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <rect x="515" y="629" width="245" height="60" rx="14" fill="url(#context-drift)" stroke="#7D8996" stroke-width="2"/>
+    <text x="638" y="665" font-size="21" fill="#3D4B5C" text-anchor="middle">film similarity decreases</text>
+    <line x1="760" y1="659" x2="850" y2="659" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <path d="M918 625 L952 659 L918 693 L884 659 Z" fill="#E5F3EA" stroke="#178A4C" stroke-width="4"/>
+    <text x="918" y="668" font-size="22" font-weight="700" fill="#178A4C" text-anchor="middle">R</text>
+    <text x="918" y="718" font-size="19" fill="#178A4C" text-anchor="middle">film-item cue sequence</text>
+    <line x1="952" y1="659" x2="1037" y2="659" stroke="#178A4C" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+    <rect x="1055" y="616" width="282" height="86" rx="16" fill="#A9C8F0" stroke="#1764D8" stroke-width="3"/>
+    <text x="1196" y="650" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">More film-associated</text>
+    <text x="1196" y="678" font-size="21" fill="#2F4966" text-anchor="middle">task-onset context</text>
+    <line x1="1337" y1="659" x2="1392" y2="659" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-dark)"/>
+
+    <circle cx="1425" cy="659" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="1478" cy="659" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="1531" cy="659" r="23" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <text x="1425" y="668" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="1478" y="668" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+    <text x="1531" y="668" font-size="20" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+    <text x="800" y="744" font-size="22" fill="#3D4B5C" text-anchor="middle">
+      The reminder changes the active context before the task; stored film associations are unchanged.
+    </text>
+  </g>
+  <line x1="30" y1="765" x2="1570" y2="765" stroke="#CBD2D9" stroke-width="2"/>
+
+  <!-- Panel C -->
+  <g id="panel-c">
+    <text x="34" y="814" font-size="38" font-weight="700" fill="#111111">C</text>
+    <text x="92" y="814" font-size="32" font-weight="700" fill="#111111">Stronger context-to-task learning creates stronger task competitors</text>
+
+    <text x="390" y="858" font-size="23" font-weight="700" fill="#3D4B5C" text-anchor="middle">The context is identical in the two rows</text>
+    <line x1="814" y1="842" x2="814" y2="1135" stroke="#CBD2D9" stroke-width="2"/>
+    <text x="1195" y="850" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">Later candidate support</text>
+    <text x="1195" y="879" font-size="21" fill="#3D4B5C" text-anchor="middle">more film-associated context + stronger task learning</text>
+
+    <rect x="70" y="890" width="300" height="82" rx="16" fill="#C7DAF2" stroke="#1764D8" stroke-width="3"/>
+    <text x="220" y="924" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">Same task-encoding</text>
+    <text x="220" y="953" font-size="23" fill="#2F4966" text-anchor="middle">context</text>
+    <line x1="370" y1="931" x2="610" y2="931" stroke="#D96B2B" stroke-width="3" marker-end="url(#arrow-orange)"/>
+    <text x="490" y="907" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">Weaker learning</text>
+    <circle cx="660" cy="931" r="26" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="722" cy="931" r="26" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <text x="660" y="941" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="722" y="941" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+
+    <rect x="70" y="1013" width="300" height="82" rx="16" fill="#C7DAF2" stroke="#1764D8" stroke-width="3"/>
+    <text x="220" y="1047" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">Same task-encoding</text>
+    <text x="220" y="1076" font-size="23" fill="#2F4966" text-anchor="middle">context</text>
+    <line x1="370" y1="1054" x2="610" y2="1054" stroke="#D96B2B" stroke-width="9" marker-end="url(#arrow-orange)"/>
+    <text x="490" y="1024" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">Stronger learning</text>
+    <circle cx="660" cy="1054" r="26" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="722" cy="1054" r="26" fill="#FFFFFF" stroke="#D96B2B" stroke-width="3"/>
+    <text x="660" y="1064" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="722" y="1064" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+
+    <rect x="855" y="942" width="290" height="116" rx="20" fill="#A9C8F0" stroke="#1764D8" stroke-width="3"/>
+    <text x="1000" y="984" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Film-associated</text>
+    <text x="1000" y="1014" font-size="24" fill="#2F4966" text-anchor="middle">retrieval context</text>
+    <text x="1000" y="1043" font-size="19" fill="#3D4B5C" text-anchor="middle">film associations unchanged</text>
+
+    <path d="M1145 977 C1198 977 1210 950 1250 950" fill="none" stroke="#1764D8" stroke-width="4" marker-end="url(#arrow-blue)"/>
+    <path d="M1145 1023 C1198 1023 1210 1073 1250 1073" fill="none" stroke="#D96B2B" stroke-width="8" marker-end="url(#arrow-orange)"/>
+
+    <text x="1380" y="915" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">Film candidates</text>
+    <circle cx="1295" cy="950" r="27" fill="#FFFFFF" stroke="#1764D8" stroke-width="4"/>
+    <circle cx="1358" cy="950" r="27" fill="#FFFFFF" stroke="#1764D8" stroke-width="4"/>
+    <circle cx="1421" cy="950" r="27" fill="#FFFFFF" stroke="#1764D8" stroke-width="4"/>
+    <text x="1295" y="960" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+    <text x="1358" y="960" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+    <text x="1421" y="960" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+
+    <text x="1380" y="1038" font-size="23" font-weight="700" fill="#111111" text-anchor="middle">Task competitors</text>
+    <circle cx="1295" cy="1073" r="27" fill="#FFFFFF" stroke="#D96B2B" stroke-width="4"/>
+    <circle cx="1358" cy="1073" r="27" fill="#FFFFFF" stroke="#D96B2B" stroke-width="4"/>
+    <circle cx="1421" cy="1073" r="27" fill="#FFFFFF" stroke="#D96B2B" stroke-width="4"/>
+    <text x="1295" y="1083" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="1358" y="1083" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+    <text x="1421" y="1083" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+    <path d="M1472 915 L1492 915 L1492 1108 L1472 1108" fill="none" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="1380" y="1140" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">
+      Compete during selection
+    </text>
+  </g>
+</svg>

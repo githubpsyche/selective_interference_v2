@@ -67,8 +67,8 @@
 <rect x="1097.5" y="616.6" width="148.0" height="178.4" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
 <polyline points="929.5,595.9 929.5,581.9 1265.5,581.9 1265.5,595.9" fill="none" stroke="#2F3A46" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="1097.5" y="565.9" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2F3A46" >relative preservation</text>
-<rect x="482.0" y="832.0" width="28.0" height="28.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
-<text x="526.0" y="855.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="#111111" >Weak task encoding</text>
-<rect x="861.0" y="832.0" width="28.0" height="28.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
-<text x="905.0" y="855.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="#111111" >Strong task encoding</text>
+<rect x="459.5" y="832.0" width="28.0" height="28.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="4.0"/>
+<text x="503.5" y="855.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="#111111" >Weaker task associations</text>
+<rect x="863.5" y="832.0" width="28.0" height="28.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="4.0"/>
+<text x="907.5" y="855.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="#111111" >Stronger task associations</text>
 </svg>

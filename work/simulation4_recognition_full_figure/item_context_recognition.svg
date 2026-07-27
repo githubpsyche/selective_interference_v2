@@ -102,10 +102,10 @@
 <path d="M 598.0 864.0 C 612.0 842.0 628.0 866.0 634.0 915.0" fill="none" stroke="#3D4B5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-slate-e)"/>
 <path d="M 598.0 1022.0 C 612.0 1026.0 628.0 984.0 634.0 971.0" fill="none" stroke="#3D4B5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-slate-e)"/>
 <text x="900.0" y="710.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="36" font-weight="700" text-anchor="start" fill="#111111" >D</text>
-<rect x="1062.0" y="736.0" width="30.0" height="20.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.0"/>
-<text x="1103.0" y="752.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#111111" >Weak task encoding</text>
-<rect x="1312.0" y="736.0" width="30.0" height="20.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.0"/>
-<text x="1353.0" y="752.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#111111" >Strong task encoding</text>
+<rect x="960.0" y="736.0" width="30.0" height="20.0" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3.0"/>
+<text x="1001.0" y="752.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#111111" >Weaker task associations</text>
+<rect x="1300.0" y="736.0" width="30.0" height="20.0" fill="#FFF0E6" stroke="#D96B2B" stroke-width="3.0"/>
+<text x="1341.0" y="752.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#111111" >Stronger task associations</text>
 <line x1="1012.0" y1="1105.0" x2="1602.0" y2="1105.0" stroke="#DCE3EA" stroke-width="2.0" />
 <text x="994.0" y="1112.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0.0</text>
 <line x1="1012.0" y1="1030.0" x2="1602.0" y2="1030.0" stroke="#DCE3EA" stroke-width="2.0" />

@@ -15,7 +15,7 @@
 
 <rect x="38" y="166" width="308" height="312" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
 <rect x="394" y="166" width="308" height="312" rx="22" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="192" y="204" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="192" dy="0">Unguided retrieval</tspan></text>
+<text x="192" y="204" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="192" dy="0">Unguided recall</tspan></text>
 <text x="548" y="204" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="548" dy="0">Deliberate recall</tspan></text>
 
 <rect x="89" y="219" width="206" height="58" rx="29" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>

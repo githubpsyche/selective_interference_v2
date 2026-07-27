@@ -1,5 +1,5 @@
 ---
-title: "Competition and control in episodic memory search: A retrieved-context model of selective interference"
+title: "Competition and control in episodic memory search: A retrieved-context account of selective interference"
 shorttitle: "Competition and control in episodic memory search"
 author:
   - name: Jordan B Gunn
@@ -57,97 +57,92 @@ In such research, intrusion frequency is often only weakly related to voluntary-
 Memory for the same film can therefore arise involuntarily or be retrieved voluntarily, and the two outcomes need not vary together.
 
 Researchers have sharpened this dissociation using imagery-competing task interventions (ICTIs) and related procedures.
-In an ICTI, participants first receive reminders of the target event.
-They then complete a brief task intended to interfere with visual imagery associated with that memory rather than serve only as a distraction [@highfield2025summary; @debettencourt2026ai].
-In studies conducted within hours of film viewing, ICTIs and related imagery-competing procedures have reduced later film intrusions while voluntary-memory performance remained relatively intact [@asselbergs2024effectiveness; @deeprose2012imagery; @holmes2009can; @holmes2010key; @lau2019intrusive; @lau2021selectively].
+In an ICTI, participants receive reminders of the target event and then complete a brief task designed to compete with the visual imagery those reminders call to mind [@highfield2025summary; @debettencourt2026ai].
+Imagery-competing tasks administered within hours of film viewing have reduced later film intrusions while voluntary memory for the same material has remained relatively intact [@asselbergs2024effectiveness; @deeprose2012imagery; @holmes2009can; @holmes2010key; @lau2019intrusive; @lau2021selectively].
 In delayed variants, participants return a day or more after film viewing and receive a reminder before completing the task.
 These studies likewise report reduced intrusions while recognition performance remains relatively intact [@james2015computer; @kessler2020visuospatial].
 Clinical studies have also found that ICTIs reduce intrusive memories after real-world trauma [@beckenstrom2026digital; @iyadurai2023reducing; @kanstrup2024guided; @kessler2018reducing; @ramineni2023treating].
-The overarching pattern of reduced intrusions with relatively preserved voluntary-memory performance is termed 'selective interference' [@lau2019intrusive; @lau2021selectively].
+The pattern of reduced intrusions alongside relatively preserved voluntary memory is termed 'selective interference' [@lau2019intrusive; @lau2021selectively].
+Here we develop a mechanistic account of this effect within a broader theory of episodic memory search.
 
-<!-- FIXME: I don't totally follow this paragraph; make sure it flows okay. -->
-The selective interference effect has been used to argue that intrusive and voluntary remembering depend on differently vulnerable memory representations [@brewin1996dual; @brewin2014episodic].
+One prominent existing explanation holds that intrusive and voluntary remembering depend on separate memory representations that are differently vulnerable to interference [@brewin1996dual; @brewin2014episodic].
 Dual-representation accounts give this interpretation an architectural basis.
 They link coherent voluntary recollection to hippocampally supported representations that bind event elements within a spatiotemporal context [@bird2012hippocampus; @bisby2020reduced].
 They suggest that intrusive re-experiencing is due to activation of sensory and affective representations supported by amygdala and sensory systems [@bisby2020reduced; @brewin2010intrusive].
-Imagery-competing tasks are understood to compete for working-memory resources while sensory-perceptual imagery from the film is still being maintained and consolidated [@baddeley2000working].
-Because later intrusions are assumed to arise especially from sensory-bound representations, the selective pattern is attributed to disrupting the representation most likely to support intrusions while leaving voluntary-memory performance relatively preserved [@holmes2009can; @holmes2010key; @deeprose2012imagery; @lau2019intrusive].
-In delayed post-reminder interventions, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@kindt2009beyond; @james2015computer].
-Across these variants, selective interference is explained by treating the intervention as acting more strongly on sensory-bound, intrusion-supporting representations than on the contextualized representations proposed to support coherent voluntary recollection.
+When the task follows soon after film viewing, it is proposed to interfere with consolidation of the sensory-perceptual representation [@holmes2009can; @holmes2010key].
+When the intervention is delayed, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@james2015computer; @kindt2009beyond].
+The selective interference effect is therefore interpreted as evidence that the intervention disrupts the sensory-bound representation supporting intrusions more strongly than the contextualized representation supporting voluntary recollection [@deeprose2012imagery; @lau2019intrusive].
 
 Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared.
-Selective interference can instead arise from differences in how film memories are cued and controlled at retrieval.
-In our account, film events become associated with context, a gradually changing mental representation of recent experience [@howard2002distributed; @polyn2009context].
+More generally, differences in retrieval outcomes need not reveal differences in what was stored.
+Patterns such as selective interference can instead arise from differences in how the same memory is cued and controlled at retrieval.
+
+Retrieved-context models offer a general theory of episodic memory search in which context can guide goal-directed remembering and give rise to unintended intrusions [@cohen2022memory; @lohnas2015expanding; @polyn2011semantic].
+Yet, to our knowledge, they have not explained how a single episodic memory system can yield different effects of interference under unguided and goal-directed retrieval.
+To address this gap, we model unguided and deliberate recall as arising from the same learned associations.
+We evaluate alternative mechanisms for controlling how those associations guide deliberate recall, asking whether they reduce the effect of interference or merely raise recall overall.
+Selective interference therefore provides a demanding test: preserved voluntary memory must emerge from the model rather than be assumed to follow from deliberate retrieval.
+
+In our account, task material interferes with film recall by becoming a competitor during later memory search.
+Film events become associated with context, a gradually changing mental representation of recent experience [@howard2002distributed; @polyn2009context].
 A film reminder reinstates this film-associated context before task material is encoded.
 Task material then becomes linked to the reinstated context.
-When later remembering is guided by film-associated context, task and film material compete, interfering with film recall.
-The task interferes less when retrieval depends less on context to access film material.
-In deliberate recall, this happens when a maintained film-category cue gives film candidates an additional source of support without equally supporting task competitors.
-Deliberate recognition can also be less affected, because the test presents candidate film items for judgment rather than requiring selection among film and task candidates.
-On this account, shared contextual associations generate competition, while retrieval goals and test format determine how strongly that competition affects performance.
-We formalize this retrieval account in an emotional variant [@cohen2022memory; @talmi2019retrieved] of the Context Maintenance and Retrieval (CMR) model [@polyn2009context].
+When this context later guides retrieval, it supports task items alongside film items, placing them in competition for recall.
 
-Retrieved-context models offer a general theory of episodic memory search in which context can guide targeted recall and give rise to unintended intrusions [@cohen2022memory; @lohnas2015expanding; @polyn2011semantic].
-Yet they have not been used to explain why post-reminder task interference can affect unguided and deliberate retrieval of the same material differently.
-We address this gap by modeling both forms of recall from the same learned associations and specifying how deliberate retrieval controls their use.
-Preserved voluntary memory thereby becomes an outcome for a retrieved-context model to explain rather than an assumption attached to deliberate retrieval.
-@fig-empirical-target summarizes the modeled paradigm and the selective-interference contrast between unguided and deliberate film recall.
+How strongly this competition affects performance depends on retrieval control and test format.
+In deliberate recall, a maintained film-category cue gives film candidates additional support without equally supporting task competitors.
+Deliberate recognition can also be less affected because the test presents candidate film items for judgment rather than requiring selection among film and task candidates.
+The same contextual associations can therefore yield different effects of interference as retrieval goals and test format change.
+We formalize this account in an emotional variant [@cohen2022memory; @talmi2019retrieved] of the Context Maintenance and Retrieval model [@polyn2009context].
 
-The simulations test this account using a generalization-style modeling logic [@busemeyer2000model; @lohnas2023event].
-Core parameters are anchored in an independent affective free-recall dataset [@dupertuys2026ukraine], and no trauma-film outcomes are fitted.
+We test this account in three simulations that move from competitor formation to the roles of retrieval control and test format.
+@fig-empirical-target summarizes the modeled paradigm and the selective interference contrast between unguided and deliberate film recall.
 Simulation 1 tests the account's core competition mechanism by varying whether film-associated context is reinstated before task encoding and how strongly task material becomes linked to that context.
-Simulation 2 compares start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring to determine which control operations improve film recall generally and which specifically protect it from post-reminder task interference.
-Simulation 3 tests whether deliberate recognition is less affected by interference than deliberate recall, clarifying the role of test format in the effect.
+Simulation 2 compares start-of-film context reinstatement, a maintained film-category cue, and retrieval monitoring to determine which can account for the relative preservation of deliberate recall.
+Simulation 3 extends the account to deliberate recognition, isolating the role of test format.
 Together, the simulations specify a mechanistic alternative to selective-vulnerability accounts and identify when intrusive and voluntary remembering should diverge.
 
 ::: {#fig-empirical-target fig-pos="H"}
-![](work/empirical_target/empirical_target_composite.png){width=100%}
+![](work/empirical_target/empirical_target_composite_candidate.png){width=100%}
 
-**Modeled trauma-film paradigm and schematic selective-interference pattern.**
-**(A)** The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, an intervening task, a post-task delay, and a later test of unguided or deliberate film recall.
-**(B)** The qualitative pattern targeted by the recall simulations is summarized as an interaction among reminder condition, intervening task, and retrieval condition.
-Columns distinguish whether the task is preceded by a film reminder, rows distinguish unguided film recall from deliberate film recall, and paired bars compare film recall after a comparison/control condition versus a visuospatial task condition.
-The visuospatial task condition produces the largest reduction in unguided film recall when it follows a film reminder, whereas deliberate film recall shows a smaller reduction under the same conditions.
-Bars are schematic and do not plot empirical counts, fitted values, or model output.
+**Modeled trauma-film paradigm and schematic selective interference effect.**
+**(A)** The modeled trauma-film paradigm includes film encoding, an intervening delay, a possible pre-task film reminder, an intervening task, a post-task delay, and a later test of unguided film recall, deliberate film recall, or deliberate recognition.
+**(B)** The recall simulations target an interaction among reminder condition, intervening task, and retrieval condition.
+Columns distinguish whether the task is preceded by a film reminder, rows distinguish unguided from deliberate film recall, and paired bars compare film recall after a comparison/control condition and an imagery-competing task condition.
+Following a film reminder, the task condition reduces unguided film recall more than deliberate film recall.
+This difference between retrieval conditions is the selective interference effect schematized here.
+Bars are schematic and do not depict empirical counts, fitted values, or model output.
 :::
 
 ## Intentionality and Test Format in Selective Interference
 
-Selective-interference studies are often described as comparing involuntary and deliberate memory, but the empirical contrast also depends on how each form of remembering is measured.
-Diary measures count film memories after they inadvertently come to mind during daily life.
-Laboratory intrusion tasks count film memories reported during a defined monitoring period, sometimes while film cues are present.
-In both cases, participants report film memories when they occur without deliberately trying to recover film details.
-These studies test voluntary memory in tasks that differ in whether target film material must be recovered or is presented for judgment.
-Free recall and specific-probe questions ask participants to bring film details to mind, whereas recognition asks participants to distinguish true from false film statements or film stills from lure images [@james2016trauma; @lau2019intrusive; @lau2021selectively].
-Selective interference appears most consistent when intrusion reports are compared with recognition, and less when compared with free recall, where retrieval conditions resemble those of unguided recall more closely.
-@fig-empirical-examples illustrates variation in retrieval format across selected trauma-film studies [@james2015computer; @lau2019intrusive; @lau2021selectively; @mcconnell2026testing].
+Empirical tests of selective interference combine different intrusion measures with different voluntary memory tests.
+Diary measures record intrusions that arise during daily life, whereas laboratory intrusion tasks collect reports during a defined monitoring period, sometimes while film cues are present.
+Voluntary memory is commonly assessed either by recall tests, which require participants to bring film details to mind, or by recognition tests, which present verbal or visual candidates for judgment [@james2016trauma; @lau2019intrusive; @lau2021selectively].
+These combinations vary in both retrieval intentionality and test format.
+@fig-empirical-examples illustrates selected examples.
 
 ::: {#fig-empirical-examples fig-pos="H"}
 ![](work/empirical_target/empirical_selective_interference_examples.png){width=100%}
 
-**Empirical tests of selective interference across retrieval formats.**
-Rows show selected studies that pair intrusion-like or involuntary-memory measures with different deliberate-memory tests: diary intrusions with recognition, diary intrusions with free recall, laboratory intrusion reports with recognition, and a matched voluntary/involuntary laboratory retrieval task [@james2015computer; @lau2019intrusive; @lau2021selectively; @mcconnell2026testing].
-Left panels plot intrusion-like or involuntary-memory outcomes, and right panels plot deliberate-memory outcomes.
-Gray bars indicate the study-specific comparison/control condition and orange bars indicate the visuospatial task condition.
-Bracket labels summarize the plotted contrast; they do not denote a uniform significance test.
-Bar heights reproduce reported condition means in native study units, so y-axis scales differ across outcomes.
+**Selected empirical comparisons across retrieval formats.**
+Rows show studies pairing different intrusion or involuntary-memory measures with voluntary memory tests: diary intrusions with recognition, diary intrusions with free recall, laboratory intrusion reports with recognition, and matched involuntary and voluntary laboratory report tasks [@james2015computer; @lau2019intrusive; @lau2021selectively; @mcconnell2026testing].
+Left panels show intrusion or involuntary-memory outcomes, and right panels show voluntary-memory outcomes.
+Gray bars indicate the study-specific comparison or control condition, and orange bars indicate the imagery-competing task condition.
+Bracket labels summarize the plotted contrasts and do not denote a uniform significance test.
+Bar heights reproduce reported condition means in their original units, so scales differ across outcomes.
 :::
 
-Comparisons between diary intrusion reports and recognition tests often confound retrieval intentionality with retrieval format.
-While imagery-competing tasks typically decrease diary intrusions, participants who received a visuo-spatial intervention soon after film viewing later reported fewer diary intrusions, while verbal or visual recognition was unaffected [@holmes2009can; @holmes2010key].
-A similar pattern was found in studies that test memory after a delay [@james2015computer; @kessler2020visuospatial; @asselbergs2024effectiveness].
-Because the test format in the unguided and the deliberate conditions differed, a reduction in intrusions with preserved recognition therefore does not, by itself, show that voluntary memory is selectively preserved.
+Many prominent demonstrations of selective interference compare diary or laboratory intrusion reports with recognition tests [@holmes2009can; @holmes2010key; @james2015computer; @lau2021selectively].
+Such comparisons confound retrieval intentionality with test format.
+Intrusion reports depend on film material coming to mind, whereas recognition measures the ability to judge material supplied by the test.
+Preserved recognition therefore does not establish that film material remains similarly accessible during deliberate recall or that intentionality alone produced the dissociation.
 
-Evidence is less consistent in designs that make intrusion and voluntary-memory measures more comparable.
-Free recall and specific-probe questions make voluntary-memory performance depend on bringing film material to mind, matching a central requirement of intrusion reports [@lau2019intrusive].
-Laboratory intrusion tasks collect reports during a defined period, making the setting more comparable to laboratory voluntary-memory tests than a week-long diary [@lau2019intrusive; @lau2021selectively].
-Some designs still show reduced diary or laboratory intrusion reports with relatively preserved voluntary memory [@lau2019intrusive; @lau2021selectively].
-A stricter matched-report design did not find the predicted reduction in involuntary memory [@mcconnell2026testing].
-
-Variation across retrieval formats motivates a mechanistic account of when and why selective interference appears.
-Recognition-based comparisons show selective interference more consistently but confound retrieval intentionality with test format.
-More methodologically robust designs where test format is better matched observe selective interference less consistently.
-A complete account must therefore explain both how deliberate recall can remain preserved while unguided recall is reduced, as well as why selective interference depends on how retrieval is cued and measured.
+Free recall permits a more direct comparison with intrusion reports because both outcomes require film material to enter memory search before it can be reported.
+Selective interference has been observed with free recall, showing that the effect is not confined to recognition-based comparisons [@lau2019intrusive].
+Intrusion reports and free recall are not equivalent, but this comparison more directly tests whether goal-directed retrieval preserves access to film material.
+Accordingly, we use unguided versus deliberate recall to examine retrieval control and deliberate recognition to examine the separate contribution of test format.
+The resulting challenge is to explain both forms of relative preservation within a common episodic memory system.
 
 
 # A Retrieved-Context Account of Selective Interference
@@ -269,18 +264,16 @@ This candidate tests whether limiting the carryover of off-target retrieval can 
 
 ## Deliberate Recognition
 
-The control processes considered above all operate within a search in which film material must still be selected from competing candidates.
-Deliberate recognition changes that requirement because the test presents a film statement or image for judgment.
-Preserved recognition may therefore indicate that film memory escaped interference, but it may instead follow because the test no longer requires a film item to win selection during search.
+The control mechanisms considered above alter context-guided recall.
+Recognition instead uses the model's bidirectional item-context associations in the opposite direction.
+During recall, current context cues candidate items, so a film item must be selected from candidates that can include task competitors.
+During recognition, a presented probe reinstates context associated with earlier encounters, and recognition evidence depends on the match between that context and the context active at test [@healey2016four; @jin2024theory].
+Task items therefore do not compete to be selected in place of the film probe, although task learning may still affect the contextual evidence it retrieves.
+Recognition thus bypasses competition during context-to-item selection while remaining sensitive to any effects on the context retrieved by the probe.
 
-Retrieved-context accounts formalize recognition by allowing a presented probe to reinstate context associated with earlier encounters, with recognition evidence determined by the match between that context and the context active at test [@healey2016four; @jin2024theory].
-Task competitors can reduce recall by lowering the chance that a film item is selected from the candidates supported by current context.
-In recognition, the presented film item need not first win that competition, although task learning may still affect the contextual evidence it retrieves.
-Relatively preserved recognition would therefore identify candidate selection as an important source of interference rather than establish that film memory was unaffected.
-
-Selective interference can thus arise from an interaction between learning and retrieval.
-Task events can become competitors when they are linked to film-associated context, but whether that competition reduces film retrieval depends on how retrieval is controlled and the information provided at test.
-The dissociation between intrusive and voluntary remembering can therefore emerge from ordinary episodic learning and retrieval, without requiring the two forms of remembering to depend on separately vulnerable representations.
+Taken together, the account separates what is learned from how it is later retrieved.
+Task events can become linked to film-associated context, while retrieval goals and test operations determine how strongly those associations affect access to film material.
+Selective interference can therefore emerge within a common episodic memory system without requiring intrusive and voluntary remembering to depend on separately vulnerable representations.
 
 # Model Specification
 
@@ -859,7 +852,7 @@ They therefore cannot determine whether vigilance-intrusion-task monitoring enga
 Mixed findings from more closely matched designs should motivate direct manipulations of cueing and retrieval goals rather than being explained retrospectively as consequences of those factors [@mcconnell2026testing].
 
 Related procedures have been extended beyond analogue trauma films to real-life and occupational trauma, including motor vehicle accidents, emergency caesarean section, refugee trauma, and health-care work during COVID-19 [@iyadurai2018preventing; @horsch2017reducing; @kanstrup2021single; @iyadurai2023reducing; @ramineni2023treating; @kanstrup2024guided; @beckenstrom2026digital].
-Broader reviews and replication attempts likewise caution that selective-interference effects are heterogeneous across trauma-film studies [@asselbergs2023systematic; @varma2024experimental; @wessel2025evidence; @hemi2023cognitive].
+Evidence for selective interference is heterogeneous across trauma-film studies, as indicated by individual null findings, systematic reviews, and replication attempts [@asselbergs2023systematic; @brennen2021investigating; @hemi2023cognitive; @varma2024experimental; @wessel2025evidence].
 The clinical reach of these procedures makes their mechanisms consequential, while the mixed evidence limits the conclusions that can be drawn from any single positive dissociation.
 Real-world extensions do not themselves establish that retrieved-context competition explains intervention effects outside the laboratory.
 

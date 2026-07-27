@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1200" width="1680" height="1200" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow-neutral" markerWidth="8" markerHeight="6" refX="7.5" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#3D4B5C"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="7.5" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1764D8"/>
+    </marker>
+    <marker id="arrow-link-blue" markerWidth="6" markerHeight="5" refX="5.5" refY="2.5" orient="auto">
+      <path d="M0,0 L6,2.5 L0,5 Z" fill="#1764D8"/>
+    </marker>
+    <marker id="arrow-link-gray" markerWidth="6" markerHeight="5" refX="5.5" refY="2.5" orient="auto">
+      <path d="M0,0 L6,2.5 L0,5 Z" fill="#7B8490"/>
+    </marker>
+    <marker id="arrow-link-task" markerWidth="6" markerHeight="5" refX="5.5" refY="2.5" orient="auto">
+      <path d="M0,0 L6,2.5 L0,5 Z" fill="#D96B2B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1680" height="1200" fill="white"/>
+
+  <!-- Panel A is the pre-existing Figure 3 panel, unchanged. -->
+  <text x="38" y="62" font-size="44" font-weight="700" fill="#111111">A</text>
+  <image href="panel_item_context_associations_no_letter.svg" x="470" y="10" width="740" height="500"/>
+
+  <line x1="40" y1="525" x2="1640" y2="525" stroke="#D8DEE7" stroke-width="2"/>
+
+  <!-- Panel B: compact continuous context sequence with reminder branch. -->
+  <text x="38" y="590" font-size="44" font-weight="700" fill="#111111">B</text>
+  <text x="840" y="590" font-size="34" font-weight="700" fill="#111111" text-anchor="middle">Context similarity during encoding</text>
+
+  <text x="310" y="645" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Film encoding</text>
+  <text x="740" y="645" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Filler events / delay</text>
+  <text x="1040" y="645" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Pre-task condition</text>
+  <text x="1380" y="645" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Task encoding</text>
+
+  <!-- Subtle group rules distinguish the two pre-task encoding phases. -->
+  <line x1="125" y1="674" x2="495" y2="674" stroke="#B6CCEC" stroke-width="3" stroke-linecap="round"/>
+  <line x1="550" y1="674" x2="930" y2="674" stroke="#D3DAE3" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Context evolves continuously through film and filler events. -->
+  <rect x="129" y="700" width="82" height="60" rx="12" fill="#79A9E7" stroke="#1764D8" stroke-width="4"/>
+  <rect x="269" y="700" width="82" height="60" rx="12" fill="#8DB5E7" stroke="#1764D8" stroke-width="4"/>
+  <rect x="409" y="700" width="82" height="60" rx="12" fill="#A3C2E7" stroke="#1764D8" stroke-width="4"/>
+  <rect x="559" y="700" width="82" height="60" rx="12" fill="#B8CDE3" stroke="#617B9D" stroke-width="4"/>
+  <rect x="699" y="700" width="82" height="60" rx="12" fill="#D0D9E3" stroke="#657080" stroke-width="4"/>
+  <rect x="839" y="700" width="82" height="60" rx="12" fill="#E4E7EB" stroke="#657080" stroke-width="4"/>
+  <text x="170" y="738" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">C1</text>
+  <text x="310" y="738" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">C2</text>
+  <text x="450" y="738" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">C3</text>
+  <text x="600" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C4</text>
+  <text x="740" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C5</text>
+  <text x="880" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C6</text>
+
+  <line x1="215" y1="730" x2="260" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="355" y1="730" x2="400" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="495" y1="730" x2="550" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="645" y1="730" x2="690" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="785" y1="730" x2="830" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+
+  <line x1="170" y1="764" x2="170" y2="801" stroke="#1764D8" stroke-width="2.5" marker-end="url(#arrow-link-blue)"/>
+  <line x1="310" y1="764" x2="310" y2="801" stroke="#1764D8" stroke-width="2.5" marker-end="url(#arrow-link-blue)"/>
+  <line x1="450" y1="764" x2="450" y2="801" stroke="#1764D8" stroke-width="2.5" marker-end="url(#arrow-link-blue)"/>
+  <line x1="600" y1="764" x2="600" y2="801" stroke="#7B8490" stroke-width="2.5" marker-end="url(#arrow-link-gray)"/>
+  <line x1="740" y1="764" x2="740" y2="801" stroke="#7B8490" stroke-width="2.5" marker-end="url(#arrow-link-gray)"/>
+  <line x1="880" y1="764" x2="880" y2="801" stroke="#7B8490" stroke-width="2.5" marker-end="url(#arrow-link-gray)"/>
+  <circle cx="170" cy="840" r="32" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <circle cx="310" cy="840" r="32" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <circle cx="450" cy="840" r="32" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <circle cx="600" cy="840" r="32" fill="white" stroke="#7B8490" stroke-width="4"/>
+  <circle cx="740" cy="840" r="32" fill="white" stroke="#7B8490" stroke-width="4"/>
+  <circle cx="880" cy="840" r="32" fill="white" stroke="#7B8490" stroke-width="4"/>
+  <text x="170" y="849" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+  <text x="310" y="849" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+  <text x="450" y="849" font-size="25" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+  <text x="600" y="849" font-size="25" font-weight="700" fill="#657080" text-anchor="middle">D1</text>
+  <text x="740" y="849" font-size="25" font-weight="700" fill="#657080" text-anchor="middle">D2</text>
+  <text x="880" y="849" font-size="25" font-weight="700" fill="#657080" text-anchor="middle">D3</text>
+
+  <!-- No reminder: the same context trajectory continues across task encoding. -->
+  <circle cx="950" cy="730" r="6" fill="#3D4B5C"/>
+  <text x="1040" y="700" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">No reminder</text>
+  <line x1="925" y1="730" x2="940" y2="730" stroke="#3D4B5C" stroke-width="3"/>
+  <line x1="956" y1="730" x2="1180" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+
+  <rect x="1189" y="700" width="82" height="60" rx="12" fill="#E4E7EB" stroke="#657080" stroke-width="4"/>
+  <rect x="1339" y="700" width="82" height="60" rx="12" fill="#E8EAED" stroke="#657080" stroke-width="4"/>
+  <rect x="1489" y="700" width="82" height="60" rx="12" fill="#ECEDEF" stroke="#657080" stroke-width="4"/>
+  <text x="1230" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C7</text>
+  <text x="1380" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C8</text>
+  <text x="1530" y="738" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C9</text>
+  <line x1="1275" y1="730" x2="1330" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="1425" y1="730" x2="1480" y2="730" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+
+  <line x1="1230" y1="764" x2="1230" y2="801" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <line x1="1380" y1="764" x2="1380" y2="801" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <line x1="1530" y1="764" x2="1530" y2="801" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <circle cx="1230" cy="840" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1380" cy="840" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1530" cy="840" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <text x="1230" y="849" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+  <text x="1380" y="849" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+  <text x="1530" y="849" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+  <!-- Reminder branch: blue reinstatement returns context toward the film state. -->
+  <polyline points="950,736 950,1030 995,1030" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round"/>
+  <text x="1040" y="980" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Film reminder</text>
+  <polygon points="1040,988 1082,1030 1040,1072 998,1030" fill="#DCEBFF" stroke="#1764D8" stroke-width="4"/>
+  <text x="1040" y="1039" font-size="26" font-weight="700" fill="#1764D8" text-anchor="middle">R</text>
+  <line x1="1086" y1="1030" x2="1180" y2="1030" stroke="#1764D8" stroke-width="4" marker-end="url(#arrow-blue)"/>
+
+  <rect x="1189" y="1000" width="82" height="60" rx="12" fill="#79A9E7" stroke="#1764D8" stroke-width="4"/>
+  <rect x="1339" y="1000" width="82" height="60" rx="12" fill="#A0C0E5" stroke="#1764D8" stroke-width="4"/>
+  <rect x="1489" y="1000" width="82" height="60" rx="12" fill="#C4D2E1" stroke="#617B9D" stroke-width="4"/>
+  <text x="1230" y="1038" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">C7</text>
+  <text x="1380" y="1038" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">C8</text>
+  <text x="1530" y="1038" font-size="25" font-weight="700" fill="#3D4B5C" text-anchor="middle">C9</text>
+  <line x1="1275" y1="1030" x2="1330" y2="1030" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <line x1="1425" y1="1030" x2="1480" y2="1030" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+
+  <line x1="1230" y1="1064" x2="1230" y2="1101" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <line x1="1380" y1="1064" x2="1380" y2="1101" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <line x1="1530" y1="1064" x2="1530" y2="1101" stroke="#D96B2B" stroke-width="2.5" marker-end="url(#arrow-link-task)"/>
+  <circle cx="1230" cy="1140" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1380" cy="1140" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1530" cy="1140" r="32" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <text x="1230" y="1149" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+  <text x="1380" y="1149" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+  <text x="1530" y="1149" font-size="25" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+</svg>

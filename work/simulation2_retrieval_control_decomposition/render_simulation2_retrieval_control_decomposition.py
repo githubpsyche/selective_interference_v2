@@ -67,6 +67,10 @@ ENDPOINTS = [
     ("No reminder + weak task encoding", "Low interference", LOW_FILL, LOW_EDGE),
     ("Film reminder + strong task encoding", "High interference", HIGH_FILL, HIGH_EDGE),
 ]
+ENDPOINT_DISPLAY_LABELS = {
+    "No reminder + weak task encoding": "No reminder + weaker task associations",
+    "Film reminder + strong task encoding": "Film reminder + stronger task associations",
+}
 
 DISPLAY_LABELS = {
     1: "Unguided\nfilm recall",
@@ -320,7 +324,15 @@ def draw_panel_a(summary: list[dict], center_values: list[float]) -> list[str]:
     entry_xs = [legend_center - 475, legend_center + 135]
     for (endpoint, _, fill, edge), x in zip(ENDPOINTS, entry_xs, strict=True):
         parts.append(svg_rect(x, legend_y - patch + 6, patch, patch, fill, edge, BAR_STROKE))
-        parts.append(svg_text(x + patch + 14, legend_y, endpoint, LEGEND_SIZE, anchor="start"))
+        parts.append(
+            svg_text(
+                x + patch + 14,
+                legend_y,
+                ENDPOINT_DISPLAY_LABELS[endpoint],
+                LEGEND_SIZE,
+                anchor="start",
+            )
+        )
     parts.extend(draw_grid(PLOT_A_Y, PLOT_A_H, Y_MAX_A))
     parts.append(draw_ylabel(PLOT_A_Y, PLOT_A_H, "Mean film items recalled"))
     for row, center_x in zip(summary, center_values, strict=True):

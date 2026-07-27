@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1200" width="1680" height="1200" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow-neutral" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#3D4B5C"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#178A4C"/>
+    </marker>
+    <marker id="arrow-association-small" markerWidth="7" markerHeight="6" refX="6.5" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#A83232"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1680" height="1200" fill="white"/>
+
+  <!-- Panel A: restored from the pre-existing Figure 3 -->
+  <text x="38" y="62" font-size="44" font-weight="700" fill="#111111">A</text>
+  <g transform="translate(470,10)">
+    <text x="370" y="62" font-size="27" font-weight="700" fill="#111111" text-anchor="middle">Item-context associations</text>
+
+    <rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Context (C)</text>
+    <rect x="196" y="126" width="348" height="52" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
+    <line x1="370" y1="126" x2="370" y2="178" stroke="#3D4B5C" stroke-width="2"/>
+    <text x="283" y="160" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Temporal</text>
+    <text x="457" y="146" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
+      <tspan x="457" dy="0">Source/</tspan>
+      <tspan x="457" dy="21">emotional</tspan>
+    </text>
+
+    <rect x="162" y="336" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">Features / items (F)</text>
+    <circle cx="250" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="292" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
+    <circle cx="334" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
+    <text x="250" y="411" font-size="16" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+    <text x="292" y="411" font-size="16" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+    <text x="334" y="411" font-size="16" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+    <text x="370" y="411" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">...</text>
+    <circle cx="406" cy="405" r="17" fill="white" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="448" cy="405" r="17" fill="white" stroke="#D96B2B" stroke-width="3"/>
+    <circle cx="490" cy="405" r="17" fill="white" stroke="#D96B2B" stroke-width="3"/>
+    <text x="406" y="411" font-size="16" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+    <text x="448" y="411" font-size="16" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+    <text x="490" y="411" font-size="16" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+    <rect x="10" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="110" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">
+      <tspan x="110" dy="0">Feature-to-</tspan>
+      <tspan x="110" dy="28">context memory</tspan>
+      <tspan x="110" dy="28">(MFC)</tspan>
+    </text>
+
+    <rect x="530" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
+    <text x="630" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">
+      <tspan x="630" dy="0">Context-to-</tspan>
+      <tspan x="630" dy="28">feature memory</tspan>
+      <tspan x="630" dy="28">(MCF)</tspan>
+    </text>
+
+    <polyline points="110,210 110,126 162,126" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+    <polyline points="578,126 630,126 630,210" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+    <polyline points="162,392 110,392 110,320" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+    <polyline points="630,320 630,392 578,392" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+    <text x="102" y="75" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">
+      <tspan x="102" dy="0">Reinstates</tspan>
+      <tspan x="102" dy="24">context</tspan>
+    </text>
+    <text x="660" y="412" font-size="21" font-weight="700" fill="#3D4B5C" text-anchor="middle">
+      <tspan x="660" dy="0">Cues</tspan>
+      <tspan x="660" dy="24">candidates</tspan>
+    </text>
+  </g>
+
+  <line x1="40" y1="525" x2="1640" y2="525" stroke="#D8DEE7" stroke-width="2"/>
+
+  <!-- Panel B: shared sequence with a reminder fork -->
+  <text x="38" y="595" font-size="44" font-weight="700" fill="#111111">B</text>
+  <text x="840" y="595" font-size="34" font-weight="700" fill="#111111" text-anchor="middle">Context similarity during encoding</text>
+
+  <text x="330" y="665" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Film encoding</text>
+  <text x="605" y="665" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Break / delay</text>
+  <text x="945" y="665" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Pre-task condition</text>
+  <text x="1270" y="665" font-size="27" font-weight="700" fill="#3D4B5C" text-anchor="middle">Task encoding</text>
+
+  <!-- Common film and delay sequence -->
+  <circle cx="250" cy="840" r="27" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <circle cx="330" cy="840" r="27" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <circle cx="410" cy="840" r="27" fill="white" stroke="#1764D8" stroke-width="4"/>
+  <text x="250" y="849" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F1</text>
+  <text x="330" y="849" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F2</text>
+  <text x="410" y="849" font-size="22" font-weight="700" fill="#1764D8" text-anchor="middle">F3</text>
+
+  <line x1="445" y1="840" x2="500" y2="840" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+
+  <circle cx="545" cy="840" r="27" fill="#F3F4F6" stroke="#7B8490" stroke-width="4"/>
+  <circle cx="625" cy="840" r="27" fill="#F3F4F6" stroke="#7B8490" stroke-width="4"/>
+  <circle cx="705" cy="840" r="27" fill="#F3F4F6" stroke="#7B8490" stroke-width="4"/>
+  <text x="545" y="849" font-size="22" font-weight="700" fill="#657080" text-anchor="middle">D1</text>
+  <text x="625" y="849" font-size="22" font-weight="700" fill="#657080" text-anchor="middle">D2</text>
+  <text x="705" y="849" font-size="22" font-weight="700" fill="#657080" text-anchor="middle">D3</text>
+
+  <line x1="740" y1="840" x2="795" y2="840" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow-neutral)"/>
+  <circle cx="825" cy="840" r="6" fill="#3D4B5C"/>
+
+  <!-- No-reminder branch -->
+  <polyline points="825,840 825,745 1110,745" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <text x="940" y="724" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">No reminder</text>
+
+  <rect x="1120" y="720" width="60" height="48" rx="9" fill="#F3F4F6" stroke="#657080" stroke-width="3"/>
+  <rect x="1240" y="720" width="60" height="48" rx="9" fill="#F3F4F6" stroke="#657080" stroke-width="3"/>
+  <rect x="1360" y="720" width="60" height="48" rx="9" fill="#F3F4F6" stroke="#657080" stroke-width="3"/>
+  <text x="1150" y="751" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">C4</text>
+  <text x="1270" y="751" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">C5</text>
+  <text x="1390" y="751" font-size="22" font-weight="700" fill="#3D4B5C" text-anchor="middle">C6</text>
+  <line x1="1150" y1="771" x2="1150" y2="799" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <line x1="1270" y1="771" x2="1270" y2="799" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <line x1="1390" y1="771" x2="1390" y2="799" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <circle cx="1150" cy="830" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1270" cy="830" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1390" cy="830" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <text x="1150" y="838" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+  <text x="1270" y="838" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+  <text x="1390" y="838" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+
+  <!-- Reminder branch -->
+  <polyline points="825,840 825,1015 900,1015" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round"/>
+  <text x="930" y="965" font-size="25" font-weight="700" fill="#111111" text-anchor="middle">Film reminder</text>
+  <polygon points="950,976 990,1016 950,1056 910,1016" fill="#F1F9F4" stroke="#178A4C" stroke-width="4"/>
+  <text x="950" y="1025" font-size="25" font-weight="700" fill="#178A4C" text-anchor="middle">R</text>
+  <line x1="994" y1="1016" x2="1110" y2="1016" stroke="#178A4C" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="1037" y="996" font-size="20" font-weight="700" fill="#178A4C" text-anchor="middle">MFC</text>
+
+  <rect x="1120" y="992" width="60" height="48" rx="9" fill="#DCEBFF" stroke="#1764D8" stroke-width="4"/>
+  <rect x="1240" y="992" width="60" height="48" rx="9" fill="#DCEBFF" stroke="#1764D8" stroke-width="4"/>
+  <rect x="1360" y="992" width="60" height="48" rx="9" fill="#DCEBFF" stroke="#1764D8" stroke-width="4"/>
+  <text x="1150" y="1023" font-size="22" font-weight="700" fill="#111111" text-anchor="middle">C4</text>
+  <text x="1270" y="1023" font-size="22" font-weight="700" fill="#111111" text-anchor="middle">C5</text>
+  <text x="1390" y="1023" font-size="22" font-weight="700" fill="#111111" text-anchor="middle">C6</text>
+  <line x1="1150" y1="1043" x2="1150" y2="1071" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <line x1="1270" y1="1043" x2="1270" y2="1071" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <line x1="1390" y1="1043" x2="1390" y2="1071" stroke="#A83232" stroke-width="2.5" marker-end="url(#arrow-association-small)"/>
+  <circle cx="1150" cy="1102" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1270" cy="1102" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <circle cx="1390" cy="1102" r="25" fill="white" stroke="#D96B2B" stroke-width="4"/>
+  <text x="1150" y="1110" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T1</text>
+  <text x="1270" y="1110" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T2</text>
+  <text x="1390" y="1110" font-size="22" font-weight="700" fill="#D96B2B" text-anchor="middle">T3</text>
+</svg>
