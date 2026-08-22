@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "batch_row_count": {
+      "expected": 6160,
+      "observed": 6160,
+      "pass": true
+    },
+    "category_zero_duplicates_baseline": {
+      "maximum_absolute_error": 0.0,
+      "pass": true
+    },
+    "cell_count": {
+      "expected": 616,
+      "observed": 616,
+      "pass": true
+    },
+    "condition_completeness": {
+      "minimum_conditions_per_parameter_batch": 4,
+      "pass": true
+    },
+    "endpoint_estimand_identity": {
+      "maximum_absolute_error": 0.0,
+      "pass": true
+    },
+    "film_total_range": {
+      "maximum": 7.716,
+      "minimum": 0.768,
+      "pass": true
+    },
+    "full_comparator_zero_duplicates_grid_anchor": {
+      "maximum_absolute_error": 0.0,
+      "pass": true
+    },
+    "primary_estimand_identity": {
+      "maximum_absolute_error": 0.0,
+      "pass": true
+    },
+    "realized_beta_matches_request": {
+      "maximum_absolute_error": 2.384185793236071e-08,
+      "pass": true
+    },
+    "spc_probability_range": {
+      "maximum": 0.64,
+      "minimum": 0.0,
+      "pass": true
+    },
+    "spc_row_count": {
+      "expected": 39424,
+      "observed": 39424,
+      "pass": true
+    }
+  },
+  "pass": true
+}

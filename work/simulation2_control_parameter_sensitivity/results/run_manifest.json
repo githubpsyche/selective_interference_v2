@@ -1,0 +1,330 @@
+{
+  "active_spec": {
+    "analysis_id": "simulation2_control_parameter_sensitivity",
+    "category_cue_comparators": {
+      "families": [
+        {
+          "beta_start_effective": 0.0,
+          "description": "Isolates the maintained category cue against the unguided baseline.",
+          "kappa": 1.0,
+          "mechanism_family": "category_cue_only"
+        },
+        {
+          "beta_start_effective": "fitted",
+          "description": "Adds the category cue to the manuscript's fitted start drift and maximal-monitoring setting.",
+          "kappa": 0.0,
+          "mechanism_family": "category_cue_plus_current_other_controls"
+        }
+      ],
+      "film_item_support_boost_values": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    "claim_scope": {
+      "excluded": "This analysis does not prove a statement over every point in the continuous parameter space, estimate parameters from trauma-film data, quantify uncertainty in the fitted base parameters, or establish psychological plausibility from simulated outcomes alone.",
+      "included": "A finite-grid global sensitivity analysis over the complete admissible [0, 1] domains of effective start-of-film drift and rejected-item context carryover, under the fixed fitted eCMR regime used by the manuscript."
+    },
+    "conditions": [
+      {
+        "condition_id": "no_reminder_weak",
+        "reminder_condition": "No reminder",
+        "reminder_drift_scale": 0.0,
+        "reminder_start_drift_scale": 0.0,
+        "task_condition": "Weak task encoding",
+        "task_mcf_scale": 1.0
+      },
+      {
+        "condition_id": "no_reminder_strong",
+        "reminder_condition": "No reminder",
+        "reminder_drift_scale": 0.0,
+        "reminder_start_drift_scale": 0.0,
+        "task_condition": "Strong task encoding",
+        "task_mcf_scale": 2.0
+      },
+      {
+        "condition_id": "reminder_weak",
+        "reminder_condition": "With reminder",
+        "reminder_drift_scale": 1.0,
+        "reminder_start_drift_scale": 1.0,
+        "task_condition": "Weak task encoding",
+        "task_mcf_scale": 1.0
+      },
+      {
+        "condition_id": "reminder_strong",
+        "reminder_condition": "With reminder",
+        "reminder_drift_scale": 1.0,
+        "reminder_start_drift_scale": 1.0,
+        "task_condition": "Strong task encoding",
+        "task_mcf_scale": 2.0
+      }
+    ],
+    "estimands": {
+      "endpoint_loss": "L[c] = Y[c, no_reminder, weak] - Y[c, with_reminder, strong]. This is the low-versus-high contrast displayed in the current control-decomposition figure.",
+      "endpoint_protection": "P_endpoint[c] = L[unguided] - L[c]. This secondary descriptive estimand directly tests whether a setting reduces the loss shown in the current decomposition figure, but it does not isolate the reminder-specific selective-interference interaction.",
+      "generic_recall_gain": "G[c] = Y[c, no_reminder, weak] - Y[unguided, no_reminder, weak]",
+      "high_interference_gain": "H[c] = Y[c, with_reminder, strong] - Y[unguided, with_reminder, strong]",
+      "interpretation_rule": "Primary three-way protection, within-reminder protection, endpoint protection, and generic gain are reported separately. A positive secondary contrast cannot be described as reminder-specific selective protection unless the primary three-way contrast is also positive. No weighted score, tuned pass threshold, or post-hoc winner rule is used.",
+      "no_reminder_condition_protection": "P_no[c] = D[unguided, no_reminder] - D[c, no_reminder]",
+      "notation": "Y[c, r, t] is mean film items recalled for retrieval-control configuration c, reminder r, and task strength t.",
+      "primary_selective_protection": "P[c] = S[unguided] - S[c]. This is the retrieval-control x reminder x task contrast; positive values indicate selective protection relative to no control.",
+      "reminder_condition_protection": "P_rem[c] = D[unguided, with_reminder] - D[c, with_reminder]",
+      "reminder_specific_sensitivity": "S[c] = D[c, with_reminder] - D[c, no_reminder]",
+      "task_cost": "D[c, r] = Y[c, r, weak] - Y[c, r, strong]"
+    },
+    "external_recall_cues": {
+      "applied_to_all_conditions": true,
+      "cue_interval": 4,
+      "film_cue_reinstatement": 0.9,
+      "first_cue_after": 0
+    },
+    "fit_path": "work/fitting/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json",
+    "fixed_scales": {
+      "break_drift_scale": 1.0,
+      "break_mcf_scale": 1.0,
+      "filler_drift_scale": 1.0,
+      "filler_mcf_scale": 1.0,
+      "film_source_start_drift_rate": 0.0,
+      "primacy_decay": 1.5,
+      "primacy_scale": 0.1,
+      "recall_drift_scale": 1.0,
+      "source_learning_baseline": 0.05,
+      "target_recall_drift_scale": 1.0,
+      "tau_scale": 1.0
+    },
+    "mechanism_diagnostics": {
+      "all_mechanisms": "Full film serial-position curves for declared representative settings in the reminder-plus-strong-task condition.",
+      "monitoring": "Probability that the next nonzero output is a film item conditional on the current output being a non-film item and recall continuing.",
+      "start_reinstatement": "Film recall probability by input position, including early (1-5), middle (6-11), and late (12-16) summaries."
+    },
+    "no_category_grid": {
+      "beta_start_effective_values": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        "fitted",
+        0.8,
+        0.9,
+        1.0
+      ],
+      "film_item_support_boost": 0.0,
+      "kappa_values": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "mechanism_family": "no_category_grid",
+      "parameter_interpretation": {
+        "beta_start_effective": "Actual drift toward the model's start-of-film temporal context. Zero disables start reinstatement; one replaces the retrieval context completely.",
+        "kappa": "Proportion of the ordinary retrieved-item context update retained after a sampled non-film item. One disables monitoring; zero is maximal monitoring.",
+        "monitoring_strength": "1 - kappa"
+      }
+    },
+    "question": "Can start-of-film context reinstatement and retrieval monitoring, without a maintained category cue, produce selective protection anywhere in their admissible parameter space, and if so is that protection robust or accompanied by a generic increase in film recall?",
+    "schema_version": "1.0.0",
+    "selection_policy": "All grid points and both comparator curves are retained and reported. The analysis does not select settings by a weighted objective or tune parameters to recreate a target figure.",
+    "simulation": {
+      "batch_count": 10,
+      "cache_after": "filler",
+      "common_random_numbers": true,
+      "experiment_count": 5000,
+      "film_emotional": true,
+      "interference_emotional": false,
+      "master_seed": 23000,
+      "max_recall": 48,
+      "n_break": 16,
+      "n_filler": 16,
+      "n_film": 16,
+      "n_interference": 16
+    },
+    "uncertainty": {
+      "interval": "Two-sided 95% Student-t interval over paired batch estimands.",
+      "method": "Ten independently keyed Monte Carlo batches, reused as common random numbers in every model cell.",
+      "scope": "Intervals quantify Monte Carlo error only, not empirical sampling error or parameter uncertainty."
+    }
+  },
+  "analysis_id": "simulation2_control_parameter_sensitivity",
+  "command": [
+    "/Users/jordangunn/workspace/selective_interference_v2/.venv/bin/python",
+    "work/simulation2_control_parameter_sensitivity/run_parameter_sensitivity.py",
+    "--overwrite"
+  ],
+  "created_utc": "2026-08-10T15:30:51.549409+00:00",
+  "elapsed_seconds": 617.1233588750474,
+  "environment": {
+    "jax": "0.8.3",
+    "jax_devices": [
+      "TFRT_CPU_0"
+    ],
+    "jaxcmr": "0.1.1",
+    "jaxlib": "0.8.3",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.12.13 (main, Jun 23 2026, 15:44:24) [Clang 22.1.3 ]",
+    "scipy": "1.17.1"
+  },
+  "fitted_parameters": {
+    "choice_sensitivity": 3.561742067337036,
+    "n_parameter_sets": 1,
+    "start_drift_rate": 0.7657870054244995
+  },
+  "git": {
+    "commit": "70aca8d9688cba624af23c7322e69d80ddd811e2",
+    "status_porcelain": " M index.qmd\n M notes/selective_interference_clean_24_07_2026_rh.docx\n M references.bib\n?? \"notes/EH selective_interference_clean_24_07_2026[1].docx\"\n?? notes/discussion_experiment_proposal.md\n?? notes/meeting_notes_august.md\n?? notes/nearby_designs.md\n?? work/general_memory_followup/\n?? work/simulation2_control_parameter_sensitivity/"
+  },
+  "output_dir": "/Users/jordangunn/workspace/selective_interference_v2/work/simulation2_control_parameter_sensitivity/results",
+  "output_sha256": {
+    "RESULTS.md": "298c05b99a67aacb9c57e92d09070fd984eb89a0b42c8c775d8bfb27361959aa",
+    "batch_summaries.csv": "4949636bd3e671a7dbd332dc7de96901f4f8604f1f7d7eddaa5f3c1548beb51a",
+    "cell_manifest.csv": "c4eca74ecd8adf30b51ef53f69559b0574b4143f087eac0fb4fcc6d6eea68b42",
+    "contrast_sensitivity.pdf": "88607a5db84e61b8eb5ef63f1c7f9228638a5ed7c32380427f85ac4f1a3a1e61",
+    "contrast_sensitivity.png": "89404aab806e7387f08e8b1e58ad1ce6a8ab68c67451375192ce0a218e9fa8da",
+    "contrast_sensitivity.svg": "0c000cbc97063dae9c8baa276fc2090670e068491538dc4cb98cfce8b18b65cc",
+    "estimand_batches.csv": "8493c3630e9cd8bca23c0ab451c86621c4b75d753fd762626f951e65e0fd4b10",
+    "estimand_summary.csv": "251267accf65702678b09eb86b170ef7738f2b9460a480fddfe76dba93a8ee7e",
+    "parameter_sensitivity.pdf": "a9c0f1b8780237a7ceffc9b667da6e0d40575690394151a98950eead521c1451",
+    "parameter_sensitivity.png": "3210d1729619e50afe9806da0c7230b3086ac629223d466eccf6a10fb96c4d80",
+    "parameter_sensitivity.svg": "8007bf6bce7ce8d907a3e7e0e248b3196c2d5675ee686279847642d7c7fd300a",
+    "representative_diagnostics.csv": "b6ac691e78c60b36f41b79e3e1a69a496a22896e6ec6410ecf54dfeff56a4ec2",
+    "robustness_summary.json": "afd4ef728db6ac0912dfa4414e017e1edb98e01e11cf56369866d8146a6d97a4",
+    "spc.csv": "7fb1f2bed614ee8f9f8fbc9bc1b76ed645b5dfb9a579438f3ee63bf9616fe3e9",
+    "verification.json": "ad96e069039f1ef40b0c2610fc39f36a83da260fe4be72dd383991d11bf3ba0a"
+  },
+  "overrides": {},
+  "project_root": "/Users/jordangunn/workspace/selective_interference_v2",
+  "rng": {
+    "batches": [
+      {
+        "batch_id": 0,
+        "fold_in_index": 0,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          365031109,
+          3183072915
+        ]
+      },
+      {
+        "batch_id": 1,
+        "fold_in_index": 1,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          1134963979,
+          353548378
+        ]
+      },
+      {
+        "batch_id": 2,
+        "fold_in_index": 2,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          2293493617,
+          1396339831
+        ]
+      },
+      {
+        "batch_id": 3,
+        "fold_in_index": 3,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          4259539213,
+          2875917932
+        ]
+      },
+      {
+        "batch_id": 4,
+        "fold_in_index": 4,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          512872770,
+          4280599935
+        ]
+      },
+      {
+        "batch_id": 5,
+        "fold_in_index": 5,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          3487473263,
+          3242511753
+        ]
+      },
+      {
+        "batch_id": 6,
+        "fold_in_index": 6,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          3818813718,
+          3354435285
+        ]
+      },
+      {
+        "batch_id": 7,
+        "fold_in_index": 7,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          1756009427,
+          3813020063
+        ]
+      },
+      {
+        "batch_id": 8,
+        "fold_in_index": 8,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          1300721510,
+          206640279
+        ]
+      },
+      {
+        "batch_id": 9,
+        "fold_in_index": 9,
+        "replications_per_subject": 500,
+        "root_key_uint32": [
+          155635164,
+          2381913881
+        ]
+      }
+    ],
+    "common_random_numbers_across_all_cells": true,
+    "implementation": "jax.random.PRNGKey + fold_in(batch_id) + split"
+  },
+  "schema_version": "1.0.0",
+  "source_sha256": {
+    "selective_interference_v2/cmr.py": "9fe0ec62ebfa471184e1968fea238fe075e645580e3f40182f6d6ddb8039637c",
+    "selective_interference_v2/paradigm.py": "0ad025008d82ccc0abfb5e5bb189352c57dbd1ef8ff641e0f7405bdef754e66a",
+    "selective_interference_v2/pipeline.py": "79ba04fdf4220552acc49c3622ded2129e70c77b629abd7d4a8c7649f0560d55",
+    "selective_interference_v2/remapping.py": "02d4317beff39c9673faacdb6ab957e3a006d364c34c9dcf9ccec8b8977d6e2f",
+    "work/fitting/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json": "f53f01550f2b6f26e85103e9c1bf5dade221cd94f03bba05777a2b6ce639373f",
+    "work/simulation2_control_parameter_sensitivity/FEEDBACK_TRACE.md": "0a94a34f88039643c1bc173b3194e4ccd1c5c458397b0331b89fc842b5f4ad6d",
+    "work/simulation2_control_parameter_sensitivity/METHODS.md": "065440665eca364cd1cefab7885080f6fe4cb7ead8cb1abf053d3eaa8ef41013",
+    "work/simulation2_control_parameter_sensitivity/README.md": "3cf6ccc20eb398984be723ffe9f4c537af2198a1fa4f6f5535b596d0bca1271e",
+    "work/simulation2_control_parameter_sensitivity/analysis_spec.json": "3cfd99eaad274a7b01b42c68dab0b55b07d148ac5f489b6c60db8eee8d02a2e8",
+    "work/simulation2_control_parameter_sensitivity/run_parameter_sensitivity.py": "8b84fc926a7499d245ffed8b256e9c2f7c40b7989e73ee697c927baf18ade52f",
+    "work/simulation2_control_parameter_sensitivity/verify_results.py": "45427264c496ace05cfbc9b768023ad198e2cb6e53d7c84cb9504d4caf54424f"
+  },
+  "verification_passed": true
+}

@@ -54,7 +54,7 @@ The trauma-film paradigm provides a controlled setting for comparing intrusive a
 Participants view a distressing film, record later intrusions, and often complete voluntary-memory tests of its contents.
 This design makes it possible to ask whether the same material can remain accessible to voluntary retrieval while becoming more or less likely to come to mind involuntarily.
 In such research, intrusion frequency is often only weakly related to voluntary-memory performance [@holmes2004trauma; @james2016trauma].
-Memory for the same film can therefore arise involuntarily or be retrieved voluntarily, and the two outcomes need not vary together.
+Memory for the same film can therefore arise involuntarily or be retrieved voluntarily, and the two outcomes can be largely independent.
 
 Researchers have sharpened this dissociation using imagery-competing task interventions (ICTIs) and related procedures.
 In an ICTI, participants receive reminders of the target event and then complete a brief task designed to compete with the visual imagery those reminders call to mind [@highfield2025summary; @debettencourt2026ai].
@@ -67,21 +67,22 @@ Here we develop a mechanistic account of this effect within a broader theory of 
 
 One prominent existing explanation holds that intrusive and voluntary remembering depend on separate memory representations that are differently vulnerable to interference [@brewin1996dual; @brewin2014episodic].
 Dual-representation accounts give this interpretation an architectural basis.
-They link coherent voluntary recollection to hippocampally supported representations that bind event elements within a spatiotemporal context [@bird2012hippocampus; @bisby2020reduced].
-They suggest that intrusive re-experiencing is due to activation of sensory and affective representations supported by amygdala and sensory systems [@bisby2020reduced; @brewin2010intrusive].
+They attribute voluntary recollection to hippocampally supported representations that bind event elements within a spatiotemporal context [@bird2012hippocampus; @bisby2020reduced].
+Intrusive re-experiencing is instead attributed to activation of sensory and affective representations supported by amygdala and sensory systems [@bisby2020reduced; @brewin2010intrusive].
 When the task follows soon after film viewing, it is proposed to interfere with consolidation of the sensory-perceptual representation [@holmes2009can; @holmes2010key].
 When the intervention is delayed, the reminder is instead treated as reactivating the relevant memory before the task, allowing the interference procedure to alter later availability through reconsolidation or post-reactivation updating [@james2015computer; @kindt2009beyond].
-The selective interference effect is therefore interpreted as evidence that the intervention disrupts the sensory-bound representation supporting intrusions more strongly than the contextualized representation supporting voluntary recollection [@deeprose2012imagery; @lau2019intrusive].
+The selective interference effect is therefore interpreted as evidence that the intervention disrupts the sensory-bound representation that support intrusions more strongly than the contextualized representations that support voluntary recollection [@deeprose2012imagery; @lau2019intrusive].
 
 Here we argue that preserved voluntary memory does not, by itself, establish that a separate representation was spared.
 More generally, differences in retrieval outcomes need not reveal differences in what was stored.
 Patterns such as selective interference can instead arise from differences in how the same memory is cued and controlled at retrieval.
 
 Retrieved-context models offer a general theory of episodic memory search in which context can guide goal-directed remembering and give rise to unintended intrusions [@cohen2022memory; @lohnas2015expanding; @polyn2011semantic].
-Yet, to our knowledge, they have not explained how a single episodic memory system can yield different effects of interference under unguided and goal-directed retrieval.
-To address this gap, we model unguided and deliberate recall as arising from the same learned associations.
-We evaluate alternative mechanisms for controlling how those associations guide deliberate recall, asking whether they reduce the effect of interference or merely raise recall overall.
-Selective interference therefore provides a demanding test: preserved voluntary memory must emerge from the model rather than be assumed to follow from deliberate retrieval.
+Although recent extensions formalize particular forms of targeted search [@healey2024peppr; @lohnas2025retrieved], a general account of how retrieval goals regulate competition during memory search remains unresolved [@healey2019control; @lohnas2026specialized; @zhou2025episodic].
+e address this gap by generating unguided and deliberate recall from the same learned associations and comparing three candidate forms of retrieval control.
+These mechanisms change how search begins, favor target memories as search proceeds, or limit the consequence of retrievals that do not match the retrieval goal.
+We evaluate them across different learning and retrieval conditions and identify their distinct signatures in recall sequences.
+The selective interference effect provides the central constraint: successful control must reduce the effect of interference, not merely raise recall overall.
 
 In our account, task material interferes with film recall by becoming a competitor during later memory search.
 Film events become associated with context, a gradually changing mental representation of recent experience [@howard2002distributed; @polyn2009context].

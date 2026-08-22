@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "simulation2_control_parameter_sensitivity",
+  "question": "Can start-of-film context reinstatement and retrieval monitoring, without a maintained category cue, produce selective protection anywhere in their admissible parameter space, and if so is that protection robust or accompanied by a generic increase in film recall?",
+  "claim_scope": {
+    "included": "A finite-grid global sensitivity analysis over the complete admissible [0, 1] domains of effective start-of-film drift and rejected-item context carryover, under the fixed fitted eCMR regime used by the manuscript.",
+    "excluded": "This analysis does not prove a statement over every point in the continuous parameter space, estimate parameters from trauma-film data, quantify uncertainty in the fitted base parameters, or establish psychological plausibility from simulated outcomes alone."
+  },
+  "fit_path": "work/fitting/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json",
+  "simulation": {
+    "experiment_count": 5000,
+    "batch_count": 10,
+    "master_seed": 23000,
+    "common_random_numbers": true,
+    "n_film": 16,
+    "n_break": 16,
+    "n_interference": 16,
+    "n_filler": 16,
+    "max_recall": 48,
+    "film_emotional": true,
+    "interference_emotional": false,
+    "cache_after": "filler"
+  },
+  "fixed_scales": {
+    "break_drift_scale": 1.0,
+    "break_mcf_scale": 1.0,
+    "filler_drift_scale": 1.0,
+    "filler_mcf_scale": 1.0,
+    "source_learning_baseline": 0.05,
+    "primacy_scale": 0.1,
+    "primacy_decay": 1.5,
+    "tau_scale": 1.0,
+    "target_recall_drift_scale": 1.0,
+    "recall_drift_scale": 1.0,
+    "film_source_start_drift_rate": 0.0
+  },
+  "external_recall_cues": {
+    "film_cue_reinstatement": 0.9,
+    "cue_interval": 4,
+    "first_cue_after": 0,
+    "applied_to_all_conditions": true
+  },
+  "conditions": [
+    {
+      "condition_id": "no_reminder_weak",
+      "reminder_condition": "No reminder",
+      "task_condition": "Weak task encoding",
+      "reminder_start_drift_scale": 0.0,
+      "reminder_drift_scale": 0.0,
+      "task_mcf_scale": 1.0
+    },
+    {
+      "condition_id": "no_reminder_strong",
+      "reminder_condition": "No reminder",
+      "task_condition": "Strong task encoding",
+      "reminder_start_drift_scale": 0.0,
+      "reminder_drift_scale": 0.0,
+      "task_mcf_scale": 2.0
+    },
+    {
+      "condition_id": "reminder_weak",
+      "reminder_condition": "With reminder",
+      "task_condition": "Weak task encoding",
+      "reminder_start_drift_scale": 1.0,
+      "reminder_drift_scale": 1.0,
+      "task_mcf_scale": 1.0
+    },
+    {
+      "condition_id": "reminder_strong",
+      "reminder_condition": "With reminder",
+      "task_condition": "Strong task encoding",
+      "reminder_start_drift_scale": 1.0,
+      "reminder_drift_scale": 1.0,
+      "task_mcf_scale": 2.0
+    }
+  ],
+  "no_category_grid": {
+    "mechanism_family": "no_category_grid",
+    "beta_start_effective_values": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      "fitted",
+      0.8,
+      0.9,
+      1.0
+    ],
+    "kappa_values": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "film_item_support_boost": 0.0,
+    "parameter_interpretation": {
+      "beta_start_effective": "Actual drift toward the model's start-of-film temporal context. Zero disables start reinstatement; one replaces the retrieval context completely.",
+      "kappa": "Proportion of the ordinary retrieved-item context update retained after a sampled non-film item. One disables monitoring; zero is maximal monitoring.",
+      "monitoring_strength": "1 - kappa"
+    }
+  },
+  "category_cue_comparators": {
+    "film_item_support_boost_values": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "families": [
+      {
+        "mechanism_family": "category_cue_only",
+        "beta_start_effective": 0.0,
+        "kappa": 1.0,
+        "description": "Isolates the maintained category cue against the unguided baseline."
+      },
+      {
+        "mechanism_family": "category_cue_plus_current_other_controls",
+        "beta_start_effective": "fitted",
+        "kappa": 0.0,
+        "description": "Adds the category cue to the manuscript's fitted start drift and maximal-monitoring setting."
+      }
+    ]
+  },
+  "estimands": {
+    "notation": "Y[c, r, t] is mean film items recalled for retrieval-control configuration c, reminder r, and task strength t.",
+    "task_cost": "D[c, r] = Y[c, r, weak] - Y[c, r, strong]",
+    "reminder_specific_sensitivity": "S[c] = D[c, with_reminder] - D[c, no_reminder]",
+    "primary_selective_protection": "P[c] = S[unguided] - S[c]. This is the retrieval-control x reminder x task contrast; positive values indicate selective protection relative to no control.",
+    "reminder_condition_protection": "P_rem[c] = D[unguided, with_reminder] - D[c, with_reminder]",
+    "no_reminder_condition_protection": "P_no[c] = D[unguided, no_reminder] - D[c, no_reminder]",
+    "endpoint_loss": "L[c] = Y[c, no_reminder, weak] - Y[c, with_reminder, strong]. This is the low-versus-high contrast displayed in the current control-decomposition figure.",
+    "endpoint_protection": "P_endpoint[c] = L[unguided] - L[c]. This secondary descriptive estimand directly tests whether a setting reduces the loss shown in the current decomposition figure, but it does not isolate the reminder-specific selective-interference interaction.",
+    "generic_recall_gain": "G[c] = Y[c, no_reminder, weak] - Y[unguided, no_reminder, weak]",
+    "high_interference_gain": "H[c] = Y[c, with_reminder, strong] - Y[unguided, with_reminder, strong]",
+    "interpretation_rule": "Primary three-way protection, within-reminder protection, endpoint protection, and generic gain are reported separately. A positive secondary contrast cannot be described as reminder-specific selective protection unless the primary three-way contrast is also positive. No weighted score, tuned pass threshold, or post-hoc winner rule is used."
+  },
+  "mechanism_diagnostics": {
+    "start_reinstatement": "Film recall probability by input position, including early (1-5), middle (6-11), and late (12-16) summaries.",
+    "monitoring": "Probability that the next nonzero output is a film item conditional on the current output being a non-film item and recall continuing.",
+    "all_mechanisms": "Full film serial-position curves for declared representative settings in the reminder-plus-strong-task condition."
+  },
+  "uncertainty": {
+    "method": "Ten independently keyed Monte Carlo batches, reused as common random numbers in every model cell.",
+    "interval": "Two-sided 95% Student-t interval over paired batch estimands.",
+    "scope": "Intervals quantify Monte Carlo error only, not empirical sampling error or parameter uncertainty."
+  },
+  "selection_policy": "All grid points and both comparator curves are retained and reported. The analysis does not select settings by a weighted objective or tune parameters to recreate a target figure."
+}

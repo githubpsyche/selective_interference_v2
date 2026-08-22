@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 420" width="1760" height="420" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1760" height="420" fill="white"/>
+<text x="880" y="54" font-size="34" font-weight="700" fill="#111111" text-anchor="middle">Proposed test of selective interference in episodic memory</text>
+
+<line x1="45" y1="298" x2="1705" y2="298" stroke="#3D4B5C" stroke-width="4"/>
+<path d="M1705 289 L1720 298 L1705 307 Z" fill="#3D4B5C"/>
+
+<rect x="20" y="118" width="180" height="54" rx="12" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="110" y="152" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Bird names</text>
+<line x1="206" y1="145" x2="216" y2="145" stroke="#3D4B5C" stroke-width="2.5"/>
+<path d="M216 141 L225 145 L216 149 Z" fill="#3D4B5C"/>
+<rect x="227" y="118" width="180" height="54" rx="12" fill="#F1EBFA" stroke="#7651A6" stroke-width="3"/>
+<text x="317" y="152" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Occupation names</text>
+<rect x="20" y="182" width="180" height="54" rx="12" fill="#F1EBFA" stroke="#7651A6" stroke-width="3"/>
+<text x="110" y="216" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Occupation names</text>
+<line x1="206" y1="209" x2="216" y2="209" stroke="#3D4B5C" stroke-width="2.5"/>
+<path d="M216 205 L225 209 L216 213 Z" fill="#3D4B5C"/>
+<rect x="227" y="182" width="180" height="54" rx="12" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="317" y="216" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Bird names</text>
+
+<rect x="430" y="145" width="165" height="64" rx="12" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="512.5" y="185" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Initial delay</text>
+
+<rect x="620" y="118" width="230" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
+<text x="735" y="152" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Control cue</text>
+<rect x="620" y="182" width="230" height="54" rx="12" fill="#EAF8F0" stroke="#178A4C" stroke-width="3"/>
+<text x="735" y="216" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Bird reminder</text>
+
+<rect x="880" y="118" width="300" height="54" rx="12" fill="#FFF4D8" stroke="#B7791F" stroke-width="3"/>
+<text x="1030" y="152" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Furniture names</text>
+<rect x="880" y="182" width="300" height="54" rx="12" fill="#FBEAEC" stroke="#A83232" stroke-width="3"/>
+<text x="1030" y="216" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Other animal names</text>
+
+<rect x="1205" y="145" width="205" height="64" rx="12" fill="#F2F4F6" stroke="#3D4B5C" stroke-width="3"/>
+<text x="1307.5" y="185" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Retention interval</text>
+
+<rect x="1440" y="118" width="280" height="54" rx="12" fill="#F1EBFA" stroke="#7651A6" stroke-width="3"/>
+<text x="1580" y="152" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Recall occupation names</text>
+<rect x="1440" y="182" width="280" height="54" rx="12" fill="#EAF2FF" stroke="#1764D8" stroke-width="3"/>
+<text x="1580" y="216" font-size="20" font-weight="700" fill="#111111" text-anchor="middle">Recall bird names</text>
+
+<text x="213.5" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Initial study list</text>
+<text x="512.5" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Delay</text>
+<text x="735" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Reminder</text>
+<text x="1030" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Additional study list</text>
+<text x="1307.5" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Delay</text>
+<text x="1580" y="372" font-size="24" font-weight="700" fill="#3D4B5C" text-anchor="middle">Externalized recall</text>
+</svg>
