@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "03dddeee5483b8111c3276de25a02acb8af16067f727fb9c9adaffa995e1a5fe",
+  "created_at": "2026-09-27T11:26:07Z",
+  "files": {
+    "_extensions/quarto-review/_extension.yml": "4bfb84ac4797d898098f1624cabc7fd9f516553bb9ce3bf33202cea1c110b711",
+    "_extensions/quarto-review/finish.py": "bc80e9bd1a57780ad6d2ff9661406f007adc9594c699491894c325749d5ed345",
+    "_extensions/quarto-review/reader.lua": "660a339a67e1c104f2c9241edf066f16f8a43e051cada9da993bc765de38287a",
+    "_extensions/quarto-review/review.css": "c8c9eddb2ac96cac3eb54f0eb0fa30d3a7f18e860fe35d329729053997075bd9",
+    "_extensions/quarto-review/review.js": "75de768b9b416d6561ecfa86b4bdb53d97e461ec64b1337e6c538b31298cb4f8",
+    "_extensions/quarto-review/review.lua": "120cccdfbcf7b55aa9939fb3d8112978e74c07b76da3e053a446ce11878fad32",
+    "_quarto.yml": "dea3c48af1f8a0872d633b9ddd6a79dad529a98c4a22f58d3192dc0c00918f8e",
+    "assets/media/image1.png": "27d7d780b3ca37719e67158234f1651ba0b6009cb9ca00921719b9b45f806419",
+    "assets/media/image11.png": "43137c97ef9fba8b22b0c13e0801bdc5dbb89efcf9d620331c29024f923f818b",
+    "assets/media/image12.png": "f495938022e85d117e2a29746ceeff2b0a23d8a94568badeac9b8176b19b449c",
+    "assets/media/image3.png": "74d6fe9c3de3ea10bd79ae6930add9d35cb75aa845f0d8f8e1e5bd4df125726f",
+    "assets/media/image5.png": "8356b6c2c99d838d243e41fc8c18ffa1b58a5f44c7824ad6c0d1b855bf006528",
+    "assets/media/image6.png": "be4742fb790ba9cfad7dc3ec323e5a3b76b7598df4a9cd4b65a9791036cb81d5",
+    "assets/media/image7.png": "b61a3599fe68067525373021e434107741e852081c5ba2e36eb18193de8e15a4",
+    "assets/media/image8.png": "8b88c900948c908aa6fca0b0dfc603aca0e34d8fdb4cdf8357e627747e582bcc",
+    "assets/media/image9.png": "8ff8567073a591cc7c7e9dfab0b96420aefba11c3c5f7a6af819bfe7523f4888",
+    "index.qmd": "493c2ef495c152e7f38a229d12eb6e0a36509171fdc7c81e5491227ebaf6e158",
+    "review.yml": "71eb61921877c229b6bccdf7db026d6c78d3bf0d66f9da823b78b3a0aeed18df"
+  },
+  "compiled": {},
+  "includes": []
+}

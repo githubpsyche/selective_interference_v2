@@ -1,0 +1,20 @@
+project:
+  type: default
+  output-dir: _output
+  render:
+  - index.qmd
+  post-render:
+  - _extensions/quarto-review/finish.py
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    pagetitle: Selective interference — working review
+    title-block-style: none
+  docx: default
+filters:
+- at: pre-ast
+  path: quarto-review
+quarto-review:
+  metadata-file: review.yml
+  reference-file: review/reference/manifest.json

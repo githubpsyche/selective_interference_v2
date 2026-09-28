@@ -1,0 +1,17 @@
+/* APA presentation of this Word import's existing body structure.
+   Loaded only by apaquarto-html in _quarto.yml; no manuscript text is changed. */
+main.content > section:first-of-type > p {
+  text-align: center;
+  text-indent: 0;
+}
+main.content > #abstract > p {
+  text-indent: 0;
+}
+main.content > #references > p {
+  padding-left: .5in;
+  text-indent: -.5in;
+}
+main.content img {
+  max-width: 100%;
+  height: auto;
+}

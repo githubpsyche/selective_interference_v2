@@ -1,0 +1,4208 @@
+version: 1
+author: Gunn, Jordan
+created_at: '2026-09-27T11:13:22Z'
+comments:
+  c1:
+    author: Emily Holmes
+    date: '2026-07-27T15:16:00Z'
+    status: resolved
+    replies:
+    - id: r1
+      body: Agreed. I’ve made the trauma-film setting explicit in the title and brought intrusive
+        and voluntary memory into the opening phrase.
+      author: Gunn, Jordan
+      date: '2026-09-27T13:00:47Z'
+      parent_id: c1
+      provenance: {}
+      resolved: true
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '1'
+      paragraph_id: 4634F63C
+      durable_id: 66398C86
+      initials: EH
+      date_utc: '2026-07-27T13:16:00Z'
+  c17:
+    author: Gunn, Jordan
+    date: '2026-07-27T09:11:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '17'
+      paragraph_id: 0D223C58
+      durable_id: 61BC697E
+      initials: GJ
+      date_utc: '2026-07-27T08:11:00Z'
+  c21:
+    author: Emily Holmes
+    date: '2026-07-27T14:30:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '21'
+      paragraph_id: 132F575E
+      durable_id: 2D803BB9
+      initials: EH
+      date_utc: '2026-07-27T12:30:00Z'
+  c22:
+    author: Emily Holmes
+    date: '2026-07-27T14:31:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '22'
+      paragraph_id: 304157C1
+      durable_id: 6B4CD8F2
+      initials: EH
+      date_utc: '2026-07-27T12:31:00Z'
+  c24:
+    author: Rik Henson
+    date: '2026-07-25T10:11:00Z'
+    status: open
+    replies:
+    - id: c25
+      body: We don't necessarily need the "unguided film recall" terminology at all if it's
+        opaque here. However, I'm not sure if "intrusions" is the right word either, because
+        I feel "intrusion" has a specific connotation of disruption that doesn't fit here.
+        Maybe we can replace "unguided" with something more idiomatic like "unintentional"?
+      author: Gunn, Jordan
+      date: '2026-07-27T09:08:00Z'
+      parent_id: c24
+      provenance:
+        source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+        word_id: '25'
+        paragraph_id: 29DD9782
+        durable_id: 73F0F64F
+        initials: GJ
+        date_utc: '2026-07-27T08:08:00Z'
+      resolved: false
+    - id: c26
+      body: Of course, my language here contradicts my approach to using "intrusions" elsewhere
+        in the manuscript, so maybe I'm being overdefensive.
+      author: Gunn, Jordan
+      date: '2026-07-27T09:09:00Z'
+      parent_id: c24
+      provenance:
+        source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+        word_id: '26'
+        paragraph_id: 7C56BD08
+        durable_id: 67C16765
+        initials: GJ
+        date_utc: '2026-07-27T08:09:00Z'
+      resolved: false
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '24'
+      paragraph_id: 7C414769
+      durable_id: 7C414769
+      initials: RH
+  c32:
+    author: Rik Henson
+    date: '2026-07-25T10:12:00Z'
+    status: open
+    replies:
+    - id: c33
+      body: On the one hand, I agree that it's obvious, but on the other hand, there seems
+        to be a sizable literature that misses this distinction. So I am therefore more ambivalent
+        than you about how important it is to highlight this observation here and elsewhere
+        in the manuscript.
+      author: Gunn, Jordan
+      date: '2026-07-27T09:09:00Z'
+      parent_id: c32
+      provenance:
+        source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+        word_id: '33'
+        paragraph_id: 19C594B0
+        durable_id: 32BBF0B5
+        initials: GJ
+        date_utc: '2026-07-27T08:09:00Z'
+      resolved: false
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '32'
+      paragraph_id: 737375D0
+      durable_id: 737375D0
+      initials: RH
+  c37:
+    author: Emily Holmes
+    date: '2026-07-27T14:38:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '37'
+      paragraph_id: 7410DBC0
+      durable_id: 10C8CA26
+      initials: EH
+      date_utc: '2026-07-27T12:38:00Z'
+  c41:
+    author: Emily Holmes
+    date: '2026-07-27T14:40:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '41'
+      paragraph_id: 739B86AD
+      durable_id: 559B0EFC
+      initials: EH
+      date_utc: '2026-07-27T12:40:00Z'
+  c70:
+    author: Rik Henson
+    date: '2026-07-25T10:19:00Z'
+    status: open
+    replies:
+    - id: c71
+      body: 'Will compress with the previous sentence: The selective interference effect provides
+        a demanding test: successful control must reduce the effect of interference, not merely
+        raise recall overall. This paragraph will need re-writing anyway if we adjust paper''s
+        scope.'
+      author: Gunn, Jordan
+      date: '2026-07-27T10:44:00Z'
+      parent_id: c70
+      provenance:
+        source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+        word_id: '71'
+        paragraph_id: 68DC4E1B
+        durable_id: 0C98FE11
+        initials: GJ
+        date_utc: '2026-07-27T09:44:00Z'
+      resolved: false
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '70'
+      paragraph_id: 423E19DA
+      durable_id: 423E19DA
+      initials: RH
+  c86:
+    author: Emily Holmes
+    date: '2026-07-27T14:55:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '86'
+      paragraph_id: 06E276C7
+      durable_id: 74FBE8BD
+      initials: EH
+      date_utc: '2026-07-27T12:55:00Z'
+  c92:
+    author: Rik Henson
+    date: '2026-07-25T10:24:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '92'
+      paragraph_id: 35A86ACA
+      durable_id: 35A86ACA
+      initials: RH
+  c94:
+    author: Rik Henson
+    date: '2026-07-25T10:25:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '94'
+      paragraph_id: 5B60186A
+      durable_id: 5B60186A
+      initials: RH
+  c102:
+    author: Rik Henson
+    date: '2026-07-25T10:29:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '102'
+      paragraph_id: 74EB5188
+      durable_id: 74EB5188
+      initials: RH
+  c104:
+    author: Emily Holmes
+    date: '2026-07-27T15:06:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '104'
+      paragraph_id: 1EC3EFAF
+      durable_id: 4ED00E18
+      initials: EH
+      date_utc: '2026-07-27T13:06:00Z'
+  c110:
+    author: Rik Henson
+    date: '2026-07-25T10:32:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '110'
+      paragraph_id: 6594EF09
+      durable_id: 6594EF09
+      initials: RH
+  c111:
+    author: Rik Henson
+    date: '2026-07-25T10:33:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '111'
+      paragraph_id: 0205FB06
+      durable_id: 0205FB06
+      initials: RH
+  c112:
+    author: Rik Henson
+    date: '2026-07-25T10:33:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '112'
+      paragraph_id: 2C2D4DF6
+      durable_id: 2C2D4DF6
+      initials: RH
+  c115:
+    author: Rik Henson
+    date: '2026-07-25T10:34:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '115'
+      paragraph_id: 4A984B55
+      durable_id: 4A984B55
+      initials: RH
+  c117:
+    author: Rik Henson
+    date: '2026-07-25T10:36:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '117'
+      paragraph_id: 5690CB4C
+      durable_id: 5690CB4C
+      initials: RH
+  c119:
+    author: Rik Henson
+    date: '2026-07-25T10:38:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '119'
+      paragraph_id: 1E6DA377
+      durable_id: 1E6DA377
+      initials: RH
+  c120:
+    author: Rik Henson
+    date: '2026-07-25T10:40:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '120'
+      paragraph_id: 3E0A91C2
+      durable_id: 3E0A91C2
+      initials: RH
+  c123:
+    author: Rik Henson
+    date: '2026-07-25T11:03:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '123'
+      paragraph_id: 559ABE9E
+      durable_id: 559ABE9E
+      initials: RH
+  c124:
+    author: Rik Henson
+    date: '2026-07-25T11:03:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '124'
+      paragraph_id: 068F6061
+      durable_id: 068F6061
+      initials: RH
+  c126:
+    author: Rik Henson
+    date: '2026-07-25T11:05:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '126'
+      paragraph_id: 15B16ABF
+      durable_id: 15B16ABF
+      initials: RH
+  c128:
+    author: Rik Henson
+    date: '2026-07-25T11:14:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '128'
+      paragraph_id: 0FBD0AC3
+      durable_id: 0FBD0AC3
+      initials: RH
+  c129:
+    author: Rik Henson
+    date: '2026-07-25T11:17:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '129'
+      paragraph_id: 706D80C8
+      durable_id: 706D80C8
+      initials: RH
+  c133:
+    author: Rik Henson
+    date: '2026-07-25T11:18:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '133'
+      paragraph_id: 6348C9D1
+      durable_id: 6348C9D1
+      initials: RH
+  c162:
+    author: Emily Holmes
+    date: '2026-07-27T15:12:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '162'
+      paragraph_id: 53071B45
+      durable_id: 69237E96
+      initials: EH
+      date_utc: '2026-07-27T13:12:00Z'
+  c318:
+    author: Rik Henson
+    date: '2026-07-25T11:34:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '318'
+      paragraph_id: 7984D9F5
+      durable_id: 7984D9F5
+      initials: RH
+  c344:
+    author: Rik Henson
+    date: '2026-07-25T12:08:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '344'
+      paragraph_id: 5393FA72
+      durable_id: 5393FA72
+      initials: RH
+  c345:
+    author: Emily Holmes
+    date: '2026-07-27T15:13:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '345'
+      paragraph_id: 5DE056F2
+      durable_id: 33A2CF3C
+      initials: EH
+      date_utc: '2026-07-27T13:13:00Z'
+  c346:
+    author: Rik Henson
+    date: '2026-07-25T12:02:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '346'
+      paragraph_id: 5C576487
+      durable_id: 5C576487
+      initials: RH
+  c349:
+    author: Rik Henson
+    date: '2026-07-25T12:05:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '349'
+      paragraph_id: 617A9D75
+      durable_id: 617A9D75
+      initials: RH
+  c354:
+    author: Rik Henson
+    date: '2026-07-25T12:09:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '354'
+      paragraph_id: 7437E25A
+      durable_id: 7437E25A
+      initials: RH
+  c355:
+    author: Rik Henson
+    date: '2026-07-25T12:13:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '355'
+      paragraph_id: 330AFBC0
+      durable_id: 330AFBC0
+      initials: RH
+  c357:
+    author: Rik Henson
+    date: '2026-07-25T12:16:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '357'
+      paragraph_id: 313F228E
+      durable_id: 313F228E
+      initials: RH
+  c366:
+    author: Rik Henson
+    date: '2026-07-25T12:19:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '366'
+      paragraph_id: 2DF60374
+      durable_id: 2DF60374
+      initials: RH
+  c368:
+    author: Rik Henson
+    date: '2026-07-25T12:21:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '368'
+      paragraph_id: 16C1B351
+      durable_id: 16C1B351
+      initials: RH
+  c371:
+    author: Rik Henson
+    date: '2026-07-25T12:22:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '371'
+      paragraph_id: 5AD0B48F
+      durable_id: 5AD0B48F
+      initials: RH
+  c374:
+    author: Rik Henson
+    date: '2026-07-25T12:26:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '374'
+      paragraph_id: 67E4F560
+      durable_id: 67E4F560
+      initials: RH
+  c375:
+    author: Rik Henson
+    date: '2026-07-25T12:29:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '375'
+      paragraph_id: 60DBCF71
+      durable_id: 60DBCF71
+      initials: RH
+  c377:
+    author: Rik Henson
+    date: '2026-07-25T12:33:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '377'
+      paragraph_id: 3FE6F48B
+      durable_id: 3FE6F48B
+      initials: RH
+  c378:
+    author: Rik Henson
+    date: '2026-07-25T12:33:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '378'
+      paragraph_id: 31CB89EA
+      durable_id: 31CB89EA
+      initials: RH
+  c379:
+    author: Rik Henson
+    date: '2026-07-25T12:32:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '379'
+      paragraph_id: 28D1BEB1
+      durable_id: 28D1BEB1
+      initials: RH
+  c381:
+    author: Rik Henson
+    date: '2026-07-25T12:34:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '381'
+      paragraph_id: 564A0A56
+      durable_id: 564A0A56
+      initials: RH
+  c383:
+    author: Rik Henson
+    date: '2026-07-25T12:41:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '383'
+      paragraph_id: 061655A3
+      durable_id: 061655A3
+      initials: RH
+  c384:
+    author: Emily Holmes
+    date: '2026-07-27T15:15:00Z'
+    status: open
+    replies: []
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '384'
+      paragraph_id: 10926F1B
+      durable_id: 32588CD3
+      initials: EH
+      date_utc: '2026-07-27T13:15:00Z'
+suggestions:
+  s1:
+    author: Emily Holmes
+    date: '2026-07-27T14:28:00Z'
+    status: rejected
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '2'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[3]/w:ins[1]
+      decided_text_hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  s2:
+    author: Emily Holmes
+    date: '2026-07-27T14:30:00Z'
+    status: rejected
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '3'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[3]/w:ins[2]
+      decided_text_hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  s3:
+    author: Emily Holmes
+    date: '2026-07-27T14:28:00Z'
+    status: rejected
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '4'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[3]/w:ins[3]
+      decided_text_hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  s4:
+    author: Emily Holmes
+    date: '2026-07-27T14:30:00Z'
+    status: rejected
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '5'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[3]/w:ins[4]
+      decided_text_hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  s5:
+    author: Emily Holmes
+    date: '2026-07-27T14:28:00Z'
+    status: rejected
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '6'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[3]/w:ins[5]
+      decided_text_hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  s6:
+    author: Emily Holmes
+    date: '2026-07-27T14:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '7'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[6]/w:pPr/w:rPr/w:ins
+  s7:
+    author: Emily Holmes
+    date: '2026-07-27T14:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '8'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[7]/w:pPr/w:rPr/w:ins
+  s8:
+    author: Emily Holmes
+    date: '2026-07-27T15:07:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '9'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[8]/w:pPr/w:rPr/w:del
+  s9:
+    author: Emily Holmes
+    date: '2026-07-27T14:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '10'
+      kind: pPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[8]/w:pPr/w:pPrChange
+  s10:
+    author: Emily Holmes
+    date: '2026-07-27T15:07:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '11'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[9]/w:del
+  s11:
+    author: Emily Holmes
+    date: '2026-07-27T14:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '13'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[14]/w:ins
+  s12:
+    author: Rik Henson
+    date: '2026-07-25T10:10:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '18'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w:ins[1]
+  s13:
+    author: Gunn, Jordan
+    date: null
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '19'
+      kind: conflictIns
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w14:conflictIns[1]
+  s14:
+    author: Emily Holmes
+    date: '2026-07-27T14:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '20'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w:ins[2]
+  s15:
+    author: Rik Henson
+    date: '2026-07-25T10:10:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '23'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w:ins[3]
+  s16:
+    author: Rik Henson
+    date: '2026-07-25T10:11:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '28'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w14:conflictIns[2]/w:ins
+  s17:
+    author: Gunn, Jordan
+    date: null
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '27'
+      kind: conflictIns
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w14:conflictIns[2]
+  s18:
+    author: Gunn, Jordan
+    date: null
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '29'
+      kind: conflictIns
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w14:conflictIns[3]
+  s19:
+    author: Gunn, Jordan
+    date: null
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '30'
+      kind: conflictIns
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w14:conflictIns[4]
+  s20:
+    author: Rik Henson
+    date: '2026-07-25T10:10:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '31'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[18]/w:ins[4]
+  s21:
+    author: Emily Holmes
+    date: '2026-07-27T14:36:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '35'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[20]/w:ins[1]
+  s22:
+    author: Emily Holmes
+    date: '2026-07-27T14:37:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '36'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[20]/w:ins[2]
+  s23:
+    author: Emily Holmes
+    date: '2026-07-27T14:39:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '38'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:del[1]
+  s24:
+    author: Emily Holmes
+    date: '2026-07-27T14:38:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '39'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:ins[1]
+  s25:
+    author: Emily Holmes
+    date: '2026-07-27T14:39:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '40'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:ins[2]
+  s26:
+    author: Rik Henson
+    date: '2026-07-25T10:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '42'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:ins[3]
+  s27:
+    author: Rik Henson
+    date: '2026-07-25T10:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '43'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:del[2]
+  s28:
+    author: Rik Henson
+    date: '2026-07-25T10:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '44'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:ins[4]
+  s29:
+    author: Rik Henson
+    date: '2026-07-25T10:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '45'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:del[3]
+  s30:
+    author: Rik Henson
+    date: '2026-07-25T10:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '46'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[21]/w:ins[5]
+  s31:
+    author: Rik Henson
+    date: '2026-07-25T10:15:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '47'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[22]/w:ins
+  s32:
+    author: Rik Henson
+    date: '2026-07-25T10:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '22'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[1]
+  s33:
+    author: Rik Henson
+    date: '2026-07-25T10:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '23'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[1]
+  s34:
+    author: Rik Henson
+    date: '2026-07-25T10:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '24'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[2]
+  s35:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '25'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[3]
+  s36:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '26'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[2]
+  s37:
+    author: Rik Henson
+    date: '2026-07-25T10:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '27'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[3]
+  s38:
+    author: Rik Henson
+    date: '2026-07-25T10:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '28'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[4]
+  s39:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '29'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[5]
+  s40:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '30'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[4]
+  s41:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '31'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[6]
+  s42:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '32'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[7]
+  s43:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '33'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[5]
+  s44:
+    author: Rik Henson
+    date: '2026-07-25T10:17:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '34'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[8]
+  s45:
+    author: Emily Holmes
+    date: '2026-07-27T14:42:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '27'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[6]
+  s46:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '35'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[7]
+  s47:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '36'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[8]
+  s48:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '37'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[9]
+  s49:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '38'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[9]
+  s50:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '39'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:ins[10]
+  s51:
+    author: Rik Henson
+    date: '2026-07-25T10:18:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '40'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[23]/w:del[10]
+  s52:
+    author: Rik Henson
+    date: '2026-07-25T10:20:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '72'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[1]
+  s53:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '73'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[2]
+  s54:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '74'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[1]
+  s55:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '75'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[2]
+  s56:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '76'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[3]
+  s57:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '77'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[4]
+  s58:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '78'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[5]
+  s59:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '79'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[6]
+  s60:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '80'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[3]
+  s61:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '81'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[4]
+  s62:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '82'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[7]
+  s63:
+    author: Rik Henson
+    date: '2026-07-25T10:22:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '83'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[5]
+  s64:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '84'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[6]
+  s65:
+    author: Rik Henson
+    date: '2026-07-25T10:21:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '85'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[8]
+  s66:
+    author: Rik Henson
+    date: '2026-07-25T10:23:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '87'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[7]
+  s67:
+    author: Rik Henson
+    date: '2026-07-25T10:23:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '88'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[9]
+  s68:
+    author: Rik Henson
+    date: '2026-07-25T10:23:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '89'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[8]
+  s69:
+    author: Rik Henson
+    date: '2026-07-25T10:23:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '90'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:del[10]
+  s70:
+    author: Rik Henson
+    date: '2026-07-25T10:23:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '91'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[26]/w:ins[9]
+  s71:
+    author: Rik Henson
+    date: '2026-07-25T10:25:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '93'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[27]/w:del
+  s72:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '95'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:ins[1]
+  s73:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '96'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:del[1]
+  s74:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '97'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:ins[2]
+  s75:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '98'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:ins[3]
+  s76:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '99'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:del[2]
+  s77:
+    author: Rik Henson
+    date: '2026-07-25T10:27:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '100'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:ins[4]
+  s78:
+    author: Rik Henson
+    date: '2026-07-25T10:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '101'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[28]/w:ins[5]
+  s79:
+    author: Rik Henson
+    date: '2026-07-25T10:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '105'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[30]/w:del[1]
+  s80:
+    author: Rik Henson
+    date: '2026-07-25T10:31:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '106'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[30]/w:ins
+  s81:
+    author: Rik Henson
+    date: '2026-07-25T10:31:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '107'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[30]/w:del[2]
+  s82:
+    author: Rik Henson
+    date: '2026-07-25T10:33:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '114'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[41]/w:ins
+  s83:
+    author: Rik Henson
+    date: '2026-07-25T11:02:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '122'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[56]/w:del[1]
+  s84:
+    author: Rik Henson
+    date: '2026-07-25T11:04:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '125'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[56]/w:del[2]
+  s85:
+    author: Rik Henson
+    date: '2026-07-25T11:07:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '127'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[58]/w:ins
+  s86:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '131'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[70]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s87:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '132'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[70]/m:oMath[3]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s88:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '134'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[1]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s89:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '135'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[2]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s90:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '136'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[3]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s91:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '137'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[3]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s92:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '138'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[4]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s93:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '139'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[71]/m:oMath[4]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s94:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '140'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[72]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s95:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '142'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s96:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '143'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s97:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '144'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s98:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '145'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s99:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '146'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s100:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '147'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[7]/w:tc[3]/w:p/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s101:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '148'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[8]/w:tc[3]/w:p/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s102:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '149'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[9]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s103:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '150'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[10]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s104:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '151'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[11]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s105:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '152'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[12]/w:tc[3]/w:p/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s106:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '153'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[13]/w:tc[3]/w:p/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s107:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '154'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[14]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s108:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '155'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[15]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s109:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '156'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[17]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s110:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '157'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[17]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s111:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '158'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[1]/w:tr[19]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s112:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '159'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[75]/w:pPr/w:rPr/w:ins
+  s113:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '160'
+      kind: pPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[75]/w:pPr/w:pPrChange
+  s114:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '163'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[1]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s115:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '164'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[2]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s116:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '165'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[5]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s117:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '166'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[8]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s118:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '167'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[9]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s119:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '168'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[10]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s120:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '169'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[78]/m:oMath[11]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s121:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '171'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[79]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s122:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '172'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[79]/m:oMathPara/m:oMath/m:d[1]/m:dPr/m:ctrlPr/w:ins
+  s123:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '173'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[79]/m:oMathPara/m:oMath/m:d[2]/m:dPr/m:ctrlPr/w:ins
+  s124:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '174'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[79]/m:oMathPara/m:oMath/m:d[2]/m:e/m:m/m:mPr/m:ctrlPr/w:ins
+  s125:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '175'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[79]/m:oMathPara/m:oMath/m:d[3]/m:dPr/m:ctrlPr/w:ins
+  s126:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '177'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[80]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s127:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '178'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[80]/m:oMathPara/m:oMath/m:d[1]/m:dPr/m:ctrlPr/w:ins
+  s128:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '179'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[80]/m:oMathPara/m:oMath/m:d[2]/m:dPr/m:ctrlPr/w:ins
+  s129:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '180'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[80]/m:oMathPara/m:oMath/m:d[2]/m:e/m:m/m:mPr/m:ctrlPr/w:ins
+  s130:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '181'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[80]/m:oMathPara/m:oMath/m:d[3]/m:dPr/m:ctrlPr/w:ins
+  s131:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '182'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[81]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s132:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '184'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[82]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s133:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '185'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[82]/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s134:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '186'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[82]/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s135:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '187'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[82]/m:oMathPara/m:oMath/m:r[2]/w:del
+  s136:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '188'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[82]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s137:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '189'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[83]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s138:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '191'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s139:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '192'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s140:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '193'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s141:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '194'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSub[4]/m:sSubPr/m:ctrlPr/w:ins
+  s142:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '195'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s143:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '196'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:sSubSup/m:e/m:acc/m:accPr/m:ctrlPr/w:ins
+  s144:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '197'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:r[3]/w:del
+  s145:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '198'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[84]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s146:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '199'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[85]/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s147:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '201'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[86]/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s148:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '202'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[86]/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s149:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '203'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[86]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s150:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '204'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[86]/m:oMathPara/m:oMath/m:r[4]/w:del
+  s151:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '205'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[86]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s152:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '206'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[87]/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s153:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '208'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s154:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '209'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s155:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '210'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s156:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '211'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s157:
+    author: Rik Henson
+    date: '2026-07-25T11:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '212'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:r[4]/w:del
+  s158:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '213'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[88]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s159:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '214'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[89]/m:oMath[3]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s160:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '215'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[90]/m:oMath[1]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s161:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '216'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[90]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s162:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '217'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[90]/m:oMath[3]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s163:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '218'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[90]/m:oMath[4]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s164:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '220'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[93]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s165:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '222'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s166:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '223'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s167:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '224'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s168:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '225'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:sSub[4]/m:sSubPr/m:ctrlPr/w:ins
+  s169:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '226'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:sSub[5]/m:sSubPr/m:ctrlPr/w:ins
+  s170:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '227'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[94]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s171:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '228'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[96]/m:oMath[1]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s172:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '229'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[96]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s173:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '231'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:sSubSup[1]/m:sSubSupPr/m:ctrlPr/w:ins
+  s174:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '232'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s175:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '233'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s176:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '234'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s177:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '235'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:sSubSup[2]/m:sSubSupPr/m:ctrlPr/w:ins
+  s178:
+    author: Rik Henson
+    date: '2026-07-25T11:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '236'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:r[4]/w:del
+  s179:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '237'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[97]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s180:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '240'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s181:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '241'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s182:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '242'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:sSub[2]/m:e/m:d/m:dPr/m:ctrlPr/w:ins
+  s183:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '243'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:sSub[2]/m:e/m:d/m:e/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s184:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '244'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:sSub[2]/m:e/m:d/m:e/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s185:
+    author: Rik Henson
+    date: '2026-07-25T11:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '245'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:r[2]/w:del
+  s186:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '246'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[101]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s187:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '247'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[102]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s188:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '249'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:d[1]/m:dPr/m:ctrlPr/w:ins
+  s189:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '250'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:f/m:fPr/m:ctrlPr/w:ins
+  s190:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '251'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:f/m:num/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s191:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '252'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:f/m:den/m:nary/m:naryPr/m:ctrlPr/w:ins
+  s192:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '253'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:f/m:den/m:nary/m:e/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s193:
+    author: Rik Henson
+    date: '2026-07-25T11:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '254'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:r[3]/w:del
+  s194:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '255'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[104]/m:oMathPara/m:oMath/m:d[2]/m:dPr/m:ctrlPr/w:ins
+  s195:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '257'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s196:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '258'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:d[1]/m:dPr/m:ctrlPr/w:ins
+  s197:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '259'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s198:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '260'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s199:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '261'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:sSup/m:sup/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s200:
+    author: Rik Henson
+    date: '2026-07-25T11:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '262'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:r[2]/w:del
+  s201:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '263'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[106]/m:oMathPara/m:oMath/m:d[2]/m:dPr/m:ctrlPr/w:ins
+  s202:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '265'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s203:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '266'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s204:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '267'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s205:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '268'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:sSub[4]/m:sSubPr/m:ctrlPr/w:ins
+  s206:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '269'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:acc/m:accPr/m:ctrlPr/w:ins
+  s207:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '270'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:acc/m:e/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s208:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '271'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:acc/m:e/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s209:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '272'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:acc/m:e/m:sSub/m:sub/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s210:
+    author: Rik Henson
+    date: '2026-07-25T11:29:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '273'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:r[3]/w:del
+  s211:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '274'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[109]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s212:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '275'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[111]/m:oMath[2]/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s213:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '276'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[111]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s214:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '278'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[114]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s215:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '279'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[115]/m:oMath[1]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s216:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '280'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[115]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s217:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '282'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s218:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '283'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s219:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '284'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:d[1]/m:dPr/m:ctrlPr/w:ins
+  s220:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '285'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:d[1]/m:e/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s221:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '286'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:d[1]/m:e/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s222:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '287'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s223:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '288'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:sSub[4]/m:sSubPr/m:ctrlPr/w:ins
+  s224:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '289'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:sSub[5]/m:sSubPr/m:ctrlPr/w:ins
+  s225:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '290'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:acc/m:accPr/m:ctrlPr/w:ins
+  s226:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '291'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:acc/m:e/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s227:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '292'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:acc/m:e/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s228:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '293'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:acc/m:e/m:sSub/m:sub/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s229:
+    author: Rik Henson
+    date: '2026-07-25T11:32:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '294'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:r[3]/w:del
+  s230:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '295'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[116]/m:oMathPara/m:oMath/m:d[2]/m:dPr/m:ctrlPr/w:ins
+  s231:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '297'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:sSubSup/m:sSubSupPr/m:ctrlPr/w:ins
+  s232:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '298'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s233:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '299'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s234:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '300'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:sSub[3]/m:sSubPr/m:ctrlPr/w:ins
+  s235:
+    author: Rik Henson
+    date: '2026-07-25T11:32:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '301'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:r[3]/w:del
+  s236:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '302'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[119]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s237:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '303'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[120]/m:oMath[1]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s238:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '304'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[120]/m:oMath[2]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s239:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '305'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[120]/m:oMath[3]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s240:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '306'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[120]/m:oMath[4]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s241:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '307'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[120]/m:oMath[5]/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s242:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '310'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSub[1]/m:sSubPr/m:ctrlPr/w:ins
+  s243:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '311'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s244:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '312'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSup/m:e/m:d/m:dPr/m:ctrlPr/w:ins
+  s245:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '313'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSup/m:e/m:d/m:e/m:sSup/m:sSupPr/m:ctrlPr/w:ins
+  s246:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '314'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSup/m:e/m:d/m:e/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s247:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '315'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:sSub[2]/m:sSubPr/m:ctrlPr/w:ins
+  s248:
+    author: Rik Henson
+    date: '2026-07-25T11:33:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '316'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:r[2]/w:del
+  s249:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '317'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[124]/m:oMathPara/m:oMath/m:d/m:dPr/m:ctrlPr/w:ins
+  s250:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '322'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[2]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s251:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '323'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[3]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s252:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '324'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[4]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s253:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '325'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[8]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s254:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '326'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[8]/w:tc[3]/w:p/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s255:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '327'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[9]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s256:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '328'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[9]/w:tc[3]/w:p/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s257:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '329'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[11]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s258:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '330'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[12]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s259:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '331'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[13]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s260:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '332'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[14]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s261:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '333'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:tbl[2]/w:tr[15]/w:tc[1]/w:p/m:oMathPara/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s262:
+    author: Gunn, Jordan
+    date: '2026-07-25T13:08:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '335'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[140]/m:oMath/m:sSub/m:sSubPr/m:ctrlPr/w:ins
+  s263:
+    author: Rik Henson
+    date: '2026-07-25T11:57:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '337'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[144]/w:ins[1]
+  s264:
+    author: Rik Henson
+    date: '2026-07-25T11:59:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '338'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[144]/w:del[1]
+  s265:
+    author: Rik Henson
+    date: '2026-07-25T11:59:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '339'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[144]/w:ins[2]
+  s266:
+    author: Rik Henson
+    date: '2026-07-25T11:59:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '340'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[144]/w:del[2]
+  s267:
+    author: Rik Henson
+    date: '2026-07-25T12:02:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '347'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[155]/w:del
+  s268:
+    author: Rik Henson
+    date: '2026-07-25T12:04:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '350'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[159]/w:del
+  s269:
+    author: Rik Henson
+    date: '2026-07-25T12:04:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '351'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[159]/w:ins
+  s270:
+    author: Rik Henson
+    date: '2026-07-25T12:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '356'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[165]/w:pPr/w:rPr/w:ins
+  s271:
+    author: Rik Henson
+    date: '2026-07-25T12:14:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '358'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:ins[1]
+  s272:
+    author: Rik Henson
+    date: '2026-07-25T12:15:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '359'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:ins[2]
+  s273:
+    author: Rik Henson
+    date: '2026-07-25T12:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '360'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:ins[3]
+  s274:
+    author: Rik Henson
+    date: '2026-07-25T12:15:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '361'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:ins[4]
+  s275:
+    author: Rik Henson
+    date: '2026-07-25T12:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '362'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:del[1]
+  s276:
+    author: Rik Henson
+    date: '2026-07-25T12:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '363'
+      kind: ins
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:ins[5]
+  s277:
+    author: Rik Henson
+    date: '2026-07-25T12:16:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '364'
+      kind: del
+      story: word/document.xml
+      path: /w:document/w:body/w:p[166]/w:del[2]
+  s278:
+    author: Rik Henson
+    date: '2026-07-25T12:28:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '376'
+      kind: pPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[186]/w:pPr/w:pPrChange
+  s279:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '389'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[197]/w:r[1]/w:rPr/w:rPrChange
+  s280:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '409'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[220]/w:r[1]/w:rPr/w:rPrChange
+  s281:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '428'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[238]/w:r[1]/w:rPr/w:rPrChange
+  s282:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '433'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[242]/w:r[1]/w:rPr/w:rPrChange
+  s283:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '464'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[277]/w:pPr/w:rPr/w:rPrChange
+  s284:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '466'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[277]/w:r[9]/w:rPr/w:rPrChange
+  s285:
+    author: Emily Holmes
+    date: '2026-08-22T17:51:00Z'
+    status: pending
+    provenance:
+      source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+      word_id: '468'
+      kind: rPrChange
+      story: word/document.xml
+      path: /w:document/w:body/w:p[278]/w:r[1]/w:rPr/w:rPrChange
+  s286:
+    author: Gunn, Jordan
+    date: '2026-09-27T13:00:11Z'
+    status: pending
+    provenance: {}
+  s287:
+    author: Gunn, Jordan
+    date: '2026-09-27T13:00:11Z'
+    status: pending
+    provenance: {}
+sources:
+- index.qmd
+imports:
+  ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+objects:
+  o1:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[70]/m:oMath[2]
+    revisions:
+    - s86
+    source_hash: 5972e6bdcb34d11ee9fb33e7419322c40be40e21eccfee9ec421e801698805ef
+  o2:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[70]/m:oMath[3]
+    revisions:
+    - s87
+    source_hash: c6baf8629bd5b6176191cf856b82fe3b1314d5848592864d7f3102ab4f40af87
+  o3:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[71]/m:oMath[1]
+    revisions:
+    - s88
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o4:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[71]/m:oMath[2]
+    revisions:
+    - s89
+    source_hash: 24ab7f33db2d914416065fd6e939b398957c15ca434234a3203e7579ddc1eeb3
+  o5:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[71]/m:oMath[3]
+    revisions:
+    - s90
+    - s91
+    source_hash: 03e9937fe41f4efba786ebd8cb45d60a4c830a001b676e7913154f40adc1ff0b
+  o6:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[71]/m:oMath[4]
+    revisions:
+    - s92
+    - s93
+    source_hash: 31ed2876cc9b3c63dc173d7c8294eb031d670c5042838c19584199ba5d1f6697
+  o7:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[72]/m:oMath
+    revisions:
+    - s94
+    source_hash: e77dde88d4cbd5671ad5ceab1a08d3cd37ec3d1162c644fa14f4070f9c848457
+  o8:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s95
+    source_hash: 4c00e0d310dbf0732a7fbdbe537341cc4c65e17ec71e646fc234098a4c4d9804
+  o9:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s96
+    source_hash: 12a4eb9d1e588d9050efb70637dd2fd12ad8c6dd1d6592d016c1454b1ef76560
+  o10:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s97
+    source_hash: 7d177842cb9c9eefa4a69a5e29e2e564e0727e482fcc5777a7115f33c757f21d
+  o11:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s98
+    source_hash: 5003c69b5e7612313ae14fc8871f7bb0f1b7d6bb9f4cbb285df7f019023e81e3
+  o12:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s99
+    source_hash: cc40dd89b7f78ba2b7a8e9821946d18094ea236ce94fc21860ed73dca0af1ae8
+  o13:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[7]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s100
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o14:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[8]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s101
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o15:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[9]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s102
+    source_hash: 01c37ad4e09d39ad73f6028433dde619497e0774d0b0f4362b88903ca523e721
+  o16:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[10]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s103
+    source_hash: 46b44b3bae2e66f1889f0326007767876934c2dde7a3e134a72bde0c9109541e
+  o17:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[11]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s104
+    source_hash: 8861ce586d40dee65f2f7dc01798be620147c7c48c92bce1d8abad62d4edba6e
+  o18:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[12]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s105
+    source_hash: 24ab7f33db2d914416065fd6e939b398957c15ca434234a3203e7579ddc1eeb3
+  o19:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[13]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s106
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o20:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[14]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s107
+    source_hash: d85f3fb41c5bd933542e241d9de499160616bb618f7efa2f992f63403f296d22
+  o21:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[15]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s108
+    source_hash: f2fb575d4f2e33f92a23020374f0b9b155c4d9c29de5e4acae45cd4b9c683f82
+  o22:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[17]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s109
+    - s110
+    source_hash: be777d2a147f84765edabb43af9c6b71b2c5192e903d02065f48c2ee14decda8
+  o23:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[1]/w:tr[19]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s111
+    source_hash: 28391883ee801752268e10d2113c7d500cc0955a1585da39c147fa43cc6f558f
+  o24:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[1]
+    revisions:
+    - s114
+    source_hash: 6c1f4883a9feb94ea248c230779d50e93bb7728a3039854a823b602d761d1301
+  o25:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[2]
+    revisions:
+    - s115
+    source_hash: 24ab7f33db2d914416065fd6e939b398957c15ca434234a3203e7579ddc1eeb3
+  o26:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[5]
+    revisions:
+    - s116
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o27:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[8]
+    revisions:
+    - s117
+    source_hash: 6c1f4883a9feb94ea248c230779d50e93bb7728a3039854a823b602d761d1301
+  o28:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[9]
+    revisions:
+    - s118
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o29:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[10]
+    revisions:
+    - s119
+    source_hash: 24ab7f33db2d914416065fd6e939b398957c15ca434234a3203e7579ddc1eeb3
+  o30:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[78]/m:oMath[11]
+    revisions:
+    - s120
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o31:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[79]/m:oMathPara
+    revisions:
+    - s121
+    - s122
+    - s123
+    - s124
+    - s125
+    source_hash: f3beb0ba678358db73f7fa8b443a94be9427502906510ec2e57e0632f55d3406
+  o32:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[80]/m:oMathPara
+    revisions:
+    - s126
+    - s127
+    - s128
+    - s129
+    - s130
+    source_hash: 826dd5b40690651f16eab9032c282e3a5e4eee68e2a17652b96474e2a9896509
+  o33:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[81]/m:oMath[2]
+    revisions:
+    - s131
+    source_hash: 5972e6bdcb34d11ee9fb33e7419322c40be40e21eccfee9ec421e801698805ef
+  o34:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[82]/m:oMathPara
+    revisions:
+    - s132
+    - s133
+    - s134
+    - s135
+    - s136
+    source_hash: 093b23b463b65059dd74d1ca854b5e62e0604b9f550e25dff1e5eae523383670
+  o35:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[83]/m:oMath
+    revisions:
+    - s137
+    source_hash: 037d870152f5a0e1d51936ad39a8677b7847b4194358a89ef1474f8d081b0546
+  o36:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[84]/m:oMathPara
+    revisions:
+    - s138
+    - s139
+    - s140
+    - s141
+    - s142
+    - s143
+    - s144
+    - s145
+    source_hash: dde82f801fbf6b87afde4772e43eae00d9fc078bc9467dcfb92100c29cd4534c
+  o37:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[85]/m:oMath
+    revisions:
+    - s146
+    source_hash: 24ab7f33db2d914416065fd6e939b398957c15ca434234a3203e7579ddc1eeb3
+  o38:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[86]/m:oMathPara
+    revisions:
+    - s147
+    - s148
+    - s149
+    - s150
+    - s151
+    source_hash: bc9d6faf16d275044b9ddbeaa84f4fe530a16beb73d7f754d9f7c9bcc2b6ddb7
+  o39:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[87]/m:oMath
+    revisions:
+    - s152
+    source_hash: 7a74790cfcddab22fc08f8eaaf8360eec50fb2e8c77066efd66f5575f41ac6c9
+  o40:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[88]/m:oMathPara
+    revisions:
+    - s153
+    - s154
+    - s155
+    - s156
+    - s157
+    - s158
+    source_hash: ca27379f556592731ace47f3951e8d5bb68b1d3ef7c6e68c2e92c16dc01a77c1
+  o41:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[89]/m:oMath[3]
+    revisions:
+    - s159
+    source_hash: 3045aa38e4b4c56cf1faa784b08f2fb75dabb4bdc91cd7214befb14b7f422dce
+  o42:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[90]/m:oMath[1]
+    revisions:
+    - s160
+    source_hash: e77dde88d4cbd5671ad5ceab1a08d3cd37ec3d1162c644fa14f4070f9c848457
+  o43:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[90]/m:oMath[2]
+    revisions:
+    - s161
+    source_hash: ca443b841346eedc02cff159b96e4ff903af579a820a66f4b1ac3ea2797eef42
+  o44:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[90]/m:oMath[3]
+    revisions:
+    - s162
+    source_hash: e91672a77fa2e0f58fdba4b60cfd54ba76aeb696f050d8c44ca69b990c1d7c8a
+  o45:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[90]/m:oMath[4]
+    revisions:
+    - s163
+    source_hash: 14fcff61a6d3a00b142029434aa05e40f76fb5d796eb9f17ce80e905082d41d4
+  o46:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[93]/m:oMath
+    revisions:
+    - s164
+    source_hash: 1b43cbeedae0064c515da32d997c89654ba9c2bc9c5461838f3f247d2d6b3c9e
+  o47:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[94]/m:oMathPara
+    revisions:
+    - s165
+    - s166
+    - s167
+    - s168
+    - s169
+    - s170
+    source_hash: 22058355d6cd19d04b3c0eb5ac0a0d5d9bf31b27ccbb7ccec6325f3c775a133a
+  o48:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[96]/m:oMath[1]
+    revisions:
+    - s171
+    source_hash: 14fcff61a6d3a00b142029434aa05e40f76fb5d796eb9f17ce80e905082d41d4
+  o49:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[96]/m:oMath[2]
+    revisions:
+    - s172
+    source_hash: 189a4cd40f61885bbc761701f2b5b480f2150a5595272bc380420013f16f3ac6
+  o50:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[97]/m:oMathPara
+    revisions:
+    - s173
+    - s174
+    - s175
+    - s176
+    - s177
+    - s178
+    - s179
+    source_hash: 98f8b8b4c43140f0eb873fbb55ab7f61d6c5bea34a7c56f6e54eef2bc34b9169
+  o51:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[101]/m:oMathPara
+    revisions:
+    - s180
+    - s181
+    - s182
+    - s183
+    - s184
+    - s185
+    - s186
+    source_hash: 4944126031bea4888d01b2ecd424c86017dd3903ebfec538e98959b6b6daa0e2
+  o52:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[102]/m:oMath
+    revisions:
+    - s187
+    source_hash: b4edee5a29d018ce2283f507c97a4c176923df14c92147b1d8190195bbd191ba
+  o53:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[104]/m:oMathPara
+    revisions:
+    - s188
+    - s189
+    - s190
+    - s191
+    - s192
+    - s193
+    - s194
+    source_hash: 8ebb70b2564627d5983e3cc33fa849c59c92eac0d1313bf19881717bc2713cac
+  o54:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[106]/m:oMathPara
+    revisions:
+    - s195
+    - s196
+    - s197
+    - s198
+    - s199
+    - s200
+    - s201
+    source_hash: 90194928f7404cbe9ae4a152576e6e108b663176e63e09f4749e4ef40bce0d36
+  o55:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[109]/m:oMathPara
+    revisions:
+    - s202
+    - s203
+    - s204
+    - s205
+    - s206
+    - s207
+    - s208
+    - s209
+    - s210
+    - s211
+    source_hash: 3ae99268c2cb39bf4a1b8b90887f84c2cc8d9799fe98bb8d8953845dd8ea0e14
+  o56:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[111]/m:oMath[2]
+    revisions:
+    - s212
+    - s213
+    source_hash: 7a6815b9a254b7953c8a622f710458011ff0bf3e2dbaaed045c2566f52b73a2d
+  o57:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[114]/m:oMath
+    revisions:
+    - s214
+    source_hash: 32660c5fa697af84bada1181a12d23b038f905212d2dcbe149a036dd9a8703c0
+  o58:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[115]/m:oMath[1]
+    revisions:
+    - s215
+    source_hash: 3a17d152a30a6ff13167554bae441dc24719c7e031194066a84e966a7c4672c2
+  o59:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[115]/m:oMath[2]
+    revisions:
+    - s216
+    source_hash: 083a3ca3693e9eee5c9b440f8f7221b41e87d4ab67ca90cb978b333a8ee4f26e
+  o60:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[116]/m:oMathPara
+    revisions:
+    - s217
+    - s218
+    - s219
+    - s220
+    - s221
+    - s222
+    - s223
+    - s224
+    - s225
+    - s226
+    - s227
+    - s228
+    - s229
+    - s230
+    source_hash: c04be62eaef98eba43124995b7a57ea2bac98de0b9382fb3fceb533622fe280d
+  o61:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[119]/m:oMathPara
+    revisions:
+    - s231
+    - s232
+    - s233
+    - s234
+    - s235
+    - s236
+    source_hash: 2e8ac4da0e4c38cd995edac57201c831213f823cde611e3cea92315aa492ae63
+  o62:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[120]/m:oMath[1]
+    revisions:
+    - s237
+    source_hash: 4256b8f7de05c16704d33c737de65c889850ac1f2d405cd3e765c2ec19a152e5
+  o63:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[120]/m:oMath[2]
+    revisions:
+    - s238
+    source_hash: 323c2d12150bf210e76c995b2db57207c6e59914fa3148399a6d47d3b24f2580
+  o64:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[120]/m:oMath[3]
+    revisions:
+    - s239
+    source_hash: 1e95b617e0182c372c10b29a87ab55fdeaa502c65cae2c8756468f54fe476c17
+  o65:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[120]/m:oMath[4]
+    revisions:
+    - s240
+    source_hash: e77dde88d4cbd5671ad5ceab1a08d3cd37ec3d1162c644fa14f4070f9c848457
+  o66:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[120]/m:oMath[5]
+    revisions:
+    - s241
+    source_hash: a2c768d6b69303b5dd80bd1215816139373e3d6abc9db06ef97ea842c79a8056
+  o67:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[124]/m:oMathPara
+    revisions:
+    - s242
+    - s243
+    - s244
+    - s245
+    - s246
+    - s247
+    - s248
+    - s249
+    source_hash: 45dddd78bb6d854be56c2f14102654a96abde7e7edd031ae7814cdf63cf9d081
+  o68:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[2]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s250
+    source_hash: 01c37ad4e09d39ad73f6028433dde619497e0774d0b0f4362b88903ca523e721
+  o69:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[3]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s251
+    source_hash: 4fd644a248888f779af6aceeec7c4ce05c840b329350f11bea7741554cacf4ff
+  o70:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[4]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s252
+    source_hash: 46b44b3bae2e66f1889f0326007767876934c2dde7a3e134a72bde0c9109541e
+  o71:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[8]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s253
+    source_hash: 05e1e6313a44023032958be953729ef8bec69f46f07217698f0780d309af890f
+  o72:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[8]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s254
+    source_hash: 3045aa38e4b4c56cf1faa784b08f2fb75dabb4bdc91cd7214befb14b7f422dce
+  o73:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[9]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s255
+    source_hash: 67b88bc3456fc085e61a013dde502adb0186ef3a56d8980e35e9c8a1c61888bf
+  o74:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[9]/w:tc[3]/w:p/m:oMath
+    revisions:
+    - s256
+    source_hash: 3045aa38e4b4c56cf1faa784b08f2fb75dabb4bdc91cd7214befb14b7f422dce
+  o75:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[11]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s257
+    source_hash: 8861ce586d40dee65f2f7dc01798be620147c7c48c92bce1d8abad62d4edba6e
+  o76:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[12]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s258
+    source_hash: f2fb575d4f2e33f92a23020374f0b9b155c4d9c29de5e4acae45cd4b9c683f82
+  o77:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[13]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s259
+    source_hash: ad31e1111736e715ddd515dd58a82f49f3c00ba69be157b5c1c06db854ea8c50
+  o78:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[14]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s260
+    source_hash: cc7a55c99860efb86187d720eff559fddf184400c7db8b966d968951945544e0
+  o79:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:tbl[2]/w:tr[15]/w:tc[1]/w:p/m:oMathPara
+    revisions:
+    - s261
+    source_hash: a5352cb561fe8e356c2c7bee9d0aaf0d2c10973d9f4cd1149d36abf2817d3b6c
+  o80:
+    kind: equation
+    source: review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx
+    story: word/document.xml
+    path: /w:document/w:body/w:p[140]/m:oMath
+    revisions:
+    - s262
+    source_hash: 6183933d89fd9c299e7a411225fec6e506e615e02663241c315455b0022b18f2

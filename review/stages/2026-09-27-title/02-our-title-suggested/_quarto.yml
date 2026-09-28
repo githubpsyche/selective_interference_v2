@@ -1,0 +1,56 @@
+project:
+  type: manuscript
+  output-dir: _output
+  render:
+  - index.qmd
+  post-render:
+  - _extensions/quarto-review/finish.py
+manuscript:
+  article: index.qmd
+  code-links: false
+format:
+  apaquarto-html:
+    title-block-style: default
+    toc: true
+    toc-depth: 2
+    pagetitle: Selective interference — working review
+    author:
+    - name: Jordan B Gunn
+      affiliations:
+      - name: University of Cambridge
+        department: Department of Psychology
+    suppress-title-page: true
+    suppress-title-introduction: true
+    title: 'Competition and control in episodic memory search: A retrieved-context
+      account of selective interference'
+    css:
+    - apa-import.css
+    filters:
+    - at: post-render
+      path: apa-import.lua
+  docx: default
+  html:
+    output-file: index-regular.html
+    toc: true
+    toc-depth: 2
+    theme: darkly
+    pagetitle: Selective interference — regular HTML review
+    review-import-front-matter: true
+filters:
+- at: pre-ast
+  path: quarto-review
+- at: pre-ast
+  path: manuscript-frontmatter.lua
+- at: post-ast
+  path: manuscript-outline.lua
+quarto-review:
+  metadata-file: review.yml
+  reference-file: review/reference/manifest.json
+execute:
+  keep-md: true
+format-links:
+- format: apaquarto-html
+  text: APA HTML
+- format: html
+  text: Regular HTML
+- docx

@@ -1,0 +1,5 @@
+/* Keep review ranges on Word's repeated title available for review, while the
+   clean manuscript view uses Quarto's single native title block. */
+body[data-review-clean="true"] .qr-repeated-title {
+  display: none;
+}

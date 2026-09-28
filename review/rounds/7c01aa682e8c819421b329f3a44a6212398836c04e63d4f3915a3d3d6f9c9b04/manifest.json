@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "id": "7c01aa682e8c819421b329f3a44a6212398836c04e63d4f3915a3d3d6f9c9b04",
+  "created_at": "2026-09-27T11:13:23Z",
+  "files": {
+    "assets/media/image1.png": "27d7d780b3ca37719e67158234f1651ba0b6009cb9ca00921719b9b45f806419",
+    "assets/media/image11.png": "43137c97ef9fba8b22b0c13e0801bdc5dbb89efcf9d620331c29024f923f818b",
+    "assets/media/image12.png": "f495938022e85d117e2a29746ceeff2b0a23d8a94568badeac9b8176b19b449c",
+    "assets/media/image3.png": "74d6fe9c3de3ea10bd79ae6930add9d35cb75aa845f0d8f8e1e5bd4df125726f",
+    "assets/media/image5.png": "8356b6c2c99d838d243e41fc8c18ffa1b58a5f44c7824ad6c0d1b855bf006528",
+    "assets/media/image6.png": "be4742fb790ba9cfad7dc3ec323e5a3b76b7598df4a9cd4b65a9791036cb81d5",
+    "assets/media/image7.png": "b61a3599fe68067525373021e434107741e852081c5ba2e36eb18193de8e15a4",
+    "assets/media/image8.png": "8b88c900948c908aa6fca0b0dfc603aca0e34d8fdb4cdf8357e627747e582bcc",
+    "assets/media/image9.png": "8ff8567073a591cc7c7e9dfab0b96420aefba11c3c5f7a6af819bfe7523f4888",
+    "index.qmd": "c845bea90616edb3ca9f1cbdcb1474eec271a9917182f676f614616ebaefca2a",
+    "review.yml": "71eb61921877c229b6bccdf7db026d6c78d3bf0d66f9da823b78b3a0aeed18df"
+  },
+  "compiled": {},
+  "includes": []
+}
