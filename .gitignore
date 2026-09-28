@@ -28,3 +28,18 @@ _freeze/
 .vscode/
 .luarc.json
 .DS_Store
+
+# Manuscript review integration and generated intermediates
+/_environment.local
+/_extensions/quarto-review/review-state.yml
+/_extensions/quarto-review/review-reference.json
+/_extensions/quarto-review/review-update.txt
+/*_files/
+/*.html.md
+/*.docx.md
+
+/_*.local
+
+# Word owner files (document contents remain tracked/preserved)
+~$*.docx
+/_extensions/quarto-review/review-reference.qmd

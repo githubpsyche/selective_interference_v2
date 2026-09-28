@@ -1,0 +1,46 @@
+{
+  "raw_import_reference": "7c01aa682e8c819421b329f3a44a6212398836c04e63d4f3915a3d3d6f9c9b04",
+  "configured_migration_reference": "a2f9e88db1a8b6e3366cabcd09f9a87bbe0b0d14e9fca8d96adcc717ef279378",
+  "restored_original_bookmarks": [
+    "eq-context-input",
+    "eq-context-update",
+    "eq-stopping"
+  ],
+  "intermediate_configuration_reference": "03dddeee5483b8111c3276de25a02acb8af16067f727fb9c9adaffa995e1a5fe",
+  "verified_at": "2026-09-27T12:47:45.396560+00:00",
+  "source": "notes/22_08_2026/selective_interference_rik_emily_combined_review.docx",
+  "source_sha256": "ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305",
+  "archive": "review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx",
+  "scope": "Untouched pooled Henson/Holmes draft only; no additional Talmi feedback or later prose edits.",
+  "comment_records": 51,
+  "comment_threads": 47,
+  "replies": 4,
+  "comments_by_author": {
+    "Emily Holmes": 10,
+    "Gunn, Jordan": 5,
+    "Rik Henson": 36
+  },
+  "native_revision_records": 285,
+  "exported_revision_fragments": 286,
+  "revisions_by_author": {
+    "Emily Holmes": 25,
+    "Rik Henson": 93,
+    "Gunn, Jordan": 167
+  },
+  "working_suggestions": 285,
+  "all_suggestions_pending": true,
+  "new_prose_edits": 0,
+  "figures_verified": 12,
+  "comment_fields_and_anchors_preserved": true,
+  "all_revision_content_and_authorship_preserved": true,
+  "typesetting_space_only_differences": [
+    "s45",
+    "s265"
+  ],
+  "preexisting_broken_targets": [
+    "X510f1211e07a3ef8f4aa5eaadde4214adc1a9dc"
+  ],
+  "html": "_output/index.html",
+  "word_roundtrip": "_output/index.docx",
+  "verification": "Passed: archived bytes, full comment fields/anchors, revision identity/content/authorship, embedded figure bytes, equation links, fixed-reference checksums, zero new source changes."
+}

@@ -1,0 +1,26 @@
+/* APA presentation of this Word import's existing body structure.
+   Loaded only by apaquarto-html in _quarto.yml; no manuscript text is changed. */
+main.content > section:first-of-type > p {
+  text-align: center;
+  text-indent: 0;
+}
+main.content > #abstract > p {
+  text-indent: 0;
+}
+main.content > #references > p {
+  padding-left: .5in;
+  text-indent: -.5in;
+}
+main.content img {
+  max-width: 100%;
+  height: auto;
+}
+/* The old author note is a pending deletion; keep its keyword paragraph. */
+body[data-review-view="proposed"] #author-note > h1,
+body[data-review-view="proposed"] #author-note > h1 + p {
+  display: none;
+}
+/* Word remains a separate, earlier export during the HTML review round. */
+#TOC .quarto-alternate-formats {
+  display: none;
+}

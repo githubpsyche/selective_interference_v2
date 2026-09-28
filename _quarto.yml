@@ -1,31 +1,88 @@
 project:
   type: manuscript
   output-dir: docs
-  render: 
-    - index.qmd
-
+  render:
+  - index.qmd
+  post-render:
+  - _extensions/quarto-review/finish.py
 manuscript:
+  article: index.qmd
   code-links: false
-
-execute:
-  freeze: auto
-
+author:
+- name: Jordan B Gunn
+  affiliations:
+  - name: Department of Psychology, University of Cambridge, Cambridge, UK
+- name: Richard N. Henson
+  affiliations:
+  - name: MRC Cognition and Brain Sciences Unit, Department of Psychiatry, University of Cambridge, Cambridge, UK
+- name: Emily A. Holmes
+  affiliations:
+  - name: Department of Women’s and Children’s Health, Uppsala University, Uppsala, Sweden
+  - name: School of Psychology, Faculty of Environmental and Life Sciences, University of Southampton, Southampton, UK
+- name: Thomas G. W. McConnell
+  affiliations:
+  - name: Department of Psychology, University of Cambridge, Cambridge, UK
+- name: Deborah Talmi
+  affiliations:
+  - name: Department of Psychology, University of Cambridge, Cambridge, UK
 format:
-  html:
-    default: true
+  apaquarto-html:
+    title-block-style: default
     toc: true
+    toc-depth: 2
+    pagetitle: Selective interference — working review
+    suppress-title-page: true
+    suppress-title-introduction: true
+    shorttitle: INTRUSIVE AND VOLUNTARY MEMORY FROM A SINGLE SYSTEM
+    title: 'Intrusive and voluntary memory from a single system: A retrieved-context
+      account of selective interference in the trauma-film paradigm'
+    css:
+    - presentation/apa-import.css
+    filters:
+    - at: post-render
+      path: presentation/apa-import.lua
+  apaquarto-docx:
+    title: 'Intrusive and voluntary memory from a single system: A retrieved-context
+      account of selective interference in the trauma-film paradigm'
+    suppress-title-page: true
+    suppress-title-introduction: true
+    shorttitle: INTRUSIVE AND VOLUNTARY MEMORY FROM A SINGLE SYSTEM
+    filters:
+    - at: post-render
+      path: presentation/apa-import.lua
+    - at: post-render
+      path: presentation/apa-import-docx.lua
+  html:
+    output-file: index-regular.html
+    template-partials:
+    - presentation/title-block.html
+    toc: true
+    toc-depth: 2
     theme: darkly
-    include-before-body:
-      - text: "This is an in-progress working draft. Please do not cite, quote, or circulate without the authors' written permission."
+    pagetitle: Selective interference — regular HTML review
+    review-import-front-matter: true
+    css: presentation/manuscript-import.css
   apaquarto-pdf:
     nocorrespondence: true
     donotrepeattitle: true
     draftfirst: true
     keep-tex: true
     filters:
-      - abstract-section
-  apaquarto-docx:
-    nocorrespondence: true
-    donotrepeattitle: true
-
-format-links: [apaquarto-pdf, apaquarto-docx]
+    - abstract-section
+filters:
+- at: pre-ast
+  path: quarto-review
+- at: pre-ast
+  path: presentation/manuscript-frontmatter.lua
+- at: post-ast
+  path: presentation/manuscript-outline.lua
+quarto-review:
+  source-file: index.qmd
+  reference-file: reference.qmd
+execute:
+  keep-md: true
+format-links:
+- format: apaquarto-html
+  text: APA HTML
+- format: html
+  text: Regular HTML
