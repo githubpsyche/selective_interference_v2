@@ -965,38 +965,54 @@ Agreed. I’ve made the trauma-film setting explicit in the title and brought in
 :::
 ::::
 
-:::: {#c21 .review-thread by=EH at=2026-07-27T14:30:00Z format=plain}
+:::: {#c21 .review-thread .resolved by=EH at=2026-07-27T14:30:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"21","paragraph_id":"132F575E","durable_id":"2D803BB9","initials":"EH","date_utc":"2026-07-27T12:30:00Z"}} -->
 define?
+
+::: {#r2906e5f23334 .reply by=GJ at=2026-09-28T00:27:02Z}
+I’ve replaced “task competitors” with “task memories” and explained how imagery generated during the task becomes associated with film context and competes with film memories during retrieval.
+:::
 ::::
 
-:::: {#c22 .review-thread by=EH at=2026-07-27T14:31:00Z format=plain}
+:::: {#c22 .review-thread .resolved by=EH at=2026-07-27T14:31:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"22","paragraph_id":"304157C1","durable_id":"6B4CD8F2","initials":"EH","date_utc":"2026-07-27T12:31:00Z"}} -->
 involuntary?
+
+::: {#r186725949b44 .reply by=GJ at=2026-09-28T00:27:03Z}
+Changed “unguided” to “involuntary retrieval.”
+:::
 ::::
 
-:::: {#c24 .review-thread by=RH at=2026-07-25T10:11:00Z format=plain}
+:::: {#c24 .review-thread .resolved by=RH at=2026-07-25T10:11:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"24","paragraph_id":"7C414769","durable_id":"7C414769","initials":"RH"}} -->
 Reader may not have adopted your abstract terminology yet
 
-::: {#c25 .reply by=GJ at=2026-07-27T09:08:00Z format=plain resolved=false}
+::: {#c25 .reply by=GJ at=2026-07-27T09:08:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"25","paragraph_id":"29DD9782","durable_id":"73F0F64F","initials":"GJ","date_utc":"2026-07-27T08:08:00Z"}} -->
 We don't necessarily need the "unguided film recall" terminology at all if it's opaque here. However, I'm not sure if "intrusions" is the right word either, because I feel "intrusion" has a specific connotation of disruption that doesn't fit here. Maybe we can replace "unguided" with something more idiomatic like "unintentional"?
 :::
 
-::: {#c26 .reply by=GJ at=2026-07-27T09:09:00Z format=plain resolved=false}
+::: {#c26 .reply by=GJ at=2026-07-27T09:09:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"26","paragraph_id":"7C56BD08","durable_id":"67C16765","initials":"GJ","date_utc":"2026-07-27T08:09:00Z"}} -->
 Of course, my language here contradicts my approach to using "intrusions" elsewhere in the manuscript, so maybe I'm being overdefensive.
 :::
+
+::: {#r73dbcf2200c8 .reply by=GJ at=2026-09-28T00:27:03Z}
+I’ve defined “intrusions” when introducing the empirical finding and used “involuntary retrieval” when describing the simulations. I’ve also clarified what context represents and how the retrieval cue supports deliberate recall.
+:::
 ::::
 
-:::: {#c32 .review-thread by=RH at=2026-07-25T10:12:00Z format=plain}
+:::: {#c32 .review-thread .resolved by=RH at=2026-07-25T10:12:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"32","paragraph_id":"737375D0","durable_id":"737375D0","initials":"RH"}} -->
 I still think this is fairly obvious, and predicted by just about any model of memory, so not sure it is important enough to mention in the Abstract
 
-::: {#c33 .reply by=GJ at=2026-07-27T09:09:00Z format=plain resolved=false}
+::: {#c33 .reply by=GJ at=2026-07-27T09:09:00Z format=plain}
 <!-- review-data: {"provenance":{"source":"review/exchanges/ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305.docx","word_id":"33","paragraph_id":"19C594B0","durable_id":"32BBF0B5","initials":"GJ","date_utc":"2026-07-27T08:09:00Z"}} -->
 On the one hand, I agree that it's obvious, but on the other hand, there seems to be a sizable literature that misses this distinction. So I am therefore more ambivalent than you about how important it is to highlight this observation here and elsewhere in the manuscript.
+:::
+
+::: {#r5f4edd1c6a70 .reply by=GJ at=2026-09-28T00:27:04Z}
+I’ve removed the recognition comparison from the abstract and retained its treatment in the main text.
 :::
 ::::
 
