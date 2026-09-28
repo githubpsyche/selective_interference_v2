@@ -1,0 +1,143 @@
+recorded: '2026-09-27'
+source_word_document: notes/22_08_2026/selective_interference_rik_emily_combined_review.docx
+source_word_sha256: ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305
+manuscript: index.qmd
+note: Current figures are preserved Word-import snapshots. Related scientific packages
+  are navigation aids, not a claim that their latest output reproduces the imported
+  figure. Update this map explicitly when manuscript figures change.
+figures:
+- image: assets/media/image1.png
+  topic: Modeled trauma-film paradigm and empirical target
+  sha256: 27d7d780b3ca37719e67158234f1651ba0b6009cb9ca00921719b9b45f806419
+  source_word_media:
+  - word/media/image1.png
+  source_verified: true
+  manuscript_line_at_mapping: 49
+  related_packages:
+  - work/empirical_target
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image2.png
+  topic: Selected empirical comparisons across retrieval formats
+  sha256: 21d4f127ea6f446ac1b235a3eab20af65edfd3832ab306b3ee1dcf6f1cab4eda
+  source_word_media:
+  - word/media/image2.png
+  source_verified: true
+  manuscript_line_at_mapping: 57
+  related_packages:
+  - work/empirical_target
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image3.png
+  topic: Encoding/item-context association diagram
+  sha256: 74d6fe9c3de3ea10bd79ae6930add9d35cb75aa845f0d8f8e1e5bd4df125726f
+  source_word_media:
+  - word/media/image3.png
+  source_verified: true
+  manuscript_line_at_mapping: 87
+  related_packages:
+  - work/retrieved_context_account
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image4.png
+  topic: Retrieval operations and control mechanisms
+  sha256: 2c0fd9454478bff3addb00685325b38c2a264145c4dad55e804572c73fcf1eae
+  source_word_media:
+  - word/media/image4.png
+  source_verified: true
+  manuscript_line_at_mapping: 101
+  related_packages:
+  - work/retrieved_context_account
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image5.png
+  topic: Simulation 1 example recall sequences
+  sha256: 8356b6c2c99d838d243e41fc8c18ffa1b58a5f44c7824ad6c0d1b855bf006528
+  source_word_media:
+  - word/media/image5.png
+  source_verified: true
+  manuscript_line_at_mapping: 311
+  related_packages:
+  - work/simulation1_unguided_cued
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image6.png
+  topic: Simulation 1 recall by encoded position
+  sha256: be4742fb790ba9cfad7dc3ec323e5a3b76b7598df4a9cd4b65a9791036cb81d5
+  source_word_media:
+  - word/media/image6.png
+  source_verified: true
+  manuscript_line_at_mapping: 317
+  related_packages:
+  - work/simulation1_unguided_cued
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image7.png
+  topic: Simulation 2 selective interference in deliberate recall
+  sha256: b61a3599fe68067525373021e434107741e852081c5ba2e36eb18193de8e15a4
+  source_word_media:
+  - word/media/image7.png
+  source_verified: true
+  manuscript_line_at_mapping: 327
+  related_packages:
+  - work/simulation2_control_cued_behavioral
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image8.png
+  topic: Simulation 2 retrieval-control decomposition
+  sha256: 8b88c900948c908aa6fca0b0dfc603aca0e34d8fdb4cdf8357e627747e582bcc
+  source_word_media:
+  - word/media/image8.png
+  source_verified: true
+  manuscript_line_at_mapping: 333
+  related_packages:
+  - work/simulation2_retrieval_control_decomposition
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image9.png
+  topic: Simulation 2 start-context reinstatement
+  sha256: 8ff8567073a591cc7c7e9dfab0b96420aefba11c3c5f7a6af819bfe7523f4888
+  source_word_media:
+  - word/media/image9.png
+  source_verified: true
+  manuscript_line_at_mapping: 339
+  related_packages:
+  - work/simulation2_start_context_reinstatement
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image10.png
+  topic: Simulation 2 monitoring and positional recall
+  sha256: bd8197ef594b9877343a1de780c84062acff1e37f8d6afc73d32a131bff7527a
+  source_word_media:
+  - word/media/image10.png
+  source_verified: true
+  manuscript_line_at_mapping: 349
+  related_packages:
+  - work/simulation2_target_monitoring_diagnostic
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image11.png
+  topic: Recognition access routes and probe evidence
+  sha256: 43137c97ef9fba8b22b0c13e0801bdc5dbb89efcf9d620331c29024f923f818b
+  source_word_media:
+  - word/media/image11.png
+  source_verified: true
+  manuscript_line_at_mapping: 361
+  related_packages:
+  - work/simulation4_recognition_full_figure
+  - work/simulation3_recognition_test_format
+  - work/simulation4_test_format_schematic
+  relationship: caption/topic match; reproduction not yet verified
+  exact_work_image_matches: []
+- image: assets/media/image12.png
+  topic: Context-overlap diagnostic
+  sha256: f495938022e85d117e2a29746ceeff2b0a23d8a94568badeac9b8176b19b449c
+  source_word_media:
+  - word/media/image12.png
+  source_verified: true
+  manuscript_line_at_mapping: 577
+  related_packages:
+  - work/simulation1_unguided_cued
+  relationship: exact PNG match; generator still requires explicit verification
+  exact_work_image_matches:
+  - work/simulation1_unguided_cued/simulation1_unguided_cued_context_overlap.png

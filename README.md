@@ -188,6 +188,13 @@ and preview snapshots. Authoring takes place in QMD/YAML and the source assets.
 Local runtime configuration, caches, owner files, and intermediate files are
 ignored. Do not manually edit a generated output as the source of a revision.
 
+Commit generated publication snapshots deliberately, separately from manuscript and research changes.
+Ordinary rendering can change these tracked outputs; browser diagnostics and TeX intermediates are ignored.
+Automatically retained Word exports in `review/exchanges/exports/` stay local by default.
+The complete export records for the named title checkpoints and retained current Word file are tracked explicitly.
+Before sharing a new Word export, add its complete export directory with `git add -f review/exchanges/exports/<export-id>/` so a returned document can be reconciled from another checkout.
+Ignoring routine exports does not delete their local files.
+
 Use ISO dates for new dated records. Original collaborator filenames, immutable
 review snapshots, and established scientific package paths remain stable.
 

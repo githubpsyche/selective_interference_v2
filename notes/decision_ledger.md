@@ -1,5 +1,7 @@
 **Draft Contract and Decision Ledger**
 
+> Historical editorial contract from an earlier drafting cycle. Its old title and “locked/current” labels are retained as history, not as the current revision scope. Current manuscript and review status are recorded in the [project README](../README.md).
+
 This is not manuscript prose. It is a pass/fail specification for the next draft.
 
 **Source Hierarchy**

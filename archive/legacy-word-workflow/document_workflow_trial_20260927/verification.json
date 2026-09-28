@@ -1,0 +1,53 @@
+{
+  "source": "/Users/jordangunn/workspace/selective_interference_v2/notes/26_09_2026/selective_interference_minimal_revision_working.docx",
+  "source_sha256": "c7577b101d8c1213aac88dd68fbca1725cc321e07f7e7f37252a2bc72545b83c",
+  "source_unchanged": true,
+  "pandoc_version": "pandoc 3.9.0.2",
+  "original": {
+    "comments": 52,
+    "insertions": 227,
+    "deletions": 52,
+    "threaded_replies": 5,
+    "resolved_threads": 0,
+    "review_parts": [
+      "word/comments.xml",
+      "word/commentsExtended.xml",
+      "word/commentsExtensible.xml",
+      "word/commentsIds.xml"
+    ]
+  },
+  "ordinary_roundtrip": {
+    "comments": 51,
+    "insertions": 56,
+    "deletions": 39,
+    "threaded_replies": 0,
+    "resolved_threads": 0,
+    "review_parts": [
+      "word/comments.xml"
+    ]
+  },
+  "planned_redline": {
+    "comments": 1,
+    "insertions": 8,
+    "deletions": 9,
+    "threaded_replies": 0,
+    "resolved_threads": 0,
+    "review_parts": [
+      "word/comments.xml"
+    ]
+  },
+  "checks": {
+    "accepted_text_exactly_approved_200_words": true,
+    "rejected_text_exactly_baseline_209_words": true,
+    "revision_author_is_Gunn_Jordan": true,
+    "original_file_unchanged": true
+  },
+  "not_tested": [
+    "Opening the output in Word",
+    "Final layout",
+    "Native reply-thread export",
+    "Full-manuscript Quarto render",
+    "Cloud synchronization"
+  ],
+  "conversion_warnings": []
+}

@@ -1,5 +1,7 @@
 # Model Overview Ledger
 
+> Historical model-section planning from an earlier drafting cycle. Retain it as context; its “locked” labels are not a verification of the current code or a record of edits implemented in the current manuscript. Current manuscript and review status are recorded in the [project README](../README.md).
+
 ## Locked Decisions
 
 - The figure package is the scientific spine; prose should explain the account represented by Figures 3 and 4.

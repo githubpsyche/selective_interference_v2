@@ -1,5 +1,7 @@
 # Feedback Review Queue
 
+> Historical feedback queue. Source quotations and meeting records remain useful; manuscript-state descriptions and pending/implemented labels belong to the earlier drafting cycle. Current manuscript and review status are recorded in the [project README](../README.md).
+
 Purpose: working queue for reviewing advisor feedback, email notes, and meeting notes one item at a time under the current PB&R framing: goal-directed remembering under contextual competition, with the trauma-film paradigm as the focal case.
 
 Decision fields are intentionally blank. Fill them during review rather than treating this file as an interpretation memo.

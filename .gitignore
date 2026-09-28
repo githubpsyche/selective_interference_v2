@@ -43,3 +43,12 @@ _freeze/
 # Word owner files (document contents remain tracked/preserved)
 ~$*.docx
 /_extensions/quarto-review/review-reference.qmd
+
+# Local browser diagnostics and generated intermediates
+/.playwright-cli/
+**/docs/_tex/
+/docs/_extensions/
+/archive/legacy-figure-bundle/selected_figures_files/
+
+# Routine Word exports stay local; deliberately retain shared/named records with git add -f.
+/review/exchanges/exports/
