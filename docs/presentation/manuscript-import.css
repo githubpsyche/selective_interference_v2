@@ -1,0 +1,27 @@
+/* Keep review ranges on Word's repeated title available for review, while the
+   clean manuscript view uses Quarto's single native title block. */
+body[data-review-clean="true"] .qr-repeated-title {
+  display: none;
+}
+/* The source has one annotated author line; Quarto has five native author
+   records. Review shows the source line, while Reading shows native metadata. */
+body:not([data-review-clean="true"]) #title-block-header .quarto-title-meta-container {
+  display: none;
+}
+body[data-review-clean="true"] #title-block-header .qr-reviewed-frontmatter {
+  display: none;
+}
+#title-block-header .qr-reviewed-frontmatter {
+  margin-top: 1rem;
+}
+#title-block-header .qr-reviewed-frontmatter p {
+  margin: .25rem 0 1rem;
+  overflow-wrap: anywhere;
+}
+#title-block-header .qr-reviewed-frontmatter .quarto-title-meta-heading {
+  margin-top: .75rem;
+}
+body[data-review-view="proposed"] #author-note,
+#title-block-header .quarto-alternate-formats {
+  display: none;
+}
