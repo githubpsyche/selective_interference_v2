@@ -1,0 +1,13 @@
+retrieval_setting,start_drift_scale,rejected_recall_drift_scale,reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,first_cue_after,cue_interval,phase,recall_probability_mass
+Ongoing context,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,break,0.11380000010831282
+Ongoing context,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,filler,1.6324000246822834
+Ongoing context,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,film,0.9575999993830919
+Ongoing context,0.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,task,4.979599982500076
+Maximal reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,break,0.16419999799109064
+Maximal reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,filler,0.04359999923326541
+Maximal reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,film,2.94999997317791
+Maximal reinstatement,1.5,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,task,4.511200025677681
+Matched reinstatement,1.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,break,0.1484000010532327
+Matched reinstatement,1.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,filler,0.15420000022277236
+Matched reinstatement,1.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,film,2.3875999823212624
+Matched reinstatement,1.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,4,task,4.950000002980232

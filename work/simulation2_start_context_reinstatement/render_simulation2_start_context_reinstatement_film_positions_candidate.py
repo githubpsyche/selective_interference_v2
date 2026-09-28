@@ -14,16 +14,20 @@ OUTPUT_PREFIX = f"{SOURCE_PREFIX}_film_positions_candidate"
 PFR_PATH = FIGURE_DIR / f"{SOURCE_PREFIX}_pfr.csv"
 SPC_PATH = FIGURE_DIR / f"{SOURCE_PREFIX}_spc.csv"
 
-UNGUIDED_LABEL = "Unguided recall"
-REINSTATEMENT_LABEL = "Start-of-film context reinstatement"
-SETTINGS = [UNGUIDED_LABEL, REINSTATEMENT_LABEL]
+UNGUIDED_KEY = "Unguided recall"
+REINSTATEMENT_KEY = "Start-of-film context reinstatement"
+SETTINGS = [UNGUIDED_KEY, REINSTATEMENT_KEY]
+DISPLAY_LABELS = {
+    UNGUIDED_KEY: "Ongoing context",
+    REINSTATEMENT_KEY: "Reinstated start-of-film context",
+}
 STYLES = {
-    UNGUIDED_LABEL: {
+    UNGUIDED_KEY: {
         "color": "#7C8794",
         "linestyle": (0, (3, 2)),
         "linewidth": 2.0,
     },
-    REINSTATEMENT_LABEL: {
+    REINSTATEMENT_KEY: {
         "color": "#111111",
         "linestyle": "-",
         "linewidth": 2.0,
@@ -78,7 +82,12 @@ def style_axis(
 ) -> None:
     for setting in SETTINGS:
         positions, values = curves[setting]
-        axis.plot(positions, values, label=setting, **STYLES[setting])
+        axis.plot(
+            positions,
+            values,
+            label=DISPLAY_LABELS[setting],
+            **STYLES[setting],
+        )
 
     film_positions = curves[SETTINGS[0]][0]
     axis.set_xlim(float(film_positions.min()), float(film_positions.max()))

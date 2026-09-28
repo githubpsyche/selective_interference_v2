@@ -1,19 +1,19 @@
 package_index,retrieval_control_package,goal_group,within_group_label,display_label,film_goal_included,start_reinstatement_included,target_monitoring_included,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,low_endpoint_film_recall,high_endpoint_film_recall,film_items_reduced
-1,No deliberate control,Film-category cue absent,None,"Unguided
-film recall",False,False,False,0.0,0.0,1.0,3.2595999985933304,0.7753999959677458,2.4842000026255846
+1,No deliberate control,Film-category cue absent,None,"No control
+operations",False,False,False,0.0,0.0,1.0,3.2595999985933304,0.7753999959677458,2.4842000026255846
 2,retrieval monitoring,Film-category cue absent,"Retrieval
-monitoring","Retrieval
-monitoring",False,False,True,0.0,0.0,0.0,5.3207999765872955,3.0475999787449837,2.273199997842312
+monitoring","Monitoring
+only",False,False,True,0.0,0.0,0.0,5.3207999765872955,3.0475999787449837,2.273199997842312
 3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
-reinstatement","Start-of-
-film
-reinstatement",False,True,False,1.0,0.0,1.0,6.215799927711487,2.0031999945640564,4.21259993314743
+reinstatement","Start-of-film
+reinstatement
+only",False,True,False,1.0,0.0,1.0,6.215799927711487,2.0031999945640564,4.21259993314743
 4,start-of-film reinstatement + retrieval monitoring,Film-category cue absent,"Reinstatement
 + monitoring","Reinstatement
 +
 monitoring",False,True,True,1.0,0.0,0.0,6.917600005865097,4.4326000064611435,2.4849999994039536
 5,maintained film-category cue,Film-category cue present,None,"Film-category
-cue",True,False,False,0.0,1.0,1.0,7.512399971485138,6.823399990797043,0.6889999806880951
+cue only",True,False,False,0.0,1.0,1.0,7.512399971485138,6.823399990797043,0.6889999806880951
 6,maintained film-category cue + retrieval monitoring,Film-category cue present,"Retrieval
 monitoring","Cue
 +
@@ -23,6 +23,5 @@ reinstatement","Cue
 +
 reinstatement",True,True,False,1.0,1.0,1.0,7.5783999264240265,6.839200019836426,0.7391999065876007
 8,maintained film-category cue + start-of-film reinstatement + retrieval monitoring,Film-category cue present,"Reinstatement
-+ monitoring","Full
-deliberate
-control",True,True,True,1.0,1.0,0.0,7.6129999458789825,7.063000023365021,0.5499999225139618
++ monitoring","All three
+controls",True,True,True,1.0,1.0,0.0,7.6129999458789825,7.063000023365021,0.5499999225139618

@@ -22,8 +22,8 @@
 </text>
 
 <rect x="286" y="190" width="168" height="120" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="370" y="222" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
-  <tspan x="370" dy="0">Context-to-</tspan><tspan x="370" dy="24">feature memory</tspan><tspan x="370" dy="24">(MCF)</tspan>
+<text x="370" y="234" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">
+  <tspan x="370" dy="0">Context-to-</tspan><tspan x="370" dy="24">feature memory</tspan>
 </text>
 
 <rect x="518" y="96" width="198" height="142" rx="22" fill="white" stroke="#1764D8" stroke-width="3"/>

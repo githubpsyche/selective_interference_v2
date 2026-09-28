@@ -32,10 +32,10 @@
 <text x="1097" y="198" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">delay</text>
 
 <rect x="1227" y="82" width="200" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
-<text x="1327" y="106" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Unguided film</text>
+<text x="1327" y="106" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Involuntary</text>
 <text x="1327" y="132" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">recall</text>
 <rect x="1227" y="144" width="200" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
-<text x="1327" y="168" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Deliberate film</text>
+<text x="1327" y="168" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Deliberate</text>
 <text x="1327" y="194" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">recall</text>
 <rect x="1227" y="206" width="200" height="54" rx="12" fill="#FAFBFC" stroke="#3D4B5C" stroke-width="3"/>
 <text x="1327" y="228" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Deliberate</text>

@@ -3,7 +3,7 @@
 <text x="842.5" y="64.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#111111" >Film recall by condition and retrieval mode</text>
 <text x="587.5" y="142.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111111" >Without pre-task reminder</text>
 <text x="1097.5" y="142.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111111" >With pre-task film reminder</text>
-<text x="175.0" y="301.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="175.0" dy="0.0">Unguided</tspan><tspan x="175.0" dy="33.0">film recall</tspan></text>
+<text x="175.0" y="301.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="175.0" dy="0.0">Involuntary</tspan><tspan x="175.0" dy="33.0">film recall</tspan></text>
 <text x="175.0" y="651.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#111111"><tspan x="175.0" dy="0.0">Deliberate</tspan><tspan x="175.0" dy="33.0">film recall</tspan></text>
 <line x1="380.0" y1="445.0" x2="795.0" y2="445.0" stroke="#DCE3EA" stroke-width="2.0"/>
 <text x="362.0" y="453.0" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#111111" >0</text>

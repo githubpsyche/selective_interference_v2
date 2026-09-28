@@ -73,14 +73,14 @@ ENDPOINT_DISPLAY_LABELS = {
 }
 
 DISPLAY_LABELS = {
-    1: "Unguided\nfilm recall",
-    2: "Retrieval\nmonitoring",
-    3: "Start-of-\nfilm\nreinstatement",
+    1: "No control\noperations",
+    2: "Monitoring\nonly",
+    3: "Start-of-film\nreinstatement\nonly",
     4: "Reinstatement\n+\nmonitoring",
-    5: "Film-category\ncue",
+    5: "Film-category\ncue only",
     6: "Cue\n+\nmonitoring",
     7: "Cue\n+\nreinstatement",
-    8: "Full\ndeliberate\ncontrol",
+    8: "All three\ncontrols",
 }
 
 

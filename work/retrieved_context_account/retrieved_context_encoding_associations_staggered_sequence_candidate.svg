@@ -19,7 +19,7 @@
 
   <rect x="0" y="0" width="1680" height="1200" fill="white"/>
 
-  <!-- Panel A is the pre-existing Figure 3 panel, unchanged. -->
+  <!-- Panel A: item-context association schematic. -->
   <text x="38" y="62" font-size="44" font-weight="700" fill="#111111">A</text>
   <image href="panel_item_context_associations_no_letter.svg" x="470" y="10" width="740" height="500"/>
 

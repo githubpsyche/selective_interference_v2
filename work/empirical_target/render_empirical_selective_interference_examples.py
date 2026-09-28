@@ -365,8 +365,8 @@ def build_svg() -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}">',
         f'<rect x="0" y="0" width="{WIDTH}" height="{HEIGHT}" fill="white"/>',
         text(817, 56, "Empirical tests of selective interference", TITLE_SIZE, weight="bold"),
-        text(542, 126, "Unguided film recall", COLUMN_SIZE, weight="bold"),
-        text(1058, 126, "Deliberate film recall", COLUMN_SIZE, weight="bold"),
+        text(542, 126, "Intrusive memory", COLUMN_SIZE, weight="bold"),
+        text(1058, 126, "Voluntary memory", COLUMN_SIZE, weight="bold"),
         line(292, 150, 292, 1322, GRID, 2.4),
         line(800, 150, 800, 1322, GRID, 2.4),
         line(1316, 150, 1316, 1322, GRID, 2.4),
@@ -431,10 +431,10 @@ def save_caption_composite() -> None:
     image_height = fig_width * image_aspect
     title = "Empirical tests of selective interference."
     body = (
-        "Rows show selected studies that pair intrusion-like or involuntary-memory measures with different "
-        "deliberate-memory tests: diary intrusions with recognition, diary intrusions with free recall, laboratory "
+        "Rows show selected studies that pair intrusive-memory measures with different voluntary-memory tests: "
+        "diary intrusions with recognition, diary intrusions with free recall, laboratory "
         "intrusion reports with recognition, and closely matched laboratory reports under involuntary and voluntary "
-        "retrieval instructions. Column headings are bridge labels for the theoretical contrast, and panel titles name "
+        "retrieval instructions. Column headings identify the broad empirical measure classes, and panel titles name "
         "the empirical measure used in each study. The lower rows both use laboratory intrusion/report tasks; the "
         "McConnell row adds a voluntary-report version of the same laboratory reporting format. Gray bars indicate the "
         "study-specific comparison/control condition, such as rest or auditory control, and orange bars indicate the "

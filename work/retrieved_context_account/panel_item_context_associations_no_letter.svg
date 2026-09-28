@@ -6,14 +6,14 @@
 <text x="370" y="62" font-size="27" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Item-context associations</tspan></text>
 
 <rect x="162" y="78" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
-<text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context (C)</tspan></text>
+<text x="370" y="111" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Context</tspan></text>
 <rect x="196" y="126" width="348" height="52" rx="12" fill="white" stroke="#3D4B5C" stroke-width="2"/>
 <line x1="370" y1="126" x2="370" y2="178" stroke="#3D4B5C" stroke-width="2"/>
 <text x="283" y="160" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="283" dy="0">Temporal</tspan></text>
 <text x="457" y="146" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="457" dy="0">Source/</tspan><tspan x="457" dy="21">emotional</tspan></text>
 
 <rect x="162" y="336" width="416" height="112" rx="24" fill="#EEF3F8" stroke="#3D4B5C" stroke-width="3"/>
-<text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Features / items (F)</tspan></text>
+<text x="370" y="370" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="370" dy="0">Item representations</tspan></text>
 <circle cx="250" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
 <circle cx="292" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
 <circle cx="334" cy="405" r="17" fill="white" stroke="#1764D8" stroke-width="3"/>
@@ -29,10 +29,10 @@
 <text x="490" y="411" font-size="16" font-weight="700" fill="#D96B2B" text-anchor="middle"><tspan x="490" dy="0">T3</tspan></text>
 
 <rect x="10" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="110" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-</tspan><tspan x="110" dy="28">context memory</tspan><tspan x="110" dy="28">(MFC)</tspan></text>
+<text x="110" y="253" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="110" dy="0">Feature-to-</tspan><tspan x="110" dy="28">context memory</tspan></text>
 
 <rect x="530" y="210" width="200" height="110" rx="18" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="630" y="239" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-</tspan><tspan x="630" dy="28">feature memory</tspan><tspan x="630" dy="28">(MCF)</tspan></text>
+<text x="630" y="253" font-size="24" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="630" dy="0">Context-to-</tspan><tspan x="630" dy="28">feature memory</tspan></text>
 
 <polyline points="110,210 110,126 162,126" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="578,126 630,126 630,210" fill="none" stroke="#3D4B5C" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>

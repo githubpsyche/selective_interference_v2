@@ -232,7 +232,7 @@ axis_b.plot(
     spc_curves[MODERATE_MONITORING_KAPPA],
     color=MODERATE_MONITORING_COLOR,
     linewidth=1.7,
-    label="Retrieval monitoring",
+    label="Moderate retrieval monitoring",
     zorder=3,
 )
 axis_b.set_xlabel("Encoded position", fontsize=STRUCTURAL_FONTSIZE, labelpad=7)

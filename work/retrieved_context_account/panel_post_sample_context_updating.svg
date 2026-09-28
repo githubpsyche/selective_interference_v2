@@ -23,7 +23,7 @@
 
 <path d="M 332 164 L 396 164" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
 <rect x="416" y="126" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="506" y="150" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+<text x="506" y="155" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan></text>
 
 <path d="M 596 164 L 786 164" fill="none" stroke="#1764D8" stroke-width="3" marker-end="url(#arrow-film)"/>
 <text x="692" y="144" font-size="20" font-weight="700" fill="#1764D8" text-anchor="middle"><tspan x="692" dy="0">ordinary update</tspan></text>
@@ -48,7 +48,7 @@
 
 <path d="M 332 324 L 396 324" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
 <rect x="416" y="286" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="506" y="310" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+<text x="506" y="315" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan></text>
 
 <path d="M 596 324 L 786 324" fill="none" stroke="#E46C24" stroke-width="3" marker-end="url(#arrow-task)"/>
 <text x="692" y="304" font-size="20" font-weight="700" fill="#E46C24" text-anchor="middle"><tspan x="692" dy="0">ordinary update</tspan></text>
@@ -73,7 +73,7 @@
 
 <path d="M 332 484 L 396 484" fill="none" stroke="#3D4B5C" stroke-width="3" marker-end="url(#arrow)"/>
 <rect x="416" y="446" width="180" height="76" rx="16" fill="white" stroke="#3D4B5C" stroke-width="3"/>
-<text x="506" y="470" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan><tspan x="506" dy="20">(MFC)</tspan></text>
+<text x="506" y="475" font-size="21" font-weight="700" fill="#111111" text-anchor="middle"><tspan x="506" dy="0">Feature-to-</tspan><tspan x="506" dy="20">context memory</tspan></text>
 
 <path d="M 596 484 L 786 484" fill="none" stroke="#7A8490" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow-gray)"/>
 <text x="692" y="452" font-size="20" font-weight="700" fill="#3D4B5C" text-anchor="middle"><tspan x="692" dy="0">retrieval monitoring</tspan></text>
