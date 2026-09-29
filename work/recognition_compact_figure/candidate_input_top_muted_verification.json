@@ -1,0 +1,13 @@
+{
+  "status": "selected in manuscript as pending suggestion s448",
+  "figure_sha256": "a49d5004c5ea370ad14a0c33f162ef3c649cdd0ab13cc8855df36106a03267dc",
+  "previous_candidate_sha256": "4c67cc44b812547604c2417ee9df49e8c8decdc3d68e4251e1db8430c31a4c5b",
+  "recall_diagram_preserved": true,
+  "panel_b_preserved": true,
+  "recognition_change": "Three film items and one task item retained; one full-strength film probe has all outgoing arrows; other items have muted styling.",
+  "caption_note": "Faded items depict other stored representations that are not presented as the probe.",
+  "validation": "Four exact values, source hash and label bounds checked by renderer; PNG visually inspected.",
+  "manuscript_changed": true,
+  "manuscript_rendered": false,
+  "adoption_verification": "verification.json"
+}

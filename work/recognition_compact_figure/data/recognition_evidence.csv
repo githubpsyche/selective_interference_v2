@@ -1,0 +1,5 @@
+reminder_condition,task_condition,condition_label,task_mcf_scale,recognition_cue_reinstatement,recognition_temporal_weight,recognition_source_weight,n_foils,experiment_count,metric,value,ci_lower,ci_upper
+No reminder,Weak task encoding,No reminder + weak task,1.0,0.9,1.0,1.0,16,5000,mfc_current_context_evidence_separation,0.640139501953125,0.640139501953125,0.640139501953125
+No reminder,Strong task encoding,No reminder + strong task,2.0,0.9,1.0,1.0,16,5000,mfc_current_context_evidence_separation,0.6422150390625,0.6422150390625,0.6422150390625
+With reminder,Weak task encoding,With reminder + weak task,1.0,0.9,1.0,1.0,16,5000,mfc_current_context_evidence_separation,0.6409217773437501,0.6409217773437501,0.6409217773437501
+With reminder,Strong task encoding,With reminder + strong task,2.0,0.9,1.0,1.0,16,5000,mfc_current_context_evidence_separation,0.64101162109375,0.64101162109375,0.64101162109375

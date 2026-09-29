@@ -1,0 +1,9 @@
+{
+  "status": "candidate, not selected in manuscript",
+  "figure_sha256": "4c67cc44b812547604c2417ee9df49e8c8decdc3d68e4251e1db8430c31a4c5b",
+  "panel_b_preserved": true,
+  "data_validation": "Four exact values and frozen source hash checked by renderer.",
+  "layout_validation": "Equal diagram frames; inputs on top; single recognition probe; uniform headings; label bounds verified and PNG inspected.",
+  "manuscript_changed": false,
+  "manuscript_rendered": false
+}

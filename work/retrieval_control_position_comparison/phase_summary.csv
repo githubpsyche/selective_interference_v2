@@ -1,0 +1,17 @@
+control,phase,mean_recall_probability,expected_items_recalled,difference_in_expected_items_from_baseline
+No deliberate control,film,0.048462500,0.775399996,0.000000000
+No deliberate control,break,0.006287500,0.100600001,0.000000000
+No deliberate control,task,0.332599999,5.321599990,0.000000000
+No deliberate control,filler,0.087550000,1.400799999,0.000000000
+start-of-film reinstatement,film,0.125200000,2.003199995,1.227799999
+start-of-film reinstatement,break,0.007937500,0.127000002,0.026400001
+start-of-film reinstatement,task,0.331175003,5.298800051,-0.022799939
+start-of-film reinstatement,filler,0.012625000,0.202000002,-1.198799997
+maintained film-category cue,film,0.426462499,6.823399991,6.047999995
+maintained film-category cue,break,0.002587500,0.041400001,-0.059200001
+maintained film-category cue,task,0.049550000,0.792800004,-4.528799986
+maintained film-category cue,filler,0.002425000,0.038800000,-1.361999999
+retrieval monitoring,film,0.190474999,3.047599979,2.272199983
+retrieval monitoring,break,0.014737500,0.235800001,0.135200000
+retrieval monitoring,task,0.193250001,3.092000019,-2.229599971
+retrieval monitoring,filler,0.078737500,1.259800003,-0.140999996

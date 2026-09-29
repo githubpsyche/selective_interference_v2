@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-09-28T11:09:50+00:00",
+  "source": "work/simulation2_target_monitoring_diagnostic/simulation2_control_cued_offtarget_recovery.csv",
+  "source_sha256": "557f8ff0753b9e3faa130055ff1871a3e0b023ea13bff261d87955745d07ff60",
+  "selected_data_sha256": "e6846fd57d98ee0c650f01164ebdc39c28fb070dc2efe773a8f9918803bf20c2",
+  "selection": {
+    "start_drift_scale": 1.0,
+    "reminder_condition": "With reminder",
+    "task_mcf_scale": 2.0
+  },
+  "rows": 5,
+  "note": "Replot of saved output-order diagnostic; reinstatement held present. No new simulations. Probabilities validated against transition counts."
+}

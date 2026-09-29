@@ -1,0 +1,10 @@
+{
+  "status": "candidate, not selected in manuscript",
+  "figure_sha256": "2c69315ff5a53d93967d8e1c4c2f6a184c8cd9947d2cd55ec88f75d83fa30dc9",
+  "previous_figure_preserved": true,
+  "panel_b_comparison": "Unchanged content and geometry; pixel differences at most 1/255 from antialiasing.",
+  "data_validation": "Four preserved values plotted exactly; source subset hash verified by renderer.",
+  "layout_validation": "Context-match flowchart removed; retrieval diagrams spaced vertically; node labels fit; legend centered above bars; PNG visually inspected.",
+  "manuscript_changed": false,
+  "manuscript_rendered": false
+}

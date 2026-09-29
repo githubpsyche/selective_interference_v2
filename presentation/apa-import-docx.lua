@@ -53,12 +53,30 @@ function Pandoc(doc)
   doc.blocks = output
 
   -- This import contains literal reference entries rather than Cite nodes.
-  -- Assign the template's hanging-indent style without rebuilding their text.
-  return doc:walk({Para = function(p)
-    local reference = false
-    p:walk({Span = function(s)
-      if s.identifier:match("^ref[-_]") then reference = true end
-    end})
-    if reference then return styled({p}, "Bibliography") end
-  end})
+  -- Section membership owns bibliography styling; hyperlink targets do not.
+  local references = false
+  return doc:walk({
+    traverse = "topdown",
+    Header = function(h)
+      references = pandoc.utils.stringify(h.content) == "References"
+    end,
+    Para = function(p)
+      -- The imported appendix label is bold body text, not a Header node.
+      if pandoc.utils.stringify(p) == "Supplementary Material" then references = false end
+      if references then return styled({p}, "Bibliography"), false end
+      local label = false
+      p:walk({Span = function(s)
+        if s.identifier:match("^tbl%-") then label = true end
+      end})
+      if label and pandoc.utils.stringify(p):match("^Table") then
+        return styled({p}, "FigureTitle"), false
+      end
+    end,
+    Div = function(d)
+      if d.classes:includes("table-note") then
+        d.attributes["custom-style"] = "TableNote"
+        return d, false
+      end
+    end
+  })
 end

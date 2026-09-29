@@ -1,43 +1,38 @@
 # Working manuscript review
 
-This project starts from the untouched Henson/Holmes pooled Word document:
-`notes/22_08_2026/selective_interference_rik_emily_combined_review.docx`.
-Talmi's separate feedback and later manuscript edits have not been added.
+The working manuscript began with the unedited Henson/Holmes pooled review, preserved at `notes/22_08_2026/selective_interference_rik_emily_combined_review.docx`.
+It now incorporates responses to their comments, Deborah’s separate feedback and the meeting discussions.
+Current wording, suggestions and discussion states are maintained in `index.qmd`.
 
-The project root is the single active manuscript project. The review draft was
-moved here from `manuscript-review/`; that parallel project has been removed.
-The earlier root draft, settings, bibliography snapshot, and generated files are
-preserved in `archive/2026-09-27-before-root-consolidation/previous-root/`.
-Research code and analysis results retain their existing locations. Earlier Word
-workflows and draft fragments are catalogued in `archive/README.md`.
+The author-note removal has been accepted.
+Proposed wording and figure changes remain pending unless individually marked otherwise.
+Resolving a comment records our response; it does not accept associated manuscript changes.
 
-The imported draft retains 47 comment threads and 4 replies (51 comment records),
-and 285 existing tracked-change records. They include comments and changes already
-attributed to Jordan in the source. Their identities and individual decisions are retained.
-There were no new prose edits in the migration baseline. The working draft now
-includes the three cumulative title-review steps requested on 27 September:
-Emily's five title insertions rejected, our agreed title suggested at both title
-occurrences, and a reply added to Emily's title comment with the thread resolved.
-The new title replacements remain pending and are attributed to `Gunn, Jordan`.
-The five agreed authors and four affiliations are present as pending additions.
-The draft-only author note is a pending deletion, and the short title is updated in the render settings.
-The approved abstract is proposed through local, attributed changes against the pooled-review wording.
-The original abstract comments remain active; the redundant “involuntary” and “(intrusions)” insertions are rejected.
-The body remains at the pooled-review baseline.
-
-The three corrected APAQuarto Word checkpoints and their source states are preserved in
-`review/stages/2026-09-27-title/apaquarto/`. Its `manifest.json` records hashes, export
-identities, and preservation checks. The existing `docs/index.docx` matches the
-third title checkpoint and predates the later author-page changes.
-Word export is deferred while we work in QMD and HTML.
+Regular HTML and APA Word were refreshed on 29 September 2026.
+The [current manuscript and Word audit](notes/2026-09-29/current-manuscript-and-word-audit.md) records the remaining source and export issues.
+We continue editing in QMD, refreshing regular HTML after implementations and generating Word when requested.
 The HTML navigation hides its Word link during this round.
+
+The project root is the single active manuscript project.
+The review draft was moved here from `manuscript-review/`; that parallel project has been removed.
+The earlier root draft, settings, bibliography snapshot, and generated files are preserved in `archive/2026-09-27-before-root-consolidation/previous-root/`.
+Research code and analysis results retain their existing locations.
+Earlier Word workflows and draft fragments are catalogued in `archive/README.md`.
+
+At the original migration, the imported draft contained 47 comment threads and 4 replies (51 comment records), and 285 existing tracked-change records.
+These historical counts include comments and changes already attributed to Jordan in the source; they are not counts of the current review state.
+There were no new prose edits in that migration baseline.
+The three cumulative title-review checkpoints from 27 September record the rejection of Emily's five title insertions, our proposed title at both occurrences, and the reply resolving her title comment.
+The corrected APAQuarto Word checkpoints and their source states are preserved in `review/stages/2026-09-27-title/apaquarto/`.
+Its `manifest.json` records hashes, export identities and preservation checks.
+Those checkpoints are historical exports; the current `docs/index.docx` includes subsequent manuscript work and is refreshed only when requested.
 The earlier generic Word exports remain in the parent folder as superseded archives.
 `migration.json` remains the record of the original unedited migration.
 
 ## Files we work in
 
 - `index.qmd`: manuscript, suggestions, anchored discussions, replies, attribution, decisions and Word provenance in the single-source review format.
-- `reference.qmd`: the converted frozen source for the current round; leave it unchanged while editing.
+- `reference.qmd`: the comparison source for the current round; preserve it during routine wording edits. Explicitly agreed structural relocations and their numbering are mirrored here without accepting pending wording.
 - `references.bib`: the existing project bibliography. The imported draft still
   contains literal citations and reference entries; moving it does not convert
   or rewrite them. Bibliography conversion is a separate manuscript change.
@@ -103,7 +98,7 @@ two-column author grid. Annotated keywords use the
 native keyword presentation beside the abstract. An unannotated repeated Word
 title is omitted; when it has a tracked edit, it remains available in review mode
 and is hidden in Reading view by `presentation/manuscript-import.css`.
-The former author note appears as a deletion in Redline and Original views and is hidden in Proposed and Reading views.
+The former author note has been removed through an accepted decision and no longer appears as a pending deletion.
 This bridge is specific to the imported title-page structure; update it if that structure changes.
 After rendering regular HTML, run `python3 -m unittest discover -s tests -p test_review_frontmatter.py`
 to check that review deletion markers do not span native author metadata or the abstract
@@ -129,7 +124,7 @@ Word export uses `apaquarto-docx` and the installed APAQuarto reference document
 and references to that template's own styles. It places the abstract on a new
 page, its keywords after the abstract, and the second annotated title before the
 introduction on the next page. Both title occurrences retain their independent
-review anchors. The short title now reflects the agreed title, ready for the next deliberate Word export.
+review anchors. The short title reflects the agreed manuscript title.
 The frozen reference keeps the original migration settings, allowing presentation changes to be distinguished from prose.
 
 To reopen the live preview from this folder:
@@ -152,7 +147,7 @@ They write `docs/index.html` and `docs/index-regular.html`, respectively.
 Both include the review interface and the configured presentation filters.
 The preview displays these generated files; no browser-only styling changes are needed to reproduce them.
 Use `--no-clean` to retain the other HTML view and the older Word export.
-Render APA Word deliberately when that review stage resumes.
+Render APA Word when requested; regular HTML is the working review output.
 
 `execute.keep-md: true` retains generated intermediates used by the two HTML
 formats. The retained `index_files/` and `*.html.md` files are ignored by Git and

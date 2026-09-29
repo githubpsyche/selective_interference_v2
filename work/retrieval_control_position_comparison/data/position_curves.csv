@@ -1,0 +1,385 @@
+package_index,retrieval_control_package,goal_group,within_group_label,film_goal_included,start_reinstatement_included,target_monitoring_included,start_drift_scale,film_item_support_boost,rejected_recall_drift_scale,endpoint,endpoint_short,reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,cue_interval,first_cue_after,experiment_count,position,phase,recall_probability
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,1,film,0.0272000003606081
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,2,film,0.03060000017285347
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,3,film,0.03480000048875809
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,4,film,0.04259999841451645
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,5,film,0.04859999939799309
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,6,film,0.05339999869465828
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,7,film,0.05299999937415123
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,8,film,0.06159999966621399
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,9,film,0.0551999993622303
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,10,film,0.054999999701976776
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,11,film,0.06040000170469284
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,12,film,0.05180000141263008
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,13,film,0.05119999870657921
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,14,film,0.05260000005364418
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,15,film,0.04619999974966049
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,16,film,0.05119999870657921
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,17,break,0.02280000038444996
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,18,break,0.01759999990463257
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,19,break,0.014000000432133675
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,20,break,0.009600000455975533
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,21,break,0.01140000019222498
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,22,break,0.006000000052154064
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,23,break,0.004399999976158142
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,24,break,0.00419999985024333
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,25,break,0.002199999988079071
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,26,break,0.0020000000949949026
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,27,break,0.002199999988079071
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,28,break,0.00019999999494757503
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,29,break,0.00019999999494757503
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,30,break,0.0015999999595806003
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,31,break,0.0015999999595806003
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,32,break,0.0006000000284984708
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,33,task,0.3492000102996826
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,34,task,0.3659999966621399
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,35,task,0.3637999892234802
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,36,task,0.36340001225471497
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,37,task,0.362199991941452
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,38,task,0.34940001368522644
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,39,task,0.3547999858856201
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,40,task,0.33739998936653137
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,41,task,0.3357999920845032
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,42,task,0.3296000063419342
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,43,task,0.3325999975204468
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,44,task,0.311599999666214
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,45,task,0.30320000648498535
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,46,task,0.29820001125335693
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,47,task,0.2888000011444092
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,48,task,0.27559998631477356
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,49,filler,0.03420000150799751
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,50,filler,0.03060000017285347
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,51,filler,0.026799999177455902
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,52,filler,0.02759999968111515
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,53,filler,0.02979999966919422
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,54,filler,0.029999999329447746
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,55,filler,0.03519999980926514
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,56,filler,0.04659999907016754
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,57,filler,0.06279999762773514
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,58,filler,0.07500000298023224
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,59,filler,0.09139999747276306
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,60,filler,0.11840000003576279
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,61,filler,0.15000000596046448
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,62,filler,0.17579999566078186
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,63,filler,0.21439999341964722
+1,No deliberate control,Film-category cue absent,None,False,False,False,0.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,64,filler,0.25220000743865967
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,1,film,0.16599999368190765
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,2,film,0.1477999985218048
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,3,film,0.15139999985694885
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,4,film,0.1501999944448471
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,5,film,0.14720000326633453
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,6,film,0.14740000665187836
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,7,film,0.1459999978542328
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,8,film,0.1363999992609024
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,9,film,0.12219999730587006
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,10,film,0.12200000137090683
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,11,film,0.11739999800920486
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,12,film,0.11060000211000443
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,13,film,0.09220000356435776
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,14,film,0.09059999883174896
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,15,film,0.08259999752044678
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,16,film,0.07320000231266022
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,17,break,0.03680000081658363
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,18,break,0.02160000056028366
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,19,break,0.018200000748038292
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,20,break,0.012600000016391277
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,21,break,0.009200000204145908
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,22,break,0.007799999788403511
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,23,break,0.006399999838322401
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,24,break,0.003800000064074993
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,25,break,0.002400000113993883
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,26,break,0.0010000000474974513
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,27,break,0.002400000113993883
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,28,break,0.0017999999690800905
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,29,break,0.0010000000474974513
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,30,break,0.0007999999797903001
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,31,break,0.0006000000284984708
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,32,break,0.0006000000284984708
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,33,task,0.4706000089645386
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,34,task,0.47699999809265137
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,35,task,0.4490000009536743
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,36,task,0.45840001106262207
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,37,task,0.42899999022483826
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,38,task,0.3962000012397766
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,39,task,0.3808000087738037
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,40,task,0.34700000286102295
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,41,task,0.3287999927997589
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,42,task,0.30799999833106995
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,43,task,0.26100000739097595
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,44,task,0.25440001487731934
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,45,task,0.21559999883174896
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,46,task,0.1956000030040741
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,47,task,0.17560000717639923
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,48,task,0.1518000066280365
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,49,filler,0.01720000058412552
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,50,filler,0.01360000018030405
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,51,filler,0.009800000116229057
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,52,filler,0.007400000002235174
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,53,filler,0.006800000090152025
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,54,filler,0.005799999926239252
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,55,filler,0.00559999980032444
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,56,filler,0.007000000216066837
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,57,filler,0.007000000216066837
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,58,filler,0.009200000204145908
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,59,filler,0.01119999960064888
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,60,filler,0.010999999940395355
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,61,filler,0.01720000058412552
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,62,filler,0.019999999552965164
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,63,filler,0.022600000724196434
+3,start-of-film reinstatement,Film-category cue absent,"Start-of-film
+reinstatement",False,True,False,1.0,0.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,64,filler,0.03060000017285347
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,1,film,0.3025999963283539
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,2,film,0.33219999074935913
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,3,film,0.36820000410079956
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,4,film,0.37119999527931213
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,5,film,0.4059999883174896
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,6,film,0.41659998893737793
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,7,film,0.43540000915527344
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,8,film,0.45179998874664307
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,9,film,0.4674000144004822
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,10,film,0.4772000014781952
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,11,film,0.48919999599456787
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,12,film,0.46000000834465027
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,13,film,0.475600004196167
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,14,film,0.47360000014305115
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,15,film,0.4625999927520752
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,16,film,0.43380001187324524
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,17,break,0.011800000444054604
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,18,break,0.010400000028312206
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,19,break,0.006599999964237213
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,20,break,0.003800000064074993
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,21,break,0.0026000000070780516
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,22,break,0.0020000000949949026
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,23,break,0.0006000000284984708
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,24,break,0.0012000000569969416
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,25,break,0.0006000000284984708
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,26,break,0.0006000000284984708
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,27,break,0.00039999998989515007
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,28,break,0.00039999998989515007
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,29,break,0.00019999999494757503
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,30,break,0.00019999999494757503
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,31,break,0.0
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,32,break,0.0
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,33,task,0.18860000371932983
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,34,task,0.1444000005722046
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,35,task,0.11339999735355377
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,36,task,0.0828000009059906
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,37,task,0.06400000303983688
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,38,task,0.04659999907016754
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,39,task,0.03620000183582306
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,40,task,0.03359999880194664
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,41,task,0.021199999377131462
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,42,task,0.01679999940097332
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,43,task,0.012199999764561653
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,44,task,0.010999999940395355
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,45,task,0.00559999980032444
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,46,task,0.007799999788403511
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,47,task,0.004800000227987766
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,48,task,0.003800000064074993
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,49,filler,0.00019999999494757503
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,50,filler,0.00039999998989515007
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,51,filler,0.00019999999494757503
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,52,filler,0.00019999999494757503
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,53,filler,0.0006000000284984708
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,54,filler,0.0007999999797903001
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,55,filler,0.0006000000284984708
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,56,filler,0.00139999995008111
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,57,filler,0.0010000000474974513
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,58,filler,0.0017999999690800905
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,59,filler,0.003800000064074993
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,60,filler,0.0017999999690800905
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,61,filler,0.004399999976158142
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,62,filler,0.00559999980032444
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,63,filler,0.005200000014156103
+5,maintained film-category cue,Film-category cue present,None,True,False,False,0.0,1.0,1.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,64,filler,0.01080000028014183
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,1,film,0.09260000288486481
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,2,film,0.11299999803304672
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,3,film,0.13539999723434448
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,4,film,0.16699999570846558
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,5,film,0.17219999432563782
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,6,film,0.1817999929189682
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,7,film,0.20739999413490295
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,8,film,0.22360000014305115
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,9,film,0.2248000055551529
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,10,film,0.2409999966621399
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,11,film,0.23499999940395355
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,12,film,0.2425999939441681
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,13,film,0.2282000035047531
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,14,film,0.2134000062942505
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,15,film,0.1923999935388565
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,16,film,0.17720000445842743
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,17,break,0.08100000023841858
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,18,break,0.04619999974966049
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,19,break,0.03280000016093254
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,20,break,0.022600000724196434
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,21,break,0.016599999740719795
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,22,break,0.013000000268220901
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,23,break,0.007799999788403511
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,24,break,0.004600000102072954
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,25,break,0.0026000000070780516
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,26,break,0.003000000026077032
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,27,break,0.002400000113993883
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,28,break,0.0007999999797903001
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,29,break,0.0007999999797903001
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,30,break,0.0006000000284984708
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,31,break,0.0006000000284984708
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,32,break,0.00039999998989515007
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,33,task,0.626800000667572
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,34,task,0.5238000154495239
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,35,task,0.420199990272522
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,36,task,0.33059999346733093
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,37,task,0.24860000610351562
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,38,task,0.19040000438690186
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,39,task,0.14180000126361847
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,40,task,0.11140000075101852
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,41,task,0.08919999748468399
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,42,task,0.07680000364780426
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,43,task,0.0658000037074089
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,44,task,0.05339999869465828
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,45,task,0.051600001752376556
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,46,task,0.04960000142455101
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,47,task,0.052000001072883606
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,48,task,0.05999999865889549
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,49,filler,0.006800000090152025
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,50,filler,0.006599999964237213
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,51,filler,0.00839999970048666
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,52,filler,0.008200000040233135
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,53,filler,0.011599999852478504
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,54,filler,0.013000000268220901
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,55,filler,0.026399999856948853
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,56,filler,0.02539999969303608
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,57,filler,0.03799999877810478
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,58,filler,0.046799998730421066
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,59,filler,0.0674000009894371
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,60,filler,0.10379999876022339
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,61,filler,0.1387999951839447
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,62,filler,0.18279999494552612
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,63,filler,0.24580000340938568
+2,retrieval monitoring,Film-category cue absent,"Retrieval
+monitoring",False,False,True,0.0,0.0,0.0,Film reminder + strong task encoding,High endpoint,With reminder,Strong task encoding,2.0,0.9,4,0,5000,64,filler,0.33000001311302185

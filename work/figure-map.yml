@@ -2,9 +2,9 @@ recorded: '2026-09-27'
 source_word_document: notes/22_08_2026/selective_interference_rik_emily_combined_review.docx
 source_word_sha256: ffd4f5e18b79896c761e622f70276ccd9fbf23670396f039e5167a9818638305
 manuscript: index.qmd
-note: Current figures are preserved Word-import snapshots. Related scientific packages
-  are navigation aids, not a claim that their latest output reproduces the imported
-  figure. Update this map explicitly when manuscript figures change.
+note: The base records preserve Word-import snapshots. Pending replacement records
+  document subsequent figure selection where supplied; index.qmd remains authoritative.
+  Related packages alone are navigation aids, not evidence of exact reproduction.
 figures:
 - image: assets/media/image1.png
   topic: Modeled trauma-film paradigm and empirical target
@@ -39,6 +39,16 @@ figures:
   - work/retrieved_context_account
   relationship: caption/topic match; reproduction not yet verified
   exact_work_image_matches: []
+  pending_replacement:
+    selected: 2026-09-28
+    figure_id: fig-encoding-structure
+    suggestion: s468
+    image: work/retrieved_context_account/retrieved_context_encoding_associations_staggered_sequence_candidate.png
+    sha256: 72ed12efd8f9fccc7ea6376e1551c2202a5d71ab4c602dbdfab871ab34ae3517
+    selected_from: archive/2026-09-27-before-root-consolidation/previous-root/index.qmd
+    comment: c120
+    note: Reuses the later draft's figure with redundant Panel A notation removed;
+      caption and surrounding prose are unchanged.
 - image: assets/media/image4.png
   topic: Retrieval operations and control mechanisms
   sha256: 2c0fd9454478bff3addb00685325b38c2a264145c4dad55e804572c73fcf1eae
@@ -105,6 +115,14 @@ figures:
   - work/simulation2_start_context_reinstatement
   relationship: caption/topic match; reproduction not yet verified
   exact_work_image_matches: []
+  pending_replacement:
+    selected: 2026-09-28
+    figure_id: fig-start-state-position
+    suggestion: s417
+    image: work/retrieval_control_position_comparison/figure10_candidate.png
+    sha256: 3d6c05cdb993d31faf83ba228158385f1e302ba672c41b1819ce198f12989389
+    provenance: work/retrieval_control_position_comparison/provenance.json
+
 - image: assets/media/image10.png
   topic: Simulation 2 monitoring and positional recall
   sha256: bd8197ef594b9877343a1de780c84062acff1e37f8d6afc73d32a131bff7527a
@@ -116,6 +134,14 @@ figures:
   - work/simulation2_target_monitoring_diagnostic
   relationship: caption/topic match; reproduction not yet verified
   exact_work_image_matches: []
+  pending_replacement:
+    selected: 2026-09-28
+    figure_id: fig-retrieval-monitoring
+    suggestion: s431
+    image: work/retrieval_control_position_comparison/figure11_monitoring_return.png
+    sha256: 6f5a6c4a49d50cbe2790b08095dd27d11556bf97dffab22bfc16b8a7aa4c3ba5
+    provenance: work/retrieval_control_position_comparison/monitoring_return_provenance.json
+
 - image: assets/media/image11.png
   topic: Recognition access routes and probe evidence
   sha256: 43137c97ef9fba8b22b0c13e0801bdc5dbb89efcf9d620331c29024f923f818b
@@ -129,6 +155,13 @@ figures:
   - work/simulation4_test_format_schematic
   relationship: caption/topic match; reproduction not yet verified
   exact_work_image_matches: []
+  pending_replacement:
+    selected: 2026-09-28
+    figure_id: fig-recognition-test-format
+    suggestion: s448
+    image: work/recognition_compact_figure/figure7_recognition_input_top_muted.png
+    sha256: a49d5004c5ea370ad14a0c33f162ef3c649cdd0ab13cc8855df36106a03267dc
+    provenance: work/recognition_compact_figure/provenance.json
 - image: assets/media/image12.png
   topic: Context-overlap diagnostic
   sha256: f495938022e85d117e2a29746ceeff2b0a23d8a94568badeac9b8176b19b449c

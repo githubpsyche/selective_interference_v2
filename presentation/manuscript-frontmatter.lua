@@ -63,10 +63,16 @@ function Pandoc(doc)
     }, pandoc.Attr("", {"qr-reviewed-frontmatter-content"}))
   })
   local keywords = pandoc.Inlines(blocks[keywords_index].content)
-  -- The native template supplies the label; retain all annotated keyword text.
-  keywords:remove(1)
-  if keywords[1] and keywords[1].t == "Str" and keywords[1].text == ":" then keywords:remove(1) end
-  if keywords[1] and keywords[1].t == "Space" then keywords:remove(1) end
+  -- The native template supplies the label. Review boundaries can precede it
+  -- after an accepted deletion, so remove the label rather than the first item.
+  local label_index
+  for i, inline in ipairs(keywords) do
+    if pandoc.utils.stringify(inline) == "Keywords" then label_index = i; break end
+  end
+  if not label_index then error("Expected the imported Keywords label") end
+  keywords:remove(label_index)
+  if keywords[label_index] and keywords[label_index].t == "Str" and keywords[label_index].text == ":" then keywords:remove(label_index) end
+  if keywords[label_index] and keywords[label_index].t == "Space" then keywords:remove(label_index) end
   -- Pandoc also places `keywords` in an HTML attribute, where raw review
   -- boundaries would corrupt the head. Render the annotated line in the
   -- title block without turning the body Abstract into Quarto metadata.

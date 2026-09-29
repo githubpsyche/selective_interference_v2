@@ -1,0 +1,6 @@
+start_drift_scale,rejected_recall_drift_scale,reminder_condition,task_condition,task_mcf_scale,film_cue_reinstatement,first_cue_after,film_return_probability,transition_count,film_return_count
+1.0,1.0,With reminder,Strong task encoding,2.0,0.9,0,0.06251048833696929,23836,1490
+1.0,0.75,With reminder,Strong task encoding,2.0,0.9,0,0.12498872756786004,22178,2772
+1.0,0.5,With reminder,Strong task encoding,2.0,0.9,0,0.2190088868805543,19917,4362
+1.0,0.25,With reminder,Strong task encoding,2.0,0.9,0,0.36446295535871415,17047,6213
+1.0,0.0,With reminder,Strong task encoding,2.0,0.9,0,0.5482870537324198,13865,7602

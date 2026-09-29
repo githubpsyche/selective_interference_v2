@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-09-28T05:03:50+00:00",
+  "status": "Selected in index.qmd as a pending Figure 10 replacement on 2026-09-28; no new simulations",
+  "source_files": [
+    {
+      "path": "work/simulation2_retrieval_control_decomposition/simulation2_retrieval_control_decomposition_spc.csv",
+      "sha256": "4b8127b52ab8a4d7775a756f08f06e77c1d4e078e034a19d72a43469422a3d7c"
+    },
+    {
+      "path": "work/simulation2_retrieval_control_decomposition/sweep_simulation2_retrieval_control_decomposition.py",
+      "sha256": "a706df8b7b8a724e4519f1cce7502600010836469d010a23786bec9c0c77f196"
+    },
+    {
+      "path": "work/fitting/Dupertuys2026_eCMR_source_only_phi_no_shared_support_best_of_1.json",
+      "sha256": "f53f01550f2b6f26e85103e9c1bf5dade221cd94f03bba05777a2b6ce639373f"
+    }
+  ],
+  "selection": {
+    "endpoint": "Film reminder + strong task encoding",
+    "retrieval_control_package": [
+      "No deliberate control",
+      "start-of-film reinstatement",
+      "maintained film-category cue",
+      "retrieval monitoring"
+    ],
+    "positions": [
+      1,
+      64
+    ],
+    "rows": 256
+  },
+  "selected_data_sha256": "a38e12d05fe6ef240cda14c7a173b03c3f75fe47df5e2f94ec9e4631dba4dd79",
+  "versions": {
+    "python": "3.12.13",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6"
+  },
+  "uncertainty": "The source stores aggregate probabilities, without replicate/batch uncertainty.",
+  "historical_provenance_limit": "Generator and fit file hashes record current files, not independent verification of the saved run environment."
+}

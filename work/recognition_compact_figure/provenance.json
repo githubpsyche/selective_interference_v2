@@ -1,0 +1,22 @@
+{
+  "source": "work/simulation3_recognition_test_format/simulation3_recognition_test_format_recognition_summary.csv",
+  "source_sha256": "d5cad38398456607c22ea5f0128b1a193bd6df6ea2931f8557c30e16a8a75697",
+  "selection": {
+    "metric": "mfc_current_context_evidence_separation",
+    "rows": 4
+  },
+  "data_sha256": "46be7fd372269319d18240fec6eda64881180d83503118fd64e6b5f898983650",
+  "original_manuscript_image": "assets/media/image11.png",
+  "original_manuscript_image_sha256": "43137c97ef9fba8b22b0c13e0801bdc5dbb89efcf9d620331c29024f923f818b",
+  "earlier_vector_figure": "work/simulation4_recognition_full_figure/item_context_recognition.svg",
+  "earlier_vector_figure_sha256": "b619730dc1769b67f36060a124b0b3ba8583103838798285f97b46460a83f04a",
+  "checks": [
+    "Evidence equals mean old-item evidence minus mean foil evidence in each condition.",
+    "Four values reproduce the earlier SVG bar heights within its 0.1-pixel rounding."
+  ],
+  "new_simulations": false,
+  "axis_range": [
+    0,
+    0.8
+  ]
+}

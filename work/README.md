@@ -11,16 +11,16 @@ retain existing paths until notebook/script dependencies are deliberately migrat
 
 ## Current imported manuscript figures
 
-[figure-map.yml](figure-map.yml) records each active image's exact source Word
-media part, checksum, manuscript location, and related analysis/figure package.
+[figure-map.yml](figure-map.yml) records the original imported images’ source Word
+media parts, checksums, and related analysis/figure packages.
+Selected Figures 7, 10 and 11 also have explicit pending-replacement records; `index.qmd` is authoritative for the current image selection.
 The Word source mapping is verified by hashes. Related-code pointers are based
 on caption/topic and are explicitly distinguished from a verified reproduction.
 Only one imported figure has an exact byte match among the current work PNGs.
 Do not replace an imported figure with a newer export implicitly.
 
-The current draft still presents competitor formation, retrieval control, and
-recognition in its pooled-source order. Proposals to reorder those sections are
-separate manuscript decisions. This directory cleanup applies no such changes.
+The current draft presents competitor formation, recognition, then retrieval control.
+Stable package paths retain the earlier simulation numbering; manuscript figure numbers follow the current source order.
 
 ## Package index
 
@@ -30,6 +30,8 @@ analysis sources. Use each documented package's run/verification instructions.
 
 | Package | Question or purpose | Available entry points | Status |
 | --- | --- | --- | --- |
+| [recognition_compact_figure](recognition_compact_figure/README.md) | Compact recall/recognition schematic and the existing recognition-evidence result | [Figure 7](recognition_compact_figure/figure7_recognition_input_top_muted.png); [renderer](recognition_compact_figure/render_figure.py) | Selected as a pending replacement; active caption is in index.qmd. |
+| [retrieval_control_position_comparison](retrieval_control_position_comparison/README.md) | Matched positional effects and return-to-film diagnostic | [Figure 10](retrieval_control_position_comparison/figure10_candidate.png); [Figure 11](retrieval_control_position_comparison/figure11_monitoring_return.png); [renderer](retrieval_control_position_comparison/render_candidate.py) | Selected in the manuscript as pending replacements; active captions are in index.qmd. |
 | [empirical_target](empirical_target/) | Empirical comparison data, paradigm schematics, and their figures | [render_empirical_selective_interference_examples.py](empirical_target/render_empirical_selective_interference_examples.py) | Retained research package; selection is documented separately in the figure map. |
 | [retrieved_context_account](retrieved_context_account/) | Encoding and retrieval diagrams | Figure assets; no generator script in this folder. | Retained research package; selection is documented separately in the figure map. |
 | [captioned_exports](captioned_exports/) | Captioned figure composites for earlier exports | [render_caption_composites.py](captioned_exports/render_caption_composites.py) | Historical figure/export support. |

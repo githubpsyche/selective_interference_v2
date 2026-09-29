@@ -1,11 +1,15 @@
 # Notes and sources
 
 The [project README](../README.md) records current manuscript state and commands.
-The active annotated manuscript is [index.qmd](../index.qmd); the review metadata
-is [review.yml](../review.yml).
+The active annotated manuscript and review metadata are in [index.qmd](../index.qmd).
 
 ## Feedback and proposals
 
+- [Current manuscript and Word audit](2026-09-29/current-manuscript-and-word-audit.md): assessment after the latest side-thread changes and HTML/APA Word renders; verified review records, remaining source points and Word presentation issues.
+- [Holistic feedback audit](2026-09-29/holistic-feedback-audit.md): current proposed manuscript assessed against all active review threads, Deborah's separate comments and meeting decisions; bounded finishing work, not implemented edits.
+- [Figure placement: c344](2026-09-28/figure-placement-c344.md): accepted relocations of Figures 5, 7, 8 and 9, preserved wording changes, and the supplementary-figure pointer.
+- [Retrieval terminology audit](2026-09-28/terminology-audit.md): recovered naming decisions and the original tracking proposal; source changes are now implemented.
+- [Rik’s positional-figure integration](2026-09-28/rik-positional-figures-integration.md): completed Figures 10–11 changes, interpretation, review decisions and the subsequent decision not to add existing-experiment analyses.
 - [Minimal feedback review](26_09_2026/minimal_feedback_review.md): source comments
   and passage proposals. Its opening banner distinguishes historical Word
   progress from the current pooled-review draft.

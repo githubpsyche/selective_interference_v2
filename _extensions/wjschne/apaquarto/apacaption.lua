@@ -37,7 +37,9 @@ local caption_formatter = function(p)
               if i > intStart and i < intStart + 4 then
                 if i == 3 then 
                   -- Figure or table number
-                  v = pandoc.Str(labelnum) 
+                  -- Keep Quarto's assigned number when the float has no
+                  -- APA-specific prefix/number attributes.
+                  if labelnum ~= "" then v = pandoc.Str(labelnum) end
                 end
                 figuretitle.content:extend({v})
               end
@@ -62,6 +64,7 @@ end
 
 local divcaption = function(div)
   if div.identifier:find("^tbl%-") or div.identifier:find("^fig%-") then
+    labelnum = ""
     
     -- Get figure/table prefix and number
     if div.attributes.prefix then
@@ -90,4 +93,3 @@ return {
   {Meta = gettablefig},
   {Div = divcaption}
 }
-

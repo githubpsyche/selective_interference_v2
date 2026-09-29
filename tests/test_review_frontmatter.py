@@ -21,10 +21,16 @@ class FrontmatterParser(HTMLParser):
         self.abstract = 0
         self.abstract_in_title = 0
         self.abstract_in_body = 0
+        self.review_starts = set()
+        self.suggestion_anchors = set()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         classes = set(attrs.get("class", "").split())
+        if "qr-boundary" in classes and attrs.get("data-review-edge") == "S":
+            self.review_starts.add(attrs["data-review-id"])
+        if "qr-suggestion" in classes:
+            self.suggestion_anchors.add(attrs["data-anchor-id"])
         if "qr-boundary" in classes and attrs.get("data-review-kind") == "D":
             marker = attrs["data-review-id"]
             if attrs.get("data-review-edge") == "S":
@@ -65,6 +71,9 @@ class RegularHtmlFrontmatterTest(unittest.TestCase):
         self.assertEqual(parser.abstract_in_body, 1)
         self.assertEqual(parser.authors, 5)
         self.assertEqual(parser.reviewed_frontmatter, 1)
+        self.assertTrue(parser.suggestion_anchors, "Suggestion cards missing")
+        self.assertEqual(parser.suggestion_anchors - parser.review_starts, set(),
+                         "A presentation filter discarded a suggestion's location")
 
 
 if __name__ == "__main__":

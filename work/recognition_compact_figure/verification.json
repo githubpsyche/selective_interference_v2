@@ -1,0 +1,23 @@
+{
+  "new_suggestions": [
+    "s448",
+    "s449",
+    "s450",
+    "s451",
+    "s452",
+    "s456"
+  ],
+  "image_suggestion": "s448",
+  "status": "pending",
+  "comment": "c368",
+  "comment_status": "resolved",
+  "preserved": "Original manuscript reading, all previous suggestion identities/attribution/decisions, all suggestion wording except the s448 proposed image, all other comment threads, figure identifier/order and comparison reference.",
+  "comparison": "No new ordinary edits; automatic differences match the pre-edit source.",
+  "figure_sha256": "a49d5004c5ea370ad14a0c33f162ef3c649cdd0ab13cc8855df36106a03267dc",
+  "source_sha256": "87c6f43036d4485087aa5082ccb8824b8b6ab8910c890017ee7bef68fae44b49",
+  "no_manuscript_render": true,
+  "caption_visual_key_suggestion": "s456",
+  "image": "work/recognition_compact_figure/figure7_recognition_input_top_muted.png",
+  "reference_sha256": "0f50c0821dbd30ba06bb9f82b3171a15edc097955f7940a526d6acc579410201",
+  "source_checks": "Parsing passed; exact original reading preserved; existing comment anchors and unrelated review metadata preserved."
+}

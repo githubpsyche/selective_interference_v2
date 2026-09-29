@@ -5,6 +5,7 @@ project:
   - index.qmd
   post-render:
   - _extensions/quarto-review/finish.py
+  - presentation/finish-docx.py
 manuscript:
   article: index.qmd
   code-links: false
@@ -79,6 +80,8 @@ filters:
 quarto-review:
   source-file: index.qmd
   reference-file: reference.qmd
+  word:
+    track-changes: true
 execute:
   keep-md: true
 format-links:
@@ -86,3 +89,12 @@ format-links:
   text: APA HTML
 - format: html
   text: Regular HTML
+
+crossref:
+  custom:
+  - kind: float
+    key: suppfig
+    latex-env: suppfig
+    reference-prefix: Supplementary Figure S
+    space-before-numbering: false
+    latex-list-of-description: Supplementary Figure

@@ -1,0 +1,59 @@
+{
+  "verified_at": "2026-09-28T11:19:19+00:00",
+  "manuscript_sha256": "86a42dd3107ca7f5547a6b279e5ed3196449d9c4b63aa5eb325440eef17ccedf",
+  "source_parse_and_decisions": "pass",
+  "ordinary_comparison_ids": [
+    "a9ef785b97982adae8f10"
+  ],
+  "new_pending_suggestions": [
+    "s417",
+    "s418",
+    "s419",
+    "s420",
+    "s421",
+    "s422",
+    "s423",
+    "s424",
+    "s425",
+    "s426",
+    "s427",
+    "s428",
+    "s429",
+    "s430",
+    "s431",
+    "s432",
+    "s433",
+    "s434",
+    "s435"
+  ],
+  "accepted_reviewer_suggestion": "s272; Jordan\u2019s noun insertion s430 remains pending",
+  "refined_existing_author_suggestions": [
+    "s333",
+    "s399"
+  ],
+  "preservation": "Original comment bodies, identities, anchors, reviewer wording and unrelated decisions retained. Rejecting new suggestions restores prior proposed reading except the two stated refinements.",
+  "resolved": [
+    "c345",
+    "c355",
+    "c366"
+  ],
+  "updated_existing_replies": [
+    "c345",
+    "c354",
+    "c355",
+    "c357",
+    "c366"
+  ],
+  "still_open": "c357: collaborators\u2019 experimental-data availability",
+  "figure10": "256 rows, four matched 64-position curves, manuscript directional claims checked against saved probabilities",
+  "figure11": "Five conditional probabilities verified from transition and return counts",
+  "protected_files_unchanged": [
+    "reference.qmd",
+    "_quarto.yml",
+    "_environment.local",
+    "docs/index-regular.html",
+    "docs/index.docx"
+  ],
+  "manuscript_rendered": false,
+  "simulations_rerun": false
+}

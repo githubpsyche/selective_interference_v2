@@ -13,18 +13,6 @@ function Pandoc(doc)
         h.classes:insert("unnumbered")
         return h
       end
-      -- The source Word file assigns Heading 2 to this body paragraph.
-      if h.level == 2 and text:match("^A dual%-list externalized free%-recall design would isolate these predictions") then
-        return pandoc.Para(h.content)
-      end
-    end,
-    Para = function(p)
-      -- Its actual section label is bold text in the Word source.
-      if #p.content == 1 and p.content[1].t == "Strong"
-          and pandoc.utils.stringify(p.content) == "Testing Competitor Learning and Retrieval Selectivity" then
-        return pandoc.Header(2, p.content[1].content,
-          pandoc.Attr("testing-competitor-learning-and-retrieval-selectivity"))
-      end
     end
   })
 end
