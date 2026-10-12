@@ -1,0 +1,32 @@
+.manuscript-figure-links {
+  margin-top: 1rem;
+  font-size: .95rem;
+}
+body {
+  overflow-x: clip;
+}
+.quarto-figure img {
+  max-width: 100%;
+  height: auto !important;
+}
+.quarto-figure {
+  scroll-margin-top: 1.5rem;
+}
+#title-block-header .quarto-alternate-formats {
+  display: none;
+}
+mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: .25rem;
+}
+.math.display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+#refs a,
+a.uri {
+  overflow-wrap: anywhere;
+}

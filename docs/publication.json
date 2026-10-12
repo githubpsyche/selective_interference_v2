@@ -1,0 +1,73 @@
+{
+  "published_on": "2026-10-12",
+  "reading": "proposed",
+  "theme": "darkly",
+  "source_sha256": "eff9cb190fcf8fc63bc4b39ae39239e2b2cf3228b050debebf67b4a50e1865ac",
+  "manuscript_sha256": "d563f5108035240c043ea66ff44d680e8d55bacf88fc093899011182af414af2",
+  "figures_sha256": "8e8109fe61c0e0252fda488bdf0c6719b917748341c6d0cb1cb947d0289cf885",
+  "figure_count": 12,
+  "math_count": 96,
+  "review_markup": false,
+  "figures": [
+    {
+      "label": "1",
+      "anchor": "fig-empirical-target",
+      "image": "assets/media/feedback-2026-10-05/image2.png"
+    },
+    {
+      "label": "2",
+      "anchor": "fig-empirical-comparisons",
+      "image": "work/empirical_target/empirical_selective_interference_measure_labels.png"
+    },
+    {
+      "label": "3",
+      "anchor": "fig-encoding-structure",
+      "image": "assets/media/feedback-2026-10-05/image6.png"
+    },
+    {
+      "label": "4",
+      "anchor": "fig-retrieval-operations",
+      "image": "assets/media/feedback-2026-10-05/image8.png"
+    },
+    {
+      "label": "5",
+      "anchor": "fig-simulation1-unguided-sequence",
+      "image": "assets/media/feedback-2026-10-05/image9.png"
+    },
+    {
+      "label": "6",
+      "anchor": "fig-simulation1-recall-distributions",
+      "image": "assets/media/feedback-2026-10-05/image10.png"
+    },
+    {
+      "label": "7",
+      "anchor": "fig-recognition-test-format",
+      "image": "work/recognition_compact_figure/figure7_recognition_input_top_muted_evidence_label.png"
+    },
+    {
+      "label": "8",
+      "anchor": "fig-simulation2-control-cued-behavioral",
+      "image": "assets/media/feedback-2026-10-05/image14.png"
+    },
+    {
+      "label": "9",
+      "anchor": "fig-control-comparison",
+      "image": "assets/media/feedback-2026-10-05/image16.png"
+    },
+    {
+      "label": "10",
+      "anchor": "fig-start-state-position",
+      "image": "assets/media/feedback-2026-10-05/image18.png"
+    },
+    {
+      "label": "11",
+      "anchor": "fig-retrieval-monitoring",
+      "image": "assets/media/feedback-2026-10-05/image20.png"
+    },
+    {
+      "label": "S1",
+      "anchor": "suppfig-context-similarity",
+      "image": "assets/media/feedback-2026-10-05/image21.png"
+    }
+  ]
+}
