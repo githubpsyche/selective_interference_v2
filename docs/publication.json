@@ -3,7 +3,7 @@
   "reading": "proposed",
   "theme": "darkly",
   "source_sha256": "eff9cb190fcf8fc63bc4b39ae39239e2b2cf3228b050debebf67b4a50e1865ac",
-  "manuscript_sha256": "d563f5108035240c043ea66ff44d680e8d55bacf88fc093899011182af414af2",
+  "manuscript_sha256": "6cb87901b43ab9a67ac5b08d412c18e3166fe68b555467ba6c75058db61a85c9",
   "figures_sha256": "8e8109fe61c0e0252fda488bdf0c6719b917748341c6d0cb1cb947d0289cf885",
   "figure_count": 12,
   "math_count": 96,
@@ -69,5 +69,11 @@
       "anchor": "suppfig-context-similarity",
       "image": "assets/media/feedback-2026-10-05/image21.png"
     }
-  ]
+  ],
+  "header_links_updated_on": "2026-10-14",
+  "header_links": {
+    "psyarxiv": "https://osf.io/9tvkw/",
+    "doi": "https://doi.org/10.31234/osf.io/9tvkw_v1"
+  },
+  "manuscript_body_unchanged_by_header_update": true
 }
